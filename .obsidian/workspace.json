@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MSA/Kubernetes/Basic.md",
+                "file": "Languages/JavaScript/Object.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MSA/Kubernetes/Basic.md",
+                "file": "Languages/JavaScript/Object.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MSA/Kubernetes/Basic.md",
+                "file": "Languages/JavaScript/Object.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MSA/Kubernetes/Basic.md"
+                "file": "Languages/JavaScript/Object.md"
               }
             }
           }
@@ -150,6 +150,9 @@
   "active": "67db3d877f799c87",
   "lastOpenFiles": [
     "Languages/JavaScript/Nullish 병합 연산자.md",
+    "Languages/JavaScript/Object.md",
+    "Languages/JavaScript/Strict Mode & 변수와 상수 & 자료형.md",
+    "MSA/Kubernetes/Basic.md",
     "Languages/JavaScript/Operators.md",
     "Languages/JavaScript/Type Conversion (Primitive Type Only).md",
     "Error Handling/MySQL/Mysql 1227 ERROR.md",
@@ -160,7 +163,6 @@
     "Languages/JavaScript/Function.md",
     "Languages/JavaScript/Function.md",
     "Languages/JavaScript/Condition.md",
-    "Languages/JavaScript/Strict Mode & 변수와 상수 & 자료형.md",
     "Data Handling/개념/Algorithm/Dynamic Programming.md",
     "Settings/Typora Settings.md",
     "Settings/RoadMap.md",
@@ -176,8 +178,6 @@
     "Project Documents/Document",
     "Project Documents",
     "MSA/Kubernetes/StatefulSet.md",
-    "MSA/Kubernetes/Service.md",
-    "MSA/Kubernetes/Secret.md",
     "MSA/Kubernetes",
     "MSA/gRPC",
     "MSA",
