@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Data Handling/개념/Algorithm/Dynamic Programming.md",
+                "file": "MSA/Kubernetes/Basic.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "f5151c0da72edc1c",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Data Handling/개념/Algorithm/Dynamic Programming.md",
+                "file": "MSA/Kubernetes/Basic.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Data Handling/개념/Algorithm/Dynamic Programming.md",
+                "file": "MSA/Kubernetes/Basic.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Data Handling/개념/Algorithm/Dynamic Programming.md"
+                "file": "MSA/Kubernetes/Basic.md"
               }
             }
           }
@@ -148,6 +149,19 @@
   },
   "active": "67db3d877f799c87",
   "lastOpenFiles": [
+    "Languages/JavaScript/Nullish 병합 연산자.md",
+    "Languages/JavaScript/Operators.md",
+    "Languages/JavaScript/Type Conversion (Primitive Type Only).md",
+    "Error Handling/MySQL/Mysql 1227 ERROR.md",
+    "Database/QueryDSL/QueryProjection.md",
+    "Database/QueryDSL/Generated.md",
+    "Database/QueryDSL/Basic.md",
+    "Database/QueryDSL/Boolean Builder.md",
+    "Languages/JavaScript/Function.md",
+    "Languages/JavaScript/Function.md",
+    "Languages/JavaScript/Condition.md",
+    "Languages/JavaScript/Strict Mode & 변수와 상수 & 자료형.md",
+    "Data Handling/개념/Algorithm/Dynamic Programming.md",
     "Settings/Typora Settings.md",
     "Settings/RoadMap.md",
     "Settings/Prime College.md",
@@ -164,19 +178,6 @@
     "MSA/Kubernetes/StatefulSet.md",
     "MSA/Kubernetes/Service.md",
     "MSA/Kubernetes/Secret.md",
-    "MSA/Kubernetes/Script.md",
-    "MSA/Kubernetes/Prometheus + Grapana.md",
-    "MSA/Kubernetes/Prometheus & Grapana.md",
-    "MSA/Kubernetes/Pod.md",
-    "MSA/Kubernetes/Namespace.md",
-    "MSA/Kubernetes/Labels.md",
-    "MSA/Kubernetes/Helm.md",
-    "MSA/Kubernetes/Deployment.md",
-    "MSA/Kubernetes/DashBoard.md",
-    "MSA/Kubernetes/DaemonSet.md",
-    "MSA/Kubernetes/ConfigMap.md",
-    "MSA/Kubernetes/Basic.md",
-    "MSA/gRPC/gRPC.md",
     "MSA/Kubernetes",
     "MSA/gRPC",
     "MSA",
