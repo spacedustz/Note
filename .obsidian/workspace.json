@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Languages/JavaScript/Object.md",
+                "file": "Error Handling/MySQL/Mysql 1227 ERROR.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "f5151c0da72edc1c",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Languages/JavaScript/Object.md",
+                "file": "Error Handling/MySQL/Mysql 1227 ERROR.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Languages/JavaScript/Object.md",
+                "file": "Error Handling/MySQL/Mysql 1227 ERROR.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Languages/JavaScript/Object.md"
+                "file": "Error Handling/MySQL/Mysql 1227 ERROR.md"
               }
             }
           }
@@ -149,8 +148,8 @@
   },
   "active": "67db3d877f799c87",
   "lastOpenFiles": [
-    "Languages/JavaScript/Nullish 병합 연산자.md",
     "Languages/JavaScript/Object.md",
+    "Languages/JavaScript/Nullish 병합 연산자.md",
     "Languages/JavaScript/Strict Mode & 변수와 상수 & 자료형.md",
     "MSA/Kubernetes/Basic.md",
     "Languages/JavaScript/Operators.md",

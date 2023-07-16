@@ -230,8 +230,6 @@ for sql_file in sql_files:
 
 위의 두 스크립트를 합쳐놓은 스크립트를 작성하였습니다.
 
-Global GTID 수치 조정한 결과값을 comment_lines 변수에 할당했
-
 ```python
 import os
 import sys
