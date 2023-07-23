@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "1880262fb1d1e25b",
+        "id": "f76fbfe29856aecb",
         "type": "tabs",
         "children": [
           {
-            "id": "67db3d877f799c87",
+            "id": "ac8b21d617292150",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Languages/JavaScript/Alert & Prompt & Confirm을 이용한 상호작용.md",
+                "file": "Languages/JavaScript/Object/4. Function & This.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Languages/JavaScript/Alert & Prompt & Confirm을 이용한 상호작용.md",
+                "file": "Languages/JavaScript/Object/4. Function & This.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Languages/JavaScript/Alert & Prompt & Confirm을 이용한 상호작용.md",
+                "file": "Languages/JavaScript/Object/4. Function & This.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Languages/JavaScript/Alert & Prompt & Confirm을 이용한 상호작용.md"
+                "file": "Languages/JavaScript/Object/4. Function & This.md"
               }
             }
           }
@@ -146,12 +146,17 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "67db3d877f799c87",
+  "active": "ac8b21d617292150",
   "lastOpenFiles": [
-    "Error Handling/MySQL/Mysql 1227 ERROR.md",
-    "Languages/JavaScript/Object.md",
-    "Languages/JavaScript/Nullish 병합 연산자.md",
+    "Languages/JavaScript/Object/3. Garbage Collection.md",
+    "Languages/JavaScript/Object/4. Function & This.md",
+    "Languages/JavaScript/Object/2. 참조에 의한 객체 복사.md",
+    "Languages/JavaScript/Object/1. Object.md",
     "Languages/JavaScript/Strict Mode & 변수와 상수 & 자료형.md",
+    "Languages/JavaScript/Object",
+    "Languages/JavaScript/Alert & Prompt & Confirm을 이용한 상호작용.md",
+    "Error Handling/MySQL/Mysql 1227 ERROR.md",
+    "Languages/JavaScript/Nullish 병합 연산자.md",
     "MSA/Kubernetes/Basic.md",
     "Languages/JavaScript/Operators.md",
     "Languages/JavaScript/Type Conversion (Primitive Type Only).md",
@@ -171,18 +176,13 @@
     "Settings/imojii.md",
     "Settings",
     "Project Documents/Document/개발환경 세팅 & 가이드 3 (프로젝트 설계).md",
-    "Project Documents/Document/개발환경 세팅 & 가이드 2 (SRS 개념).md",
-    "Project Documents/Document/개발환경 세팅 & 가이드 - 1.md",
-    "Project Documents/Document/Agile.md",
     "Project Documents/Document",
     "Project Documents",
-    "MSA/Kubernetes/StatefulSet.md",
     "MSA/Kubernetes",
     "MSA/gRPC",
     "MSA",
     "Management & Tool/IntelliJ",
     "Management & Tool/Git",
-    "Management & Tool",
-    "Languages/Kotlin/Kotest"
+    "Management & Tool"
   ]
 }
