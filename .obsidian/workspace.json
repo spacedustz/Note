@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Error Handling/MySQL/Mysql 1227 ERROR.md",
+                "file": "Languages/JavaScript/Alert & Prompt & Confirm을 이용한 상호작용.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Error Handling/MySQL/Mysql 1227 ERROR.md",
+                "file": "Languages/JavaScript/Alert & Prompt & Confirm을 이용한 상호작용.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Error Handling/MySQL/Mysql 1227 ERROR.md",
+                "file": "Languages/JavaScript/Alert & Prompt & Confirm을 이용한 상호작용.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Error Handling/MySQL/Mysql 1227 ERROR.md"
+                "file": "Languages/JavaScript/Alert & Prompt & Confirm을 이용한 상호작용.md"
               }
             }
           }
@@ -148,13 +148,13 @@
   },
   "active": "67db3d877f799c87",
   "lastOpenFiles": [
+    "Error Handling/MySQL/Mysql 1227 ERROR.md",
     "Languages/JavaScript/Object.md",
     "Languages/JavaScript/Nullish 병합 연산자.md",
     "Languages/JavaScript/Strict Mode & 변수와 상수 & 자료형.md",
     "MSA/Kubernetes/Basic.md",
     "Languages/JavaScript/Operators.md",
     "Languages/JavaScript/Type Conversion (Primitive Type Only).md",
-    "Error Handling/MySQL/Mysql 1227 ERROR.md",
     "Database/QueryDSL/QueryProjection.md",
     "Database/QueryDSL/Generated.md",
     "Database/QueryDSL/Basic.md",
