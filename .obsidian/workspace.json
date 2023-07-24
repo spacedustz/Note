@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "FrameWorks/Spring/채팅방구현/1. 기술스택 선정.md",
+                "file": "FrameWorks/Spring/채팅방구현/2. Kafka 설치 & MongoDB & Stomp 설정.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "FrameWorks/Spring/채팅방구현/1. 기술스택 선정.md",
+                "file": "FrameWorks/Spring/채팅방구현/2. Kafka 설치 & MongoDB & Stomp 설정.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "FrameWorks/Spring/채팅방구현/1. 기술스택 선정.md",
+                "file": "FrameWorks/Spring/채팅방구현/2. Kafka 설치 & MongoDB & Stomp 설정.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "FrameWorks/Spring/채팅방구현/1. 기술스택 선정.md"
+                "file": "FrameWorks/Spring/채팅방구현/2. Kafka 설치 & MongoDB & Stomp 설정.md"
               }
             }
           }
@@ -149,6 +149,7 @@
   "active": "9c28e59608a9f859",
   "lastOpenFiles": [
     "FrameWorks/Spring/채팅방구현/1. 기술스택 선정.md",
+    "FrameWorks/Spring/채팅방구현/2. Kafka 설치 & MongoDB & Stomp 설정.md",
     "FrameWorks/Spring/채팅방구현",
     "Languages/JavaScript/Object/6. Optional Chaining.md",
     "Languages/JavaScript/Object/5. new 연산자 & 생성자 함수.md",
@@ -175,7 +176,6 @@
     "Database/QueryDSL/Boolean Builder.md",
     "Languages/JavaScript/Function.md",
     "Languages/JavaScript/Function.md",
-    "Languages/JavaScript/Condition.md",
     "Settings",
     "Project Documents/Document",
     "Project Documents",
