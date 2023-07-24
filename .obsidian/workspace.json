@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Languages/JavaScript/Object/4. Function & This.md",
+                "file": "Languages/JavaScript/Object/5. new 연산자 & 생성자 함수.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Languages/JavaScript/Object/4. Function & This.md",
+                "file": "Languages/JavaScript/Object/5. new 연산자 & 생성자 함수.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Languages/JavaScript/Object/4. Function & This.md",
+                "file": "Languages/JavaScript/Object/5. new 연산자 & 생성자 함수.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Languages/JavaScript/Object/4. Function & This.md"
+                "file": "Languages/JavaScript/Object/5. new 연산자 & 생성자 함수.md"
               }
             }
           }
@@ -148,8 +148,14 @@
   },
   "active": "ac8b21d617292150",
   "lastOpenFiles": [
-    "Languages/JavaScript/Object/3. Garbage Collection.md",
     "Languages/JavaScript/Object/4. Function & This.md",
+    "Languages/JavaScript/Object/5. new 연산자 & 생성자 함수.md",
+    "Books/딥러닝을 위한 수학/2부/머신러닝 모델.md",
+    "Books/딥러닝을 위한 수학/2부/머신러닝 분류 모델.md",
+    "Books/딥러닝을 위한 수학/2부/머신러닝과 딥러닝에서 수학이 필요한 이유.md",
+    "Books/딥러닝을 위한 수학/2부/손실함수와 경사하강법.md",
+    "Books/딥러닝을 위한 수학/3부/함수/함수.md",
+    "Languages/JavaScript/Object/3. Garbage Collection.md",
     "Languages/JavaScript/Object/2. 참조에 의한 객체 복사.md",
     "Languages/JavaScript/Object/1. Object.md",
     "Languages/JavaScript/Strict Mode & 변수와 상수 & 자료형.md",
@@ -169,13 +175,7 @@
     "Languages/JavaScript/Condition.md",
     "Data Handling/개념/Algorithm/Dynamic Programming.md",
     "Settings/Typora Settings.md",
-    "Settings/RoadMap.md",
-    "Settings/Prime College.md",
-    "Settings/Obsidian Setting.md",
-    "Settings/Mac Settings.md",
-    "Settings/imojii.md",
     "Settings",
-    "Project Documents/Document/개발환경 세팅 & 가이드 3 (프로젝트 설계).md",
     "Project Documents/Document",
     "Project Documents",
     "MSA/Kubernetes",
