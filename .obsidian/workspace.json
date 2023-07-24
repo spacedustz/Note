@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "f76fbfe29856aecb",
+        "id": "69edaa38d5cb2b4a",
         "type": "tabs",
         "children": [
           {
-            "id": "ac8b21d617292150",
+            "id": "9c28e59608a9f859",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "FrameWorks/Spring/채팅방구현/1. 기술스택 선정.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "FrameWorks/Spring/채팅방구현/1. 기술스택 선정.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "FrameWorks/Spring/채팅방구현/1. 기술스택 선정.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "FrameWorks/Spring/채팅방구현/1. 기술스택 선정.md"
+              }
             }
           }
         ]
@@ -138,8 +146,10 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "ac8b21d617292150",
+  "active": "9c28e59608a9f859",
   "lastOpenFiles": [
+    "FrameWorks/Spring/채팅방구현/1. 기술스택 선정.md",
+    "FrameWorks/Spring/채팅방구현",
     "Languages/JavaScript/Object/6. Optional Chaining.md",
     "Languages/JavaScript/Object/5. new 연산자 & 생성자 함수.md",
     "Languages/JavaScript/Object/4. Function & This.md",
@@ -166,7 +176,6 @@
     "Languages/JavaScript/Function.md",
     "Languages/JavaScript/Function.md",
     "Languages/JavaScript/Condition.md",
-    "Data Handling/개념/Algorithm/Dynamic Programming.md",
     "Settings",
     "Project Documents/Document",
     "Project Documents",
@@ -174,7 +183,6 @@
     "MSA/gRPC",
     "MSA",
     "Management & Tool/IntelliJ",
-    "Management & Tool/Git",
-    "Management & Tool"
+    "Management & Tool/Git"
   ]
 }
