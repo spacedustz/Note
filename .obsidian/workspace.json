@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "FrameWorks/Vue/Basic.md",
+                "file": "FrameWorks/Vue/2. Vue를 이용한 DOM 상호작용.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "FrameWorks/Vue/Basic.md",
+                "file": "FrameWorks/Vue/2. Vue를 이용한 DOM 상호작용.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "FrameWorks/Vue/Basic.md",
+                "file": "FrameWorks/Vue/2. Vue를 이용한 DOM 상호작용.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "FrameWorks/Vue/Basic.md"
+                "file": "FrameWorks/Vue/2. Vue를 이용한 DOM 상호작용.md"
               }
             }
           }
@@ -148,8 +148,9 @@
   },
   "active": "9c28e59608a9f859",
   "lastOpenFiles": [
+    "FrameWorks/Vue/1. Basic.md",
+    "FrameWorks/Vue/2. Vue를 이용한 DOM 상호작용.md",
     "Languages/Java/자바의정석/Input & Output.md",
-    "FrameWorks/Vue/Basic.md",
     "FrameWorks/Vue",
     "FrameWorks/Spring/채팅방구현/2. Kafka 설치 & MongoDB & Stomp 설정.md",
     "Languages/Java/자바의정석",
@@ -177,7 +178,6 @@
     "Database/QueryDSL/QueryProjection.md",
     "Database/QueryDSL/Generated.md",
     "Database/QueryDSL/Basic.md",
-    "Database/QueryDSL/Boolean Builder.md",
     "Settings",
     "Project Documents/Document",
     "Project Documents",
