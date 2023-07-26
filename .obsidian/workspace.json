@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Languages/Java/자바의정석/Input & Output.md",
+                "file": "FrameWorks/Vue/Basic.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Languages/Java/자바의정석/Input & Output.md",
+                "file": "FrameWorks/Vue/Basic.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Languages/Java/자바의정석/Input & Output.md",
+                "file": "FrameWorks/Vue/Basic.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Languages/Java/자바의정석/Input & Output.md"
+                "file": "FrameWorks/Vue/Basic.md"
               }
             }
           }
@@ -148,8 +148,10 @@
   },
   "active": "9c28e59608a9f859",
   "lastOpenFiles": [
-    "FrameWorks/Spring/채팅방구현/2. Kafka 설치 & MongoDB & Stomp 설정.md",
     "Languages/Java/자바의정석/Input & Output.md",
+    "FrameWorks/Vue/Basic.md",
+    "FrameWorks/Vue",
+    "FrameWorks/Spring/채팅방구현/2. Kafka 설치 & MongoDB & Stomp 설정.md",
     "Languages/Java/자바의정석",
     "FrameWorks/Spring/채팅방구현/1. 기술스택 선정.md",
     "FrameWorks/Spring/채팅방구현",
@@ -176,13 +178,11 @@
     "Database/QueryDSL/Generated.md",
     "Database/QueryDSL/Basic.md",
     "Database/QueryDSL/Boolean Builder.md",
-    "Languages/JavaScript/Function.md",
     "Settings",
     "Project Documents/Document",
     "Project Documents",
     "MSA/Kubernetes",
     "MSA/gRPC",
-    "MSA",
-    "Management & Tool/IntelliJ"
+    "MSA"
   ]
 }
