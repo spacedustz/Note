@@ -13,24 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "FrameWorks/Vue/1. Basic.md",
+                "file": "FrameWorks/Vue/2. Vue를 이용한 DOM 상호작용.md",
                 "mode": "source",
                 "source": false
               }
             }
-          },
-          {
-            "id": "16a59e544c8aa6e7",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.3.5"
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -96,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "FrameWorks/Vue/1. Basic.md",
+                "file": "FrameWorks/Vue/2. Vue를 이용한 DOM 상호작용.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "FrameWorks/Vue/1. Basic.md",
+                "file": "FrameWorks/Vue/2. Vue를 이용한 DOM 상호작용.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "FrameWorks/Vue/1. Basic.md"
+                "file": "FrameWorks/Vue/2. Vue를 이용한 DOM 상호작용.md"
               }
             }
           }
@@ -157,10 +146,10 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "16a59e544c8aa6e7",
+  "active": "9c28e59608a9f859",
   "lastOpenFiles": [
-    "FrameWorks/Vue/2. Vue를 이용한 DOM 상호작용.md",
     "FrameWorks/Vue/1. Basic.md",
+    "FrameWorks/Vue/2. Vue를 이용한 DOM 상호작용.md",
     "Languages/Java/자바의정석/Input & Output.md",
     "FrameWorks/Vue",
     "FrameWorks/Spring/채팅방구현/2. Kafka 설치 & MongoDB & Stomp 설정.md",
