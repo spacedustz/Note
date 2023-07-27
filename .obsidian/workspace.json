@@ -18,8 +18,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "16a59e544c8aa6e7",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.3.5"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -146,7 +157,7 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "9c28e59608a9f859",
+  "active": "16a59e544c8aa6e7",
   "lastOpenFiles": [
     "FrameWorks/Vue/2. Vue를 이용한 DOM 상호작용.md",
     "FrameWorks/Vue/1. Basic.md",
