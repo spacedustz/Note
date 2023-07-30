@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "69edaa38d5cb2b4a",
+        "id": "77cf4cb32c4f27a4",
         "type": "tabs",
         "children": [
           {
-            "id": "9c28e59608a9f859",
+            "id": "60c6b86bf6d224da",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Languages/Java/Basic/객체지향 2.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Languages/Java/Basic/객체지향 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Languages/Java/Basic/객체지향 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Languages/Java/Basic/객체지향 2.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -146,8 +138,9 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "9c28e59608a9f859",
+  "active": "60c6b86bf6d224da",
   "lastOpenFiles": [
+    "Languages/Java/Basic/객체지향 2.md",
     "FrameWorks/Vue/2. Vue를 이용한 DOM 상호작용.md",
     "FrameWorks/Vue/3. Events.md",
     "FrameWorks/Vue/1. Basic.md",
@@ -177,7 +170,6 @@
     "Languages/JavaScript/Operators.md",
     "Languages/JavaScript/Type Conversion (Primitive Type Only).md",
     "Database/QueryDSL/QueryProjection.md",
-    "Database/QueryDSL/Generated.md",
     "Settings",
     "Project Documents/Document",
     "Project Documents",
