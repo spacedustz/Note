@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "FrameWorks/Vue/4. Dynimic Styling.md",
+                "file": "FrameWorks/Vue/5. Conditional Rendering.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "FrameWorks/Vue/4. Dynimic Styling.md",
+                "file": "FrameWorks/Vue/5. Conditional Rendering.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "FrameWorks/Vue/4. Dynimic Styling.md",
+                "file": "FrameWorks/Vue/5. Conditional Rendering.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "FrameWorks/Vue/4. Dynimic Styling.md"
+                "file": "FrameWorks/Vue/5. Conditional Rendering.md"
               }
             }
           }
@@ -148,8 +148,9 @@
   },
   "active": "60c6b86bf6d224da",
   "lastOpenFiles": [
-    "FrameWorks/Vue/3. Events.md",
     "FrameWorks/Vue/4. Dynimic Styling.md",
+    "FrameWorks/Vue/5. Conditional Rendering.md",
+    "FrameWorks/Vue/3. Events.md",
     "Languages/Java/Basic/객체지향 2.md",
     "FrameWorks/Vue/2. Vue를 이용한 DOM 상호작용.md",
     "FrameWorks/Vue/1. Basic.md",
@@ -177,7 +178,6 @@
     "Languages/JavaScript/Nullish 병합 연산자.md",
     "MSA/Kubernetes/Basic.md",
     "Languages/JavaScript/Operators.md",
-    "Languages/JavaScript/Type Conversion (Primitive Type Only).md",
     "Settings",
     "Project Documents/Document",
     "Project Documents",
