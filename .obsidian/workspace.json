@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "FrameWorks/Vue/5. Conditional Rendering.md",
+                "file": "FrameWorks/Vue/6. Monster Slayer Game.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "f5151c0da72edc1c",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "FrameWorks/Vue/5. Conditional Rendering.md",
+                "file": "FrameWorks/Vue/6. Monster Slayer Game.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "FrameWorks/Vue/5. Conditional Rendering.md",
+                "file": "FrameWorks/Vue/6. Monster Slayer Game.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "FrameWorks/Vue/5. Conditional Rendering.md"
+                "file": "FrameWorks/Vue/6. Monster Slayer Game.md"
               }
             }
           }
@@ -149,9 +148,10 @@
   },
   "active": "60c6b86bf6d224da",
   "lastOpenFiles": [
+    "FrameWorks/Vue/5. Conditional Rendering.md",
+    "FrameWorks/Vue/6. Monster Slayer Game.md",
     "FrameWorks/Vue/3. Events.md",
     "FrameWorks/Vue/4. Dynimic Styling.md",
-    "FrameWorks/Vue/5. Conditional Rendering.md",
     "Languages/Java/Basic/객체지향 2.md",
     "FrameWorks/Vue/2. Vue를 이용한 DOM 상호작용.md",
     "FrameWorks/Vue/1. Basic.md",
@@ -178,7 +178,6 @@
     "Error Handling/MySQL/Mysql 1227 ERROR.md",
     "Languages/JavaScript/Nullish 병합 연산자.md",
     "MSA/Kubernetes/Basic.md",
-    "Languages/JavaScript/Operators.md",
     "Settings",
     "Project Documents/Document",
     "Project Documents",
