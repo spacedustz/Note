@@ -18,8 +18,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "d90c5fa3ae84d73f",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.3.7"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -146,7 +157,7 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "60c6b86bf6d224da",
+  "active": "d90c5fa3ae84d73f",
   "lastOpenFiles": [
     "FrameWorks/Vue/6. Monster Slayer Game.md",
     "FrameWorks/Vue/5. Conditional Rendering.md",
