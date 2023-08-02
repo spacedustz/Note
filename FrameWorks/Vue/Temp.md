@@ -59,4 +59,4 @@ Vue.createApp().component().mount()
 
 컴포넌트는 기본적으로 Custom HTML 요소이고 2개의 파라미터를 받는다.
 
-첫번쨰 파라미터는 식별자를 받
+첫번쨰 파라미터는 식별자를 받으며, 무조건 `-` 과 두 단어로 이어진 Custom HTML Tag를 받는다.
