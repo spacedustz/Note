@@ -55,9 +55,12 @@
 
 ```javascript
 Vue.createApp({
-
+	data() ...
+	
 }).component('custom-name', {
-	data{}
+	data() ...
+	template: 
+
 }).mount()
 ```
 
