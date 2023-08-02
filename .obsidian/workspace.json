@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Languages/Kotlin/CSV to Entity (Pure Kotlin).md",
+                "file": "FrameWorks/Vue/무제 파일.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Languages/Kotlin/CSV to Entity (Pure Kotlin).md",
+                "file": "FrameWorks/Vue/무제 파일.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Languages/Kotlin/CSV to Entity (Pure Kotlin).md",
+                "file": "FrameWorks/Vue/무제 파일.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Languages/Kotlin/CSV to Entity (Pure Kotlin).md"
+                "file": "FrameWorks/Vue/무제 파일.md"
               }
             }
           }
@@ -161,8 +161,9 @@
   },
   "active": "d90c5fa3ae84d73f",
   "lastOpenFiles": [
-    "Languages/HTML & CSS/Style Sheet/CSS 기본.md",
     "Languages/Kotlin/CSV to Entity (Pure Kotlin).md",
+    "FrameWorks/Vue/무제 파일.md",
+    "Languages/HTML & CSS/Style Sheet/CSS 기본.md",
     "FrameWorks/Vue/6. Monster Slayer Game.md",
     "FrameWorks/Vue/5. Conditional Rendering.md",
     "FrameWorks/Vue/3. Events.md",
@@ -190,7 +191,6 @@
     "Languages/JavaScript/Strict Mode & 변수와 상수 & 자료형.md",
     "Languages/JavaScript/Object",
     "Languages/JavaScript/Alert & Prompt & Confirm을 이용한 상호작용.md",
-    "Error Handling/MySQL/Mysql 1227 ERROR.md",
     "Settings",
     "Project Documents/Document",
     "Project Documents",
