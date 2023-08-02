@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "FrameWorks/Vue/Temp.md",
+                "file": "FrameWorks/Vue/Temp/Vue CLI.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "f5151c0da72edc1c",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "FrameWorks/Vue/Temp.md",
+                "file": "FrameWorks/Vue/Temp/Vue CLI.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "FrameWorks/Vue/Temp.md",
+                "file": "FrameWorks/Vue/Temp/Vue CLI.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "FrameWorks/Vue/Temp.md"
+                "file": "FrameWorks/Vue/Temp/Vue CLI.md"
               }
             }
           }
@@ -149,8 +148,10 @@
   },
   "active": "de1106daae61b9a4",
   "lastOpenFiles": [
+    "FrameWorks/Vue/Temp/Temp.md",
+    "FrameWorks/Vue/Temp/Vue CLI.md",
+    "FrameWorks/Vue/Temp",
     "Languages/Kotlin/CSV to Entity (Pure Kotlin).md",
-    "FrameWorks/Vue/Temp.md",
     "Languages/HTML & CSS/Style Sheet/CSS 기본.md",
     "FrameWorks/Vue/6. Monster Slayer Game.md",
     "FrameWorks/Vue/5. Conditional Rendering.md",
@@ -178,12 +179,10 @@
     "Languages/JavaScript/Object/1. Object.md",
     "Languages/JavaScript/Strict Mode & 변수와 상수 & 자료형.md",
     "Languages/JavaScript/Object",
-    "Languages/JavaScript/Alert & Prompt & Confirm을 이용한 상호작용.md",
     "Settings",
     "Project Documents/Document",
     "Project Documents",
     "MSA/Kubernetes",
-    "MSA/gRPC",
-    "MSA"
+    "MSA/gRPC"
   ]
 }
