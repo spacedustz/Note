@@ -67,4 +67,4 @@ Vue.createApp().component().mount()
 
 두번째 파라미터는 객체를 받는다.
 
-이 두번째 파라미터는 
+이 두번째 파라미터는 component()를 호출한 Vue 앱과 연결된다.
