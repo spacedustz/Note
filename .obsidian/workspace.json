@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "FrameWorks/Vue/Temp/Vue CLI.md",
+                "file": "Languages/Kotlin/Kotlin-JPA-Entity.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "FrameWorks/Vue/Temp/Vue CLI.md",
+                "file": "Languages/Kotlin/Kotlin-JPA-Entity.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "FrameWorks/Vue/Temp/Vue CLI.md",
+                "file": "Languages/Kotlin/Kotlin-JPA-Entity.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "FrameWorks/Vue/Temp/Vue CLI.md"
+                "file": "Languages/Kotlin/Kotlin-JPA-Entity.md"
               }
             }
           }
@@ -148,8 +148,8 @@
   },
   "active": "de1106daae61b9a4",
   "lastOpenFiles": [
-    "FrameWorks/Vue/Temp/Temp.md",
     "FrameWorks/Vue/Temp/Vue CLI.md",
+    "FrameWorks/Vue/Temp/Temp.md",
     "FrameWorks/Vue/Temp",
     "Languages/Kotlin/CSV to Entity (Pure Kotlin).md",
     "Languages/HTML & CSS/Style Sheet/CSS 기본.md",
