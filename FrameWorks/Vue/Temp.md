@@ -1,5 +1,7 @@
 ## Vue LifeCYcle
 
+> 생성
+
 1. createApp({})
 2. beforeCreate()
 3. created() - 4번으로 가는 과정 사이에서 템플릿 컴파일이 일어남
@@ -9,14 +11,14 @@
 
 <br>
 
-## If Data Changed
+> If Data Changed
 
 1. beforeUpdate()
 2. updated()
 
 <br>
 
-## Instance Unmounted
+>  Instance Unmounted
 
 1. beforeUnmount()
 2. unmounted()
@@ -26,7 +28,13 @@
 
 이 Hook들은 Vue 앱의 데이터 객체 내부에서 사용 가능하다.
 
+**생성**
+
 - beforeCreate()
 - created()
 - beforeMount()
-- mounted() - 이때부터 Vue 앱이 화면에 마운트됨, 내부적 초기화, 데이터 처리 완
+- mounted() - 이때부터 Vue 앱이 화면에 마운트됨, 내부적 초기화, 데이터 처리 완료
+
+<br>
+
+**업데이트**
