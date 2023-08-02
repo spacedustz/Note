@@ -8,30 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "60c6b86bf6d224da",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Settings/Mac Settings.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d90c5fa3ae84d73f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "FrameWorks/Vue/Temp.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "de1106daae61b9a4",
             "type": "leaf",
             "state": {
@@ -43,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
