@@ -18,7 +18,7 @@
 
 <br>
 
-> Instance Unmounted
+> Unmount
 
 1. beforeUnmount()
 2. unmounted()
@@ -41,3 +41,10 @@
 
 - beforeUpdate()
 - updated() - 이때부터 변경사항이 반영
+
+<br>
+
+> Unmount
+
+- beforeUnmount()
+- unmounted()
