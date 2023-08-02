@@ -32,7 +32,9 @@
 
 > Vue CLI 설치
 
-```
+```bash
 npm install -g @vue/cli
+
+# 
 ```
 
