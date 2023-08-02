@@ -57,7 +57,7 @@
 Vue.createApp({
 	data() ...
 	
-}).component('custom-name', {
+}).component('second-app', {
 	data() ...
 	template: `
 		HTML 코드 복붙
@@ -84,7 +84,7 @@ Vue.createApp({
 
 메인 Vue에서 사용하던 HTML 템플릿을 전부 가져와서 template의 백틱 사이에 복붙해줍니다.
 
-그리고 다시 HTML로 가서 컴포넌트의 식별자인 `<custom-name></custom-name>`을 넣어주면 됩니다.
+그리고 다시 HTML로 가서 컴포넌트의 식별자인 `<second></custom-name>`을 넣어주면 됩니다.
 
 
 
