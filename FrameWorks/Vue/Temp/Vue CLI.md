@@ -41,6 +41,10 @@ vue create {App-Name}
 npm run serve
 ```
 
+vue create로 프로젝트를 생성했으면 `npm install`을 할 필요없이 내부적으로 이미 실행이 되었기 때문에
+
+`node_modules` 디렉토리가 이미 생성이 되어있다.
+
 <br>
 
 > 프로젝트 생성 완료
