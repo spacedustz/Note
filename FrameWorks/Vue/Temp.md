@@ -59,7 +59,9 @@ Vue.createApp({
 	
 }).component('custom-name', {
 	data() ...
-	template: 
+	template: `
+		HTML 코드 복붙
+		`
 
 }).mount()
 ```
