@@ -40,3 +40,4 @@
 > Update
 
 - beforeUpdate()
+- updated()
