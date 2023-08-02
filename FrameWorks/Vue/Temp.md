@@ -16,9 +16,15 @@
 
 <br>
 
-#
+## Instance Unmounted
+
+1. beforeUnmount()
+2. unmounted()
 
 ---
 ## Vue Hooks
 
-- before
+- beforeCreate()
+- created()
+- beforeMount()
+- mounted()
