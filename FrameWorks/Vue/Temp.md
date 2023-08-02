@@ -1,6 +1,6 @@
 ## Vue LifeCYcle
 
-> 생성
+> Create
 
 1. createApp({})
 2. beforeCreate()
@@ -18,7 +18,7 @@
 
 <br>
 
->  Instance Unmounted
+> Instance Unmounted
 
 1. beforeUnmount()
 2. unmounted()
@@ -28,7 +28,7 @@
 
 이 Hook들은 Vue 앱의 데이터 객체 내부에서 사용 가능하다.
 
-**생성**
+> Create
 
 - beforeCreate()
 - created()
@@ -37,4 +37,6 @@
 
 <br>
 
-**업데이트**
+> Update
+
+- beforeUpdate()
