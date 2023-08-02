@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Languages/Kotlin/Kotlin-JPA-Entity.md",
+                "file": "Languages/Kotlin/CSV to Entity (Pure Kotlin).md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Languages/Kotlin/Kotlin-JPA-Entity.md",
+                "file": "Languages/Kotlin/CSV to Entity (Pure Kotlin).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Languages/Kotlin/Kotlin-JPA-Entity.md",
+                "file": "Languages/Kotlin/CSV to Entity (Pure Kotlin).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Languages/Kotlin/Kotlin-JPA-Entity.md"
+                "file": "Languages/Kotlin/CSV to Entity (Pure Kotlin).md"
               }
             }
           }
@@ -148,6 +148,7 @@
   },
   "active": "de1106daae61b9a4",
   "lastOpenFiles": [
+    "Languages/Kotlin/Kotlin-JPA-Entity.md",
     "FrameWorks/Vue/Temp/Vue CLI.md",
     "FrameWorks/Vue/Temp/Temp.md",
     "FrameWorks/Vue/Temp",
@@ -177,7 +178,6 @@
     "Languages/JavaScript/Object/3. Garbage Collection.md",
     "Languages/JavaScript/Object/2. 참조에 의한 객체 복사.md",
     "Languages/JavaScript/Object/1. Object.md",
-    "Languages/JavaScript/Strict Mode & 변수와 상수 & 자료형.md",
     "Languages/JavaScript/Object",
     "Settings",
     "Project Documents/Document",
