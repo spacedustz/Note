@@ -4,10 +4,25 @@
 
 **Windows**
 
+```json
+"scripts": {
+	"serve": "set NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service serve",
+	"build": "set NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service build",
+	"lint": "set NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service lint"
+},
 ```
-1. "scripts": {
-2. "serve": "set NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service serve",
-3. "build": "set NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service build",
-4. "lint": "set NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service lint"
-5. },
+
+<br>
+
+**Mac or Linux**
+
+```json
+"scripts": {
+	"serve": "export NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service serve",
+	"build": "export NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service build",
+	"lint": "export NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service lint"
+},
 ```
+
+<br>
+
