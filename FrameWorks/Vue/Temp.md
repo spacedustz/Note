@@ -84,7 +84,9 @@ Vue.createApp({
 
 메인 Vue에서 사용하던 HTML 템플릿을 전부 가져와서 template의 백틱 사이에 복붙해줍니다.
 
-그리고 다시 HTML로 가서 컴포넌트의 식별자인 `<second></custom-name>`을 넣어주면 됩니다.
+그리고 다시 HTML로 가서 컴포넌트의 식별자인 `<second-app></second-app>`을 넣어주면 됩니다.
 
+<br>
 
+이제 저 커스텀 태그로 인해 수 많은 미니 Vue App의 복제와 캡슐화를 할 수 있습니다.
 
