@@ -24,7 +24,9 @@
 ---
 ## Vue Hooks
 
+이 Hook들은 Vue 앱의 데이터 객체 내부에서 사용 가능하다.
+
 - beforeCreate()
 - created()
 - beforeMount()
-- mounted() - 이때부터 Vue 앱이 화면에 마운트됨
+- mounted() - 이때부터 Vue 앱이 화면에 마운트됨, 내부적 초기화, 데이터 처리 완
