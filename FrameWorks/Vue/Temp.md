@@ -66,3 +66,5 @@ Vue.createApp().component().mount()
 <br>
 
 두번째 파라미터는 객체를 받는다.
+
+이 두번째 파라미터는 
