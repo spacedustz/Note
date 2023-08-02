@@ -40,4 +40,4 @@
 > Update
 
 - beforeUpdate()
-- updated()
+- updated() - 이때부터 변경사항이 반영
