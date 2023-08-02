@@ -54,7 +54,11 @@
 ## Vue Component
 
 ```javascript
-Vue.createApp().component().mount()
+Vue.createApp({
+
+}).component('custom-name', {
+	data{}
+}).mount()
 ```
 
 컴포넌트는 기본적으로 Custom HTML 요소이고 2개의 파라미터를 받는다.
@@ -71,4 +75,4 @@ Vue.createApp().component().mount()
 
 <br>
 
-그리고 이 컴포넌트도 결국 Vue App이기 때문에 당연히 템플릿도 마운트 해줘야 합니다.
+그리고 이 컴포넌트도 결국 새로운 Vue App이기 때문에 당연히 자체 템플릿도 마운트 해줘야 합니다.
