@@ -27,4 +27,4 @@
 - beforeCreate()
 - created()
 - beforeMount()
-- mounted()
+- mounted() - 이때부터 Vue 앱이 화면에 마운트됨
