@@ -35,6 +35,7 @@
 ```bash
 npm install -g @vue/cli
 
-# 
+# 프로젝트를 시작할 디렉토리로 이동
+vue create {App-Name}
 ```
 
