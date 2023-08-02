@@ -41,3 +41,8 @@ vue create {App-Name}
 npm run serve
 ```
 
+<br>
+
+> 프로젝트 생성 완료
+
+- package.json : 스프링에서 build.gradle 같은 파일로 의존성을 설정하거나 라이브러리를 불러올 수 있다.
