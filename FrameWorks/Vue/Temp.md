@@ -82,5 +82,9 @@ Vue.createApp({
 
 그리고 이 컴포넌트도 결국 새로운 Vue App이기 때문에 당연히 자체 템플릿도 마운트 해줘야 합니다.
 
-메인 Vue에서 사용하던 HTML 템플릿을 전부 가져와서 template의 '``' 백틱 사이에 복붙해줍니다.
+메인 Vue에서 사용하던 HTML 템플릿을 전부 가져와서 template의 백틱 사이에 복붙해줍니다.
+
+그리고 다시 HTML로 가서 컴포넌트의 식별자인 `<custom-name></custom-name>`을 넣어주면 됩니다.
+
+
 
