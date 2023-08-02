@@ -7,6 +7,17 @@
 5. mounted() - 이때부터 화면에 보이기 시작
 6. Mounted Vue Instance
 
+<br>
+
+## If Data Changed
+
+1. beforeUpdate()
+2. updated()
+
+<br>
+
+#
+
 ---
 ## Vue Hooks
 
