@@ -26,3 +26,7 @@
 
 <br>
 
+> Node.js LTS 버전 설치
+
+<br>
+
