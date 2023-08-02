@@ -53,3 +53,6 @@
 
 ## Vue Component
 
+```javascript
+app.c
+```
