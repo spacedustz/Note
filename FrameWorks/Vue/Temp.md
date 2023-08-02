@@ -48,3 +48,8 @@
 
 - beforeUnmount()
 - unmounted()
+
+---
+
+## Vue Component
+
