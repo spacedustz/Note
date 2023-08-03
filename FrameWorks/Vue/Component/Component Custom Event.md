@@ -18,8 +18,8 @@ methods: {
 // -----------------------
 
 methods: {
-	toogleFavorite() {
-		this.$emit();
+	toggleFavorite() {  
+	  this.$emit('toggle-favorite');  
 	}
 }
 ```
@@ -43,7 +43,15 @@ emit의 첫번쨰 파라미터엔 Custom Event의 이름을 지정할 수 있는
 값으로는 -> 부모 App의 Method에 함수를 만들어서 지정해줍니다. (여기선 toogleFavoriteStatus 함수를 만듬)
 
 ```javascript
-@toogle-favorite="toogleFavoriteStatus"
+<friend-contact  
+    v-for="friend in friends"  
+    key="friend.id"  
+    :name="friend.name"  
+    :phone-number="friend.phone"  
+    :email-address="friend.email"  
+    :is-favorite="true">  
+    @toggle-favorite=""  
+</friend-contact>
 ```
 
 <br>
