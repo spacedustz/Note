@@ -13,21 +13,30 @@
 
 등록하지 않은 프로퍼티를 컴포넌트 내부에 설정하거나 등록하지 않은 이벤트를 컴포넌트 내부에서 수신할 수 있습니다.
 
+<br>
+
 예를 들어:
 
 **BaseButton.vue**
 
-1. <template>  
-2.   <button>
-3.     <slot></slot>
-4.   </button>
-5. </template>
+```html
+<template>
+	<button>
+		<slot></slot>
+	</button>
+</template>
 
-7. <script>export default {}</script>
+<script>export default {}</script>
+```
 
 이 버튼 컴포넌트(기본 스타일을 가진 버튼을 설정하기 위한 목적으로 사용 가능)에는 등록될 **특별한 프로퍼티가 없습니다**.
 
-1. <base-button type="submit" @click="doSomething">Click me</base-button>
+<b
+
+
+```html
+<base-button type="submit" @click="doSomething">Click me</base-button>
+```
 
 `BaseButton` 컴포넌트에서 `type`프로퍼티 또는 커스텀 `click`이벤트가 정의되거나 사용되지 않았습니다.
 
