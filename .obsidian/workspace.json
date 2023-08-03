@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "FrameWorks/Vue/Temp/Temp.md",
+                "file": "FrameWorks/Vue/Component/Component Custom Event.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "FrameWorks/Vue/Temp/Temp.md",
+                "file": "FrameWorks/Vue/Component/Component Custom Event.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "FrameWorks/Vue/Temp/Temp.md",
+                "file": "FrameWorks/Vue/Component/Component Custom Event.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "FrameWorks/Vue/Temp/Temp.md"
+                "file": "FrameWorks/Vue/Component/Component Custom Event.md"
               }
             }
           }
@@ -148,8 +148,10 @@
   },
   "active": "60c6b86bf6d224da",
   "lastOpenFiles": [
-    "FrameWorks/Vue/Component/Basic.md",
     "FrameWorks/Vue/Temp/Temp.md",
+    "FrameWorks/Vue/Component/Component Custom Event.md",
+    "FrameWorks/Vue/Temp/Props.md",
+    "FrameWorks/Vue/Component/Basic.md",
     "FrameWorks/Vue/Component",
     "FrameWorks/Vue/Temp/LifeCycle.md",
     "FrameWorks/Vue/Temp/Vue CLI.md",
@@ -177,8 +179,6 @@
     "Books/딥러닝을 위한 수학/2부/머신러닝 모델.md",
     "Books/딥러닝을 위한 수학/2부/머신러닝 분류 모델.md",
     "Books/딥러닝을 위한 수학/2부/머신러닝과 딥러닝에서 수학이 필요한 이유.md",
-    "Books/딥러닝을 위한 수학/2부/손실함수와 경사하강법.md",
-    "Books/딥러닝을 위한 수학/3부/함수/함수.md",
     "Languages/JavaScript/Object",
     "Settings",
     "Project Documents/Document",
