@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "FrameWorks/Vue/Component/Component Custom Event.md",
+                "file": "FrameWorks/Vue/Component/무제 파일.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "FrameWorks/Vue/Component/Component Custom Event.md",
+                "file": "FrameWorks/Vue/Component/무제 파일.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "FrameWorks/Vue/Component/Component Custom Event.md",
+                "file": "FrameWorks/Vue/Component/무제 파일.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "FrameWorks/Vue/Component/Component Custom Event.md"
+                "file": "FrameWorks/Vue/Component/무제 파일.md"
               }
             }
           }
@@ -149,6 +149,7 @@
   "active": "60c6b86bf6d224da",
   "lastOpenFiles": [
     "FrameWorks/Vue/Component/Custom Event 정의 & 검증.md",
+    "FrameWorks/Vue/Component/무제 파일.md",
     "FrameWorks/Vue/Component/Component Custom Event.md",
     "FrameWorks/Vue/Temp/Temp.md",
     "FrameWorks/Vue/Temp/Props.md",
@@ -178,7 +179,6 @@
     "Languages/JavaScript/Object/5. new 연산자 & 생성자 함수.md",
     "Languages/JavaScript/Object/4. Function & This.md",
     "Books/딥러닝을 위한 수학/2부/머신러닝 모델.md",
-    "Books/딥러닝을 위한 수학/2부/머신러닝 분류 모델.md",
     "Languages/JavaScript/Object",
     "Settings",
     "Project Documents/Document",
