@@ -65,3 +65,37 @@ methods: {
 이렇게 하면 Component -> Parent App으로 이벤트는 발생시키지만 데이터는 전달하는건 아직 구현하지 않았습니다.
 
 `$emit`의 2번쨰 파라미터부터 들어올 값은 전부 이벤트와 함께 전달될 데이터입니다.
+
+<br>
+
+예를들어 Component의 props에 id를 추가한다고 가정해보겠습니다.
+
+```javascript
+props: {  
+  id: {  
+    type: String,  
+    required: true  
+  },  
+  name: {  
+    type: String,  
+    required: true  
+  },  
+  phoneNumber: {  
+    type: String,  
+    required: true  
+  },  
+  emailAddress: {  
+    type: String,  
+    required: true  
+  },  
+  isFavorite: {  
+    type: Boolean,  
+    required: false,  
+    default: false,  
+    // validator: function(value) {  
+    //   return value === '1' || value === '0';    // }  }
+```
+
+<br>
+
+그리고 Component의 methods의 toggleFavorite 함수에서 `$emit`
