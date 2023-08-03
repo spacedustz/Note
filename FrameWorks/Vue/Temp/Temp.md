@@ -210,5 +210,5 @@ props: {
 
 ---
 
-## Custom Event (Parent -> Child)
+## Vue Component Custom Event (Parent -> Child)
 
