@@ -148,3 +148,9 @@ props: [
 <friend-contact name="a" phone-number="1" email-address="a@a.com"></friend-contact>
 <friend-contact name="b" phone-number="2" email-address="b@b.com"></friend-contact>
 ```
+
+<br>
+
+또, Props는 Immutable하기 때문에 단방향 데이터 플로우에 위반하면 Vue App이 실행되지 않습니다.
+
+즉, Custom HTML Tag에서 데이터를 변경하면 안되고 Vu
