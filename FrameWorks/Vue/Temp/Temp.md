@@ -201,7 +201,9 @@ props: {
 	phoneNumber: {
 		type: String,
 		required: false
-		validated
+		validator: function(value) {
+			return value === '1' || value === '0';
+		}
 	}
 }
 ```
