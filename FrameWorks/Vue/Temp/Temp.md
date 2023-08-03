@@ -153,4 +153,5 @@ props: [
 
 또, Props는 Immutable하기 때문에 단방향 데이터 플로우에 위반하면 Vue App이 실행되지 않습니다.
 
-즉, Custom HTML Tag에서 데이터를 변경하면 안되고 Vu
+즉, Custom HTML Tag에서 데이터를 변경하면 안되고 부모인 Vue App에서 변경 후 Custom HTML 로 반영해야 합니다.
+
