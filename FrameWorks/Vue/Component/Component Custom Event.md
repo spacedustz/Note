@@ -133,3 +133,13 @@ methods: {
 이제 Component의 id 프로퍼티에 제공된 id를 가지고 Custom Event를 발생시킬 수 있습니다.
 
 이제 toggleFavorite 이벤트가 발생하면 추가 데이터로 id값도 같이 넘어가게 됩니다.
+
+그럼 아까 부모 App에서 만든 toggleFavoriteStatus 함수에 이벤트로 넘어온 id 값을 파라미터로 받을 수 있습니다.
+
+```javascript
+methods: {
+	toggleFavoriteStatus(friendId) {
+		
+	}
+}
+```
