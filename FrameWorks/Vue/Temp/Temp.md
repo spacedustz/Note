@@ -145,5 +145,6 @@ props: [
 <br>
 
 ```html
-<friend-contact name="a" phone-number="1"
+<friend-contact name="a" phone-number="1" email-address="a@a.com"></friend-contact>
+<friend-contact name="b" phone-number="2" email-address="b@b.com"></friend-contact>
 ```
