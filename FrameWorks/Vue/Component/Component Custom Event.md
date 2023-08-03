@@ -139,7 +139,7 @@ methods: {
 ```javascript
 methods: {
 	toggleFavoriteStatus(friendId) {
-		
+		this.friends.find(friend => friend.id === friendId);
 	}
 }
 ```
