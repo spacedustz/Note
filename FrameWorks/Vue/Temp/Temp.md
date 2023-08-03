@@ -207,3 +207,8 @@ props: {
 	}
 }
 ```
+
+---
+
+## Custom Event (Parent -> Child)
+
