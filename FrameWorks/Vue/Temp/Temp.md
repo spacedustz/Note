@@ -187,6 +187,21 @@ props: [
     
 - 심볼(Symbol)
 
-
+<br>
 
 생성자 함수(`Date`와 같은 내장된 함수 또는 커스텀 함수)도 타입이 될 수 있습니다.
+
+```javascript
+props: {
+	name: {
+		type: String,
+		required: true
+	},
+
+	phoneNumber: {
+		type: String,
+		required: false
+		validated
+	}
+}
+```
