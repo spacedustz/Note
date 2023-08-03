@@ -212,3 +212,4 @@ props: {
 
 ## Vue Component Custom Event (Parent -> Child)
 
+저번에 Component의 프로퍼티인 Props는
