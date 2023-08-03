@@ -98,4 +98,20 @@ props: {
 
 <br>
 
-그리고 Component의 methods의 toggleFavorite 함수에서 `$emit`
+그리고 Component의 methods의 toggleFavorite 함수에서 `$emit`의 데이터로 this.id 를 줄 수 있겠죠.
+
+```javascript
+methods: {  
+  toggleDetails() {  
+    this.detailsAreVisible = !this.detailsAreVisible;  
+  },  
+  toggleFavorite() {  
+    this.$emit('toggle-favorite', this.id);  
+  }  
+}
+```
+
+<br>
+
+그리고 부모 App은 이미 id가 있으니 이제 간단하게 전달할 수 있습니다.
+
