@@ -169,4 +169,8 @@ methods: {
 
 그다음 업데이트된 데이터를 컴포넌트로 다시 돌려보내서 Vue가 변경사항을 감지하고 UI를 업데이트 하게 했습니다.
 
-1. Component의 props 프로퍼타
+<br>
+
+1. Component의 props 프로퍼티들을 App.vue에서 바인딩해서 값을 넣고 되돌려줌
+2. Component에서 `$emit`을 이용해 컴포넌트 내부에서 Custom Event를 발생시킴
+3. 이벤트가 발생함으로써 `$emit(`
