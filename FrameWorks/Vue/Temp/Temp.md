@@ -208,6 +208,10 @@ props: {
 }
 ```
 
+<br>
+
+
+
 ---
 
 ## Vue Component Custom Event (Parent -> Child)
