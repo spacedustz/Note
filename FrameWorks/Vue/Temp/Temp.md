@@ -212,4 +212,6 @@ props: {
 
 ## Vue Component Custom Event (Parent -> Child)
 
-저번에 봤던 Props는 부모 App 에
+저번에 봤던 Props는 부모 App 에서 컴포넌트로 전달했지만 이번엔  컴포넌트에서 부모 App으로 데이터를 전달합니다.
+
+버튼
