@@ -148,3 +148,5 @@ methods: {
 <br>
 
 이렇게 작성하면 Component가 아닌 부모 App에서 즐겨찾기의 상태를 변경할 수 있습니다.
+
+마지막으로 Component에 추가했었던 friendIsFavorite 데이터 프로퍼티는 이제 삭제해도 됩니다.
