@@ -65,5 +65,5 @@ vue create로 프로젝트를 생성했으면 `npm install`을 할 필요없이 
 
 > assets Directory
 
-- 앱에 필요한 이미지를 추가하는 폴
+- 앱에 필요한 이미지를 추가하는 폴더
 
