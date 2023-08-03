@@ -155,3 +155,4 @@ props: [
 
 즉, Custom HTML Tag에서 데이터를 변경하면 안되고 부모인 Vue App에서 변경 후 Custom HTML 로 반영해야 합니다.
 
+그러기 위해선 Data 프로퍼티를 만들어서 초기값을 Props의 프로퍼티로 지정 후
