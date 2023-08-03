@@ -173,4 +173,5 @@ methods: {
 
 1. Component의 props 프로퍼티들을 App.vue에서 바인딩해서 값을 넣고 되돌려줌
 2. Component에서 `$emit`을 이용해 컴포넌트 내부에서 Custom Event를 발생시킴
-3. 이벤트가 발생함으로써 `$emit(`
+3. 이벤트가 발생함으로써 `$emit`의 2번째 파라미터부터 들어오는 데이터들을 다시 전달함
+4. App.vue에서 Custom Event에서
