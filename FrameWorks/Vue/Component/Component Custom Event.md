@@ -130,4 +130,6 @@ methods: {
 
 <br>
 
-이제 Component
+이제 Component의 id 프로퍼티에 제공된 id를 가지고 Custom Event를 발생시킬 수 있습니다.
+
+이제 toggleFavorite 이벤트가 발생하면 추가 데이터로 id값도 같이 넘어가게 됩니다.
