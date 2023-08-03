@@ -31,8 +31,7 @@
 
 이 버튼 컴포넌트(기본 스타일을 가진 버튼을 설정하기 위한 목적으로 사용 가능)에는 등록될 **특별한 프로퍼티가 없습니다**.
 
-<b
-
+<br>
 
 ```html
 <base-button type="submit" @click="doSomething">Click me</base-button>
