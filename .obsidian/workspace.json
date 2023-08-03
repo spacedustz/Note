@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "de1106daae61b9a4",
+            "id": "60c6b86bf6d224da",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -146,13 +146,14 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "de1106daae61b9a4",
+  "active": "60c6b86bf6d224da",
   "lastOpenFiles": [
-    "Languages/Kotlin/CSV to Entity (Pure Kotlin).md",
-    "Languages/Kotlin/Kotlin-JPA-Entity.md",
-    "FrameWorks/Vue/Temp/Vue CLI.md",
+    "Settings/Mac Settings.md",
+    "FrameWorks/Vue/Temp.md",
     "FrameWorks/Vue/Temp/Temp.md",
+    "FrameWorks/Vue/Temp/Vue CLI.md",
     "FrameWorks/Vue/Temp",
+    "Languages/Kotlin/CSV to Entity (Pure Kotlin).md",
     "Languages/HTML & CSS/Style Sheet/CSS 기본.md",
     "FrameWorks/Vue/6. Monster Slayer Game.md",
     "FrameWorks/Vue/5. Conditional Rendering.md",
@@ -177,7 +178,6 @@
     "Books/딥러닝을 위한 수학/3부/함수/함수.md",
     "Languages/JavaScript/Object/3. Garbage Collection.md",
     "Languages/JavaScript/Object/2. 참조에 의한 객체 복사.md",
-    "Languages/JavaScript/Object/1. Object.md",
     "Languages/JavaScript/Object",
     "Settings",
     "Project Documents/Document",
