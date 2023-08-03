@@ -56,4 +56,5 @@ vue create로 프로젝트를 생성했으면 `npm install`을 할 필요없이 
 
 > App.vue
 
--
+- 템플릿
+- 단일 컴포넌
