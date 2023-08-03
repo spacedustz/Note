@@ -218,3 +218,10 @@ props: {
 
 컴포넌트가 부모 App에게 무언가 알리고자 한다면 컴포넌트는 부모가 수신할 이벤트를 발생시켜야 합니다.
 
+```javascript
+methods: {
+	toogleFavorite() {
+		this.friendIsFavorite = !this.
+	}
+}
+```
