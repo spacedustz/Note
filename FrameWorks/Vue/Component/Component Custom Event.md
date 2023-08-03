@@ -168,3 +168,5 @@ methods: {
 그리고 App.vue에서 Custom Event를 수신해서 Main App의 데이터 프로퍼티가 저장된 App.vue의 데이터를 변경했습니다.
 
 그다음 업데이트된 데이터를 컴포넌트로 다시 돌려보내서 Vue가 변경사항을 감지하고 UI를 업데이트 하게 했습니다.
+
+1. Component의 props 프로퍼타
