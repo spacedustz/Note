@@ -153,7 +153,9 @@ methods: {
 
 마지막으로 Component에 추가했었던 friendIsFavorite 데이터 프로퍼티는 이제 삭제해도 됩니다.
 
-<br>
+---
+
+## 정리
 
 이렇게 단방향 데이터 플로우를 양방향 데이터 플로우로 만들었습니다.
 
@@ -163,4 +165,6 @@ methods: {
 
 <br>
 
-그리고 App.vue에서 Custom Event를 수신해서 Main App의 데이터 프로퍼티가 저장된 
+그리고 App.vue에서 Custom Event를 수신해서 Main App의 데이터 프로퍼티가 저장된 App.vue의 데이터를 변경했습니다.
+
+그다음 업데이트된 데이터를 컴포넌트로 다시 돌려보내서 Vue가 변경사항을 감지하고 UI를 업데이트 하게 했습니다.
