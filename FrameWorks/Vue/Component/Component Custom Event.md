@@ -140,7 +140,11 @@ methods: {
 methods: {
 	toggleFavoriteStatus(friendId) {
 		const identifiedFriend = this.friends.find(friend => friend.id === friendId);  
-	identifiedFriend.isFavorite = !identifiedFriend.isFavorite;
+		identifiedFriend.isFavorite = !identifiedFriend.isFavorite;
 	}
 }
 ```
+
+<br>
+
+이렇게 작성하면 Component가 아닌 부모 App에서 즐겨찾기의 상태를 변경할 수 있습니다.
