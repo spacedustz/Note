@@ -52,6 +52,12 @@ emit의 첫번쨰 파라미터엔 Custom Event의 이름을 지정할 수 있는
     :is-favorite="true">  
     @toggle-favorite=""  
 </friend-contact>
+
+// ------
+
+methods: {
+	toggle
+}
 ```
 
 <br>
