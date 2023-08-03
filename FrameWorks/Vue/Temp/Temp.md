@@ -221,7 +221,19 @@ props: {
 ```javascript
 methods: {
 	toogleFavorite() {
-		this.friendIsFavorite = !this.
+		this.friendIsFavorite = !this.friendIsFavorite;
+	}
+};
+
+// -----------------------
+
+methods: {
+	toogleFavorite() {
+		this.$emit();
 	}
 }
 ```
+
+<br>
+
+위에서 나온 `$`
