@@ -36,7 +36,11 @@ emit의 첫번쨰 파라미터엔 Custom Event의 이름을 지정할 수 있는
 
 **(케밥케이스는 props의 데이터를 전달할때, 이벤트 이름을 지정할때 등에 사용합니다.)**
 
-그리고 HTML에서 emit을 사용한 함수를 바인딩하고  값으로는 -> 부모 App의 Method에 함수를 만들어서 지정해줍니다.
+<br>
+
+그리고 부모 App에서 emit을 사용한 함수를 `v-on의 축약어인 @`를 사용해 바인딩하고,  
+
+값으로는 -> 부모 App의 Method에 함수를 만들어서 지정해줍니다. (여기선 toogleFavoriteStatus 함수를 만듬)
 
 ```javascript
 @toogle-favorite="toogleFavoriteStatus"
