@@ -62,4 +62,6 @@ methods: {
 
 <br>
 
+이렇게 하면 Component -> Parent App으로 이벤트는 전송하지만 데이터는 전달하지는 않습니다.
+
 `$emit`의 2번쨰 파라미터부터 이벤트로
