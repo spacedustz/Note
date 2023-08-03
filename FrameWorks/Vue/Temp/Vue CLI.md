@@ -52,9 +52,17 @@ vue create로 프로젝트를 생성했으면 `npm install`을 할 필요없이 
 
 - package.json : 스프링에서 build.gradle 같은 파일로 의존성을 설정하거나 라이브러리를 불러올 수 있다.
 
-<br>
+---
+
+## Project Structure
 
 > App.vue
 
 - 템플릿
 - 단일 컴포넌트
+
+<br>
+
+> assets
+
+- 앱에 필요한 이미지를 추가하는 폴
