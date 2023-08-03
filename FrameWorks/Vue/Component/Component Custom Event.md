@@ -171,7 +171,9 @@ methods: {
 
 <br>
 
-1. Component의 props 프로퍼티들을 App.vue에서 바인딩해서 값을 넣고 되돌려줌
+1. Component의 props 프로퍼티들을 App.vue에서 바인딩해서 값을 넣고 다시 되돌려줌
 2. Component에서 `$emit`을 이용해 컴포넌트 내부에서 Custom Event를 발생시킴
-3. 이벤트가 발생함으로써 `$emit`의 2번째 파라미터부터 들어오는 데이터들을 다시 전달함
-4. App.vue에서 Custom Event에서 Custom Event를 수신해서 Data 프로퍼티의 저장된 데이터를 변경함
+3. 이벤트가 발생함으로써 `$emit`의 2번째 파라미터부터 들어오는 데이터들을 다시 전달
+4. App.vue에서 Custom Event에서 Custom Event를 수신해서 App.vue의 Data 프로퍼티 값 데이터를 변경
+5. 업데이트된 App.vue의 Data 프로퍼티를 다시 컴포넌트로 전달
+6. Vue가 데
