@@ -236,4 +236,8 @@ methods: {
 
 <br>
 
-위에서 나온 `$`
+위에서 나온 `$emit()`은 this 키워드로 호출할 수 있는 내장 메서드입니다.
+
+이 `$emit()`은 부모 App이 수신할 Custom Event를 발생시킵니다.
+
+emit의 ㅍㄹ
