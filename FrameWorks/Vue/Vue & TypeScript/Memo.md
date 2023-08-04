@@ -49,7 +49,10 @@ module.exports = {
       "error",  
       {  
         endOfLine: "auto",  
-      },  
+      },
+      {  
+			  useTabs: false,  
+			},
     ],  
     // 여기까지 추가
   },  
