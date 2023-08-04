@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "FrameWorks/Vue/Temp/Vue CLI.md",
+                "file": "FrameWorks/Vue/Component/Component Custom Event.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "FrameWorks/Vue/Temp/Vue CLI.md",
+                "file": "FrameWorks/Vue/Component/Component Custom Event.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "FrameWorks/Vue/Temp/Vue CLI.md",
+                "file": "FrameWorks/Vue/Component/Component Custom Event.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "FrameWorks/Vue/Temp/Vue CLI.md"
+                "file": "FrameWorks/Vue/Component/Component Custom Event.md"
               }
             }
           }
@@ -148,17 +148,17 @@
   },
   "active": "60c6b86bf6d224da",
   "lastOpenFiles": [
-    "FrameWorks/Vue/1. Basic.md",
-    "FrameWorks/Vue/Component/Component Custom Event.md",
     "FrameWorks/Vue/Component/Custom Event 정의 & 검증.md",
     "FrameWorks/Vue/Component/Fallthrough Property & Event & Binding All Property.md",
+    "FrameWorks/Vue/Temp/Vue CLI.md",
+    "FrameWorks/Vue/1. Basic.md",
+    "FrameWorks/Vue/Component/Component Custom Event.md",
     "FrameWorks/Vue/Component/Add & Connect Component.md",
     "FrameWorks/Vue/Temp/Temp.md",
     "FrameWorks/Vue/Temp/Props.md",
     "FrameWorks/Vue/Component/Basic.md",
     "FrameWorks/Vue/Component",
     "FrameWorks/Vue/Temp/LifeCycle.md",
-    "FrameWorks/Vue/Temp/Vue CLI.md",
     "Settings/Mac Settings.md",
     "FrameWorks/Vue/Temp.md",
     "FrameWorks/Vue/Temp",
