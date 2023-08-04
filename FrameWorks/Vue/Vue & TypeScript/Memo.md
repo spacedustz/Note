@@ -25,12 +25,34 @@ components, view 하위 파일 다 지우고, router/index.tx에서 import된 �
 **.eslintrc.js 파일 설정 추가**
 
 ```
-"no-unused-vars": "off",  
-"prettier/prettier": [  
-  "error",  
-  {  
-    endOfLine: "auto",  
+module.exports = {  
+  root: true,  
+  env: {  
+    node: true,  
   },  
-],
+  extends: [  
+    "plugin:vue/vue3-essential",  
+    "eslint:recommended",  
+    "@vue/typescript/recommended",  
+    "plugin:prettier/recommended",  
+  ],  
+  parserOptions: {  
+    ecmaVersion: 2020,  
+  },  
+  rules: {  
+    "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",  
+    "no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off",
+
+		// 여기부터
+    "no-unused-vars": "off",  
+    "prettier/prettier": [  
+      "error",  
+      {  
+        endOfLine: "auto",  
+      },  
+    ],  
+    // 여기까지 추가
+  },  
+};
 ```
 
