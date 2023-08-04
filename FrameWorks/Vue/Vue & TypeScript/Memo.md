@@ -4,6 +4,10 @@
 
 - npm i bootstrap bootstrap-vue-3
 
+<br>
+
+**main.ts 파일에 BootStrap Import**
+
 ```javascript
 import BootstrapVue3 from "bootstrap-vue-3";  
 import "bootstrap/dist/css/bootstrap.css";  
