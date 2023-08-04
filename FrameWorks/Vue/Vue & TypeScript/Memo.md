@@ -59,3 +59,8 @@ module.exports = {
 };
 ```
 
+or
+
+```
+npm run lint -- --fix
+```
