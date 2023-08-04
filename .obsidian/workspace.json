@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "FrameWorks/Vue/Component/Component Custom Event.md",
+                "file": "FrameWorks/Vue/Temp/Vue CLI.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "FrameWorks/Vue/Component/Component Custom Event.md",
+                "file": "FrameWorks/Vue/Temp/Vue CLI.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "FrameWorks/Vue/Component/Component Custom Event.md",
+                "file": "FrameWorks/Vue/Temp/Vue CLI.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "FrameWorks/Vue/Component/Component Custom Event.md"
+                "file": "FrameWorks/Vue/Temp/Vue CLI.md"
               }
             }
           }
@@ -148,9 +148,11 @@
   },
   "active": "60c6b86bf6d224da",
   "lastOpenFiles": [
+    "FrameWorks/Vue/Vue & TypeScript/Memo.md",
+    "FrameWorks/Vue/Component/Component Custom Event.md",
+    "FrameWorks/Vue/Vue & TypeScript",
     "FrameWorks/Vue/Component/Custom Event 정의 & 검증.md",
     "FrameWorks/Vue/Temp/Vue CLI.md",
-    "FrameWorks/Vue/Component/Component Custom Event.md",
     "FrameWorks/Vue/Component/Fallthrough Property & Event & Binding All Property.md",
     "FrameWorks/Vue/1. Basic.md",
     "FrameWorks/Vue/Component/Add & Connect Component.md",
@@ -178,11 +180,9 @@
     "FrameWorks/Spring/채팅방구현",
     "Languages/JavaScript/Object/6. Optional Chaining.md",
     "Languages/JavaScript/Object/5. new 연산자 & 생성자 함수.md",
-    "Languages/JavaScript/Object/4. Function & This.md",
     "Languages/JavaScript/Object",
     "Settings",
     "Project Documents/Document",
-    "Project Documents",
-    "MSA/Kubernetes"
+    "Project Documents"
   ]
 }
