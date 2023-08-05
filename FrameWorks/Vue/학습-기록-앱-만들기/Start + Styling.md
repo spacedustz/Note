@@ -967,7 +967,53 @@ app.mount('#app');
 
 **AddResource.vue**
 
-이제 다시 AddResourceㄹ
+이제 다시 AddResource로 돌아와서 Dialog를 적용해보죠.
+
+데이터 프로퍼티인 inputIsInvalid를 만들어서 조건문에 넣어주고
+
+```javascript
+<!-- Dialog 에는 2개의 슬롯이 있으니 Custom한 템플릿을 작성해줍니다. -->  
+<base-dialog v-if="inputIsInvalid" title="Invalid Input" @close="confirmError">  
+  <template v-slot:default>  
+    <p>하나 이상의 입력값이 잘못 되었습니다.</p>  
+    <p>최소 1글자 이상 입력 해주세요.</p>  
+  </template>  
+  <!-- 버튼 슬롯 -->  
+  <template #actions>  
+    <base-button @click="confirmError">확인</base-button>  
+  </template>  
+</base-dialog>
+
+...
+
+data() {  
+  return {  
+    // 처음은 사용자가 아무 입력이 없으니 false를 Default로 설정  
+    inputIsInvalid: false  
+  };  
+},  
+  
+methods: {  
+  submitData() {  
+    const enteredTitle = this.$refs.titleInput.value;  
+    const enteredDesc = this.$refs.descInput.value;  
+    const enteredLink = this.$refs.linkInput.value;  
+  
+    // 입력값 중 하나가 비어 있으면 inputIsInvalid를 true로 설정  
+    if (enteredTitle.trim() === '' || enteredDesc.trim() === '' || enteredLink.trim() === '') {  
+      this.inputIsInvalid = true;  
+      return;  
+    }  
+  
+    this.addResource(enteredTitle, enteredDesc, enteredLink);  
+  },  
+  
+  // 에러 창을 닫을 수 있는 함수  
+  confirmError() {  
+    this.inputIsInvalid = false;  
+  },  
+},
+```
 
 <br>
 
