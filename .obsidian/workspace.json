@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "FrameWorks/Vue/학습-기록-앱-만들기/2. UI Components.md",
+                "file": "FrameWorks/Vue/학습-기록-앱-만들기/1. Start + Styling.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "FrameWorks/Vue/학습-기록-앱-만들기/2. UI Components.md",
+                "file": "FrameWorks/Vue/학습-기록-앱-만들기/1. Start + Styling.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "FrameWorks/Vue/학습-기록-앱-만들기/2. UI Components.md",
+                "file": "FrameWorks/Vue/학습-기록-앱-만들기/1. Start + Styling.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "FrameWorks/Vue/학습-기록-앱-만들기/2. UI Components.md"
+                "file": "FrameWorks/Vue/학습-기록-앱-만들기/1. Start + Styling.md"
               }
             }
           }
@@ -148,9 +148,10 @@
   },
   "active": "60c6b86bf6d224da",
   "lastOpenFiles": [
-    "FrameWorks/Vue/학습-기록-앱-만들기/3. Base Button Component.md",
-    "FrameWorks/Vue/학습-기록-앱-만들기/2. UI Components.md",
+    "FrameWorks/Vue/학습-기록-앱-만들기/4. 동적 컴포넌트 및 속성 풀스루.md",
     "FrameWorks/Vue/학습-기록-앱-만들기/1. Start + Styling.md",
+    "FrameWorks/Vue/학습-기록-앱-만들기/2. UI Components.md",
+    "FrameWorks/Vue/학습-기록-앱-만들기/3. Base Button Component.md",
     "FrameWorks/Flutter/Settings.md",
     "Pasted image 20230805163438.png",
     "FrameWorks/Vue/Component/Component Custom Event.md",
@@ -178,7 +179,6 @@
     "FrameWorks/Vue/4. Dynimic Styling.md",
     "Languages/Java/Basic/객체지향 2.md",
     "FrameWorks/Vue/2. Vue를 이용한 DOM 상호작용.md",
-    "Languages/Java/자바의정석/Input & Output.md",
     "FrameWorks/Vue",
     "Languages/Java/자바의정석",
     "FrameWorks/Spring/채팅방구현",
