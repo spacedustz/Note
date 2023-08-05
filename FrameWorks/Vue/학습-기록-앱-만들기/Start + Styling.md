@@ -971,4 +971,30 @@ app.mount('#app');
 
 <br>
 
-그런데 여기서 문제가 있습니다. 
+그런데 여기서 문제가 있습니다. 에러창이 뜨고 확인 버튼을 제외한 다른 곳을 누를때도 에러 창을 닫고 싶습니다.
+
+**BaseDialog.vue**
+
+```javascript
+...
+
+<!-- 사용자가 클릭할 버튼 표시 -->  
+<menu>  
+  <slot name="actions">  
+    <base-button @click="$emit('close')">닫기</base-button>  
+  </slot>  
+</menu>
+
+...
+
+export default {  
+  props: {  
+    title: {  
+      type: String,  
+      required: false  
+    }  
+  },  
+  
+  emits: ['close']  
+}
+```
