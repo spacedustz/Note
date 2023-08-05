@@ -176,7 +176,7 @@ ul {
 
 ---
 
-## Wrapper/UI Component
+## UI & Layout Components
 
 이제 UI 컴포넌트들 만들어보겠습니다.
 
@@ -261,3 +261,4 @@ app.mount('#app');
 
 <br>
 
+이제 레이아웃을 위한 컴포넌트를 만들어 보겠습니다. 레이아
