@@ -477,3 +477,7 @@ app.mount('#app');
 ![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/button.png)
 
 버튼의 테두리가 마음에 안든다면 base-button을 호출하는 속성으로 mode="flat"을 주면 해결됩니다.
+
+---
+
+## ㅇ
