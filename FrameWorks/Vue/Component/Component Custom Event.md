@@ -183,8 +183,8 @@ methods: {
 ## Temp
 
 - Global & Local 컴포넌트
-- Scoped Style (scoped)
-- Slot
+- Scoped Style (scoped가 붙으면 해당 컴포넌트에만 Style이 적용됨)
+- Slot : 컴포넌트 외부에서 동적 HTML 코드으
 - 동적 컴포넌트
 - 동적 컴포넌트를 활성상태로 유지 `<keep-alive>`
 - `<dialog  open>`
