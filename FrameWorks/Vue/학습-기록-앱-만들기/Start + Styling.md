@@ -998,3 +998,7 @@ export default {
   emits: ['close']  
 }
 ```
+
+<br>
+
+그리고 다시 AddResource로 돌아와서 Dialog를 사용한 태그에 
