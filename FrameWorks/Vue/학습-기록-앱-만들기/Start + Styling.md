@@ -698,3 +698,9 @@ textarea:focus {
 
 이제 입력은 받았으니 입력값을 배열에 넣어서 출력해보겠습니다.
 
+AddResource에서 Custom Event를 발생시켜 상위 컴포넌트로 수신하게 해도 되지만, 
+
+AddResource 컴포넌트가 동적으로 등록되어 있기 때문에 이 방법은 어렵습니다.
+
+<br>
+
