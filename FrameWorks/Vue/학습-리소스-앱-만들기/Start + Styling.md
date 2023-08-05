@@ -167,3 +167,7 @@ ul {
 }  
 </style>
 ```
+
+<br>
+
+![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/learning.png)
