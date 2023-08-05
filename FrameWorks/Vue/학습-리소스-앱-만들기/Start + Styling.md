@@ -469,3 +469,9 @@ app.mount('#app');
   </li>  
 </template>
 ```
+
+<br>
+
+이제 버튼의 UI가 변경되었습니다.
+
+![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/button.png)
