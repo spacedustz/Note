@@ -610,7 +610,7 @@ computed: {
 
 <br>
 
-하나의 div마다 입력 값을 정해주고
+하나의 div마다 입력 값을 정해주고 제목, 내용(3줄), 링크를 입력할 수 있는 공간과 제출 버튼을 만들어 주었습니다.
 
 ```javascript
 <template>  
@@ -687,3 +687,9 @@ textarea:focus {
 }  
 </style>
 ```
+
+<br>
+
+**Form 양식 적용**
+
+![img](h)
