@@ -255,4 +255,9 @@ app.mount('#app');
 
 <br>
 
-Card UI가 적용된 모습
+**Card UI가 적용된 모습**
+
+![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/card.png)
+
+<br>
+
