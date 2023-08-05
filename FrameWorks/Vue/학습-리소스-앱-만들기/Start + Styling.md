@@ -180,4 +180,31 @@ ul {
 
 이제 UI 컴포넌트들 만들어보겠습니다.
 
-BaseCard라는 컴포넌트를 만들고 scoped 스타일링을 적용해서 dn
+BaseCard라는 컴포넌트를 만들고 scoped 스타일링을 적용해서 원하는 HTML 요소에 slot을 달면 적용됩니다.
+
+<br>
+
+**BaseCard.vue**
+
+```javascript
+<template>  
+  <div>  
+    <slot></slot>  
+  </div>  
+</template>  
+  
+<style scoped>  
+div {  
+  border-radius: 12px;  
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);  
+  padding: 1rem;  
+  margin: 2rem auto;  
+  max-width: 40rem;  
+}  
+</style>
+```
+
+<br>
+
+그리고 전에 작성한 LearningResource.vue 파일의 div 태그를 base-card 태그로 바꿔주면 Card의 CSS가 적용됩니다.
+
