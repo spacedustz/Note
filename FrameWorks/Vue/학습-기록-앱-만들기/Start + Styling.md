@@ -1001,4 +1001,16 @@ export default {
 
 <br>
 
-그리고 다시 AddResource로 돌아와서 Dialog를 사용한 태그에 
+그리고 다시 AddResource로 돌아와서 Dialog를 사용한 태그에 close 이벤트를 수신해서 error가 발생했을때 트리거 되도록 해줍니다.
+
+<br>
+
+**AddResource.vue**
+
+```html
+<base-dialog v-if="inputIsInvalid" title="Invalid Input" @close="confirmError">
+```
+
+<br>
+
+이제 확인 버튼이 아니라 에러 창 바
