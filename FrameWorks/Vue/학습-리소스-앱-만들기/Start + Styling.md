@@ -281,7 +281,9 @@ app.mount('#app');
 
 <br>
 
-Title에 해당하는 데이터를 BaseHeader에서 props로 가져와서
+Title에 해당하는 데이터를 BaseHeader에서 props로 가져와서 간단하게 title값만 바인딩 하였고,
+
+원래 App.vue에 들어갈 title을 BaseHeader 컴포넌트로 대체하였습니다.
 
 <br>
 
@@ -361,3 +363,6 @@ export default {
 **결과물**
 
 ![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/header.png)
+
+---
+
