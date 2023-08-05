@@ -378,8 +378,54 @@ props중 type 프로퍼티는,
 
 mode 프로퍼티는 CSS의 Class 명을 받아서 mode에 바인딩 해줍니다.
 
-그리고, 버튼에 들어갈 
+그리고, 버튼에 들어갈 컨텐츠는 당연히 외부에서 받아야 하므로 slot으로 받습니다.
+
+<br>
+
+**BaseButton.vue**
 
 ```javascript
-
+<template>  
+  <button :type="type" :class="mode">  
+    <slot></slot>  
+  </button>  
+</template>  
+  
+<script>  
+export default {  
+  props: ['type', 'mode']  
+}  
+</script>  
+  
+<style scoped>  
+button {  
+  padding: 0.75rem 1.5rem;  
+  font-family: inherit;  
+  background-color: #3a0061;  
+  border: 1px solid #3a0061;  
+  color: white;  
+  cursor: pointer;  
+}  
+  
+button:hover,  
+button:active {  
+  background-color: #270041;  
+  border-color: #270041;  
+}  
+  
+.flat {  
+  background-color: transparent;  
+  color: #3a0061;  
+  border: none;  
+}  
+  
+.flat:hover,  
+.flat:active {  
+  background-color: #edd2ff;  
+}  
+</style>
 ```
+
+<br>
+
+그리고, 이 기본 버튼도 G
