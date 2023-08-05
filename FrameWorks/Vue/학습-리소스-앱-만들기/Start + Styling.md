@@ -446,3 +446,26 @@ app.component('base-button', BaseButton);
   
 app.mount('#app');
 ```
+
+<br>
+
+그리고 기존 LearningResource 컴포넌트에서도 버튼을 사용하고 있으니, 여기서도 BaseButton 태그로 변경해줍니다.
+
+**LearningResource.vue**
+
+```javascript
+<template>  
+  <li>  
+    <base-card>  
+      <header>  
+        <h3>{{ title }}</h3>  
+        <base-button>Delete</base-button>  
+      </header>  
+      <p>{{ description }}</p>  
+      <nav>  
+        <a :href="link">View Resource</a>  
+      </nav>  
+    </base-card>  
+  </li>  
+</template>
+```
