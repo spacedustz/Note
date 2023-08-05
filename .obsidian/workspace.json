@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "FrameWorks/Vue/학습-기록-앱-만들기/8. Teleport 기능 구현.md",
+                "file": "FrameWorks/Vue/학습-기록-앱-만들기/7. 항목 삭제하기 구현.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "FrameWorks/Vue/학습-기록-앱-만들기/8. Teleport 기능 구현.md",
+                "file": "FrameWorks/Vue/학습-기록-앱-만들기/7. 항목 삭제하기 구현.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "FrameWorks/Vue/학습-기록-앱-만들기/8. Teleport 기능 구현.md",
+                "file": "FrameWorks/Vue/학습-기록-앱-만들기/7. 항목 삭제하기 구현.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "FrameWorks/Vue/학습-기록-앱-만들기/8. Teleport 기능 구현.md"
+                "file": "FrameWorks/Vue/학습-기록-앱-만들기/7. 항목 삭제하기 구현.md"
               }
             }
           }
@@ -148,8 +148,8 @@
   },
   "active": "60c6b86bf6d224da",
   "lastOpenFiles": [
-    "FrameWorks/Vue/학습-기록-앱-만들기/7. 항목 삭제하기 구현.md",
     "FrameWorks/Vue/학습-기록-앱-만들기/8. Teleport 기능 구현.md",
+    "FrameWorks/Vue/학습-기록-앱-만들기/7. 항목 삭제하기 구현.md",
     "FrameWorks/Vue/학습-기록-앱-만들기/6. Custom Dialog를 이용한 Validation.md",
     "FrameWorks/Vue/학습-기록-앱-만들기/5. Resource Form.md",
     "FrameWorks/Vue/학습-기록-앱-만들기/4. 동적 컴포넌트 및 속성 풀스루.md",
