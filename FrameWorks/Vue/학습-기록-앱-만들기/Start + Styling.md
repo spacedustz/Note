@@ -494,3 +494,67 @@ app.mount('#app');
 
 이 데이터와 컴포넌트를 이용해 버튼을 누르면 화면 간 전환하는 로직을 짭니다.
 
+<br>
+
+그리고, 커스템 버튼에 클릭 이벤트를 쓰면 base-button의
+
+<br>
+
+**TheResources.vue**
+
+```javascript
+<template>  
+  <base-card>  
+    <base-button @click="setSelectedTab('stored-resources')">목록 보기</base-button>  
+    <base-button @click="setSelectedTab('add-resource')">학습 추가</base-button>  
+  </base-card>  
+  <component :is="selectedTab"></component>  
+</template>  
+  
+<script>  
+import BaseCard from "@/components/UI/BaseCard";  
+import BaseButton from "@/components/UI/BaseButton";  
+import TheResources from './StoredResources.vue';  
+import AddResource from './AddResource.vue';  
+  
+export default {  
+  components: { BaseButton, BaseCard, TheResources, AddResource },  
+  
+  data() {  
+    return {  
+      selectedTab: 'stored-resources',  
+      storedResources: [  
+        {  
+          id: 'official-guide',  
+          title: 'Official Guide',  
+          description: 'The Official Vue.js Documentation',  
+          link: 'https://vuejs.org'  
+        },  
+        {  
+          id: 'google',  
+          title: 'Google',  
+          description: 'The Official Google Documentation',  
+          link: 'https://google.org'  
+        },  
+      ]  
+    };  
+  },  
+  
+  methods: {  
+    setSelectedTab(tab) {  
+      this.selectedTab = tab;  
+    }  
+  },  
+  
+  provide() {  
+    return {  
+      resources: this.storedResources  
+    };  
+  },  
+}  
+</script>  
+  
+<style scoped>  
+  
+</style>
+```
