@@ -187,4 +187,5 @@ methods: {
 - 동적 컴포넌트
 - 동적 컴포넌트를 활성상태로 유지 `<keep-alive>`
 - `<dialog  open>`
-- fragment
+- fragment : 상위 HTML Elements들을 Vue3부턴 여러개를 쓸 수 있음
+- 
