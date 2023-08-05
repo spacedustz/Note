@@ -208,3 +208,6 @@ div {
 
 그리고 전에 작성한 LearningResource.vue 파일의 div 태그를 base-card 태그로 바꿔주면 Card의 CSS가 적용됩니다.
 
+그리고, 이 UI 컴포넌트는 LearningResource 컴포넌트 뿐만 아니라 다른 컴포넌트에서도 사용할 것이므로,
+
+Local 컴포넌트가 아닌 Global 컴포넌트로 등록
