@@ -185,5 +185,6 @@ methods: {
 - 전역 & 지역 컴포넌트
 - 슬롯
 - 동적 컴포넌트
-- `<Dialog  open>`
-- 
+- 동적 컴포넌트를 활성상태로 유지 `<keep-alive>`
+- `<dialog  open>`
+- fragment
