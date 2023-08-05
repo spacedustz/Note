@@ -965,9 +965,10 @@ app.mount('#app');
 
 <br>
 
-****
+**에러 창 구현 완료**
 
 ![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/dialog.png)
 
 <br>
 
+그런데 여기서 문제가 있습니다.
