@@ -969,11 +969,14 @@ app.mount('#app');
 
 이제 다시 AddResource로 돌아와서 Dialog를 적용해보죠.
 
-데이터 프로퍼티인 inputIsInvalid를 만들어서 조건문에 넣어주고
+데이터 프로퍼티인 inputIsInvalid를 만들어서 조건문에 넣어주고, inputIsInvalid를 dialog 태그에 if 조건으로 붙여줍니다.
+
+그리고 에러창이 떴으니 닫는 버튼도 있어야하니 2번쨰 슬롯
+
 
 ```javascript
 <!-- Dialog 에는 2개의 슬롯이 있으니 Custom한 템플릿을 작성해줍니다. -->  
-<base-dialog v-if="inputIsInvalid" title="Invalid Input" @close="confirmError">  
+<base-dialog v-if="inputIsInvalid" title="Invalid Input">  
   <template v-slot:default>  
     <p>하나 이상의 입력값이 잘못 되었습니다.</p>  
     <p>최소 1글자 이상 입력 해주세요.</p>  
