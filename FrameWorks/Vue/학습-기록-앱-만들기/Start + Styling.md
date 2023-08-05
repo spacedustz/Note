@@ -914,3 +914,13 @@ menu {
 }  
 </style>
 ```
+
+<br>
+
+**main.js**
+
+그리고 이 Dialog도 전역적으로 사용할테니 main.js에 컴포넌트를 추가해줍니다.
+
+```javascript
+
+```
