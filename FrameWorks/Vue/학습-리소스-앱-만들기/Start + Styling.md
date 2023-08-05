@@ -273,4 +273,75 @@ app.mount('#app');
 
 <br>
 
-이제 레이아웃을 위한 Header, Footer 컴포넌트를 만들어 보겠습니다. 
+### 이제 레이아웃을 위한 Header, Footer 컴포넌트를 만들어 보겠습니다. 
+
+#### **BaseHeader.vue**
+
+```javascript
+<template>  
+  <header>  
+    <h1>{{ title }}</h1>  
+  </header>  
+</template>  
+  
+<script>  
+export default {  
+  props: ['title'],  
+}  
+</script>  
+  
+<style scoped>  
+header {  
+  width: 100%;  
+  height: 5rem;  
+  background-color: #640032;  
+  display: flex;  
+  justify-content: center;  
+  align-items: center;  
+}  
+  
+header h1 {  
+  color: white;  
+  margin: 0;  
+}  
+</style>
+```
+
+<br>
+
+#### **App.vue**
+
+```javascript
+<template>  
+  <base-header title="학습 기록"></base-header>  
+  <stored-resources :resources="storedResources"></stored-resources>  
+</template>  
+  
+<script>  
+import StoredResources from "@/components/Learing-Resources/StoredResources";  
+import BaseHeader from "@/components/Layouts/BaseHeader";  
+  
+export default {  
+  components: { StoredResources, BaseHeader },  
+  
+  data() {  
+    return {  
+      storedResources: [  
+        {  
+          id: 'official-guide',  
+          title: 'Official Guide',  
+          description: 'The Official Vue.js Documentation',  
+          link: 'https://vuejs.org'  
+        },  
+        {  
+          id: 'google',  
+          title: 'Google',  
+          description: 'The Official Google Documentation',  
+          link: 'https://google.org'  
+        },  
+      ]  
+    };  
+  },  
+}  
+</script>
+```
