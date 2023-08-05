@@ -971,7 +971,9 @@ app.mount('#app');
 
 데이터 프로퍼티인 inputIsInvalid를 만들어서 조건문에 넣어주고, inputIsInvalid를 dialog 태그에 if 조건으로 붙여줍니다.
 
-그리고 에러창이 떴으니 닫는 버튼도 있어야하니 2번쨰 슬롯
+그리고 에러창이 떴으니 닫는 버튼도 있어야하니 2번쨰 슬롯인 action slot에 확인 버튼을 생성하고,
+
+confirmError 함수를 만들어서 데이터 프로퍼티를 바꿔줍니다.
 
 
 ```javascript
