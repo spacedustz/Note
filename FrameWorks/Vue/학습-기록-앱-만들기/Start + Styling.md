@@ -767,7 +767,8 @@ methods: {
       description: description,  
       link: url  
     };  
-    // 배열의 맨앞에 추가 (unshift)    this.storedResources.unshift(newResource);  
+    // 배열의 맨앞에 추가 (unshift)
+    this.storedResources.unshift(newResource);  
     // 리소스를 추가할때마다 탭이 바뀌게 함  
     this.selectedTab = 'stored-resources';  
   }  
