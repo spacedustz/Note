@@ -565,7 +565,7 @@ export default {
 
 해당 버튼이 클릭 되지 않았을 때는 기본 버튼의 색깔이 적용되고, 클릭 했을때는 강조 표시가 될 것입니다.
 
-Computed Property를 만들어 버튼을 클릭 했을때 적용될 CSS Class
+Computed Property를 만들어 버튼을 클릭 했을때 적용될 CSS Class를 조건을 걸어서 동적으로 바인딩합니다.
 
 **TheResource.vue**
 
