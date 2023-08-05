@@ -378,6 +378,8 @@ props중 type 프로퍼티는,
 
 mode 프로퍼티는 CSS의 Class 명을 받아서 mode에 바인딩 해줍니다.
 
+그리고, 버튼에 들어갈 
+
 ```javascript
 
 ```
