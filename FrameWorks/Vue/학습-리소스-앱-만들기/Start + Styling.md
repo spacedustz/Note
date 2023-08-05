@@ -370,7 +370,7 @@ export default {
 
 학습 기록 앱에 쓰일 기본 버튼 Component를 추가해보겠습니다.
 
-버튼의 타입을 받아서 타입마다
+버튼의 타입을 받아서 타입마다 다른 CSS를 적용할 수 있게 Style을 해두었습니다. (ex: 마우스를 올릴 시 다른 CSS 적용)
 
 ```javascript
 
