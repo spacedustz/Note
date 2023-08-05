@@ -428,4 +428,21 @@ button:active {
 
 <br>
 
-그리고, 이 기본 버튼도 G
+그리고, 이 기본 버튼도 다른 컴포넌트들에서 계속 사용할 것이기 떄문에 전역 컴포넌트로 등록해줍니다.
+
+**main.js**
+
+```javascript
+import { createApp } from 'vue';  
+  
+import App from './App.vue';  
+import BaseCard from './components/UI/BaseCard.vue';  
+import BaseButton from "@/components/UI/BaseButton";  
+  
+const app = createApp(App)  
+  
+app.component('base-card', BaseCard);  
+app.component('base-button', BaseButton);  
+  
+app.mount('#app');
+```
