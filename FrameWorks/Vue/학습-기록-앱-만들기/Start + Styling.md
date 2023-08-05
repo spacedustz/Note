@@ -563,3 +563,31 @@ export default {
 
 이제 탭 간 전환은 완료했고 현재 선택된 탭이 어느 탭인지 구분이 안가니 탭에 강조 표시도 넣어주겠습니다.
 
+해당 버튼이 클릭 되지 않았을 때는 
+
+**TheResource.vue**
+
+```javascript
+<template>  
+  <base-card>  
+    <base-button  
+        @click="setSelectedTab('stored-resources')"  
+        :mode="storedResButtonMode">목록 보기</base-button>  
+    <base-button  
+        @click="setSelectedTab('add-resource')"  
+        :mode="addResButtonMode">학습 추가</base-button>  
+  </base-card>  
+  <component :is="selectedTab"></component>  
+</template>
+
+...
+
+computed: {  
+  storedResButtonMode() {  
+    return this.selectedTab === 'stored-resources' ? null : 'flat';  
+  },  
+  addResButtonMode() {  
+    return this.selectedTab === 'add-resource' ? null : 'flat';  
+  }  
+},
+```
