@@ -608,4 +608,82 @@ computed: {
 
 지금까지 더미 데이터를 이용해 Resource를 만들었지만 이제부터 Form을 이용해 사용자로부터 입력을 받아서 Form을 제출해, Resource를 배열에 동적으로 추가해보겠습니다.
 
+<br>
 
+하나의 div마다 입력 값을 정해주고
+
+```javascript
+<template>  
+  <base-card>  
+    <form>  
+      <!-- Title -->  
+      <div class="form-control">  
+        <lable for="title">제목</lable>  
+        <input  
+          type="text"  
+          id="title"  
+          name="title"  
+        />  
+      </div>  
+      <!-- Description -->  
+      <div class="form-control">  
+        <lable for="description">설명</lable>  
+        <textarea  
+        id="description"  
+        name="description"  
+        rows="3"  
+        ></textarea>  
+      </div>  
+      <!-- Title -->  
+      <div class="form-control">  
+        <lable for="link">링크</lable>  
+        <input  
+            type="url"  
+            id="link"  
+            name="link"  
+        />  
+      </div>  
+      <!--Submit Button -->  
+      <div>  
+        <base-button type="submit">학습 추가</base-button>  
+      </div>  
+    </form>  
+  </base-card>  
+</template>  
+  
+<script>  
+import BaseCard from "@/components/UI/BaseCard";  
+import BaseButton from "@/components/UI/BaseButton";  
+export default {  
+  components: {BaseButton, BaseCard}  
+}  
+</script>  
+  
+<style scoped>  
+label {  
+  font-weight: bold;  
+  display: block;  
+  margin-bottom: 0.5rem;  
+}  
+  
+input,  
+textarea {  
+  display: block;  
+  width: 100%;  
+  font: inherit;  
+  padding: 0.15rem;  
+  border: 1px solid #ccc;  
+}  
+  
+input:focus,  
+textarea:focus {  
+  outline: none;  
+  border-color: #3a0061;  
+  background-color: #f7ebff;  
+}  
+  
+.form-control {  
+  margin: 1rem 0;  
+}  
+</style>
+```
