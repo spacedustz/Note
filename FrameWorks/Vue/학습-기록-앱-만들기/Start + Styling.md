@@ -494,6 +494,8 @@ app.mount('#app');
 
 이 데이터와 컴포넌트를 이용해 버튼을 누르면 화면 간 전환하는 로직을 짭니다.
 
+그리고, storedResources를 TheResource로 옮기면서 provide/inject를 써서 StoredResource에도 주입해줍니다.
+
 <br>
 
 그리고, 커스템 버튼에 클릭 이벤트를 쓰면 base-button의 root 요소까지 전파됩니다.
