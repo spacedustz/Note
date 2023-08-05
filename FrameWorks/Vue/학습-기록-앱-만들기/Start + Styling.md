@@ -606,6 +606,6 @@ computed: {
 
 ## Resource Form
 
-지금까지 더미 데이터를 이용해 Resource를 만들었지만 이제부터 Form을 이용해 사용자로부터 입력을 받아서 Form을 제출해
+지금까지 더미 데이터를 이용해 Resource를 만들었지만 이제부터 Form을 이용해 사용자로부터 입력을 받아서 Form을 제출해, Resource를 배열에 동적으로 추가해보겠습니다.
 
-Resource를 배열에 동적으로 추가해보겠습ㄴ
+
