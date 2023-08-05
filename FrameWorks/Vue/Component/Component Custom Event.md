@@ -183,6 +183,7 @@ methods: {
 ## Temp
 
 - Global & Local 컴포넌트
+- Scoped Style (scoped)
 - Slot
 - 동적 컴포넌트
 - 동적 컴포넌트를 활성상태로 유지 `<keep-alive>`
