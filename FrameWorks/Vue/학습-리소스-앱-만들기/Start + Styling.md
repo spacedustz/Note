@@ -274,7 +274,12 @@ app.mount('#app');
 <br>
 
 ## Layout Components
-#### **BaseHeader.vue**
+
+이제 Layout Component인 Header,Footer 컴포넌트를 만들어 보겠습니다.
+
+기조
+
+ **BaseHeader.vue**
 
 ```javascript
 <template>  
