@@ -824,11 +824,32 @@ methods: {
 
 <br>
 
+**AddResource.vue**
+
 그럼 입력폼을 받는 컴포넌트인 AddResource에 검증 함수를 만들어야겠죠.
+
+아직 Dialog 컴포넌트를 만들지 않았으니 if 조건문만 추가해줍니다.
+
+```javascript
+submitData() {  
+  const enteredTitle = this.$refs.titleInput.value;  
+  const enteredDesc = this.$refs.descInput.value;  
+  const enteredLink = this.$refs.linkInput.value;  
+  
+  if (enteredTitle.trim() === '' || enteredDesc.trim() === '' || enteredLink.trim() === '') {  
+  
+    return;  
+  }  
+  
+  this.addResource(enteredTitle, enteredDesc, enteredLink);  
+}
+```
 
 <br>
 
 **BaseDialog.vue**
+
+잘못된 값이 들어올 시 Dialog를 출력하는 컴포넌트
 
 ```javascript
 <template>  
