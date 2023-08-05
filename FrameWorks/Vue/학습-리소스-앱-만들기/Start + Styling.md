@@ -275,9 +275,13 @@ app.mount('#app');
 
 ## Layout Components
 
-이제 Layout Component인 Header,Footer 컴포넌트를 만들어 보겠습니다.
+이제 Layout Component인 Header 컴포넌트를 만들어 보겠습니다.
 
-기존 App.vue의 title 부분을
+저번에 말했듯이 App.vue에는 어떠한 마크업도 들어가게 하지 않기 위해 레이아웃의 Header도 별도의 Wrapper 컴포넌트로 만듭니다.
+
+<br>
+
+Title에 해당하는 데이터를 BaseHeader에서 props로 가져와서
 
 <br>
 
