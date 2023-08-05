@@ -177,3 +177,11 @@ methods: {
 4. App.vue에서 Custom Event를 수신해서 App.vue의 Data 프로퍼티 값 데이터를 변경
 5. 업데이트된 App.vue의 Data 프로퍼티를 다시 컴포넌트로 전달
 6. Vue가 데이터의 변경을 감지하고 UI를 업데이트
+
+---
+
+## Temp
+
+- 전역 & 지역 컴포넌트
+- 슬롯
+- 동적 컴포넌트
