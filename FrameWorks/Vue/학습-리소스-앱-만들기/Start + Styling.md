@@ -178,3 +178,6 @@ ul {
 
 ## Wrapper/UI Component
 
+이제 UI 컴포넌트들 만들어보겠습니다.
+
+BaseCard라는 컴포넌트를 만들고 scoped 스타일링을 적용해서 dn
