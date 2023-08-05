@@ -824,6 +824,10 @@ methods: {
 
 <br>
 
+그럼 입력폼을 받는 컴포넌트인 AddResource에 검증 함수를 만들어야겠죠.
+
+<br>
+
 **BaseDialog.vue**
 
 ```javascript
@@ -922,5 +926,18 @@ menu {
 그리고 이 Dialog도 전역적으로 사용할테니 main.js에 컴포넌트를 추가해줍니다.
 
 ```javascript
-
+import { createApp } from 'vue';  
+  
+import App from './App.vue';  
+import BaseCard from './components/UI/BaseCard.vue';  
+import BaseButton from "@/components/UI/BaseButton";  
+import BaseDialog from "@/components/UI/BaseDialog";  
+  
+const app = createApp(App)  
+  
+app.component('base-card', BaseCard);  
+app.component('base-button', BaseButton);  
+app.component('base-dialog', BaseDialog);  
+  
+app.mount('#app');
 ```
