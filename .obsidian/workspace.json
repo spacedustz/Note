@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "FrameWorks/Vue/학습-기록-앱-만들기/Start + Styling.md",
+                "file": "FrameWorks/Flutter/Settings.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "f5151c0da72edc1c",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "FrameWorks/Vue/학습-기록-앱-만들기/Start + Styling.md",
+                "file": "FrameWorks/Flutter/Settings.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "FrameWorks/Vue/학습-기록-앱-만들기/Start + Styling.md",
+                "file": "FrameWorks/Flutter/Settings.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "FrameWorks/Vue/학습-기록-앱-만들기/Start + Styling.md"
+                "file": "FrameWorks/Flutter/Settings.md"
               }
             }
           }
@@ -149,9 +148,9 @@
   },
   "active": "60c6b86bf6d224da",
   "lastOpenFiles": [
+    "FrameWorks/Vue/학습-기록-앱-만들기/Start + Styling.md",
     "Pasted image 20230805163438.png",
     "FrameWorks/Vue/Component/Component Custom Event.md",
-    "FrameWorks/Vue/학습-기록-앱-만들기/Start + Styling.md",
     "FrameWorks/Vue/학습-기록-앱-만들기",
     "FrameWorks/Vue/Component/Fallthrough Property & Event & Binding All Property.md",
     "FrameWorks/Vue/Component/Basic.md",
