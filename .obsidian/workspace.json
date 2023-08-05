@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "FrameWorks/Flutter/Settings.md",
+                "file": "FrameWorks/Vue/학습-기록-앱-만들기/2. UI Components.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "FrameWorks/Flutter/Settings.md",
+                "file": "FrameWorks/Vue/학습-기록-앱-만들기/2. UI Components.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "FrameWorks/Flutter/Settings.md",
+                "file": "FrameWorks/Vue/학습-기록-앱-만들기/2. UI Components.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "FrameWorks/Flutter/Settings.md"
+                "file": "FrameWorks/Vue/학습-기록-앱-만들기/2. UI Components.md"
               }
             }
           }
@@ -148,7 +148,10 @@
   },
   "active": "60c6b86bf6d224da",
   "lastOpenFiles": [
-    "FrameWorks/Vue/학습-기록-앱-만들기/Start + Styling.md",
+    "FrameWorks/Vue/학습-기록-앱-만들기/3. Base Button Component.md",
+    "FrameWorks/Vue/학습-기록-앱-만들기/2. UI Components.md",
+    "FrameWorks/Vue/학습-기록-앱-만들기/1. Start + Styling.md",
+    "FrameWorks/Flutter/Settings.md",
     "Pasted image 20230805163438.png",
     "FrameWorks/Vue/Component/Component Custom Event.md",
     "FrameWorks/Vue/학습-기록-앱-만들기",
@@ -177,9 +180,7 @@
     "FrameWorks/Vue/2. Vue를 이용한 DOM 상호작용.md",
     "Languages/Java/자바의정석/Input & Output.md",
     "FrameWorks/Vue",
-    "FrameWorks/Spring/채팅방구현/2. Kafka 설치 & MongoDB & Stomp 설정.md",
     "Languages/Java/자바의정석",
-    "FrameWorks/Spring/채팅방구현/1. 기술스택 선정.md",
     "FrameWorks/Spring/채팅방구현",
     "Languages/JavaScript/Object",
     "Settings",
