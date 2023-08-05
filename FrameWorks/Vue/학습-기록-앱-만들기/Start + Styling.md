@@ -811,3 +811,7 @@ methods: {
 **결과물**
 
 ![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/form2.png)
+
+---
+
+## Custom Dialog를 이용한
