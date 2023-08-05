@@ -277,7 +277,9 @@ app.mount('#app');
 
 이제 Layout Component인 Header,Footer 컴포넌트를 만들어 보겠습니다.
 
-기조
+기존 App.vue의 title 부분을
+
+<br>
 
  **BaseHeader.vue**
 
@@ -349,3 +351,9 @@ export default {
 }  
 </script>
 ```
+
+<br>
+
+**결과물**
+
+![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/header.png)
