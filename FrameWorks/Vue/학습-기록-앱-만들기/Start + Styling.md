@@ -692,4 +692,9 @@ textarea:focus {
 
 **Form 양식 적용**
 
-![img](h)
+![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/form.png)
+
+<br>
+
+이제 입력은 받았으니 입력값을 배열에 넣어서 출력해보겠습니다.
+
