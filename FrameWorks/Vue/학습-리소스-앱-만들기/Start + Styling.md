@@ -210,4 +210,4 @@ div {
 
 그리고, 이 UI 컴포넌트는 LearningResource 컴포넌트 뿐만 아니라 다른 컴포넌트에서도 사용할 것이므로,
 
-Local 컴포넌트가 아닌 Global 컴포넌트로 등록
+Local 컴포넌트가 아닌 Global 컴포넌트로 등록 할겁니다.
