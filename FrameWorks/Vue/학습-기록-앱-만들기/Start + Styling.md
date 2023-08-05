@@ -591,3 +591,9 @@ computed: {
   }  
 },
 ```
+
+<br>
+
+**결과물**
+
+![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/)
