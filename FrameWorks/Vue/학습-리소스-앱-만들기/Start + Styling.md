@@ -252,3 +252,7 @@ app.component('base-card', BaseCard);
   
 app.mount('#app');
 ```
+
+<br>
+
+Card UI가 적용된 모습
