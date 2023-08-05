@@ -965,6 +965,12 @@ app.mount('#app');
 
 <br>
 
+**AddResource.vue**
+
+이제 다시 AddResourceㄹ
+
+<br>
+
 **에러 창 구현 완료**
 
 ![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/dialog.png)
@@ -1013,4 +1019,6 @@ export default {
 
 <br>
 
-이제 확인 버튼이 아니라 에러 창 바
+이제 확인 버튼이 아니라 에러 창 밖을 클릭해도 에러 창이 닫아지는걸 확인했습니다.
+
+---
