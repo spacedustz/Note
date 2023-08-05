@@ -1,8 +1,5 @@
 ## Learning Resource + Styling
 
-
-**App.vue**
-
 App.vue는 Root Component이기 때문에 Template에 최대한 MarkUp이 없게 만들어야 합니다.
 
 Data 프로퍼티에 더미 데이터 배열을 만들고 그 데이터를 Stored-Resource로 넘겨주고,
@@ -11,6 +8,11 @@ Stored-Resource는 배열을 받고 순회 하면서 데이터를 Learning-Resou
 
 <br>
 
+Style 부분은 전역 스타일 설정은 왠만하면 App.vue에 지정하고 나머지 컴포넌트들에는 scoped style을 적용하였습니다.
+
+---
+
+**App.vue**
 
 
 ```javascript
