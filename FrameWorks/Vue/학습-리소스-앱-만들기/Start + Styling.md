@@ -176,7 +176,7 @@ ul {
 
 ---
 
-## UI & Layout Components
+## UI Components
 
 이제 UI 컴포넌트들 만들어보겠습니다.
 
@@ -273,8 +273,7 @@ app.mount('#app');
 
 <br>
 
-### 이제 레이아웃을 위한 Header, Footer 컴포넌트를 만들어 보겠습니다. 
-
+## Layout Components
 #### **BaseHeader.vue**
 
 ```javascript
@@ -309,7 +308,7 @@ header h1 {
 
 <br>
 
-#### **App.vue**
+ **App.vue**
 
 ```javascript
 <template>  
