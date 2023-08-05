@@ -370,5 +370,8 @@ export default {
 
 학습 기록 앱에 쓰일 기본 버튼 Component를 추가해보겠습니다.
 
-```javascri
+버튼의 타입을 받아서 타입마다
+
+```javascript
+
 ```
