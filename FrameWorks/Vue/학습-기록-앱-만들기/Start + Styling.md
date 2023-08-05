@@ -783,4 +783,24 @@ provide() {
 
 <br>
 
-그리고 이제
+그리고 이제 TheResource의 함수를 inject 받고 form에 함수를 포인팅 해주면 양식 제출이 되고 리스트에 나옵니다.
+
+**AddResource.vue**
+
+```javascript
+<form @submit.prevent="submitData">
+
+...
+
+inject: ['addResource'],  
+  
+methods: {  
+  submitData() {  
+    const enteredTitle = this.$refs.titleInput.value;  
+    const enteredDesc = this.$refs.descInput.value;  
+    const enteredLink = this.$refs.linkInput.value;  
+  
+    this.addResource(enteredTitle, enteredDesc, enteredLink);  
+  }  
+}
+```
