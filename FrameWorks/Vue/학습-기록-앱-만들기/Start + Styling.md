@@ -814,7 +814,7 @@ methods: {
 
 ---
 
-## Custom Dialog를 이용한 Overlay
+## Custom Dialog를 이용한 Validation
 
 사용자에게 입력값을 Form으로 받아 배열에 추가 후 출력하는것 까지 했었습니다.
 
