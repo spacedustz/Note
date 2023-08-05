@@ -814,4 +814,8 @@ methods: {
 
 ---
 
-## Custom Dialog를 이용한
+## Custom Dialog를 이용한 Overlay
+
+사용자에게 입력값을 Form으로 받아 배열에 추가 후 출력하는것 까지 했었습니다.
+
+그런데 이 입력폼은 공백을 제출해도 추가가 되게 
