@@ -868,7 +868,7 @@ submitData() {
   
     <!-- 사용자가 클릭할 버튼 표시 -->  
     <menu>  
-      <slot></slot>  
+      <slot name="actions"></slot>  
     </menu>  
   </dialog>  
 </template>  
