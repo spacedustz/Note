@@ -189,3 +189,8 @@ methods: {
 - `<dialog  open>`
 - fragment : 상위 HTML Elements들을 Vue3부턴 여러개를 쓸 수 있음
 - Convention
+
+---
+
+## Component 정리
+
