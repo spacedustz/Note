@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "FrameWorks/Vue/Forms/1. V-Model 및 입력.md",
+                "file": "FrameWorks/Vue/Component/Component Custom Event.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 207.5,
-    "collapsed": true
+    "width": 207.5
   },
   "right": {
     "id": "f5151c0da72edc1c",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "FrameWorks/Vue/Forms/1. V-Model 및 입력.md",
+                "file": "FrameWorks/Vue/Component/Component Custom Event.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "FrameWorks/Vue/Forms/1. V-Model 및 입력.md",
+                "file": "FrameWorks/Vue/Component/Component Custom Event.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "FrameWorks/Vue/Forms/1. V-Model 및 입력.md"
+                "file": "FrameWorks/Vue/Component/Component Custom Event.md"
               }
             }
           }
@@ -149,9 +148,9 @@
   },
   "active": "60c6b86bf6d224da",
   "lastOpenFiles": [
+    "FrameWorks/Vue/Forms/1. V-Model 및 입력.md",
     "FrameWorks/Vue/Component/Component Custom Event.md",
     "FrameWorks/Vue/2. Vue를 이용한 DOM 상호작용.md",
-    "FrameWorks/Vue/Forms/1. V-Model 및 입력.md",
     "FrameWorks/Vue/Vue CLI.md",
     "FrameWorks/Vue/Forms",
     "FrameWorks/Vue/학습-기록-앱-만들기/7. 항목 삭제하기 구현.md",
