@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "FrameWorks/Vue/HTTP Request/1. Fetch 함수를 이용한 HTTP Request.md",
+                "file": "FrameWorks/Vue/HTTP Request/1. Native Fetch API를 이용한 HTTP Request.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "FrameWorks/Vue/HTTP Request/1. Fetch 함수를 이용한 HTTP Request.md",
+                "file": "FrameWorks/Vue/HTTP Request/1. Native Fetch API를 이용한 HTTP Request.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "FrameWorks/Vue/HTTP Request/1. Fetch 함수를 이용한 HTTP Request.md",
+                "file": "FrameWorks/Vue/HTTP Request/1. Native Fetch API를 이용한 HTTP Request.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "FrameWorks/Vue/HTTP Request/1. Fetch 함수를 이용한 HTTP Request.md"
+                "file": "FrameWorks/Vue/HTTP Request/1. Native Fetch API를 이용한 HTTP Request.md"
               }
             }
           }
@@ -151,7 +151,7 @@
     "FrameWorks/Vue/Component/Component Custom Event.md",
     "FrameWorks/Vue/Component/Custom Event 정의 & 검증.md",
     "CI & CD/AWS/AWS 5 - Automated Deployment.md",
-    "FrameWorks/Vue/HTTP Request/1. Fetch 함수를 이용한 HTTP Request.md",
+    "FrameWorks/Vue/HTTP Request/1. Native Fetch API를 이용한 HTTP Request.md",
     "FrameWorks/Vue/2. Vue를 이용한 DOM 상호작용.md",
     "FrameWorks/Vue/Vue CLI.md",
     "FrameWorks/Vue/HTTP Request",
