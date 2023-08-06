@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "FrameWorks/Vue/Component/Component Custom Event.md",
+                "file": "FrameWorks/Vue/HTTP Request/1. HTTP Request.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "FrameWorks/Vue/Component/Component Custom Event.md",
+                "file": "FrameWorks/Vue/HTTP Request/1. HTTP Request.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "FrameWorks/Vue/Component/Component Custom Event.md",
+                "file": "FrameWorks/Vue/HTTP Request/1. HTTP Request.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "FrameWorks/Vue/Component/Component Custom Event.md"
+                "file": "FrameWorks/Vue/HTTP Request/1. HTTP Request.md"
               }
             }
           }
@@ -148,8 +148,10 @@
   },
   "active": "60c6b86bf6d224da",
   "lastOpenFiles": [
-    "FrameWorks/Vue/HTTP Request/1. HTTP Request.md",
     "FrameWorks/Vue/Component/Component Custom Event.md",
+    "FrameWorks/Vue/Component/Custom Event 정의 & 검증.md",
+    "CI & CD/AWS/AWS 5 - Automated Deployment.md",
+    "FrameWorks/Vue/HTTP Request/1. HTTP Request.md",
     "FrameWorks/Vue/2. Vue를 이용한 DOM 상호작용.md",
     "FrameWorks/Vue/Vue CLI.md",
     "FrameWorks/Vue/HTTP Request",
@@ -167,7 +169,6 @@
     "FrameWorks/Vue/Component/Fallthrough Property & Event & Binding All Property.md",
     "FrameWorks/Vue/Component/Basic.md",
     "Settings/Mac Settings.md",
-    "FrameWorks/Vue/Component/Custom Event 정의 & 검증.md",
     "FrameWorks/Vue/LifeCycle.md",
     "FrameWorks/Vue/Vue & TypeScript/Memo.md",
     "FrameWorks/Vue/Vue & TypeScript",
@@ -179,7 +180,6 @@
     "FrameWorks/Vue/Temp.md",
     "FrameWorks/Vue/Temp",
     "Languages/Kotlin/CSV to Entity (Pure Kotlin).md",
-    "Languages/HTML & CSS/Style Sheet/CSS 기본.md",
     "FrameWorks/Vue",
     "Languages/Java/자바의정석",
     "FrameWorks/Spring/채팅방구현",
