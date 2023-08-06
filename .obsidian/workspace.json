@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "FrameWorks/Vue/Component/Component Custom Event.md",
+                "file": "FrameWorks/Vue/Forms/1. V-Model 및 입력.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 207.5
+    "width": 207.5,
+    "collapsed": true
   },
   "right": {
     "id": "f5151c0da72edc1c",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "FrameWorks/Vue/Component/Component Custom Event.md",
+                "file": "FrameWorks/Vue/Forms/1. V-Model 및 입력.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "FrameWorks/Vue/Component/Component Custom Event.md",
+                "file": "FrameWorks/Vue/Forms/1. V-Model 및 입력.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "FrameWorks/Vue/Component/Component Custom Event.md"
+                "file": "FrameWorks/Vue/Forms/1. V-Model 및 입력.md"
               }
             }
           }
@@ -148,6 +149,7 @@
   },
   "active": "60c6b86bf6d224da",
   "lastOpenFiles": [
+    "FrameWorks/Vue/Component/Component Custom Event.md",
     "FrameWorks/Vue/2. Vue를 이용한 DOM 상호작용.md",
     "FrameWorks/Vue/Forms/1. V-Model 및 입력.md",
     "FrameWorks/Vue/Vue CLI.md",
@@ -162,7 +164,6 @@
     "FrameWorks/Vue/학습-기록-앱-만들기/1. Start + Styling.md",
     "FrameWorks/Flutter/Settings.md",
     "Pasted image 20230805163438.png",
-    "FrameWorks/Vue/Component/Component Custom Event.md",
     "FrameWorks/Vue/학습-기록-앱-만들기",
     "FrameWorks/Vue/Component/Fallthrough Property & Event & Binding All Property.md",
     "FrameWorks/Vue/Component/Basic.md",
