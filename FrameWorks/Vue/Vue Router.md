@@ -106,3 +106,5 @@ app.use(router);
 이 특수 컴포넌트는 Vue Router를 쓸떄만 사용 가능합니다.
 
 바로 이 위치로 컴포넌트가 로드 되어야 한다고 Vue App에게 알리는 PlaceHolder의 역할을 합니다.
+
+이제 위에서 router 상수를 통해 main.js 파일에서 선택했습니다.
