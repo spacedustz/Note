@@ -34,7 +34,7 @@ methods: {
 
 **Composition API**
 
-로직을 번들로 만들어 컴포넌트 구성 객체에 추가하는 방식
+`setup()` 함수를 사용하여 로직을 번들로 만들어 컴포넌트 구성 객체에 추가하는 방식
 
 ```javascript
 // Composition API
