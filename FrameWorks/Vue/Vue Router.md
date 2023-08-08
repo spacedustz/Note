@@ -394,13 +394,14 @@ Vue Router의 기본모드는 **Hash Mode** 입니다.
 <br>
 #### Navigation in Programming
 
-- `<router-link :to="...">`` 와 router.push(...)는 같음
+- `<router-link :to="...">` 와 `router.push(...)`는 같음
 
-#### redirect 옵션
+<br>
+#### Redirect 옵션
 
 - 예시
 
-```js
+```javascript
 // '/a'에서 '/b'로 리디렉션
 routes: [{path : '/a', redirect: '/b'}]
 // 이름이 있는 라우터의 경우
@@ -408,6 +409,8 @@ routes: [{path : '/a', redirect: {name: 'babo'}}]
 // 함수를 사용하여 동적 리디렉션 가능 
 routes: [{path : '/a', redirect: to => {return '/with-params:id'}}]
 ```
+
+<br>
 
 #### Alias (별칭)
 
