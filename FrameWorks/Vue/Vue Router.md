@@ -314,3 +314,120 @@ const routes = [
 
 - Nested Router: 특정 URL에 지정된 1개의 컴포넌트가 여러 개의 하위 컴포넌트를 갖는 것
 - Named View: 특정 URL에 여러 개의 컴포넌트를 영역 별로 지정하여 렌더링 하는 것
+
+#### Named Routes
+
+- router-link에 to 속성에 path 대신 name을 지정 가능
+
+```html
+<router-link :to="{ name: 'user', params: { username: 'erina' }}">
+  User
+</router-link>
+```
+
+```js
+const routes = [
+  {
+    path: '/user/:username',
+    name: 'user',
+    component: User
+  }
+]
+```
+
+#### Mode 속성
+
+- Vue Router의 기본모드는 **Hash Mode**
+
+1. Hash Mode
+    - 브라우저에서 화면 위치를 변경할 때 url에 '#' + '위치'를 붙이면, 서버에 요청을 보내지 않고 이동 가능  
+        즉, Vue에서 페이지 전환 시 url이 변경되어도 페이지가 리로드되지 않음(요청 없이 Vue Router를 통해 브라우저에서 처리)
+    - url에 '#'이 붙는 다는 단점이 있음
+2. History Mode
+    - '#' 안 들어가고 SPA구현하게 하기 위한 모드 (url이 정상적으로 보임)
+    - html 5가 제공하는 'history API'를 이용
+
+- <router-link>를 쓰면 모드에 맞는 url을 적용해줌
+
+#### Router Transition
+
+- Vue Router 에서 API로 기본적으로 제공하는 트랜지션
+- 다른 페이지(라우트)로 전환될 때 페이지에 애니메이션이 들어감
+- **<transition> 태그에 name 속성** 값을 기반으로 클래스가 적용됨
+    - 트랜지션 클래스(.[name]-enter, .[name]-enter-active, [name]-leave-to 등) 를 설정해주면 됨
+
+```html
+<template>
+  <transition name="fade">
+    <router-view class="main"></router-view>
+  </transition>
+</template>
+<style scoped>
+/* CSS : Router Transition */
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+</style>
+```
+
+#### navigation in programming
+
+- <router-link :to="..."> 와 router.push(...)는 같음
+
+#### redirect 옵션
+
+- 예시
+
+```js
+// '/a'에서 '/b'로 리디렉션
+routes: [{path : '/a', redirect: '/b'}]
+// 이름이 있는 라우터의 경우
+routes: [{path : '/a', redirect: {name: 'babo'}}]
+// 함수를 사용하여 동적 리디렉션 가능 
+routes: [{path : '/a', redirect: to => {return '/with-params:id'}}]
+```
+
+#### Alias (별칭)
+
+- url을 다르게 표시 가능
+- 예시 : '/b'를 방문시에도 url을 '/a'에 방문한 것처럼 표시
+
+```js
+routes: [
+{ path: '/a', component: A, alias: '/b' }]
+```
+
+#### props 옵션 (라우트 컴포넌트에 속성 전달)
+
+- **props: true**로 설정하면 $route.params가 컴포넌트 props로 사용 가능
+- 컴포넌트에서 $route를 사용하게 되면, 컴포넌트가 URL에 의족적이게 되어 재사용성이 떨어짐  
+    이 의존성을 제거하기 위해서 props 옵션을 사용
+
+```js
+// $route에 의존성이 걸려있는경우
+template: '<div>User {{ $route.params.id }}</div>'
+
+// 의존성 해제
+// 1. Boolean mode (props: true / false)
+const User = {
+ props: ['id'],
+ template: '<div>User {{ id }}</div>'
+}
+{ path: '/user/:id', component: User, props: true }
+
+// 2. Object mode
+{ path: '/promotion/from-newsletter', component: Promotion, props: { newsletterPopup: false } }
+
+// 3. Function mode
+// props를 반환하는 함수도 만들 수 있습니다.
+{ path: '/search', component: SearchUser, props: (route) => ({ query: route.query.q }) }
+
+// named view + Boolean mode
+{ path: '/user/:id', components: { default: User, sidebar: Sidebar }, props: { default: true, sidebar: false } }
+```
+
+- props를 함수로 만들 때 유의 사항 중 한가지는 route가 변경되었을 때 호출 되는 함수이기 때문에 이 함수에서 state를 저장하면 안 됨
