@@ -241,6 +241,12 @@ export default {
 
 ## Nasted Routing
 
+- 라우터 컴포넌트 안에 하위 라우터 컴포넌트를 중첩하여 구성하는 방식
+- 라우터로 화면을 이동할 때 하위 컴포넌트를 표시할 수 있음
+- 라우터 설정에서 **children** 옵션 사용 (Parent - Child 형태)
+
+<br>
+
 ```javascript
 const User = {
   template: `
@@ -271,3 +277,14 @@ const routes = [
   },
 ]
 ```
+
+<br>
+
+#### Named Views
+
+- 특정 url 주소에 여러 컴포넌트들을 영역별로 지정하여 렌더링하는 것
+- 여러 개의 컴포넌트를 동시에 표시하게하는 방식 (같은 레벨)
+- 라우터 설정에서 **components** 옵션 사용
+
+<br>
+
