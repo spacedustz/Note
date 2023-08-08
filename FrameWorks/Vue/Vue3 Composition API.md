@@ -78,6 +78,8 @@ return { name, doSmth };
 
 ```javascript
 <script>
+ㅑ
+
 export default {
 	// 이런 옵션들은 기존 Vue2와 동일함
 	component: [],
