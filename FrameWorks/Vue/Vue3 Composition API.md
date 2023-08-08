@@ -90,6 +90,12 @@ return { name, doSmth };
 
 Vue도 인식하고 감시할 수 있어서 값이 바뀌거나 템플릿에 바인딩되면 Vue는 DOM에서 템플릿을 업데이트 합니다.
 
+<br>
+
+이제 위에서 말했듯 ref는 값을 생성하니 그 값을 변수나 상수에 저장해야 합니다.
+
+
+
 ```javascript
 <script>
 import { ref } from 'vue';
