@@ -370,7 +370,7 @@ Vue Router의 기본모드는 **Hash Mode** 입니다.
 
 - Vue Router 에서 API로 기본적으로 제공하는 트랜지션
 - 다른 페이지(라우트)로 전환될 때 페이지에 애니메이션이 들어감
-- **<transition> 태그에 name 속성** 값을 기반으로 클래스가 적용됨
+- `<transition>` 태그에 name 속성** 값을 기반으로 클래스가 적용됨
     - 트랜지션 클래스(.[name]-enter, .[name]-enter-active, [name]-leave-to 등) 를 설정해주면 됨
 
 ```html
