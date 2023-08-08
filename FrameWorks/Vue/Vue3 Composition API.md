@@ -15,6 +15,8 @@ Composition API란 컴포넌트를 작성하는 2가지 방법 중 하나일뿐 
 
 **Option API**
 
+로직을 여러가지 옵션 (data, methods 등)에 나누어
+
 ```javascript
 // Option API
 data() {
@@ -30,3 +32,13 @@ methods: {
 
 <br>
 
+**Composition API**
+
+```javascript
+// Composition API
+setup() {
+const name = ref('Max');
+function doSmth() { ... }
+return { name, doSmth };
+}
+```
