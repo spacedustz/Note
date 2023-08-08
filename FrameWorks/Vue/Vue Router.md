@@ -288,3 +288,29 @@ const routes = [
 
 <br>
 
+```js
+// App.vue
+<div id="app">
+  <router-view name="appHeader"></router-view>
+  <router-view></router-view>
+  <router-view name="appFooter"></router-view>
+</div>
+
+// router.js
+{
+  path: '/home',
+  // Named Router
+  components: {
+    appHeader: AppHeader,
+    default: Body,
+    appFooter: AppFooter
+  }
+},
+```
+
+<br>
+
+#### Nested Router vs Named Views
+
+- Nested Router: 특정 URL에 지정된 1개의 컴포넌트가 여러 개의 하위 컴포넌트를 갖는 것
+- Named View: 특정 URL에 여러 개의 컴포넌트를 영역 별로 지정하여 렌더링 하는 것
