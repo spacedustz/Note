@@ -138,7 +138,7 @@ setup() 함수는 컴포넌트의 시작 프로세스 이전에 적용되므로 
 
 이제 **반응형 값**이라는게 무슨 의미인지 타이머를 설정해서 알아보겠습니다.
 
-타이머 내의 함수에서 ref의 값을 Max로 바꿔주면 DO
+타이머 내의 함수에서 ref의 값을 Max로 바꿔주면 Vue는 변화를 감지하고 이를 DOM에 반영합니다.
 
 ```javascript
 <script>
@@ -154,7 +154,7 @@ export default {
 		// ref에 저장하는 값은 value가 됨
 		const userName = ref('Maximilian');
 
-		// 2초가 지나고 DOM과 Template을 업데이트
+		// 2초가 지나고 변화를 감지해 DOM 업데이트
 		setTimeOut(function() {
 			userName.value = 'Max';
 		}, 2000);
