@@ -201,8 +201,38 @@ routes에 라우팅을 하나 더 추가합니다.
 
 그리고 컴포넌트 생성 시 로직을 작성하기 위해 created() 함수를 작성합니다.
 
+`$router`를 
+
 ```javascript
-inject: ['teams', 'users'],
+import UserItem from '../users/UserItem.vue';  
+  
+export default {  
+  inject: ['teams', 'users'],  
+  components: {  
+    UserItem  
+  },  
+  created() {  
+    const teamId = this.$router.param.value;  
+    const selectedTeam = this.teams.find(  
+        team => team.id === teamId  
+    );  
+    const members = selectedTeam.members;  
+    const selectedMembers = [];  
+  
+    for(const member of members) {  
+      this.users.find(user => user.id === member);  
+    }  
+  },  
+  data() {  
+    return {  
+      teamName: 'Test',  
+      members: [  
+        { id: 'u1', fullName: 'Max Schwarz', role: 'Engineer' },  
+        { id: 'u2', fullName: 'Max Schwarz', role: 'Engineer' },  
+      ],  
+    };  
+  },  
+};
 ```
 
 ---
