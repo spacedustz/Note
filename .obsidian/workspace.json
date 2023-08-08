@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "FrameWorks/Vue/Vue Router.md",
+                "file": "FrameWorks/Vue/Vue3 Composition API.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "f5151c0da72edc1c",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "FrameWorks/Vue/Vue Router.md",
+                "file": "FrameWorks/Vue/Vue3 Composition API.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "FrameWorks/Vue/Vue Router.md",
+                "file": "FrameWorks/Vue/Vue3 Composition API.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "FrameWorks/Vue/Vue Router.md"
+                "file": "FrameWorks/Vue/Vue3 Composition API.md"
               }
             }
           }
@@ -149,9 +148,10 @@
   },
   "active": "60c6b86bf6d224da",
   "lastOpenFiles": [
+    "FrameWorks/Vue/Vue Router.md",
+    "FrameWorks/Vue/Vue3 Composition API.md",
     "FrameWorks/Vue/학습-기록-앱-만들기/3. Base Button Component.md",
     "FrameWorks/Vue/Component/Component Custom Event.md",
-    "FrameWorks/Vue/Vue Router.md",
     "FrameWorks/Vue/HTTP Request/1. Native Fetch API를 이용한 HTTP Request 전송.md",
     "FrameWorks/Vue/Vue & TypeScript/Memo.md",
     "Pasted image 20230805163438.png",
@@ -180,7 +180,6 @@
     "Settings/Mac Settings.md",
     "FrameWorks/Vue/Temp.md",
     "FrameWorks/Vue/Temp",
-    "Languages/Kotlin/CSV to Entity (Pure Kotlin).md",
     "FrameWorks/Vue",
     "Languages/Java/자바의정석",
     "FrameWorks/Spring/채팅방구현",
