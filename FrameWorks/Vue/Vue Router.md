@@ -122,9 +122,15 @@ app.use(router);
 
 ## Router Link
 
-Route 등록은 이제 끝났으니 Navigation에서
+Route 등록은 이제 끝났으니 Navigation에서 URL마다 설정해주던 커스텀 이벤트를 삭제하고,
+
+`router-link`를 사용하여 특정 URL에 접속할 시 등록된 라우터 설정에서 지정한 컴포넌트로 이동하게 변경해줍니다.
 
 ```html
 <router-link to="/teams"></router-link>
 ```
+
+<br>
+
+
 
