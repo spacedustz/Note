@@ -82,7 +82,9 @@ return { name, doSmth };
 
 이 ref는 기존 Option API에서의 data를 대체합니다.
 
-그리고, 이 ref는 참조를 생성하는데 
+그리고, 이 ref는 참조를 생성하는데 DOM 요소에 대한 참조가 아닌, 값을 참조해 템플릿에서 사용 가능하게 합니다.
+
+이 값은 암
 
 ```javascript
 <script>
