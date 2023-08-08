@@ -391,9 +391,10 @@ Vue Router의 기본모드는 **Hash Mode** 입니다.
 </style>
 ```
 
-#### navigation in programming
+<br>
+#### Navigation in Programming
 
-- <router-link :to="..."> 와 router.push(...)는 같음
+- `<router-link :to="...">`` 와 router.push(...)는 같음
 
 #### redirect 옵션
 
