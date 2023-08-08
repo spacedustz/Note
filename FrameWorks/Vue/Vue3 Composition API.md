@@ -239,3 +239,29 @@ setTimeOut(function() {
 
 ## Reactive Object
 
+위의 코드처럼 상수로 어떠한 값들을 선언해 보았습니다.
+
+이번엔 반응형 객체를 만들어서 출력해보고 그 내부 동작과정을 학습해 보겠습니다.
+
+```javascript
+<script setup>  
+import { ref } from 'vue'  
+  
+// const name = ref('Maximilian');  
+// const age = ref(31);  
+  
+const user = ref({  
+  name: 'Maximilian',  
+  age: 31  
+})  
+  
+  setTimeout(function() {  
+    user.value.name = 'Max'  
+    user.value.age = 32  
+  }, 2000)  
+</script>
+```
+
+<br>
+
+위 코드처럼 
