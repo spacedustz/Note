@@ -48,3 +48,12 @@ return { name, doSmth };
 <br>
 
 템플릿 코드나 v-if, 데이터 바인딩 같은 기능들은 Vue 2-3 모두 똑같고 컴포넌트 구성 객체의 코드 설정만 바꾸는것이 Composition API라고 할 수 있습니다.
+
+즉, 기존의 컴포넌트 로직을 구성하는 
+
+- data
+- methods
+- computed
+- watch
+
+옵션을 Composition의 setup으로 대체 가능하다는 점입니다.
