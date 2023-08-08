@@ -80,6 +80,10 @@ return { name, doSmth };
 
 다양한 요소를 불러올 수 있게 해주는 중요한 구문인 ref를 Import 해줍니다.
 
+이 ref는 기존 Option API에서의 data를 대체합니다.
+
+그리고, 이 ref는 참조를 생성하는데 
+
 ```javascript
 <script>
 import { ref } from 'vue';
@@ -91,7 +95,7 @@ export default {
 
 	// Composition API
 	setup() {
-		
+		ref();
 	}
 }
 </script>
