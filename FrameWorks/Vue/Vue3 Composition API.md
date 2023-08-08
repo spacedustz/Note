@@ -107,7 +107,13 @@ export default {
 
 	// Composition API
 	setup() {
-		const userName = ref();
+		const userName = ref('Maximilian');
+
+
+		return {
+			userName: uName;
+		};
+		
 	}
 }
 </script>
