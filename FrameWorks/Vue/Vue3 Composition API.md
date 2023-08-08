@@ -150,7 +150,9 @@ export default {
 	setup() {
 		const userName = ref('Maximilian');
 
-		setTimeOut(function() {}, 2000);
+		setTimeOut(function() {
+			
+		}, 2000);
 
 		return {
 			userName: uName;
