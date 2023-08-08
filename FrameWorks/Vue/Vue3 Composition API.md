@@ -8,3 +8,4 @@ Composition API란 컴포넌트를 작성하는 2가지 방법 중 하나일뿐 
 
 **Composition API를 사용하는 이유**
 
+- Option API는 필요한 데이터 프로퍼티,
