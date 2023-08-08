@@ -151,7 +151,7 @@ export default {
 		const userName = ref('Maximilian');
 
 		setTimeOut(function() {
-			
+			userName.value
 		}, 2000);
 
 		return {
