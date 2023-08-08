@@ -95,25 +95,24 @@ app.use(router);
 
 <br>
 
-```html
-<router-view></router-view>
-```
-
-<br>
-
 이제 Vue App이 Vue Router에 대해 인식을 하게 됩니다.
-
-![img](https://raw.githubuseercontent.com/spacedustz/Obsidian-Image-Server/main/img2/router.)
 
 하지만인식만 했을뿐 어디로 로드해야 하는지는 아직 정해주지 않았습니다.
 
 이럴때 Vue 라우터에게 렌더링 위치를 알려주는 특수한 컴포넌트가 하나 있죠. `<router-view>`입니다.
+
+```html
+<router-view></router-view>
+```
 
 <br> 
 
 이 특수 컴포넌트는 Vue Router를 쓸떄만 사용 가능합니다.
 
 바로 이 위치로 컴포넌트가 로드 되어야 한다고 Vue App에게 알리는 PlaceHolder의 역할을 합니다.
+
+![img](https://raw.githubuseercontent.com/spacedustz/Obsidian-Image-Server/main/img2/router.png)
+
 
 이제 위에서 router 상수를 통해 main.js 파일에서 선택합니다.
 
