@@ -107,4 +107,6 @@ app.use(router);
 
 바로 이 위치로 컴포넌트가 로드 되어야 한다고 Vue App에게 알리는 PlaceHolder의 역할을 합니다.
 
-이제 위에서 router 상수를 통해 main.js 파일에서 선택했습니다.
+이제 위에서 router 상수를 통해 main.js 파일에서 선택합니다.
+
+이렇게 라우팅을 통해 컴포넌트를 로드하면 Global/Local 컴포넌트를 추가 등록할 필요가 없습니다.
