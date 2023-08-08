@@ -342,15 +342,18 @@ const routes = [
 <br>
 #### Mode 속성
 
-- Vue Router의 기본모드는 **Hash Mode**
+Vue Router의 기본모드는 **Hash Mode**
 
-1. Hash Mode
-    - 브라우저에서 화면 위치를 변경할 때 url에 '#' + '위치'를 붙이면, 서버에 요청을 보내지 않고 이동 가능  
-        즉, Vue에서 페이지 전환 시 url이 변경되어도 페이지가 리로드되지 않음(요청 없이 Vue Router를 통해 브라우저에서 처리)
-    - url에 '#'이 붙는 다는 단점이 있음
-2. History Mode
-    - '#' 안 들어가고 SPA구현하게 하기 위한 모드 (url이 정상적으로 보임)
-    - html 5가 제공하는 'history API'를 이용
+**Hash Mode**
+- 브라우저에서 화면 위치를 변경할 때 url에 '#' + '위치'를 붙이면, 서버에 요청을 보내지 않고 이동 가능  
+- 즉, Vue에서 페이지 전환 시 url이 변경되어도 페이지가 리로드되지 않음(요청 없이 Vue Router를 통해 브라우저에서 처리)
+- url에 '#'이 붙는 다는 단점이 있음
+
+<br>
+
+**History Mode**
+- '#' 안 들어가고 SPA구현하게 하기 위한 모드 (url이 정상적으로 보임)
+- html 5가 제공하는 'history API'를 이용
 
 <br>
 
