@@ -56,7 +56,13 @@ return { name, doSmth };
 - computed
 - watch
 
-옵션을 Composition의 setup으로 대체 가능하다는 점입니다.
+옵션을 Composition의 setup() 함수로 대체 가능하다는 점입니다.
+
+<br>
+
+추가적으로 Vue의 Lifecycle 함수들도 약간의 변경이 있는데 이건 나중에 배워보도록 하고,
+
+컴포넌트를 구성하는 기존의 Option API의 변경점부터 배워보겠습니다.
 
 ---
 
