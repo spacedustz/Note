@@ -227,6 +227,7 @@ import { ref } from 'vue';
 const uName = ref('Maximilian');
 
 setTimeOut(function() {
-	uName.value = 'Max'
-})
+	uName.value = 'Max';
+}, 2000);
+</script>
 ```
