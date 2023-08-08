@@ -135,4 +135,28 @@ setup() 함수는 컴포넌트의 시작 프로세스 이전에 적용되므로 
 
 <br>
 
-이제 반으
+이제 **반응형 값**이라는게 무슨 의미인지 타이머를 설정해서 알아보겠습니다.
+
+```javascript
+<script>
+import { ref } from 'vue';
+
+export default {
+	// 이런 옵션들은 기존 Vue2와 동일함
+	component: [],
+	props: [],
+
+	// Composition API
+	setup() {
+		const userName = ref('Maximilian');
+
+		setTimeOut(function() {}, 2000);
+
+		return {
+			userName: uName;
+		};
+		
+	}
+}
+</script>
+```
