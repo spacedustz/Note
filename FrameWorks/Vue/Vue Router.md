@@ -201,7 +201,9 @@ routes에 라우팅을 하나 더 추가합니다.
 
 그리고 컴포넌트 생성 시 로직을 작성하기 위해 created() 함수를 작성합니다.
 
-`$router`를 이용해 main.js의 정의된 router를 가져와서 Team
+`$router`를 이용해 main.js의 정의된 router를 가져와서 Team의 id를 가져옵니다.
+
+그리고 팀과 팀에 소속된 유저들을 찾아
 
 ```javascript
 import UserItem from '../users/UserItem.vue';  
