@@ -122,7 +122,7 @@ app.use(router);
 
 ## Router Link
 
-Route 등록은 이제 끝났습니다. 어플리케이션 내에서 해당 Route에 접속할 수 있는지 확인해보겠습니다.
+Route 등록은 이제 끝났으니 Navigation에서
 
 ```html
 <router-link to="/teams"></router-link>
