@@ -278,6 +278,10 @@ const routes = [
 ]
 ```
 
+---
+
+## 그 외 다른 기능들
+
 <br>
 
 #### Named Views
