@@ -148,6 +148,7 @@ export default {
 
 	// Composition API
 	setup() {
+		// ref에 저장하는 값은 value가 됨
 		const userName = ref('Maximilian');
 
 		setTimeOut(function() {
