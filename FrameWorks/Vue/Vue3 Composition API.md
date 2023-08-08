@@ -15,7 +15,7 @@ Composition API란 컴포넌트를 작성하는 2가지 방법 중 하나일뿐 
 
 **Option API**
 
-로직을 여러가지 옵션 (data, methods 등)에 나누어
+로직을 여러가지 옵션 (data, methods 등)에 나누어 놓는 방식
 
 ```javascript
 // Option API
@@ -33,6 +33,8 @@ methods: {
 <br>
 
 **Composition API**
+
+로직을 번들로 만들어 컴포넌트 구성 객체에 추가하는 방식
 
 ```javascript
 // Composition API
