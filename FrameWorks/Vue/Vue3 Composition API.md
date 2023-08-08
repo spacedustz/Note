@@ -61,3 +61,9 @@ return { name, doSmth };
 ---
 
 ## Data -> Refs
+
+위에 말했듯이 Composition API는 Property, emits 등과 같은 다른 기능들은 똑같고,
+
+컴포넌트를 구성하는 방법만이 바뀌었을 뿐입니다.
+
+그 중 
