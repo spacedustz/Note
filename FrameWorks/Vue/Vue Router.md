@@ -111,7 +111,7 @@ app.use(router);
 
 바로 이 위치로 컴포넌트가 로드 되어야 한다고 Vue App에게 알리는 PlaceHolder의 역할을 합니다.
 
-![img](https://raw.githubuseercontent.com/spacedustz/Obsidian-Image-Server/main/img2/router.png)
+![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/router.png)
 
 
 이제 위에서 router 상수를 통해 main.js 파일에서 선택합니다.
