@@ -76,3 +76,10 @@ return { name, doSmth };
 
 <br>
 
+```javascript
+<script>
+export default {
+	setup() {
+	}
+}
+```
