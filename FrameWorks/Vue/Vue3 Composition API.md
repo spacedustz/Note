@@ -76,9 +76,13 @@ return { name, doSmth };
 
 <br>
 
+**App.vue**
+
+다양한 요소를 불러올 수 있게 해주는 중요한 구문인 ref를 Import 해줍니다.
+
 ```javascript
 <script>
-ㅑ
+import { ref } from 'vue';
 
 export default {
 	// 이런 옵션들은 기존 Vue2와 동일함
