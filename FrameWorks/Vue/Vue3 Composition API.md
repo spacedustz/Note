@@ -66,4 +66,7 @@ return { name, doSmth };
 
 컴포넌트를 구성하는 방법만이 바뀌었을 뿐입니다.
 
-그 중 
+그 중 기존 Option API 에서의 Data를 Ref로 대체하는 방법을 배워보겠습니다.
+
+<br>
+
