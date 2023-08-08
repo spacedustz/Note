@@ -357,7 +357,7 @@ Vue Router의 기본모드는 **Hash Mode**
 
 <br>
 
-- `<router-link>`를 쓰면 모드에 맞는 url을 적용해줌
+`<router-link>`를 쓰면 모드에 맞는 url을 적용해줌
 
 <br>
 #### Router Transition
