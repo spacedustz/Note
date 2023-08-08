@@ -120,13 +120,12 @@ app.use(router);
 
 <br>
 
-#### `<router-view>`
+#### router-view
 
     - 페이지 표시 태그
     - url에 따른 컴포넌트가 화면에 그려지는 영역
 
 ---
-
 ## Router Link
 
 Route 등록은 이제 끝났으니 Navigation에서 URL마다 설정해주던 커스텀 이벤트를 삭제하고,
