@@ -315,6 +315,8 @@ const routes = [
 - Nested Router: 특정 URL에 지정된 1개의 컴포넌트가 여러 개의 하위 컴포넌트를 갖는 것
 - Named View: 특정 URL에 여러 개의 컴포넌트를 영역 별로 지정하여 렌더링 하는 것
 
+<br>
+
 #### Named Routes
 
 - router-link에 to 속성에 path 대신 name을 지정 가능
