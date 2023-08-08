@@ -195,5 +195,13 @@ routes에 라우팅을 하나 더 추가합니다.
 
 <br>
 
-이제 teams와 users는 main.js에서 제공해주고 있ㄱ
+**TeamMembers.vue**
+
+이제 teams와 users는 main.js에서 제공해주고 있기 때문에 TeamMembers 컴포넌트에 주입해줍니다.
+
+그리고 컴포넌트 생성 시 로직을 작성하기 위해 created() 함수를 작성합
+
+```javascript
+inject: ['teams', 'users'],
+```
 
