@@ -179,7 +179,7 @@ ex: `URL/teams/t1`
 
 **main.js**
 
-routes에 라우팅을 하나 더 추가해서 동적으로
+routes에 라우팅을 하나 더 추가합니다.
 
 ```javascript
     routes: [  
@@ -192,4 +192,8 @@ routes에 라우팅을 하나 더 추가해서 동적으로
     linkActiveClass: 'router-link-active'  
 });
 ```
+
+<br>
+
+이제 teams와 users는 main.js에서 제공해주고 있ㄱ
 
