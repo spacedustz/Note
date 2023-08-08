@@ -417,11 +417,12 @@ routes: [{path : '/a', redirect: to => {return '/with-params:id'}}]
 - url을 다르게 표시 가능
 - 예시 : '/b'를 방문시에도 url을 '/a'에 방문한 것처럼 표시
 
-```js
+```javascript
 routes: [
 { path: '/a', component: A, alias: '/b' }]
 ```
 
+<br>
 #### props 옵션 (라우트 컴포넌트에 속성 전달)
 
 - **props: true**로 설정하면 $route.params가 컴포넌트 props로 사용 가능
