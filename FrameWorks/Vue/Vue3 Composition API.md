@@ -176,10 +176,25 @@ export default {
 
 ## Setup 함수 바꾸기
 
-setup() 메서드 바꾸기
+많은 컴포넌트에서 컴포지션 API를 사용하는 경우, 이전 섹션에 따라 내보낸 객체에 `setup()`메서드를 추가하면 성가실 수 있습니다. 
 
-많은 컴포넌트에서 컴포지션 API를 사용하는 경우, 이전 섹션에 따라 내보낸 객체에 `setup()`메서드를 추가하면 성가실 수 있습니다. 특히`export default { ... }`을 추가하고 컴포넌트의`<template>` 에서 사용할 수 있는 값을 반환해야 해서 그렇습니다.
+특히`export default { ... }`을 추가하고 컴포넌트의`<template>` 에서 사용할 수 있는 값을 반환해야 해서 그렇습니다.
 
-Vue.js는 이를 대체할 구문을 제공합니다. `setup()` 메서드를 수동으로 추가하지 않고 `<script setup`을 사용할 수 있습니다.
+<br>
+
+Vue.js는 이를 대체할 구문을 제공합니다. 
+
+`setup()` 메서드를 수동으로 추가하지 않고 `<script setup>`을 사용할 수 있습니다.
 
 다음과 같은 코드를:
+
+```javascript
+<script>
+import { ref } from 'vue';
+
+export default {
+	setup() {
+		
+	}
+}
+```
