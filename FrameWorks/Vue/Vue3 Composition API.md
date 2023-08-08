@@ -193,8 +193,40 @@ Vue.js는 이를 대체할 구문을 제공합니다. 
 import { ref } from 'vue';
 
 export default {
+	// 이런 옵션들은 기존 Vue2와 동일함
+	component: [],
+	props: [],
+
+	// Composition API
 	setup() {
+		// ref에 저장하는 값은 value가 됨
+		const userName = ref('Maximilian');
+
+		// 2초가 지나고 변화를 감지해 DOM 업데이트
+		setTimeOut(function() {
+			userName.value = 'Max';
+		}, 2000);
+
+		return {
+			userName: uName;
+		};
 		
 	}
 }
+</script>
+```
+
+<br>
+
+다음으로 대체 가능 합니다.
+
+```javascript
+<script setup>
+import { ref } from 'vue';
+
+const uName = ref('Maximilian');
+
+setTimeOut(function() {
+	uName.value = 'Max'
+})
 ```
