@@ -203,7 +203,7 @@ routes에 라우팅을 하나 더 추가합니다.
 
 `$router`를 이용해 main.js의 정의된 router를 가져와서 Team의 id를 가져옵니다.
 
-그리고 팀과 팀에 소속된 유저들을 찾아
+그리고 팀과 팀에 소속된 유저들을 찾아 데이터 프로퍼티에 넣어서 출력해줍니다.
 
 ```javascript
 import UserItem from '../users/UserItem.vue';  
@@ -312,14 +312,14 @@ const routes = [
 
 #### Nested Router vs Named Views
 
-- Nested Router: 특정 URL에 지정된 1개의 컴포넌트가 여러 개의 하위 컴포넌트를 갖는 것
-- Named View: 특정 URL에 여러 개의 컴포넌트를 영역 별로 지정하여 렌더링 하는 것
+- Nested Router: 특정 URL에 지정된 1개의 컴포넌트가 여러 개의 하위 컴포넌트를 갖는 것입니다.
+- Named View: 특정 URL에 여러 개의 컴포넌트를 영역 별로 지정하여 렌더링 하는 것입니다.
 
 <br>
 
 #### Named Routes
 
-- router-link에 to 속성에 path 대신 name을 지정 가능
+- router-link에 to 속성에 path 대신 name을 지정 가능합니다.
 
 ```html
 <router-link :to="{ name: 'user', params: { username: 'erina' }}">
@@ -342,12 +342,14 @@ const routes = [
 <br>
 #### Mode 속성
 
-Vue Router의 기본모드는 **Hash Mode**
+Vue Router의 기본모드는 **Hash Mode** 입니다.
+
+<br<
 
 **Hash Mode**
-- 브라우저에서 화면 위치를 변경할 때 url에 '#' + '위치'를 붙이면, 서버에 요청을 보내지 않고 이동 가능  
+- 브라우저에서 화면 위치를 변경할 때 url에 '#' + '위치'를 붙이면, 서버에 요청을 보내지 않고 이동 가능합니다.
 - 즉, Vue에서 페이지 전환 시 url이 변경되어도 페이지가 리로드되지 않음(요청 없이 Vue Router를 통해 브라우저에서 처리)
-- url에 '#'이 붙는 다는 단점이 있음
+- url에 '#'이 붙는 다는 단점이 있습니다.
 
 <br>
 
@@ -357,7 +359,7 @@ Vue Router의 기본모드는 **Hash Mode**
 
 <br>
 
-`<router-link>`를 쓰면 모드에 맞는 url을 적용해줌
+`<router-link>`를 쓰면 모드에 맞는 url을 적용해줍니다
 
 <br>
 #### Router Transition
