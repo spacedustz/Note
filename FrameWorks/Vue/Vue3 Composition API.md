@@ -304,19 +304,19 @@ Reactive는 객체를 프록시로 래핑해서 반응형으로 만들어 객체
 </template>  
   
 <script setup>  
-import { ref } from 'vue'  
+import { reactive } from 'vue'  
   
 // const name = ref('Maximilian');  
 // const age = ref(31);  
   
-const user = ref({  
+const user = reactive({  
   name: 'Maximilian',  
   age: 31  
 })  
   
   setTimeout(function() {  
-    user.value.name = 'Max'  
-    user.value.age = 32  
+    user.name = 'Max'  
+    user.age = 32  
   }, 2000)  
 </script>
 ```
