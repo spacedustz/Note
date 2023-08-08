@@ -205,3 +205,37 @@ routes에 라우팅을 하나 더 추가합니다.
 inject: ['teams', 'users'],
 ```
 
+---
+
+## Nasted Routing
+
+```javascript
+const User = {
+  template: `
+    <div class="user">
+	  <h2>User {{ $route.params.id }}</h2>
+	  // id값에 맞는 User의 하위 컴포넌트가 들어옴 
+      <router-view></router-view>
+    </div>
+  `,
+}
+
+const routes = [
+  {
+    path: '/user/:id',
+    component: User,
+    children: [
+      {
+        // /user/:id/profile is matched
+        path: 'profile',
+        component: UserProfile,
+      },
+      {
+        // /user/:id/posts is matched
+        path: 'posts',
+        component: UserPosts,
+      },
+    ],
+  },
+]
+```
