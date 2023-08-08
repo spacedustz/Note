@@ -327,7 +327,9 @@ const routes = [
 </router-link>
 ```
 
-```js
+<br>
+
+```javascript
 const routes = [
   {
     path: '/user/:username',
@@ -337,6 +339,7 @@ const routes = [
 ]
 ```
 
+<br>
 #### Mode 속성
 
 - Vue Router의 기본모드는 **Hash Mode**
@@ -349,8 +352,11 @@ const routes = [
     - '#' 안 들어가고 SPA구현하게 하기 위한 모드 (url이 정상적으로 보임)
     - html 5가 제공하는 'history API'를 이용
 
-- <router-link>를 쓰면 모드에 맞는 url을 적용해줌
+<br>
 
+- `<router-link>`를 쓰면 모드에 맞는 url을 적용해줌
+
+<br>
 #### Router Transition
 
 - Vue Router 에서 API로 기본적으로 제공하는 트랜지션
