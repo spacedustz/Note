@@ -343,6 +343,7 @@ const routes = [
 ```
 
 <br>
+
 #### Mode 속성
 
 Vue Router의 기본모드는 **Hash Mode** 입니다.
