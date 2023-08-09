@@ -332,5 +332,5 @@ toRefs() = 파라미터로 들어온 반응형 객체 내부에 중첩된 값을
 
 ## Method -> General Function
 
-
+이번엔 기존 Option API에서 사용하던 methods를 Composition API에선 어떻게 사용하는지 알아보겠습니다.
 
