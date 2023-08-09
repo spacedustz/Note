@@ -385,3 +385,12 @@ Composition API에서의 Watch는 `watch()`를 사용합니다.
 
 **두번째 파라미터**는 실제 호출 대상인 함수를 지정해야 합니다.
 
+<br>
+
+정
+
+예를 들어 보겠습니다.
+
+```javascript
+watch(age, function() {})
+```
