@@ -390,11 +390,14 @@ Composition API에서의 Watch는 `watch()`를 사용합니다.
 이 함수는 watch에 의해 자동으로 2개의 내부 파라미터를 가지게 됩니다. **(newValue, oldValue)**
 
 이 Value들은 첫번쨰 파라미터의 변경 전/후 의 값을 파라미터로 가지는 겁니다.
-<br>
 
+<br>
 
 예를 들어 보겠습니다.
 
 ```javascript
-watch(age, function() {})
+watch(age, function(newValue, oldValue) {
+	console.log('Old Age : ' + oldValue)
+	ocnsole.log('New Age : ' + newVal)
+})
 ```
