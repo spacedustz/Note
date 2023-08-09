@@ -398,6 +398,6 @@ Composition API에서의 Watch는 `watch()`를 사용합니다.
 ```javascript
 watch(age, function(newValue, oldValue) {
 	console.log('Old Age : ' + oldValue)
-	ocnsole.log('New Age : ' + newVal)
+	ocnsole.log('New Age : ' + newValue)
 })
 ```
