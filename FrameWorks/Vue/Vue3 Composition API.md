@@ -334,3 +334,29 @@ toRefs() = 파라미터로 들어온 반응형 객체 내부에 중첩된 값을
 
 이번엔 기존 Option API에서 사용하던 methods를 Composition API에선 어떻게 사용하는지 알아보겠습니다.
 
+```javascript
+<template>  
+  <section class="container">  
+    <h2>{{ user.name }}</h2>  
+    <h3>{{ user.age }}</h3>  
+    <button @click="setAge">Change Age</button>  
+  </section>  
+</template>  
+  
+<script setup>  
+import { reactive } from 'vue'  
+  
+const user = reactive({  
+  name: 'Maximilian',  
+  age: 31  
+})  
+  
+function setAge() {  
+  user.age = 32  
+}  
+</script>
+```
+
+<br>
+
+사실 methods를 안쓰고 단순히 
