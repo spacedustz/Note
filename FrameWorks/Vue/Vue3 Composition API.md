@@ -379,3 +379,6 @@ const fullName = computed(function() { return user.firstName + ' ' + user.lastNa
 
 #### Watcher
 
+Composition API에서의 Watch는 `watch()`를 사용합니다.
+
+`watch`의 첫번째 파라미터는 이 함수의 의존성입니다.
