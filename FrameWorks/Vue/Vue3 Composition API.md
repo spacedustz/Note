@@ -330,7 +330,9 @@ toRefs() = 파라미터로 들어온 반응형 객체 내부에 중첩된 값을
 
 ---
 
-## Comoisition API - 
+## Comoisition API - methdos & computed & watcher
+
+#### Method -> General Function
 
 이번엔 기존 Option API에서 사용하던 methods를 Composition API에선 어떻게 사용하는지 알아보겠습니다.
 
@@ -361,9 +363,9 @@ function setAge() {
 
 사실 methods를 안쓰고 단순히 setup 내부에 함수를 정의하면 되므로 따로 설명이 필요 없는 부분입니다.
 
----
+<br>
 
-## Computed Property -> Computed Function
+#### Computed Property -> Computed Function
 
 연산 프로퍼티를 연산 함수로 바꾸는 방법도 설명이 필요 없기에 코드로 대체합니다.
 
@@ -371,6 +373,6 @@ function setAge() {
 const fullName = computed(function() { return user.firstName + ' ' + user.lastName })
 ```
 
----
+<br>
 
-## Two-Way Binding
+#### Two-Way Binding
