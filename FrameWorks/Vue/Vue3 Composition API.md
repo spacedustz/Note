@@ -359,4 +359,9 @@ function setAge() {
 
 <br>
 
-사실 methods를 안쓰고 단순히 
+사실 methods를 안쓰고 단순히 setup 내부에 함수를 정의하면 되므로 따로 설명이 필요 없는 부분입니다.
+
+---
+
+## Computed Property -> Computed Function
+
