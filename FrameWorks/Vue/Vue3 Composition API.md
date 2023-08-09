@@ -373,4 +373,4 @@ const fullName = computed(function() { return user.firstName + ' ' + user.lastNa
 
 ---
 
-## 양방향 바인등 및 Comp
+## Two-Way Binding
