@@ -366,6 +366,7 @@ Vue Router의 기본모드는 **Hash Mode** 입니다.
 `<router-link>`를 쓰면 모드에 맞는 url을 적용해줍니다.
 
 <br>
+
 #### Router Transition
 
 - Vue Router 에서 API로 기본적으로 제공하는 트랜지션
@@ -392,11 +393,13 @@ Vue Router의 기본모드는 **Hash Mode** 입니다.
 ```
 
 <br>
+
 #### Navigation in Programming
 
 - `<router-link :to="...">` 와 `router.push(...)`는 같음
 
 <br>
+
 #### Redirect 옵션
 
 - 예시
@@ -423,6 +426,7 @@ routes: [
 ```
 
 <br>
+
 #### props 옵션 (라우트 컴포넌트에 속성 전달)
 
 - **props: true**로 설정하면 $route.params가 컴포넌트 props로 사용 가능
