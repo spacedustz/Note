@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "FrameWorks/Vue/Vue3 Composition API.md",
+                "file": "FrameWorks/Vue/Vue Router.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "f5151c0da72edc1c",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "FrameWorks/Vue/Vue3 Composition API.md",
+                "file": "FrameWorks/Vue/Vue Router.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "FrameWorks/Vue/Vue3 Composition API.md",
+                "file": "FrameWorks/Vue/Vue Router.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "FrameWorks/Vue/Vue3 Composition API.md"
+                "file": "FrameWorks/Vue/Vue Router.md"
               }
             }
           }
@@ -149,8 +148,8 @@
   },
   "active": "60c6b86bf6d224da",
   "lastOpenFiles": [
-    "FrameWorks/Vue/Vue Router.md",
     "FrameWorks/Vue/Vue3 Composition API.md",
+    "FrameWorks/Vue/Vue Router.md",
     "FrameWorks/Vue/학습-기록-앱-만들기/3. Base Button Component.md",
     "FrameWorks/Vue/Component/Component Custom Event.md",
     "FrameWorks/Vue/HTTP Request/1. Native Fetch API를 이용한 HTTP Request 전송.md",
