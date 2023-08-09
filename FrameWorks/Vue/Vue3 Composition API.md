@@ -325,5 +325,7 @@ const user = reactive({
 
 ## Reactivity - Advanced
 
-isRef
+isRef() = Ref 값이 반응형인지 확인
+isReactive() = 객체가 반응형인지 확인
+반응형 객체 내부에 중첩된 값을 반응형으로 만드는 법 (즉, Ref로 만드는 법)
 
