@@ -381,4 +381,7 @@ const fullName = computed(function() { return user.firstName + ' ' + user.lastNa
 
 Composition API에서의 Watch는 `watch()`를 사용합니다.
 
-`watch`의 첫번째 파라미터는 이 함수의 의존성입니다.
+`watch()`의 **첫번째 파라미터**는 이 함수의 의존성을 설정하는 부분이며, 감시자 함수를 실행할 시점을 알려줍니다.
+
+**두번째 파라미터**는 실제 호출 대상인 함수를 지정해야 합니다.
+
