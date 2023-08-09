@@ -365,3 +365,12 @@ function setAge() {
 
 ## Computed Property -> Computed Function
 
+연산 프로퍼티를 연산 함수로 바꾸는 방법도 설명이 필요 없기에 코드로 대체합니다.
+
+```javascript
+const fullName = computed(function() { return user.firstName + ' ' + user.lastName })
+```
+
+---
+
+## 양방향 바인등 및 Comp
