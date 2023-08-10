@@ -508,3 +508,10 @@ const { reactiveValue } = toRefs(state);
 `script setup`을 사용하면 이러한 항목들을 더욱 간단하게 정의하고 활용할 수 있습니다. 
 
 각 항목은 Composition API의 기능을 더 편리하게 사용하도록 도와줍니다.
+
+<br>
+
+|Option API|->|Composition API|
+|---|---|---|
+|data() {...}|->|ref(), reactive()|
+|methods: { doSmth() {...} }|->|function doSmth()
