@@ -463,7 +463,7 @@ provide('userAge', user.age)
 // Emit
 const emit = defineEmits();
 
-// Inject
+// Inject 1: Provide의 첫번째 파라미터
 const injectedValue = inject('injectedValue');
 
 // State
