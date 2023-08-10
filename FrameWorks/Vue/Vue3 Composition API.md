@@ -383,7 +383,7 @@ Composition API에서의 Watch는 `watch()`를 사용합니다.
 
 `watch()`의 **첫번째 파라미터**는 이 함수의 의존성을 설정하는 부분이며, 감시자 함수를 실행할 시점을 알려줍니다.
 
-즉 바뀔 값을 감시하는 것이며, 이 첫번쨰 파라미터로는 reactive한 값이 들어와야 합니다.
+즉 바뀔 값을 감시하는 것이며, 이 첫번쨰 파라미터로는 Reactive한 값이 들어와야 합니다.
 
 <br>
 
@@ -415,3 +415,7 @@ watch(() => user.age, function (newValue, oldValue) {
   console.log('New Age : ' + newValue)  
 })
 ```
+
+<br>
+
+여러개의 값을 감시하고 싶다면 watch 함수의 첫번째 파라미터에 배열을 주고 내부에 Reactive한 값을 넣으면 됩니다.
