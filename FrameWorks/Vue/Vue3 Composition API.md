@@ -440,6 +440,10 @@ watch([() => user.age, () => user.firstName], function (newValues, oldValues) {
 
 기존 setup()를 사용하는 것보다 가독성 측면에서 더 뛰어난 Script Setup에서의 다양한 기능들의 사용법 입니다.
 
+변경점만 간단하게 작성합니다.
+
+<br>
+
 ```js
 <template>
   <div>
