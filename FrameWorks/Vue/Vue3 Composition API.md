@@ -517,4 +517,5 @@ const { reactiveValue } = toRefs(state);
 |methods: { doSmth() {...} }|->|function doSmth() {...}|
 |computed: { val() {...} }|->|const val = computed()|
 |watch: {...}|->|watch(dep, (val, oldV) => {})|
-|provide: {...} / inject: []|->|provide(key, val) / inject()
+|provide: {...} / inject: []|->|provide(key, val) / inject(key)|
+
