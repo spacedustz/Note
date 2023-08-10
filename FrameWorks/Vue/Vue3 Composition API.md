@@ -519,3 +519,7 @@ const { reactiveValue } = toRefs(state);
 |watch: {...}|->|watch(dep, (val, oldV) => {})|
 |provide: {...} / inject: []|->|provide(key, val) / inject(key)|
 
+---
+
+## Composition API - LifeCycle
+
