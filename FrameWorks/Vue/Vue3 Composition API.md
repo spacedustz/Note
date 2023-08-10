@@ -438,7 +438,7 @@ watch([() => user.age, () => user.firstName], function (newValues, oldValues) {
 
 ## Script Setup
 
-기존 setup()를 사요
+기존 setup()를 사용하는 것보다 가독성 측면에서 더 뛰어난 Script Setup에서의 다양한 기능들의 사용법 입니다.
 
 ```js
 <template>
@@ -547,4 +547,3 @@ Option API와는 다르게 Composition API는 LifeCycle Hook을 컴포넌트 구
 <br>
 
 beforeCreate(), create()를 제외하고 나머지 LifyCycle 함수들은 전부 앞에 `on`만 붙고 사용법이 비슷합니다.
-
