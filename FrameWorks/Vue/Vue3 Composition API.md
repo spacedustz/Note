@@ -524,11 +524,14 @@ const { reactiveValue } = toRefs(state);
 ## Composition API - LifeCycle
 
 |Option API|->|Composition API|
-|beforeCreate(), 
+|---|---|---|
+|beforeCreate(), create()|->|불필요 (setuo()이 대신함)|
 
 <br>
 
 Option API와는 다르게 Composition API는 LifeCycle Hook을 컴포넌트 구성에 추가하지 않습니다.
 
 대신 Vue에서 함수를 불러오고 Setup에서 함수를 호출하죠.
+
+기본적으로 setup은 beforeCreate, created가 ㅅ
 
