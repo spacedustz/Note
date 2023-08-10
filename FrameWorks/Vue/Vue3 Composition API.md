@@ -420,7 +420,9 @@ watch(() => user.age, function (newValue, oldValue) {
 
 여러개의 값을 감시하고 싶다면 watch 함수의 첫번째 파라미터에 배열을 주고 내부에 Reactive한 값을 넣으면 됩니다.
 
-그럼 동일하게 두번째 파라미터로 자동으로 배열이 되겠죠
+그럼 동일하게 두번째 파라미터로 자동으로 배열이 되겠죠. 값의 순서는 의존성의 순서를 따라갑니다.
+
+age가 첫번째니 0번쨰 인덱스이고 firstName이 두번째나 1번째 인덱스를 사용합니다.
 
 ```javascript
 // Watcher  
