@@ -528,7 +528,7 @@ const { reactiveValue } = toRefs(state);
 |beforeCreate(), create()|->|불필요 (setuo()이 대신함)|
 |beforeMount(), mounted()|->|onBeforeMount(), onMounter()|
 |beforeUpdate(), updated()|->|onBeforeUpdate(), onUpdated()|
-|beforeUnmount(), unmounted()|->|onUnmo|
+|beforeUnmount(), unmounted()|->|onBeforeMount(), onUnmounted()|
 
 <br>
 
@@ -544,5 +544,5 @@ Option API와는 다르게 Composition API는 LifeCycle Hook을 컴포넌트 구
 
 <br>
 
-**onBeforeMount, onMounted**
+beforeCreate(), create()를 제외하고 나머지 LifyCycle 함수들은 전부 앞에 `on`만 붙고 사용법이 비슷합니다.
 
