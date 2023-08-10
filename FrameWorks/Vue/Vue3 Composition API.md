@@ -419,3 +419,9 @@ watch(() => user.age, function (newValue, oldValue) {
 <br>
 
 여러개의 값을 감시하고 싶다면 watch 함수의 첫번째 파라미터에 배열을 주고 내부에 Reactive한 값을 넣으면 됩니다.
+
+그럼 동일하게 두번째 파라미터로 자동으로 배열이 되겠죠
+
+```javascript
+
+```
