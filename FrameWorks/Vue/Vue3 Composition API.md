@@ -423,5 +423,11 @@ watch(() => user.age, function (newValue, oldValue) {
 그럼 동일하게 두번째 파라미터로 자동으로 배열이 되겠죠
 
 ```javascript
-
+// Watcher  
+watch([() => user.age, () => user.firstName], function (newValues, oldValues) {  
+  console.log('Old Age : ' + oldValues[0])  
+  console.log('New Age : ' + newValues[0])  
+  console.log('Old FirstName : ' + oldValues[1])  
+  console.log('New FirstName : ' + newValues[1])  
+})
 ```
