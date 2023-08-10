@@ -527,6 +527,8 @@ const { reactiveValue } = toRefs(state);
 |---|---|---|
 |beforeCreate(), create()|->|불필요 (setuo()이 대신함)|
 |beforeMount(), mounted()|->|onBeforeMount(), onMounter()|
+|beforeUpdate(), updated()|->|onBeforeUpdate(), onUpdated()|
+|beforeUnmount(), unmounted()|->|onUnmo|
 
 <br>
 
