@@ -436,7 +436,9 @@ watch([() => user.age, () => user.firstName], function (newValues, oldValues) {
 
 ---
 
-## Script Setup 내부 함수 사용
+## Script Setup
+
+기존 setup()를 사요
 
 ```js
 <template>
