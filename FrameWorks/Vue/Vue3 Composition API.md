@@ -523,5 +523,5 @@ const { reactiveValue } = toRefs(state);
 
 ## Composition API - LifeCycle
 
-Option API와는 다르게 Composition API는 LifeCycle 함수를 컴포넌트 구성에 추가하지 않습니다.
+Option API와는 다르게 Composition API는 LifeCycle Hook을 컴포넌트 구성에 추가하지 않습니다.
 
