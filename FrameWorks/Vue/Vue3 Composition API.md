@@ -439,9 +439,52 @@ watch([() => user.age, () => user.firstName], function (newValues, oldValues) {
 ## Script Setup 내부 함수 사용
 
 ```js
-<template>   <div>     <p>Props value: {{ propsValue }}</p>     <p>Injected value: {{ injectedValue }}</p>     <p>Computed value: {{ computedValue }}</p>     <p>Reactive value: {{ reactiveValue }}</p>     <button @click="increment">Increment</button>   </div> </template>  <script setup> import { ref, reactive, computed, toRefs, inject, defineProps, defineEmits } from 'vue';  // Props const props = defineProps({   propsValue: String, });  // Emit const emit = defineEmits();  // Inject const injectedValue = inject('injectedValue');  // State const count = ref(0); const state = reactive({   reactiveValue: 42, });  // Computed const computedValue = computed(() => count.value * 2);  // Methods const increment = () => {   count.value++;   emit('incremented', count.value); };  // Destructuring props and reactive state const { propsValue } = toRefs(props); const { reactiveValue } = toRefs(state); </script>`
+<template>
+  <div>
+    <p>Props value: {{ propsValue }}</p>
+    <p>Injected value: {{ injectedValue }}</p>
+    <p>Computed value: {{ computedValue }}</p>
+    <p>Reactive value: {{ reactiveValue }}</p>
+    <button @click="increment">Increment</button>
+  </div>
+</template>
 
-위의 코드에서는 다음과 같은 항목들을 사용하고 있습니다:
+<script setup>
+import { ref, reactive, computed, toRefs, inject, defineProps, defineEmits } from 'vue';
+
+// Props
+const props = defineProps({
+  propsValue: String,
+});
+
+// Emit
+const emit = defineEmits();
+
+// Inject
+const injectedValue = inject('injectedValue');
+
+// State
+const count = ref(0);
+const state = reactive({
+  reactiveValue: 42,
+});
+
+// Computed
+const computedValue = computed(() => count.value * 2);
+
+// Methods
+const increment = () => {
+  count.value++;
+  emit('incremented', count.value);
+};
+
+// Destructuring props and reactive state
+const { propsValue } = toRefs(props);
+const { reactiveValue } = toRefs(state);
+</script>
+```
+
+<br>
 
 1. `props`: `defineProps`를 통해 부모 컴포넌트로부터 전달된 프롭스를 정의합니다.
     
@@ -456,6 +499,9 @@ watch([() => user.age, () => user.firstName], function (newValues, oldValues) {
 6. `computed`: `computed` 함수를 사용하여 계산된 속성을 정의하고 사용합니다.
     
 7. `toRefs`: `toRefs` 함수를 사용하여 반응형 변수 또는 상태를 단순한 ref로 변환합니다.
-    
 
-`script setup`을 사용하면 이러한 항목들을 더욱 간단하게 정의하고 활용할 수 있습니다. 각 항목은 Composition API의 기능을 더 편리하게 사용하도록 도와줍니다.
+<br>
+
+`script setup`을 사용하면 이러한 항목들을 더욱 간단하게 정의하고 활용할 수 있습니다. 
+
+각 항목은 Composition API의 기능을 더 편리하게 사용하도록 도와줍니다.
