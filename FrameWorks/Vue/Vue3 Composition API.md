@@ -517,13 +517,13 @@ const { reactiveValue } = toRefs(state);
 
 <br>
 
-|Option API|->|Composition API|
+|Option API| -> |Composition API|
 |---|---|---|
-|data() {...}|->|ref(), reactive()|
-|methods: { doSmth() {...} }|->|function doSmth() {...}|
-|computed: { val() {...} }|->|const val = computed()|
-|watch: {...}|->|watch(dep, (val, oldV) => {})|
-|provide: {...} / inject: []|->|provide(key, val) / inject(key)|
+|data() {...}| -> |ref(), reactive()|
+|methods: { doSmth() {...} }| -> |function doSmth() {...}|
+|computed: { val() {...} }| -> |const val = computed()|
+|watch: {...}| -> |watch(dep, (val, oldV) => {})|
+|provide: {...} / inject: []| -> |provide(key, val) / inject(key)|
 
 ---
 
