@@ -8,7 +8,10 @@ wsl --install
 wsl --list --online
 wsl -install -d {배포판 이름}
 
-# 재부팅
-
-#
+# 재부팅 후 설치 확인
+wsl --status
 ```
+
+<br>
+
+1. Ubuntu ID/PW 지정
