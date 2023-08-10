@@ -393,13 +393,25 @@ Composition API에서의 Watch는 `watch()`를 사용합니다.
 
 이 Value들은 첫번쨰 파라미터의 변경 전/후 의 값을 파라미터로 가지는 겁니다.
 
-<br>
-
-예를 들어 보겠습니다.
-
 ```javascript
-watch(age, function(newValue, oldValue) {
-	console.log('Old Age : ' + oldValue)
-	ocnsole.log('New Age : ' + newValue)
+import { ref, reactive, computed, watch } from 'vue'  
+  
+// Data Property  
+const user = reactive({  
+  age: 31,  
+  firstName: ref(''),  
+  lastName: ref('')  
+})  
+  
+// Computed Function  
+const fullName = computed(function() { return user.firstName + ' ' + user.lastName })  
+  
+// methods -> Function  
+function setAge() { user.age = 32 }  
+  
+// Watcher  
+watch(() => user.age, function (newValue, oldValue) {  
+  console.log('Old Age : ' + oldValue)  
+  console.log('New Age : ' + newValue)  
 })
 ```
