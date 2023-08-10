@@ -527,7 +527,7 @@ const { reactiveValue } = toRefs(state);
 
 ---
 
-## Composition API - LifeCycle
+## Composition API - LifeCycle Hooks
 
 |Option API| -> |Composition API|
 |---|---|---|
