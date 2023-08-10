@@ -450,7 +450,7 @@ watch([() => user.age, () => user.firstName], function (newValues, oldValues) {
 </template>
 
 <script setup>
-import { ref, reactive, computed, toRefs, inject, defineProps, defineEmits } from 'vue';
+import { ref, reactive, computed, toRefs, inject, defineProps, defineEmits, provide } from 'vue';
 
 // Props
 const props = defineProps({
