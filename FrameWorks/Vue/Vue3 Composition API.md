@@ -514,4 +514,5 @@ const { reactiveValue } = toRefs(state);
 |Option API|->|Composition API|
 |---|---|---|
 |data() {...}|->|ref(), reactive()|
-|methods: { doSmth() {...} }|->|function doSmth()
+|methods: { doSmth() {...} }|->|function doSmth() {...}|
+|computed: { val() {...} }|->|const val = computed()|
