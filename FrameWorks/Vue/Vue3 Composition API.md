@@ -526,7 +526,7 @@ const { reactiveValue } = toRefs(state);
 |Option API|->|Composition API|
 |---|---|---|
 |beforeCreate(), create()|->|불필요 (setuo()이 대신함)|
-|beforeMount(), mounted()|
+|beforeMount(), mounted()|->|onBeforeMount(), onMounter()|
 
 <br>
 
@@ -539,4 +539,8 @@ Option API와는 다르게 Composition API는 LifeCycle Hook을 컴포넌트 구
 기본적으로 setup은 beforeCreate, created가 실행되는 시점에 실행되기 때문입니다.
 
 즉, setup 함수가 2개의 Lifecycle Hook을 자동으로 실행시켜 줍니다.
+
+<br>
+
+**onBeforeMount, onMounted**
 
