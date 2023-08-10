@@ -334,7 +334,7 @@ toRefs() = 파라미터로 들어온 반응형 객체 내부에 중첩된 값을
 
 ## Comoisition API - methdos & computed & watcher
 
-#### Method -> General Function
+### Method -> General Function
 
 이번엔 기존 Option API에서 사용하던 methods를 Composition API에선 어떻게 사용하는지 알아보겠습니다.
 
@@ -367,7 +367,7 @@ function setAge() {
 
 <br>
 
-#### Computed Property -> Computed Function
+### Computed Property -> Computed Function
 
 연산 프로퍼티를 연산 함수로 바꾸는 방법도 설명이 필요 없기에 코드로 대체합니다.
 
@@ -377,7 +377,7 @@ const fullName = computed(function() { return user.firstName + ' ' + user.lastNa
 
 <br>
 
-#### Watcher
+### Watcher
 
 Composition API에서의 Watch는 `watch()`를 사용합니다.
 
