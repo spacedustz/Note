@@ -529,12 +529,12 @@ const { reactiveValue } = toRefs(state);
 
 ## Composition API - LifeCycle
 
-|Option API|->|Composition API|
+|Option API| -> |Composition API|
 |---|---|---|
-|beforeCreate(), create()|->|불필요 (setuo()이 대신함)|
-|beforeMount(), mounted()|->|onBeforeMount(), onMounter()|
-|beforeUpdate(), updated()|->|onBeforeUpdate(), onUpdated()|
-|beforeUnmount(), unmounted()|->|onBeforeMount(), onUnmounted()|
+|beforeCreate(), create()| -> |불필요 (setuo()이 대신함)|
+|beforeMount(), mounted()| -> |onBeforeMount(), onMounter()|
+|beforeUpdate(), updated()| -> |onBeforeUpdate(), onUpdated()|
+|beforeUnmount(), unmounted()| -> |onBeforeMount(), onUnmounted()|
 
 <br>
 
