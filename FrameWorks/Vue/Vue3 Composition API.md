@@ -457,6 +457,9 @@ const props = defineProps({
   propsValue: String,
 });
 
+// Provide, 1: 임의 식별자 2: 전달하고자 하는 실제 값  
+provide('userAge', user.age)
+
 // Emit
 const emit = defineEmits();
 
