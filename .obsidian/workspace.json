@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "FrameWorks/Spring/Settings/Memo - Yaml.md",
+                "file": "FrameWorks/Spring/Basic/Spring Container.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "FrameWorks/Spring/Settings/Memo - Yaml.md",
+                "file": "FrameWorks/Spring/Basic/Spring Container.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "FrameWorks/Spring/Settings/Memo - Yaml.md",
+                "file": "FrameWorks/Spring/Basic/Spring Container.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "FrameWorks/Spring/Settings/Memo - Yaml.md"
+                "file": "FrameWorks/Spring/Basic/Spring Container.md"
               }
             }
           }
@@ -148,6 +148,9 @@
   },
   "active": "60c6b86bf6d224da",
   "lastOpenFiles": [
+    "FrameWorks/Spring/Basic/Service.md",
+    "FrameWorks/Spring/Basic/IoC & Dependency Injection.md",
+    "FrameWorks/Spring/Settings/Memo - Yaml.md",
     "FrameWorks/Spring/Settings/Memo-Anotations.md",
     "FrameWorks/Spring/Settings/Memo - JPA.md",
     "FrameWorks/Vue/Vue Router.md",
@@ -175,9 +178,6 @@
     "FrameWorks/Vue/Vue & TypeScript",
     "FrameWorks/Vue/Component/Custom Event 정의 & 검증.md",
     "FrameWorks/Vue/Component/Fallthrough Property & Event & Binding All Property.md",
-    "FrameWorks/Vue/1. Basic.md",
-    "FrameWorks/Vue/Component/Add & Connect Component.md",
-    "FrameWorks/Vue/Temp/Temp.md",
     "FrameWorks/Vue/Component",
     "FrameWorks/Vue/Temp",
     "FrameWorks/Vue",
