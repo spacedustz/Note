@@ -43,8 +43,8 @@ h2:
   console:
     enabled: true
     path: /h2
-    datasource:
-    url: jdbc:h2:mem:test
+datasource:
+  url: jdbc:h2:mem:test
 ```
 
 ---
