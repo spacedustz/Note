@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "FrameWorks/Vue/Vuex.md",
+                "file": "FrameWorks/Vue/Vue3 Composition API.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "FrameWorks/Vue/Vuex.md",
+                "file": "FrameWorks/Vue/Vue3 Composition API.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "FrameWorks/Vue/Vuex.md",
+                "file": "FrameWorks/Vue/Vue3 Composition API.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "FrameWorks/Vue/Vuex.md"
+                "file": "FrameWorks/Vue/Vue3 Composition API.md"
               }
             }
           }
@@ -148,8 +148,8 @@
   },
   "active": "60c6b86bf6d224da",
   "lastOpenFiles": [
-    "FrameWorks/Vue/Vue Router.md",
     "FrameWorks/Vue/Vuex.md",
+    "FrameWorks/Vue/Vue Router.md",
     "FrameWorks/Spring/MQTT.md",
     "Backend-Developer-Interview.md",
     "Pasted image 20230805163438.png",
