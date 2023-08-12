@@ -10,3 +10,10 @@ State는 Data로 변환될 수 있으며 일종의 반응형 데이터로도 볼
 
 하지만 앱의 다양한 컴포넌트에 영향을 주는 데이터인 상태를 관리하는 건 어렵습니다.
 
+그래서 우선 상태를 Global State/LocalState 로 먼저 구분해줍니다.
+
+<br>
+
+### Local State
+
+Local State는 하나의 컴포넌
