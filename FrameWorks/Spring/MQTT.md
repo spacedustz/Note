@@ -97,5 +97,5 @@ MQTT Broker로 Mosquito를 사용하여 테스트합니다.
 Mosquitto는  MQTT 3.1 / 3.1.1을 구현한 오픈소스 Message Broker이며 QoS 2를 지원합니다.
 
 ```bash
-docker run -d -n broker -p 1883:1883 -
+docker run -d -n broker -p 1883:1883 -p 9001:9001 --restart-always mosquitto
 ```
