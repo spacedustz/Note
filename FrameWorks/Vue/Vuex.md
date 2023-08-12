@@ -184,5 +184,6 @@ const store = createStore({
 **App.vue**
 
 ```js
-function addOne() { store.commit('increment')}
+// Mutation의 이름을 commit에 넣어 Mutation을 불러옴
+function addOne() { store.commit('increment'); }
 ```
