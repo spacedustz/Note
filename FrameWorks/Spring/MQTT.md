@@ -30,7 +30,7 @@ Publisher와 Subscriber 사이에서 Message를 관리하며 전송해주는 역
 
 ### 다양한 MQTT Broker
 
-- Mosquito
+- Mosquitto
 - Mosca
 - HiveMQ
 - RabbitMQ
@@ -90,4 +90,8 @@ LWT는 유언, 유언장이라는 의미로 Broker와 Client의 연결이 끊기
 
 ---
 
-## Mosquitto Containe
+## MQTT Broker 구현 (Mosquitto)
+
+MQTT Broker로 Mosquito를 사용하여 테스트합니다.
+
+Mosq
