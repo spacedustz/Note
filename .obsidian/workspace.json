@@ -18,19 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "780d38d1cfcc5fe8",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.3.7"
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -157,7 +146,7 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "780d38d1cfcc5fe8",
+  "active": "60c6b86bf6d224da",
   "lastOpenFiles": [
     "FrameWorks/Vue/Vue Router.md",
     "FrameWorks/Spring/MQTT.md",
