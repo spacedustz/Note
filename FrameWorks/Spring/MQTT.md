@@ -1,7 +1,8 @@
 ## Integration MQTT Broker
 
-**Develop**
+**Develop Environment**
 - Spring Boot 3.1.2
+- JDK 17
 - Gradle
 - JPA
 
@@ -76,3 +77,9 @@ a/b/c/d
 a/b/+/d
 a/b/#
 ```
+
+<br>
+
+### LWT (Last will and Testament)
+
+신뢰할 수 없는 네트워크를 포함하는 경우 자주 사용되기 때문에 비정상적으로 연결이 끊어질 수 있다고
