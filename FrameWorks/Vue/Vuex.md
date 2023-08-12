@@ -40,6 +40,8 @@ npm install --save vuex@next
 
 <br>
 
+**main에 Vuex 추가**
+
 ```js
 import { createApp } from 'vue';  
 import { createStore } from "vuex"; // Import Vuex Store  
@@ -64,3 +66,8 @@ app.mount('#app');
 
 <br>
 
+**App.vue**
+
+```js
+
+```
