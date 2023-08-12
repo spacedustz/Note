@@ -34,3 +34,13 @@ Publisher와 Subscriber 사이에서 Message를 관리하며 전송해주는 역
 - RabbitMQ
 - MQTT Plugins
 - 등등
+
+<br>
+
+### Pub/Sub Model
+
+Broker를 통한 발행/구독 메시징 패턴으로 발행측은 브로커에게 메시지를 전송하며,
+
+브로커는 구독하고 있는 클라이언트들에게 메시지를 브로드캐스트 합니다.
+
+즉, 1:1 / 1:N 통신익 ㅏ능합니
