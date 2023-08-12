@@ -69,5 +69,52 @@ app.mount('#app');
 **App.vue**
 
 ```js
-
+<template>  
+  <base-container title="Vuex">  
+    <!-- 주입 없이 Global State를 이용해서 데이터 전달 -->  
+    <the-counter></the-counter>  
+    <button @click="addOne">Add 1</button>  
+  </base-container>  
+</template>  
+  
+<script setup>  
+import { useStore } from 'vuex'; // Composition에서 Vuex Store를 불러옴  
+import BaseContainer from './components/BaseContainer.vue';  
+import TheCounter from "@/components/TheCounter";  
+  
+const store = useStore(); // Vuex  
+  
+function addOne() {  
+  store.state.counter++;  
+}  
+</script>
 ```
+
+<br>
+
+**TheCounter.vue**
+
+```js
+<template>  
+  <h3>{{ counter }}</h3>  
+</template>  
+  
+<script>  
+export default {  
+  name: "TheCounter"  
+}  
+</script>  
+  
+<script setup>  
+import { computed } from 'vue';  
+import { useStore } from "vuex";  
+  
+const store = useStore();  
+  
+const counter = computed(function() { return store.state.counter; })  
+</script>
+```
+
+<br>
+
+위 코드는 Composition API 기반으로 작성했으며, main app에 저장한 store
