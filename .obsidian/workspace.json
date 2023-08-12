@@ -11,12 +11,8 @@
             "id": "60c6b86bf6d224da",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "FrameWorks/Spring/JPA/Relation Mapping & MappedSuperClass.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -69,7 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 207.5
   },
   "right": {
     "id": "f5151c0da72edc1c",
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "FrameWorks/Spring/JPA/Relation Mapping & MappedSuperClass.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "FrameWorks/Spring/JPA/Relation Mapping & MappedSuperClass.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "FrameWorks/Spring/JPA/Relation Mapping & MappedSuperClass.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -148,42 +140,42 @@
   },
   "active": "60c6b86bf6d224da",
   "lastOpenFiles": [
-    "FrameWorks/Spring/Basic/Spring Container.md",
-    "FrameWorks/Spring/Basic/Service.md",
-    "FrameWorks/Spring/Basic/IoC & Dependency Injection.md",
-    "FrameWorks/Spring/Settings/Memo - Yaml.md",
-    "FrameWorks/Spring/Settings/Memo-Anotations.md",
-    "FrameWorks/Spring/Settings/Memo - JPA.md",
-    "FrameWorks/Vue/Vue Router.md",
-    "FrameWorks/Vue/Vue3 Composition API.md",
-    "CI & CD/Jenkins/6. EC2 Setting Script.md",
-    "CI & CD/Jenkins/1. AWS LightSail Instance 생성.md",
+    "FrameWorks/Vue/Forms/1. V-Model 및 입력.md",
     "Settings/WSL 2 Settings.md",
-    "FrameWorks/Vue/학습-기록-앱-만들기/3. Base Button Component.md",
-    "FrameWorks/Vue/Component/Component Custom Event.md",
+    "FrameWorks/Vue/Vue3 Composition API.md",
+    "FrameWorks/Vue/Vue Router.md",
     "FrameWorks/Vue/HTTP Request/1. Native Fetch API를 이용한 HTTP Request 전송.md",
-    "FrameWorks/Vue/Vue & TypeScript/Memo.md",
-    "Pasted image 20230805163438.png",
+    "FrameWorks/Vue/HTTP Request",
+    "FrameWorks/Vue/Component/Component Custom Event.md",
+    "FrameWorks/Vue/2. Vue를 이용한 DOM 상호작용.md",
+    "FrameWorks/Vue/Vue CLI.md",
+    "FrameWorks/Vue/Forms",
     "FrameWorks/Vue/학습-기록-앱-만들기/7. 항목 삭제하기 구현.md",
+    "FrameWorks/Vue/학습-기록-앱-만들기/8. Teleport 기능 구현.md",
     "FrameWorks/Vue/학습-기록-앱-만들기/6. Custom Dialog를 이용한 Validation.md",
     "FrameWorks/Vue/학습-기록-앱-만들기/5. Resource Form.md",
     "FrameWorks/Vue/학습-기록-앱-만들기/4. 동적 컴포넌트 및 속성 풀스루.md",
+    "FrameWorks/Vue/학습-기록-앱-만들기/3. Base Button Component.md",
     "FrameWorks/Vue/학습-기록-앱-만들기/2. UI Components.md",
     "FrameWorks/Vue/학습-기록-앱-만들기/1. Start + Styling.md",
+    "FrameWorks/Flutter/Settings.md",
+    "Pasted image 20230805163438.png",
     "FrameWorks/Vue/학습-기록-앱-만들기",
-    "FrameWorks/Vue/Vue CLI.md",
-    "FrameWorks/Vue/Props.md",
-    "FrameWorks/Vue/LifeCycle.md",
-    "FrameWorks/Vue/HTTP Request",
-    "FrameWorks/Vue/Temp/Vue CLI.md",
-    "FrameWorks/Vue/Vue & TypeScript",
+    "FrameWorks/Vue/Component/Fallthrough Property & Event & Binding All Property.md",
+    "FrameWorks/Vue/Component/Basic.md",
+    "Settings/Mac Settings.md",
     "FrameWorks/Vue/Component/Custom Event 정의 & 검증.md",
+    "FrameWorks/Vue/LifeCycle.md",
+    "FrameWorks/Vue/Vue & TypeScript/Memo.md",
+    "FrameWorks/Vue/Vue & TypeScript",
+    "FrameWorks/Vue/1. Basic.md",
+    "FrameWorks/Vue/Component/Add & Connect Component.md",
+    "FrameWorks/Vue/Temp/Temp.md",
     "FrameWorks/Vue/Component",
     "FrameWorks/Vue/Temp",
     "FrameWorks/Vue",
     "Languages/Java/자바의정석",
     "FrameWorks/Spring/채팅방구현",
-    "Languages/JavaScript/Object",
-    "Settings"
+    "Languages/JavaScript/Object"
   ]
 }
