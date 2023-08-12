@@ -117,12 +117,13 @@ const counter = computed(function() { return store.state.counter; })
 
 <br>
 
-위 코드는 Composition API 기반으로 작성했으며, main app에 저장한 State 객체의 프로퍼티로,
+위 코드는 Composition API 기반으로 작성했으며, main app에 저장한 State 객체의 프로퍼티인
 
-counter를 활용해 아무런 inject 없이 컴포넌트들 전역에서 제약 조건없이 편하게 사용이 가능합니다.
+counter를 활용해 아무런 inject 없이 컴포넌트들 전역에서 제약 조건 없이 편하게 사용이 가능합니다.
 
 ---
 
 ## Mutation
 
-데이터를 변경하는 더 낭
+데이터를 변경하는 더 나은 방법에 대해 알아보겠습니다.
+
