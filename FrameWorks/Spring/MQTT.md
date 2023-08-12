@@ -82,4 +82,12 @@ a/b/#
 
 ### LWT (Last will and Testament)
 
-신뢰할 수 없는 네트워크를 포함하는 경우 자주 사용되기 때문에 비정상적으로 연결이 끊어질 수 있다고
+신뢰할 수 없는 네트워크를 포함하는 경우 자주 사용되기 때문에 비정상적으로 연결이 끊어질 수 있다고 가정합니다.
+
+LWT는 유언, 유언장이라는 의미로 Broker와 Client의 연결이 끊기면 자동으로 다른 Subscriber에게 Message를 전송하는 기능입니다.
+
+일반적으로 Broker에 연결을 시도하는 시점에 지정되며 will topic, will message, will qos 등을 지정합니다.
+
+---
+
+## Mosquitto Containe
