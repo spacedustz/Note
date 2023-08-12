@@ -95,7 +95,7 @@ app.use(router);
 
 <br>
 
-이제 Vue App이 Vue Router에 대해 인식을 하게 됩니다.
+이제 Vue App이 Vue Router에 대해 인식을 하게 됩니다. 
 
 하지만인식만 했을뿐 어디로 로드해야 하는지는 아직 정해주지 않았습니다.
 
