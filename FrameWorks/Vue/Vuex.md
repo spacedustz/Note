@@ -121,6 +121,12 @@ const counter = computed(function() { return store.state.counter; })
 
 counter를 활용해 아무런 inject 없이 컴포넌트들 전역에서 제약 조건 없이 편하게 사용이 가능합니다.
 
+<br>
+
+이 예시는 아주 작은 어플리케이션이고, 이런 경우엔 데이터 프로퍼티가 더 효과적일 수 있으나,
+
+Global State를 활용하는 방법에 대해 알아보고자 간단한 프로젝트를 만들어서 만들어 보았습니다.
+
 ---
 
 ## Mutation
