@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "FrameWorks/Vue/Vue Router.md",
+                "file": "FrameWorks/Vue/Vuex.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "FrameWorks/Vue/Vue Router.md",
+                "file": "FrameWorks/Vue/Vuex.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "FrameWorks/Vue/Vue Router.md",
+                "file": "FrameWorks/Vue/Vuex.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "FrameWorks/Vue/Vue Router.md"
+                "file": "FrameWorks/Vue/Vuex.md"
               }
             }
           }
@@ -148,8 +148,9 @@
   },
   "active": "60c6b86bf6d224da",
   "lastOpenFiles": [
-    "FrameWorks/Spring/MQTT.md",
     "FrameWorks/Vue/Vue Router.md",
+    "FrameWorks/Vue/Vuex.md",
+    "FrameWorks/Spring/MQTT.md",
     "Backend-Developer-Interview.md",
     "Pasted image 20230805163438.png",
     "FrameWorks/Vue/Forms/1. V-Model 및 입력.md",
@@ -178,7 +179,6 @@
     "FrameWorks/Vue/LifeCycle.md",
     "FrameWorks/Vue/Vue & TypeScript/Memo.md",
     "FrameWorks/Vue/Vue & TypeScript",
-    "FrameWorks/Vue/1. Basic.md",
     "FrameWorks/Vue/Component",
     "FrameWorks/Vue/Temp",
     "FrameWorks/Vue",
