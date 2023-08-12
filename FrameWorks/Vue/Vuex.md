@@ -164,7 +164,7 @@ const store = createStore({
         };  
     },  
   
-    // 상태를 변경하는 Mutation    mutations: {  
+		    // 상태를 변경하는 Mutation    mutations: {  
         // 현재 상태를 파라미터로 받음  
         increment(state) {  
             state.counter = state.counter + 1;  
@@ -173,3 +173,6 @@ const store = createStore({
 });
 ```
 
+컴포넌트마다 상태를 변경하는 함수를 각각 작성하는 것보다,  Option API의 methods 처럼
+
+상태를 변경하는 함수를 main app에 정의해 놓습니다.
