@@ -94,4 +94,8 @@ LWT는 유언, 유언장이라는 의미로 Broker와 Client의 연결이 끊기
 
 MQTT Broker로 Mosquito를 사용하여 테스트합니다.
 
-Mosq
+Mosquitto는  MQTT 3.1 / 3.1.1을 구현한 오픈소스 Message Broker이며 QoS 2를 지원합니다.
+
+```bash
+docker run -d -n broker -p 1883:1883 -
+```
