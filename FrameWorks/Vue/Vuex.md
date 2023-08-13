@@ -242,3 +242,8 @@ store.getters.finalCounter;
 
 ## Actions을 이용한 비동기 코드 실행
 
+Vuex에서 제공하는 핵심 기능중 하나가 코드의 비동기 실행 기능입니다.
+
+예를 들어 HTTP 요청을 보내고 응답을 기다리는 상황이 있을 수 있으니 Mutation을 2초 후 실행한다고 가정하겠습니다.
+
+Mutation의 문제는 항상 동기
