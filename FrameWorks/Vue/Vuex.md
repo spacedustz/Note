@@ -350,3 +350,8 @@ function addOne() {
   });  
 }
 ```
+
+---
+
+## Vuex - Action Context
+
