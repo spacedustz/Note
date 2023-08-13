@@ -357,4 +357,15 @@ function addOne() {
 
 Actions의 context 파라미터에 대해 좀 더 자세히 알아보겠습니다.
 
-context 자체를 로그로 찍어보며
+context 자체를 로그로 찍어보면
+
+- commit
+- dispatch : 작업 내부에서 다른 작업을 전달할 수 있습니다. (ex: Send HTTP Request)
+- getters
+- rootGetters
+- rootState
+- state
+- __proto__
+
+등등이 있습니다.
+
