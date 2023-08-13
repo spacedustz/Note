@@ -219,6 +219,14 @@ const store = createStore({
         // 상태, getters 2개의 파람터를 받을 수 있음  
         finalCounter(state) {  
             return state.counter * 2;  
+        },  
+        normalizedCounter(_, getters) {  
+           const finalCounter = getters.finalCounter;  
+  
+           if (finalCounter < 0) return 0;  
+           if (finalCounter > 100) return 100;  
+  
+           return finalCounter;  
         }  
     }  
 });
@@ -229,3 +237,8 @@ const store = createStore({
 ```js
 store.getters.finalCounter;
 ```
+
+---
+
+## Actions을 이용한 비동기 코드 실행
+
