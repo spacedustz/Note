@@ -328,5 +328,11 @@ Actions를 사용할 땐 dispatch() 함수를 사용하며 이 함수는 2개의
 첫번째 파라미터는 Actions의 이름, 두번째 파라미터는 Payload or 하나의 파라미터 구분을 사용합니다.
 
 ```js
-
+function addOne() {  
+  // Mutation의 이름을 commit에 넣어 Mutation을 불러옴 - X  // Actions로 변경  
+  store.dispatch({  
+    type: 'increse',  
+    value: 10  
+  });  
+}
 ```
