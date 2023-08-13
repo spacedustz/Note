@@ -331,7 +331,7 @@ Actions를 사용할 땐 dispatch() 함수를 사용하며 이 함수는 2개의
 function addOne() {  
   // Mutation의 이름을 commit에 넣어 Mutation을 불러옴 - X  // Actions로 변경  
   store.dispatch({  
-    type: 'increse',  
+    type: 'increase',  
     value: 10  
   });  
 }
