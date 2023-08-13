@@ -189,3 +189,9 @@ const store = createStore({
 // Mutation의 이름을 commit에 넣어 Mutation을 불러옴
 function addOne() { store.commit('increment'); }
 ```
+
+---
+
+## Payroad를 이용한 Mutation에 데이터 전달
+
+특정 Mutation은 파라미터
