@@ -336,6 +336,8 @@ Actions를 사용할 땐 dispatch() 함수를 사용하며 이 함수는 2개의
 
 아래 코드의 파라미터 구분에 있는 value가 increase Actions의 payload로 전달됩니다.
 
+그리고 이 payload는 Mutation에 전달됩니다.
+
 ```js
 function addOne() {  
   // Mutation의 이름을 commit에 넣어 Mutation을 불러옴 - X  // Actions로 변경  
