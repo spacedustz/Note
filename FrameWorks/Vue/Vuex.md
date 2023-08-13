@@ -194,4 +194,5 @@ function addOne() { store.commit('increment'); }
 
 ## Payroad를 이용한 Mutation에 데이터 전달
 
-특정 Mutation은 파라미터
+특정 Mutation은 파라미터를 요구하는 것도 있습니다.
+
