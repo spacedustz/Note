@@ -355,3 +355,6 @@ function addOne() {
 
 ## Vuex - Action Context
 
+Actions의 context 파라미터에 대해 좀 더 자세히 알아보겠습니다.
+
+context 자체를 로그로 찍어보며
