@@ -83,10 +83,20 @@ public class CorsConfig implements WebMvcConfigurer {
 
 ### Axios Proxy 우회
 
+Vue 프로젝트에서 vue.config.js 파일에 백엔드 서버의 URI
+
 ```javascript
 module.exports = { 
 	devServer: { 
 		proxy: { 
 			'http://localhost:8081': { // 백엔드 서버 주소 
-				target: 'http://localhost:8081', // 백엔드 서버 주소 (여기서는 동일한 주소) changeOrigin: true, pathRewrite: { '^/api': '/api', // 요청 URL에서 '/api'를 '/api'로 변경합니다. }, }, }, }, };
+				target: 'http://localhost:8081', // 백엔드 서버 주소 (여기서는 동일한 주소) 
+				changeOrigin: true, 
+				pathRewrite: { 
+					'^/api': '/api', // 요청 URL에서 '/api'를 '/api'로 변경합니다. 
+				}, 
+			}, 
+		}, 
+	}, 
+};
 ```
