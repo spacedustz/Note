@@ -83,7 +83,15 @@ public class CorsConfig implements WebMvcConfigurer {
 
 ### Axios Proxy 우회
 
-Vue 프로젝트에서 vue.config.js 파일에 백엔드 서버의 URI
+- `proxy` 객체: 이 객체는 개발 서버의 프록시 설정을 정의합니다. 프록시는 클라이언트(브라우저)가 개발 서버로 요청을 보낼 때, 개발 서버가 이 요청을 받아 백엔드 서버로 전달하는 역할을 합니다.
+    
+- `'/api'`: 이는 프록시를 사용하여 요청을 중개할 경로를 지정합니다. 예를 들어, 클라이언트가 `/api/some-endpoint`로 요청을 보내면 개발 서버는 이를 백엔드 서버의 `/some-endpoint`로 전달합니다.
+    
+- `target`: 요청을 중개할 목적지(백엔드 서버)의 주소를 설정합니다. 여기서는 `http://localhost:8081`로 설정되었습니다. 클라이언트가 `/api` 경로로 요청을 보내면, 개발 서버는 해당 요청을 백엔드 서버로 프록시하여 전달합니다.
+    
+- `changeOrigin`: 이 옵션은 목적지 서버로 요청을 보낼 때 원본(origin)을 변경할 지 여부를 설정합니다. 보통 `true`로 설정하여 원본을 변경합니다.
+    
+- `pathRewrite`: 이 옵션은 요청 경로를 수정하는 역할을 합니다. 여기서는 `^/api`를 빈 문자열(`''`)로 바꿔서 요청 URL에서 `/api` 부분을 제거합니다. 따라서 클라이언트가 `/api/some-endpoint`로 요청하면, 개발 서버는 백엔드 서버에 `/some-endpoint`로 요청을 전달합니다.
 
 ```javascript
 module.exports = { 
@@ -100,3 +108,11 @@ module.exports = {
 	}, 
 };
 ```
+
+<br>
+
+### 해결
+
+2가지 방법 모두 시도해
+
+![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/cors2.png)
