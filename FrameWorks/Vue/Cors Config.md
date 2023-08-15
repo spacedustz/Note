@@ -113,6 +113,6 @@ module.exports = {
 
 ### 해결
 
-2가지 방법 모두 시도해
+2가지 방법 모두 시도해봤는데 프론트에서 백엔드의 Rest API를 통해 데이터를 잘 받아오고 있습니다.
 
 ![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/cors2.png)
