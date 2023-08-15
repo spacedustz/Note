@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "FrameWorks/Vue/HTTP Request/1. Native Fetch API를 이용한 HTTP Request 전송.md",
+                "file": "FrameWorks/Vue/Cors Config.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 207.5,
-    "collapsed": true
+    "width": 207.5
   },
   "right": {
     "id": "f5151c0da72edc1c",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "FrameWorks/Vue/HTTP Request/1. Native Fetch API를 이용한 HTTP Request 전송.md",
+                "file": "FrameWorks/Vue/Cors Config.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "FrameWorks/Vue/HTTP Request/1. Native Fetch API를 이용한 HTTP Request 전송.md",
+                "file": "FrameWorks/Vue/Cors Config.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "FrameWorks/Vue/HTTP Request/1. Native Fetch API를 이용한 HTTP Request 전송.md"
+                "file": "FrameWorks/Vue/Cors Config.md"
               }
             }
           }
@@ -149,6 +148,8 @@
   },
   "active": "60c6b86bf6d224da",
   "lastOpenFiles": [
+    "FrameWorks/Vue/HTTP Request/1. Native Fetch API를 이용한 HTTP Request 전송.md",
+    "FrameWorks/Vue/Cors Config.md",
     "FrameWorks/Vue/Vuex.md",
     "FrameWorks/Vue/Vue3 Composition API.md",
     "FrameWorks/Vue/Vue Router.md",
@@ -157,7 +158,6 @@
     "Pasted image 20230805163438.png",
     "FrameWorks/Vue/Forms/1. V-Model 및 입력.md",
     "Settings/WSL 2 Settings.md",
-    "FrameWorks/Vue/HTTP Request/1. Native Fetch API를 이용한 HTTP Request 전송.md",
     "FrameWorks/Vue/HTTP Request",
     "FrameWorks/Vue/Component/Component Custom Event.md",
     "FrameWorks/Vue/2. Vue를 이용한 DOM 상호작용.md",
@@ -178,7 +178,6 @@
     "Settings/Mac Settings.md",
     "FrameWorks/Vue/Component/Custom Event 정의 & 검증.md",
     "FrameWorks/Vue/LifeCycle.md",
-    "FrameWorks/Vue/Vue & TypeScript/Memo.md",
     "FrameWorks/Vue/Vue & TypeScript",
     "FrameWorks/Vue/Component",
     "FrameWorks/Vue/Temp",
