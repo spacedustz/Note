@@ -15,9 +15,27 @@ Vue를 사용한 프론트엔드 서버에서 백엔드 서버의 Parsing된 Jso
 ```js
 <template>  
   <div>  
-    <h1>데이터 가져오기 예제</h1>  
+    <h1>데이터 가져오기 연습</h1>  
     <ul>  
-      <li v-for="item in items" :key="item.id">{{ item.name }}</li>  
+      <li v-for="item in items" :key="item.id">  
+        <h3>Event ID: {{ item.id }}</h3>  
+        <p>Frame ID: {{ item.frameId }}</p>  
+  
+        <div v-if="item.extra">  
+          <h4>Extra Information</h4>  
+          <p>Bbox Height : {{ item.extra.bbox.height }}</p>  
+          <p>Bbox Width : {{ item.extra.bbox.width }}</p>  
+  
+          <h4>Vertices</h4>  
+          <ul>  
+            <li v-for="vertex in item.extra.vertices" :key="vertex.id">  
+              Vertex ID: {{ vertex.id }}  
+              <p>X: {{ vertex.x }}</p>  
+              <p>Y: {{ vertex.y }}</p>  
+            </li>  
+          </ul>  
+        </div>  
+      </li>  
     </ul>  
   </div>  
 </template>  
