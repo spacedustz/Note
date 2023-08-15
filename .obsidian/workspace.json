@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "FrameWorks/Vue/Vuex.md",
+                "file": "FrameWorks/Vue/HTTP Request/1. Native Fetch API를 이용한 HTTP Request 전송.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 207.5,
-    "collapsed": true
+    "width": 207.5
   },
   "right": {
     "id": "f5151c0da72edc1c",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "FrameWorks/Vue/Vuex.md",
+                "file": "FrameWorks/Vue/HTTP Request/1. Native Fetch API를 이용한 HTTP Request 전송.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "FrameWorks/Vue/Vuex.md",
+                "file": "FrameWorks/Vue/HTTP Request/1. Native Fetch API를 이용한 HTTP Request 전송.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "FrameWorks/Vue/Vuex.md"
+                "file": "FrameWorks/Vue/HTTP Request/1. Native Fetch API를 이용한 HTTP Request 전송.md"
               }
             }
           }
@@ -149,8 +148,8 @@
   },
   "active": "60c6b86bf6d224da",
   "lastOpenFiles": [
-    "FrameWorks/Vue/Vue3 Composition API.md",
     "FrameWorks/Vue/Vuex.md",
+    "FrameWorks/Vue/Vue3 Composition API.md",
     "FrameWorks/Vue/Vue Router.md",
     "FrameWorks/Spring/MQTT.md",
     "Backend-Developer-Interview.md",
