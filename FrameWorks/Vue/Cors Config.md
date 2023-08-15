@@ -143,6 +143,6 @@ module.exports = {
 
 Reactive 변수인 Items에 Json 객체를 Looping해서 총 3개의 결과값을 잘 받아오고 있습니다.
 
-받아온 데이터가 각각의 Template에서 v-for, v-if를 통해 출력됩니
+받아온 데이터가 각각의 Template에서 v-for, v-if를 통해 출력됩니다.
 
 ![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/cors2.png)
