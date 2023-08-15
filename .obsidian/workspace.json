@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "1d73fefbba2b4ed6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "FrameWorks/Vue/Vue3 Composition API.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "FrameWorks/Vue/Vue3 Composition API.md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "FrameWorks/Vue/Vue3 Composition API.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           }
@@ -146,8 +159,13 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "60c6b86bf6d224da",
+  "active": "1d73fefbba2b4ed6",
   "lastOpenFiles": [
+    "FrameWorks/Vue/Vue3 Composition API.md",
+    "conflict-files-obsidian-git.md",
+    "FrameWorks/Vue/Vuex.md",
+    "FrameWorks/Vue/Cors Config.md",
+    "FrameWorks/Spring/MQTT.md",
     "FrameWorks/Spring/JPA/Relation Mapping & MappedSuperClass.md",
     "FrameWorks/Spring/Basic/Spring Container.md",
     "FrameWorks/Spring/Basic/Service.md",
@@ -156,7 +174,6 @@
     "FrameWorks/Spring/Settings/Memo-Anotations.md",
     "FrameWorks/Spring/Settings/Memo - JPA.md",
     "FrameWorks/Vue/Vue Router.md",
-    "FrameWorks/Vue/Vue3 Composition API.md",
     "CI & CD/Jenkins/6. EC2 Setting Script.md",
     "CI & CD/Jenkins/1. AWS LightSail Instance 생성.md",
     "Settings/WSL 2 Settings.md",
@@ -172,11 +189,7 @@
     "FrameWorks/Vue/학습-기록-앱-만들기/2. UI Components.md",
     "FrameWorks/Vue/학습-기록-앱-만들기/1. Start + Styling.md",
     "FrameWorks/Vue/학습-기록-앱-만들기",
-    "FrameWorks/Vue/Vue CLI.md",
-    "FrameWorks/Vue/Props.md",
-    "FrameWorks/Vue/LifeCycle.md",
     "FrameWorks/Vue/HTTP Request",
-    "FrameWorks/Vue/Temp/Vue CLI.md",
     "FrameWorks/Vue/Vue & TypeScript",
     "FrameWorks/Vue/Component",
     "FrameWorks/Vue/Temp",
