@@ -393,7 +393,12 @@ Vue를 이용한 개발을 좀 더 쉽게 만들어주는 유틸리기 기능인
 
 만약 컴포넌트에서 Computed Property를 통해 Vuex의 Getter를 직접 가져와서 쓰고 있다고 가정합니다.
 
+이때 사용할 수 있는 함수는 `mapGetters` 입니다.
+
 ```ts
 <script setup>
-import { mapGetters } from 'vuex'
+import { mapGetters } from 'vuex';
 ```
+
+Computed 내부에 직접 Vuex 저장소에 접근하는 대신 이 함수를 사용하면 됩니다.
+
