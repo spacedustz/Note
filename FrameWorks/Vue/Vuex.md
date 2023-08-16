@@ -401,7 +401,7 @@ import { mapGetters } from 'vuex';
 
 
 computed: {
-	...mapGetters
+	...mapGetters(['finalCounter'])
 }
 </script>
 ```
