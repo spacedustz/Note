@@ -398,7 +398,14 @@ Vue를 이용한 개발을 좀 더 쉽게 만들어주는 유틸리기 기능인
 ```ts
 <script setup>
 import { mapGetters } from 'vuex';
+
+
+computed: {
+	
+}
+</script>
 ```
 
 Computed 내부에 직접 Vuex 저장소에 접근하는 대신 이 함수를 사용하면 됩니다.
 
+`mapGetters` 함수는 객체를 반환하며 free.spread를
