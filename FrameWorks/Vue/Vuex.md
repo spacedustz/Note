@@ -401,11 +401,11 @@ import { mapGetters } from 'vuex';
 
 
 computed: {
-	
+	...mapGetters
 }
 </script>
 ```
 
 Computed 내부에 직접 Vuex 저장소에 접근하는 대신 이 함수를 사용하면 됩니다.
 
-`mapGetters` 함수는 객체를 반환하며 free.spread를
+`mapGetters` 함수는 객체를 반환하며 `...`를 사용해 객체를 Computed 내부로 퍼뜨릴 수 있습니다.
