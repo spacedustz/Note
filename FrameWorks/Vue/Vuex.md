@@ -396,14 +396,9 @@ Vue를 이용한 개발을 좀 더 쉽게 만들어주는 유틸리기 기능인
 이때 사용할 수 있는 함수는 `mapGetters` 입니다.
 
 ```js
-<script>
+<script setup>
 import { mapGetters } from 'vuex';
-
-export default {
-	computed: {
-		...mapGetters(['finalCounter'])
-	}
-}
+const { finalCounter } = mapGetters(['finalCounter']); 
 </script>
 ```
 
@@ -432,4 +427,5 @@ export default {
 		})
 	}
 }
+</script>
 ```
