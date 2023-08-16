@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "FrameWorks/Vue/Vuex.md",
+                "file": "Languages/TypeScript/Type.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "FrameWorks/Vue/Vuex.md",
+                "file": "Languages/TypeScript/Type.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "FrameWorks/Vue/Vuex.md",
+                "file": "Languages/TypeScript/Type.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "FrameWorks/Vue/Vuex.md"
+                "file": "Languages/TypeScript/Type.md"
               }
             }
           }
@@ -148,9 +148,11 @@
   },
   "active": "60c6b86bf6d224da",
   "lastOpenFiles": [
+    "FrameWorks/Vue/Vuex.md",
+    "Languages/TypeScript/Type.md",
+    "Languages/TypeScript",
     "FrameWorks/Vue/Vue3 Composition API.md",
     "conflict-files-obsidian-git.md",
-    "FrameWorks/Vue/Vuex.md",
     "FrameWorks/Vue/Cors Config.md",
     "FrameWorks/Spring/MQTT.md",
     "FrameWorks/Spring/JPA/Relation Mapping & MappedSuperClass.md",
@@ -174,7 +176,6 @@
     "FrameWorks/Vue/학습-기록-앱-만들기/5. Resource Form.md",
     "FrameWorks/Vue/학습-기록-앱-만들기/4. 동적 컴포넌트 및 속성 풀스루.md",
     "FrameWorks/Vue/학습-기록-앱-만들기/2. UI Components.md",
-    "FrameWorks/Vue/학습-기록-앱-만들기/1. Start + Styling.md",
     "FrameWorks/Vue/학습-기록-앱-만들기",
     "FrameWorks/Vue/HTTP Request",
     "FrameWorks/Vue/Vue & TypeScript",
@@ -183,7 +184,6 @@
     "FrameWorks/Vue",
     "Languages/Java/자바의정석",
     "FrameWorks/Spring/채팅방구현",
-    "Languages/JavaScript/Object",
-    "Settings"
+    "Languages/JavaScript/Object"
   ]
 }
