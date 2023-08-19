@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "FrameWorks/Vue/Vuex.md",
+                "file": "FrameWorks/Vue/무제 파일.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "f5151c0da72edc1c",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "FrameWorks/Vue/Vuex.md",
+                "file": "FrameWorks/Vue/무제 파일.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "FrameWorks/Vue/Vuex.md",
+                "file": "FrameWorks/Vue/무제 파일.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "FrameWorks/Vue/Vuex.md"
+                "file": "FrameWorks/Vue/무제 파일.md"
               }
             }
           }
@@ -149,8 +148,9 @@
   },
   "active": "60c6b86bf6d224da",
   "lastOpenFiles": [
-    "Languages/TypeScript/Type.md",
     "FrameWorks/Vue/Vuex.md",
+    "FrameWorks/Vue/무제 파일.md",
+    "Languages/TypeScript/Type.md",
     "Languages/TypeScript",
     "FrameWorks/Vue/Vue3 Composition API.md",
     "conflict-files-obsidian-git.md",
@@ -176,7 +176,6 @@
     "FrameWorks/Vue/학습-기록-앱-만들기/6. Custom Dialog를 이용한 Validation.md",
     "FrameWorks/Vue/학습-기록-앱-만들기/5. Resource Form.md",
     "FrameWorks/Vue/학습-기록-앱-만들기/4. 동적 컴포넌트 및 속성 풀스루.md",
-    "FrameWorks/Vue/학습-기록-앱-만들기/2. UI Components.md",
     "FrameWorks/Vue/학습-기록-앱-만들기",
     "FrameWorks/Vue/HTTP Request",
     "FrameWorks/Vue/Vue & TypeScript",
