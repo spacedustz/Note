@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "e92210adcf99929d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "FrameWorks/Vue/Vue Router.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "FrameWorks/Vue/Transitions & Animations.md",
+                "file": "FrameWorks/Vue/Vue Router.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "FrameWorks/Vue/Transitions & Animations.md",
+                "file": "FrameWorks/Vue/Vue Router.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "FrameWorks/Vue/Transitions & Animations.md"
+                "file": "FrameWorks/Vue/Vue Router.md"
               }
             }
           }
@@ -146,7 +159,7 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "60c6b86bf6d224da",
+  "active": "e92210adcf99929d",
   "lastOpenFiles": [
     "FrameWorks/Vue/Vuex.md",
     "FrameWorks/Vue/Transitions & Animations.md",
