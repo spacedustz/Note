@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "FrameWorks/Vue/무제 파일.md",
+                "file": "FrameWorks/Vue/Transitions & Animations.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "FrameWorks/Vue/무제 파일.md",
+                "file": "FrameWorks/Vue/Transitions & Animations.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "FrameWorks/Vue/무제 파일.md",
+                "file": "FrameWorks/Vue/Transitions & Animations.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "FrameWorks/Vue/무제 파일.md"
+                "file": "FrameWorks/Vue/Transitions & Animations.md"
               }
             }
           }
@@ -149,7 +149,7 @@
   "active": "60c6b86bf6d224da",
   "lastOpenFiles": [
     "FrameWorks/Vue/Vuex.md",
-    "FrameWorks/Vue/무제 파일.md",
+    "FrameWorks/Vue/Transitions & Animations.md",
     "Languages/TypeScript/Type.md",
     "Languages/TypeScript",
     "FrameWorks/Vue/Vue3 Composition API.md",
