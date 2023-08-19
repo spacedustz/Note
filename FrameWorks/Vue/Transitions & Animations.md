@@ -31,3 +31,17 @@ const animateBlock = () => {
   100% { transform: translateX(-150px) scale(1); }  
 }
 ```
+
+---
+
+## 팝업 Animation
+
+팝업은 CSS 만으로 부족합니다.
+
+```css
+@keyframes slide-fade {  
+  0% { transform: translateX(0) scale(1); }  
+  70% { transform: translateX(-120px) scale(1.1); }  
+  100% { transform: translateX(-150px) scale(1); }  
+}
+```
