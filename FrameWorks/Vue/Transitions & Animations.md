@@ -47,7 +47,7 @@ const animateBlock = () => {
 	
 	to {
 		opacity: 1;
-		tran
+		transform: translateY(0) scale(1);
 	}
 }
 ```
