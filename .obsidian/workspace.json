@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Languages/TypeScript/정리.md",
+                "file": "FrameWorks/Vue/Transitions & Animations.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Languages/TypeScript/정리.md",
+                "file": "FrameWorks/Vue/Transitions & Animations.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Languages/TypeScript/정리.md",
+                "file": "FrameWorks/Vue/Transitions & Animations.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Languages/TypeScript/정리.md"
+                "file": "FrameWorks/Vue/Transitions & Animations.md"
               }
             }
           }
@@ -159,12 +159,12 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "2ce1a846a1685820",
+  "active": "e92210adcf99929d",
   "lastOpenFiles": [
+    "Languages/TypeScript/정리.md",
     "FrameWorks/Vue/Vue Router.md",
     "FrameWorks/Vue/Vuex.md",
     "FrameWorks/Vue/Transitions & Animations.md",
-    "Languages/TypeScript/정리.md",
     "Languages/TypeScript",
     "FrameWorks/Vue/Vue3 Composition API.md",
     "conflict-files-obsidian-git.md",
