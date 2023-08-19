@@ -40,8 +40,14 @@ const animateBlock = () => {
 
 ```css
 @keyframes slide-fade {  
-  0% { transform: translateX(0) scale(1); }  
-  70% { transform: translateX(-120px) scale(1.1); }  
-  100% { transform: translateX(-150px) scale(1); }  
+	from {
+		opacity: 0;
+		transform: translateY(-50px) sclae(0.9);
+	}
+	
+	to {
+		opacity: 1;
+		tran
+	}
 }
 ```
