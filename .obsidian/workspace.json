@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "FrameWorks/Vue/Cors Config.md",
+                "file": "CI & CD/Jenkins/2. Jenkins 설정 (On Container).md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "FrameWorks/Vue/Cors Config.md",
+                "file": "CI & CD/Jenkins/2. Jenkins 설정 (On Container).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "FrameWorks/Vue/Cors Config.md",
+                "file": "CI & CD/Jenkins/2. Jenkins 설정 (On Container).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "FrameWorks/Vue/Cors Config.md"
+                "file": "CI & CD/Jenkins/2. Jenkins 설정 (On Container).md"
               }
             }
           }
@@ -159,8 +159,13 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "e92210adcf99929d",
+  "active": "2ce1a846a1685820",
   "lastOpenFiles": [
+    "CI & CD/Jenkins/1. AWS LightSail Instance 생성.md",
+    "CI & CD/AWS/AWS 5 - Automated Deployment.md",
+    "CI & CD/AWS/AWS 4 - ELB & Cert & Route53.md",
+    "CI & CD/AWS/AWS 3 - Connect RDS.md",
+    "FrameWorks/Vue/Cors Config.md",
     "FrameWorks/Vue/Native Fetch API를 이용한 HTTP Request 전송.md",
     "Books/딥러닝을 위한 수학/2부/지도학습 - 회귀모델과 분류모델.md",
     "Books/딥러닝을 위한 수학/2부/단순 선형회귀 모델 (Simple Linear Regression).md",
@@ -171,7 +176,6 @@
     "Languages/TypeScript",
     "FrameWorks/Vue/Vue3 Composition API.md",
     "conflict-files-obsidian-git.md",
-    "FrameWorks/Vue/Cors Config.md",
     "FrameWorks/Spring/MQTT.md",
     "FrameWorks/Spring/JPA/Relation Mapping & MappedSuperClass.md",
     "FrameWorks/Spring/Basic/Spring Container.md",
@@ -181,14 +185,10 @@
     "FrameWorks/Spring/Settings/Memo-Anotations.md",
     "FrameWorks/Spring/Settings/Memo - JPA.md",
     "CI & CD/Jenkins/6. EC2 Setting Script.md",
-    "CI & CD/Jenkins/1. AWS LightSail Instance 생성.md",
     "Settings/WSL 2 Settings.md",
     "FrameWorks/Vue/학습-기록-앱-만들기/3. Base Button Component.md",
     "FrameWorks/Vue/Component/Component Custom Event.md",
-    "FrameWorks/Vue/Vue & TypeScript/Memo.md",
     "Pasted image 20230805163438.png",
-    "FrameWorks/Vue/학습-기록-앱-만들기/7. 항목 삭제하기 구현.md",
-    "FrameWorks/Vue/학습-기록-앱-만들기/6. Custom Dialog를 이용한 Validation.md",
     "FrameWorks/Vue/학습-기록-앱-만들기",
     "FrameWorks/Vue/HTTP Request",
     "FrameWorks/Vue/Vue & TypeScript",
