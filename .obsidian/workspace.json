@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CI & CD/Jenkins/2. Jenkins 설정 (On Container).md",
+                "file": "Languages/TypeScript/정리.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "FrameWorks/Vue/Transitions & Animations.md",
+                "file": "Languages/TypeScript/정리.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "FrameWorks/Vue/Transitions & Animations.md",
+                "file": "Languages/TypeScript/정리.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "FrameWorks/Vue/Transitions & Animations.md"
+                "file": "Languages/TypeScript/정리.md"
               }
             }
           }
@@ -159,8 +159,12 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "2ce1a846a1685820",
+  "active": "e92210adcf99929d",
   "lastOpenFiles": [
+    "FrameWorks/Vue/Transitions & Animations.md",
+    "FrameWorks/Vue/Chart/Vue 기능 요약.md",
+    "FrameWorks/Vue/Chart/Vue - 데이터 시각화 (Dynamic Update).md",
+    "FrameWorks/Vue/Chart/Chart Component Information.md",
     "FrameWorks/Vue/Chart",
     "CI & CD/Jenkins/1. AWS LightSail Instance 생성.md",
     "CI & CD/AWS/AWS 5 - Automated Deployment.md",
@@ -171,7 +175,6 @@
     "Books/딥러닝을 위한 수학/2부/지도학습 - 회귀모델과 분류모델.md",
     "Books/딥러닝을 위한 수학/2부/단순 선형회귀 모델 (Simple Linear Regression).md",
     "FrameWorks/Vue/Vuex.md",
-    "FrameWorks/Vue/Transitions & Animations.md",
     "Languages/TypeScript/정리.md",
     "FrameWorks/Vue/Vue Router.md",
     "Languages/TypeScript",
@@ -186,8 +189,6 @@
     "FrameWorks/Spring/Settings/Memo-Anotations.md",
     "FrameWorks/Spring/Settings/Memo - JPA.md",
     "CI & CD/Jenkins/6. EC2 Setting Script.md",
-    "Settings/WSL 2 Settings.md",
-    "FrameWorks/Vue/학습-기록-앱-만들기/3. Base Button Component.md",
     "Pasted image 20230805163438.png",
     "FrameWorks/Vue/학습-기록-앱-만들기",
     "FrameWorks/Vue/HTTP Request",
@@ -196,7 +197,6 @@
     "FrameWorks/Vue/Temp",
     "FrameWorks/Vue",
     "Languages/Java/자바의정석",
-    "FrameWorks/Spring/채팅방구현",
-    "Languages/JavaScript/Object"
+    "FrameWorks/Spring/채팅방구현"
   ]
 }
