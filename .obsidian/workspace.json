@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Languages/TypeScript/정리.md",
+                "file": "CI & CD/Jenkins/2. Jenkins 설정 (On Container).md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Languages/TypeScript/정리.md",
+                "file": "CI & CD/Jenkins/2. Jenkins 설정 (On Container).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Languages/TypeScript/정리.md",
+                "file": "CI & CD/Jenkins/2. Jenkins 설정 (On Container).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Languages/TypeScript/정리.md"
+                "file": "CI & CD/Jenkins/2. Jenkins 설정 (On Container).md"
               }
             }
           }
@@ -161,6 +161,10 @@
   },
   "active": "e92210adcf99929d",
   "lastOpenFiles": [
+    "Languages/TypeScript/Object Class.md",
+    "Languages/TypeScript/Basic.md",
+    "Languages/TypeScript/Array.md",
+    "Languages/TypeScript/정리.md",
     "FrameWorks/Vue/Transitions & Animations.md",
     "FrameWorks/Vue/Chart/Vue 기능 요약.md",
     "FrameWorks/Vue/Chart/Vue - 데이터 시각화 (Dynamic Update).md",
@@ -175,7 +179,6 @@
     "Books/딥러닝을 위한 수학/2부/지도학습 - 회귀모델과 분류모델.md",
     "Books/딥러닝을 위한 수학/2부/단순 선형회귀 모델 (Simple Linear Regression).md",
     "FrameWorks/Vue/Vuex.md",
-    "Languages/TypeScript/정리.md",
     "FrameWorks/Vue/Vue Router.md",
     "Languages/TypeScript",
     "FrameWorks/Vue/Vue3 Composition API.md",
@@ -186,9 +189,6 @@
     "FrameWorks/Spring/Basic/Service.md",
     "FrameWorks/Spring/Basic/IoC & Dependency Injection.md",
     "FrameWorks/Spring/Settings/Memo - Yaml.md",
-    "FrameWorks/Spring/Settings/Memo-Anotations.md",
-    "FrameWorks/Spring/Settings/Memo - JPA.md",
-    "CI & CD/Jenkins/6. EC2 Setting Script.md",
     "Pasted image 20230805163438.png",
     "FrameWorks/Vue/학습-기록-앱-만들기",
     "FrameWorks/Vue/HTTP Request",
