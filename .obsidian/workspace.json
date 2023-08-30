@@ -25,14 +25,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CI & CD/Jenkins/2. Jenkins 설정 (On Container).md",
+                "file": "AWS/Elastic Cache for Redis.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f895bef256026f53",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Data Handling/Cloud/AWS/Elastic Cache.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CI & CD/Jenkins/2. Jenkins 설정 (On Container).md",
+                "file": "Data Handling/Cloud/AWS/Elastic Cache.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CI & CD/Jenkins/2. Jenkins 설정 (On Container).md",
+                "file": "Data Handling/Cloud/AWS/Elastic Cache.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CI & CD/Jenkins/2. Jenkins 설정 (On Container).md"
+                "file": "Data Handling/Cloud/AWS/Elastic Cache.md"
               }
             }
           }
@@ -159,8 +171,11 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "e92210adcf99929d",
+  "active": "f895bef256026f53",
   "lastOpenFiles": [
+    "AWS/Elastic Cache for Redis.md",
+    "Data Handling/Cloud/AWS/Elastic Cache.md",
+    "CI & CD/Jenkins/2. Jenkins 설정 (On Container).md",
     "FrameWorks/Spring/Convert/CSV Parser.md",
     "FrameWorks/Spring/Convert/RTSP to HLS (FFmpeg).md",
     "FrameWorks/Spring/Convert/Json.md",
@@ -187,9 +202,6 @@
     "Languages/TypeScript",
     "FrameWorks/Vue/Vue3 Composition API.md",
     "conflict-files-obsidian-git.md",
-    "FrameWorks/Spring/MQTT.md",
-    "FrameWorks/Spring/JPA/Relation Mapping & MappedSuperClass.md",
-    "FrameWorks/Spring/Basic/Spring Container.md",
     "Pasted image 20230805163438.png",
     "FrameWorks/Vue/학습-기록-앱-만들기",
     "FrameWorks/Vue/HTTP Request",
