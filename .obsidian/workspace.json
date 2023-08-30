@@ -25,19 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AWS/Elastic Cache for Redis.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f895bef256026f53",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Data Handling/Cloud/AWS/Elastic Cache.md",
+                "file": "AWS/Cloud Front.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AWS/Elastic Cache for Redis.md",
+                "file": "AWS/Cloud Front.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AWS/Elastic Cache for Redis.md",
+                "file": "AWS/Cloud Front.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AWS/Elastic Cache for Redis.md"
+                "file": "AWS/Cloud Front.md"
               }
             }
           }
@@ -173,8 +161,14 @@
   },
   "active": "e92210adcf99929d",
   "lastOpenFiles": [
-    "Data Handling/Cloud/AWS/Elastic Cache.md",
+    "Data Handling/Cloud/AWS/Cloud Front.md",
+    "AWS/Cloud Front.md",
+    "AWS/EC2 Memory Swaping.md",
+    "Data Handling/Cloud/AWS/EC2 Memo Swaping.md",
+    "AWS/EC2.md",
+    "Data Handling/Cloud/AWS/EC2.md",
     "AWS/Elastic Cache for Redis.md",
+    "Data Handling/Cloud/AWS/Elastic Cache.md",
     "CI & CD/Jenkins/2. Jenkins 설정 (On Container).md",
     "FrameWorks/Spring/Convert/CSV Parser.md",
     "FrameWorks/Spring/Convert/RTSP to HLS (FFmpeg).md",
@@ -195,13 +189,7 @@
     "CI & CD/AWS/AWS 3 - Connect RDS.md",
     "FrameWorks/Vue/Cors Config.md",
     "FrameWorks/Vue/Native Fetch API를 이용한 HTTP Request 전송.md",
-    "Books/딥러닝을 위한 수학/2부/지도학습 - 회귀모델과 분류모델.md",
-    "Books/딥러닝을 위한 수학/2부/단순 선형회귀 모델 (Simple Linear Regression).md",
-    "FrameWorks/Vue/Vuex.md",
-    "FrameWorks/Vue/Vue Router.md",
     "Languages/TypeScript",
-    "FrameWorks/Vue/Vue3 Composition API.md",
-    "conflict-files-obsidian-git.md",
     "Pasted image 20230805163438.png",
     "FrameWorks/Vue/학습-기록-앱-만들기",
     "FrameWorks/Vue/HTTP Request",
