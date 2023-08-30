@@ -44,7 +44,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Data Handling/Cloud/AWS/Elastic Cache.md",
+                "file": "AWS/Elastic Cache for Redis.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Data Handling/Cloud/AWS/Elastic Cache.md",
+                "file": "AWS/Elastic Cache for Redis.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Data Handling/Cloud/AWS/Elastic Cache.md"
+                "file": "AWS/Elastic Cache for Redis.md"
               }
             }
           }
@@ -171,10 +171,10 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "f895bef256026f53",
+  "active": "e92210adcf99929d",
   "lastOpenFiles": [
-    "AWS/Elastic Cache for Redis.md",
     "Data Handling/Cloud/AWS/Elastic Cache.md",
+    "AWS/Elastic Cache for Redis.md",
     "CI & CD/Jenkins/2. Jenkins 설정 (On Container).md",
     "FrameWorks/Spring/Convert/CSV Parser.md",
     "FrameWorks/Spring/Convert/RTSP to HLS (FFmpeg).md",
