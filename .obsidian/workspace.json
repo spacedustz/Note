@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CI & CD/AWS/AWS 1 - Deploy Server.md",
+                "file": "MSA/gRPC/gRPC.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "FrameWorks/Vue/Transitions & Animations.md",
+                "file": "MSA/gRPC/gRPC.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "FrameWorks/Vue/Transitions & Animations.md",
+                "file": "MSA/gRPC/gRPC.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "FrameWorks/Vue/Transitions & Animations.md"
+                "file": "MSA/gRPC/gRPC.md"
               }
             }
           }
@@ -161,6 +161,7 @@
   },
   "active": "2ce1a846a1685820",
   "lastOpenFiles": [
+    "FrameWorks/Vue/Transitions & Animations.md",
     "AWS/Cloud Front.md",
     "Data Handling/풀이/Programmers/정렬/가장 큰 수.md",
     "Data Handling/풀이/Programmers/정렬/K번째수.md",
@@ -191,7 +192,6 @@
     "Data Handling/풀이/CodeUp/Codeup 1~30.md",
     "Data Handling/풀이/Baek Joon/Class2 10%20.md",
     "Data Handling/풀이/Baek Joon/Class1 9%36.md",
-    "Data Handling/풀이/Baek Joon/Class1 36%36.md",
     "Data Handling/풀이/Programmers",
     "Data Handling/풀이/CodeUp",
     "Data Handling/풀이/Baek Joon",
