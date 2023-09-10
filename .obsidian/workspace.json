@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MSA/gRPC/gRPC.md",
+                "file": "FrameWorks/Spring/채팅방구현/2. Kafka 설치 & MongoDB & Stomp 설정.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "FrameWorks/Vue/Transitions & Animations.md",
+                "file": "FrameWorks/Spring/채팅방구현/2. Kafka 설치 & MongoDB & Stomp 설정.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "FrameWorks/Vue/Transitions & Animations.md",
+                "file": "FrameWorks/Spring/채팅방구현/2. Kafka 설치 & MongoDB & Stomp 설정.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "FrameWorks/Vue/Transitions & Animations.md"
+                "file": "FrameWorks/Spring/채팅방구현/2. Kafka 설치 & MongoDB & Stomp 설정.md"
               }
             }
           }
@@ -159,8 +159,9 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "2ce1a846a1685820",
+  "active": "e92210adcf99929d",
   "lastOpenFiles": [
+    "FrameWorks/Spring/채팅방구현/1. 기술스택 선정.md",
     "FrameWorks/Vue/Transitions & Animations.md",
     "AWS/Cloud Front.md",
     "Data Handling/풀이/Programmers/정렬/가장 큰 수.md",
@@ -191,7 +192,6 @@
     "Data Handling/풀이/CodeUp/Codeup 31~60.md",
     "Data Handling/풀이/CodeUp/Codeup 1~30.md",
     "Data Handling/풀이/Baek Joon/Class2 10%20.md",
-    "Data Handling/풀이/Baek Joon/Class1 9%36.md",
     "Data Handling/풀이/Programmers",
     "Data Handling/풀이/CodeUp",
     "Data Handling/풀이/Baek Joon",
