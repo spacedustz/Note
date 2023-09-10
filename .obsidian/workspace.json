@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Docs/Settings/RoadMap.md",
+                "file": "BackEnd/Frameworks/Message-Broker/RabbitMQ/Clustering.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Docs/Settings/RoadMap.md",
+                "file": "BackEnd/Frameworks/Message-Broker/RabbitMQ/Clustering.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Docs/Settings/RoadMap.md",
+                "file": "BackEnd/Frameworks/Message-Broker/RabbitMQ/Clustering.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Docs/Settings/RoadMap.md"
+                "file": "BackEnd/Frameworks/Message-Broker/RabbitMQ/Clustering.md"
               }
             }
           }
@@ -148,6 +148,8 @@
   },
   "active": "e92210adcf99929d",
   "lastOpenFiles": [
+    "BackEnd/Frameworks/Message-Broker/RabbitMQ/Summary.md",
+    "Docs/Settings/RoadMap.md",
     "Docs/Settings/Prime College.md",
     "Docs/Settings/Obsidian Setting.md",
     "Docs/Settings/Typora Settings.md",
@@ -172,8 +174,6 @@
     "Ops-Tools/MSA/Kubernetes/Deployment.md",
     "Ops-Tools/MSA/Kubernetes/DashBoard.md",
     "Ops-Tools/MSA/Kubernetes/DaemonSet.md",
-    "Ops-Tools/MSA/Kubernetes/ConfigMap.md",
-    "Ops-Tools/MSA/Kubernetes/Basic.md",
     "Ops-Tools/MSA/Kubernetes",
     "Ops-Tools/MSA/gRPC",
     "Ops-Tools/Management & Tool/Git",
