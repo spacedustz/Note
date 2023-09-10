@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Settings/Backend-Developer-Interview.md",
+                "file": "FrameWorks/Spring/Annotations/Annotations.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Settings/Backend-Developer-Interview.md",
+                "file": "FrameWorks/Spring/Annotations/Annotations.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Settings/Backend-Developer-Interview.md",
+                "file": "FrameWorks/Spring/Annotations/Annotations.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Settings/Backend-Developer-Interview.md"
+                "file": "FrameWorks/Spring/Annotations/Annotations.md"
               }
             }
           }
@@ -146,8 +146,9 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "2ce1a846a1685820",
+  "active": "e92210adcf99929d",
   "lastOpenFiles": [
+    "Settings/Backend-Developer-Interview.md",
     "FrameWorks/Vue/Vue & TypeScript/Memo.md",
     "FrameWorks/Vue/Component/Basic.md",
     "FrameWorks/Vue/개념/Component/Fallthrough Property & Event & Binding All Property.md",
@@ -176,7 +177,6 @@
     "FrameWorks/Vue/Chart/Vue-기능요약.md",
     "FrameWorks/Vue/Chart/Vue - 데이터 시각화 (Dynamic Update).md",
     "FrameWorks/Vue/Chart/Chart-Component-Information.md",
-    "Languages/TypeScript/Object Class.md",
     "Languages/TypeScript",
     "FrameWorks/React",
     "Message-Broker/RabbitMQ",
