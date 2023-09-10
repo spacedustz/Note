@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Management & Tool/Git/Remote Commit 되돌리기.md",
+                "file": "Settings/Mac Settings.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Management & Tool/Git/Remote Commit 되돌리기.md",
+                "file": "Settings/Mac Settings.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Management & Tool/Git/Remote Commit 되돌리기.md",
+                "file": "Settings/Mac Settings.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Management & Tool/Git/Remote Commit 되돌리기.md"
+                "file": "Settings/Mac Settings.md"
               }
             }
           }
@@ -146,14 +146,19 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "e92210adcf99929d",
+  "active": "2ce1a846a1685820",
   "lastOpenFiles": [
+    "FrontEnd",
+    "새 폴더",
+    "BackEnd",
+    "Settings/Backend-Developer-Interview.md",
+    "Settings/imojii.md",
+    "Management & Tool/Git/Remote Commit 되돌리기.md",
     "Management & Tool/Git/Tag.md",
     "FrameWorks/React/Basic-Summary.md",
     "FrameWorks/Git/Git.md",
     "Management & Tool/Git/Git.md",
     "FrameWorks/Spring/Annotations/Annotations.md",
-    "Settings/Backend-Developer-Interview.md",
     "FrameWorks/Vue/Vue & TypeScript/Memo.md",
     "FrameWorks/Vue/Component/Basic.md",
     "FrameWorks/Vue/개념/Component/Fallthrough Property & Event & Binding All Property.md",
@@ -172,9 +177,6 @@
     "FrameWorks/Vue/개념/6. Monster Slayer Game.md",
     "FrameWorks/Vue/개념/5. Conditional Rendering.md",
     "FrameWorks/Vue/개념/4. Dynimic Styling.md",
-    "FrameWorks/Vue/개념/3. Events.md",
-    "FrameWorks/Vue/개념/2. Vue를 이용한 DOM 상호작용.md",
-    "FrameWorks/Vue/개념/1. Basic.md",
     "FrameWorks/Vue/개념",
     "FrameWorks/Vue/새 폴더",
     "Languages/TypeScript",
@@ -182,8 +184,6 @@
     "Message-Broker/RabbitMQ",
     "Message-Broker",
     "FrameWorks/Spring/Convert",
-    "Data Handling/풀이/Programmers/정렬",
-    "Data Handling/풀이/Programmers/완전탐색",
     "Pasted image 20230805163438.png"
   ]
 }
