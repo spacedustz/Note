@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS/Web Application & Network.md",
+                "file": "FrameWorks/Spring/Annotations/Annotations.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CS/Web Application & Network.md",
+                "file": "FrameWorks/Spring/Annotations/Annotations.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CS/Web Application & Network.md",
+                "file": "FrameWorks/Spring/Annotations/Annotations.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CS/Web Application & Network.md"
+                "file": "FrameWorks/Spring/Annotations/Annotations.md"
               }
             }
           }
@@ -161,6 +161,8 @@
   },
   "active": "e92210adcf99929d",
   "lastOpenFiles": [
+    "Database/Dump.md",
+    "CS/Web Application & Network.md",
     "CS/Race Condition.md",
     "CS/Proxy & Loadbalancer & Was & VPC.md",
     "CS/HTTP.md",
@@ -185,8 +187,6 @@
     "Data Handling/풀이/Programmers/Stack & Queue/기능개발.md",
     "Data Handling/풀이/Programmers/Stack & Queue/같은숫자는싫어.md",
     "Data Handling/풀이/Programmers/DFS & BFS/타겟 넘버.md",
-    "Data Handling/풀이/Programmers/DFS & BFS/네트워크.md",
-    "Data Handling/풀이/Programmers/DFS & BFS/게임 맵 최단거리.md",
     "Data Handling/풀이/Programmers/정렬",
     "Data Handling/풀이/Programmers/완전탐색",
     "Data Handling/풀이/Programmers/Stack & Queue",
