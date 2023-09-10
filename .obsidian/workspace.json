@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Docs/Settings/Obsidian Setting.md",
+                "file": "Docs/Settings/RoadMap.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Docs/Settings/Obsidian Setting.md",
+                "file": "Docs/Settings/RoadMap.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Docs/Settings/Obsidian Setting.md",
+                "file": "Docs/Settings/RoadMap.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Docs/Settings/Obsidian Setting.md"
+                "file": "Docs/Settings/RoadMap.md"
               }
             }
           }
@@ -148,6 +148,10 @@
   },
   "active": "e92210adcf99929d",
   "lastOpenFiles": [
+    "Docs/Settings/Prime College.md",
+    "Docs/Settings/Obsidian Setting.md",
+    "Docs/Settings/Typora Settings.md",
+    "Docs/Settings/WSL 2 Settings.md",
     "BackEnd/Frameworks/Spring/Security/Authentication & Authorization.md",
     "BackEnd/Frameworks/Spring/Security/Filter Chain & DelegatingPasswordEncoder.md",
     "BackEnd/Frameworks/Spring/Security/JWT & Sticky Session.md",
@@ -170,10 +174,6 @@
     "Ops-Tools/MSA/Kubernetes/DaemonSet.md",
     "Ops-Tools/MSA/Kubernetes/ConfigMap.md",
     "Ops-Tools/MSA/Kubernetes/Basic.md",
-    "Ops-Tools/Management & Tool/Git/Remote Commit 되돌리기.md",
-    "Ops-Tools/MSA/gRPC/gRPC.md",
-    "Ops-Tools/Management & Tool/Git/Tag.md",
-    "Ops-Tools/Management & Tool/Git/Git.md",
     "Ops-Tools/MSA/Kubernetes",
     "Ops-Tools/MSA/gRPC",
     "Ops-Tools/Management & Tool/Git",
