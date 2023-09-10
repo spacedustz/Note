@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "FrameWorks/Vue/Vue & TypeScript/Memo.md",
+                "file": "Settings/Backend-Developer-Interview.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "FrameWorks/Vue/Vue & TypeScript/Memo.md",
+                "file": "Settings/Backend-Developer-Interview.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "FrameWorks/Vue/Vue & TypeScript/Memo.md",
+                "file": "Settings/Backend-Developer-Interview.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "FrameWorks/Vue/Vue & TypeScript/Memo.md"
+                "file": "Settings/Backend-Developer-Interview.md"
               }
             }
           }
@@ -146,15 +146,15 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "e92210adcf99929d",
+  "active": "2ce1a846a1685820",
   "lastOpenFiles": [
+    "FrameWorks/Vue/Vue & TypeScript/Memo.md",
     "FrameWorks/Vue/Component/Basic.md",
     "FrameWorks/Vue/개념/Component/Fallthrough Property & Event & Binding All Property.md",
     "FrameWorks/Vue/개념/Component/Custom Event 정의 & 검증.md",
     "FrameWorks/Vue/개념/Component/Component Custom Event.md",
     "FrameWorks/Vue/개념/Component/Basic.md",
     "FrameWorks/Vue/개념/Component",
-    "FrameWorks/Vue/Vue & TypeScript/Memo.md",
     "FrameWorks/Vue/개념/Vue3 Composition API.md",
     "FrameWorks/Vue/개념/Vue Router.md",
     "FrameWorks/Vue/개념/Vue CLI.md",
