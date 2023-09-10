@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "FrameWorks/Spring/Annotations/Annotations.md",
+                "file": "FrameWorks/Git/Git.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "FrameWorks/Spring/Annotations/Annotations.md",
+                "file": "FrameWorks/Git/Git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "FrameWorks/Spring/Annotations/Annotations.md",
+                "file": "FrameWorks/Git/Git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "FrameWorks/Spring/Annotations/Annotations.md"
+                "file": "FrameWorks/Git/Git.md"
               }
             }
           }
@@ -148,6 +148,8 @@
   },
   "active": "e92210adcf99929d",
   "lastOpenFiles": [
+    "FrameWorks/React/Basic-Summary.md",
+    "FrameWorks/Spring/Annotations/Annotations.md",
     "Settings/Backend-Developer-Interview.md",
     "FrameWorks/Vue/Vue & TypeScript/Memo.md",
     "FrameWorks/Vue/Component/Basic.md",
@@ -173,10 +175,8 @@
     "FrameWorks/Vue/개념/Vuex.md",
     "FrameWorks/Vue/개념",
     "FrameWorks/Vue/새 폴더",
-    "FrameWorks/Spring/Annotations/Annotations.md",
     "FrameWorks/Vue/Chart/Vue-기능요약.md",
     "FrameWorks/Vue/Chart/Vue - 데이터 시각화 (Dynamic Update).md",
-    "FrameWorks/Vue/Chart/Chart-Component-Information.md",
     "Languages/TypeScript",
     "FrameWorks/React",
     "Message-Broker/RabbitMQ",
