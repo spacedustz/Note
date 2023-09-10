@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "BackEnd/Frameworks/Spring/Security/Authentication & Authorization.md",
+                "file": "Docs/Settings/Obsidian Setting.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "BackEnd/Frameworks/Spring/Security/Authentication & Authorization.md",
+                "file": "Docs/Settings/Obsidian Setting.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "BackEnd/Frameworks/Spring/Security/Authentication & Authorization.md",
+                "file": "Docs/Settings/Obsidian Setting.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "BackEnd/Frameworks/Spring/Security/Authentication & Authorization.md"
+                "file": "Docs/Settings/Obsidian Setting.md"
               }
             }
           }
@@ -148,6 +148,7 @@
   },
   "active": "e92210adcf99929d",
   "lastOpenFiles": [
+    "BackEnd/Frameworks/Spring/Security/Authentication & Authorization.md",
     "BackEnd/Frameworks/Spring/Security/Filter Chain & DelegatingPasswordEncoder.md",
     "BackEnd/Frameworks/Spring/Security/JWT & Sticky Session.md",
     "BackEnd/Frameworks/Spring/Security/Security Basic.md",
@@ -173,7 +174,6 @@
     "Ops-Tools/MSA/gRPC/gRPC.md",
     "Ops-Tools/Management & Tool/Git/Tag.md",
     "Ops-Tools/Management & Tool/Git/Git.md",
-    "Ops-Tools/Management & Tool/Git/Git Project.md",
     "Ops-Tools/MSA/Kubernetes",
     "Ops-Tools/MSA/gRPC",
     "Ops-Tools/Management & Tool/Git",
