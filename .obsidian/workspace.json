@@ -11,8 +11,12 @@
             "id": "e92210adcf99929d",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "DataBase/개념/SQL/Alias.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "DataBase/개념/SQL/Alias.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "DataBase/개념/SQL/Alias.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "DataBase/개념/SQL/Alias.md"
+              }
             }
           }
         ]
@@ -138,8 +146,9 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "2ce1a846a1685820",
+  "active": "e92210adcf99929d",
   "lastOpenFiles": [
+    "DataBase/개념/SQL/And & Or & Not.md",
     "Ops-Tools/MSA/Kubernetes/StatefulSet.md",
     "Ops-Tools/MSA/Kubernetes/Service.md",
     "Ops-Tools/MSA/Kubernetes/Secret.md",
@@ -165,7 +174,6 @@
     "Ops-Tools/CI & CD/Jenkins/Bluegreen script.md",
     "Ops-Tools/Management & Tool/IntelliJ/WSL2,JDK,IntelliJ,JetBrains Toolbox 환경&변수 설정.md",
     "Ops-Tools/CI & CD/Jenkins/Jenkins 분산 빌드.md",
-    "Ops-Tools/CI & CD/Jenkins/Jenkins Pipeline.md",
     "Ops-Tools/MSA/Kubernetes",
     "Ops-Tools/MSA/gRPC",
     "Ops-Tools/Management & Tool/Git",
