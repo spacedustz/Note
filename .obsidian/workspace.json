@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DataBase/개념/SQL/Alias.md",
+                "file": "BackEnd/Frameworks/Spring/Security/Authentication & Authorization.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DataBase/개념/SQL/Alias.md",
+                "file": "BackEnd/Frameworks/Spring/Security/Authentication & Authorization.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DataBase/개념/SQL/Alias.md",
+                "file": "BackEnd/Frameworks/Spring/Security/Authentication & Authorization.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DataBase/개념/SQL/Alias.md"
+                "file": "BackEnd/Frameworks/Spring/Security/Authentication & Authorization.md"
               }
             }
           }
@@ -148,6 +148,11 @@
   },
   "active": "e92210adcf99929d",
   "lastOpenFiles": [
+    "BackEnd/Frameworks/Spring/Security/Filter Chain & DelegatingPasswordEncoder.md",
+    "BackEnd/Frameworks/Spring/Security/JWT & Sticky Session.md",
+    "BackEnd/Frameworks/Spring/Security/Security Basic.md",
+    "BackEnd/Frameworks/Spring/Security/OAuth2.md",
+    "DataBase/개념/SQL/Alias.md",
     "DataBase/개념/SQL/And & Or & Not.md",
     "Ops-Tools/MSA/Kubernetes/StatefulSet.md",
     "Ops-Tools/MSA/Kubernetes/Service.md",
@@ -169,11 +174,6 @@
     "Ops-Tools/Management & Tool/Git/Tag.md",
     "Ops-Tools/Management & Tool/Git/Git.md",
     "Ops-Tools/Management & Tool/Git/Git Project.md",
-    "Ops-Tools/Management & Tool/Git/GIt Branch & Flow.md",
-    "Ops-Tools/Management & Tool/Git/Commit Convention.md",
-    "Ops-Tools/CI & CD/Jenkins/Bluegreen script.md",
-    "Ops-Tools/Management & Tool/IntelliJ/WSL2,JDK,IntelliJ,JetBrains Toolbox 환경&변수 설정.md",
-    "Ops-Tools/CI & CD/Jenkins/Jenkins 분산 빌드.md",
     "Ops-Tools/MSA/Kubernetes",
     "Ops-Tools/MSA/gRPC",
     "Ops-Tools/Management & Tool/Git",
