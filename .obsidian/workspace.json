@@ -11,12 +11,8 @@
             "id": "e92210adcf99929d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Settings/Mac Settings.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Settings/Mac Settings.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Settings/Mac Settings.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Settings/Mac Settings.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -148,42 +140,42 @@
   },
   "active": "2ce1a846a1685820",
   "lastOpenFiles": [
-    "새 폴더",
-    "BackEnd/Message-Broker/RabbitMQ/Summary.md",
-    "BackEnd/Message-Broker/RabbitMQ/RabbitMQ-Dead Letter Exchange-TTL.md",
-    "BackEnd/Message-Broker/RabbitMQ/On-Linux.md",
-    "BackEnd/Message-Broker/RabbitMQ/RabbitMQ-Configuration.md",
-    "BackEnd/Message-Broker/RabbitMQ/Clustering.md",
-    "BackEnd/Message-Broker/RabbitMQ",
-    "BackEnd/Message-Broker",
-    "DataBase/개념/SQL/읽는 순서.md",
-    "DataBase/개념/SQL/WildCard.md",
-    "DataBase/개념/SQL/Where.md",
-    "DataBase/개념/SQL/Top & Limit & Fetch First.md",
-    "DataBase/개념/SQL/Update.md",
-    "DataBase/개념/SQL/Union.md",
-    "DataBase/개념/SQL/ST_ASTEXT.md",
-    "DataBase/개념/SQL/Point.md",
-    "DataBase/개념/SQL/Stored Procedure.md",
-    "DataBase/개념/SQL/Select.md",
-    "DataBase/개념/SQL/Select Into & Insert Into Select.md",
-    "DataBase/개념/SQL/Order By.md",
-    "DataBase/개념/SQL/Operator.md",
-    "DataBase/개념/SQL/Null Value.md",
-    "DataBase/개념/SQL/Having.md",
-    "DataBase/개념/SQL/Null Function.md",
-    "DataBase/개념/SQL/Min & Max.md",
-    "DataBase/개념/SQL/Join.md",
-    "DataBase/개념/SQL/Like.md",
-    "DataBase/개념/SQL/In.md",
-    "DataBase/개념/SQL",
-    "DataBase/개념/Basic",
-    "DataBase/QueryDSL/Query-Builder",
-    "DataBase/개념",
-    "DataBase/QueryDSL",
-    "DataBase/JPQL",
-    "DataBase",
-    "DB-Query/개념/SQL",
+    "FrontEnd/Languages",
+    "FrontEnd/새 폴더",
+    "Settings/Mac Settings.md",
+    "Docs/Settings/WSL 2 Settings.md",
+    "Docs/Settings/Typora Settings.md",
+    "Docs/Settings/Prime College.md",
+    "Docs/Settings/RoadMap.md",
+    "Docs/Settings/Obsidian Setting.md",
+    "Docs/Settings/Mac Settings.md",
+    "Docs/Settings/imojii.md",
+    "Docs/Settings/Backend-Developer-Interview.md",
+    "Docs/Settings",
+    "Docs/Project Documents/Document/개발환경 세팅 & 가이드 3 (프로젝트 설계).md",
+    "Docs/Project Documents/Document/개발환경 세팅 & 가이드 2 (SRS 개념).md",
+    "Docs/Project Documents/Document/개발환경 세팅 & 가이드 - 1.md",
+    "Docs/Project Documents/Document/Agile.md",
+    "Docs/Project Documents/Document",
+    "Docs/Project Documents",
+    "Docs/Books/딥러닝을 위한 수학/3부/함수/함수.md",
+    "Docs/Books/딥러닝을 위한 수학/3부/함수",
+    "Docs/Books/딥러닝을 위한 수학/2부/지도학습 - 회귀모델과 분류모델.md",
+    "Docs/Books/딥러닝을 위한 수학/2부/손실함수와 경사하강법.md",
+    "Docs/Books/딥러닝을 위한 수학/2부/머신러닝과 딥러닝에서 수학이 필요한 이유.md",
+    "Docs/Books/딥러닝을 위한 수학/1부/학습법.md",
+    "Docs/Books/딥러닝을 위한 수학/2부/머신러닝 분류 모델.md",
+    "Docs/Books/딥러닝을 위한 수학/2부/머신러닝 모델.md",
+    "Docs/Books/딥러닝을 위한 수학/2부/단순 선형회귀 모델 (Simple Linear Regression).md",
+    "Docs/Books/딥러닝을 위한 수학/1부/사전 학습 지식.md",
+    "Docs/Books/딥러닝을 위한 수학/1부/Settings (windows).md",
+    "Docs/Books/딥러닝을 위한 수학/1부/Settings (mac).md",
+    "Docs/Books/딥러닝을 위한 수학/3부",
+    "Docs/Books/시작하세요! 도커 & 쿠버네티스/쿠버네티스의 특징.md",
+    "Docs/Books/딥러닝을 위한 수학/2부",
+    "Docs/Books/딥러닝을 위한 수학/1부",
+    "Docs/Books/시작하세요! 도커 & 쿠버네티스",
+    "Docs/Books/딥러닝을 위한 수학",
     "Pasted image 20230805163438.png"
   ]
 }
