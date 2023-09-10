@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "FrameWorks/Spring/채팅방구현/2. Kafka 설치 & MongoDB & Stomp 설정.md",
+                "file": "CS/Web Application & Network.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "FrameWorks/Spring/채팅방구현/2. Kafka 설치 & MongoDB & Stomp 설정.md",
+                "file": "CS/Web Application & Network.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "FrameWorks/Spring/채팅방구현/2. Kafka 설치 & MongoDB & Stomp 설정.md",
+                "file": "CS/Web Application & Network.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "FrameWorks/Spring/채팅방구현/2. Kafka 설치 & MongoDB & Stomp 설정.md"
+                "file": "CS/Web Application & Network.md"
               }
             }
           }
@@ -161,6 +161,16 @@
   },
   "active": "e92210adcf99929d",
   "lastOpenFiles": [
+    "CS/Race Condition.md",
+    "CS/Proxy & Loadbalancer & Was & VPC.md",
+    "CS/HTTP.md",
+    "CS/Cookie & Session.md",
+    "CS/Context Switching.md",
+    "CS/공식.md",
+    "FrameWorks/Spring/Spring Batch.md",
+    "FrameWorks/Spring/Undertow.md",
+    "FrameWorks/Spring/MQTT.md",
+    "FrameWorks/Spring/채팅방구현/2. Kafka 설치 & MongoDB & Stomp 설정.md",
     "FrameWorks/Spring/채팅방구현/1. 기술스택 선정.md",
     "FrameWorks/Vue/Transitions & Animations.md",
     "AWS/Cloud Front.md",
@@ -177,21 +187,11 @@
     "Data Handling/풀이/Programmers/DFS & BFS/타겟 넘버.md",
     "Data Handling/풀이/Programmers/DFS & BFS/네트워크.md",
     "Data Handling/풀이/Programmers/DFS & BFS/게임 맵 최단거리.md",
-    "Data Handling/풀이/Programmers/Hash/폰켓몬.md",
-    "Data Handling/풀이/Programmers/Hash/전화번호 목록.md",
-    "Data Handling/풀이/Programmers/Hash/위장.md",
-    "Data Handling/풀이/Programmers/Hash/완주하지못한선수.md",
-    "Data Handling/풀이/Programmers/Hash/베스트앨범.md",
     "Data Handling/풀이/Programmers/정렬",
     "Data Handling/풀이/Programmers/완전탐색",
     "Data Handling/풀이/Programmers/Stack & Queue",
     "Data Handling/풀이/Programmers/Hash",
     "Data Handling/풀이/Programmers/DFS & BFS",
-    "Data Handling/풀이/CodeUp/Codeup 81~100.md",
-    "Data Handling/풀이/CodeUp/Codeup 61~80.md",
-    "Data Handling/풀이/CodeUp/Codeup 31~60.md",
-    "Data Handling/풀이/CodeUp/Codeup 1~30.md",
-    "Data Handling/풀이/Baek Joon/Class2 10%20.md",
     "Data Handling/풀이/Programmers",
     "Data Handling/풀이/CodeUp",
     "Data Handling/풀이/Baek Joon",
