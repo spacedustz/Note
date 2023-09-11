@@ -209,7 +209,7 @@ public class RedisConfig {
 
 <br>
 
-> d
+> 📕 **RedisSubscriber**
 
 ```java
 @Service  
