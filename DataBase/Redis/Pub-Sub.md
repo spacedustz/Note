@@ -17,4 +17,10 @@ Redis는 Publisher가 Publish하면 자동으로 모든 Subscriber에게 Message
 <br>
 
 **Redis**
-- 속도가 중요할 때
+- 모든 Subscriber에게 BroadCasting을 원하고, 데이터를 저장하지 않을 때
+- 속도가 중요하고, 데이터 손실을 감수할 수 있는 경우
+- 시스템에서 전송된 메시지를 보관하는 것을 원하지 않을 경우 (성능)
+- 처리할 데이터의 양이 크지 않을 때
+
+**Kafka**
+- 신뢰성 있는 메지
