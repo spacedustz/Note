@@ -120,7 +120,7 @@ Erlang, RabbitMQ의 rpm을 직접 떙겨와서 설치해주었습니다.
 
 # Red Hat Subscription Plugin 비활성화
 sed -i 's/enabled=0/enabled=1/' /etc/yum/pluginconf.d/subscription-manager.conf
-dnf remove subscription-manager
+dnf -y remove subscription-manager
 
 # ========== Yum 업데이트 & 업그레이드 ==========
 dnf -y update && dnf -y upgrade
