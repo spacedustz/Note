@@ -226,7 +226,7 @@ rabbitmqctl list_queues name slave_pids state synchronised_slave_pids | grep "sl
 
 ---
 
-## **Backend 데이터 처리**
+**Backend 데이터 처리**
 
 - Linux 서버에서 Backend 애플리케이션을 개발하고, Slave Queue들을 Subscribe하여 데이터 변환 및 필요한 처리 작업 수행 후 DB에 저장합니다.
 
