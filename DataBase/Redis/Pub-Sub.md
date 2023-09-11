@@ -90,3 +90,8 @@ requirepass [접속 패스워드 입력]
 # 암호화된 비밀번호가 필요하다면, 터미널에 다음 명령어로 생성 가능하다. 
 echo "MyPassword" | sha256sum
 ```
+
+---
+
+## Spring Redis
+
