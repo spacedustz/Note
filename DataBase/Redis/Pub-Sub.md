@@ -71,9 +71,14 @@ systemctl start redis-server && systemctl enable redis-server
 # -> 최대 사용 메모리 사양을 256mb로 설정한다. 단위는 mb나 g 등 필요에 맞춰 적어주면된다. 
 maxmemory 256mb 
 
-# 메모리 초과 사용 시 후처리 방식 설정 
-# -> 지금 설정한 allkeys-lru 옵션은 가장 오래된 데이터를 삭제하고, 새로운 데이터를 저장하는 옵션이다. 
-maxmemory-policy allkeys-lru 
+# maxmemory 에 설정된 용량을 초과했을때 삭제할 데이터 선정 방식
+# - noeviction : 쓰기 동작에 대해 error 반환 (Default)
+# - volatile-lru : expire 가 설정된 key 들중에서 LRU algorithm 에 의해서 선택된 key 제거
+# - allkeys-lru : 모든 key 들 중 LRU algorithm에 의해서 선택된 key 제거
+# - volatile-random : expire 가 설정된 key 들 중 임의의 key 제거
+# - allkeys-random : 모든 key 들 중 임의의 key 제거
+# - volatile-ttl : expire time(TTL)이 가장 적게 남은 key 제거 (minor TTL)
+maxmemory-policy volatile-ttl
 
 # 프로세스 포트 
 # -> port 부분은 초기에 주석처리가 되어 있는데, 디폴트 값으로 6379 포트에서 동작한다. 
@@ -91,6 +96,15 @@ requirepass [접속 패스워드 입력]
 
 # 암호화된 비밀번호가 필요하다면, 터미널에 다음 명령어로 생성 가능하다. 
 echo "MyPassword" | sha256sum
+
+```null
+# DB 데이터를 주기적으로 파일로 백업하기 위한 설정입니다.
+# Redis 가 재시작되면 이 백업을 통해 DB 를 복구합니다.
+
+save 900 1      # 15분 안에 최소 1개 이상의 key 가 변경 되었을 때
+save 300 10     # 5분 안에 최소 10개 이상의 key 가 변경 되었을 때
+save 60 10000   # 60초 안에 최소 10000 개 이상의 key 가 변경 되었을 때
+``
 ```
 
 ---
