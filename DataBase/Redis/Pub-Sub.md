@@ -95,3 +95,12 @@ echo "MyPassword" | sha256sum
 
 ## Spring Redis
 
+> 📕 **build.gradle Dependency 추가**
+
+```groovy
+implementation('org.springframework.boot:spring-boot-starter-data-redis')
+```
+
+<br>
+
+> 📕 ****
