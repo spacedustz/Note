@@ -38,3 +38,16 @@ Redis는 Publisher가 Publish하면 자동으로 모든 Subscriber에게 Message
 
 도커 컨테이너 사용 X
 
+```bash
+apt-get -y update
+apt-get -y upgrade
+apt-get install redis-server
+```
+
+<br>
+
+각종 설정
+
+```bash
+
+```
