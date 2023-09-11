@@ -206,3 +206,22 @@ public class RedisConfig {
     }  
 }
 ```
+
+<br>
+
+> d
+
+```java
+@Service  
+@RequiredArgsConstructor  
+public class RedisSubscriber implements MessageListener {  
+  
+    private final RedisTemplate<String, Object> template;  
+  
+    @Override  
+    public void onMessage(Message message) {  
+        String publishMessage = (String) template.getStringSerializer().deserialize(message.getBody());  
+        template.convertAndSend("/topic/message", publishMessage);  
+    }  
+}
+```
