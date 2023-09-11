@@ -211,6 +211,8 @@ public class RedisConfig {
 
 > 📕 **RedisSubscriber**
 
+- Redis로부터 온 메시지를 역직렬화하여 메시지를 전달합니다.
+
 ```java
 @Service  
 @RequiredArgsConstructor  
