@@ -98,9 +98,17 @@ echo "MyPassword" | sha256sum
 > 📕 **build.gradle Dependency 추가**
 
 ```groovy
-implementation('org.springframework.boot:spring-boot-starter-data-redis')
+// Redis
+implementation'org.springframework.boot:spring-boot-starter-data-redis'
+
+// WebSocket
+implementation 'org.springframework.boot:spring-boot-starter-websocket'
 ```
 
 <br>
 
-> 📕 ****
+> 📕 **WebSocketConfig**
+
+```java
+
+```
