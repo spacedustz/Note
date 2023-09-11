@@ -9,3 +9,5 @@ RabbitMQ 등 다른 메시지 큐도 많은데 Redis의 Pub/Sub 기능을 사용
 <br>
 
 두 번째로는 Push Based Subscription입니다. 
+
+Kafka의 경우 Subscriber가
