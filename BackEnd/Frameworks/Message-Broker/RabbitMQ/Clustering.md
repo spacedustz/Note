@@ -129,7 +129,17 @@ rabbitmqctl list_connections
 
 **조인을 할 노드에서 위의 Erlang Cookie 값을 맟춰주고 클러스터에 조인 합니다.**
 
+```bash
+# RabbitMQ 컨테이너로 접속
+docker exec -it rabbit bash
 
+# Erlang Cookie를 설정할 디렉터리로 이동
+cd /var/lib/rabbitmq
+
+touch .erlang.cookie
+cat > .erlang.cookie
+<쿠
+```
 
 ```bash
 # 클러스터 중지 & 클러스터 조인
