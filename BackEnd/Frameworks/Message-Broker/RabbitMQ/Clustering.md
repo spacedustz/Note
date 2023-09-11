@@ -149,6 +149,7 @@ rabbitmqctl list_connections
 
 **위에서 해싱되지 않은 쿠키 값을 조인할 노드의 Erlang Cookie 값으로 맟춰주고 클러스터에 조인 합니다.**
 
+- RabbitMQ 서버(컨테이너)를 중지합니다.
 - Linux 기준 Erlang Cookie 파일이 위치한 곳은 `/var/lib/rabbitmq` 이지만 처음엔 보통 `.erlang.cookie` 파일이 없습니다.
 - 해당 디렉터리로 이동해서 `.erlang.cookie` 파일을 만들고 권한을 600으로 설정하고 해싱되지 않은 쿠키값을 넣어줍니다.
 
@@ -166,6 +167,8 @@ echo "복사한쿠키값" > .erlang.cookie
 # 쿠키 값 들어간지 확인
 cat .erlang.cookie
 ```
+
+쿠키 값을 설정하고 해싱된 쿠키값도 위의 Root 노드와 일치하는지 확인 해줍니다.
 
 ![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/erlang-cookie2.png)
 
