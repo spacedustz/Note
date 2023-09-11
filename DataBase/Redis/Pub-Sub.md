@@ -218,9 +218,11 @@ public class RedisSubscriber implements MessageListener {
   
     private final RedisTemplate<String, Object> template;  
   
+    // Redis로부터 온 메시지를 역직렬화 하여 메시지 전달  
     @Override  
     public void onMessage(Message message) {  
-        String publishMessage = (String) template.getStringSerializer().deserialize(message.getBody());  
+        String publishMessage = template.getStringSerializer().deserialize(message.getBody());  
+        assert publishMessage != null;  
         template.convertAndSend("/topic/message", publishMessage);  
     }  
 }
