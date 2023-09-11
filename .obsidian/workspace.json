@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "BackEnd/Frameworks/Message-Broker/RabbitMQ/Clustering.md",
+                "file": "BackEnd/Frameworks/Message-Broker/RabbitMQ/On-Linux.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "BackEnd/Frameworks/Message-Broker/RabbitMQ/Clustering.md",
+                "file": "BackEnd/Frameworks/Message-Broker/RabbitMQ/On-Linux.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "BackEnd/Frameworks/Message-Broker/RabbitMQ/Clustering.md",
+                "file": "BackEnd/Frameworks/Message-Broker/RabbitMQ/On-Linux.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "BackEnd/Frameworks/Message-Broker/RabbitMQ/Clustering.md"
+                "file": "BackEnd/Frameworks/Message-Broker/RabbitMQ/On-Linux.md"
               }
             }
           }
@@ -148,6 +148,7 @@
   },
   "active": "e92210adcf99929d",
   "lastOpenFiles": [
+    "BackEnd/Frameworks/Message-Broker/RabbitMQ/Clustering.md",
     "BackEnd/Frameworks/Message-Broker/RabbitMQ/Summary.md",
     "Docs/Settings/RoadMap.md",
     "Docs/Settings/Prime College.md",
@@ -173,7 +174,6 @@
     "Ops-Tools/MSA/Kubernetes/Helm.md",
     "Ops-Tools/MSA/Kubernetes/Deployment.md",
     "Ops-Tools/MSA/Kubernetes/DashBoard.md",
-    "Ops-Tools/MSA/Kubernetes/DaemonSet.md",
     "Ops-Tools/MSA/Kubernetes",
     "Ops-Tools/MSA/gRPC",
     "Ops-Tools/Management & Tool/Git",

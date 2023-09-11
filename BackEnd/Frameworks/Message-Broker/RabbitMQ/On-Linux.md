@@ -158,6 +158,9 @@ dnf -y install rabbitmq-server-3.12.4-1.el8.noarch.rpm
 
 # RabbitMQ Start & Enable
 systemctl start rabbitmq-server && systemctl enable rabbitmq-server
+
+# ========== Docker 설치 & 시작 ==========
+sudo yum-config-manager --add-repo https://download.docker.com/linux/rhel/docker-ce.repo
 ```
 
 ---
