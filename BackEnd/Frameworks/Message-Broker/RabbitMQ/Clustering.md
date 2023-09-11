@@ -136,9 +136,14 @@ docker exec -it rabbit bash
 # Erlang Cookie를 설정할 디렉터리로 이동
 cd /var/lib/rabbitmq
 
+# .erlang.cookie 파일 생성 & 쿠키 값 넣기
 touch .erlang.cookie
 cat > .erlang.cookie
-<쿠
+> 쿠키값 입력
+> Ctrl + D 버튼으로 저장
+
+# 쿠키 값 들어간지 확인
+cat .erlang.cookie
 ```
 
 ```bash
