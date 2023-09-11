@@ -145,3 +145,51 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
 <br>
 
 > **RedisConfig**
+
+```java
+@Configuration  
+public class RedisConfig {  
+  
+    @Value("${spring.data.redis.host}")  
+    private String host;  
+  
+    @Value("${spring.data.redis.port}")  
+    private int port;  
+  
+    // Redis 연결 설정  
+    @Bean  
+    public RedisConnectionFactory factory() {  
+        return new LettuceConnectionFactory(host, port);  
+    }  
+  
+    // Pub & Sub를 처리하는 Listener    @Bean  
+    public RedisMessageListenerContainer listenerContainer() {  
+        RedisMessageListenerContainer container = new RedisMessageListenerContainer();  
+        container.setConnectionFactory(factory());  
+        return container;  
+    }  
+  
+    // 어플리케이션에서 사용할 Redis Template    @Bean  
+    public RedisTemplate<String, Object> template() {  
+        RedisTemplate<String, Object> template = new RedisTemplate<>();  
+        template.setConnectionFactory(factory());  
+        template.setKeySerializer(new StringRedisSerializer());  
+        template.setValueSerializer(new Jackson2JsonRedisSerializer<>(String.class));  
+        return template;  
+    }  
+  
+    // 토큰 저장소로 사용할 Redis Template    @Bean  
+    public RedisTemplate<?, ?> tokenRedisTemplate() {  
+        RedisTemplate<String, String> redisTemplate = new RedisTemplate<>();  
+        redisTemplate.setConnectionFactory(factory());  
+        redisTemplate.setKeySerializer(new StringRedisSerializer());  
+        redisTemplate.setValueSerializer(new StringRedisSerializer());  
+        return redisTemplate;  
+    }  
+  
+    @Bean  
+    ChannelTopic topic() {  
+        return new ChannelTopic("message");  
+    }  
+}
+```
