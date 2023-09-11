@@ -129,6 +129,8 @@ rabbitmqctl list_connections
 
 **조인을 할 노드에서 위의 Erlang Cookie 값을 맟춰주고 클러스터에 조인 합니다.**
 
+
+
 ```bash
 # 클러스터 중지 & 클러스터 조인
 rabbitmqctl stop_app
