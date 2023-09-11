@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "BackEnd/Frameworks/Message-Broker/RabbitMQ/On-Linux.md",
+                "file": "DataBase/Redis/Pub-Sub.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "BackEnd/Frameworks/Message-Broker/RabbitMQ/On-Linux.md",
+                "file": "DataBase/Redis/Pub-Sub.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "BackEnd/Frameworks/Message-Broker/RabbitMQ/On-Linux.md",
+                "file": "DataBase/Redis/Pub-Sub.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "BackEnd/Frameworks/Message-Broker/RabbitMQ/On-Linux.md"
+                "file": "DataBase/Redis/Pub-Sub.md"
               }
             }
           }
@@ -148,6 +148,10 @@
   },
   "active": "e92210adcf99929d",
   "lastOpenFiles": [
+    "DataBase/Dump.md",
+    "DataBase/Redis/Pub-Sub.md",
+    "BackEnd/Frameworks/Message-Broker/RabbitMQ/On-Linux.md",
+    "DataBase/Redis",
     "BackEnd/Frameworks/Message-Broker/RabbitMQ/Clustering.md",
     "BackEnd/Frameworks/Message-Broker/RabbitMQ/Summary.md",
     "Docs/Settings/RoadMap.md",
@@ -171,9 +175,6 @@
     "Ops-Tools/MSA/Kubernetes/Pod.md",
     "Ops-Tools/MSA/Kubernetes/Namespace.md",
     "Ops-Tools/MSA/Kubernetes/Labels.md",
-    "Ops-Tools/MSA/Kubernetes/Helm.md",
-    "Ops-Tools/MSA/Kubernetes/Deployment.md",
-    "Ops-Tools/MSA/Kubernetes/DashBoard.md",
     "Ops-Tools/MSA/Kubernetes",
     "Ops-Tools/MSA/gRPC",
     "Ops-Tools/Management & Tool/Git",
@@ -183,7 +184,6 @@
     "Ops-Tools/CI & CD/AWS",
     "Ops-Tools/MSA",
     "Ops-Tools/Management & Tool",
-    "Ops-Tools/CI & CD",
     "Pasted image 20230805163438.png"
   ]
 }
