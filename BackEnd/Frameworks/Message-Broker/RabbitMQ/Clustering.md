@@ -187,6 +187,8 @@ rabbitmqctl list_connections
 <br>
 
 
+**이제 노드를 클러스터에 조인시켜 줍니다.**
+
 ```bash
 # 컨테이너 Rabbitmq의 클러스터 조인
 rabbitmqctl join_cluster --ram rabbit@<윈도우_노드_이름>
@@ -198,7 +200,7 @@ rabbitmqctl cluster_status
 
 - 위 명령어는 Linux 서버의 RabbitMQ 노드가 윈도우 서버의 한 노드에 참여하도록 합니다.
 
-<br>
+---
 
 **Exchange 및 Queue 설정**
 
