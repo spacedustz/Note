@@ -143,7 +143,11 @@ rabbitmqctl list_connections
 
 <br>
 
-**조인을 할 노드에서 위의 Erlang Cookie 값을 맟춰주고 클러스터에 조인 합니다.**
+> 📌 **Cluster로 Join할 노드**
+
+**위에서 해싱되지 않은 쿠키 값을 조인할 노드의 Erlang Cookie 값으로 맟춰주고 클러스터에 조인 합니다.**
+
+- Linux 기준 Erlang Cookie 파일이 위치한 곳은 `/var/lib`
 
 ```bash
 # RabbitMQ 컨테이너로 접속
