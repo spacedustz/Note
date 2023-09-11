@@ -141,3 +141,7 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
     }  
 }
 ```
+
+<br>
+
+> **RedisConfig**
