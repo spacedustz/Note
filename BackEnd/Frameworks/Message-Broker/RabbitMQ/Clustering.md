@@ -174,15 +174,13 @@ cat .erlang.cookie
 
 쿠키 값을 설정하고 해싱된 쿠키값도 위의 Root 노드와 일치하는지 확인 해줍니다.
 
-![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/erlang-aaaa.png)
+![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/erl)
 
 <br>
 
 
 ```bash
-# 컨테이너의 RabbitMQ 중지 & 클러스터 조인
-rabbitmqctl stop_app
-rabbitmqctl reset
+# 컨테이너 Rabbitmq의 클러스터 조인
 rabbitmqctl join_cluster --ram rabbit@<윈도우_노드_이름>
 rabbitmqctl start_app
 
