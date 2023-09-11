@@ -138,25 +138,19 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
   
     @Override  
     public void configureMessageBroker(MessageBrokerRegistry config) {  
-        // 메시지를 구독 요청할때 sub 사용  
-        config.enableStompBrokerRelay("/sub");  
+        // 이 토픽을 구독하면 Subscriber들에게 메시지를 브로드캐스팅 함  
+        config.enableStompBrokerRelay("/topic");  
   
-        // 메시지를 발행할 때 pub 사용  
+        // 메시지 발행 요청할 때 사용  
         config.setApplicationDestinationPrefixes("/pub");  
     }  
   
     @Override  
     public void registerStompEndpoints(StompEndpointRegistry registry) {  
-        // WebSocket 연결을 위한 엔드포인트 설정  
-        registry.addEndpoint("/ws")  
+        // WebSocket 연결 엔드포인트 설정, ex: ws://localhost:18080/ws  
+        registry.addEndpoint("/ws") // ex: ws://localhost:18080/ws  
                 .setAllowedOrigins("*")  
                 .withSockJS();  
-    }  
-  
-    // Stomp Handler가 앞단에서 Token을 체크함  
-    @Override  
-    public void configureClientInboundChannel(ChannelRegistration registration) {  
-        registration.interceptors((ChannelInterceptor) handler);  
     }  
 }
 ```
