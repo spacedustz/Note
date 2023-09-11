@@ -38,9 +38,24 @@ Redis는 Publisher가 Publish하면 자동으로 모든 Subscriber에게 Message
 
 도커 컨테이너 사용 X
 
+<br>
+
+> 📕 **설치**
+
+**Debian 기반**
+
 ```bash
 apt-get -y update
 apt-get -y upgrade
+apt-get install redis-server
+systemctl start redis-server && systemctl enable redis-server
+```
+
+**RPM 기반**
+
+```bash
+dnf -y update
+dnf -y upgrade
 apt-get install redis-server
 systemctl start redis-server && systemctl enable redis-server
 ```
