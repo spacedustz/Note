@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DataBase/Redis/Pub-Sub.md",
+                "file": "BackEnd/Frameworks/Message-Broker/RabbitMQ/On-Linux.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DataBase/Redis/Pub-Sub.md",
+                "file": "BackEnd/Frameworks/Message-Broker/RabbitMQ/On-Linux.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DataBase/Redis/Pub-Sub.md",
+                "file": "BackEnd/Frameworks/Message-Broker/RabbitMQ/On-Linux.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DataBase/Redis/Pub-Sub.md"
+                "file": "BackEnd/Frameworks/Message-Broker/RabbitMQ/On-Linux.md"
               }
             }
           }
@@ -148,8 +148,8 @@
   },
   "active": "e92210adcf99929d",
   "lastOpenFiles": [
-    "DataBase/Dump.md",
     "DataBase/Redis/Pub-Sub.md",
+    "DataBase/Dump.md",
     "BackEnd/Frameworks/Message-Broker/RabbitMQ/On-Linux.md",
     "DataBase/Redis",
     "BackEnd/Frameworks/Message-Broker/RabbitMQ/Clustering.md",

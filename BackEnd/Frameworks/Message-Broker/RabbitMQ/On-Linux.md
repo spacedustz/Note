@@ -132,7 +132,7 @@ dnf -y install net-tools firewalld yum-utils wget
 systemctl start firewalld && systemctl enable firewalld
 
 # ========== 방화벽 포트 오픈 ==========
-firewall-cmd --permanent --add-port=22/tcp && firewall-cmd --permanent --add-port=5672/tcp && firewall-cmd --permanent --add-port=15674/tcp && firewall-cmd --permanent --add-port=15672/tcp && firewall-cmd --permanent --add-port=80/tcp && firewall-cmd --permanent --add-port=8080/tcp && --permanent --add-port=6379/tcp && firewall-cmd --permanent --add-port=4369/tcp && firewall-cmd --permanent --add-port=1883/tcp && firewall-cmd --permanent --add-port=25672/tcp && --permanent --add-service=rabbitmq && --permanent --add-service=redis && firewall-cmd --reload
+firewall-cmd --permanent --add-port=22/tcp && firewall-cmd --permanent --add-port=5672/tcp && firewall-cmd --permanent --add-port=15674/tcp && firewall-cmd --permanent --add-port=15672/tcp && firewall-cmd --permanent --add-port=80/tcp && firewall-cmd --permanent --add-port=8080/tcp && firewall-cmd --permanent --add-port=6379/tcp && firewall-cmd --permanent --add-port=4369/tcp && firewall-cmd --permanent --add-port=1883/tcp && firewall-cmd --permanent --add-port=25672/tcp && firewall-cmd --permanent --add-service=rabbitmq && firewall-cmd --permanent --add-service=redis && firewall-cmd --reload
 
 # ========== RabbitMQ 설치 & 시작 ==========
 
