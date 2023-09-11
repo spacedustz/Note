@@ -18,6 +18,18 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "fff45961d18298bd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "imoji.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ]
       }
@@ -148,8 +160,9 @@
   },
   "active": "e92210adcf99929d",
   "lastOpenFiles": [
-    "BackEnd/Frameworks/Message-Broker/RabbitMQ/On-Linux.md",
+    "imoji.md",
     "DataBase/Redis/Pub-Sub.md",
+    "BackEnd/Frameworks/Message-Broker/RabbitMQ/On-Linux.md",
     "DataBase/Dump.md",
     "DataBase/Redis",
     "BackEnd/Frameworks/Message-Broker/RabbitMQ/Clustering.md",
@@ -174,7 +187,6 @@
     "Ops-Tools/MSA/Kubernetes/Prometheus & Grapana.md",
     "Ops-Tools/MSA/Kubernetes/Pod.md",
     "Ops-Tools/MSA/Kubernetes/Namespace.md",
-    "Ops-Tools/MSA/Kubernetes/Labels.md",
     "Ops-Tools/MSA/Kubernetes",
     "Ops-Tools/MSA/gRPC",
     "Ops-Tools/Management & Tool/Git",
