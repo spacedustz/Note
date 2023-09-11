@@ -148,11 +148,13 @@ cat > .erlang.cookie
 cat .erlang.cookie
 ```
 
+![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/erlang-cookie2.png)
+
 <br>
 
 
 ```bash
-# 클러스터 중지 & 클러스터 조인
+# 컨테이너의 RabbitMQ 중지 & 클러스터 조인
 rabbitmqctl stop_app
 rabbitmqctl reset
 rabbitmqctl join_cluster --ram rabbit@<윈도우_노드_이름>
