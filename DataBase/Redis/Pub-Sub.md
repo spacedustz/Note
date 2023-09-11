@@ -47,7 +47,7 @@ Redis는 Publisher가 Publish하면 자동으로 모든 Subscriber에게 Message
 ```bash
 apt-get -y update
 apt-get -y upgrade
-apt-get install redis-server
+apt-get -y install redis-server
 systemctl start redis-server && systemctl enable redis-server
 ```
 
@@ -56,13 +56,13 @@ systemctl start redis-server && systemctl enable redis-server
 ```bash
 dnf -y update
 dnf -y upgrade
-apt-get install redis-server
+dnf -y install redis-server
 systemctl start redis-server && systemctl enable redis-server
 ```
 
 <br>
 
-각종 설정 (vi /etc/redis/redis.conf)
+> 📕 **각종 설정값 변경**  => `/etc/redis/redis.conf`
 
 ```bash
 # 최대 메모리 사양 
