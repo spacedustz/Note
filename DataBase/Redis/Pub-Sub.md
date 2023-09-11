@@ -12,4 +12,9 @@ RabbitMQ 등 다른 메시지 큐도 많은데 Redis의 Pub/Sub 기능을 사용
 
 Kafka의 경우 Subscriber가 Pull 요청을 보내야 Message를 받아오는데,
 
-Redis는 Publisher가 Publish하면 자동으로 모든 Subscriber에게 Message를 브로드캐스트 합니다.
+Redis는 Publisher가 Publish하면 자동으로 모든 Subscriber에게 Message를 BroadCasting 합니다.
+
+<br>
+
+**Redis**
+- 속도가 중요할 때
