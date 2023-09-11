@@ -147,8 +147,8 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
   
     @Override  
     public void registerStompEndpoints(StompEndpointRegistry registry) {  
-        // WebSocket 연결 엔드포인트 설정, ex: ws://localhost:18080/ws  
-        registry.addEndpoint("/ws") // ex: ws://localhost:18080/ws  
+        // WebSocket 연결 엔드포인트 설정, ex) ws://localhost:18080/ws  
+        registry.addEndpoint("/ws")
                 .setAllowedOrigins("*")  
                 .withSockJS();  
     }  
