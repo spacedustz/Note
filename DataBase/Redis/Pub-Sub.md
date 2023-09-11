@@ -110,5 +110,34 @@ implementation 'org.springframework.boot:spring-boot-starter-websocket'
 > 📕 **WebSocketConfig**
 
 ```java
-
+@Configuration  
+@RequiredArgsConstructor  
+@EnableWebSocketMessageBroker  
+public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {  
+  
+    private final StompFrameHandler handler;  
+  
+    @Override  
+    public void configureMessageBroker(MessageBrokerRegistry config) {  
+        // 메시지를 구독 요청할때 sub 사용  
+        config.enableStompBrokerRelay("/sub");  
+  
+        // 메시지를 발행할 때 pub 사용  
+        config.setApplicationDestinationPrefixes("/pub");  
+    }  
+  
+    @Override  
+    public void registerStompEndpoints(StompEndpointRegistry registry) {  
+        // WebSocket 연결을 위한 엔드포인트 설정  
+        registry.addEndpoint("/ws")  
+                .setAllowedOrigins("*")  
+                .withSockJS();  
+    }  
+  
+    // Stomp Handler가 앞단에서 Token을 체크함  
+    @Override  
+    public void configureClientInboundChannel(ChannelRegistration registration) {  
+        registration.interceptors((ChannelInterceptor) handler);  
+    }  
+}
 ```
