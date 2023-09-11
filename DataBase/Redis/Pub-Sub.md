@@ -42,6 +42,7 @@ Redis는 Publisher가 Publish하면 자동으로 모든 Subscriber에게 Message
 apt-get -y update
 apt-get -y upgrade
 apt-get install redis-server
+systemctl start redis-server && systemctl enable redis-server
 ```
 
 <br>
@@ -68,5 +69,9 @@ port 1234
 bind 0.0.0.0 
 
 # 비밀번호 설정 
-# -> 서버 접속에 비밀번호를 적용시키고 싶다면 아래와 같이 수정하자. requirepass [접속 패스워드 입력] # 암호화된 비밀번호가 필요하다면, 터미널에 다음 명령어로 생성 가능하다. echo "MyPassword" | sha256sum
+# -> 서버 접속에 비밀번호를 적용시키고 싶다면 아래와 같이 수정하자. 
+requirepass [접속 패스워드 입력] 
+
+# 암호화된 비밀번호가 필요하다면, 터미널에 다음 명령어로 생성 가능하다. 
+echo "MyPassword" | sha256sum
 ```
