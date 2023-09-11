@@ -172,9 +172,15 @@ echo "복사한쿠키값" > .erlang.cookie
 cat .erlang.cookie
 ```
 
+<br>
+
 쿠키 값을 설정하고 해싱된 쿠키값도 위의 Root 노드와 일치하는지 확인 해줍니다.
 
-- 확인 해보면 위의 Hashing된 쿠키 값과 동일하게 나옵니다.
+```bash
+rabbitmqctl list_connections
+```
+
+확인 해보면 위의 Hashing된 쿠키 값과 동일하게 나옵니다.
 
 ![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/erlang-node.png)
 
