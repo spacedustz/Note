@@ -144,7 +144,7 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
 
 <br>
 
-> **RedisConfig**
+> 📕 **RedisConfig**
 
 ```java
 @Configuration  
