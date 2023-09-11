@@ -157,6 +157,10 @@ rabbitmqctl list_connections
 # RabbitMQ 컨테이너로 접속
 docker exec -it rabbit bash
 
+# 컨테이너의 RabbitMQ 중지 & 초기화
+rabbitmqctl stop_app
+rabbitmqctl reset
+
 # Erlang Cookie를 설정할 디렉터리로 이동
 cd /var/lib/rabbitmq
 
@@ -170,7 +174,7 @@ cat .erlang.cookie
 
 쿠키 값을 설정하고 해싱된 쿠키값도 위의 Root 노드와 일치하는지 확인 해줍니다.
 
-![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/erlang-cookie2.png)
+![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/erlang-aaaa.png)
 
 <br>
 
