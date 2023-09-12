@@ -89,7 +89,11 @@ stop-writes-on-bgsave-error yes
 rdbcompression yes
 
 # RDB를 로드할때 체크섬이 있으면 약 10%의 성능 저하가 있지만 손상 방지엔 좋습니다.
-# 성능이
+# 성능이 많이 중요 하다면 체크섬을 비활성화 해두면 됩니다.
+rdbchecksum yes
+
+# DB 덤프 파일 지정
+dbfilename {fil}
 
 # ============================== Replication ==============================
 #   +------------------+      +---------------+
