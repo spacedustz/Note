@@ -48,6 +48,11 @@ keyword arg1 arg2 ... argN
 # 비밀번호 설정 (공백 포함 가능)
 requirepass "hello world"
 
+# Redis는 기본적으로 데몬으로 동작하지 않지만, systemd에 의해 관리되길 원하는 경우 Yes로 줍니다.
+daemonize no
+
+#
+
 # ============================== Replication ==============================
 #   +------------------+      +---------------+
 #   |      Master      | ---> |    Replica    |
