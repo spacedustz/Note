@@ -217,7 +217,7 @@ redis-cli -h [접속IP] -p [포트] -a [비밀번호]
 
 > 📕 **데이터 저장**
 
-`redis-cli set {키} {값}` 형식으로 저장합니다.
+`redis-cli set {키} {값}` 형식으로 데이터를 저장합니다.
 
 ```bash
 redis-cli set key1 "value1"
@@ -227,20 +227,26 @@ redis-cli set key1 "value1"
 
 > 📕 **데이터 조회**
 
+`get [Key]`형식으로 데이터를 조회합니다.
+
 ```bash
 # 단일 키값 검색
 redis-cli get key1
 
 # 모든 데이터 조회
-redis-cli keys **
+redis-cli keys *
 ```
 
 <br>
 
 > **데이터 삭제**
 
-`del [Key`
+`del [Key]` 형식으로 데이터를 삭제합니다.
 
 ```bash
-redis-cli
+# 단일 키값 삭제
+redis-cli del [Key]
+
+# 모든 데이터 삭제
+redis-cli flushall
 ```
