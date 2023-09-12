@@ -252,7 +252,9 @@ public class RedisConfig {
 
 > 📕 **RedisMessageReceiver**
 
-위의 Redis Config의 
+위 Redis Config의 MessageListenerAdapter에 추가되는 Listener 클래스 입니다.
+
+Redis Template를 이용해 들어온 메시지를 변환하여 수신합니다.
 
 ```java
 @Slf4j  
@@ -270,7 +272,7 @@ public class RedisMessageReceiver {
 
 > 📕 **RedisSubscriber**
 
-- Redis로부터 온 메시지를 역직렬화하여 메시지를 전달합니다.
+- Redis로부터 온 메시지를 역직렬화하여 메시지를 Topic 명과 함께 전달합니다.
 
 ```java
 @Service  
@@ -288,6 +290,10 @@ public class RedisSubscriber implements MessageListener {
     }  
 }
 ```
+
+<br>
+
+![img](https://raw.)
 
 ---
 
