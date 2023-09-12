@@ -68,6 +68,9 @@ logfile ""
 # Syslog 사용 여부
 syslog-enabled no
 
+# 프로세스에 Title 달기
+set-proc-title no
+
 
 
 # ============================== Replication ==============================
