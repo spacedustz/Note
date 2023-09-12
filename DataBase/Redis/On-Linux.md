@@ -58,7 +58,12 @@ requirepass "hello world"
 # 지정된 수의 Replica과 연결되지 않은 것으로 나타나면 Write를 중지하도록 Master를 구성할 수 있습니다.
 #
 # 2)
-# Redis Replica는 짧은 시간 복제 링크가 손실된 경우 마스터
+# Redis Replica는 짧은 시간 복제 링크가 손실된 경우 Master와 부분적 재 동기화를 수행할 수 있습니다.
+# 서버 요구사항에 따라 Replicate BackLog 크기를 구성 할 수 있습니다.
+#
+# 3)
+# Replication은 자동으로 이루어지며, 사용자의 개입이 필요하지 않습니다.
+#
 # Redis Replica(복제) 노드 설정
 replicaof 127.0.0.1 6380
 
