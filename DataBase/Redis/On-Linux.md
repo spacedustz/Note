@@ -23,7 +23,7 @@ echo "bind 0.0.0.0" > /etc/redis.conf
 systemctl start redis && systemctl enable redis
 
 # Redis 포트 & 서비스 활성화 된지 확인
-systemctl status redis && netstat -lntp | grep 
+systemctl status redis && netstat -lntp | grep 6379
 ```
 
 ---
