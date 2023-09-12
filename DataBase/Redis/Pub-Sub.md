@@ -1,3 +1,15 @@
+
+## 구현 요구사항
+
+- 딥러닝 엔진에서 MQTT 데이터 전송
+- 각 데이터에 맞는 Queue에
+- RabbitMQ의 Exchange -> Routing Key -> Quorum Queue에 메시지 쌓임
+- Spring Redis에서 RabbitMQ의 Queue에서 데이터를 Redis로 가져옵니다.
+- Spring Redis(Backend)에서 소켓을 열어줍니다.
+- 소켓의 URL은 `WebSocketConfig` 클래스에 나온것처럼 `ws://localhost:18080/ws`입니다.
+
+---
+
 [Spring Data Redis Pub-Sub 공식 문서](https://docs.spring.io/spring-data/data-redis/docs/current/reference/html/#pubsub)
 
 RabbitMQ 등 다른 메시지 큐도 많은데 Redis의 Pub/Sub 기능을 사용하는 이유는,
