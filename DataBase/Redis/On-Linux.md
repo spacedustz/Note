@@ -63,7 +63,10 @@ requirepass "hello world"
 #
 # 3)
 # Replication은 자동으로 이루어지며, 사용자의 개입이 필요하지 않습니다.
-#
+# 네트워크 파티션 Replica는 자동으로 Master에 다시 연결하고 동기화를 재 시도 합니다.
+# 
+# 사용법 : replicaof <master-IP> <master-Port>
+
 # Redis Replica(복제) 노드 설정
 replicaof 127.0.0.1 6380
 
