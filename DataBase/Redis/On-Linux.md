@@ -62,6 +62,12 @@ supervised auto
 # 로그 레벨은 debug, verbose, notice, warning이 있습니다.
 loglevel notice
 
+# 로그 파일 이름 지정, 데몬화된 Redis인 경우 /dev/null로 전송됩니다.
+logfile ""
+
+# Syslog 사용 여부
+syslog-enabled no
+
 
 
 # ============================== Replication ==============================
