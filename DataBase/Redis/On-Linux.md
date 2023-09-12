@@ -80,7 +80,10 @@ replica-serve-stale-data yes
 # Replica를 읽기 전용으로 설정
 replica-read-only yes
 
-# Replica Disk Sync Stra
+# Replica Disk Sync Strategy : Disk or Socket 방식
+# 새로운 Replica가 시작할때 or 재접속할 때 Master -> Replica로 전체 동기화를 합니다.
+# 이때 Master는 RDB 파일을 생성해서 Replica로 전달합니다.
+
 
 # ============================== Include ==============================
 # 다른 Conf 파일 적용
