@@ -86,6 +86,7 @@ maxmemory <bytes>
 # Memory Policy의 Default는 'noeviction' 입니다.
 maxmemory-policy noeviction
 
+# Memory 
 
 # ============================== SnapShot ==============================
 # DB 덤프 파일 지정
