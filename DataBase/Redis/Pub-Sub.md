@@ -167,9 +167,9 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
 - `RedisMessageListenerContainer` : Redis Channel(Topic)로 부터 메시지를 받고, 주입된 리스너들에게 비동기로 Dispatch 하는 역할을 수행하는 컨테이너입니다. 즉, 발행된 메시지 처리를 위한 리스너들을 설정할 수 있습니다.
 - `MessageListenerAdaper`에서는 `RedisMessageListenerContainer`로부터 메시지를 Dispatch 받고, 실제 메시지를 처리하는 비즈니스 로직이 담긴 `Subscriber Bean`을 추가 해 줍니다.
 
-(3) Redis서버와 상호작용하기 위한 RedisTemplate 관련 설정을 해준다. Redis 서버에는 bytes 코드만이 저장되므로 key와 value에 Serializer를 설정해준다. Json 포맷 형식으로 메시지를 교환하기 위해 ValueSerializer에 Jackson2JsonRedisSerializer로 설정해준다.
+- `RedisTemplate` : Redis서버와 상호작용하기 위한 RedisTemplate 관련 설정을 해준다. Redis 서버에는 bytes 코드만이 저장되므로 key와 value에 Serializer를 설정해준다. Json 포맷 형식으로 메시지를 교환하기 위해 ValueSerializer에 Jackson2JsonRedisSerializer로 설정해줍니다.
 
-(4) Topic 공유를 위해 Channel Topic을 빈으로 등록해 단일화 시켜준다.
+(4) Topic 공유를 위해 Channel Topic을 빈으로 등록해 단일화 시켜줍니다.
 
 ```java
 @Configuration  
@@ -187,7 +187,13 @@ public class RedisConfig {
         return new LettuceConnectionFactory(host, port);  
     }  
   
-    // Pub & Sub를 처리하는 Listener    @Bean  
+    @Bean  
+    public MessageListenerAdapter listener(RedisSubscriber subscriber) {  
+        return new MessageListenerAdapter(subscriber, "onMessage");  
+    }  
+  
+    // Redis Channel(Topic)로 부터 메시지를 받고, 주입된 리스너들에게 비동기로 Dispatch 하는 역할  
+    // Pub & Sub을 처리하는 Listener    @Bean  
     public RedisMessageListenerContainer listenerContainer() {  
         RedisMessageListenerContainer container = new RedisMessageListenerContainer();  
         container.setConnectionFactory(factory());  
@@ -221,7 +227,23 @@ public class RedisConfig {
 
 <br>
 
-> **RedisMessageRe**
+> **RedisMessageReceiver**
+
+위의 Redis Config의 
+
+```java
+@Slf4j  
+@Service  
+@RequiredArgsConstructor  
+public class RedisMessageReceiver {  
+  
+    private final RedisTemplate<String, Object> template;  
+  
+    public void receive(String message) {  
+        template.convertAndSend("channel", message);  
+    }  
+}
+```
 
 > 📕 **RedisSubscriber**
 
