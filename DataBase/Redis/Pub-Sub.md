@@ -224,14 +224,16 @@ public class RedisConfig {
     }  
   
     // Redis Channel(Topic)로 부터 메시지를 받고, 주입된 리스너들에게 비동기로 Dispatch 하는 역할  
-    // Pub & Sub을 처리하는 Listener    @Bean  
+    // Pub & Sub을 처리하는 Listener    
+    @Bean  
     public RedisMessageListenerContainer listenerContainer() {  
         RedisMessageListenerContainer container = new RedisMessageListenerContainer();  
         container.setConnectionFactory(factory());  
         return container;  
     }  
   
-    // 어플리케이션에서 사용할 Redis Template    @Bean  
+    // 어플리케이션에서 사용할 Redis Template    
+    @Bean  
     public RedisTemplate<String, Object> template() {  
         RedisTemplate<String, Object> template = new RedisTemplate<>();  
         template.setConnectionFactory(factory());  
@@ -240,7 +242,8 @@ public class RedisConfig {
         return template;  
     }  
   
-    // 토큰 저장소로 사용할 Redis Template    @Bean  
+    // 토큰 저장소로 사용할 Redis Template    
+    @Bean  
     public RedisTemplate<?, ?> tokenRedisTemplate() {  
         RedisTemplate<String, String> redisTemplate = new RedisTemplate<>();  
         redisTemplate.setConnectionFactory(factory());  
