@@ -73,7 +73,9 @@ replicaof 127.0.0.1 6380
 # 만약 Master가 비밀번호로 보호되고 있는 경우 복제본에 인증을 지시할 수 있습니다.
 masterauth <master-password>
 
-# Replica가 
+# Replica가 Master와 연결이 끊어지거나 Replica만 살아 있을경우 데이터를 전달할 지 여부
+# No로 설정되면 Master와 연결이 끊어졌다는 에러만 반환합니다.
+replica-serve-stale-data yes
 
 # Replica를 읽기 전용으로 설정
 replica-read-only yes
