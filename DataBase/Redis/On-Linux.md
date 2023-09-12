@@ -51,7 +51,8 @@ requirepass "hello world"
 # Redis는 기본적으로 데몬으로 동작하지 않지만, systemd에 의해 관리되길 원하는 경우 Yes로 줍니다.
 daemonize no
 
-#
+# 만약 Redis를 Daemon으로 돌릴 경우 systemd에 Signal을 보낼 수 있습니다.
+
 
 # ============================== Replication ==============================
 #   +------------------+      +---------------+
