@@ -49,6 +49,11 @@ replicaof 127.0.0.1 6380
 
 # 비밀번호 설정 (공백 포함 가능)
 requirepass "hello world"
+
+# 다른 Conf 파일 적용
+#include /path/to/local.conf
+
+
 ```
 
 ---
