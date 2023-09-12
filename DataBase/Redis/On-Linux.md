@@ -47,6 +47,9 @@ keyword arg1 arg2 ... argN
 
 **redis.conf**
 
+`memory-samples` : Redis LRU 알고리즘을 이용한 오래된 데이터 삭제
+- 
+
 ```bash
 # ============================== General ==============================
 # 비밀번호 설정 (공백 포함 가능)
@@ -87,7 +90,7 @@ maxmemory <bytes>
 # Memory Policy의 Default는 'noeviction' 입니다.
 maxmemory-policy noeviction
 
-# Memory 
+# LRU 알고리즘
 
 # ============================== SnapShot ==============================
 # DB 덤프 파일 지정
