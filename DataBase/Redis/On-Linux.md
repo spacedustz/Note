@@ -82,8 +82,10 @@ replica-read-only yes
 
 # Replica Disk Sync Strategy : Disk or Socket 방식
 # 새로운 Replica가 시작할때 or 재접속할 때 Master -> Replica로 전체 동기화를 합니다.
-# 이때 Master는 RDB 파일을 생성해서 Replica로 전달합니다.
-
+# Master는 RDB 파일을 생성해서 Replica로 전달합니다.
+# 이 때, Replica에서 파일을 로드하는 전략을 지정하는 옵션입니다.
+# Yes로 지정하면 디스크에, No로 설정하면 소컷으로 전송합니다.
+repl-diskless-sync yes
 
 # ============================== Include ==============================
 # 다른 Conf 파일 적용
