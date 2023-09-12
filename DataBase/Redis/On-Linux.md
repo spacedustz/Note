@@ -53,6 +53,8 @@ requirepass "hello world"
 #   |      Master      | ---> |    Replica    |
 #   | (receive writes) |      |  (exact copy) |
 #   +------------------+      +---------------+
+# Redis Replication은 비동기로 동작합니다.
+# 
 # Redis Replica(복제) 노드 설정
 replicaof 127.0.0.1 6380
 
