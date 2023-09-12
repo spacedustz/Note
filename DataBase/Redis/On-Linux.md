@@ -96,7 +96,9 @@ tls-port 6379
 # 서버를 인증하는데 사용할 X.509 인증서와 Private Key 구성, 파일은 PEM 형식이어야 합니다.
 tls-cert-file redis.crt
 tls-key-file redis.key
-tls-key-file-pass secret # 만약 키 파일이 암호화 되어 있다면
+tls-key-file-pass secret # 만약 키 파일이 암호화 되어 있다면 여기에 입력해줍니다.
+
+
 ```
 
 ---
