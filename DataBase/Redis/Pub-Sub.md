@@ -139,11 +139,9 @@ implementation 'org.springframework.boot:spring-boot-starter-websocket'
 @EnableWebSocketMessageBroker  
 public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {  
   
-    private final StompFrameHandler handler;  
-  
     @Override  
     public void configureMessageBroker(MessageBrokerRegistry config) {  
-        // 이 토픽을 구독하면 Subscriber들에게 메시지를 브로드캐스팅 함  
+        // 이 토픽을 구독하면 Subscriber 들에게 메시지를 브로드캐스팅 함  
         config.enableStompBrokerRelay("/topic");  
   
         // 메시지 발행 요청할 때 사용  
@@ -153,9 +151,7 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
     @Override  
     public void registerStompEndpoints(StompEndpointRegistry registry) {  
         // WebSocket 연결 엔드포인트 설정, ex) ws://localhost:18080/ws  
-        registry.addEndpoint("/ws")
-                .setAllowedOrigins("*")  
-                .withSockJS();  
+        registry.addEndpoint("/ws").setAllowedOriginPatterns("*").withSockJS();  
     }  
 }
 ```
@@ -296,7 +292,8 @@ public class RedisSubscriber implements MessageListener {
 > 📕 **실행 결과**
 
 - 딥러닝 엔진에서 MQTT 데이터 전송
-- RabbitMQ의 
+- RabbitMQ의 Exchange -> Routing Key -> Quorum Queue에 메시지 쌓임
+- Spring Redis에서 RabbitMQ의 Queue에서
 
 ![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/redis.png)
 
