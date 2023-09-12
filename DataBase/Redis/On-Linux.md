@@ -27,6 +27,8 @@ systemctl start redis && systemctl enable redis
 
 ## Configuration
 
+[Redis Configuration 공식 문서](https://redis.io/docs/management/config)
+
 > 📕 **/etc/redis.conf**
 
 `redis.conf`파일의 형식은 매우 간단합니다.
