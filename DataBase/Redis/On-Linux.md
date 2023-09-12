@@ -20,7 +20,10 @@ systemctl start firewalld && systemctl enable firewalld && firewall-cmd --perman
 
 # Redis 설정
 echo "bind 0.0.0.0" > /etc/redis.conf
-systemctl start redis && systemctl enable redis 
+systemctl start redis && systemctl enable redis
+
+# Redis 포트 & 서비스 활성화 된지 확인
+systemctl status redis && netstat -lntp | grep 
 ```
 
 ---
@@ -73,6 +76,12 @@ set-proc-title yes
 proc-title-template "{title} {listen-addr} {server-mode}"
 
 # ============================== SnapShot ========================================
+# DB 덤프 파일 지정
+dbfilename {file-name}.rdb
+
+# 작업 디렉터리 지정
+dir ./
+
 # 데이터를 디스크에 저장합니다.
 # save <seconds> <changes>의 형식을 가지며, 빈 문자열을 지정할 경우, 스냅샷을 비활성화 합니다.
 save ""
@@ -91,11 +100,6 @@ rdbcompression yes
 # RDB를 로드할때 체크섬이 있으면 약 10%의 성능 저하가 있지만 손상 방지엔 좋습니다.
 # 성능이 많이 중요 하다면 체크섬을 비활성화 해두면 됩니다.
 rdbchecksum yes
-
-# DB 덤프 파일 지정
-dbfilename {file-name}.rdb
-
-
 
 # ============================== Replication ==============================
 #   +------------------+      +---------------+
