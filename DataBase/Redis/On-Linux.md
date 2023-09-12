@@ -58,6 +58,12 @@ daemonize no
 # auto : UPSTART_JOB or NOTIFY_SOCKET 변수를 기반으로 upstart 또는 systemd를 감지합니다.
 supervised auto
 
+# 로그 레벨을 지정합니다.
+# 로그 레벨은 debug, verbose, notice, warning이 있습니다.
+loglevel notice
+
+
+
 # ============================== Replication ==============================
 #   +------------------+      +---------------+
 #   |      Master      | ---> |    Replica    |
