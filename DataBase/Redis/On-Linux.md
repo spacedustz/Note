@@ -1,8 +1,10 @@
-## Redis 기본 사용법
+## Redis Configuration
 
 Red Hat Enterprise 9.2.0 버전에서 진행하며,
 
 Redis의 각종 옵션들을 공식 문서를 보며 대충 번역해서 자주 사용할 것 같은 옵션들만 정리합니다.
+
+[Redis Configuration 공식 문서](https://redis.io/docs/management/config)
 
 ---
 
@@ -31,8 +33,6 @@ systemctl status redis && netstat -lntp | grep 6379
 ---
 
 ## Configuration
-
-[Redis Configuration 공식 문서](https://redis.io/docs/management/config)
 
 > 📕 **/etc/redis.conf**
 
