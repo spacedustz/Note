@@ -213,20 +213,26 @@ tls-dh-params-file redis.dh
 redis-cli -h [접속IP] -p [포트] -a [비밀번호]
 ```
 
+<br>
+
 > 📕 **데이터 저장**
 
-r
+`redis-cli set {키} {값}` 형식으로 저장합니다.
 
 ```bash
 redis-cli set key1 "value1"
 ```
 
-```bash
-# 값 설정
-redis-cli set key1 "value1"
+<br>
 
-# 값 검색
+> 📕 **데이터 조회**
+
+```bash
+# 단일 키값 검색
 redis-cli get key1
+
+# 모든 데이터 조회
+keys **
 
 # 값 증가 & 감소
 redis-cli incr key1
