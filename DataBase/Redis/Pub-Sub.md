@@ -311,15 +311,19 @@ RabbitMQ Quorum Queue에 쌓인 데이터를 백엔드의 Redis에서 받아서 
 
 Redis Channel을 Subscribe하고 백엔드 <-> 프론트엔드 소켓을 열어 데이터를 받아옵니다.
 
+<br>
+
 Broker URL을 위에 나온 것처럼 `ws://localhost:18080/ws`로 설정해주었고,
 
 Subscribe Topic은 `/topic/message`를 주었습니다.
+
+<br>
 
 Stomp Client Header에 `x-queue-type`, `x-message-ttl`, `autoConfirm` 옵션을 준 이유는,
 
 RabbitMQ의 쿼럼 큐는 메시지를 받고 ACK를 보내야 하는데 임시로 전부 ACK를 날리게 헤더에 설정했고,
 
-Message-TTL과 Messag
+Message-TTL과 Message-Type은 쿼럼 큐의 Arguments와 맟춰준 것이며, 안맟춰주면 소켓이 안열리게 됩니다.
 
 ```tsx
 import React, { useEffect, useState } from 'react';  
