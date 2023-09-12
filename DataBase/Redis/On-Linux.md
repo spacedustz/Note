@@ -59,8 +59,9 @@ include /path/to/local.conf
 loadmodule /path/to/module.so
 
 # ========== Network ==========
-bind 192.168.0.150 10..0.5 # 여러개
-bind 
+bind 192.168.0.150 10..0.5 # 여러개의 Listener 설정
+bind * -::* # 모든 인터페이스 허용
+bind 127.0.0.1 ::1 # Dual-Stack IP Loopback 허용
 ```
 
 ---
