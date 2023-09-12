@@ -74,7 +74,10 @@ proc-title-template "{title} {listen-addr} {server-mode}"
 
 # ============================== SnapShot ========================================
 # 데이터를 디스크에 저장합니다.
-save <seconds> <changes>
+# save <seconds> <changes>의 형식을 가지며, 빈 문자열을 지정할 경우, 스냅샷을 비활성화 합니다.
+save ""
+
+#
 
 
 # ============================== Replication ==============================
