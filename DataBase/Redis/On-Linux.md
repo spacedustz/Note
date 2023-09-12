@@ -1,6 +1,8 @@
 ## Redis 기본 사용법
 
-Red Hat Enterprise 9.2.0 버전에서 진행합니다.
+Red Hat Enterprise 9.2.0 버전에서 진행하며,
+
+Redis의 각종 옵션들을 공식 문서를 보며 자주 사용할 것 같은 옵션들만 정리합니다.
 
 ---
 
