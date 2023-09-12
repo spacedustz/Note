@@ -105,7 +105,9 @@ tls-client-cert-file client.crt
 tls-client-key-file client.key
 tls-client-key-file-pass secret # 만약 키 파일이 암호화 되어 있다면 여기에 입력 해줍니다.
 
-# 이전 버전의 OpenSSL(< 3.0)에 필요한 Diffie-Hellman(DH)키 교환을 활성호
+# 이전 버전의 OpenSSL(< 3.0)에 필요한 Diffie-Hellman(DH)키 교환을 활성화 하도록 DH 매개변수를 구성합니다.
+# 최신 버전에서는 이 구성이 필요하지 않고, 권장하지 않는 옵션입니다.
+tls-dh-params-file redis.dh
 ```
 
 ---
