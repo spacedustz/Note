@@ -25,6 +25,17 @@ systemctl start redis && systemctl enable redis
 
 ---
 
+## Configuration
+
+> 📕 **/etc/redis.conf**
+
+`redis.conf`파일의 형식은 매우 간단합니다.
+
+```bash
+keyword arg1 arg2 ... argN
+```
+
+---
 ## 기본 사용법
 
 `redis-cli` 명령어를 이용해 값을 넣거나 조회를 할 수 있습니다.
