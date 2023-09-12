@@ -50,14 +50,17 @@ replicaof 127.0.0.1 6380
 # 비밀번호 설정 (공백 포함 가능)
 requirepass "hello world"
 
+# ========== Include ==========
 # 다른 Conf 파일 적용
 include /path/to/local.conf
 
-# ========== Mo 
+# ========== Module ========== 
 #Redis가 시작될 때 모듈 로드
 loadmodule /path/to/module.so
 
-
+# ========== Network ==========
+bind 192.168.0.150 10..0.5 # 여러개
+bind 
 ```
 
 ---
