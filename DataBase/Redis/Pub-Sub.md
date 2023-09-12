@@ -138,6 +138,9 @@ implementation'org.springframework.boot:spring-boot-starter-data-redis'
 
 // WebSocket
 implementation 'org.springframework.boot:spring-boot-starter-websocket'
+
+// Project Reactor  
+implementation 'io.projectreactor.netty:reactor-netty-http'
 ```
 
 <br>
