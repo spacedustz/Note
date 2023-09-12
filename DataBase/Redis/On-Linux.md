@@ -72,6 +72,10 @@ syslog-enabled no
 set-proc-title yes
 proc-title-template "{title} {listen-addr} {server-mode}"
 
+# ============================== SnapShot ========================================
+# 데이터를 디스크에 저장합니다.
+save <seconds> <changes>
+
 
 # ============================== Replication ==============================
 #   +------------------+      +---------------+
