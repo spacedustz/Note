@@ -80,6 +80,8 @@ replica-serve-stale-data yes
 # Replica를 읽기 전용으로 설정
 replica-read-only yes
 
+# Replica Disk Sync Stra
+
 # ============================== Include ==============================
 # 다른 Conf 파일 적용
 include /path/to/local.conf
