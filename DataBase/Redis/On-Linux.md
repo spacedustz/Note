@@ -51,7 +51,11 @@ replicaof 127.0.0.1 6380
 requirepass "hello world"
 
 # 다른 Conf 파일 적용
-#include /path/to/local.conf
+include /path/to/local.conf
+
+# ========== Mo 
+#Redis가 시작될 때 모듈 로드
+loadmodule /path/to/module.so
 
 
 ```
