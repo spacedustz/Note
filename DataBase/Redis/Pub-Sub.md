@@ -2,8 +2,9 @@
 ## 구현 요구사항
 
 - 딥러닝 엔진에서 MQTT 데이터 전송
-- 클러스터링/데이터 미러링된 RabbitMQ 서버 5대 노드에서 각 라우팅 키에 마
-- 각 데이터에 맞는 Queue에
+- 클러스터링/데이터 미러링된 RabbitMQ 서버 5대 노드에서 각 라우팅 키에 맞게 각자의 Queue에 데이터를 쌓음
+- Redis 설치
+- Backend(Spring Data Redis)에서 미러링된 Slave Queue에서 데이터를 가져와서Redis Pub/Sub 채널을 열어
 - RabbitMQ의 Exchange -> Routing Key -> Quorum Queue에 메시지 쌓임
 - Spring Redis에서 RabbitMQ의 Queue에서 데이터를 Redis로 가져옵니다.
 - Spring Redis(Backend)에서 소켓을 열어줍니다.
