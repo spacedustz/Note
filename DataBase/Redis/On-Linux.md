@@ -54,7 +54,8 @@ daemonize no
 # 만약 Redis를 Daemon으로 돌릴 경우 systemd에 Signal을 보낼 수 있습니다.
 # no : - systemd와 상호작용 없음
 # upstart : Redis를 SIGSTOP 모드로 전환합니다.
-# systemd : Redis 시작 시, $NOTIFY_SOCKET
+# systemd : $NOTIFY_SOCKET에 READY=1 을 작성해 systemd에 신호를 보내며 정기적으로 상태를 업데이트 합니다.
+# auto : UPSTART_JOB
 
 # ============================== Replication ==============================
 #   +------------------+      +---------------+
