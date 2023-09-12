@@ -241,3 +241,11 @@ public class RedisSubscriber implements MessageListener {
     }  
 }
 ```
+
+---
+
+## React
+
+RabbitMQ Quorum Queue에 쌓인 데이터를 백엔드의 Redis에서 받아서 Pub/Sub으 구조로
+
+Redis Channel을 Subscribe하고 백엔드 <-> 프론트엔ㄷ 프론트엔드 에서 데이터르
