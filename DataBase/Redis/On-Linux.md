@@ -93,7 +93,9 @@ rdbcompression yes
 rdbchecksum yes
 
 # DB 덤프 파일 지정
-dbfilename {fil}
+dbfilename {file-name}.rdb
+
+
 
 # ============================== Replication ==============================
 #   +------------------+      +---------------+
