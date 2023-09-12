@@ -311,7 +311,11 @@ RabbitMQ Quorum Queue에 쌓인 데이터를 백엔드의 Redis에서 받아서 
 
 Redis Channel을 Subscribe하고 백엔드 <-> 프론트엔드 소켓을 열어 데이터를 받아옵니다.
 
-Subscribe URL을 위에 나온 것처럼 `ws://localhos`
+Broker URL을 위에 나온 것처럼 `ws://localhost:18080/ws`로 설정해주었고,
+
+Subscribe Topic은 `/topic/message`를 주었습니다.
+
+Stomp Client Header에 `-queue-type`,
 
 ```tsx
 import React, { useEffect, useState } from 'react';  
