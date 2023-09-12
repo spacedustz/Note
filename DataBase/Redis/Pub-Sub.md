@@ -61,8 +61,10 @@ Redis는 Publisher가 Publish하면 자동으로 모든 Subscriber에게 Message
 ```bash
 apt-get -y update
 apt-get -y upgrade
-apt-get -y install redis-server 
+apt-get -y install redis-server firewalld
 systemctl start redis-server && systemctl enable redis-server
+
+firewall-cmd --permanent --add-port=6379/tcp && firewall-cmd --permanent --add-service=redis && firewall-cmd --reload
 ```
 
 **RPM 기반**
@@ -70,8 +72,10 @@ systemctl start redis-server && systemctl enable redis-server
 ```bash
 dnf -y update
 dnf -y upgrade
-dnf -y install redis-server
+dnf -y install redis-server firewalld
 systemctl start redis-server && systemctl enable redis-server
+
+firewall-cmd --permanent --add-port=6379/tcp && firewall-cmd --permanent --add-service=redis && firewall-cmd --reload
 ```
 
 <br>
