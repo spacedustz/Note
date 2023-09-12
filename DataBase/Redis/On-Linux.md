@@ -44,31 +44,30 @@ keyword arg1 arg2 ... argN
 **redis.conf**
 
 ```bash
-
-## 비밀번호 설정 (공백 포함 가능)
+# 비밀번호 설정 (공백 포함 가능)
 requirepass "hello world"
 
 # ==================== Include ====================
-## 다른 Conf 파일 적용
+# 다른 Conf 파일 적용
 include /path/to/local.conf
 
 # ==================== Module ====================
-## Redis가 시작될 때 모듈 로드
+# Redis가 시작될 때 모듈 로드
 loadmodule /path/to/module.so
 
 # ==================== Network ====================
 ## Redis Replica 노드 설정
 replicaof 127.0.0.1 6380
 
-## 허용할 IP & 대역 설정
+# 허용할 IP & 대역 설정
 bind 192.168.0.150 10..0.5 # 여러개의 Listener 설정
 bind * -::* # 모든 인터페이스 허용
 bind 127.0.0.1 ::1 # Dual-Stack IP Loopback 허용
 
-## Protected Mode 설정, Default는 Enabled이다.
+# Protected Mode 설정, Default는 Enabled이다.
 protected-mode yes
 
-## 포트 설정
+# 포트 설정
 port 6379
 
 # TCP Max Socket Connection 설정
@@ -97,6 +96,7 @@ tls-port 6379
 # 서버를 인증하는데 사용할 X.509 인증서와 Private Key 구성, 파일은 PEM 형식이어야 합니다.
 tls-cert-file redis.crt
 tls-key-file redis.key
+tls-key-file-pass secret # 만약 키 파일이 암호화 되어 있다면
 ```
 
 ---
