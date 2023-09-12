@@ -61,7 +61,7 @@ Redis는 Publisher가 Publish하면 자동으로 모든 Subscriber에게 Message
 ```bash
 apt-get -y update
 apt-get -y upgrade
-apt-get -y install redis-server
+apt-get -y install redis-server 
 systemctl start redis-server && systemctl enable redis-server
 ```
 
