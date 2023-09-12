@@ -71,7 +71,7 @@ protected-mode yes
 ## 포트 설정
 port 6379
 
-
+## TCP Max Socket 
 ```
 
 ---
