@@ -44,24 +44,28 @@ keyword arg1 arg2 ... argN
 **redis.conf**
 
 ```bash
-# Redis Replica 노드 설정
+## Redis Replica 노드 설정
 replicaof 127.0.0.1 6380
 
-# 비밀번호 설정 (공백 포함 가능)
+## 비밀번호 설정 (공백 포함 가능)
 requirepass "hello world"
 
 # ========== Include ==========
-# 다른 Conf 파일 적용
+## 다른 Conf 파일 적용
 include /path/to/local.conf
 
 # ========== Module ========== 
-#Redis가 시작될 때 모듈 로드
+## Redis가 시작될 때 모듈 로드
 loadmodule /path/to/module.so
 
 # ========== Network ==========
+## 허용할 IP & 대역 설정
 bind 192.168.0.150 10..0.5 # 여러개의 Listener 설정
 bind * -::* # 모든 인터페이스 허용
 bind 127.0.0.1 ::1 # Dual-Stack IP Loopback 허용
+
+## Protected Mode 설정
+protected-mode yes
 ```
 
 ---
