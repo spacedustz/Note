@@ -49,7 +49,11 @@ keyword arg1 arg2 ... argN
 requirepass "hello world"
 
 # ============================== Replication ==============================
-# Redis Replica 노드 설정
+#   +------------------+      +---------------+
+#   |      Master      | ---> |    Replica    |
+#   | (receive writes) |      |  (exact copy) |
+#   +------------------+      +---------------+
+# Redis Replica(복제) 노드 설정
 replicaof 127.0.0.1 6380
 
 # ============================== Include ==============================
