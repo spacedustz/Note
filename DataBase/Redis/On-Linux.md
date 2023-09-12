@@ -81,6 +81,7 @@ proc-title-template "{title} {listen-addr} {server-mode}"
 maxmemory <bytes>
 
 # 메모리 제한에 도달하면 Redis눈 메모리 정책에 맞는 키 제거를 시도합니다.
+# 캐시를 지우지 않는 메모리 정책입
 # Memory Policies
 # 'noeviction' : SET, LPUSH 등 많은 메모리를 사용하는 명령들에 오류로 응답하기 시작합니다.
 # Memory Policy의 Default는 'noeviction' 입니다.
