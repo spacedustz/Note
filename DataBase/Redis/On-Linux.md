@@ -27,8 +27,13 @@ systemctl start redis && systemctl enable redis
 
 ## 기본 사용법
 
-`redis-cli` 명령어를 이용해 값을 넣거나 검색을 할 수 있습니다.
+`redis-cli` 명령어를 이용해 값을 넣거나 조회를 할 수 있습니다.
 
 ```bash
+# 값 설정
+redis-cli set key1 "value1"
+
+# 값 검색
+redis-cli get key1
 
 ```
