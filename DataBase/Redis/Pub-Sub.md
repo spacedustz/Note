@@ -293,7 +293,9 @@ public class RedisSubscriber implements MessageListener {
 
 - 딥러닝 엔진에서 MQTT 데이터 전송
 - RabbitMQ의 Exchange -> Routing Key -> Quorum Queue에 메시지 쌓임
-- Spring Redis에서 RabbitMQ의 Queue에서
+- Spring Redis에서 RabbitMQ의 Queue에서 데이터를 Redis로 가져옵니다.
+- Spring Redis(Backend)에서 소켓을 열어줍니다.
+- 소켓의 URL은 `WebSocketConfig` 클래스에 나온것처럼 `ws://localhost:18080/ws`
 
 ![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/redis.png)
 
