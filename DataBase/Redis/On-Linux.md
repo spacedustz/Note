@@ -64,7 +64,7 @@ bind 192.168.0.150 10..0.5 # 여러개의 Listener 설정
 bind * -::* # 모든 인터페이스 허용
 bind 127.0.0.1 ::1 # Dual-Stack IP Loopback 허용
 
-## Protected Mode 설정
+## Protected Mode 설정, Default는 Enabled이다.
 protected-mode yes
 ```
 
