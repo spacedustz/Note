@@ -295,7 +295,11 @@ public class RedisSubscriber implements MessageListener {
 - RabbitMQ의 Exchange -> Routing Key -> Quorum Queue에 메시지 쌓임
 - Spring Redis에서 RabbitMQ의 Queue에서 데이터를 Redis로 가져옵니다.
 - Spring Redis(Backend)에서 소켓을 열어줍니다.
-- 소켓의 URL은 `WebSocketConfig` 클래스에 나온것처럼 `ws://localhost:18080/ws`
+- 소켓의 URL은 `WebSocketConfig` 클래스에 나온것처럼 `ws://localhost:18080/ws`입니다.
+
+<br>
+
+아래 사진은 백엔드 서버를 키고 딥러닝 엔진 돌려서 RabbitMQ에 있는 데이터를 가져온 사진입니다.
 
 ![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/redis.png)
 
@@ -306,6 +310,8 @@ public class RedisSubscriber implements MessageListener {
 RabbitMQ Quorum Queue에 쌓인 데이터를 백엔드의 Redis에서 받아서 Pub/Sub으 구조로
 
 Redis Channel을 Subscribe하고 백엔드 <-> 프론트엔드 소켓을 열어 데이터를 받아옵니다.
+
+Subscribe URL을 위에 나온 것처럼 `ws://localhos`
 
 ```tsx
 import React, { useEffect, useState } from 'react';  
