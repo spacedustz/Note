@@ -76,7 +76,10 @@ syslog-enabled no
 set-proc-title yes
 proc-title-template "{title} {listen-addr} {server-mode}"
 
-# ============================== SnapShot ========================================
+# ============================== Memory ==============================
+
+
+# ============================== SnapShot ==============================
 # DB 덤프 파일 지정
 dbfilename {file-name}.rdb
 
