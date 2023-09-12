@@ -124,7 +124,7 @@ echo "MyPassword" | sha256sum
 
 ---
 
-## Spring Data Redis
+## Spring Data Redis (BackEnd)
 
 > 📕 **build.gradle Dependency 추가**
 
@@ -317,7 +317,7 @@ public class RedisSubscriber implements MessageListener {
 
 ---
 
-## React
+## React (FrontEnd)
 
 RabbitMQ Quorum Queue에 쌓인 데이터를 백엔드의 Redis에서 받아서 Pub/Sub으 구조로
 
