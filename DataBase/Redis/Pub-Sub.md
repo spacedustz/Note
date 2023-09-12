@@ -165,7 +165,13 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
 > 📕 **RedisConfig**
 
 **RedisConnectionFactory**
-- application.yml
+- `application.yml`에 지정된 Redis의 접속정보로 Connection을 합니다.
+
+<br>
+
+**MessageListenerAdapter**
+- Topic을 Subscribe하는 Listener들을 정의합니다.
+- 이 Listener는 밑에서 설명하겠습니다.
 
 **RedisMessageListenerContainer**
 - Redis Channel(Topic)로 부터 메시지를 받고, 주입된 리스너들에게 비동기로 Dispatch 하는 역할을 수행하는 컨테이너입니다. 
@@ -244,7 +250,7 @@ public class RedisConfig {
 
 <br>
 
-> **RedisMessageReceiver**
+> 📕 **RedisMessageReceiver**
 
 위의 Redis Config의 
 
