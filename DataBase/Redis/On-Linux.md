@@ -77,9 +77,11 @@ set-proc-title yes
 proc-title-template "{title} {listen-addr} {server-mode}"
 
 # ============================== Memory ==============================
-# 메모맂 ㅔ한에 
 # 메모리 사용량 제한을 Byte 단위로 설정합니다.
 maxmemory <bytes>
+
+# 메모리 제한에 도달하면 Redis눈 메모리 정책에 맞는 키 제거를 시도합니다.
+# p'noeviction'으로
 
 
 # ============================== SnapShot ==============================
