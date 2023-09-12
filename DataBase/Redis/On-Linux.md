@@ -73,6 +73,11 @@ replicaof 127.0.0.1 6380
 # 만약 Master가 비밀번호로 보호되고 있는 경우 복제본에 인증을 지시할 수 있습니다.
 masterauth <master-password>
 
+# Replica를 읽기 전용으로 설정
+replica-read-only yes
+
+# 
+
 # ============================== Include ==============================
 # 다른 Conf 파일 적용
 include /path/to/local.conf
