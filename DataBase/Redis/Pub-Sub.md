@@ -293,7 +293,12 @@ public class RedisSubscriber implements MessageListener {
 
 <br>
 
-![img](https://raw.)
+> 📕 **실행 결과**
+
+- 딥러닝 엔진에서 MQTT 데이터 전송
+- RabbitMQ의 
+
+![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/redis.png)
 
 ---
 
