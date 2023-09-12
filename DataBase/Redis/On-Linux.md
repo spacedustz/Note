@@ -36,4 +36,10 @@ redis-cli set key1 "value1"
 # 값 검색
 redis-cli get key1
 
+# 값 증가 & 감소
+redis-cli incr key1
+redis-cli decr key1
+
+# 키 만료시간 설정
+redis-cli expire key1 60
 ```
