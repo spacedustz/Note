@@ -205,7 +205,13 @@ tls-dh-params-file redis.dh
 ```
 
 ---
-## 기본 사용법
+## Redis-Cli
+
+> 📕 **Redis CLI 접속 방법**
+
+```bash
+redis-cli -h [접속IP] -P [포트]
+```
 
 `redis-cli` 명령어를 이용해 값을 넣거나 조회를 할 수 있습니다.
 
