@@ -1,4 +1,3 @@
-
 ## 구현 요구사항
 
 - 딥러닝 엔진에서 MQTT 데이터 전송
@@ -7,6 +6,7 @@
 - Backend(Spring Data Redis)에서 미러링 된 Slave Queue에서 데이터를 가져와서 Redis Pub/Sub 채널을 열어줍니다.
 - Spring Redis(Backend)에서 소켓을 열어줍니다.
 - 소켓의 URL은 `WebSocketConfig` 클래스에 나온것처럼 `ws://localhost:18080/ws`입니다.
+- 프론트엔드(React/TypeScript 환경)에서 백엔드의 소켓에 접속해 데이터를 받아옵니다.
 
 ---
 
@@ -124,7 +124,7 @@ echo "MyPassword" | sha256sum
 
 ---
 
-## Spring Redis
+## Spring Data Redis
 
 > 📕 **build.gradle Dependency 추가**
 
