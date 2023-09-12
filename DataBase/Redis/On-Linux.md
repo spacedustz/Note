@@ -39,9 +39,14 @@ keyword arg1 arg2 ... argN
 
 <br>
 
-****
+**redis.conf**
 
 ```bash
+# Redis Replica 노드 설정
+replicaof 127.0.0.1 6380
+
+# 비밀번호 설정 (공백 포함 가능)
+requirepass "hello world"
 ```
 
 ---
