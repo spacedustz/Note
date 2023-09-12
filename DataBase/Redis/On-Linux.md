@@ -72,10 +72,16 @@ protected-mode yes
 port 6379
 
 ## TCP Max Socket Connection 설정
-# 초당 요청 수가 높은 환경에서는 느린 클라이언트 연결 문제를 방지하기 위해 
-# 높은 백로그가 필요합니다. Linux 커널은 이를 /proc/sys/net/core/somaxconn 값으로 자동으로 자릅니다.
-# 따라서 원하는 효과를 얻으려면 somaxconn 및 tcp_max_syn_backlog 값을 모두 높여야 합니다.
+## 초당 요청 수가 높은 환경에서는 느린 클라이언트 연결 문제를 방지하기 위해 
+## 높은 백로그가 필요합니다. Linux 커널은 이를 /proc/sys/net/core/somaxconn 값으로 자동으로 자릅니다.
+## 따라서 원하는 효과를 얻으려면 somaxconn 및 tcp_max_syn_backlog 값을 모두 높여야 합니다.
 tcp-backlog 511
+
+## 클라이언트가 N초 동안 유휴 상태이면 연결을 닫습니다. (0은 비활성화)
+timeout 0
+
+## TCP Keep Alive
+## 0이 아니면 SO_KEEPALIVE를 사용해 통신이 없을떄 TCP ACK를 클라이언트에 보냅니다.
 ```
 
 ---
