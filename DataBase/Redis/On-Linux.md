@@ -224,13 +224,15 @@ tls-dh-params-file redis.dh
 
 이 값도 redis.conf 파일이나 config set 명령문으로 변경할 수 있다. 
 
-MAX MEMORY만큼 메모리를 사용하게 되면, 메모리 정책에 따라 과거에 만들어진 키들이 삭제된다.  
+MAX MEMORY만큼 메모리를 사용하게 되면, 메모리 정책에 따라 과거에 만들어진 키들이 삭제됩니다.  
 
-|   |  
-|---|---|
-|**noeviction** : **캐시를 지우지 않는 메모리 정책**|메모리가 Max-Mem 이상을 사용하게 되면, 에러를 반환합니다.|
+<br>
 
-**ALL KEY 메모리 정책** 
+**No Eviction**
+- `noeviction`
+- 캐시를 지우지 않는 메모리 정책**|메모리가 Max-Mem 이상을 사용하게 되면, 에러를 반환합니다.
+
+**ALL KEY** 
 
 |   |
 |---|
