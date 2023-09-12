@@ -73,10 +73,8 @@ port 6379
 
 ## TCP Max Socket Connection 설정
 # 초당 요청 수가 높은 환경에서는 느린 클라이언트 연결 문제를 방지하기 위해 
-# 높은 백로그가 필요합니다. Linux 커널은 
-# 이를 /proc/sys/net/core/somaxconn 값으로 자동으로 자릅니다. 따라서 
-# 원하는 효과를 얻으려면 somaxconn 및 tcp_max_syn_backlog 값을 
-# 모두 높여야 합니다.
+# 높은 백로그가 필요합니다. Linux 커널은 이를 /proc/sys/net/core/somaxconn 값으로 자동으로 자릅니다.
+# 따라서 원하는 효과를 얻으려면 somaxconn 및 tcp_max_syn_backlog 값을 모두 높여야 합니다.
 tcp-backlog 511
 ```
 
