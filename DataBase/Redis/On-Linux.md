@@ -96,13 +96,16 @@ tls-port 6379
 # 서버를 인증하는데 사용할 X.509 인증서와 Private Key 구성, 파일은 PEM 형식이어야 합니다.
 tls-cert-file redis.crt
 tls-key-file redis.key
-tls-key-file-pass secret # 만약 키 파일이 암호화 되어 있다면 여기에 입력해줍니다.
+tls-key-file-pass secret # 만약 키 파일이 암호화 되어 있다면 여기에 입력 해줍니다.
 
 # Redis는 보통서버 기능(연결 허용)과 클라이언트 기능(마스터에서 복제, 클러스터 버스 연결 설정 등)에 동일한 인증서를 사용합니다. 
 # 때때로 클라이언트 전용 또는 서버 전용 인증서로 지정하는 속성을 사용하여 인증서가 발급됩니다. 
 # 이 경우 들어오는(서버) 연결과 나가는(클라이언트) 연결에 서로 다른 인증서를 사용하는 것이 좋습니다.
 tls-client-cert-file client.crt
 tls-client-key-file client.key
+tls-client-key-file-pass secret # 만약 키 파일이 암호화 되어 있다면 여기에 입력 해줍니다.
+
+# 이전 버전의 OpenSSL(< 3.0)에 필요한 Diffie-Hellman(DH)키 교환을 활성호
 ```
 
 ---
