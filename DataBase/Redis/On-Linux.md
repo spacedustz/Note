@@ -71,29 +71,32 @@ protected-mode yes
 ## 포트 설정
 port 6379
 
-## TCP Max Socket Connection 설정
-## 초당 요청 수가 높은 환경에서는 느린 클라이언트 연결 문제를 방지하기 위해 
-## 높은 백로그가 필요합니다. Linux 커널은 이를 /proc/sys/net/core/somaxconn 값으로 자동으로 자릅니다.
-## 따라서 원하는 효과를 얻으려면 somaxconn 및 tcp_max_syn_backlog 값을 모두 높여야 합니다.
+# TCP Max Socket Connection 설정
+# 초당 요청 수가 높은 환경에서는 느린 클라이언트 연결 문제를 방지하기 위해 
+# 높은 백로그가 필요합니다. Linux 커널은 이를 /proc/sys/net/core/somaxconn 값으로 자동으로 자릅니다.
+# 따라서 원하는 효과를 얻으려면 somaxconn 및 tcp_max_syn_backlog 값을 모두 높여야 합니다.
 tcp-backlog 511
 
-## 클라이언트가 N초 동안 유휴 상태이면 연결을 닫습니다. (0은 비활성화)
+# 클라이언트가 N초 동안 유휴 상태이면 연결을 닫습니다. (0은 비활성화)
 timeout 0
 
-## TCP Keep Alive
-## 0이 아니면 SO_KEEPALIVE를 사용해 통신이 없을떄 TCP ACK를 클라이언트에 보냅니다.
-## 기본값은 300초 입니다.
-## 이 옵션은 2가지 상황에서 유용합니다.
-## 1) Dead Peer 감지
-## 2) 네트워크를 강제로 살아있는 것으로 간주하게 만듭니다.
+# TCP Keep Alive
+# 0이 아니면 SO_KEEPALIVE를 사용해 통신이 없을떄 TCP ACK를 클라이언트에 보냅니다.
+# 기본값은 300초 입니다.
+# 이 옵션은 2가지 상황에서 유용합니다.
+# 1) Dead Peer 감지
+# 2) 네트워크를 강제로 살아있는 것으로 간주하게 만듭니다.
 tcp-keepalive 300
 
 # ==================== TLS/SSL ====================
-## TLS/SSL은 기본적으로 비활성화 되어 있습니다.
-## TLS 수신 포트를 지정하여 TLS를 활성화 할 수 있습니다.
+# TLS/SSL은 기본적으로 비활성화 되어 있습니다.
+# TLS 수신 포트를 지정하여 TLS를 활성화 할 수 있습니다.
 port 0
 tls-port 6379
 
+# 서버를 인증하는데 사용할 X.509 인증서와 Private Key 구성, 파일은 PEM 형식이어야 합니다.
+tls-cert-file redis.crt
+tls-key-file redis.key
 ```
 
 ---
