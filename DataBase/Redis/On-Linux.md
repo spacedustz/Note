@@ -68,9 +68,9 @@ logfile ""
 # Syslog 사용 여부
 syslog-enabled no
 
-# 프로세스에 Title 달기
-set-proc-title no
-
+# 프로세스에 Title 달기, 아래 템플릿을 사용합니다.
+set-proc-title yes
+proc-title-template "{title} {listen-addr} {server-mode}"
 
 
 # ============================== Replication ==============================
