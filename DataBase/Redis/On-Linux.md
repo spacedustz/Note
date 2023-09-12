@@ -218,7 +218,45 @@ tls-dh-params-file redis.dh
 
 <br>
 
-> **LRU 알고리즘**
+> 📕 **메모리 정책**
+
+메모리 정책은 maxmemory-policy 설정 값으로 정하면 된다. 
+
+이 값도 redis.conf 파일이나 config set 명령문으로 변경할 수 있다. 
+
+MAX MEMORY만큼 메모리를 사용하게 되면, 메모리 정책에 따라 과거에 만들어진 키들이 삭제된다.  
+
+  
+
+**캐시를 지우지 않는 메모리 정책**
+
+|   |
+|---|
+|**noeviction**<br><br>캐시를 지우지 않는 정책이다. 메모리가 MAXMEMORY 이상을 사용하게 되면, 에러를 내뱉는다.|
+
+**ALL KEY 메모리 정책** 
+
+|   |
+|---|
+|**allkeys-lru**<br><br>LRU 알고리즘을 기반으로 키를 삭제한다. <br><br>메모리 정책을 뭘로 설정해야하는지 애매모호하다.. 싶으면 이 정책을 사용하면 된다.<br><br>**allkey-random**<br><br>랜덤하게 키를 삭제한다.<br><br>**allkeys-lfu**<br><br>REDIS 4.0에서 추가된 정책이다. 가장 적게 사용된 키가 삭제된다.|
+
+**volatile 메모리 정책** 
+
+volatile은 EXPIRE SET에 있는 키들만 정리한다는 점에서, 모든 키를 정리하는 ALL KEY 메모리 정책과 상반된다. 
+
+|   |
+|---|
+|**volatile-lru**<br><br>EXPIRE SET 안에 있는 키를 LRU 알고리즘을 기반으로 키를 삭제한다.<br><br>**volatile-random**<br><br>EXPIRE SET 안에 있는 키들을 랜덤하게 삭제한다.<br><br>**volatile-ttl**<br><br>EXPIRE SET 안에 있는 키들을 TTL이 짧은 순으로 삭제한다. <br><br>**volatile-lfu** <br><br>REDIS 4.0에서 추가된 정책이다. EXPIRE SET 안에 있는 키 중 가장 적게 사용된 키가 삭제된다.|
+
+  
+
+메모리 정책은 어플리케이션 특성에 맞게 설정하는게 좋다. 
+
+메모리 정책은 레디스를 재시작하지 않고도 변경할 수 있다. 그러니 라이브 환경에서 설정값을 변경해보면서, 모니터링 후 설정값을 튜닝하는 것도 하나의 방법이다.
+
+<br>
+
+> 📕 **LRU 알고리즘**
 
 `memory-samples` : Redis LRU 알고리즘을 이용한 오래된 데이터 삭제
 - `기본값은 5`로 설정되어 있고, 10에 가까울수록 실제 LRU 알고리즘과 유사해집니다.
