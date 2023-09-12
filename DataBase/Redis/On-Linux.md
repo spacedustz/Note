@@ -47,6 +47,10 @@ keyword arg1 arg2 ... argN
 # 비밀번호 설정 (공백 포함 가능)
 requirepass "hello world"
 
+# ==================== Replication ==========
+# Redis Replica 노드 설정
+replicaof 127.0.0.1 6380
+
 # ==================== Include ====================
 # 다른 Conf 파일 적용
 include /path/to/local.conf
@@ -56,9 +60,6 @@ include /path/to/local.conf
 loadmodule /path/to/module.so
 
 # ==================== Network ====================
-## Redis Replica 노드 설정
-replicaof 127.0.0.1 6380
-
 # 허용할 IP & 대역 설정
 bind 192.168.0.150 10..0.5 # 여러개의 Listener 설정
 bind * -::* # 모든 인터페이스 허용
