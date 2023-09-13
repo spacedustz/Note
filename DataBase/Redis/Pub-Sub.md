@@ -522,4 +522,6 @@ export default RedisSocketSubscriber;
 
 <br>
 
-![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/connect2)
+아래 사진을 보시면 구독 URL인 `/topic/message`를 구독ㅎ서
+
+![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/connect2.png)
