@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DataBase/Redis/On-Linux.md",
+                "file": "DataBase/개념/SQL/읽는 순서.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 255.5
   },
   "right": {
     "id": "f5151c0da72edc1c",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DataBase/Redis/On-Linux.md",
+                "file": "DataBase/개념/SQL/읽는 순서.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DataBase/Redis/On-Linux.md",
+                "file": "DataBase/개념/SQL/읽는 순서.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DataBase/Redis/On-Linux.md"
+                "file": "DataBase/개념/SQL/읽는 순서.md"
               }
             }
           },
@@ -158,8 +158,10 @@
   },
   "active": "e92210adcf99929d",
   "lastOpenFiles": [
-    "DataBase/QueryDSL/성능개선.md",
+    "DataBase/개념/SQL/Select Into & Insert Into Select.md",
+    "DataBase/개념/SQL/Select.md",
     "DataBase/Redis/On-Linux.md",
+    "DataBase/QueryDSL/성능개선.md",
     "imoji.md",
     "BackEnd/Frameworks/Message-Broker/RabbitMQ/On-Linux.md",
     "DataBase/Redis/Pub-Sub.md",
@@ -184,8 +186,6 @@
     "DataBase/개념/SQL/And & Or & Not.md",
     "Ops-Tools/MSA/Kubernetes/StatefulSet.md",
     "Ops-Tools/MSA/Kubernetes/Service.md",
-    "Ops-Tools/MSA/Kubernetes/Secret.md",
-    "Ops-Tools/MSA/Kubernetes/Script.md",
     "Ops-Tools/MSA/Kubernetes",
     "Ops-Tools/MSA/gRPC",
     "Ops-Tools/Management & Tool/Git",
