@@ -201,6 +201,32 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
 - 이때, HTTTP Request Header의 Connection 속성은 Upgrade로 되어야 합니다.
 - HTTP에 존재하는 Session을 WebSocket Session으로 등록합니다, SESSION 변수는 static 변수로 String 타입입니다.
 
+```java
+public class HttpHandshakeInterceptor implements HandshakeInterceptor {  
+    @Override  
+    public boolean beforeHandshake(ServerHttpRequest request, ServerHttpResponse response, WebSocketHandler wsHandler, Map<String, Object> attributes) throws Exception {  
+        if (request instanceof ServletServerHttpRequest servletRequest) {  
+            HttpSession session = servletRequest.getServletRequest().getSession();  
+            attributes.put(SESSION, session);  
+        }  
+        return true;  
+    }  
+  
+    @Override  
+    public void afterHandshake(ServerHttpRequest request, ServerHttpResponse response, WebSocketHandler wsHandler, Exception exception) {}  
+}
+```
+
+> 📕 **RedisController**
+
+이 컨트롤러는 둔순해 보이지만 많은 일이 일어나고 있습니다.
+
+`MessageMapping`은 메시지가 `/topic`으로 전송되면 return문의 함수가 호출되도록 보장합니다.
+
+즉, `@MessageMapping`에 설정한 URL로 클라이언트로부터 요청 메시지를 받으면, `@SendTo`로 설정한 URL을 구독한 클라이언트들에게 메시지를 보냅니다.
+
+<br>
+
 > 📕 **RedisConfig**
 
 **RedisConnectionFactory**
@@ -337,14 +363,6 @@ public class RedisSubscriber implements MessageListener {
 ```
 
 <br>
-
-> 📕 **RedisController**
-
-이 컨트롤러는 둔순해 보이지만 많은 일이 일어나고 있습니다.
-
-`MessageMapping`은 메시지가 `/topic`으로 전송되면 return문의 함수가 호출되도록 보장합니다.
-
-즉, `@MessageMapping`에 설정한 URL로 클라이언트로부터 요청 메시지를 받으면, `@SendTo`로 설정한 URL을 구독한 클라이언트들에게 메시지를 보냅니다.
 
 > 📕 **실행 결과**
 
