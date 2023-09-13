@@ -18,19 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "8b52a58625db38bc",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.4.11"
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -167,7 +156,7 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "8b52a58625db38bc",
+  "active": "e92210adcf99929d",
   "lastOpenFiles": [
     "imoji.md",
     "DataBase/Redis/On-Linux.md",
