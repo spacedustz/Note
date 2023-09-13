@@ -199,6 +199,7 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
 - 웹소켓은 처음 Connect 시점에 Handshake라는 작업이 수행됩니다.
 - Handshake 과정은 HTTP 통신 기반으로 이루어지며 GET 방식으로 통신을 하게 됩니다.
 - 이때, HTTTP Request Header의 Connection 속성은 Upgrade로 되어야 합니다.
+- HTTP에 존재하는 Session을 WebSocket Session으로 등록합니다, SESSION 변수는 static 변수로 String 타입입니다.
 
 > 📕 **RedisConfig**
 
