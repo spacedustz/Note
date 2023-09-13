@@ -272,6 +272,8 @@ public class RedisConfig {
 
 위 Redis Config의 MessageListenerAdapter에 추가되는 Listener 클래스 입니다.
 
+`receive()` 함수는 메시지를 발행하는 역할입니다.
+
 Redis Template를 이용해 들어온 메시지를 변환하여 수신합니다.
 
 ```java
@@ -291,6 +293,7 @@ public class RedisMessageReceiver {
 > 📕 **RedisSubscriber**
 
 - Redis로부터 온 메시지를 역직렬화하여 메시지를 Topic 명과 함께 전달합니다.
+- `onMessage()` 함수는 메시지를 구독 및 전달하는
 
 ```java
 @Service  
