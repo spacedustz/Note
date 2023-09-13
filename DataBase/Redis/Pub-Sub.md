@@ -522,4 +522,4 @@ export default RedisSocketSubscriber;
 
 <br>
 
-![img](raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/i)
+![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/connect2)
