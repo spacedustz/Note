@@ -408,6 +408,12 @@ public class RedisSubscriber implements MessageListener {
 
 ![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/redis.png)
 
+<br>
+
+Rabbit -> Redis -> Spring Data Redis(Socket) ->  Frontend(Socket) 으로 Redis Pub/Sub을 이용해 데이터 전달에 성공했습니다!!
+
+![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/done.png)
+
 ---
 
 ## React (FrontEnd)
@@ -531,6 +537,6 @@ export default RedisSocketSubscriber;
 
 <br>
 
-Rabbit 
+Rabbit -> Redis -> Spring Data Redis(Socket) ->  Frontend(Socket) 으로 Redis Pub/Sub을 이용해 데이터 전달에 성공했습니다!!
 
 ![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/done.png)
