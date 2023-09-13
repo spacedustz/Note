@@ -163,8 +163,8 @@ implementation 'io.projectreactor.netty:reactor-netty-http'
 
 <br>
 
-**registerStompEndpoints() 함수** : 소켓 엔드포인트를 등록하는 함수입니다.
-- `ws`라는 엔드포인트에 Interceptor를 추가해 소켓을 등록합니다.
+**registerStompEndpoints() 함수** : Socket Endpoint를 등록하는 함수입니다.
+- `ws`라는 Endpoint에 Interceptor를 추가해 Socket을 등록합니다.
 
 ```java
 @Configuration  
@@ -175,7 +175,7 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
     @Override  
     public void configureMessageBroker(MessageBrokerRegistry config) {  
         // 이 토픽을 구독하면 Subscriber 들에게 메시지를 브로드캐스팅 함  
-        config.enableStompBrokerRelay("/topic", "queue");  
+        config.enableStompBrokerRelay("/topic");  
   
         // 메시지 발행 요청할 때 사용  
         config.setApplicationDestinationPrefixes("/");  
@@ -184,7 +184,10 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
     @Override  
     public void registerStompEndpoints(StompEndpointRegistry registry) {  
         // WebSocket 연결 엔드포인트 설정, ex) ws://localhost:18080/ws  
-        registry.addEndpoint("/ws").setAllowedOriginPatterns("http://localhost:3000");  
+        registry  
+                .addEndpoint("/ws")  
+                .setAllowedOriginPatterns("http://localhost:3000")  
+                .addInterceptors(new HttpSessionHandshakeInterceptor());  
     }  
 }
 ```
