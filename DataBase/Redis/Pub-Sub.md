@@ -385,13 +385,6 @@ public class RedisSubscriber implements MessageListener {
 
 > 📕 **실행 결과**
 
-- 딥러닝 엔진에서 MQTT 데이터 전송
-- RabbitMQ의 Exchange -> Routing Key -> Quorum Queue에 메시지 쌓임
-- Spring Redis에서 RabbitMQ의 Queue에서 데이터를 Redis로 가져옵니다.
-- Spring Redis(Backend)에서 소켓을 열어줍니다.
-- 소켓의 URL은 `WebSocketConfig` 클래스에 나온것처럼 `ws://localhost:18080/ws`입니다.
-
-<br>
 
 😯 **RabbitMQ 서버**
 
@@ -463,20 +456,15 @@ const RedisSocketSubscriber: React.FC<RedisState> = () => {
             },  
         });  
   
-        // Stomp Client Header - AutoConfirm, Message TTL 옵션 추가  
-        // const connectHeadersWithAutoConfirm: StompHeaders = {  
-        //     ...client.connectHeaders,        //     'x-queue-type': 'quorum',        //     'x-message-ttl': 200000,        //     autoConfirm: true,        // };  
-        // Quorum Queue Subscribe        client.onConnect = () => {  
             console.log('Socket Connected');  
   
-            // 1번째 파라미터로 Queue 이름, 2번째는 콜백 함수  
+            // 1번째 파라미터로 Redis Channel 이름, 2번째는 콜백 함수  
             client.subscribe('/topic/message', (frame) => {  
                     const newMessage = `Test - Redis: ${frame.body}`;  
                     setMessages((prevMessages) => [...prevMessages, newMessage]);  
                 },  
                 {  
                     id: 'Test-Subscribe',  
-                    // ...connectHeadersWithAutoConfirm,  
                 });  
             setSubscribed(true);  
         };  
@@ -533,7 +521,11 @@ export default RedisSocketSubscriber;
 
 ~~헤더 로직 수정 후 내용 수정하겠습니다.~~
 
+<br>
 
+STOMP Header 옵션을 설정 안해줘도 Quorum Queue의 헤더 옵션이 잘 들어가는 것을 확인했습니다.
+
+위 코드 그대로 사용하면 됩니다.
 
 <br>
 
