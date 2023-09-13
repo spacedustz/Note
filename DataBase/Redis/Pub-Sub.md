@@ -164,6 +164,7 @@ implementation 'io.projectreactor.netty:reactor-netty-http'
 <br>
 
 **registerStompEndpoints() 함수** : 소켓 엔드포인트를 등록하는 함수입니다.
+- `ws`라는 엔드포인트에 Interceptor를 추가해 소켓을 등록합니다.
 
 ```java
 @Configuration  
