@@ -238,7 +238,7 @@ public class HttpHandshakeInterceptor implements HandshakeInterceptor {
 public class RedisController {  
     private final RedisTemplate<String, Object> template;  
   
-    @MessageMapping("/topic")  
+    @MessageMapping("test")  
     @SendTo("/topic/message")  
     public String getData() {  
         return Objects.requireNonNull(template.opsForValue().get("데이터")).toString();  
@@ -361,6 +361,8 @@ public class RedisMessageReceiver {
 }
 ```
 
+<br>
+
 > 📕 **RedisSubscriber**
 
 - Redis로부터 온 메시지를 역직렬화하여 메시지를 Topic 명과 함께 전달합니다.
@@ -397,7 +399,8 @@ public class RedisSubscriber implements MessageListener {
 
 아래 사진은 백엔드 서버를 키고 딥러닝 엔진 돌려서 RabbitMQ에 있는 데이터를 Spring Redis가 가져와서 스프링 로그를 찍은 사진입니다.
 
-- 
+- RabbitMQ 서버의 amqp 포트인 5672와 guest 계정으로 잘 데이터를 받아왔으며,
+- 프론트엔드와 소켓이 Connect된 것을 확인할 수 있습니다.
 
 ![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/connected.png)
 
