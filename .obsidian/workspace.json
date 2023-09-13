@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DataBase/Redis/On-Linux.md",
+                "file": "DataBase/Redis/Pub-Sub.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DataBase/Redis/On-Linux.md",
+                "file": "DataBase/Redis/Pub-Sub.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DataBase/Redis/On-Linux.md",
+                "file": "DataBase/Redis/Pub-Sub.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DataBase/Redis/On-Linux.md"
+                "file": "DataBase/Redis/Pub-Sub.md"
               }
             }
           },
@@ -158,10 +158,10 @@
   },
   "active": "e92210adcf99929d",
   "lastOpenFiles": [
+    "DataBase/Redis/On-Linux.md",
     "DataBase/개념/SQL/Select.md",
     "DataBase/개념/SQL/Select Into & Insert Into Select.md",
     "DataBase/개념/SQL/읽는 순서.md",
-    "DataBase/Redis/On-Linux.md",
     "DataBase/QueryDSL/성능개선.md",
     "imoji.md",
     "BackEnd/Frameworks/Message-Broker/RabbitMQ/On-Linux.md",
