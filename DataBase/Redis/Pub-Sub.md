@@ -230,7 +230,8 @@ public class HttpHandshakeInterceptor implements HandshakeInterceptor {
 - 만약 DestinationPrefixes를 `/app`이라고 가정하고 나머지 URL은 `/topic/message`라고 가정하면, 
 - **ex) @MessageMapping("topic/message)" 처럼 `/app`을 뺸 나머지 URL을 입력하면 됩니다.**
 
-<ㅠ
+<br>
+
 - 즉, `@MessageMapping`에 설정한 URL로 클라이언트로부터 요청 메시지를 받으면, `@SendTo`로 설정한 URL을 구독한 클라이언트들에게 메시지를 보냅니다.
 - `@SendTo`는 1:N으로 메시지를 보낼때 사용하는 구조이며, 보통 경로가 `/topic`으로 시작합니다.
 - `@SendToUser` 는 보통 1:1로 메시지를 보낼때 사용하는 구조이며, 보통 경로가 `/queue`로 시작합니다.
