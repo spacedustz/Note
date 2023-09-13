@@ -223,6 +223,8 @@ public class HttpHandshakeInterceptor implements HandshakeInterceptor {
 }
 ```
 
+<br>
+
 > 📕 **RedisController**
 
 - `@MessageMapping` 발행 경로를. `@SendTo` or `@SendToUser`를 사용하면 구독 경로를 지정합니다.
@@ -392,6 +394,8 @@ public class RedisSubscriber implements MessageListener {
 <br>
 
 😯 **RabbitMQ 서버**
+
+백엔드 서버를 실행시키고 채널이 오픈되며 잠잠하던 그래프에 변동이 생겼습니다.
 
 ![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/channel.png)
 
