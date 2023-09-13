@@ -194,6 +194,10 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
 
 <br>
 
+> 📕 **HttpHandshakeInterceptor**
+
+웹소켓은 처음 Connec
+
 > 📕 **RedisConfig**
 
 **RedisConnectionFactory**
