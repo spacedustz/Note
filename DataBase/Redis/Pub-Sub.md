@@ -397,6 +397,14 @@ public class RedisSubscriber implements MessageListener {
 
 <br>
 
+**RabbitMQ 서버**
+
+![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/channel.png)
+
+<br>
+
+**Spring Logs**
+
 아래 사진은 백엔드 서버를 키고 딥러닝 엔진 돌려서 RabbitMQ에 있는 데이터를 Spring Redis가 가져와서 스프링 로그를 찍은 사진입니다.
 
 - RabbitMQ 서버의 amqp 포트인 5672와 guest 계정으로 잘 데이터를 받아왔으며,
