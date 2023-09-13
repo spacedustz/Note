@@ -385,10 +385,11 @@ public class RedisSubscriber implements MessageListener {
 
 > 📕 **실행 결과**
 
-
 😯 **RabbitMQ 서버**
 
-백엔드 서버를 실행시키고 채널이 오픈되며 잠잠하던 그래프에 변동이 생겼습니다.
+딥러닝 엔진과 백엔드 서버를 실행시키고 채널이 오픈 되며 잠잠하던 그래프에 변동이 생겼습니다.
+
+Exchange를 거쳐 맞는 Routing Key를 가진 Quorum Queue에 MQTT 데이터가 쌓입니다.
 
 ![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/channel.png)
 
