@@ -227,8 +227,8 @@ public class HttpHandshakeInterceptor implements HandshakeInterceptor {
 
 - `@MessageMapping` 발행 경로를. `@SendTo`와`@SendToUser`를 사용하면 구독 경로를 지정합니다.
 - 즉, `@MessageMapping`에 설정한 URL로 클라이언트로부터 요청 메시지를 받으면, `@SendTo`로 설정한 URL을 구독한 클라이언트들에게 메시지를 보냅니다.
-- `@SendTo`는 1:N으로 메시지를 보낼때 사용하는 구조이며, 보통 경로가 /topic으로 시작합니다.
-- `@SendToUser` 는 보통 1:1로 메시지를 보낼때 사용하는 구조이며, 보통 경
+- `@SendTo`는 1:N으로 메시지를 보낼때 사용하는 구조이며, 보통 경로가 `/topic`으로 시작합니다.
+- `@SendToUser` 는 보통 1:1로 메시지를 보낼때 사용하는 구조이며, 보통 경로가 `/queue`로 시작합니다.
 
 
 
