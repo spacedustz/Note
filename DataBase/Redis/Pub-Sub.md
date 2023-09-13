@@ -293,7 +293,7 @@ public class RedisMessageReceiver {
 > 📕 **RedisSubscriber**
 
 - Redis로부터 온 메시지를 역직렬화하여 메시지를 Topic 명과 함께 전달합니다.
-- `onMessage()` 함수는 메시지를 구독 및 전달하는
+- `onMessage()` 함수는 메시지를 구독 및 전달하는 함수입니다.
 
 ```java
 @Service  
