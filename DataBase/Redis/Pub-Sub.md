@@ -320,6 +320,8 @@ public class RedisSubscriber implements MessageListener {
 
 `MessageMapping`은 메시지가 `/topic`으로 전송되면 return문의 함수가 호출되도록 보장합니다.
 
+즉, `@MessageMapping`에 설정한 URL로 클라이언트로부터 요청 메시지를 받으면, `@SentTo`
+
 > 📕 **실행 결과**
 
 - 딥러닝 엔진에서 MQTT 데이터 전송
