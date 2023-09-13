@@ -314,6 +314,12 @@ public class RedisSubscriber implements MessageListener {
 
 <br>
 
+> 📕 **RedisController**
+
+이 컨트롤러는 둔순해 보이지만 많은 일이 일어나고 있습니다.
+
+`MessageMapping`은
+
 > 📕 **실행 결과**
 
 - 딥러닝 엔진에서 MQTT 데이터 전송
