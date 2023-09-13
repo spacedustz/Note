@@ -544,6 +544,6 @@ STOMP Header 옵션을 설정 안해줘도 Quorum Queue의 헤더 옵션이 잘 
 
 Rabbit -> Redis -> Spring Data Redis(Socket) ->  Frontend(Socket) 으로 Redis Pub/Sub을 이용해 데이터 전달에 성공했습니다!!
 
-이제 중간에 Spring Data Redis에서 받은 데이터 중 원하는 데이터 필드만 뽑아 엔티티화 해서 MariaDB 저장 후 프론트로 넘기면 되는데 이건 생략하겠습니다.
+이제 중간에 Spring Data Redis에서 받은 데이터 중 원하는 데이터 필드만 뽑아 엔티티화 해서 MariaDB 저장 후 프론트로 넘기면 되는데 이건 생략 하겠습니다.
 
 ![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/done.png)
