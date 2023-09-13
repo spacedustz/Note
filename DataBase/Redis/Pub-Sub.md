@@ -397,13 +397,13 @@ public class RedisSubscriber implements MessageListener {
 
 <br>
 
-**RabbitMQ 서버**
+😯 **RabbitMQ 서버**
 
 ![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/channel.png)
 
 <br>
 
-**Spring Log**
+😯 **Spring Log**
 
 아래 사진은 백엔드 서버를 키고 딥러닝 엔진 돌려서 RabbitMQ에 있는 데이터를 Spring Redis가 가져와서 스프링 로그를 찍은 사진입니다.
 
@@ -416,11 +416,7 @@ public class RedisSubscriber implements MessageListener {
 
 ![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/redis.png)
 
-<br>
-
-Rabbit -> Redis -> Spring Data Redis(Socket) ->  Frontend(Socket) 으로 Redis Pub/Sub을 이용해 데이터 전달에 성공했습니다!!
-
-![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/done.png)
+이제 프론트엔드에서 Redis Channel을 Subscribe 해새 데이터를 소켓을 이용해 넘겨보겠습니다.
 
 ---
 
@@ -538,6 +534,8 @@ export default RedisSocketSubscriber;
 ```
 
 <br>
+
+> 📕 **실행 결과**
 
 😯 **Web Socket Connected / Topic Subscription 성공**
 
