@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DataBase/Redis/Pub-Sub.md",
+                "file": "BackEnd/Frameworks/Spring/무제 파일.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DataBase/Redis/Pub-Sub.md",
+                "file": "BackEnd/Frameworks/Spring/무제 파일.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DataBase/Redis/Pub-Sub.md",
+                "file": "BackEnd/Frameworks/Spring/무제 파일.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DataBase/Redis/Pub-Sub.md"
+                "file": "BackEnd/Frameworks/Spring/무제 파일.md"
               }
             }
           },
@@ -158,8 +158,9 @@
   },
   "active": "e92210adcf99929d",
   "lastOpenFiles": [
-    "BackEnd/Languages/Java/Basic/IO.md",
     "DataBase/Redis/Pub-Sub.md",
+    "BackEnd/Frameworks/Spring/무제 파일.md",
+    "BackEnd/Languages/Java/Basic/IO.md",
     "DataBase/Redis/On-Linux.md",
     "DataBase/개념/SQL/Select.md",
     "DataBase/개념/SQL/Select Into & Insert Into Select.md",
@@ -185,7 +186,6 @@
     "BackEnd/Frameworks/Spring/Security/Security Basic.md",
     "BackEnd/Frameworks/Spring/Security/OAuth2.md",
     "DataBase/개념/SQL/Alias.md",
-    "DataBase/개념/SQL/And & Or & Not.md",
     "Ops-Tools/MSA/Kubernetes",
     "Ops-Tools/MSA/gRPC",
     "Ops-Tools/Management & Tool/Git",
