@@ -225,11 +225,12 @@ public class HttpHandshakeInterceptor implements HandshakeInterceptor {
 
 > 📕 **RedisController**
 
-이 컨트롤러는 단순해 보이지만 많은 일이 일어나고 있습니다.
 
-`@MessageMapping` 발행 경로를. `@SendTo`와`@SendToUser`는 구독 경로를 작성합니다.
+- `@MessageMapping` 발행 경로를. `@SendTo`와`@SendToUser`를 사용하면 구독 경로를 지정합니다.
 
 즉, `@MessageMapping`에 설정한 URL로 클라이언트로부터 요청 메시지를 받으면, `@SendTo`로 설정한 URL을 구독한 클라이언트들에게 메시지를 보냅니다.
+
+
 
 ```java
 @Controller  
