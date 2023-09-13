@@ -158,7 +158,7 @@ implementation 'io.projectreactor.netty:reactor-netty-http'
 `setApplicationDestinationPrefixes`
 - 메시지 발행 요청의 prefix를 넣습니다.
 - /로 시작하는 메시지만 해당 Broker에서 받아서 처리하고, 클라이언트에서 WebSocket에 접속할 수 있는 endpoint를 지정합니다.
-- 만약 `/app`으로 설정한다면, 
+- 만약 `/app`으로 설정한다면, 실제 구독 신청 URL은 `/app/topic`처럼 시작 URL을 지정합니다.
 
 ```java
 @Configuration  
@@ -169,16 +169,16 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
     @Override  
     public void configureMessageBroker(MessageBrokerRegistry config) {  
         // 이 토픽을 구독하면 Subscriber 들에게 메시지를 브로드캐스팅 함  
-        config.enableStompBrokerRelay("/topic");  
+        config.enableStompBrokerRelay("/topic", "queue");  
   
         // 메시지 발행 요청할 때 사용  
-        config.setApplicationDestinationPrefixes("/pub");  
+        config.setApplicationDestinationPrefixes("/");  
     }  
   
     @Override  
     public void registerStompEndpoints(StompEndpointRegistry registry) {  
         // WebSocket 연결 엔드포인트 설정, ex) ws://localhost:18080/ws  
-        registry.addEndpoint("/ws").setAllowedOriginPatterns("*").withSockJS();  
+        registry.addEndpoint("/ws").setAllowedOriginPatterns("http://localhost:3000");  
     }  
 }
 ```
