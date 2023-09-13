@@ -204,7 +204,10 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
 ```java
 public class HttpHandshakeInterceptor implements HandshakeInterceptor {  
     @Override  
-    public boolean beforeHandshake(ServerHttpRequest request, ServerHttpResponse response, WebSocketHandler wsHandler, Map<String, Object> attributes) throws Exception {  
+    public boolean beforeHandshake(ServerHttpRequest request,   
+                                   ServerHttpResponse response,   
+                                   WebSocketHandler wsHandler,   
+                                   Map<String, Object> attributes) throws Exception {  
         if (request instanceof ServletServerHttpRequest servletRequest) {  
             HttpSession session = servletRequest.getServletRequest().getSession();  
             attributes.put(SESSION, session);  
@@ -213,7 +216,10 @@ public class HttpHandshakeInterceptor implements HandshakeInterceptor {
     }  
   
     @Override  
-    public void afterHandshake(ServerHttpRequest request, ServerHttpResponse response, WebSocketHandler wsHandler, Exception exception) {}  
+    public void afterHandshake(ServerHttpRequest request,   
+                               ServerHttpResponse response,   
+                               WebSocketHandler wsHandler,   
+                               Exception exception) {}  
 }
 ```
 
@@ -224,6 +230,20 @@ public class HttpHandshakeInterceptor implements HandshakeInterceptor {
 `MessageMapping`은 메시지가 `/topic`으로 전송되면 return문의 함수가 호출되도록 보장합니다.
 
 즉, `@MessageMapping`에 설정한 URL로 클라이언트로부터 요청 메시지를 받으면, `@SendTo`로 설정한 URL을 구독한 클라이언트들에게 메시지를 보냅니다.
+
+```java
+@Controller  
+@RequiredArgsConstructor  
+public class RedisController {  
+    private final RedisTemplate<String, Object> template;  
+  
+    @MessageMapping("/topic")  
+    @SendTo("/topic/message")  
+    public String getData() {  
+        return Objects.requireNonNull(template.opsForValue().get("데이터")).toString();  
+    }  
+}
+```
 
 <br>
 
