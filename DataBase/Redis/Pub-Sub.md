@@ -148,7 +148,8 @@ implementation 'io.projectreactor.netty:reactor-netty-http'
 > 📕 **WebSocketConfig**
 
 `WebSocketMessageBrokerConfigurer` : 인터페이스를 구현해 STOMP로 메시지 처리 구성합니다.
-`configureMessageBroker` : 메시지를 중간에서 라우팅할 때 사용하는 메시지 브로커를 구성합니다.
+
+`configureMessageBroker 함수` : 메시지를 중간에서 라우팅할 때 사용하는 메시지 브로커를 구성합니다.
 - 보통 `/topic`, `/queue`를 사용합니다.
 - `/topic`은 한명이 Message를 발행했을 때 해당 토픽을 구독하고 있는 N명에게 메시지를 브로드캐스팅 할 때 사용합니다.
 - `/queue`는 한명이 Message를 발행했을 때 발행한 1명에게 다시 정보를 보내는 경우에 사용합니다.
@@ -159,6 +160,8 @@ implementation 'io.projectreactor.netty:reactor-netty-http'
 - 메시지 발행 요청의 prefix를 넣습니다.
 - /로 시작하는 메시지만 해당 Broker에서 받아서 처리하고, 클라이언트에서 WebSocket에 접속할 수 있는 endpoint를 지정합니다.
 - 만약 `/app`으로 설정한다면, 실제 구독 신청 URL은 `/app/topic`처럼 시작 URL을 지정합니다.
+
+<ㅠ
 
 ```java
 @Configuration  
