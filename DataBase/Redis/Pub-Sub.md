@@ -318,7 +318,7 @@ public class RedisSubscriber implements MessageListener {
 
 이 컨트롤러는 둔순해 보이지만 많은 일이 일어나고 있습니다.
 
-`MessageMapping`은
+`MessageMapping`은 메시지가 `/topic`으로 전송되면 return문의 함수가 호출되도록 보장합니다.
 
 > 📕 **실행 결과**
 
