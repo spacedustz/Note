@@ -14,14 +14,24 @@
 - 좌측 카테고리에 **플랫폼**을 눌러서 `Web 플랫폼 등록`을 눌러줍니다.
 - 사이트 도메인에 `http://localhost:3000`를 등록합니다. (3000 = React 기본 포트)
 
-<br>
+---
 
-> 📕 React App
+## React
 
-**index.html**
+> 📕 **index.html**
 
 - `appkey` 부분에 JavaScript Key를 넣어줍니다.
 
 ```html
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=YOUR-KEY"></script>
+```
+
+<br>
+
+> 📕 **KakaoMap.tsx**
+
+- 카카오 맵을 그릴 컴포넌트를 작성합니다.
+
+```tsx
+
 ```
