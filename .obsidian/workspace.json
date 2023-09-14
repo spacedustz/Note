@@ -23,9 +23,11 @@
             "id": "7263d1f41e165d77",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.4.12"
+                "file": "BackEnd/Frameworks/Spring/Kakao-Map-API.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
