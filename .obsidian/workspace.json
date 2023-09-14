@@ -18,8 +18,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "7263d1f41e165d77",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.4.12"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -156,7 +167,7 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "e92210adcf99929d",
+  "active": "7263d1f41e165d77",
   "lastOpenFiles": [
     "DataBase/Redis/Pub-Sub.md",
     "BackEnd/Frameworks/Spring/Kakao-Map-API.md",
