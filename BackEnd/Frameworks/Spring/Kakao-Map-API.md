@@ -31,9 +31,11 @@
 > 📕 **KakaoMap.tsx**
 
 **declare global 이란?**
-- TypeScript 환경에서는 index.
+- TypeScript 환경에서는 index.html에 API를 추가해도, kakao 객체의 존재 여부를 TypeScript는 인식하지 못합니다.
+- 이 경우, TypeScript에게 Kakao라는 객체가 window에 존재하고 있다고 인식시켜 줘야 합니다.
+- 이럴 때 사용하는 TypeScript 문법이 declare 입니다.
 
-- 카카오 맵을 그릴 컴포넌트를 작성합니다.
+- 카카오맵을 그릴 컴포넌트를 작성합니다.
 
 ```tsx
 
