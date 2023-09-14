@@ -16,3 +16,12 @@
 
 <br>
 
+> 📕 React App
+
+**index.html**
+
+- `appkey` 부분에 JavaScript Key를 넣어줍니다.
+
+```html
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=YOUR-KEY"></script>
+```
