@@ -1,5 +1,9 @@
 ## Kakao Map API (React, Spring)
 
+React / Spring Boot 각각의 환경에서 Kakao Map API를 연동하는 방법에 대해 알아보겠습니다.
+
+<br>
+
 [Kakao Maps API](https://apis.map.kakao.com)
 
 **APP Key 발급**
@@ -114,53 +118,12 @@ const App: React.FC = () => {
   
     return (  
         <ContextProvider>  
-            {/*/!* Ref & State & Event *!/*/}  
-            {/*<div>*/}  
-            {/*    <AppBlock>*/}  
-            {/*        <RefInput/>*/}  
-            {/*        <ReactiveFC/>*/}  
-            {/*    </AppBlock>*/}  
-            {/*</div>*/}  
-  
-            {/*/!* Reducer & Input Form *!/*/}  
-            {/*<div>*/}  
-            {/*    <AppBlock>*/}  
-            {/*        <Counter/>*/}  
-            {/*        <CounterForm onSubmit={onSubmit}/>*/}  
-            {/*    </AppBlock>*/}  
-            {/*</div>*/}  
-  
-            {/*/!* Context *!/*/}  
-            {/*<div>*/}  
-            {/*    <ReducerContext>*/}  
-            {/*        <AppBlock>*/}  
-            {/*            <CounterReducer/>*/}  
-            {/*        </AppBlock>*/}  
-            {/*    </ReducerContext>*/}  
-            {/*</div>*/}  
-  
-            {/*/!* Styled Component *!/*/}  
-            {/*<div>*/}  
-            {/*    <AppBlock>*/}  
-            {/*        <Circle color="blue" size/>*/}  
-            {/*    </AppBlock>*/}  
-            {/*    <AppBlock>*/}  
-            {/*        <Button>Button</Button>*/}  
-            {/*    </AppBlock>*/}  
-            {/*</div>*/}  
-  
-            {/* Zustand Item List Statement */}  
-            {/*<div>*/}  
-            {/*    <AppBlock>*/}  
-  
-            {/*    </AppBlock>*/}  
-            {/*</div>*/}  
-  
             <div>  
                 <AppBlock>  
                     {/*<RabbitMqWebSocketHandler />*/}  
                     <RedisSocketSubscriber />  
-                </AppBlock>  
+                </AppBlock>
+                
                 <AppBlock>  
                     <KakaoMap />  
                 </AppBlock>  
