@@ -35,8 +35,43 @@
 - 이 경우, TypeScript에게 Kakao라는 객체가 window에 존재하고 있다고 인식시켜 줘야 합니다.
 - 이럴 때 사용하는 TypeScript 문법이 declare 입니다.
 
+<br>
+
 카카오맵을 그릴 컴포넌트를 작성합니다.
 
 ```tsx
-
+import React, {useEffect} from "react";  
+import styled from "styled-components";  
+  
+declare global {  
+    interface Window {  
+        kakao: any;  
+    }  
+}  
+  
+// Kakao Map 크기  
+const Map = styled.div`  
+width: 500px;  
+height: 300px;  
+`  
+  
+const KakaoMap: React.FC = () => {  
+    useEffect(() => {  
+        const container = document.getElementById('map');  
+        const options = {  
+            center: new window.kakao.maps.LatLng(33.450701, 126.50667),  
+            level: 5  
+        };  
+  
+        const map = new window.kakao.maps.Map(container, options);  
+  
+        return () => {};  
+    }, []);  
+  
+    return (  
+        <Map id="map" />  
+    )  
+}  
+  
+export default KakaoMap;
 ```
