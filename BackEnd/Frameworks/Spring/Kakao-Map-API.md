@@ -139,4 +139,4 @@ export default App
 
 > 📕 **결과**
 
-![img](https://ra)
+![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/kakao.png)
