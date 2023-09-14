@@ -39,6 +39,8 @@
 
 카카오맵을 그릴 컴포넌트를 작성합니다.
 
+맵의 크기는 Map 변수에 Styled Component를 사용해서 작성하였습니다.
+
 ```tsx
 import React, {useEffect} from "react";  
 import styled from "styled-components";  
@@ -53,7 +55,7 @@ declare global {
 const Map = styled.div`  
 width: 500px;  
 height: 300px;  
-`  
+`;
   
 const KakaoMap: React.FC = () => {  
     useEffect(() => {  
