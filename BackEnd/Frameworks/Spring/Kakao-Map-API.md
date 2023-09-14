@@ -30,6 +30,9 @@
 
 > 📕 **KakaoMap.tsx**
 
+**declare global 이란?**
+- TypeScript 환경에서는 index.
+
 - 카카오 맵을 그릴 컴포넌트를 작성합니다.
 
 ```tsx
