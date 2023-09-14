@@ -84,7 +84,7 @@ export default KakaoMap;
 
 <br>
 
-> **App.tsx**
+> 📕 **App.tsx**
 
 메인 App에 KakaoMap 컴포넌트를 등록 해줍니다.
 
@@ -134,3 +134,9 @@ const App: React.FC = () => {
   
 export default App
 ```
+
+<br>
+
+> 📕 **결과**
+
+![img](https://ra)
