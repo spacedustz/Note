@@ -139,4 +139,6 @@ export default App
 
 > 📕 **결과**
 
+프론트엔드 서버를 켜보면 카카오 맵이 잘 나오며, 마우스 Whell Up/Down으로 Zoom Level 변경도 잘 작동합니다.
+
 ![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/kakao.png)
