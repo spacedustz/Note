@@ -35,9 +35,11 @@
             "id": "f89a24f0017dd680",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.4.12"
+                "file": "BackEnd/Frameworks/Message-Broker/RabbitMQ/Summary.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -108,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "BackEnd/Frameworks/Spring/Settings/Memo - Yaml.md",
+                "file": "BackEnd/Frameworks/Message-Broker/RabbitMQ/Summary.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "BackEnd/Frameworks/Spring/Settings/Memo - Yaml.md",
+                "file": "BackEnd/Frameworks/Message-Broker/RabbitMQ/Summary.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "BackEnd/Frameworks/Spring/Settings/Memo - Yaml.md"
+                "file": "BackEnd/Frameworks/Message-Broker/RabbitMQ/Summary.md"
               }
             }
           },
