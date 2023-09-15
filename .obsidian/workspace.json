@@ -94,7 +94,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 255.5
+    "width": 255.5,
+    "collapsed": true
   },
   "right": {
     "id": "f5151c0da72edc1c",
@@ -181,7 +182,7 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "f89a24f0017dd680",
+  "active": "2ce1a846a1685820",
   "lastOpenFiles": [
     "BackEnd/Frameworks/Message-Broker/RabbitMQ/On-Linux.md",
     "BackEnd/Frameworks/Message-Broker/RabbitMQ/Summary.md",
