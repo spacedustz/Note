@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "FrontEnd/Frameworks/React/Basic-Summary.md",
+                "file": "BackEnd/Frameworks/Spring/Settings/Memo - Yaml.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "FrontEnd/Frameworks/React/Basic-Summary.md",
+                "file": "BackEnd/Frameworks/Spring/Settings/Memo - Yaml.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "FrontEnd/Frameworks/React/Basic-Summary.md",
+                "file": "BackEnd/Frameworks/Spring/Settings/Memo - Yaml.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "FrontEnd/Frameworks/React/Basic-Summary.md"
+                "file": "BackEnd/Frameworks/Spring/Settings/Memo - Yaml.md"
               }
             }
           },
@@ -171,8 +171,9 @@
   },
   "active": "7263d1f41e165d77",
   "lastOpenFiles": [
-    "FrontEnd/Frameworks/React/무제 파일.md",
+    "BackEnd/Frameworks/Spring/Settings/Memo - JPA.md",
     "FrontEnd/Frameworks/React/Basic-Summary.md",
+    "FrontEnd/Frameworks/React/무제 파일.md",
     "BackEnd/Frameworks/Spring/Common-Exception.md",
     "BackEnd/Frameworks/Message-Broker/RabbitMQ/Summary.md",
     "DataBase/Redis/Pub-Sub.md",
@@ -198,7 +199,6 @@
     "Docs/Settings/RoadMap.md",
     "Docs/Settings/Prime College.md",
     "Docs/Settings/Obsidian Setting.md",
-    "Docs/Settings/Typora Settings.md",
     "Ops-Tools/MSA/Kubernetes",
     "Ops-Tools/MSA/gRPC",
     "Ops-Tools/Management & Tool/Git",

@@ -154,3 +154,18 @@ ncp:
       max-request-size: 30MB
 ```
 
+---
+
+## Rabbitmq
+
+```yaml
+rabbitmq:  
+  host: localhost  
+  port: 5672  
+  username: guest  
+  password: guest  
+  template:  
+    exchange: xx.frame  
+    default-receive-queue: qq.frame  
+    routing-key: message
+```
