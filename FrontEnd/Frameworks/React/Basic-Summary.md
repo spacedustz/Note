@@ -32,6 +32,8 @@ React 핵심만 정리합니다. (TypeScript 기반)
 - Custom Hook
 - Routing
 - Next.js
+- @stomp/stompjs
+- zustand
 
 ---
 
