@@ -98,6 +98,9 @@ Linting 부분에`"allowSyntheticDefaultImports": true`를  사용하면, 기본
 - lodash @types/lodash
 - chartjs-adapter-moment
 - @reduxjs/toolkit react-redux @types/react-redux
+- styled-component
+- zustant
+- stomp@stompjs
 
 ---
 
