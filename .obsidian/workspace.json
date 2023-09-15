@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "imoji.md",
+                "file": "📗DataBase📗/Redis/Pub-Sub.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,7 +94,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 255.5
+    "width": 215.5
   },
   "right": {
     "id": "f5151c0da72edc1c",
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "imoji.md",
+                "file": "📗DataBase📗/Redis/Pub-Sub.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "imoji.md",
+                "file": "📗DataBase📗/Redis/Pub-Sub.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "imoji.md"
+                "file": "📗DataBase📗/Redis/Pub-Sub.md"
               }
             }
           },
@@ -181,8 +181,9 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "2ce1a846a1685820",
+  "active": "f89a24f0017dd680",
   "lastOpenFiles": [
+    "imoji.md",
     "📗FrontEnd📗/Frameworks/React/Basic-Summary.md",
     "📗BackEnd📗/Frameworks/Message-Broker/RabbitMQ/On-Linux.md",
     "📗BackEnd📗/Frameworks/Message-Broker/RabbitMQ/Summary.md",
@@ -196,7 +197,6 @@
     "📗FrontEnd📗/Frameworks/React/Zustand-상태관리.md",
     "📗FrontEnd📗/Frameworks/React/Styled-Component.md",
     "📗BackEnd📗/Frameworks/Spring/Kakao-Map-API.md",
-    "imoji.md",
     "📗BackEnd📗/Languages/Java/Basic/IO.md",
     "📗DataBase📗/Redis/On-Linux.md",
     "📗DataBase📗/개념/SQL/Select.md",
