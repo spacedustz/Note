@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "BackEnd/Frameworks/Message-Broker/RabbitMQ/Summary.md",
+                "file": "DataBase/Redis/Pub-Sub.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "BackEnd/Frameworks/Message-Broker/RabbitMQ/Summary.md",
+                "file": "DataBase/Redis/Pub-Sub.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "BackEnd/Frameworks/Message-Broker/RabbitMQ/Summary.md",
+                "file": "DataBase/Redis/Pub-Sub.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "BackEnd/Frameworks/Message-Broker/RabbitMQ/Summary.md"
+                "file": "DataBase/Redis/Pub-Sub.md"
               }
             }
           },
@@ -171,6 +171,9 @@
   },
   "active": "7263d1f41e165d77",
   "lastOpenFiles": [
+    "BackEnd/Frameworks/Message-Broker/RabbitMQ/Clustering.md",
+    "BackEnd/Frameworks/Message-Broker/RabbitMQ/On-Linux.md",
+    "BackEnd/Frameworks/Message-Broker/RabbitMQ/Summary.md",
     "BackEnd/Frameworks/Spring/MQTT.md",
     "FrontEnd/Frameworks/React/Basic-Summary.md",
     "FrontEnd/Frameworks/React/React-Query.md",
@@ -185,9 +188,6 @@
     "DataBase/개념/SQL/Select Into & Insert Into Select.md",
     "DataBase/개념/SQL/읽는 순서.md",
     "DataBase/QueryDSL/성능개선.md",
-    "BackEnd/Frameworks/Message-Broker/RabbitMQ/On-Linux.md",
-    "BackEnd/Frameworks/Message-Broker/RabbitMQ/Clustering.md",
-    "BackEnd/Frameworks/Message-Broker/RabbitMQ/Summary.md",
     "h.md",
     "erlang-source.png",
     "BackEnd/Frameworks/Message-Broker/RabbitMQ/RabbitMQ-Dead Letter Exchange-TTL.md",
