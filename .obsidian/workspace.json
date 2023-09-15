@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "BackEnd/Frameworks/Spring/Common-Exception.md",
+                "file": "FrontEnd/Frameworks/React/Basic-Summary.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "BackEnd/Frameworks/Spring/Common-Exception.md",
+                "file": "FrontEnd/Frameworks/React/Basic-Summary.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "BackEnd/Frameworks/Spring/Common-Exception.md",
+                "file": "FrontEnd/Frameworks/React/Basic-Summary.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "BackEnd/Frameworks/Spring/Common-Exception.md"
+                "file": "FrontEnd/Frameworks/React/Basic-Summary.md"
               }
             }
           },
@@ -171,8 +171,8 @@
   },
   "active": "7263d1f41e165d77",
   "lastOpenFiles": [
-    "FrontEnd/Frameworks/React/Basic-Summary.md",
     "BackEnd/Frameworks/Spring/Common-Exception.md",
+    "FrontEnd/Frameworks/React/Basic-Summary.md",
     "BackEnd/Frameworks/Message-Broker/RabbitMQ/Summary.md",
     "DataBase/Redis/Pub-Sub.md",
     "BackEnd/Frameworks/Message-Broker/RabbitMQ/Clustering.md",
