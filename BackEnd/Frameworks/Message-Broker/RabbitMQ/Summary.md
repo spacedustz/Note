@@ -82,6 +82,12 @@ rabbitmq-service.bat install
 sc config RabbitMQ start=auto
 ```
 
+<br>
+
+> 만약 Erlang OTP 버전을 바꾸려고 Erlang OTP만 재설치 하는 경우
+
+- 윈도우 레지스트리 편집기로 진입합니
+
 ---
 
 ## RabbitMQ 서버 초기 설정
