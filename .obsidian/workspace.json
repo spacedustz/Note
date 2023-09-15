@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "FrontEnd/Frameworks/React/Basic-Summary.md",
+                "file": "imoji.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,8 +94,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 255.5,
-    "collapsed": true
+    "width": 255.5
   },
   "right": {
     "id": "f5151c0da72edc1c",
@@ -111,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "FrontEnd/Frameworks/React/Basic-Summary.md",
+                "file": "imoji.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "FrontEnd/Frameworks/React/Basic-Summary.md",
+                "file": "imoji.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "FrontEnd/Frameworks/React/Basic-Summary.md"
+                "file": "imoji.md"
               }
             }
           },
@@ -184,18 +183,18 @@
   },
   "active": "2ce1a846a1685820",
   "lastOpenFiles": [
+    "📗FrontEnd📗/Frameworks/React/Basic-Summary.md",
     "BackEnd/Frameworks/Message-Broker/RabbitMQ/On-Linux.md",
     "BackEnd/Frameworks/Message-Broker/RabbitMQ/Summary.md",
     "BackEnd/Frameworks/Spring/Settings/Memo - JPA.md",
-    "FrontEnd/Frameworks/React/Basic-Summary.md",
     "FrontEnd/Frameworks/React/무제 파일.md",
     "BackEnd/Frameworks/Spring/Common-Exception.md",
     "DataBase/Redis/Pub-Sub.md",
     "BackEnd/Frameworks/Message-Broker/RabbitMQ/Clustering.md",
     "BackEnd/Frameworks/Spring/MQTT.md",
-    "FrontEnd/Frameworks/React/React-Query.md",
-    "FrontEnd/Frameworks/React/Zustand-상태관리.md",
-    "FrontEnd/Frameworks/React/Styled-Component.md",
+    "📗FrontEnd📗/Frameworks/React/React-Query.md",
+    "📗FrontEnd📗/Frameworks/React/Zustand-상태관리.md",
+    "📗FrontEnd📗/Frameworks/React/Styled-Component.md",
     "BackEnd/Frameworks/Spring/Kakao-Map-API.md",
     "imoji.md",
     "BackEnd/Languages/Java/Basic/IO.md",
