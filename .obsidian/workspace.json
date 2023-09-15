@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "BackEnd/Frameworks/Message-Broker/RabbitMQ/Summary.md",
+                "file": "BackEnd/Frameworks/Message-Broker/RabbitMQ/On-Linux.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "BackEnd/Frameworks/Message-Broker/RabbitMQ/Summary.md",
+                "file": "BackEnd/Frameworks/Message-Broker/RabbitMQ/On-Linux.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "BackEnd/Frameworks/Message-Broker/RabbitMQ/Summary.md",
+                "file": "BackEnd/Frameworks/Message-Broker/RabbitMQ/On-Linux.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "BackEnd/Frameworks/Message-Broker/RabbitMQ/Summary.md"
+                "file": "BackEnd/Frameworks/Message-Broker/RabbitMQ/On-Linux.md"
               }
             }
           },
@@ -181,10 +181,10 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "2ce1a846a1685820",
+  "active": "f89a24f0017dd680",
   "lastOpenFiles": [
-    "BackEnd/Frameworks/Message-Broker/RabbitMQ/On-Linux.md",
     "BackEnd/Frameworks/Message-Broker/RabbitMQ/Summary.md",
+    "BackEnd/Frameworks/Message-Broker/RabbitMQ/On-Linux.md",
     "BackEnd/Frameworks/Spring/Settings/Memo - JPA.md",
     "FrontEnd/Frameworks/React/Basic-Summary.md",
     "FrontEnd/Frameworks/React/무제 파일.md",
