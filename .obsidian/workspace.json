@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📗DataBase📗/Redis/Pub-Sub.md",
+                "file": "📗BackEnd📗/Frameworks/Message-Broker/RabbitMQ/Summary.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗DataBase📗/Redis/Pub-Sub.md",
+                "file": "📗BackEnd📗/Frameworks/Message-Broker/RabbitMQ/Summary.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗DataBase📗/Redis/Pub-Sub.md",
+                "file": "📗BackEnd📗/Frameworks/Message-Broker/RabbitMQ/Summary.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗DataBase📗/Redis/Pub-Sub.md"
+                "file": "📗BackEnd📗/Frameworks/Message-Broker/RabbitMQ/Summary.md"
               }
             }
           },
@@ -183,6 +183,7 @@
   },
   "active": "f89a24f0017dd680",
   "lastOpenFiles": [
+    "📗DataBase📗/Redis/Pub-Sub.md",
     "imoji.md",
     "📗FrontEnd📗/Frameworks/React/Basic-Summary.md",
     "📗BackEnd📗/Frameworks/Message-Broker/RabbitMQ/On-Linux.md",
@@ -190,7 +191,6 @@
     "📗BackEnd📗/Frameworks/Spring/Settings/Memo - JPA.md",
     "FrontEnd/Frameworks/React/무제 파일.md",
     "📗BackEnd📗/Frameworks/Spring/Common-Exception.md",
-    "📗DataBase📗/Redis/Pub-Sub.md",
     "📗BackEnd📗/Frameworks/Message-Broker/RabbitMQ/Clustering.md",
     "📗BackEnd📗/Frameworks/Spring/MQTT.md",
     "📗FrontEnd📗/Frameworks/React/React-Query.md",
