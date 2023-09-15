@@ -30,9 +30,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "f89a24f0017dd680",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.4.12"
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -169,7 +179,7 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "7263d1f41e165d77",
+  "active": "f89a24f0017dd680",
   "lastOpenFiles": [
     "BackEnd/Frameworks/Spring/Settings/Memo - JPA.md",
     "FrontEnd/Frameworks/React/Basic-Summary.md",
