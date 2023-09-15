@@ -86,7 +86,9 @@ sc config RabbitMQ start=auto
 
 > 만약 Erlang OTP 버전을 바꾸려고 Erlang OTP만 재설치 하는 경우
 
-- 윈도우 레지스트리 편집기로 진입합니
+- 윈도우 레지스트리 편집기로 진입합니다.
+-  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RabbitMQ 로 이동합니다.
+- RabbitMQ 폴더의 ImagePath의 값에 Erlang 폴더 버전만 변경해줍니다.
 
 ---
 
