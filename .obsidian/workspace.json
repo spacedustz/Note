@@ -171,8 +171,9 @@
   },
   "active": "7263d1f41e165d77",
   "lastOpenFiles": [
-    "BackEnd/Frameworks/Spring/Common-Exception.md",
+    "FrontEnd/Frameworks/React/무제 파일.md",
     "FrontEnd/Frameworks/React/Basic-Summary.md",
+    "BackEnd/Frameworks/Spring/Common-Exception.md",
     "BackEnd/Frameworks/Message-Broker/RabbitMQ/Summary.md",
     "DataBase/Redis/Pub-Sub.md",
     "BackEnd/Frameworks/Message-Broker/RabbitMQ/Clustering.md",
@@ -198,7 +199,6 @@
     "Docs/Settings/Prime College.md",
     "Docs/Settings/Obsidian Setting.md",
     "Docs/Settings/Typora Settings.md",
-    "Docs/Settings/WSL 2 Settings.md",
     "Ops-Tools/MSA/Kubernetes",
     "Ops-Tools/MSA/gRPC",
     "Ops-Tools/Management & Tool/Git",
