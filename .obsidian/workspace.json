@@ -42,9 +42,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "ff44026c2a5d7df2",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.4.13"
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -181,7 +191,7 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "f89a24f0017dd680",
+  "active": "ff44026c2a5d7df2",
   "lastOpenFiles": [
     "📗DataBase📗/Redis/Pub-Sub.md",
     "imoji.md",
