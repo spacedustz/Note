@@ -47,9 +47,11 @@
             "id": "ff44026c2a5d7df2",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.4.13"
+                "file": "📗BackEnd📗/Frameworks/Message-Broker/RabbitMQ/Summary.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
