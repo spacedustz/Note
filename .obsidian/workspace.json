@@ -54,9 +54,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "f2410f037b9e9d06",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📗BackEnd📗/Frameworks/Spring/Security/JWT & Sticky Session.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -122,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗BackEnd📗/Frameworks/Message-Broker/RabbitMQ/Summary.md",
+                "file": "📗BackEnd📗/Frameworks/Spring/Security/JWT & Sticky Session.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗BackEnd📗/Frameworks/Message-Broker/RabbitMQ/Summary.md",
+                "file": "📗BackEnd📗/Frameworks/Spring/Security/JWT & Sticky Session.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗BackEnd📗/Frameworks/Message-Broker/RabbitMQ/Summary.md"
+                "file": "📗BackEnd📗/Frameworks/Spring/Security/JWT & Sticky Session.md"
               }
             }
           },
@@ -193,8 +205,9 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "ff44026c2a5d7df2",
+  "active": "2ce1a846a1685820",
   "lastOpenFiles": [
+    "📗BackEnd📗/Frameworks/Spring/Security/JWT Implements.md",
     "📗DataBase📗/Redis/Pub-Sub.md",
     "imoji.md",
     "📗FrontEnd📗/Frameworks/React/Basic-Summary.md",
@@ -222,7 +235,6 @@
     "📗DataBase📗/Redis",
     "📗Docs📗/Settings/RoadMap.md",
     "📗Docs📗/Settings/Prime College.md",
-    "📗Docs📗/Settings/Obsidian Setting.md",
     "📗Ops-Tools📗/MSA/Kubernetes",
     "📗Ops-Tools📗/MSA/gRPC",
     "📗Ops-Tools📗/Management & Tool/Git",
