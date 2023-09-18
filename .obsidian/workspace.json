@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📗BackEnd📗/Frameworks/Spring/Security/JWT & Sticky Session.md",
+                "file": "📗BackEnd📗/Frameworks/Message-Broker/RabbitMQ/Summary.md",
                 "mode": "source",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗BackEnd📗/Frameworks/Spring/Security/JWT & Sticky Session.md",
+                "file": "📗BackEnd📗/Frameworks/Message-Broker/RabbitMQ/Summary.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗BackEnd📗/Frameworks/Spring/Security/JWT & Sticky Session.md",
+                "file": "📗BackEnd📗/Frameworks/Message-Broker/RabbitMQ/Summary.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗BackEnd📗/Frameworks/Spring/Security/JWT & Sticky Session.md"
+                "file": "📗BackEnd📗/Frameworks/Message-Broker/RabbitMQ/Summary.md"
               }
             }
           },
@@ -205,8 +205,11 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "2ce1a846a1685820",
+  "active": "f2410f037b9e9d06",
   "lastOpenFiles": [
+    "📗Computer-Science📗/공식.md",
+    "📗BackEnd📗/Frameworks/Spring/Security/JWT & Sticky Session.md",
+    "📗BackEnd📗/Frameworks/Spring/Kakao-Map-API.md",
     "📗BackEnd📗/Frameworks/Spring/Security/JWT Implements.md",
     "📗DataBase📗/Redis/Pub-Sub.md",
     "imoji.md",
@@ -221,7 +224,6 @@
     "📗FrontEnd📗/Frameworks/React/React-Query.md",
     "📗FrontEnd📗/Frameworks/React/Zustand-상태관리.md",
     "📗FrontEnd📗/Frameworks/React/Styled-Component.md",
-    "📗BackEnd📗/Frameworks/Spring/Kakao-Map-API.md",
     "📗BackEnd📗/Languages/Java/Basic/IO.md",
     "📗DataBase📗/Redis/On-Linux.md",
     "📗DataBase📗/개념/SQL/Select.md",
@@ -233,8 +235,6 @@
     "📗BackEnd📗/Frameworks/Message-Broker/RabbitMQ/RabbitMQ-Dead Letter Exchange-TTL.md",
     "📗DataBase📗/Dump.md",
     "📗DataBase📗/Redis",
-    "📗Docs📗/Settings/RoadMap.md",
-    "📗Docs📗/Settings/Prime College.md",
     "📗Ops-Tools📗/MSA/Kubernetes",
     "📗Ops-Tools📗/MSA/gRPC",
     "📗Ops-Tools📗/Management & Tool/Git",
