@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📗BackEnd📗/Frameworks/Message-Broker/RabbitMQ/Summary.md",
+                "file": "📗BackEnd📗/Frameworks/Spring/출입통제시스템.md",
                 "mode": "source",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗BackEnd📗/Frameworks/Message-Broker/RabbitMQ/Summary.md",
+                "file": "📗BackEnd📗/Frameworks/Spring/출입통제시스템.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗BackEnd📗/Frameworks/Message-Broker/RabbitMQ/Summary.md",
+                "file": "📗BackEnd📗/Frameworks/Spring/출입통제시스템.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗BackEnd📗/Frameworks/Message-Broker/RabbitMQ/Summary.md"
+                "file": "📗BackEnd📗/Frameworks/Spring/출입통제시스템.md"
               }
             }
           },
@@ -207,6 +207,8 @@
   },
   "active": "f2410f037b9e9d06",
   "lastOpenFiles": [
+    "📗BackEnd📗/Frameworks/Message-Broker/RabbitMQ/Summary.md",
+    "📗BackEnd📗/Frameworks/Spring/출입통제시스템.md",
     "📗Computer-Science📗/공식.md",
     "📗BackEnd📗/Frameworks/Spring/Security/JWT & Sticky Session.md",
     "📗BackEnd📗/Frameworks/Spring/Kakao-Map-API.md",
@@ -215,7 +217,6 @@
     "imoji.md",
     "📗FrontEnd📗/Frameworks/React/Basic-Summary.md",
     "📗BackEnd📗/Frameworks/Message-Broker/RabbitMQ/On-Linux.md",
-    "📗BackEnd📗/Frameworks/Message-Broker/RabbitMQ/Summary.md",
     "📗BackEnd📗/Frameworks/Spring/Settings/Memo - JPA.md",
     "FrontEnd/Frameworks/React/무제 파일.md",
     "📗BackEnd📗/Frameworks/Spring/Common-Exception.md",
@@ -233,7 +234,6 @@
     "h.md",
     "erlang-source.png",
     "📗BackEnd📗/Frameworks/Message-Broker/RabbitMQ/RabbitMQ-Dead Letter Exchange-TTL.md",
-    "📗DataBase📗/Dump.md",
     "📗DataBase📗/Redis",
     "📗Ops-Tools📗/MSA/Kubernetes",
     "📗Ops-Tools📗/MSA/gRPC",
