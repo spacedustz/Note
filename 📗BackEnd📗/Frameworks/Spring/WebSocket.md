@@ -50,8 +50,7 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
 
 > 📘 **HttpHandshakeInterceptor**
 
-WebSocket 연결을 수립하기 전에 실행됩니다.
-// 2. HTTP 요청(request)과 WebSocket 핸들러(wsHandler)를 인터셉트하여 추가 작업을 수행할 수 있습니다.
+WebSocket 연결을 수립하기 전에 `beforeHandshake()` 함수가 실행됩니다.
 
 ```java
 public class HttpHandshakeInterceptor implements HandshakeInterceptor {  
@@ -65,10 +64,13 @@ public class HttpHandshakeInterceptor implements HandshakeInterceptor {
             HttpSession session = servletRequest.getServletRequest().getSession();  
             // 가져온 HTTP 세션을 WebSocket 연결과 연관된 속성(attributes)으로 저장합니다.
             attributes.put(SESSION, session);  
-        }  
+        }
+        // true를 반환하면 WebSocket 연결이 계속 진행되고, false를 반환하면 연결이 중단됩니다.
         return true;  
     }  
-  
+
+		// WebSocket 연결이 수립된 후에 실행됩니다.
+		// 주로 예외 처리나 추가 작업을 수행하는 데 사용됩니다.
     @Override  
     public void afterHandshake(ServerHttpRequest request,  
                                ServerHttpResponse response,  
