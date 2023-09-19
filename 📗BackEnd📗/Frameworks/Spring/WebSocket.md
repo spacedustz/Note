@@ -51,6 +51,11 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
 > 📘 **HttpHandshakeInterceptor**
 
 WebSocket 연결을 수립하기 전에 `beforeHandshake()` 함수가 실행됩니다.
+- 웹소켓은 처음 Connect 시점에 Handshake라는 작업이 수행됩니다.
+- Handshake 과정은 HTTP 통신 기반으로 이루어지며 GET 방식으로 통신을 하게 됩니다.
+- 이때, HTTTP Request Header의 Connection 속성은 Upgrade로 되어야 합니다.
+- HTTP에 존재하는 Session을 WebSocket Session으로 등록합니다, SESSION 변수는 static 변수로 String 타입입니다.
+- HTTP 요청이 들어올 경우, 세션을 가져와
 
 ```java
 public class HttpHandshakeInterceptor implements HandshakeInterceptor {  
