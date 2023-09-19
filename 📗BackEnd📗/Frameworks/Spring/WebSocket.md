@@ -1,5 +1,7 @@
 ## Web Socket
 
+<br>
+
 > 📘 **WebSocketConfig**
 
 `WebSocketMessageBrokerConfigurer` : 인터페이스를 구현해 STOMP로 메시지 처리 구성합니다.
@@ -48,6 +50,9 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
 
 > 📘 **HttpHandshakeInterceptor**
 
+WebSocket 연결을 수립하기 전에 실행됩니다.
+// 2. HTTP 요청(request)과 WebSocket 핸들러(wsHandler)를 인터셉트하여 추가 작업을 수행할 수 있습니다.
+
 ```java
 public class HttpHandshakeInterceptor implements HandshakeInterceptor {  
     @Override  
@@ -55,8 +60,10 @@ public class HttpHandshakeInterceptor implements HandshakeInterceptor {
                                    ServerHttpResponse response,  
                                    WebSocketHandler wsHandler,  
                                    Map<String, Object> attributes) throws Exception {  
-        if (request instanceof ServletServerHttpRequest servletRequest) {  
+        if (request instanceof ServletServerHttpRequest servletRequest) {
+		        // 현재 요청이 HTTP 요청인 경우, HTTP 세션을 가져옵니다.
             HttpSession session = servletRequest.getServletRequest().getSession();  
+            // 가져온 HTTP 세션을 WebSocket 연결과 연관된 속성(attributes)으로 저장합니다.
             attributes.put(SESSION, session);  
         }  
         return true;  
