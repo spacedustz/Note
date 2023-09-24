@@ -12,6 +12,11 @@
   - Stack은 메모리 영역으로 지역 변수가 저장되고 기능이 실행되는 영역입니다.
   - Instruction Pointer는 스레드가 실행할 다음 명령어 주소의 포인트 역할만 합니다.
 
+<br>
+
+프로세스의 Stack, Instruction 부분만 제외하면 나머지 모든 스레드들이 MetaData, Data, Files, Code를 공유합니다.
+
+<br>
 
 
 **Responsiveness (응답성)**
