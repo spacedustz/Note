@@ -6,7 +6,8 @@
 - MetaData (PID, Mode, Priority ... 등등)
 - Data(Heap)
 - Files
-- Co
+- Code
+- MainThread
 
 **Responsiveness (응답성)**
 
