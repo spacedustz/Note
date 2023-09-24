@@ -7,7 +7,9 @@
 - Data(Heap)
 - Files
 - Code
-- MainThread (Stack, InstructioPointer)
+- MainThread (Stack, Instruction Pointer)
+  - Stack은 메모리 영역으로 지역 변수가 저장되고 기능이 실행되는 영역입니다.
+  - Instruction Poi
 
 **Responsiveness (응답성)**
 
