@@ -7,7 +7,7 @@
 - Data(Heap)
 - Files
 - Code
-- MainThread
+- MainThread (Stack, InstructioPointer)
 
 **Responsiveness (응답성)**
 
