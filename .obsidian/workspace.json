@@ -73,7 +73,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📗BackEnd📗/Frameworks/Message-Broker/RabbitMQ/RabbitMQ-Configuration.md",
+                "file": "📗BackEnd📗/Frameworks/Message-Broker/RabbitMQ/Summary.md",
                 "mode": "source",
                 "source": false
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗BackEnd📗/Frameworks/Message-Broker/RabbitMQ/RabbitMQ-Configuration.md",
+                "file": "📗BackEnd📗/Frameworks/Message-Broker/RabbitMQ/Summary.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗BackEnd📗/Frameworks/Message-Broker/RabbitMQ/RabbitMQ-Configuration.md",
+                "file": "📗BackEnd📗/Frameworks/Message-Broker/RabbitMQ/Summary.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗BackEnd📗/Frameworks/Message-Broker/RabbitMQ/RabbitMQ-Configuration.md"
+                "file": "📗BackEnd📗/Frameworks/Message-Broker/RabbitMQ/Summary.md"
               }
             }
           },
@@ -219,6 +219,7 @@
   },
   "active": "54daf708560774c3",
   "lastOpenFiles": [
+    "📗BackEnd📗/Frameworks/Message-Broker/RabbitMQ/RabbitMQ-Configuration.md",
     "📗BackEnd📗/Frameworks/Message-Broker/RabbitMQ/RabbitMQ-Dead Letter Exchange-TTL.md",
     "📗BackEnd📗/Frameworks/Message-Broker/RabbitMQ/On-Linux.md",
     "📗BackEnd📗/Frameworks/Message-Broker/RabbitMQ/Summary.md",
@@ -245,7 +246,6 @@
     "📗BackEnd📗/Languages/Java/Basic/IO.md",
     "📗DataBase📗/Redis/On-Linux.md",
     "📗DataBase📗/개념/SQL/Select.md",
-    "📗DataBase📗/개념/SQL/Select Into & Insert Into Select.md",
     "erlang-source.png",
     "📗DataBase📗/Redis",
     "📗Ops-Tools📗/MSA/Kubernetes",
