@@ -73,7 +73,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📗DataBase📗/Redis/Pub-Sub.md",
+                "file": "📗BackEnd📗/Frameworks/Message-Broker/RabbitMQ/RabbitMQ-Configuration.md",
                 "mode": "source",
                 "source": false
               }
@@ -130,8 +130,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 215.5,
-    "collapsed": true
+    "width": 215.5
   },
   "right": {
     "id": "f5151c0da72edc1c",
@@ -147,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗DataBase📗/Redis/Pub-Sub.md",
+                "file": "📗BackEnd📗/Frameworks/Message-Broker/RabbitMQ/RabbitMQ-Configuration.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -164,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗DataBase📗/Redis/Pub-Sub.md",
+                "file": "📗BackEnd📗/Frameworks/Message-Broker/RabbitMQ/RabbitMQ-Configuration.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -187,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗DataBase📗/Redis/Pub-Sub.md"
+                "file": "📗BackEnd📗/Frameworks/Message-Broker/RabbitMQ/RabbitMQ-Configuration.md"
               }
             }
           },
@@ -220,20 +219,21 @@
   },
   "active": "54daf708560774c3",
   "lastOpenFiles": [
+    "📗BackEnd📗/Frameworks/Message-Broker/RabbitMQ/RabbitMQ-Dead Letter Exchange-TTL.md",
+    "📗BackEnd📗/Frameworks/Message-Broker/RabbitMQ/On-Linux.md",
+    "📗BackEnd📗/Frameworks/Message-Broker/RabbitMQ/Summary.md",
+    "📗DataBase📗/Redis/Pub-Sub.md",
     "📗BackEnd📗/Frameworks/Spring/출입통제시스템.md",
     "📗BackEnd📗/Languages/Java/Multi-Threading/Basic.md",
     "📗BackEnd📗/Languages/Java/Multi-Threading",
     "imoji.md",
     "📗BackEnd📗/Frameworks/Spring/Reactive/ProjectReactor.md",
     "📗BackEnd📗/Frameworks/Spring/WebSocket.md",
-    "📗BackEnd📗/Frameworks/Message-Broker/RabbitMQ/Summary.md",
     "📗Computer-Science📗/공식.md",
     "📗BackEnd📗/Frameworks/Spring/Security/JWT & Sticky Session.md",
     "📗BackEnd📗/Frameworks/Spring/Kakao-Map-API.md",
     "📗BackEnd📗/Frameworks/Spring/Security/JWT Implements.md",
-    "📗DataBase📗/Redis/Pub-Sub.md",
     "📗FrontEnd📗/Frameworks/React/Basic-Summary.md",
-    "📗BackEnd📗/Frameworks/Message-Broker/RabbitMQ/On-Linux.md",
     "📗BackEnd📗/Frameworks/Spring/Settings/Memo - JPA.md",
     "FrontEnd/Frameworks/React/무제 파일.md",
     "📗BackEnd📗/Frameworks/Spring/Common-Exception.md",
@@ -246,7 +246,6 @@
     "📗DataBase📗/Redis/On-Linux.md",
     "📗DataBase📗/개념/SQL/Select.md",
     "📗DataBase📗/개념/SQL/Select Into & Insert Into Select.md",
-    "📗DataBase📗/개념/SQL/읽는 순서.md",
     "erlang-source.png",
     "📗DataBase📗/Redis",
     "📗Ops-Tools📗/MSA/Kubernetes",
