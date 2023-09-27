@@ -81,6 +81,12 @@ Thead Scheduling을 이해하기 위해 간단한 예시를 들어보죠.
 
 작업의 **도착 순서** & **실행 시간** 이 주어진다고 가정하면, 운영체재는 어떤 스레드를 가정 먼저 실행할까요?
 
+<br>
+
+> **Thread Scheduling 방식**
+
+**First Come, First Serve**
+
 
 ---
 
