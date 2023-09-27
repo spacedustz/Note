@@ -161,4 +161,14 @@ Thead Scheduling을 이해하기 위해 간단한 예시를 들어보죠.
 
 ---
 
-## ㅇ
+## 📘 Thread Creation with Runnable
+
+Runnable 인터페이
+
+---
+
+## 📘 Thread Debugging
+
+---
+
+## 📘 Thread Class Capabilities
