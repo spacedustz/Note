@@ -163,7 +163,9 @@ Thead Scheduling을 이해하기 위해 간단한 예시를 들어보죠.
 
 ## 📘 Thread Creation with Runnable
 
-Runnable 인터페이
+Runnable 인터페이스를 구현해 Multi-Threading을 구현합니다.
+
+
 
 ---
 
