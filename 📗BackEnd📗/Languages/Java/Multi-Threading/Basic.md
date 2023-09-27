@@ -85,9 +85,9 @@ Thead Scheduling을 이해하기 위해 간단한 예시를 들어보죠.
 
 <br>
 
-> 📌 **Thread Scheduling 방식**
+## 📘 Scheduling 방식
 
-**First Come, First Serve**
+> 📌 **First Come, First Serve**
 
 - 단순하게 **선착순**으로 스케줄을 짜면 어떨까요?
 - 우선 이 방식의 문제점은 실행시간이 긴 스레드가 먼저 도착하면 다른 스레드에 **기아 상태(Starvation)**가 발생합니다.
@@ -98,11 +98,14 @@ Thead Scheduling을 이해하기 위해 간단한 예시를 들어보죠.
 
 그럼 반대로 짧은 스레드인 UI 스레드를 먼저 실행한다면 어떨까요?
 
-**Shortest Job First**
+> 📌 **Shortest Job First**
 
 - 위의 상황과 정반대의 문제가 생깁니다.
 - 사용자 관련 이벤트가 항상 시스템에 존재하게 되고, 계산에 들어간 긴 작업들은 영원히 실행될 수 없습니다.
 
+<br>
+
+> 📌 
 
 ---
 
