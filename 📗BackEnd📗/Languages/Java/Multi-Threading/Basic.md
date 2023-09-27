@@ -1,4 +1,4 @@
-## 📘 Multi-Thread 내부 구조
+## 📘 Process 내부 구조
 
 운영체제에서 모든 프로그램은 실행을 하면 메모리로 올라와서 프로세스로 올려집니다.
 
@@ -16,12 +16,7 @@
 
 프로세스의 Stack, Instruction 부분만 제외하면 나머지 모든 스레드들이 MetaData, Data, Files, Code를 공유합니다.
 
-<br>
-
-
-**Responsiveness (응답성)**
-
-**Performance(성능)**
+- **Responsiveness (응답성)****Performance(성능)**
 
 **Concurrency (병행성)**
 
@@ -43,7 +38,7 @@
 
 > **Context Switch를 이해해야 하는 중요한 이유**
 
-동시에 많은 스레드를 다룰때는 효율성이 떨어지기 떄문입니다.
+동시에 많은 스레드를 다룰때는 효율성이 떨어지는데 이것이 동시성을 위한 대가입니다.
 
 <br>
 
