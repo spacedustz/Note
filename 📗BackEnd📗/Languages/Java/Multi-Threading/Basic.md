@@ -131,4 +131,8 @@ Thead Scheduling을 이해하기 위해 간단한 예시를 들어보죠.
 
 ---
 
-## Threads vs Processes
+## 📘 Threads vs Processes
+
+그럼 첫번째 멀티 스레드 어플리케이션 작업을 시작하기 전에 확인할 것은,
+
+하나의 프로그램에 멀티 스레드를 사용하는 시점과 새로 생성한 프로그램을 다른 프로셋
