@@ -16,7 +16,7 @@
 
 <br>
 
-프로세스의 Stack, Instruction 부분만 제외하면 나머지 모든 스레드들이 MetaData, Data, Files, Code를 공유합니다.
+프로세스의 Stack, Instruction 부분만 제외하면 나머지 모든 스레드들이 **MetaData, Data, Files, Code를 공유**합니다.
 
 ---
 
