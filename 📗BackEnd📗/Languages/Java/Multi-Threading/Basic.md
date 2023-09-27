@@ -16,10 +16,6 @@
 
 프로세스의 Stack, Instruction 부분만 제외하면 나머지 모든 스레드들이 MetaData, Data, Files, Code를 공유합니다.
 
-- **Responsiveness (응답성)**
-- **Performance(성능)**
-- **Concurrency (병행성)**
-
 ---
 
 ## 📘 Context Switching
@@ -54,8 +50,10 @@ CPU에서 실행되는 **각 스레드는 CPU 내의 레지스터나 캐시 메�
 
 ---
 
-## Thread Scheduling
+## 📘 Thread Scheduling
 
-<br>
+
+
+---
 
 ## Threads vs Processes
