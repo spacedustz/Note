@@ -117,7 +117,11 @@ Thead Scheduling을 이해하기 위해 간단한 예시를 들어보죠.
 
 > 📌 **Dynamic Priority = Static Priority + Bonus (Bonus can be Negative)**
 
-스레드에 시간을 할당하는 방법은
+스레드에 시간을 할당하는 방법은 운영체제가 각각의 스레드에 적용하는 Dynamic Priority에 달려 있습니다.
+
+**Static Priority**는 개발자가 미리 설정 가능하며, **Bonus**는 운영체제가 각각의 Epochs마다 조절합니다.
+
+
 
 ---
 
