@@ -16,9 +16,9 @@
 
 프로세스의 Stack, Instruction 부분만 제외하면 나머지 모든 스레드들이 MetaData, Data, Files, Code를 공유합니다.
 
-- **Responsiveness (응답성)****Performance(성능)**
-
-**Concurrency (병행성)**
+- **Responsiveness (응답성)**
+- **Performance(성능)**
+- **Concurrency (병행성)**
 
 ---
 
