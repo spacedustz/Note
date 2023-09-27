@@ -121,7 +121,11 @@ Thead Scheduling을 이해하기 위해 간단한 예시를 들어보죠.
 
 **Static Priority**는 개발자가 미리 설정 가능하며, **Bonus**는 운영체제가 각각의 Epochs마다 조절합니다.
 
+이렇게 하면 운영체제는 즉각적인 반응이 필요한 실시간 스레드나 Interactive 스레드에게 우선권을 주게 됩니다.
 
+<br>
+
+이와 동시에 **기아 상태(Starvation**를 방지하기 이
 
 ---
 
