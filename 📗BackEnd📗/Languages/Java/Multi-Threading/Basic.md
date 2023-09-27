@@ -105,11 +105,11 @@ Thead Scheduling을 이해하기 위해 간단한 예시를 들어보죠.
 
 <br>
 
-> 📌 **일반적인 운영체제에서의 Thread Scheduling 방식**
+> 📌 **일반적인 운영체제에서의 Thread Scheduling 방식** - Epochs
 
 일반적인 운영체제는 **Epochs**에 맟춰 시간을 적당한 크기로 나눕니다.
 
-
+그리고 스레드의 Time Slice를 종류별로 Epochs에 할당합니다.
 
 ---
 
