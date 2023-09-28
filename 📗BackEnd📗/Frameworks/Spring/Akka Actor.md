@@ -50,8 +50,16 @@ public class GreetingActor extends UntypedActor {
 	public void onReceive(Object message) throws Throwable {
 		if (message instanceof Greet) {
 			String name = ((Greet) message).getName();
-			getSender().tell(greetingService.greet(name), getSelf())
+			getSender().tell(greetingService.greet(name), getSelf());
+		} else {
+			unhandled(message);
 		}
+	}
+
+	@Getter
+	@AllArgsConstructor
+	public static class Greet {
+		private String name
 	}
 }
 ```
