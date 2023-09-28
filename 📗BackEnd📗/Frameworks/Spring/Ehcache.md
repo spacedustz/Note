@@ -196,3 +196,12 @@ public class EhcacheEventLogging implements CacheEventListener<Object, Object> {
         cacheEvent.getNewValue());  
   }   
 }
+```
+
+<br>
+
+> 캐싱 사용
+
+캐싱 하려는 함수에 `@Cacheable` 어노테이션을 달아줍니다.
+
+`@Cacheable`dml
