@@ -1,4 +1,4 @@
-## Akka Actor
+## 📘 Akka Actor
 
 Akka Actor는 동시성 모델을 기반으로 하는 어플리케이션 프레임워크 입니다.
 
@@ -35,7 +35,7 @@ implementation group: 'com.lightbend.akka', name: 'akka-stream-alpakka-amqp_2.13
 
 ---
 
-## Akka Actor에 Spring Bean 주입
+## 📘 Akka Actor에 Spring Bean 주입
 
 사람에게 인사를 보내서 사람의 이름을 대답할 수 있는 단일 Actor로 구성된 간단한 Spring/Akka App을 만들어 보겠습니다.
 
@@ -102,7 +102,7 @@ public class GreetingService {
 
 ---
 
-## Akka Extension을 통한 Spring Support
+## 📘 Akka Extension을 통한 Spring Support
 
 Spring을 Akka와 통합하는 가장 쉬운 방법은 Akka Extension을 사용하는 것입니다.
 
@@ -227,13 +227,15 @@ public class AppConfiguration {
 
 ---
 
-## 테스트
+## 📘 테스트
 
 잘 작동하는지 테스트하기 위해 ActorSystem 인스턴스를 코드에 삽입하고 Extension을 사용하여 Actor에 대한 Props 객체를 생성합니다.
 
 그리고, Actor에 대한 참조를 검색할 수 있습니다.
 
 <br>
+
+Props 객체를 통해 누군가에게 인사를 하려고 합니다.
 
 여기서 Scala의 Future 인스턴스를 반환하는 일반적인 `akka.pattern.Patterns.ask` 패턴을 사용합니다.
 
