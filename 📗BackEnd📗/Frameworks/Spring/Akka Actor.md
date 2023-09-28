@@ -233,6 +233,10 @@ public class AppConfiguration {
 
 그리고, Actor에 대한 참조를 검색할 수 있습니다.
 
+<br>
+
+여기서 Scala의 Future 인스턴스를 반환하는 일반적인 `akka.pattern.Patt`
+
 ```java
 ActorRef greeter = system.actorOf(SPRING_EXTENSION_PROVIDER
 																	.get(system)
@@ -241,5 +245,7 @@ ActorRef greeter = system.actorOf(SPRING_EXTENSION_PROVIDER
 FiniteDuration duration = FiniteDuration.create(1, TimeUnit.SECONDS);
 TimeOut timeout = Timeout.durationToTimeout(duration);
 
-Future<Objec
+Future<Object> result = ask(greeter, new Greet("Kim"), timeout);
+
+Assert.assertEquals("Hello, Kim", Await.result(result, duration));
 ```
