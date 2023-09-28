@@ -204,4 +204,8 @@ public class EhcacheEventLogging implements CacheEventListener<Object, Object> {
 
 캐싱 하려는 함수에 `@Cacheable` 어노테이션을 달아줍니다.
 
-`@Cacheable`dml
+`@Cacheable`의 인자로 `value`, `key`, `condition`을 지정할 수 있습니다.
+
+- value : ehcache.xml에서 등록했던 캐시 중 함수에 적용할 캐시의 이름 (alias 명)
+- key : 캐시를 구분하기 위한 용도, 만약 구분할 필요가 없으면 key는 생략해도 됩니다.
+- condition : 
