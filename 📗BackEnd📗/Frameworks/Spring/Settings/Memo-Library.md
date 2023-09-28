@@ -1,9 +1,6 @@
-## **💡 Library**
+# 📘 Dependencies
 
-```markdown
-# 📌 [ Dependencies ]
-***
-<br>
+---
 
 > ⭐ [H2]
 
@@ -201,7 +198,7 @@ from ("${asciidoctor.outputDir}") {  // [Asciidoctor로 생성되는 index.html�
 into 'static/docs'    
 }
 }
-```
+
 
 ```markdown
 # 📌 [ Configurations ]
