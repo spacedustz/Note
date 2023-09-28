@@ -234,5 +234,12 @@ public class AppConfiguration {
 그리고, Actor에 대한 참조를 검색할 수 있습니다.
 
 ```java
-ActorRef greeter = system.actorOf(SPRING_EXTENSION_PROVIDER.get(system).props("greetingActor"), "greeter");
+ActorRef greeter = system.actorOf(SPRING_EXTENSION_PROVIDER
+																	.get(system)
+																	.props("greetingActor"), "greeter");
+
+FiniteDuration duration = FiniteDuration.create(1, TimeUnit.SECONDS);
+TimeOut timeout = Timeout.durationToTimeout(duration);
+
+Future<Objec
 ```
