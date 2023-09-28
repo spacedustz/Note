@@ -198,9 +198,8 @@ public class EhcacheEventLogging implements CacheEventListener<Object, Object> {
 }
 ```
 
-<br>
-
-## 캐싱 사용
+---
+## 📘 Caching 적용
 
 캐싱 하려는 함수에 `@Cacheable` 어노테이션을 달아줍니다.
 
@@ -219,3 +218,12 @@ public BigDecimal square(Long number) {
 	return square;
 }
 ```
+
+<br>
+
+> **참고 1**
+
+ehcache3 는 캐싱할 데이터를 외부 메모리(offheap 혹은 disk)에 저장하기 위해서는, 
+
+저장할 데이터(객체 혹은 인스턴스)가 Serializable이 구현 되어 있어야 합니다.
+
