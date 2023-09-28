@@ -211,8 +211,14 @@ public class SpringActorProducer implements IndirectActorProducer {
 ```java
 @Configuration
 @ComponentScan
+@RequiredArgsConstructor
 public class AppConfiguration {
+	private final ApplicationContext applicationContext;
 
-
+	@Bean
+	public ActorSystem actorSystem() {
+		ActorSystem system = ActorSystem.create("akka-spring-demo");
+		SPRING_EXTENSION_PROVIDER.get(system)
+	}
 }
 ```
