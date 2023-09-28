@@ -45,5 +45,13 @@ implementation group: 'com.lightbend.akka', name: 'akka-stream-alpakka-amqp_2.13
 @RequiredConstructor
 public class GreetingActor extends UntypedActor {
 	private final GreetingService greetingService;
+
+	@Override
+	public void onReceive(Object message) throws Throwable {
+		if (message instanceof Greet) {
+			String name = ((Greet) message).getName();
+			getSender().tell(greetingService.greet(name), getSelf())
+		}
+	}
 }
 ```
