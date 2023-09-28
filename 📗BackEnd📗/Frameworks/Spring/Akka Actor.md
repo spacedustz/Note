@@ -41,7 +41,11 @@ implementation group: 'com.lightbend.akka', name: 'akka-stream-alpakka-amqp_2.13
 
 모든 Akka Actor의 `onReceive` 함수는 메시지를 수신하고 지정된 로직에 따라 처리합니다.
 
-아래 예시 코드와 같은 경우, 
+아래 예시 코드와 같은 경우, Greet 메시지가 미리 정의된 Greet 타입인지 확인 후,
+
+다음 Greet 인스턴스에서 사람의 이름을 가져오고 GreetingService를 이용하여 이 사람에 대한 인사말을 받습니다.
+
+인사말을 받고 보낸 사람에게 다시
 
 ```java
 @Component
