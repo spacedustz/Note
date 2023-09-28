@@ -151,3 +151,20 @@ implementation 'javax.cache:cache-api:1.1.1' // expiry 기능을 위해 필요 (
   </cache>  
 </config>
 ```
+
+<br>
+
+**Java Class**
+
+```java
+@Slf4j  
+public class EhcacheEventLogging implements CacheEventListener<Object, Object> {  
+
+  @Override  
+  public void onEvent(CacheEvent<?, ?> cacheEvent) {  
+    log.debug("Key:[{}]|EventType:[{}]|OLD:[{}]|New:[{}]",  
+        cacheEvent.getKey(), cacheEvent.getType(), cacheEvent.getOldValue(),  
+        cacheEvent.getNewValue());  
+  }   
+}
+```
