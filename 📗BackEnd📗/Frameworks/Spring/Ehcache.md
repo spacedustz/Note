@@ -208,4 +208,16 @@ public class EhcacheEventLogging implements CacheEventListener<Object, Object> {
 
 - value : ehcache.xml에서 등록했던 캐시 중 함수에 적용할 캐시의 이름 (alias 명)
 - key : 캐시를 구분하기 위한 용도, 만약 구분할 필요가 없으면 key는 생략해도 됩니다.
-- condition : 
+- condition : 캐리 처리에 대한 조건 지정, 예를 들어 `""#number > 10"`로 지정하면 파라미터인 number가 10 보다 큰 경우만 캐리 처리를 한다는 의미입니다.
+
+
+```java
+|   |
+|---|
+|@Cacheable(value = "squareCache", key = "#number", condition = "#number > 10")|
+||public BigDecimal square(Long number) {|
+||BigDecimal square = BigDecimal.valueOf(number).multiply(BigDecimal.valueOf(number));|
+||log.info("square of {} is {}", number, square);|
+||return square;|
+||}|
+```
