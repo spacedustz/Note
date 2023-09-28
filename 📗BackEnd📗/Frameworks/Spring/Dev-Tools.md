@@ -41,7 +41,7 @@ spring:
 
 **IDE Settings**
 
-IntellJ - Edit Configuration - 
+IntellJ - Edit Configuration - Modify Options - On Update Opt
 
 <br>
 
