@@ -59,7 +59,11 @@ implementation 'javax.cache:cache-api:1.1.1' // expiry 기능을 위해 필요 (
 
 > Listener
 
- 캐시가 생성되고 삭제되고 하는 이벤트를 모니터링 하고 싶으면 org.ehcache.event.CacheEventListener 를 구현하는 클래스를 만들어서 설정 (태그 순서가 중요)
+이벤트 리스너를 정의하는 요소입니다. 
+
+지정된 이벤트가 발생할 때 호출될 클래스와 실행 모드 등을 설정할 수 있습니다.
+
+캐시가 생성되고 삭제되고 하는 이벤트를 모니터링 하고 싶으면 `org.ehcache.event.CacheEventListener` 를 구현하는 클래스를 만들어서 설정합니다. (태그 순서가 중요)
 
 <br>
 
