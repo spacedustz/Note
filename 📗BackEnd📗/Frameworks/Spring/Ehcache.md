@@ -176,5 +176,21 @@ public class EhcacheEventLogging implements CacheEventListener<Object, Object> {
 **application.yml**
 
 ```yaml
-spring
+spring:
+	cache:
+		jcache:
+			config: classpath:ehcache.xml
+```
+
+<br>
+
+**Main Application**
+
+```java
+@EnableCaching
+@SpringBootApplication
+public class Application {
+	public static void main(String[] args) {
+	SpringA}
+}
 ```
