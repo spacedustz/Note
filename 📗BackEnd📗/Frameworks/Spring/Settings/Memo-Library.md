@@ -164,6 +164,22 @@ implementation 'javax.cache:cache-api:1.1.1' // expiry 기능을 위해 필요
 
 <br>
 
+> [Maria DB]
+
+runtimeOnly 'org.mariadb.jdbc:mariadb-java-client'
+
+<br>
+
+> [쿼리 파라미터 로그 생성 라이브러리]
+
+implementation 'com.github.gavlyukovskiy:p6spy-spring-boot-starter:1.9.0'
+
+<br>
+
+
+
+<br>
+
 > ⭐ [Spring Rest Docs]
 
 // [플러그인 추가]
