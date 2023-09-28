@@ -235,7 +235,11 @@ public class AppConfiguration {
 
 <br>
 
-여기서 Scala의 Future 인스턴스를 반환하는 일반적인 `akka.pattern.Patt`
+여기서 Scala의 Future 인스턴스를 반환하는 일반적인 `akka.pattern.Patterns.ask` 패턴을 사용합니다.
+
+계산이 완료되면 Future는 GreetingActor.onMessage()에서 반환된 값으로 해결합니다.
+
+Scala의 Await.reslut()를 Future에 적용하여 결과를 기다리거나, 비동기 패턴으로 전체 어플리케이션을 빌드할 수 있습니다.
 
 ```java
 ActorRef greeter = system.actorOf(SPRING_EXTENSION_PROVIDER
