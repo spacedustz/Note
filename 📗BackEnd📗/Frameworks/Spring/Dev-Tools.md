@@ -15,5 +15,16 @@
 
 ## 적용
 
+**IDE Settings**
+
 - IntelliJ - Settings - Advanced Settings - Compiler 부분에 Allow auto-make to start even ... 부분 체크
-- IntelliJ - Settings - Build, Execution - Compiler - Buil
+- IntelliJ - Settings - Build, Execution - Compiler - Builld Project automatically 체크
+
+<br>
+
+**Yaml 파일**
+
+```yaml
+spring:
+	devtools
+```
