@@ -202,4 +202,17 @@ public class SpringActorProducer implements IndirectActorProducer {
 
 <br>
 
-이제 남은 할일은 Spring에 모든 중첩된 패키지와 함께 현재 ㅍ
+이제 남은 할일은 Spring에 모든 중첩된 패키지와 함께 현재 패키지를 스캔하도록 지시하는 Spring Configuration을 작성합니다.
+
+그리고, Spring 컨테이너를 생성해 하나의 추가 Bean(ActorSystem Instance)을 추가하고,
+
+이 ActorSystem에서 Spring Extension을 초기화하기만 하면 됩니다.
+
+```java
+@Configuration
+@ComponentScan
+public class AppConfiguration {
+
+
+}
+```
