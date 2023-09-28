@@ -170,7 +170,13 @@ public class SpringExtension extends AbstractExtensionId<SpringExtension.SpringE
 
 **SpringActorProducer**
 
-Akka의 IndirectActorProducer 인터페이스를 구현하여 생성한 이 클래스는 Ac
+Akka의 IndirectActorProducer 인터페이스를 구현하여 생성한 이 클래스는 actorClass()를 구현하여,
+
+Actor의 인스턴스화 프로세스를 재정의 할 수 있습니다.
+
+즉, 직접 인스턴스화 하는 대신 항상 Spring의 ApplicationContext에서 Actor Instance를 검색하게 합니다.
+
+Actor Bean을 Scope를 ProtoType 
 
 ```java
 
