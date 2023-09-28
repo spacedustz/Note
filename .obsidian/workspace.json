@@ -73,7 +73,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/Basic.md",
+                "file": "📗BackEnd📗/Frameworks/Spring/Spring Batch.md",
                 "mode": "source",
                 "source": false
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/Basic.md",
+                "file": "📗BackEnd📗/Frameworks/Spring/Spring Batch.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/Basic.md",
+                "file": "📗BackEnd📗/Frameworks/Spring/Spring Batch.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/Basic.md"
+                "file": "📗BackEnd📗/Frameworks/Spring/Spring Batch.md"
               }
             }
           },
@@ -219,8 +219,8 @@
   },
   "active": "54daf708560774c3",
   "lastOpenFiles": [
-    "📗BackEnd📗/Languages/Java/Multi-Threading/구현-1.md",
     "📗BackEnd📗/Languages/Java/Multi-Threading/Basic.md",
+    "📗BackEnd📗/Languages/Java/Multi-Threading/구현-1.md",
     "imoji.md",
     "📗BackEnd📗/Frameworks/Spring/출입통제시스템.md",
     "📗BackEnd📗/Frameworks/Message-Broker/RabbitMQ/Summary.md",
