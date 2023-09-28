@@ -45,7 +45,9 @@ implementation group: 'com.lightbend.akka', name: 'akka-stream-alpakka-amqp_2.13
 
 다음 Greet 인스턴스에서 사람의 이름을 가져오고 GreetingService를 이용하여 이 사람에 대한 인사말을 받습니다.
 
-인사말을 받고 보낸 사람에게 다시
+인사말을 받고 보낸 사람에게 다시 인사말 문자열로 응답합니다.
+
+이때 메시지가 알수 없는 다른 유형인 경우, unhandled로 메시지가 전달됩니다.
 
 ```java
 @Component
