@@ -39,9 +39,22 @@ Maven Dependency로 가져오는 방법을 선택하겠습니다.
 
 <br>
 
+**build.gradle**
+
 ```groovy
 implementation 'org.springframework.boot:spring-boot-starter-cache'  
 implementation 'org.ehcache:ehcache:3.10.8'  
 implementation 'javax.cache:cache-api:1.1.1' // expiry 기능을 위해 필요 (JSR-107 API)
 ```
 
+<br>
+
+**ehcache.xml**
+
+이제 캐시에 대해 어떻게 처리할 것인지 정의하기 위해 `ehcache.xml`파일을 작성합니다.
+
+파일의 위치는 프로젝트 내 `resources` 디렉터리 하위에 위치해야 합니다.
+
+```xml
+
+```
