@@ -13,4 +13,7 @@
 
 <br>
 
-##
+## 적용
+
+- IntelliJ - Settings - Advanced Settings - Compiler 부분에 Allow auto-make to start even ... 부분 체크
+- IntelliJ - Settings - Build, Execution - Compiler - Buil
