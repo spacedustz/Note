@@ -73,7 +73,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📗BackEnd📗/Frameworks/Spring/Spring Batch.md",
+                "file": "📗BackEnd📗/Frameworks/Spring/Spring Batch-Kotlin.md",
                 "mode": "source",
                 "source": false
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗BackEnd📗/Frameworks/Spring/Spring Batch.md",
+                "file": "📗BackEnd📗/Frameworks/Spring/Spring Batch-Kotlin.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗BackEnd📗/Frameworks/Spring/Spring Batch.md",
+                "file": "📗BackEnd📗/Frameworks/Spring/Spring Batch-Kotlin.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗BackEnd📗/Frameworks/Spring/Spring Batch.md"
+                "file": "📗BackEnd📗/Frameworks/Spring/Spring Batch-Kotlin.md"
               }
             }
           },
