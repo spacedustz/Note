@@ -78,9 +78,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "28237efcbc88c573",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📗BackEnd📗/Frameworks/Spring/Ehcache.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -217,7 +229,7 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "54daf708560774c3",
+  "active": "28237efcbc88c573",
   "lastOpenFiles": [
     "📗BackEnd📗/Frameworks/Spring/Settings/Memo-Library.md",
     "📗BackEnd📗/Frameworks/Spring/Ehcache.md",
