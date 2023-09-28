@@ -218,7 +218,15 @@ public class AppConfiguration {
 	@Bean
 	public ActorSystem actorSystem() {
 		ActorSystem system = ActorSystem.create("akka-spring-demo");
-		SPRING_EXTENSION_PROVIDER.get(system)
+		SPRING_EXTENSION_PROVIDER.get(system).initialize(applicationContext);
+
+		return system;
 	}
 }
 ```
+
+---
+
+## 테스트
+
+잘 작동하는지 테스트하기 위해 ActorSystem 인스턴스를 코드에 삽입하고 Extension을 사
