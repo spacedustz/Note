@@ -73,7 +73,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📗BackEnd📗/Frameworks/Spring/Settings/Memo-Library.md",
+                "file": "📗BackEnd📗/Frameworks/Spring/LogTracer/LogTracer V1.md",
                 "mode": "source",
                 "source": false
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗BackEnd📗/Frameworks/Spring/Settings/Memo-Library.md",
+                "file": "📗BackEnd📗/Frameworks/Spring/LogTracer/LogTracer V1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗BackEnd📗/Frameworks/Spring/Settings/Memo-Library.md",
+                "file": "📗BackEnd📗/Frameworks/Spring/LogTracer/LogTracer V1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗BackEnd📗/Frameworks/Spring/Settings/Memo-Library.md"
+                "file": "📗BackEnd📗/Frameworks/Spring/LogTracer/LogTracer V1.md"
               }
             }
           },
@@ -219,8 +219,9 @@
   },
   "active": "54daf708560774c3",
   "lastOpenFiles": [
-    "imoji.md",
+    "📗BackEnd📗/Frameworks/Spring/MQTT.md",
     "📗BackEnd📗/Frameworks/Spring/Settings/Memo-Library.md",
+    "imoji.md",
     "📗BackEnd📗/Frameworks/Spring/Settings/Memo-Spring.md",
     "📗BackEnd📗/Frameworks/Spring/WebSocket.md",
     "📗BackEnd📗/Frameworks/Spring/Spring Batch-Kotlin.md",
@@ -243,7 +244,6 @@
     "FrontEnd/Frameworks/React/무제 파일.md",
     "📗BackEnd📗/Frameworks/Spring/Common-Exception.md",
     "📗BackEnd📗/Frameworks/Message-Broker/RabbitMQ/Clustering.md",
-    "📗BackEnd📗/Frameworks/Spring/MQTT.md",
     "📗FrontEnd📗/Frameworks/React/React-Query.md",
     "📗FrontEnd📗/Frameworks/React/Zustand-상태관리.md",
     "erlang-source.png",
