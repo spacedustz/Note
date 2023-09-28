@@ -55,6 +55,16 @@ implementation 'javax.cache:cache-api:1.1.1' // expiry 기능을 위해 필요 (
 
 파일의 위치는 프로젝트 내 `resources` 디렉터리 하위에 위치해야 합니다.
 
+<br>
+
+> Listener
+
+ 캐시가 생성되고 삭제되고 하는 이벤트를 모니터링 하고 싶으면 org.ehcache.event.CacheEventListener 를 구현하는 클래스를 만들어서 설정 (태그 순서가 중요)
+
+<br>
+
+> d
+
 ```xml
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
   xmlns="http://www.ehcache.org/v3"  
