@@ -193,5 +193,13 @@ public class SpringActorProducer implements IndirectActorProducer {
 		return (Actor) applicationContext.getBean(beanActorName);
 	}
 
+	@Override
+	public Class<? extends Actor> actorClass() {
+		return (Class<? extends Actor>) applicationContext.getType(beanActorName);
+	}
 }
 ```
+
+<br>
+
+이제 남은 할일은 Spring에 모든 중첩된 패키지와 함께 현재 ㅍ
