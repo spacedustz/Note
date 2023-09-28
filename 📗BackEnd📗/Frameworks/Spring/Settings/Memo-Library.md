@@ -209,6 +209,8 @@ implementation group:'org.springframework.cloud', name: 'spring-cloud-starter-st
 > ⭐ [Akka FrameWork]
 
 implementation group: 'com.typesafe.akka', name: 'akka-actor_3', version: '2.8.0'
+implementation group: 'com.typesafe.akka', name: 'akka-stream_2.13', version: '2.8.0' // Akka Streams
+implementation group: 'com.lightbend.akka', name: 'akka-stream-alpakka-amqp_2.13', version: '6.0.2' // Akka Streams Alpakka
 
 <br>
 
