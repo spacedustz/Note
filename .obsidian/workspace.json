@@ -73,7 +73,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📗BackEnd📗/Frameworks/Spring/Spring Batch-Kotlin.md",
+                "file": "📗BackEnd📗/Frameworks/Spring/WebSocket.md",
                 "mode": "source",
                 "source": false
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗BackEnd📗/Frameworks/Spring/Spring Batch-Kotlin.md",
+                "file": "📗BackEnd📗/Frameworks/Spring/WebSocket.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗BackEnd📗/Frameworks/Spring/Spring Batch-Kotlin.md",
+                "file": "📗BackEnd📗/Frameworks/Spring/WebSocket.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗BackEnd📗/Frameworks/Spring/Spring Batch-Kotlin.md"
+                "file": "📗BackEnd📗/Frameworks/Spring/WebSocket.md"
               }
             }
           },
@@ -219,6 +219,7 @@
   },
   "active": "54daf708560774c3",
   "lastOpenFiles": [
+    "📗BackEnd📗/Frameworks/Spring/Spring Batch-Kotlin.md",
     "📗BackEnd📗/Languages/Java/Multi-Threading/Basic.md",
     "📗BackEnd📗/Languages/Java/Multi-Threading/구현-1.md",
     "imoji.md",
@@ -245,7 +246,6 @@
     "📗FrontEnd📗/Frameworks/React/Zustand-상태관리.md",
     "📗FrontEnd📗/Frameworks/React/Styled-Component.md",
     "📗BackEnd📗/Languages/Java/Basic/IO.md",
-    "📗DataBase📗/Redis/On-Linux.md",
     "erlang-source.png",
     "📗DataBase📗/Redis",
     "📗Ops-Tools📗/MSA/Kubernetes",
