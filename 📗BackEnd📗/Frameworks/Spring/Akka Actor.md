@@ -229,4 +229,10 @@ public class AppConfiguration {
 
 ## 테스트
 
-잘 작동하는지 테스트하기 위해 ActorSystem 인스턴스를 코드에 삽입하고 Extension을 사
+잘 작동하는지 테스트하기 위해 ActorSystem 인스턴스를 코드에 삽입하고 Extension을 사용하여 Actor에 대한 Props 객체를 생성합니다.
+
+그리고, Actor에 대한 참조를 검색할 수 있습니다.
+
+```java
+ActorRef greeter = system.actorOf(SPRING_EXTENSION_PROVIDER.get(system).props("greetingActor"), "greeter");
+```
