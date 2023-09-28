@@ -150,6 +150,20 @@ runtimeOnly 'io.r2dbc:r2dbc-h2'
 
 <br>
 
+> [Dev Tools]
+
+developmentOnly 'org.springframework.boot:spring-boot-devtools'
+
+<br>
+
+> [EhCache]
+
+implementation 'org.springframework.boot:spring-boot-starter-cache'  
+implementation 'org.ehcache:ehcache:3.10.8'  
+implementation 'javax.cache:cache-api:1.1.1' // expiry 기능을 위해 필요
+
+<br>
+
 > ⭐ [Spring Rest Docs]
 
 // [플러그인 추가]
@@ -200,18 +214,5 @@ bootJar {
 dependsOn copyDocument    // [:bootJar 실행 전, :copyDocument 가 선행되도록 의존설정]
 from ("${asciidoctor.outputDir}") {  // [Asciidoctor로 생성되는 index.html을 Jar에 추가]
 into 'static/docs'    
+	}
 }
-}
-
-
-```markdown
-# 📌 [ Configurations ]
-***
-<br>
-
-> ⭐ [Lombok]
-
-compileOnly {
-extendsFrom annotationProcessor
-}
-```
