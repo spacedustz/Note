@@ -14,4 +14,10 @@ redis나 memcached같은 캐시 엔진들도 있지만,
 
 <br>
 
-Ehcache의 2.
+Ehcache의 2.x 버전과 3 버전의 차이는 큽니다.
+
+3 버전 부터는 javax.cache API(JSR-107)와의 호환성을 제공합니다. 따라서 표준을 기반으로 만들어 졌습니다.
+
+또, 3 버전에서는 **offheap**이라는 저장 공간을 제공합니다.
+
+**offheap**이란 말 그대로 힙 메모리를 벗어난 메모리로 Java GC
