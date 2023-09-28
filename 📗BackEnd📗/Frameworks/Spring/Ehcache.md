@@ -32,4 +32,10 @@ Ehcache의 2.x 버전과 3 버전의 차이는 큽니다.
 
 Ehcache를 사용하는 방법엔 여러가지가 있습니다.
 
-- Github에서 직접 ㅓ
+- Github에서 직접 jar를 받아 import 하기
+- Maven Central 에서 Dependency 가져오기
+
+Maven Dependency로 가져오는 방법을 선택하겠습니다.
+
+<br>
+
