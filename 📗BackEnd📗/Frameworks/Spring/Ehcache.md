@@ -154,25 +154,6 @@ implementation 'javax.cache:cache-api:1.1.1' // expiry 기능을 위해 필요 (
 
 <br>
 
-**Java Class**
-
-이벤트 발생 시 로그를 생성하는 클래스
-
-```java
-@Slf4j  
-public class EhcacheEventLogging implements CacheEventListener<Object, Object> {  
-
-  @Override  
-  public void onEvent(CacheEvent<?, ?> cacheEvent) {  
-    log.debug("Key:[{}]|EventType:[{}]|OLD:[{}]|New:[{}]",  
-        cacheEvent.getKey(), cacheEvent.getType(), cacheEvent.getOldValue(),  
-        cacheEvent.getNewValue());  
-  }   
-}
-```
-
-<br>
-
 **application.yml**
 
 ```yaml
@@ -191,6 +172,25 @@ spring:
 @SpringBootApplication
 public class Application {
 	public static void main(String[] args) {
-	SpringA}
+		SpringApplication.run(Applicaton.class, args);
+	}
 }
 ```
+
+<br>
+
+**EhcacheEventLogging**
+
+이벤트 발생 시 로그를 생성하는 클래스
+
+```java
+@Slf4j  
+public class EhcacheEventLogging implements CacheEventListener<Object, Object> {  
+
+  @Override  
+  public void onEvent(CacheEvent<?, ?> cacheEvent) {  
+    log.debug("Key:[{}]|EventType:[{}]|OLD:[{}]|New:[{}]",  
+        cacheEvent.getKey(), cacheEvent.getType(), cacheEvent.getOldValue(),  
+        cacheEvent.getNewValue());  
+  }   
+}
