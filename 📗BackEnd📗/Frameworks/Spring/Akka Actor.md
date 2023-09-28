@@ -39,6 +39,8 @@ implementation group: 'com.lightbend.akka', name: 'akka-stream-alpakka-amqp_2.13
 
 사람에게 인사를 보내서 사람의 이름을 대답할 수 있는 단일 Actor로 구성된 간단한 Spring/Akka App을 만들어 보겠습니다.
 
+<br>
+
 모든 Akka Actor의 `onReceive` 함수는 메시지를 수신하고 지정된 로직에 따라 처리합니다.
 
 아래 예시 코드와 같은 경우, Greet 메시지가 미리 정의된 Greet 타입인지 확인 후,
@@ -48,6 +50,10 @@ implementation group: 'com.lightbend.akka', name: 'akka-stream-alpakka-amqp_2.13
 인사말을 받고 보낸 사람에게 다시 인사말 문자열로 응답합니다.
 
 이때 메시지가 알수 없는 다른 유형인 경우, unhandled로 메시지가 전달됩니다.
+
+<br>
+
+또, 
 
 ```java
 @Component
