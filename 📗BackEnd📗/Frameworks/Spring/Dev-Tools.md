@@ -24,7 +24,13 @@
 
 **Yaml 파일**
 
+- spring.devtools.restart.enabled  # Automatic Restart 사용 여부  
+- spring.devtools.restart.additional-exclude # Automatic Restart 내에서 제외할 파일 경로
+
 ```yaml
 spring:
-	devtools
+	devtools:
+		restart:
+			enabled: true
+			additional-exclude: static/**, public/**
 ```
