@@ -119,7 +119,7 @@ implementation 'javax.cache:cache-api:1.1.1' // expiry 기능을 위해 필요 (
     </expiry>  
     <listeners>  
         <listener>  
-            <class>co.kr.dains.crowd.estimation.common.util.EhcacheEventLogging</class>  
+            <class>{프로젝트 패키직 경로 + class 명}</class>  
             <event-firing-mode>ASYNCHRONOUS</event-firing-mode>  
             <event-ordering-mode>UNORDERED</event-ordering-mode>  
             <events-to-fire-on>CREATED</events-to-fire-on>  
