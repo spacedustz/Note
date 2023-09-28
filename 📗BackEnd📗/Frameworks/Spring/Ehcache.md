@@ -181,7 +181,9 @@ public class Application {
 
 **EhcacheEventLogging**
 
-이벤트 발생 시 로그를 생성하는 클래스
+이벤트 발생 시 로그를 생성하는 클래스입니다.
+
+캐싱 처리가 되면 이 클래스 내부의 onEvent() 함수가 호출되면서 로그가 찍힐겁니다.
 
 ```java
 @Slf4j  
