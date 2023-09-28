@@ -88,6 +88,8 @@ public class GreetingActor extends UntypedActor {
 
 **GreetingService**
 
+Service의 구현은 매우 간단하게 @Component를 통해 Spring 관리 Bean으로 정의했습니다. (기본 싱글톤 범위)
+
 ```java
 @Component
 public class GreetingService {
@@ -97,3 +99,7 @@ public class GreetingService {
 	}
 }
 ```
+
+---
+
+## Akka Extension을 통한 Spring Supo
