@@ -85,7 +85,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/Basic.md",
+                "file": "📗BackEnd📗/Frameworks/Spring/Settings/Memo-Library.md",
                 "mode": "source",
                 "source": false
               }
@@ -158,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/Basic.md",
+                "file": "📗BackEnd📗/Frameworks/Spring/Settings/Memo-Library.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/Basic.md",
+                "file": "📗BackEnd📗/Frameworks/Spring/Settings/Memo-Library.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -198,7 +198,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/Basic.md"
+                "file": "📗BackEnd📗/Frameworks/Spring/Settings/Memo-Library.md"
               }
             }
           },
@@ -231,8 +231,9 @@
   },
   "active": "28237efcbc88c573",
   "lastOpenFiles": [
-    "📗BackEnd📗/Languages/Java/Multi-Threading/구현-1.md",
+    "📗BackEnd📗/Frameworks/Spring/Settings/Memo - Yaml.md",
     "📗BackEnd📗/Languages/Java/Multi-Threading/Basic.md",
+    "📗BackEnd📗/Languages/Java/Multi-Threading/구현-1.md",
     "📗BackEnd📗/Frameworks/Spring/Ehcache & Devtools.md",
     "📗BackEnd📗/Frameworks/Spring/Dev-Tools.md",
     "📗BackEnd📗/Frameworks/Spring/Settings/Memo-Library.md",
@@ -257,7 +258,6 @@
     "📗FrontEnd📗/Frameworks/React/Basic-Summary.md",
     "📗BackEnd📗/Frameworks/Spring/Settings/Memo - JPA.md",
     "FrontEnd/Frameworks/React/무제 파일.md",
-    "📗BackEnd📗/Frameworks/Spring/Common-Exception.md",
     "erlang-source.png",
     "📗DataBase📗/Redis",
     "📗Ops-Tools📗/MSA/Kubernetes",
