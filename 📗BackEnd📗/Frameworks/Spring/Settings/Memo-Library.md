@@ -10,6 +10,10 @@ runtimeOnly 'com.h2database:h2'
 
 > ⭐ [Lombok]
 
+compileOnly {
+extendsFrom annotationProcessor
+}
+
 compileOnly 'org.projectlombok:lombok'
 annotationProcessor 'org.projectlombok:lombok'
 testCompileOnly 'org.projectlombok:lombok'
