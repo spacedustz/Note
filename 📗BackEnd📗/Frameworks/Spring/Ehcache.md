@@ -60,10 +60,24 @@ implementation 'javax.cache:cache-api:1.1.1' // expiry 기능을 위해 필요 (
   xmlns="http://www.ehcache.org/v3"  
   xsi:schemaLocation="http://www.ehcache.org/v3  
   http://www.ehcache.org/schema/ehcache-core-3.10.xsd">  
+  
   <!--    <persistence directory="${java.io.tmpdir}"/>-->  
   <!--  <cache-template name="template">-->  
   <!--    캐시가 생성되고 삭제되고 하는 이벤트를 모니터링 하고 싶으면 org.ehcache.event.CacheEventListener 를 구현하는 클래스를 만들어서 설정 (태그 순서가 중요)-->  
-  <!--    <listeners>-->  <!--        <listener>-->  <!--            <class>sample.CacheEventLogger</class>-->  <!--            <event-firing-mode>ASYNCHRONOUS</event-firing-mode>-->  <!--            <event-ordering-mode>UNORDERED</event-ordering-mode>-->  <!--            <events-to-fire-on>CREATED</events-to-fire-on>-->  <!--            <events-to-fire-on>EVICTED</events-to-fire-on>-->  <!--            <events-to-fire-on>REMOVED</events-to-fire-on>-->  <!--            <events-to-fire-on>UPDATED</events-to-fire-on>-->  <!--            <events-to-fire-on>EXPIRED</events-to-fire-on>-->  <!--        </listener>-->  <!--    </listeners>-->  <!--  </cache-template>-->  
+  <!--    <listeners>-->  
+  <!--        <listener>-->  
+  <!--            <class>sample.CacheEventLogger</class>-->  
+  <!--            <event-firing-mode>ASYNCHRONOUS</event-firing-mode>--> 
+  <!--            <event-ordering-mode>UNORDERED</event-ordering-mode>-->  
+  <!--            <events-to-fire-on>CREATED</events-to-fire-on>-->  
+  <!--            <events-to-fire-on>EVICTED</events-to-fire-on>-->  
+  <!--            <events-to-fire-on>REMOVED</events-to-fire-on>-->  
+  <!--            <events-to-fire-on>UPDATED</events-to-fire-on>-->  
+  <!--            <events-to-fire-on>EXPIRED</events-to-fire-on>--> 
+  <!--        </listener>-->  
+  <!--    </listeners>-->  
+  <!--  </cache-template>-->
+  
   <cache-template name="defaultTemplate">  
     <expiry>  
       <ttl unit="seconds">600</ttl>  
