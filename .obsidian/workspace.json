@@ -85,7 +85,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📗BackEnd📗/Frameworks/Spring/Ehcache & Devtools.md",
+                "file": "📗BackEnd📗/Frameworks/Spring/Akka Actor.md",
                 "mode": "source",
                 "source": false
               }
@@ -158,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗BackEnd📗/Frameworks/Spring/Ehcache & Devtools.md",
+                "file": "📗BackEnd📗/Frameworks/Spring/Akka Actor.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗BackEnd📗/Frameworks/Spring/Ehcache & Devtools.md",
+                "file": "📗BackEnd📗/Frameworks/Spring/Akka Actor.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -198,7 +198,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗BackEnd📗/Frameworks/Spring/Ehcache & Devtools.md"
+                "file": "📗BackEnd📗/Frameworks/Spring/Akka Actor.md"
               }
             }
           },
@@ -231,13 +231,13 @@
   },
   "active": "28237efcbc88c573",
   "lastOpenFiles": [
+    "📗BackEnd📗/Frameworks/Spring/Ehcache & Devtools.md",
     "📗BackEnd📗/Frameworks/Spring/Akka Actor.md",
     "imoji.md",
     "📗BackEnd📗/Frameworks/Spring/Settings/Memo-Library.md",
     "📗BackEnd📗/Frameworks/Spring/Settings/Memo - Yaml.md",
     "📗BackEnd📗/Languages/Java/Multi-Threading/Basic.md",
     "📗BackEnd📗/Languages/Java/Multi-Threading/구현-1.md",
-    "📗BackEnd📗/Frameworks/Spring/Ehcache & Devtools.md",
     "📗BackEnd📗/Frameworks/Spring/Dev-Tools.md",
     "📗BackEnd📗/Frameworks/Spring/MQTT.md",
     "📗BackEnd📗/Frameworks/Spring/LogTracer/LogTracer V1.md",

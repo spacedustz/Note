@@ -64,7 +64,7 @@ implementation group: 'com.lightbend.akka', name: 'akka-stream-alpakka-amqp_2.13
 @Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
 @RequiredArgsConstroutor
 public class GreetingActor extends UntypedActor {
-	private GreetingService greetingService;
+	private final GreetingService greetingService;
 
 	@Override
 	public void onReceive(Object message) throws Throwable {
@@ -185,7 +185,7 @@ Actor Bean의 Scope를 ProtoType 으로 만들었으므로, 생성자를 호출�
 ```java
 @RequiredArgsConstructor
 public class SpringActorProducer implements IndirectActorProducer {
-	private ApplicationContext applicationContext;
+	private final ApplicationContext applicationContext;
 	private String beanActorName;
 
 	@Override
