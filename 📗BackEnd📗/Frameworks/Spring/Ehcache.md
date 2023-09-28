@@ -39,3 +39,9 @@ Maven Dependency로 가져오는 방법을 선택하겠습니다.
 
 <br>
 
+```groovy
+implementation 'org.springframework.boot:spring-boot-starter-cache'  
+implementation 'org.ehcache:ehcache:3.10.8'  
+implementation 'javax.cache:cache-api:1.1.1' // expiry 기능을 위해 필요 (JSR-107 API)
+```
+
