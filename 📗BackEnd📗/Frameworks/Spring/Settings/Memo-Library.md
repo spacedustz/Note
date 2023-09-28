@@ -200,6 +200,18 @@ implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', ve
 
 <br>
 
+> [Spring Clout Stream Rabbit]
+
+implementation group:'org.springframework.cloud', name: 'spring-cloud-starter-stream-rabbit', version: '4.0.4'
+
+<br>
+
+> ⭐ [Akka FrameWork]
+
+implementation group: 'com.typesafe.akka', name: 'akka-actor_3', version: '2.8.0'
+
+<br>
+
 > ⭐ [Spring Rest Docs]
 
 // [플러그인 추가]
