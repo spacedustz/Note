@@ -123,7 +123,15 @@ public class SpringExtension extends AbstractExtensionId<SpringExtension.SpringE
 	}
 
 	public static class SpringExt implements Extension {
-		private 
+		private volatile ApplicationContext applicationContext;
+
+		public void initialize(ApplicationContext applicationContext) {
+			this.applicationContext = applicationContext;
+		}
+
+		public Props props(String actorBeanName) {
+			return Props.create()
+		}
 	}
 }
 ```
