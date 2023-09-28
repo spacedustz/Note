@@ -73,7 +73,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📗BackEnd📗/Frameworks/Spring/WebSocket.md",
+                "file": "📗BackEnd📗/Frameworks/Spring/Settings/Memo-Library.md",
                 "mode": "source",
                 "source": false
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗BackEnd📗/Frameworks/Spring/WebSocket.md",
+                "file": "📗BackEnd📗/Frameworks/Spring/Settings/Memo-Library.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗BackEnd📗/Frameworks/Spring/WebSocket.md",
+                "file": "📗BackEnd📗/Frameworks/Spring/Settings/Memo-Library.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗BackEnd📗/Frameworks/Spring/WebSocket.md"
+                "file": "📗BackEnd📗/Frameworks/Spring/Settings/Memo-Library.md"
               }
             }
           },
@@ -219,6 +219,7 @@
   },
   "active": "54daf708560774c3",
   "lastOpenFiles": [
+    "📗BackEnd📗/Frameworks/Spring/WebSocket.md",
     "📗BackEnd📗/Frameworks/Spring/Spring Batch-Kotlin.md",
     "📗BackEnd📗/Languages/Java/Multi-Threading/Basic.md",
     "📗BackEnd📗/Languages/Java/Multi-Threading/구현-1.md",
@@ -231,7 +232,6 @@
     "📗DataBase📗/Redis/Pub-Sub.md",
     "📗BackEnd📗/Languages/Java/Multi-Threading",
     "📗BackEnd📗/Frameworks/Spring/Reactive/ProjectReactor.md",
-    "📗BackEnd📗/Frameworks/Spring/WebSocket.md",
     "📗Computer-Science📗/공식.md",
     "📗BackEnd📗/Frameworks/Spring/Security/JWT & Sticky Session.md",
     "📗BackEnd📗/Frameworks/Spring/Kakao-Map-API.md",
