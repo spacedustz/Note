@@ -55,12 +55,15 @@ implementation group: 'com.lightbend.akka', name: 'akka-stream-alpakka-amqp_2.13
 
 또, Greet 클래스는 정적 내부클래스로 정의했는데, 허용되는 메시지 유형의 Scope는 최대한 Actor와 가깝게 정의해야 합니다.
 
+GreetingService의 주입은 Spring 4.3으
+
+**GreetingActor**
+
 ```java
 @Component
 @Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
-@RequiredConstructor
 public class GreetingActor extends UntypedActor {
-	private final GreetingService greetingService;
+	private GreetingService greetingService;
 
 	@Override
 	public void onReceive(Object message) throws Throwable {
@@ -79,3 +82,7 @@ public class GreetingActor extends UntypedActor {
 	}
 }
 ```
+
+<br>
+
+**GreetingService**
