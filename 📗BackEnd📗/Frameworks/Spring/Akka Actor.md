@@ -105,3 +105,7 @@ public class GreetingService {
 ## Akka Extension을 통한 Spring Support
 
 Spring을 Akka와 통합하는 가장 쉬운 방법은 Akka Extension을 사용하는 것입니다.
+
+**Extention은 Actor System 별로 생성된 Singleton Instance 입니다.**
+
+이는 Marker Interface Extension을 구현하는 확장 클래스 자체와 일반적으로 AbstractExtensionId를 상속하는 확장 
