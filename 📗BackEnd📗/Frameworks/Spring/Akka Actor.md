@@ -142,6 +142,8 @@ props() 함수는 Spring이 관리하는 Actor의 참조가 필요할 때마다 
 
 <br>
 
+**SpringExtension**
+
 ```java
 public class SpringExtension extends AbstractExtensionId<SpringExtension.SpringExt> {
 
@@ -176,8 +178,10 @@ Actor의 인스턴스화 프로세스를 재정의 할 수 있습니다.
 
 즉, 직접 인스턴스화 하는 대신 항상 Spring의 ApplicationContext에서 Actor Instance를 검색하게 합니다.
 
-Actor Bean을 Scope를 ProtoType 
+Actor Bean의 Scope를 ProtoType 으로 만들었으므로, 생성자를 호출할 때마다 Actor의 새 Instance가 반환됩니다.
 
 ```java
-
+public class SpringActorProducer implements IndirectActorProducer {
+	private ApplicationContext applicationContex
+}
 ```
