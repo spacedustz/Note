@@ -150,13 +150,13 @@ runtimeOnly 'io.r2dbc:r2dbc-h2'
 
 <br>
 
-> [Dev Tools]
+> ⭐ [Dev Tools]
 
 developmentOnly 'org.springframework.boot:spring-boot-devtools'
 
 <br>
 
-> [EhCache]
+> ⭐ [EhCache]
 
 implementation 'org.springframework.boot:spring-boot-starter-cache'  
 implementation 'org.ehcache:ehcache:3.10.8'  
@@ -164,43 +164,43 @@ implementation 'javax.cache:cache-api:1.1.1' // expiry 기능을 위해 필요
 
 <br>
 
-> [Maria DB]
+> ⭐ [Maria DB]
 
 runtimeOnly 'org.mariadb.jdbc:mariadb-java-client'
 
 <br>
 
-> [쿼리 파라미터 로그 생성 라이브러리]
+> ⭐ [쿼리 파라미터 로그 생성 라이브러리]
 
 implementation 'com.github.gavlyukovskiy:p6spy-spring-boot-starter:1.9.0'
 
 <br>
 
-> [Hibernate Validator]
+> ⭐ [Hibernate Validator]
 
 implementation 'org.hibernate.validator:hibernate-validator'
 
 <br>
 
-> [Model Mapper]
+> ⭐ [Model Mapper]
 
 implementation 'org.modelmapper:modelmapper:3.1.1'
 
 <br>
 
-> [Joda Time]
+> ⭐ [Joda Time]
 
 implementation group: 'joda-time', name: 'joda-time', version: '2.12.5'
 
 <br>
 
-> [Jackson]
+> ⭐ [Jackson]
 
 implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.15.2'
 
 <br>
 
-> [Spring Clout Stream Rabbit]
+> ⭐ [Spring Clout Stream Rabbit]
 
 implementation group:'org.springframework.cloud', name: 'spring-cloud-starter-stream-rabbit', version: '4.0.4'
 
