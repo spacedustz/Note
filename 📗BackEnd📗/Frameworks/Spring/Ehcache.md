@@ -200,7 +200,7 @@ public class EhcacheEventLogging implements CacheEventListener<Object, Object> {
 
 <br>
 
-> 캐싱 사용
+## 캐싱 사용
 
 캐싱 하려는 함수에 `@Cacheable` 어노테이션을 달아줍니다.
 
@@ -212,12 +212,10 @@ public class EhcacheEventLogging implements CacheEventListener<Object, Object> {
 
 
 ```java
-|   |
-|---|
-|@Cacheable(value = "squareCache", key = "#number", condition = "#number > 10")|
-||public BigDecimal square(Long number) {|
-||BigDecimal square = BigDecimal.valueOf(number).multiply(BigDecimal.valueOf(number));|
-||log.info("square of {} is {}", number, square);|
-||return square;|
-||}|
+@Cacheable(value = "squareCache", key = "#number", condition = "#number > 10")
+public BigDecimal square(Long number) {
+	BigDecimal square = BigDecimal.valueOf(number).multiply(BigDecimal.valueOf(number));
+	log.info("square of {} is {}", number, square);
+	return square;
+}
 ```
