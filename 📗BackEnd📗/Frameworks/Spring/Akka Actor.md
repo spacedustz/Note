@@ -39,6 +39,8 @@ implementation group: 'com.lightbend.akka', name: 'akka-stream-alpakka-amqp_2.13
 
 사람에게 인사를 보내서 사람의 이름을 대답할 수 있는 단일 Actor로 구성된 간단한 Spring/Akka App을 만들어 보겠습니다.
 
+모든 Akka Actor의 `onReceive` 함수는 메시지를 수신하고 지정된 로직에 따라 처리합니다.
+
 ```java
 @Component
 @Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
@@ -59,7 +61,7 @@ public class GreetingActor extends UntypedActor {
 	@Getter
 	@AllArgsConstructor
 	public static class Greet {
-		private String name
+		private String name;
 	}
 }
 ```
