@@ -56,5 +56,43 @@ implementation 'javax.cache:cache-api:1.1.1' // expiry 기능을 위해 필요 (
 파일의 위치는 프로젝트 내 `resources` 디렉터리 하위에 위치해야 합니다.
 
 ```xml
-
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+  xmlns="http://www.ehcache.org/v3"  
+  xsi:schemaLocation="http://www.ehcache.org/v3  
+  http://www.ehcache.org/schema/ehcache-core-3.10.xsd">  
+  <!--    <persistence directory="${java.io.tmpdir}"/>-->  
+  <!--  <cache-template name="template">-->  
+  <!--    캐시가 생성되고 삭제되고 하는 이벤트를 모니터링 하고 싶으면 org.ehcache.event.CacheEventListener 를 구현하는 클래스를 만들어서 설정 (태그 순서가 중요)-->  
+  <!--    <listeners>-->  <!--        <listener>-->  <!--            <class>sample.CacheEventLogger</class>-->  <!--            <event-firing-mode>ASYNCHRONOUS</event-firing-mode>-->  <!--            <event-ordering-mode>UNORDERED</event-ordering-mode>-->  <!--            <events-to-fire-on>CREATED</events-to-fire-on>-->  <!--            <events-to-fire-on>EVICTED</events-to-fire-on>-->  <!--            <events-to-fire-on>REMOVED</events-to-fire-on>-->  <!--            <events-to-fire-on>UPDATED</events-to-fire-on>-->  <!--            <events-to-fire-on>EXPIRED</events-to-fire-on>-->  <!--        </listener>-->  <!--    </listeners>-->  <!--  </cache-template>-->  
+  <cache-template name="defaultTemplate">  
+    <expiry>  
+      <ttl unit="seconds">600</ttl>  
+    </expiry>  
+    <listeners>  
+        <listener>  
+            <class>co.kr.dains.crowd.estimation.common.util.EhcacheEventLogging</class>  
+            <event-firing-mode>ASYNCHRONOUS</event-firing-mode>  
+            <event-ordering-mode>UNORDERED</event-ordering-mode>  
+            <events-to-fire-on>CREATED</events-to-fire-on>  
+            <events-to-fire-on>EVICTED</events-to-fire-on>  
+            <events-to-fire-on>REMOVED</events-to-fire-on>  
+            <events-to-fire-on>UPDATED</events-to-fire-on>  
+            <events-to-fire-on>EXPIRED</events-to-fire-on>  
+        </listener>  
+    </listeners>  
+  </cache-template>  
+  
+  <cache alias="msgCache" uses-template="defaultTemplate">  
+    <key-type>java.lang.String</key-type>  
+    <value-type>java.lang.String</value-type>  
+    <expiry>  
+      <!-- 캐시 만료 시간 = timeToLiveSeconds -->      <ttl unit="seconds">30</ttl>  
+    </expiry>  
+    <resources>  
+      <!-- JVM heap 메모리 외부의 메모리 -->  
+      <offheap unit="MB">10</offheap>  
+      <!-- Disk 메모리, LFU strategy-->  
+      <!--      persistent="false" Ehcache will wipe the disk data on shutdown.-->      <!--      persistent="true" Ehcache will preserve the disk data on shutdown and try to load it back on restart of the JVM.-->      <!--      <disk unit="MB" persistent="false">10</disk>-->    </resources>  
+  </cache>  
+</config>
 ```
