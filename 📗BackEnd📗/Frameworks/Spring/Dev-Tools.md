@@ -5,11 +5,11 @@
 
 크게 아래 5가지 기능을 제공합니다.
 
-- Property Defaults
-- Automatic Restart
-- Live Reload
-- Global Settings
-- Remote Applications
+- Property Defaults (속성 기본값)
+- Automatic Restart (자동 재시작)
+- Live Reload (실시간 리로드)
+- Global Settings (전역 설정)
+- Remote Applications (원격 어플리케이션)
 
 <br>
 
@@ -41,7 +41,7 @@ spring:
 
 **IDE Settings**
 
-IntellJ - Edit Configuration - Modify Options - On Update Opt
+IntellJ - Edit Configuration - Modify Options - On Update Option - Resource Update 체크
 
 <br>
 
