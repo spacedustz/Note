@@ -102,4 +102,6 @@ public class GreetingService {
 
 ---
 
-## Akka Extension을 통한 Spring Supo
+## Akka Extension을 통한 Spring Support
+
+Spring을 Akka와 통합하는 가장 쉬운 방법은 Akka Extension을 사용하는 것입니다.
