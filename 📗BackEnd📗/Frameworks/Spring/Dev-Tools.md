@@ -13,7 +13,7 @@
 
 <br>
 
-## 적용
+## Automatic Restart
 
 **IDE Settings**
 
@@ -33,4 +33,23 @@ spring:
 		restart:
 			enabled: true
 			additional-exclude: static/**, public/**
+```
+
+---
+
+## Live Reload
+
+**IDE Settings**
+
+IntellJ - Edit Configuration - 
+
+<br>
+
+**Yaml 파일**
+
+```yaml
+spring:
+	devtools:
+		livereload:
+			enabled: true
 ```
