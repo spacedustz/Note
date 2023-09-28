@@ -134,10 +134,12 @@ implementation 'javax.cache:cache-api:1.1.1' // expiry 기능을 위해 필요 (
   <cache alias="msgCache" uses-template="defaultTemplate">  
     <key-type>java.lang.String</key-type>  
     <value-type>java.lang.String</value-type>  
+    
     <expiry>  
       <!-- 캐시 만료 시간 = timeToLiveSeconds -->      
       <ttl unit="seconds">30</ttl>  
     </expiry>  
+    
     <resources>  
       <!-- JVM heap 메모리 외부의 메모리 -->  
       <offheap unit="MB">10</offheap>  
