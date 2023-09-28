@@ -41,4 +41,9 @@ implementation group: 'com.lightbend.akka', name: 'akka-stream-alpakka-amqp_2.13
 
 ```java
 @Component
+@Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
+@RequiredConstructor
+public class GreetingActor extends UntypedActor {
+	private final GreetingService greetingService;
+}
 ```
