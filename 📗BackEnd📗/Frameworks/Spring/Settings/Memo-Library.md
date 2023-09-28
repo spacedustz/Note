@@ -176,7 +176,27 @@ implementation 'com.github.gavlyukovskiy:p6spy-spring-boot-starter:1.9.0'
 
 <br>
 
+> [Hibernate Validator]
 
+implementation 'org.hibernate.validator:hibernate-validator'
+
+<br>
+
+> [Model Mapper]
+
+implementation 'org.modelmapper:modelmapper:3.1.1'
+
+<br>
+
+> [Joda Time]
+
+implementation group: 'joda-time', name: 'joda-time', version: '2.12.5'
+
+<br>
+
+> [Jackson]
+
+implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.15.2'
 
 <br>
 
