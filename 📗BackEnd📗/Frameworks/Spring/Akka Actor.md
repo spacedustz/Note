@@ -33,3 +33,12 @@ implementation group: 'com.typesafe.akka', name: 'akka-stream_2.13', version: '2
 implementation group: 'com.lightbend.akka', name: 'akka-stream-alpakka-amqp_2.13', version: '6.0.2'
 ```
 
+---
+
+## Akka Actor에 Spring Bean 주입
+
+사람에게 인사를 보내서 사람의 이름을 대답할 수 있는 단일 Actor로 구성된 간단한 Spring/Akka App을 만들어 보겠습니다.
+
+```java
+@Component
+```
