@@ -90,9 +90,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "ddc68a00ade7bf76",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.4.14"
+              }
+            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -229,7 +239,7 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "28237efcbc88c573",
+  "active": "ddc68a00ade7bf76",
   "lastOpenFiles": [
     "📗BackEnd📗/Frameworks/Spring/Akka Actor.md",
     "📗BackEnd📗/Frameworks/Spring/Ehcache & Devtools.md",
