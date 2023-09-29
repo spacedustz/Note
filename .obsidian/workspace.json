@@ -95,9 +95,11 @@
             "id": "ddc68a00ade7bf76",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.4.14"
+                "file": "📗BackEnd📗/Frameworks/Spring/출입통제시스템.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
