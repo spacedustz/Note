@@ -127,7 +127,7 @@ public class SerializableTest implements Serializable {
         String fileName = "test.ser";  
   
         // File Stream 객체 생성 (try with resource 사용)  
-        try(FileOutputStream fos = new FileOutputStream(fileName);  
+        try (FileOutputStream fos = new FileOutputStream(fileName);  
             ObjectOutputStream out = new ObjectOutputStream(fos)) {  
   
             // 직렬화 가능 객체를 바이트 스트림으로 변환하고 파일에 저장  
