@@ -184,3 +184,16 @@ RestTemplate restTemplate = new RestTemplateBuilder()
 	.interceptors(new CustomInterceptor())
 	.build();
 ```
+
+---
+
+## 📘 RestTemplate 사용
+
+Bean으로 RestTemplate을 Bean을 주입했으니 다른 클래스에서 쉽게 주입하여 사용할 수 있습니다.
+
+```java
+@Service
+@RequiredArgsConstructor
+@Transactional
+public 
+```
