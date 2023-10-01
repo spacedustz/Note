@@ -141,7 +141,7 @@ public class SerializableTest implements Serializable {
 
 <br>
 
-이후 코드를 실행사키면 `test.ser`파일이 생성됩니다. 파일 내용을 보면 사람이 읽을 수 없는 문자로 되어있는 걸 볼 수 있습니다.
+이후 코드를 실행사키면 `test.ser`파일이 프로젝트 최상단에 생성되고, 내용을 보면 사람이 읽을 수 없는 문자로 되어있는 걸 볼 수 있습니다.
 
 ```
 ��������������������������������������������
@@ -151,3 +151,4 @@ public class SerializableTest implements Serializable {
 
 > 📌 **ObjectInputStream을 이용한 객체 역직렬화**
 
+역직렬화에는
