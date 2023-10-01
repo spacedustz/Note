@@ -195,5 +195,12 @@ Bean으로 RestTemplate을 Bean을 주입했으니 다른 클래스에서 쉽게
 @Service
 @RequiredArgsConstructor
 @Transactional
-public 
+public class TestService {
+	private final RestTemplate template;
+
+	public void testRequest() {
+		String url = "https://security.xxx.com/api"
+		ResponseEntty response = restTemplate.getForEntity
+	}
+}
 ```
