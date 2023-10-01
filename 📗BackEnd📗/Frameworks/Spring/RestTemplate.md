@@ -89,3 +89,9 @@ headers.add("Authorization", "Bearer <Access_Token>");
 |Content-Type|text/plain|일반적인 텍스트 형식을 지정합니다.|
 |Content-Type|application/json|JSON 형식을 지정합니다.|
 |Content-Type|application/xml|XML 형식을 지정합니다.|
+
+---
+
+## 📘 Header &  Query Parameter 설정
+
+RestTemplate는 HTTP Request에 대한 Request header 및 Query Paramenter를 설정할 수 있습
