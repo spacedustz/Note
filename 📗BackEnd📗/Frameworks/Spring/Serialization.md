@@ -507,4 +507,8 @@ public class SerialVersionUIDTest implements Serializable {
 
 <br>
 
-이 클래스에 Email 필드를 추가해야 한다는 요구사항 명ㅅ
+이 클래스에 Email 필드를 추가해야 한다는 요구사항 명세가 왔고, email 필드를 추가하고 프로그램을 실행 시키면 아래와 같은 Exception이 발생합니다.
+
+```
+serialVersionUID = 183812845818421, local class serialVersionUID = 9883287472372 // UID 값
+```
