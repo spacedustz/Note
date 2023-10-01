@@ -58,10 +58,34 @@ Serializable 인터페이스는 아무런 내용도 없는 **마커 인터페이
 <br>
 
 ```java
-public class SerializableTest implements Serializable {
+import java.io.Serializable;
+
+public class SerializableTest implements Serializable {  
   
     int id;  
     String name;  
     String password;  
-    int age;
+    int age;  
+  
+    public SerializableTest(int id, String name, String password, int age) {  
+        this.id = id;  
+        this.name = name;  
+        this.password = password;  
+        this.age = age;  
+    }  
+  
+    @Override  
+    public String toString() {  
+        return "SerializableTest{" +  
+                "id=" + id +  
+                ", password='" + password + '\'' +  
+                ", name='" + name + '\'' +  
+                ", age=" + age +  
+                '}';  
+    }
+}
 ```
+
+<br>
+
+> 📌 **ObjectOutputStream을 이용한 객체 직려**
