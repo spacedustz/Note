@@ -324,4 +324,8 @@ HttpEntity<String> entity = new HttpEntity<String>(requestBody.toString(), heade
 
 RestTemplate을 사용하여 HTTP POST 요청을 보내는 예시입니다.
 
-- url 변수에 
+- url 변수에 API Endpoint 주소를 할당합ㄴ다.
+- restTemplate.exchange 를 호출해 POST 요청을 보냅니다.
+- entity 변수는 요청 본문을 포함합니다.
+- 본문과 함께 url, HttpMethod.POST를 restTemplate.exchange 함수의 파라미터로 전달합니다.
+- 
