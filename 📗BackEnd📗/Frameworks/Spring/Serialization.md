@@ -540,3 +540,20 @@ SUID를 직접 명시해주면 클래스의 내용이 변경되어도, 내부적
 
 **serialVersionUID**는 아래와 같이 `private static final` 제어자로 선언해야 하며 타입은 `long`입니다.
 
+```java
+public class SerialVersionUIDTest implements Serializable {  
+    // serialVersionUID 명시  
+    @Serial  
+    private static final long serialVersionUID = 123L;  
+      
+    private String name;  
+    private int age;  
+    private String address;  
+}
+```
+
+<br>
+
+이제 SUID를 선언한 클래스를 직렬화하여 외부 파일로 추출하고,
+
+email 필드를 클래스에 새로 추가한 다음, 역직렬화 해보면 email 필드는 알아서 
