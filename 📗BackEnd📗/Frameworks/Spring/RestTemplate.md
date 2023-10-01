@@ -304,4 +304,16 @@ HttpHeaders를 사용하여 RestTemplate Header를 구성합니다.
 HTTP Request를 보내기 위한 Request Body, Response Entity를 생성하는 코드입니다.
 
 - JSON 형태로 객체를 생성하고 전달할 값을 넣습니다.
-- 생성된 객체를 toString() 으
+- 생성된 객체를 toString() 을 통해 직렬화 합니다.
+- 직렬화된 문자열과 Header를 포함한 HttpEntity 객체를 생성합니다.
+
+<br>
+
+```java
+// Request Body
+JSONObject requestBody = new JSONObject();
+requestBody.put("key", "value");
+
+// Request Entity 생성
+HttpEntity<String> entity
+```
