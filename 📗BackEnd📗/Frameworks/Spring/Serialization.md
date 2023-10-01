@@ -378,3 +378,8 @@ public class SerializableTest implements Serializable {
 ```
 
 ---
+
+## 📘 Custom Serialization
+
+직렬화 & 역직렬화에 호출되는 `readObject()`, `writeObject()`를 재정의 해 Custom Serialization을 할 수 있습니다.
+
