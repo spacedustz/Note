@@ -372,5 +372,12 @@ HttpHeaders headers = new HttpHeaders();
 headers.setContentType(MediaType.APPLICATION_JSON);
 
 // Request Body 설정
-JSONObject requestBody = new JSONObj
+JSONObject requestBody = new JSONObject();
+requestBody.put("key", "value");
+
+// Request Entity 생성
+HttpEntity = entity = new HttpEntity(requestBody.toString(), headers);
+
+// API 호출
+String url = ""
 ```
