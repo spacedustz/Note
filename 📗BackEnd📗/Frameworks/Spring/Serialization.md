@@ -464,4 +464,5 @@ public class CustomDeserializableTest implements Serializable {
 
 그럼 하위 클래스에서만 Serializable을 구현하면 어떻게 될까요?
 
-직렬화 시, 상위 클래스의 인스턴스 필드는 무시되고 하위 
+직렬화 시, **상위 클래스의 인스턴스 필드는 무시되고 하위 클래스의 필드만 직렬화가 됩니다.**
+
