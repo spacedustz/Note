@@ -379,5 +379,9 @@ requestBody.put("key", "value");
 HttpEntity = entity = new HttpEntity(requestBody.toString(), headers);
 
 // API 호출
-String url = ""
+String url = "https://security.xxx.com/api";
+ResponseEntity response = restTemplate.exchange(url, HttpMethod.POST, entity, String.class);
+
+// Response Body 출력
+log.info("응답 값 : {}", response.getBody());
 ```
