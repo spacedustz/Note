@@ -50,7 +50,10 @@ MessageConverter는 요청 및 응답 Body의 데이터 형식을 반환하고, 
 <br>
 
 ```java
-
+// RestTemplate 인스턴스 생성
 RestTemplate restTemplate = new RestTemplate();
 
+HttpHeaders headers = new HttpHeaders();
+headers.setContentType(MediaType.APPLICATION_JSON);
+HttpEntity<RequestDto> request = new HttpEntity<>(requestDto, H)
 ```
