@@ -556,4 +556,12 @@ public class SerialVersionUIDTest implements Serializable {
 
 이제 SUID를 선언한 클래스를 직렬화하여 외부 파일로 추출하고,
 
-email 필드를 클래스에 새로 추가한 다음, 역직렬화 해보면 email 필드는 알아서 
+email 필드를 클래스에 새로 추가한 다음, 역직렬화 해보면 email 필드는 알아서 null로 초기화 후 역직렬화에 성공하게 됩니다.
+
+```
+SerialVersionUIDTest{name='사람1', age=20, address='조선', email='null'}
+```
+
+<br>
+
+이렇게 클래스 내에 **serialVersionUID**를 명시해주면, 내용이 바뀌어도 버전이 유지됨으로 ㅇ
