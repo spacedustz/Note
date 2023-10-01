@@ -73,4 +73,19 @@ HTTP 요청 및 응답의 부분을 추출하거나 수정할 수 있습니다.
 ```java
 RestTemplate restTemplate = new RestTemplate();
 HttpHeaders headers = new HttpHeaders();
+headers.add("Content-Type", "application/json");
+headers.add("Authorization", "Bearer <Access_Token>");
 ```
+
+<br>
+
+|**헤더**|**이름 값**|**설명**|
+|---|---|---|
+|Accept|-|클라이언트가 서버에서 받기 원하는 미디어 타입을 지정합니다.|
+|Accept|text/plain|일반적인 텍스트 형식을 지정합니다.|
+|Accept|application/json|JSON 형식을 지정합니다.|
+|Accept|application/xml|XML 형식을 지정합니다.|
+|Content-Type|-|서버에서 클라이언트로 보내는 미디어 타입을 지정합니다.|
+|Content-Type|text/plain|일반적인 텍스트 형식을 지정합니다.|
+|Content-Type|application/json|JSON 형식을 지정합니다.|
+|Content-Type|application/xml|XML 형식을 지정합니다.|
