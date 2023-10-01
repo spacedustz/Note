@@ -1,5 +1,7 @@
 ## 📘 Spring RestTemplate
 
+[참고한 블로그](https://adjh54.tistory.com/234)
+
 HTTP 프로토콜을 사용하여 Rest API에 쉽게 액세스 할 수 있게 해주는 스프링 프레임워크의 클래스입니다.
 
 GET, POST, PUT, DELETE 등의 HTTP Method를 지원하며, 서버로 부터 응답을 받을때 JSON, XML등 다영한 포맷 형식을 지원합니다.
@@ -267,11 +269,30 @@ HttpHeaders를 사용하여 RestTemplate Header를 구성합니다.
 **💡 If-None-Match 헤더**  
   
 - ‘캐시 된 리소스를 다시 가져오는 것을 방지’ 하기 위해 사용됩니다. 이 헤더는 이전에 클라이언트에서 가져온 리소스의 ETag 값을 서버에 전송하여, 새로운 ETag 값이 없는 경우, 서버는 304 Not Modified 응답을 반환하여 클라이언트에게 새로운 리소스를 다시 가져올 필요가 없음을 알려줍니다.  
-**  
+
   
-💡 If-Modified-Since 헤더**  
+**💡 If-Modified-Since 헤더**  
   
 - 클라이언트가 마지막으로 리소스를 가져온 시간’을 지정합니다. 이 헤더는 클라이언트가 리소스가 수정되었는지 여부를 확인하기 위해 사용됩니다. 서버가 클라이언트가 지정한 시간 이후에 리소스를 수정한 경우, 서버는 새로운 리소스를 반환하고, 그렇지 않은 경우 304 Not Modified 응답을 반환하여 클라이언트에게 새로운 리소스를 다시 가져올 필요가 없음을 알려줍니다.
 
 <br>
 
+**MediaType 별 종류 설명**
+
+|**MediaType**|**Content Type**|**설명**|
+|---|---|---|
+|APPLICATION_JSON|application/json|JSON 형식|
+|TEXT_PLAIN|text/plain|일반 텍스트 형식|
+|APPLICATION_XML|application/xml|XML 형식|
+|APPLICATION_ATOM_XML|application/atom+xml|Atom 피드 형식|
+|APPLICATION_FORM_URLENCODED|application/x-www-form-urlencoded|HTML 폼 형식|
+|APPLICATION_OCTET_STREAM|application/octet-stream|임의의 바이너리 데이터|
+|APPLICATION_PDF|application/pdf|PDF 형식|
+|APPLICATION_RSS_XML|application/rss+xml|RSS 피드 형식|
+|APPLICATION_XHTML_XML|application/xhtml+xml|XHTML 형식|
+|IMAGE_GIF|image/gif|GIF 이미지 형식|
+|IMAGE_JPEG|image/jpeg|JPEG 이미지 형식|
+|IMAGE_PNG|image/png|PNG 이미지 형식|
+|MULTIPART_FORM_DATA|multipart/form-data|여러 개의 다른 형식의 파트를 하나의 요청에 함께 전송|
+|TEXT_HTML|text/html|HTML 형식|
+|TEXT_XML|text/xml|XML 형식|
