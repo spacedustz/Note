@@ -160,7 +160,17 @@ public class CustomInterceptor implements HttpClientInterceptor {
 			log.info("Request Body : {}", new String(body, "UTF-8"));
 
 			// 다음 인터셉터 또는 요청 실행
-			ClientHttpResponse response = execution.execute(request, )
+			ClientHttpResponse response = execution.execute(request, body);
+
+			// Response 정보 수정
+			log.info("Response Status : {}", rseponse.getStatusCode());
+			log.info("Response Headers : {}", response.getHeaders());
+
+			return response;
 		}
 }
 ```
+
+<br>
+
+RestTemplate 객체를 만들 때 interceptors 속성에 해당 구현체 객체를 넣습니다.
