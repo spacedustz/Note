@@ -361,4 +361,16 @@ log.info("응답 값 : {}", response.getBody());
 - API 내에 데이터를 포함하여 전송
 - 결과값 반환
 
-<
+<br>
+
+```java
+// RestTemplate 생성
+RestTemplate restTemplate = new RestTemplate();
+
+// Request Header 설정
+HttpHeaders headers = new HttpHeaders();
+headers.setContentType(MediaType.APPLICATION_JSON);
+
+// Request Body 설정
+JSONObject requestBody = new JSONObj
+```
