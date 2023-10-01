@@ -383,3 +383,10 @@ public class SerializableTest implements Serializable {
 
 직렬화 & 역직렬화에 호출되는 `readObject()`, `writeObject()`를 재정의 해 Custom Serialization을 할 수 있습니다.
 
+예를 들면, 어떤 클래스의 특정 필드는 보안에 민감하기 때문에 특정 필드만 직렬화가 동작하지 않게 만들 수 있습니다.
+
+<br>
+
+```java
+
+```
