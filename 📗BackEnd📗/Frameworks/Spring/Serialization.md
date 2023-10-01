@@ -572,4 +572,10 @@ SerialVersionUIDTest{name='사람1', age=20, address='조선', email='null'}
 
 > 📌 **SerialVersionUID 값 자동 생성하기**
 
-serialVersionUID는
+serialVersionUID는 정수값이라 어떠한 값으로도 지정할 수 있지만, 단순한 값이면 중복 우려가 있습니다.
+
+그래서 중복값을 갖지 않도록 serialVersion 값을 생성해주는 프로그램을 사용하는 것이 좋습니다.
+
+JVM을 설치할 때 같이 설치되는 `serialver.exe`를 사용해서 생성된 값을 이용할 수 있지만 사용이 번거로우므로,
+
+int
