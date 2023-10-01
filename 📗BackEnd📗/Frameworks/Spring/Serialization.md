@@ -25,7 +25,7 @@
 >📌  **범용 포맷이 아닌 자바 직렬화(Serialization)을 사용하는 상황**
 
 - 자바의 고유 기술인 만큼 당연히 자바 시스템 개발에 최적화 되어 있다.
-- 자바의 광활한 Referense 타입에 대해 제약 없이 객체를 외부로 내보낼 수 있다.
+- 자바의 광활한 Reference 타입에 대해 제약 없이 객체를 외부로 내보낼 수 있다.
 
 <br>
 
@@ -65,7 +65,7 @@ Serializable 인터페이스는 아무런 내용도 없는 **마커 인터페이
 
 이때 `transient` 키워드가 붙은 변수의 기본값은 각 타입의  Default 값으로 들어갑니다.
 - Primitive : 각 타입의 Default 값 (ex: int는 0 으로 들어감)
-- 
+- Reference : null
 
 <br>
 
@@ -270,7 +270,7 @@ public class SerializableTest implements Serializable {
 
 많은 객체를 담고, ArrayList 하나만 역직렬화하면 되니까 순서를 고려할 필요가 없어집니다.
 
-아까 위에서 다양한 자바의 Referense를 간단하게 역직렬화 할 수 있다고 했는데, 이럴때 그 장점을 사용합니다.
+아까 위에서 다양한 자바의 Reference를 간단하게 역직렬화 할 수 있다고 했는데, 이럴때 그 장점을 사용합니다.
 
 ```java
 public class SerializableTest implements Serializable {  
