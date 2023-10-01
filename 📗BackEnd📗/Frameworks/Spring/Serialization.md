@@ -55,6 +55,8 @@
 
 Serializable 인터페이스는 아무런 내용도 없는 **마커 인터페이스**로써 직렬화를 고려해 작성한 클래스인지를 판단하는 기준으로 사용됩니다.
 
+> ****
+
 <br>
 
 ```java
@@ -261,7 +263,101 @@ public class SerializableTest implements Serializable {
 아까 위에서 다양한 자바의 Referense를 간단하게 역직렬화 할 수 있다고 했는데, 이럴때 그 장점을 사용합니다.
 
 ```java
+public class SerializableTest implements Serializable {  
+    int id;  
+    String name;  
+    String password;  
+    int age;  
+  
+    public SerializableTest(int id, String name, String password, int age) {  
+        this.id = id;  
+        this.name = name;  
+        this.password = password;  
+        this.age = age;  
+    }  
+  
+    @Override  
+    public String toString() {  
+        return "SerializableTest{" +  
+                "id=" + id +  
+                ", password='" + password + '\'' +  
+                ", name='" + name + '\'' +  
+                ", age=" + age +  
+                '}';  
+    }  
+  
+    // 객체 직렬화  
+    public static void doSerialize() {  
+        // 직렬화할 테스트 객체 생성  
+        SerializableTest test = new SerializableTest(1, "사람1", "1234", 20);  
+  
+        // 외부 파일 명  
+        String fileName = "test.ser";  
+  
+        // File Stream 객체 생성 (try with resource 사용)  
+        try (FileOutputStream fos = new FileOutputStream(fileName);  
+            ObjectOutputStream out = new ObjectOutputStream(fos)) {  
+  
+            // 직렬화 가능 객체를 바이트 스트림으로 변환하고 파일에 저장  
+            out.writeObject(test);  
+        } catch (IOException e) {  
+            e.printStackTrace();  
+        }  
+    }  
+  
+    // 객체 역직렬화 함수
+    public static void doDeserialize() {  
+        String fileName = "test.ser";  
+  
+        // File Stream 객체 생성 (try with resource 사용)  
+        try (FileInputStream fis = new FileInputStream(fileName);  
+             ObjectInputStream in = new ObjectInputStream(fis)) {  
+  
+            // 바이트 스트림을 다시 자바 객체로 변환 (이때 캐스팅 필요)  
+            SerializableTest test = (SerializableTest) in.readObject();  
+            System.out.println(test);  
+        } catch (IOException | ClassNotFoundException e) {  
+            e.printStackTrace();  
+        }  
+    }  
 
+		// List 직렬화 함수
+    public static void doListSerialize() throws IOException, ClassNotFoundException {  
+        // 직렬화 할 테스트 객체 3개  
+        SerializableTest a1 = new SerializableTest(1, "사람1", "1234", 20);  
+        SerializableTest a2 = new SerializableTest(2, "사람2", "1234", 25);  
+        SerializableTest a3 = new SerializableTest(3, "사람3", "1234", 30);  
+  
+        // 외부 파일명  
+        String fileName = "testList.ser";  
+  
+        // 리스트 생성 & 객체 추가  
+        List<SerializableTest> list = new ArrayList<>();  
+        list.add(a1);  
+        list.add(a2);  
+        list.add(a3);  
+  
+        // 리스트 자체를 직렬화 하기  
+        FileOutputStream fos = new FileOutputStream(fileName);  
+        ObjectOutputStream out = new ObjectOutputStream(fos);  
+        out.writeObject(list);  
+        out.close();  
+  
+        // 역직렬화 하여 리스트 객체에 넣기  
+        FileInputStream fis = new FileInputStream(fileName);  
+        ObjectInputStream in = new ObjectInputStream(fis);  
+        List<SerializableTest> deserializedList = (List<SerializableTest>) in.readObject();  
+        in.close();  
+  
+        System.out.println(deserializedList);  
+    }  
+  
+    public static void main(String[] args) throws IOException, ClassNotFoundException {  
+//        doSerialize();  
+//        doDeserialize();  
+        doListSerialize();  
+    }  
+}
 ```
 
 <br>
