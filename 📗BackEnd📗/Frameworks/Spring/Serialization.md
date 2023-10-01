@@ -151,4 +151,9 @@ public class SerializableTest implements Serializable {
 
 > 📌 **ObjectInputStream을 이용한 객체 역직렬화**
 
-역직렬화에는
+역직렬화 (스트림으로부터 객체를 입력)에는 ObjectInptuStream을 사용합니다.
+
+**역직렬화 시 주의사항:**
+
+- 직렬화 대상이 된 객체의 클래스가 외부 클래스라면, 클래스 경로(Class Path)에 존재해야 하며, Import 된 상태여야 합니다.
+
