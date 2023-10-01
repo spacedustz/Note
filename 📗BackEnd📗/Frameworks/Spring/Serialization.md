@@ -119,7 +119,7 @@ public class SerializableTest implements Serializable {
                 '}';  
     }  
   
-    // 객체 직렬화 
+    // 객체 직렬화 함수
     public static void doSerialize() {  
         // 직렬화할 테스트 객체 생성  
         SerializableTest test = new SerializableTest(1, "사람1", "1234", 20);  
@@ -140,7 +140,6 @@ public class SerializableTest implements Serializable {
   
     public static void main(String[] args) {  
         doSerialize();  
-        doDeserialize();  
     }  
 }
 ```
@@ -150,7 +149,7 @@ public class SerializableTest implements Serializable {
 이후 코드를 실행사키면 `test.ser`파일이 프로젝트 최상단에 생성되고, 내용을 보면 사람이 읽을 수 없는 문자로 되어있는 걸 볼 수 있습니다.
 
 ```
-��������������������������������������������
+파일 내부의 값 : ��������������������������������������������
 ```
 
 <br>
@@ -191,27 +190,27 @@ public class SerializableTest implements Serializable {
                 '}';  
     }  
   
-//    // 객체 직렬화  
-//    public static void main(String[] args) {  
-//        // 직렬화할 테스트 객체 생성  
-//        SerializableTest test = new SerializableTest(1, "사람1", "1234", 20);  
-//  
-//        // 외부 파일 명  
-//        String fileName = "test.ser";  
-//  
-//        // File Stream 객체 생성 (try with resource 사용)  
-//        try (FileOutputStream fos = new FileOutputStream(fileName);  
-//            ObjectOutputStream out = new ObjectOutputStream(fos)) {  
-//  
-//            // 직렬화 가능 객체를 바이트 스트림으로 변환하고 파일에 저장  
-//            out.writeObject(test);  
-//        } catch (IOException e) {  
-//            e.printStackTrace();  
-//        }  
-//    }  
+    // 객체 직렬화  
+    public static void doSerialize() {  
+        // 직렬화할 테스트 객체 생성  
+        SerializableTest test = new SerializableTest(1, "사람1", "1234", 20);  
+  
+        // 외부 파일 명  
+        String fileName = "test.ser";  
+  
+        // File Stream 객체 생성 (try with resource 사용)  
+        try (FileOutputStream fos = new FileOutputStream(fileName);  
+            ObjectOutputStream out = new ObjectOutputStream(fos)) {  
+  
+            // 직렬화 가능 객체를 바이트 스트림으로 변환하고 파일에 저장  
+            out.writeObject(test);  
+        } catch (IOException e) {  
+            e.printStackTrace();  
+        }  
+    }  
   
     // 객체 역직렬화  
-    public static void main(String[] args) {  
+    public static void doDeserialize() {  
         String fileName = "test.ser";  
   
         // File Stream 객체 생성 (try with resource 사용)  
@@ -224,7 +223,11 @@ public class SerializableTest implements Serializable {
         } catch (IOException | ClassNotFoundException e) {  
             e.printStackTrace();  
         }  
+    }  
   
+    public static void main(String[] args) {  
+        doSerialize();  
+        doDeserialize();  
     }  
 }
 ```
@@ -236,3 +239,7 @@ public class SerializableTest implements Serializable {
 ```
 역직렬화된 객체 출력 값 : SerializableTest{id=1, password='1234', name='사람1', age=20}
 ```
+
+---
+
+## 📘 ㅈ
