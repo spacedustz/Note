@@ -466,3 +466,12 @@ public class CustomDeserializableTest implements Serializable {
 
 직렬화 시, **상위 클래스의 인스턴스 필드는 무시되고 하위 클래스의 필드만 직렬화가 됩니다.**
 
+<br>
+
+**상위 클래스까지 직렬화 하려면?**
+
+- 상위 클래스가 Serializable을 구현하도록 하기
+- writeObject / readObject 재정의 하기
+
+<br>
+
