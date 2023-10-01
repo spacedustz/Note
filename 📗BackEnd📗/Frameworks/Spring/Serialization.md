@@ -157,3 +157,12 @@ public class SerializableTest implements Serializable {
 
 - 직렬화 대상이 된 객체의 클래스가 외부 클래스라면, 클래스 경로(Class Path)에 존재해야 하며, Import 된 상태여야 합니다.
 
+<br>
+
+아래 코드는 외부 파일을 읽어 역직렬화 하여 다시 자바 객체로 변환하는 예시입니다.
+
+```java
+public static void main(String[] args) {
+	String fileName = "test.ser";
+}
+```
