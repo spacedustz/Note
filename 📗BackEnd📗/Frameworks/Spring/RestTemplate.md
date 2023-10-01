@@ -64,4 +64,10 @@ ResponseDto response = restTemplate.exchange(url, HttpMethod.POST, request, Resp
 
 ---
 
-## Request & Response를 다양한 형식으로 처리
+## 📘 Request & Response를 다양한 형식으로 처리
+
+
+
+```java
+
+```
