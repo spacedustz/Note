@@ -479,4 +479,14 @@ public class CustomDeserializableTest implements Serializable {
 
 Serializable 인터페이스를 구현하는 모든 직렬화된 클래스는 **serialVersionUID(SUID)** 라는 고유 식별번호를 부여 받습니다.
 
-이 식별 ID는 클래스를 직렬화/역직렬화
+이 식별 ID는 클래스를 직렬화/역직렬화 하는 과정에서 동일한 특정을 갖는지 검증하는데 사용됩니다.
+
+<br>
+
+그래서 클래스 내부 구성이 수정될 경우, 기존에 직렬화한 SUID와 현재 클래스의 SUID 버전이 다르기 때문에,
+
+이를 인지하고 InvalidClassException을 발생시켜 UID 값 불일치가 되는 현상을 미리 방지합니다.
+
+<br>
+
+단, 직렬화 슾
