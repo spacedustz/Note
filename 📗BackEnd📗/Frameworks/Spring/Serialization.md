@@ -530,4 +530,8 @@ serialVersionUID = 183812845818421, local class serialVersionUID = 9883287472372
 
 <br>
 
-따라서 직렬화 클래스는 왠만한 상황에선 serialVersionUID를 직접 명시해주어 **클버전을 수동으로 관리**
+따라서 직렬화 클래스는 왠만한 상황에선 serialVersionUID를 직접 명시해주어 **Serial버전을 수동으로 관리**하는 것을 권장합니다.
+
+SUID를 직접 명시해주면 클래스의 내용이 변경되어도, 내부적으로 자동 생성된 SUID 값으로 자동 변경되지 않습니다.
+
+이외에도 런타임 시 SUID를 생성하는 식산도
