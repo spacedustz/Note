@@ -232,7 +232,11 @@ public class TestService {
 
 ## 📘 Header 구성
 
-RestTemplate Header를 구성합니다.
+HttpHeaders를 사용하여 RestTemplate Header를 구성합니다.
+
+<br>
+
+**HttpHeaders 함수 종류**
 
 |**메서드**|**설명**|
 |---|---|
@@ -245,3 +249,29 @@ RestTemplate Header를 구성합니다.
 |setIfNoneMatch(String etag)|If-None-Match 헤더 추가|
 |setIfModifiedSince(ZonedDateTime ifModifiedSince)|If-Modified-Since 헤더 추가|
 |set(String headerName, String headerValue)|특정 헤더 설정|
+
+<br>
+
+**💡 Content-Type 헤더**  
+  
+- HTTP 요청 또는 응답에서 ‘전송되는 데이터의 형식’을 지정합니다. 이 헤더는 브라우저나 서버가 어떻게 처리해야 할지를 결정합니다.  
+- 예를 들어, text/plain은 일반적인 텍스트 데이터를 나타내고, application/json은 JSON 형식의 데이터를 나타냅니다.  
+  
+  
+**💡 Accept 헤더**  
+  
+- 클라이언트가 서버에게 요청한 ‘데이터 유형’을 알려줍니다. 이 헤더는 클라이언트가 서버로부터 어떤 유형의 데이터를 받기를 원하는지 지정합니다.  
+- 예를 들어, text/html은 HTML 문서를 나타내고, application/json은 JSON 형식의 데이터를 나타냅니다.  
+  
+  
+**💡 If-None-Match 헤더**  
+  
+- ‘캐시 된 리소스를 다시 가져오는 것을 방지’ 하기 위해 사용됩니다. 이 헤더는 이전에 클라이언트에서 가져온 리소스의 ETag 값을 서버에 전송하여, 새로운 ETag 값이 없는 경우, 서버는 304 Not Modified 응답을 반환하여 클라이언트에게 새로운 리소스를 다시 가져올 필요가 없음을 알려줍니다.  
+**  
+  
+💡 If-Modified-Since 헤더**  
+  
+- 클라이언트가 마지막으로 리소스를 가져온 시간’을 지정합니다. 이 헤더는 클라이언트가 리소스가 수정되었는지 여부를 확인하기 위해 사용됩니다. 서버가 클라이언트가 지정한 시간 이후에 리소스를 수정한 경우, 서버는 새로운 리소스를 반환하고, 그렇지 않은 경우 304 Not Modified 응답을 반환하여 클라이언트에게 새로운 리소스를 다시 가져올 필요가 없음을 알려줍니다.
+
+<br>
+
