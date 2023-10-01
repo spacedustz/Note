@@ -462,3 +462,6 @@ public class CustomDeserializableTest implements Serializable {
 
 만약 상속 관계에서 상위 클래스가 Serializable 인터페이스를 구현했다면, 하위 클랫는 구현하지 않아도 직렬화가 가능합니다.
 
+그럼 하위 클래스에서만 Serializable을 구현하면 어떻게 될까요?
+
+직렬화 시, 상위 클래스의 인스턴스 필드는 무시되고 하위 
