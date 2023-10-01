@@ -116,5 +116,10 @@ RestTemplate는 HTTP Request에 대한 Request header 및 Query Paramenter를 �
 ```java
 RestTemplate restTemplate = new RestTemplate();
 
-HttpHeaders headers = new 
+HttpHeaders headers = new HttpHeaders();
+headers.setAccept(Collections.singletonList(MediaType.APPLICATION_JSON));
+
+UriComponentsBuilder builder = UriComponentsBuilder.fromHttpUrl("<http://localhost/api/users>")
+	.queryParam("page", 2);
+	.queryParam
 ```
