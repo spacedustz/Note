@@ -149,4 +149,5 @@ public class SerializableTest implements Serializable {
 
 <br>
 
-> 📌 **ObjectInputStream을 이용한 객체 역직렬ㄹ**
+> 📌 **ObjectInputStream을 이용한 객체 역직렬화**
+
