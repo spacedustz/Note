@@ -335,5 +335,17 @@ RestTemplate을 사용하여 HTTP POST 요청을 보내는 예시입니다.
 ```java
 // API 호출
 String url = "https://security.xxx.com/api";
-ResponseEntity response = restTemplate.exchange(url, HttpMethod.POST, entity,)
+ResponseEntity response = restTemplate.exchange(url, HttpMethod.POST, entity, String.class);
+```
+
+<br>
+
+**API 반환 값 확인**
+
+RestTemplate 통신을 수행한 결과값으로 Response Body를 반환 받습니다.
+
+동기적인 수행이기에 통신이 완료될 때까지 대기한 상태 이후의 결과값을 받습니다.
+
+```java
+log.info("응답 값 : {}")
 ```
