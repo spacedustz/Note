@@ -188,7 +188,20 @@ RestTemplate restTemplate = new RestTemplateBuilder()
 
 ## 📘 RestTemplate 사용
 
+**Bean 등록**
 
+- Bean에 이름을 지정한 이유는 template() 이라는 빈이 여러개이기 떄문에 Spring에서 빈 충돌
+
+```java
+@Configuration
+pubic class RestApiConfig {
+
+	@Bean(name = "api")
+	public RestTemplate template() {
+		return new RestTemplate();
+	}
+}
+```
 
 Bean으로 RestTemplate을 Bean을 주입했으니 다른 클래스에서 쉽게 주입하여 사용할 수 있습니다.
 
