@@ -140,8 +140,12 @@ RestTemplate Bean을 구성하는데 사용되는 HttpClient는 HTTP 요청 및 
 
 <br>
 
-**HttpClientIntercepto**
+**HttpClientInterceptor의 구현체를 작성합니다.**
 
 ```java
+public class CustomInterceptor implements HttpClientInterceptor {
 
+	@Override
+	public ClientHttpResponse intercept(HttpRequest request, byte[] body, ClientHttpRequestExecution ex)
+}
 ```
