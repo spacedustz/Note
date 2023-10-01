@@ -315,5 +315,13 @@ JSONObject requestBody = new JSONObject();
 requestBody.put("key", "value");
 
 // Request Entity 생성
-HttpEntity<String> entity
+HttpEntity<String> entity = new HttpEntity<String>(requestBody.toString(), headers);
 ```
+
+<br>
+
+> **API 호출**
+
+RestTemplate을 사용하여 HTTP POST 요청을 보내는 예시입니다.
+
+- url 변수에 
