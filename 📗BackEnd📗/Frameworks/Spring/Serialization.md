@@ -458,7 +458,7 @@ public class CustomDeserializableTest implements Serializable {
 
 ---
 
-## 📘 Inheritance 상태에서의 객체 직렬화
+## 📘 객체 상속 관계에서의 직렬화
 
 만약 상속 관계에서 상위 클래스가 Serializable 인터페이스를 구현했다면, 하위 클랫는 구현하지 않아도 직렬화가 가능합니다.
 
