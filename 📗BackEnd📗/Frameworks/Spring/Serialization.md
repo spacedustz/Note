@@ -254,3 +254,8 @@ public class SerializableTest implements Serializable {
 
 <br>
 
+그래서 직렬화할 객체가 많다면, ArrayList와 같은 컬렉션에 저장해서 관리하는 것이 좋습니다.
+
+많은 객체를 담고, ArrayList 하나만 역직렬화하면 되니까 순서를 고려할 필요가 없어집니다.
+
+아까 위에서 다양한
