@@ -388,5 +388,30 @@ public class SerializableTest implements Serializable {
 <br>
 
 ```java
-
+public class CustomDeserializableTest implements Serializable {  
+    int id;  
+    String name;  
+    String password;  
+    int age;  
+  
+    public CustomDeserializableTest(int id, String name, String password, int age) {  
+        this.id = id;  
+        this.name = name;  
+        this.password = password;  
+        this.age = age;  
+    }  
+      
+    // 직렬화 재정의  
+    private void writeObject(ObjectOutputStream out) throws IOException {  
+        out.writeInt(id);  
+        out.writeObject(name);  
+        out.writeInt(age);  
+    }  
+      
+    // 역직렬화 재정의  
+    private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException {  
+        this.id = in.readInt();  
+        this.name = (String) in.readObject();  
+        this.age = in.readInt();  
+    }
 ```
