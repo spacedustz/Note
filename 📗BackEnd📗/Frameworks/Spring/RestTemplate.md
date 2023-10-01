@@ -328,4 +328,12 @@ RestTemplate을 사용하여 HTTP POST 요청을 보내는 예시입니다.
 - restTemplate.exchange 를 호출해 POST 요청을 보냅니다.
 - entity 변수는 요청 본문을 포함합니다.
 - 본문과 함께 url, HttpMethod.POST를 restTemplate.exchange 함수의 파라미터로 전달합니다.
-- 
+- 응답은 ResponseEntity 객체로 반환되며, 반환된 데이터는 String 타입의 response 변수에 할당됩니다.
+
+<br>
+
+```java
+// API 호출
+String url = "https://security.xxx.com/api";
+ResponseEntity response = restTemplate.exchange(url, HttpMethod.POST, entity,)
+```
