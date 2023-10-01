@@ -162,7 +162,67 @@ public class SerializableTest implements Serializable {
 아래 코드는 외부 파일을 읽어 역직렬화 하여 다시 자바 객체로 변환하는 예시입니다.
 
 ```java
-public static void main(String[] args) {
-	String fileName = "test.ser";
+public class SerializableTest implements Serializable {  
+    int id;  
+    String name;  
+    String password;  
+    int age;  
+  
+    public SerializableTest(int id, String name, String password, int age) {  
+        this.id = id;  
+        this.name = name;  
+        this.password = password;  
+        this.age = age;  
+    }  
+  
+    @Override  
+    public String toString() {  
+        return "SerializableTest{" +  
+                "id=" + id +  
+                ", password='" + password + '\'' +  
+                ", name='" + name + '\'' +  
+                ", age=" + age +  
+                '}';  
+    }  
+  
+//    // 객체 직렬화  
+//    public static void main(String[] args) {  
+//        // 직렬화할 테스트 객체 생성  
+//        SerializableTest test = new SerializableTest(1, "사람1", "1234", 20);  
+//  
+//        // 외부 파일 명  
+//        String fileName = "test.ser";  
+//  
+//        // File Stream 객체 생성 (try with resource 사용)  
+//        try (FileOutputStream fos = new FileOutputStream(fileName);  
+//            ObjectOutputStream out = new ObjectOutputStream(fos)) {  
+//  
+//            // 직렬화 가능 객체를 바이트 스트림으로 변환하고 파일에 저장  
+//            out.writeObject(test);  
+//        } catch (IOException e) {  
+//            e.printStackTrace();  
+//        }  
+//    }  
+  
+    // 객체 역직렬화  
+    public static void main(String[] args) {  
+        String fileName = "test.ser";  
+  
+        // File Stream 객체 생성 (try with resource 사용)  
+        try (FileInputStream fis = new FileInputStream(fileName);  
+             ObjectInputStream in = new ObjectInputStream(fis)) {  
+  
+            // 바이트 스트림을 다시 자바 객체로 변환 (이때 캐스팅 필요)  
+            SerializableTest test = (SerializableTest) in.readObject();  
+            System.out.println(test);  
+        } catch (IOException | ClassNotFoundException e) {  
+            e.printStackTrace();  
+        }  
+  
+    }  
 }
 ```
+
+<br>
+
+이렇게 
