@@ -66,8 +66,11 @@ ResponseDto response = restTemplate.exchange(url, HttpMethod.POST, request, Resp
 
 ## 📘 Request & Response를 다양한 형식으로 처리
 
+다양한 Request & Response를 JSON,XML등 바이너리 데이터 형식과 같은 응답 처리를 할 수 있고,
 
+HTTP 요청 및 응답의 부분을 추출하거나 수정할 수 있습니다.
 
 ```java
-
+RestTemplate restTemplate = new RestTemplate();
+HttpHeaders headers = new HttpHeaders();
 ```
