@@ -61,7 +61,6 @@ Serializable 인터페이스는 아무런 내용도 없는 **마커 인터페이
 import java.io.Serializable;
 
 public class SerializableTest implements Serializable {  
-  
     int id;  
     String name;  
     String password;  
@@ -97,5 +96,51 @@ public class SerializableTest implements Serializable {
 아래 코드는 외부 파일에 객체를 직렬화 하는 예시입니다.
 
 ```java
-
+public class SerializableTest implements Serializable {  
+    int id;  
+    String name;  
+    String password;  
+    int age;  
+  
+    public SerializableTest(int id, String name, String password, int age) {  
+        this.id = id;  
+        this.name = name;  
+        this.password = password;  
+        this.age = age;  
+    }  
+  
+    @Override  
+    public String toString() {  
+        return "SerializableTest{" +  
+                "id=" + id +  
+                ", password='" + password + '\'' +  
+                ", name='" + name + '\'' +  
+                ", age=" + age +  
+                '}';  
+    }  
+  
+    public static void main(String[] args) {  
+        // 직렬화할 테스트 객체 생성  
+        SerializableTest test = new SerializableTest(1, "사람1", "1234", 20);  
+  
+        // 외부 파일 명  
+        String fileName = "test.ser";  
+  
+        // File Stream 객체 생성 (try with resource 사용)  
+        try(FileOutputStream fos = new FileOutputStream(fileName);  
+            ObjectOutputStream out = new ObjectOutputStream(fos)) {  
+  
+            // 직렬화 가능 객체를 바이트 스트림으로 변환하고 파일에 저장  
+            out.writeObject(test);  
+        } catch (IOException e) {  
+            e.printStackTrace();  
+        }  
+    }  
+}
 ```
+
+<br>
+
+이후 코드를 실행사키면 `test.ser`파일이 생성됩니다.
+
+확장자를 `ser`
