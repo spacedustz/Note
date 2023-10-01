@@ -564,4 +564,12 @@ SerialVersionUIDTest{name='사람1', age=20, address='조선', email='null'}
 
 <br>
 
-이렇게 클래스 내에 **serialVersionUID**를 명시해주면, 내용이 바뀌어도 버전이 유지됨으로 ㅇ
+이렇게 클래스 내에 **serialVersionUID**를 명시해주면, 내용이 바뀌어도 버전이 유지됨으로 인해,
+
+필드가 매칭되지 않더라고 일단 역직렬화 동작 자체를 수행할 수 있게 됩니다.
+
+<br>
+
+> 📌 **SerialVersionUID 값 자동 생성하기**
+
+serialVersionUID는
