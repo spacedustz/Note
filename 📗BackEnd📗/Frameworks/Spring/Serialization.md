@@ -498,5 +498,13 @@ Serializable 인터페이스를 구현하는 모든 직렬화된 클래스는 **
 예를 들어 다음 클래스를 직렬화 시켜 TestUser.ser 파일로 저장하고, 서비스에서 가져와 역직렬화 해 사용한다고 가정합니다.
 
 ```java
-
+public class SerialVersionUIDTest implements Serializable {  
+    private String name;  
+    private int age;  
+    private String address;  
+}
 ```
+
+<br>
+
+이 클래스에 Email 필드를 추가해야 한다는 요구사항 명ㅅ
