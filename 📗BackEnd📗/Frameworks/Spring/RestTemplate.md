@@ -94,4 +94,18 @@ headers.add("Authorization", "Bearer <Access_Token>");
 
 ## 📘 Header &  Query Parameter 설정
 
-RestTemplate는 HTTP Request에 대한 Request header 및 Query Paramenter를 설정할 수 있습
+RestTemplate는 HTTP Request에 대한 Request header 및 Query Paramenter를 설정할 수 있습니다.
+
+<br>
+
+**Request Header**
+
+- Request Header는 RestTemplate의 HttpHeaders 클래스를 사용하여 설정합니다.
+- HttpHeaders 클래스의 add() 메서드를 사용하여 요청 헤더에 새 항목을 추가합니다.
+
+
+<br>
+
+**Query Parameter**
+
+- RestTemplate의 exhcange()
