@@ -61,3 +61,7 @@ HttpEntity<RequestDto> request = new HttpEntity<>(requestDto, headers);
 // HTTP 요청 및 응답 처리
 ResponseDto response = restTemplate.exchange(url, HttpMethod.POST, request, ResponseDto.class).getBody();
 ```
+
+---
+
+## Request & Response를 다양한 형식으로 처리
