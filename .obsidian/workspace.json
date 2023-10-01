@@ -97,7 +97,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "imoji.md",
+                "file": "📗BackEnd📗/Frameworks/Spring/Serialization.md",
                 "mode": "source",
                 "source": false
               }
@@ -170,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "imoji.md",
+                "file": "📗BackEnd📗/Frameworks/Spring/Serialization.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +187,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "imoji.md",
+                "file": "📗BackEnd📗/Frameworks/Spring/Serialization.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -210,7 +210,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "imoji.md"
+                "file": "📗BackEnd📗/Frameworks/Spring/Serialization.md"
               }
             }
           },
@@ -243,10 +243,10 @@
   },
   "active": "ddc68a00ade7bf76",
   "lastOpenFiles": [
+    "imoji.md",
     "📗BackEnd📗/Frameworks/Spring/Serialization.md",
     "📗BackEnd📗/Frameworks/Spring/출입통제시스템.md",
     "📗BackEnd📗/Frameworks/Spring/RestTemplate.md",
-    "imoji.md",
     "📗BackEnd📗/Languages/Java/Multi-Threading/구현-1.md",
     "📗BackEnd📗/Languages/Java/Multi-Threading/Basic.md",
     "📗BackEnd📗/Frameworks/Spring/Akka Actor.md",
