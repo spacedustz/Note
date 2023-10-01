@@ -131,3 +131,17 @@ ResponseEntity response = restTemplate.exchange(
 	entity,
 	String.class);
 ```
+
+---
+
+## 📘 Request & Response에 대한 Logging
+
+RestTemplate Bean을 구성하는데 사용되는 HttpClient는 HTTP 요청 및 응답을 로깅할 수 있는 HttpClientInterceptor를 제공합니다.
+
+<br>
+
+**HttpClientIntercepto**
+
+```java
+
+```
