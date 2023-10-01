@@ -192,6 +192,7 @@ RestTemplate restTemplate = new RestTemplateBuilder()
 Bean으로 RestTemplate을 Bean을 주입했으니 다른 클래스에서 쉽게 주입하여 사용할 수 있습니다.
 
 ```java
+@Slf4j
 @Service
 @RequiredArgsConstructor
 @Transactional
@@ -200,7 +201,12 @@ public class TestService {
 
 	public void testRequest() {
 		String url = "https://security.xxx.com/api"
-		ResponseEntty response = restTemplate.getForEntity
+		ResponseEntty response = restTemplate.getForEntity(url, String.class);
+		log.info("응답 값 : {}", response.getBody());
 	}
 }
 ```
+
+<br>
+
+> **RestTemplate**
