@@ -146,6 +146,11 @@ RestTemplate Bean을 구성하는데 사용되는 HttpClient는 HTTP 요청 및 
 public class CustomInterceptor implements HttpClientInterceptor {
 
 	@Override
-	public ClientHttpResponse intercept(HttpRequest request, byte[] body, ClientHttpRequestExecution ex)
+	public ClientHttpResponse intercept(
+		HttpRequest request,
+		byte[] body, 
+		ClientHttpRequestExecution execution) throws IOException {
+			// Request  
+		}
 }
 ```
