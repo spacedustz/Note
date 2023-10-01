@@ -138,6 +138,8 @@ ResponseEntity response = restTemplate.exchange(
 
 RestTemplate Bean을 구성하는데 사용되는 HttpClient는 HTTP 요청 및 응답을 로깅할 수 있는 HttpClientInterceptor를 제공합니다.
 
+HTTP 요청/응답을 가로채서 수정하거나 로깅을 할 수 있는 Interceptor입니다.
+
 <br>
 
 **HttpClientInterceptor의 구현체를 작성합니다.**
@@ -174,3 +176,9 @@ public class CustomInterceptor implements HttpClientInterceptor {
 <br>
 
 RestTemplate 객체를 만들 때 interceptors 속성에 해당 구현체 객체를 넣습니다.
+
+```java
+RestTemplate restTemplate = new RestTemplateBuilder()
+	.interceptors(new CustomInterceptor())
+	.build();
+```
