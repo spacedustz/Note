@@ -225,4 +225,8 @@ public class SerializableTest implements Serializable {
 
 <br>
 
-이렇게 
+이렇게 역직렬화 코드를 실행시키면, 생성자로 객체 초기화 없이 바로 객체 정보를 가져와 인스턴스화 할 수 있습니다.
+
+```
+역직렬화된 객체 출력 값 : SerializableTest{id=1, password='1234', name='사람1', age=20}
+```
