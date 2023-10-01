@@ -477,3 +477,6 @@ public class CustomDeserializableTest implements Serializable {
 
 ## 📘 직렬화 버전 관리 (SerialVersionUID)
 
+Serializable 인터페이스를 구현하는 모든 직렬화된 클래스는 **serialVersionUID(SUID)** 라는 고유 식별번호를 부여 받습니다.
+
+이 식별 ID는 클래스를 직렬화/역직렬화
