@@ -534,4 +534,9 @@ serialVersionUID = 183812845818421, local class serialVersionUID = 9883287472372
 
 SUID를 직접 명시해주면 클래스의 내용이 변경되어도, 내부적으로 자동 생성된 SUID 값으로 자동 변경되지 않습니다.
 
-이외에도 런타임 시 SUID를 생성하는 식산도
+이외에도 런타임 시 SUID를 생성하는 시간도 무시 못하기 때문에 미리 명시하는걸 강력히 권장합니다.
+
+<br>
+
+**serialVersionUID**는 아래와 같이 `private static final` 제어자로 선언해야 하며 타입은 `long`입니다.
+
