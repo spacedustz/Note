@@ -258,4 +258,8 @@ public class SerializableTest implements Serializable {
 
 많은 객체를 담고, ArrayList 하나만 역직렬화하면 되니까 순서를 고려할 필요가 없어집니다.
 
-아까 위에서 다양한
+아까 위에서 다양한 자바의 Referense를 간단하게 역직렬화 할 수 있다고 했는데, 이럴때 그 장점을 사용합니다.
+
+```java
+
+```
