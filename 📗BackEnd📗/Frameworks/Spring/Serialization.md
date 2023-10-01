@@ -376,3 +376,5 @@ public class SerializableTest implements Serializable {
 출력 값 : 
 [SerializableTest{id=1, password='1234', name='사람1', age=20}, SerializableTest{id=2, password='1234', name='사람2', age=25}, SerializableTest{id=3, password='1234', name='사람3', age=30}]
 ```
+
+---
