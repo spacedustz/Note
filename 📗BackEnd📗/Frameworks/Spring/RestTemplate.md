@@ -35,3 +35,11 @@ RestTemplate의 경우 Http 요청 및 응답에 대한 HTTP Method 별 (GET,POS
 |**exchange()**|any|ResponseEntity|헤더를 생성하고 모든 요청 방법을 허용합니다|
 |**execute()**|any|T|요청/응답 콜백을 수정합니다|
 
+---
+
+## 📘 HTTP Request & Response의 자동 변환/역직렬화
+
+RestTemplate는 요청 및 응답을 자동으로 변환하고 역직렬화 하는 기능을 제공합니다.
+
+변환은 내부적으로 MessageConverter에 의해 자동으로 처리됩니다.
+
