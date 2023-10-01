@@ -98,6 +98,21 @@ RestTemplate는 HTTP Request에 대한 Request header 및 Query Paramenter를 �
 
 <br>
 
+|   |   |
+|---|---|
+|**메서드**|**설명**|
+|setContentType(MediaType mediaType)|Content-Type 헤더 설정|
+|setAccept(List<MediaType> acceptableMediaTypes)|Accept 헤더 설정|
+|add(String headerName, String headerValue)|특정 헤더 추가|
+|addAll(Map<String, String> headers)|여러 개의 헤더 추가|
+|setBearerAuth(String token)|Authorization 헤더에 Bearer 토큰 추가|
+|setBasicAuth(String username, String password)|Authorization 헤더에 Basic 인증 정보 추가|
+|setIfNoneMatch(String etag)|If-None-Match 헤더 추가|
+|setIfModifiedSince(ZonedDateTime ifModifiedSince)|If-Modified-Since 헤더 추가|
+|set(String headerName, String headerValue)|특정 헤더 설정|
+
+<br>
+
 **Request Header**
 
 - Request Header는 RestTemplate의 HttpHeaders 클래스를 사용하여 설정합니다.
