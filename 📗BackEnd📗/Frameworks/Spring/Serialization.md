@@ -88,4 +88,14 @@ public class SerializableTest implements Serializable {
 
 <br>
 
-> 📌 **ObjectOutputStream을 이용한 객체 직려**
+> 📌 **ObjectOutputStream을 이용한 객체 직렬화**
+
+직렬화 (스트림에 객체를 출력)에는 ObjectOutputStream을 사용합니다.
+
+객체가 직렬화될때 오직 객체의 인스턴스 필드값만을 저장하고, static 필드나 메서드는 직렬화하여 저장하지 않습니다.
+
+아래 코드는 외부 파일에 객체를 직렬화 하는 예시입니다.
+
+```java
+
+```
