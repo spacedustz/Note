@@ -119,7 +119,8 @@ public class SerializableTest implements Serializable {
                 '}';  
     }  
   
-    public static void main(String[] args) {  
+    // 객체 직렬화 
+    public static void doSerialize() {  
         // 직렬화할 테스트 객체 생성  
         SerializableTest test = new SerializableTest(1, "사람1", "1234", 20);  
   
@@ -135,6 +136,11 @@ public class SerializableTest implements Serializable {
         } catch (IOException e) {  
             e.printStackTrace();  
         }  
+    }  
+  
+    public static void main(String[] args) {  
+        doSerialize();  
+        doDeserialize();  
     }  
 }
 ```
