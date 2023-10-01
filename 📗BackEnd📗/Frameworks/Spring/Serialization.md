@@ -473,5 +473,7 @@ public class CustomDeserializableTest implements Serializable {
 - 상위 클래스가 Serializable을 구현하도록 하기
 - writeObject / readObject 재정의 하기
 
-<br>
+---
+
+## 📘 직렬화 버전 관리 (SerialVersionUID)
 
