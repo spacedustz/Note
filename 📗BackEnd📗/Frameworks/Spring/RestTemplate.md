@@ -296,3 +296,12 @@ HttpHeaders를 사용하여 RestTemplate Header를 구성합니다.
 |MULTIPART_FORM_DATA|multipart/form-data|여러 개의 다른 형식의 파트를 하나의 요청에 함께 전송|
 |TEXT_HTML|text/html|HTML 형식|
 |TEXT_XML|text/xml|XML 형식|
+
+---
+
+## 📘 Body & Request Entity 구성
+
+HTTP Request를 보내기 위한 Request Body, Response Entity를 생성하는 코드입니다.
+
+- JSON 형태로 객체를 생성하고 전달할 값을 넣습니다.
+- 생성된 객체를 toString() 으
