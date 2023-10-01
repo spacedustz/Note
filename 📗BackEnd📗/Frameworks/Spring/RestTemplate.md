@@ -140,6 +140,8 @@ RestTemplate Bean을 구성하는데 사용되는 HttpClient는 HTTP 요청 및 
 
 HTTP 요청/응답을 가로채서 수정하거나 로깅을 할 수 있는 Interceptor입니다.
 
+Configuration을 설정할 떄 RestTemplate Bean에 HttpClientInterceptor를 추가해주면 됩니다.
+
 <br>
 
 **HttpClientInterceptor의 구현체를 작성합니다.**
