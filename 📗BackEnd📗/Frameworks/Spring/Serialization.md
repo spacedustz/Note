@@ -53,4 +53,15 @@
 
 그렇지 않으면 `NotSerializableException` 런타임 에러가 발생합니다.
 
-Serializ
+Serializable 인터페이스는 아무런 내용도 없는 **마커 인터페이스**로써 직렬화를 고려해 작성한 클래스인지를 판단하는 기준으로 사용됩니다.
+
+<br>
+
+```java
+public class SerializableTest implements Serializable {
+  
+    int id;  
+    String name;  
+    String password;  
+    int age;
+```
