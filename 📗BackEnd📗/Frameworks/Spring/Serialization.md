@@ -513,3 +513,14 @@ public class SerialVersionUIDTest implements Serializable {
 Exception in thread "main" java.io.InvalidClassException
 serialVersionUID = 183812845818421, local class serialVersionUID = 9883287472372 // UID 값 불일치
 ```
+
+<br>
+
+앞선 예제들에서도 직렬화 클래스를 선언할 때 SUID 값을 생략했지만, 내부적으로는 식별번호가 생성되어 있어,
+
+나중에 클래스를 수정하게 된다면 SUID 값도 변하게 되서 역직렬화 시 Exception이 발생하는 것입니다.
+
+---
+
+## 📘 직렬화 버전 수동 관리
+
