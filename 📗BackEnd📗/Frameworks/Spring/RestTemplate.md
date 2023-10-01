@@ -120,6 +120,14 @@ HttpHeaders headers = new HttpHeaders();
 headers.setAccept(Collections.singletonList(MediaType.APPLICATION_JSON));
 
 UriComponentsBuilder builder = UriComponentsBuilder.fromHttpUrl("<http://localhost/api/users>")
-	.queryParam("page", 2);
-	.queryParam
+	.queryParam("page", 2)
+	.queryParam("size", 10);
+
+HttpEntity entity = new HttpEntity<>(headers);
+
+ResponseEntity response = restTemplate.exchange(
+	builder.toUriString(),
+	HttpMethod.GET,
+	entity,
+	String.class);
 ```
