@@ -400,24 +400,58 @@ public class CustomDeserializableTest implements Serializable {
         this.password = password;  
         this.age = age;  
     }  
-      
+  
+    @Override  
+    public String toString() {  
+        return "CustomDeserializableTest{" +  
+                "id=" + id +  
+                ", name='" + name + '\'' +  
+                ", password='" + password + '\'' +  
+                ", age=" + age +  
+                '}';  
+    }  
+  
     // 직렬화 재정의  
     private void writeObject(ObjectOutputStream out) throws IOException {  
         out.writeInt(id);  
         out.writeObject(name);  
         out.writeInt(age);  
     }  
-      
+  
     // 역직렬화 재정의  
     private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException {  
         this.id = in.readInt();  
         this.name = (String) in.readObject();  
         this.age = in.readInt();  
-    }
+    }  
+  
+    public static void doCustomSerialize() throws IOException, ClassNotFoundException {  
+        CustomDeserializableTest test = new CustomDeserializableTest(1, "사람1", "1234", 20);  
+        String fileName = "CustomTest.ser";  
+  
+        // 직렬화  
+        ObjectOutputStream out = new ObjectOutputStream(new BufferedOutputStream(new FileOutputStream(fileName)));  
+        out.writeObject(test);  
+        out.close();  
+  
+        // 역직렬화  
+        ObjectInputStream in = new ObjectInputStream(new BufferedInputStream(new FileInputStream(fileName)));  
+        CustomDeserializableTest deserializedTest = (CustomDeserializableTest) in.readObject();  
+        in.close();  
+  
+        System.out.println(deserializedTest);  
+    }  
+  
+    public static void main(String[] args) throws IOException, ClassNotFoundException {  
+        doCustomSerialize();  
+    }  
+}
 ```
 
 <br>
 
-```
+코드를 실행해보면 password 부분은 직렬화, 역직렬화 대상에서 제외되어 보이지 않게 됩니다.
 
+```
+결과값 : CustomDeserializableTest{id=1, name='사람1', password='null', age=20}
 ```
