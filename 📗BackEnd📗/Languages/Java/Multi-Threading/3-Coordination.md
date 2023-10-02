@@ -407,7 +407,13 @@ B는 계속 Loop를 돌면서 CPU Cycle을 태워버리기 때문입니다.
 
 <br>
 
-스레드가 계산을 마치면 isNinished에 true를 반환하여, 클래스 밖에서 getter를 호출하고
+스레드가 계산을 마치면 isNinished에 true를 반환하여 클래스 밖에서 getter를 호출하고,
+
+클래스와 호출자가 결과 준비 여부를 알아낼 수 있습니다.
+
+<br>
+
+메인 스레드에서는 모든 Factorial 스레드의 결과값을 로그로 찍어서 출력할 겁니다.
 
 ```java
 @Slf4j  
