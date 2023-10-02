@@ -498,5 +498,6 @@ public class FactorialThread extends Thread {
 
 0과 23의 Factorial을 계산하는 것은 그렇게 오래 걸리지 않아서, 0과 23의 결과값은 나왔습니다.
 
+이 현상이 어디서 많이 들어본 **Race Condition** 입니다.
 
-
+Thread List를 순회하며 스레드들을 실행 시키는 
