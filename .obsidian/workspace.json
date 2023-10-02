@@ -97,7 +97,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/1-Create.md",
+                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/3-Coordination.md",
                 "mode": "source",
                 "source": false
               }
@@ -170,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/1-Create.md",
+                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/3-Coordination.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +187,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/1-Create.md",
+                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/3-Coordination.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -210,7 +210,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/1-Create.md"
+                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/3-Coordination.md"
               }
             }
           },
@@ -243,6 +243,9 @@
   },
   "active": "ddc68a00ade7bf76",
   "lastOpenFiles": [
+    "imoji.md",
+    "📗BackEnd📗/Languages/Java/Multi-Threading/3-Coordination.md",
+    "📗BackEnd📗/Languages/Java/Multi-Threading/1-Create.md",
     "📗FrontEnd📗/Frameworks/Flutter/Row and Colume/Expanded Widget & Flexible Widget.md",
     "📗FrontEnd📗/Frameworks/Flutter/Row and Colume/Safe Area.md",
     "📗FrontEnd📗/Frameworks/Flutter/Row and Colume/MainAxisAlignment.md",
@@ -250,8 +253,6 @@
     "📗FrontEnd📗/Frameworks/Flutter/Row and Colume/실습.md",
     "📗BackEnd📗/Languages/Java/Multi-Threading/2-Inheritance.md",
     "📗BackEnd📗/Languages/Java/Multi-Threading/Basic.md",
-    "📗BackEnd📗/Languages/Java/Multi-Threading/1-Create.md",
-    "imoji.md",
     "📗BackEnd📗/Frameworks/Spring/Serialization.md",
     "📗BackEnd📗/Frameworks/Spring/출입통제시스템.md",
     "📗BackEnd📗/Frameworks/Spring/RestTemplate.md",
@@ -268,7 +269,6 @@
     "📗BackEnd📗/Frameworks/Message-Broker/RabbitMQ/Summary.md",
     "📗BackEnd📗/Frameworks/Message-Broker/RabbitMQ/RabbitMQ-Configuration.md",
     "📗BackEnd📗/Frameworks/Message-Broker/RabbitMQ/RabbitMQ-Dead Letter Exchange-TTL.md",
-    "📗BackEnd📗/Frameworks/Message-Broker/RabbitMQ/On-Linux.md",
     "📗BackEnd📗/Languages/Java/Multi-Threading",
     "erlang-source.png",
     "📗DataBase📗/Redis",
