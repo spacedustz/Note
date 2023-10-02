@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📗BackEnd📗/Frameworks/Spring/출입통제시스템.md",
+                "file": "📗기능개발📗/출입통제시스템.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📗BackEnd📗/Frameworks/Spring/출입통제시스템.md",
+                "file": "📗기능개발📗/출입통제시스템.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/3-Coordination.md",
+                "file": "imoji.md",
                 "mode": "source",
                 "source": false
               }
@@ -170,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/3-Coordination.md",
+                "file": "imoji.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +187,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/3-Coordination.md",
+                "file": "imoji.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -210,7 +210,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/3-Coordination.md"
+                "file": "imoji.md"
               }
             }
           },
@@ -243,8 +243,10 @@
   },
   "active": "ddc68a00ade7bf76",
   "lastOpenFiles": [
+    "📗기능개발📗/시뮬레이터.md",
     "imoji.md",
     "📗BackEnd📗/Languages/Java/Multi-Threading/3-Coordination.md",
+    "📗기능개발📗",
     "📗BackEnd📗/Languages/Java/Multi-Threading/1-Create.md",
     "📗FrontEnd📗/Frameworks/Flutter/Row and Colume/Expanded Widget & Flexible Widget.md",
     "📗FrontEnd📗/Frameworks/Flutter/Row and Colume/Safe Area.md",
@@ -254,7 +256,7 @@
     "📗BackEnd📗/Languages/Java/Multi-Threading/2-Inheritance.md",
     "📗BackEnd📗/Languages/Java/Multi-Threading/Basic.md",
     "📗BackEnd📗/Frameworks/Spring/Serialization.md",
-    "📗BackEnd📗/Frameworks/Spring/출입통제시스템.md",
+    "📗기능개발📗/출입통제시스템.md",
     "📗BackEnd📗/Frameworks/Spring/RestTemplate.md",
     "📗BackEnd📗/Frameworks/Spring/Akka Actor.md",
     "📗BackEnd📗/Frameworks/Spring/Ehcache & Devtools.md",
@@ -268,7 +270,6 @@
     "📗BackEnd📗/Frameworks/Spring/Spring Batch-Kotlin.md",
     "📗BackEnd📗/Frameworks/Message-Broker/RabbitMQ/Summary.md",
     "📗BackEnd📗/Frameworks/Message-Broker/RabbitMQ/RabbitMQ-Configuration.md",
-    "📗BackEnd📗/Frameworks/Message-Broker/RabbitMQ/RabbitMQ-Dead Letter Exchange-TTL.md",
     "📗BackEnd📗/Languages/Java/Multi-Threading",
     "erlang-source.png",
     "📗DataBase📗/Redis",
@@ -279,7 +280,6 @@
     "📗Ops-Tools📗/CI & CD/Jenkins",
     "📗Ops-Tools📗/CI & CD/Github Actions",
     "📗Ops-Tools📗/CI & CD/AWS",
-    "📗Ops-Tools📗/MSA",
     "Pasted image 20230805163438.png"
   ]
 }
