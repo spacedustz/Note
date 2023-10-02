@@ -324,3 +324,11 @@ private static class SleepingThread implements Runnable {
     }  
 }
 ```
+
+---
+
+## 📘 Thread.join()
+
+다른 스레드를 시작하고 멈추는 기능 그 이상에 대해 알아보겠습니다.
+
+특히, 신뢰하는 스레드가 예상 시간 안에
