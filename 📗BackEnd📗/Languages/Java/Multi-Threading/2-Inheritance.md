@@ -27,7 +27,7 @@
 
 **VaultHackerThread**
 
-자세한 코드 설명은
+자세한 코드 설명은 아래에 있습니다.
 
 ```java
 @Slf4j  
@@ -179,3 +179,7 @@ public class VaultHackerThread {
 - `PoliceThread`는 시작하면 10초 동안 카운트다운 메시지를 출력한 뒤 "잡았다 요놈!" 메시지를 출력하고 프로그램을 종료합니다.
 
 비밀번호가 정확히 추측되거나 경찰 스레드가 해커 스레드를 찾으면 프로그램이 종료됩니다.
+
+<br>
+
+![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/hacker.png)
