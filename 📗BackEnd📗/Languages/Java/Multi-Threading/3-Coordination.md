@@ -387,7 +387,7 @@ B는 계속 Loop를 돌면서 CPU Cycle을 태워버리기 때문입니다.
 
 <br>
 
-> 📌 **Thread.join() 예시**
+## 📘 Thread.join() 예시
 
 특정 숫자 배열에서 각 숫자의 Factorial을 계산하는 예시 코드로 join()을 배워보겠습니다.
 
@@ -416,7 +416,7 @@ B는 계속 Loop를 돌면서 CPU Cycle을 태워버리기 때문입니다.
 메인 스레드에서는 모든 Factorial 스레드의 결과값을 로그로 찍어서 출력할 겁니다.
 
 ```java
-@Slf4j  
+/* 숫자 배열 - 각 숫자의 Factorial을 각각의 스레드로 병렬 계산하는 클래스 */@Slf4j  
 @Getter  
 public class FactorialThread extends Thread {  
   
@@ -446,9 +446,51 @@ public class FactorialThread extends Thread {
     }  
   
     public static void main(String[] args) {  
-        // 리스트의 각 숫자의 Factorial을 계산하는 예시  
+        // 숫자 배열 생성  
         List<Long> inputNums = Arrays.asList(0L, 3435L, 35435L, 2324L, 4656L, 23L, 2435L, 5566L);  
+  
+        // 스레드 리스트 생성  
+        List<FactorialThread> list = new ArrayList<>();  
+  
+        // 모든 입력 숫자에 대해 각각 스레드 객체 생성  
+        for (long inputNum : inputNums) {  
+            list.add(new FactorialThread(inputNum));  
+        }  
+  
+        // 스레드 리스트의 모든 스레드 시작  
+        for (Thread thread : list) {  
+            thread.start();  
+        }  
+  
+        // 계산 스레드에서 결과값을 가져와 출력 - main 메서드의 역할  
+        for (int i = 0; i < inputNums.size(); i++) {  
+            // 각 스레드의 계산 완료 여부(isFinished)를 확인해 결과가 준비 됬는지 확인  
+            FactorialThread thread = list.get(i);  
+  
+            // 계산이 완료됬다면, 입력값과 계산 결과값 출력  
+            if (thread.isFinished) {  
+                log.info("계산 완료. - {}의 Factorial은 {} 입니다.", inputNums.get(i), thread.getResult());  
+            } else {  
+                log.info("계산 중 입니다. - 입력값 : {}", inputNums.get(i));  
+            }  
+        }  
     }  
 }
+```
+
+<br>
+
+위 코드를 실행하면 아래왜 같은 출력값이 나옵니다.
+
+```
+> Task :FactorialThread.main()
+16:34:05.232 [main] INFO com.thread.coordination.FactorialThread -- 계산 완료. - 0의 Factorial은 1 입니다.
+16:34:05.237 [main] INFO com.thread.coordination.FactorialThread -- 계산 중 입니다. - 입력값 : 3435
+16:34:05.237 [main] INFO com.thread.coordination.FactorialThread -- 계산 중 입니다. - 입력값 : 35435
+16:34:05.237 [main] INFO com.thread.coordination.FactorialThread -- 계산 중 입니다. - 입력값 : 2324
+16:34:05.237 [main] INFO com.thread.coordination.FactorialThread -- 계산 중 입니다. - 입력값 : 4656
+16:34:05.237 [main] INFO com.thread.coordination.FactorialThread -- 계산 중 입니다. - 입력값 : 23
+16:34:05.237 [main] INFO com.thread.coordination.FactorialThread -- 계산 중 입니다. - 입력값 : 2435
+16:34:05.237 [main] INFO com.thread.coordination.FactorialThread -- 계산 중 입니다. - 입력값 : 5566
 ```
 
