@@ -506,9 +506,31 @@ Thread List를 순회하며 스레드들을 실행 시키는 2번째 for Loop와
 
 각 스레드의 결과값을 확인하려는 main 스레드의 Loop인 마지막 Loop 사이에서 일어나는 경쟁 상태 입니다.
 
+```java
+// 스레드 리스트의 모든 스레드 시작  
+for (Thread thread : list) {  
+    thread.start();  
+}  
+  
+// 계산 스레드에서 결과값을 가져와 출력 - main 메서드의 역할  
+for (int i = 0; i < inputNums.size(); i++) {  
+    // 각 스레드의 계산 완료 여부(isFinished)를 확인해 결과가 준비 됬는지 확인  
+    FactorialThread thread = list.get(i);  
+  
+    // 계산이 완료됬다면, 입력값과 계산 결과값 출력  
+    if (thread.isFinished) {  
+        log.info("계산 완료. - {}의 Factorial은 {} 입니다.", inputNums.get(i), thread.getResult());  
+    } else {  
+        log.info("계산 중 입니다. - 입력값 : {}", inputNums.get(i));  
+    }  
+}
+```
+
 <br>
 
 이제 위 코드에서 **Thread.join()**을 사용해서 계산 스레드가 작업을 마칠떄까지,
 
 결과 값을 확인하는 main 스레드를 대기하게 만들어 보겠습니다.
+
+위에서 경쟁 상태에 들어간 2개의 For Loop 사이에 또 하나의 For Loop를 추가해줍니다.
 
