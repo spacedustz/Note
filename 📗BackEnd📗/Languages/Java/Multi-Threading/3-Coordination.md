@@ -223,9 +223,31 @@ Daemon 스레드는 백그라운드 작업이기 때문에 **앱의 실행이나
 main 메서드에서 스레드를 start 하기 전 `thread.setDaemon(true)`를 작성하면 됩니다.
 
 ```java
-
+    public static void main(String[] args) {  
+        /* BlockingTask 실행 코드 *///        
+//        Thread thread = new Thread(new BlockingTask());  
+//        thread.start();  
+//  
+//        try {  
+//            Thread.sleep(5000);  
+//        } catch (InterruptedException e) {  
+//            throw new RuntimeException(e);  
+//        }  
+//  
+//        Thread orderStopThread = new Thread(thread::interrupt);  
+//        orderStopThread.start();  
+  
+  
+        /* LongComputationTask 실행 코드 */        
+        Thread thread = new Thread(new LongComputationTask(new BigInteger("200000"), new BigInteger("10000000")));  
+        // 2의 10제곱 계산  
+        thread.setDaemon(true);  
+        thread.start();  
+        thread.interrupt();  
+    }
 ```
 
+<br>
 
 그 후 다시 프로그램을 실행했을때, 
 
