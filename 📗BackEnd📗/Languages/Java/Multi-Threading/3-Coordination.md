@@ -484,13 +484,19 @@ public class FactorialThread extends Thread {
 
 ```
 > Task :FactorialThread.main()
-16:34:05.232 [main] INFO com.thread.coordination.FactorialThread -- 계산 완료. - 0의 Factorial은 1 입니다.
-16:34:05.237 [main] INFO com.thread.coordination.FactorialThread -- 계산 중 입니다. - 입력값 : 3435
-16:34:05.237 [main] INFO com.thread.coordination.FactorialThread -- 계산 중 입니다. - 입력값 : 35435
-16:34:05.237 [main] INFO com.thread.coordination.FactorialThread -- 계산 중 입니다. - 입력값 : 2324
-16:34:05.237 [main] INFO com.thread.coordination.FactorialThread -- 계산 중 입니다. - 입력값 : 4656
-16:34:05.237 [main] INFO com.thread.coordination.FactorialThread -- 계산 중 입니다. - 입력값 : 23
-16:34:05.237 [main] INFO com.thread.coordination.FactorialThread -- 계산 중 입니다. - 입력값 : 2435
-16:34:05.237 [main] INFO com.thread.coordination.FactorialThread -- 계산 중 입니다. - 입력값 : 5566
+16:36:47.378 [main] INFO com.thread.coordination.FactorialThread -- 계산 완료. - 0의 Factorial은 1 입니다.
+16:36:47.384 [main] INFO com.thread.coordination.FactorialThread -- 계산 중 입니다. - 입력값 : 3435
+16:36:47.384 [main] INFO com.thread.coordination.FactorialThread -- 계산 중 입니다. - 입력값 : 35435
+16:36:47.384 [main] INFO com.thread.coordination.FactorialThread -- 계산 중 입니다. - 입력값 : 2324
+16:36:47.384 [main] INFO com.thread.coordination.FactorialThread -- 계산 중 입니다. - 입력값 : 4656
+16:36:47.384 [main] INFO com.thread.coordination.FactorialThread -- 계산 완료. - 23의 Factorial은 25852016738884976640000 입니다.
+16:36:47.384 [main] INFO com.thread.coordination.FactorialThread -- 계산 중 입니다. - 입력값 : 2435
+16:36:47.384 [main] INFO com.thread.coordination.FactorialThread -- 계산 중 입니다. - 입력값 : 5566
 ```
+
+<br>
+
+0과 23의 Factorial을 계산하는 것은 그렇게 오래 걸리지 않아서, 0과 23의 결과값은 나왔습니다.
+
+
 
