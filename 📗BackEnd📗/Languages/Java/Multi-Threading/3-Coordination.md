@@ -403,6 +403,12 @@ B는 계속 Loop를 돌면서 CPU Cycle을 태워버리기 때문입니다.
 
 결과값이 너무 크면 OverFlow가 발생할 수 있어 오래 사용하지 못하기 때문입니다.
 
+그래서 BigInteger를 사용하였습니다.
+
+<br>
+
+스레드가 계산을 마치면 isNinished에 true를 반환하여, 클래스 밖에서 getter를 호출하고
+
 ```java
 @Slf4j  
 @Getter  
