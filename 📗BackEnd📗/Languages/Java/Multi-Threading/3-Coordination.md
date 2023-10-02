@@ -170,7 +170,8 @@ public class BlockingTimeThread {
         /* LongComputationTask 실행 코드 */        
         Thread thread = new Thread(new LongComputationTask(new BigInteger("2"), new BigInteger("10")));  
         // 2의 10제곱 계산  
-        thread.start();  
+        thread.start();
+        thread.interrupt();
     }  
 }
 ```
@@ -205,3 +206,8 @@ for (BigInteger i = BigInteger.ZERO; i.compareTo(power) != 0; i = i.add(BigInteg
 }  
 ```
 
+---
+
+## 📘 Daemon Thread
+
+Daemon Thread는 백그라운드에서 실행되는 스레드로
