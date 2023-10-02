@@ -535,7 +535,32 @@ for (int i = 0; i < inputNums.size(); i++) {
 위에서 경쟁 상태에 들어간 2개의 For Loop 사이에 또 하나의 For Loop를 추가해줍니다.
 
 ```java
-
+    // 스레드 리스트의 모든 스레드 시작  
+    for (Thread thread : list) {  
+        thread.start();  
+    }  
+  
+    // join()을 통해 계산 스레드의 모든 작업이 완료 되었을때 아래 Loop를 실행하게 함.  
+    for (Thread thread : list) {  
+        try {  
+            thread.join();  
+        } catch (InterruptedException e) {  
+        }  
+    }  
+  
+    // 계산 스레드에서 결과값을 가져와 출력 - main 메서드의 역할  
+    for (int i = 0; i < inputNums.size(); i++) {  
+        // 각 스레드의 계산 완료 여부(isFinished)를 확인해 결과가 준비 됬는지 확인  
+        FactorialThread thread = list.get(i);  
+  
+        // 계산이 완료됬다면, 입력값과 계산 결과값 출력  
+        if (thread.isFinished) {  
+            log.info("계산 완료. - {}의 Factorial은 {} 입니다.", inputNums.get(i), thread.getResult());  
+        } else {  
+            log.info("계산 중 입니다. - 입력값 : {}", inputNums.get(i));  
+        }  
+    }  
+}
 ```
 
 모든 스레드의 join() 메서드는 스레드가 반드시 종료 되어야 반환됩니다.
@@ -548,4 +573,6 @@ for (int i = 0; i < inputNums.size(); i++) {
 
 **출력값**
 
-출력값은 숫자가 너무 크게 나와서 스크롤 압박이 
+출력값은 숫자가 너무 크게 나와서 스크롤 압박이 굉장히 심하므로 이 글에서 적진 않겠지만,
+
+실행을 시켜보면 모든 계산 작업의 결과값이 main 스레드에 의해 출력되는걸 확인하실 수 있을 겁니다.
