@@ -98,6 +98,8 @@ public class BlockingTimeThread {
 
 main 스레드에서는 작은 수인 2의 10제곱을 계산해서 계산결과가 바로 1024로 빠르게 나왔습니다.
 
+
+
 ```java
 @Slf4j  
 public class BlockingTimeThread {  
