@@ -182,4 +182,12 @@ public class VaultHackerThread {
 
 <br>
 
+**10초 안에 오름차순, 내림차순 해커 스레드가 비밀번호 추측에 성공하면 메싲**
+
 ![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/hacker.png)
+
+<br>
+
+**해커 스레드가 10초 동안 비밀번호 추측에 실패할 경우 경찰 스레드가 메시지를 출력합니다.**
+
+![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/police.png)
