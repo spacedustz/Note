@@ -112,10 +112,11 @@ public class BlockingTimeThread {
             }  
         }  
     }  
-  
+
+		// 거듭제곱을 수행하는 스레드
     private static class LongComputationTask implements Runnable {  
   
-        private BigInteger base; // 밑 수  
+        private BigInteger base; // 밑수  
         private BigInteger power; // 제곱  
   
         public LongComputationTask(BigInteger base, BigInteger power) {  
@@ -147,7 +148,7 @@ public class BlockingTimeThread {
   
     public static void main(String[] args) {  
         /* BlockingTask 실행 코드 *///        
-        Thread thread = new Thread(new BlockingTask());  
+//        Thread thread = new Thread(new BlockingTask());  
 //        thread.start();  
 //  
 //        try {  
