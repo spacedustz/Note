@@ -61,7 +61,7 @@ package com.thread.coordination;
 import lombok.extern.slf4j.Slf4j;  
   
 @Slf4j  
-public class BlockingTimeThread {  
+public class InterruptThread {  
   
     // Runnable을 구현하며 잘못된 시간을 차단하는 작업을 수행하는 스레드  
     private static class BlockingTask implements Runnable {  
@@ -104,7 +104,7 @@ main 메서드에 interrupt() 메서드를 넣어도, 이를 처리할 메서드
 
 ```java
 @Slf4j  
-public class BlockingTimeThread {  
+public class InterruptThread {  
   
     // Runnable을 구현하며 잘못된 시간을 차단하는 작업을 수행하는 스레드  
     private static class BlockingTask implements Runnable {  
