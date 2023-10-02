@@ -326,7 +326,6 @@ private static class SleepingThread implements Runnable {
 ```
 
 ---
-
 ## 📘 Thread.join()
 
 다른 스레드를 시작하고 멈추는 기능 그 이상에 대해 알아보겠습니다.
@@ -587,9 +586,8 @@ for (int i = 0; i < inputNums.size(); i++) {
 
 실행을 시켜보면 모든 계산 작업의 결과값이 main 스레드에 의해 출력되는걸 확인하실 수 있을 겁니다.
 
-<br>
-
-## **Edge Case**
+---
+## 📘 Edge Case
 
 만약 위 Factiroal 예시에서 입력으로 들어오는 숫자 배열의 숫자 중 1개의 값이 엄청 큰 값이면 어떻게 해야 할까요?
 
