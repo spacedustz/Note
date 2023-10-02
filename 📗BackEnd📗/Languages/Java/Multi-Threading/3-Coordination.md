@@ -297,7 +297,7 @@ private static class WaitingForUserInput implements Runnable {
 
 > **간단한 예시 2**
 
-
+이 코드에서 SleepingThread의
 
 ```java
 public static void main(String [] args) {  
