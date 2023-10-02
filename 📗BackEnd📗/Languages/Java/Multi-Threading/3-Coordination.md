@@ -39,4 +39,4 @@
 
 > 📌 **어떤 상황일 때 interrupt()를 쓸 수 있을까요?**
 
-**첫번째는**, interrupt하려는 스레드가 interrupt 당했을 때
+**첫번째는**, interrupt하려는 스레드에서 InterruptException이 발생했을 때
