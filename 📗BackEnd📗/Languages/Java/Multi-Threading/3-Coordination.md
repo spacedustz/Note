@@ -357,6 +357,16 @@ private static class SleepingThread implements Runnable {
 
 예를 들어 A의 계산값이 B에 입력된다고 가정해 보겠습니다.
 
+<br>
+
 이 때 B는 A가 계산이 완료 되었는지 어떻게 알 수 있을까요?
 
-단순하게 B
+단순하게 B가 Loop를 돌면서 A의 계산 작업을 계속 확인하면 됩니다.
+
+```java
+void waitForThreadA() {
+	while (!threadA.isFinished()) {
+		// burn CPU cycles
+	}
+}
+```
