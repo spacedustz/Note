@@ -385,5 +385,11 @@ B는 계속 Loop를 돌면서 CPU Cycle을 태워버리기 때문입니다.
 
 이 방법에 사용되는 것이 이 글의 주제인 **Thread.join()** 메서드입니다.
 
+<br>
 
+> 📌 **Thread.join() 예시**
+
+특정 숫자 배열에서 각 숫자의 Factorial을 계산하는 예시 코드로 join()을 배워보겠습니다.
+
+계승(Factorial) 계산은 곱셈 연산이 많아 CPU를 마
 
