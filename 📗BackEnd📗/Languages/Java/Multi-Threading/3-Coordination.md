@@ -385,8 +385,7 @@ B는 계속 Loop를 돌면서 CPU Cycle을 태워버리기 때문입니다.
 
 이 방법에 사용되는 것이 이 글의 주제인 **Thread.join()** 메서드입니다.
 
-<br>
-
+---
 ## 📘 Thread.join() 예시
 
 특정 숫자 배열에서 각 숫자의 Factorial을 계산하는 예시 코드로 join()을 배워보겠습니다.
@@ -416,7 +415,8 @@ B는 계속 Loop를 돌면서 CPU Cycle을 태워버리기 때문입니다.
 메인 스레드에서는 모든 Factorial 스레드의 결과값을 로그로 찍어서 출력할 겁니다.
 
 ```java
-/* 숫자 배열 - 각 숫자의 Factorial을 각각의 스레드로 병렬 계산하는 클래스 */@Slf4j  
+/* 숫자 배열 - 각 숫자의 Factorial을 각각의 스레드로 병렬 계산하는 클래스 */
+@Slf4j  
 @Getter  
 public class FactorialThread extends Thread {  
   
