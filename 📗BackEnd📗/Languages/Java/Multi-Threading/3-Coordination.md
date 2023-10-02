@@ -92,3 +92,78 @@ public class BlockingTimeThread {
 }
 ```
 
+<br>
+
+아래 코드는 거듭제곱을 계산하는 스레드를 실행하는 코드입니다.
+
+```java
+@Slf4j  
+public class BlockingTimeThread {  
+  
+    // Runnable을 구현하며 잘못된 시간을 차단하는 작업을 수행하는 스레드  
+    private static class BlockingTask implements Runnable {  
+  
+        @Override  
+        public void run() {  
+            try {  
+                Thread.sleep(500000);  
+            } catch (InterruptedException e) {  
+                log.info("Blocking Thread 종료");  
+            }  
+        }  
+    }  
+  
+    private static class LongComputationTask implements Runnable {  
+  
+        private BigInteger base; // 밑 수  
+        private BigInteger power; // 제곱  
+  
+        public LongComputationTask(BigInteger base, BigInteger power) {  
+            this.base = base;  
+            this.power = power;  
+        }  
+  
+        // 밑과 제곱을 올리는 함수  
+        private BigInteger pow(BigInteger base, BigInteger power) {  
+            // 결과만 선언하고 1초 초기화  
+            BigInteger result = BigInteger.ONE;  
+  
+            // 그리고, 0부터 제곱의 값까지 반복  
+            for (BigInteger i = BigInteger.ZERO; i.compareTo(power) != 0; i = i.add(BigInteger.ONE)) {  
+                // 각각의 반복에서는 이전 반복에서 도출된 결과에 밑수를 곱해 새로운 결과를 계산합니다.  
+                result = result.multiply(base);  
+            }  
+  
+            // 결과 반환  
+            return result;  
+        }  
+  
+        // 밑수와 제곱을 계산해 결과를 반환하는 스레드 실행  
+        @Override  
+        public void run() {  
+            log.info("{} * {} = {}", base, power, pow(base, power));  
+        }  
+    }  
+  
+    public static void main(String[] args) {  
+        /* BlockingTask 실행 코드 *///        
+        Thread thread = new Thread(new BlockingTask());  
+//        thread.start();  
+//  
+//        try {  
+//            Thread.sleep(5000);  
+//        } catch (InterruptedException e) {  
+//            throw new RuntimeException(e);  
+//        }  
+//  
+//        Thread orderStopThread = new Thread(thread::interrupt);  
+//        orderStopThread.start();  
+  
+  
+        /* LongComputationTask 실행 코드 */        
+        Thread thread = new Thread(new LongComputationTask(new BigInteger("2"), new BigInteger("10")));  
+        // 2의 10제곱 계산  
+        thread.start();  
+    }  
+}
+```
