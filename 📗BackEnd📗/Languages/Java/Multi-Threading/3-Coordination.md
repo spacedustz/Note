@@ -295,3 +295,26 @@ private static class WaitingForUserInput implements Runnable {
 
 <br>
 
+> **간단한 예시 2**
+
+
+
+```java
+public static void main(String [] args) {  
+    Thread thread = new Thread(new SleepingThread());  
+    thread.start();  
+    thread.interrupt();  
+}  
+  
+private static class SleepingThread implements Runnable {  
+    @Override  
+    public void run() {  
+        while (true) {  
+            try {  
+                Thread.sleep(1000000);  
+            } catch (InterruptedException e) {  
+            }  
+        }  
+    }  
+}
+```
