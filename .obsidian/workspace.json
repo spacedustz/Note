@@ -102,21 +102,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "f8faf55b6d38c809",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📗FrontEnd📗/Frameworks/Flutter/Row and Colume/Expanded Widget & Flexible Widget.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 8
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -182,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗FrontEnd📗/Frameworks/Flutter/Row and Colume/Expanded Widget & Flexible Widget.md",
+                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/1-Create.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -199,7 +187,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗FrontEnd📗/Frameworks/Flutter/Row and Colume/Expanded Widget & Flexible Widget.md",
+                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/1-Create.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -222,7 +210,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗FrontEnd📗/Frameworks/Flutter/Row and Colume/Expanded Widget & Flexible Widget.md"
+                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/1-Create.md"
               }
             }
           },
@@ -253,8 +241,11 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "f8faf55b6d38c809",
+  "active": "ddc68a00ade7bf76",
   "lastOpenFiles": [
+    "📗FrontEnd📗/Frameworks/Flutter/Row and Colume/Expanded Widget & Flexible Widget.md",
+    "📗FrontEnd📗/Frameworks/Flutter/Row and Colume/Safe Area.md",
+    "📗FrontEnd📗/Frameworks/Flutter/Row and Colume/MainAxisAlignment.md",
     "📗FrontEnd📗/Frameworks/Flutter/Row and Colume/CrossAxisAlignment.md",
     "📗FrontEnd📗/Frameworks/Flutter/Row and Colume/실습.md",
     "📗BackEnd📗/Languages/Java/Multi-Threading/2-Inheritance.md",
@@ -278,10 +269,7 @@
     "📗BackEnd📗/Frameworks/Message-Broker/RabbitMQ/RabbitMQ-Configuration.md",
     "📗BackEnd📗/Frameworks/Message-Broker/RabbitMQ/RabbitMQ-Dead Letter Exchange-TTL.md",
     "📗BackEnd📗/Frameworks/Message-Broker/RabbitMQ/On-Linux.md",
-    "📗DataBase📗/Redis/Pub-Sub.md",
     "📗BackEnd📗/Languages/Java/Multi-Threading",
-    "📗BackEnd📗/Frameworks/Spring/Reactive/ProjectReactor.md",
-    "📗Computer-Science📗/공식.md",
     "erlang-source.png",
     "📗DataBase📗/Redis",
     "📗Ops-Tools📗/MSA/Kubernetes",
