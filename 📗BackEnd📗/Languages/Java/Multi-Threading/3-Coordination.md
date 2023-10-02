@@ -589,7 +589,7 @@ for (int i = 0; i < inputNums.size(); i++) {
 
 <br>
 
-> 📌 **Edge Case**
+## **Edge Case**
 
 만약 위 Factiroal 예시에서 입력으로 들어오는 숫자 배열의 숫자 중 1개의 값이 엄청 큰 값이면 어떻게 해야 할까요?
 
