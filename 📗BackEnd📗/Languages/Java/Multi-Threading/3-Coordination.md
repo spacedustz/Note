@@ -605,7 +605,26 @@ main 메서드로 결과값을 출력하는 스레드의 실행은 엄청나게 
 
 값의 단위는 MilliSecond이며 2000으로 설정했다고 가정하면, 2초 후 스레드가 종료되지 않는다면 **Thread.join()**이 반환됩니다.
 
+```java
+// join()을 통해 계산 스레드의 모든 작업이 완료 되었을때 아래 Loop를 실행하게 함.  
+for (Thread thread : list) {  
+    try {  
+        thread.join(2000);  
+    } catch (InterruptedException e) {  
+    }  
+}
+```
+
+<br>
+
 그리고, 이 긴 작업 스레드를 Interrupt 하지 않아 어플리케이션도 여전히 실행중입니다.
 
 간단하게 스레드를 시작하는 for Loop에서 모든 스레드를 Daemon 스레드로 만들면 어플리케이션이 정상적으로 종료됩니다.
 
+```java
+// 스레드 리스트의 모든 스레드 시작  
+for (Thread thread : list) {  
+    thread.setDaemon(true);  
+    thread.start();  
+}  
+```
