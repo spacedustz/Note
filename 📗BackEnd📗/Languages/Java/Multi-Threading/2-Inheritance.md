@@ -139,7 +139,7 @@ public class VaultHackerThread {
         // Random 객체 생성  
         Random random = new Random();  
   
-        // 0 ~ MAX_PASSWORD 사이의 임의 비밀번호  
+        // 0 ~ MAX_PASSWORD 사이의 임의 비밀번호 설정
         Vault vault = new Vault(random.nextInt(MAX_PASSWORD));  
   
         // Thread List에 Thread 들을 넣고 각 스레드를 실행시킵니다.  
