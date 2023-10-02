@@ -361,7 +361,7 @@ private static class SleepingThread implements Runnable {
 
 이 때 B는 A가 계산이 완료 되었는지 어떻게 알 수 있을까요?
 
-단순하게 B가 Loop를 돌면서 A의 계산 작업을 계속 확인하면 됩니다.
+단순하게 B가 Loop를 돌면서 A의 계산 작업을 계속 확인하면 되지만, 굉장히 비효율적인 방법입니다.
 
 ```java
 void waitForThreadA() {
@@ -370,3 +370,7 @@ void waitForThreadA() {
 	}
 }
 ```
+
+왜냐하면, A는 CPU를 이용해 작업을 완료하려 하고, 결과값을 B에 주려는 동안,
+
+B는 계속 Loop를 돌면서 CPU Cycle을 태워버리기 때문입니다.
