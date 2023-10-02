@@ -297,7 +297,11 @@ private static class WaitingForUserInput implements Runnable {
 
 > **간단한 예시 2**
 
-이 코드에서 SleepingThread의
+이 코드에서 SleepingThread의 스레드는 sleep() 시간동안 실행될 것이며,
+
+이 스레드를 멈출 방법은 `return;` 선언문을 catch 블록 안에 추가해야 합니다.
+
+보통 catch 블록을 빈 상태로 두어서는 안되며, catch 블록의 InterruptedException을 사용해서
 
 ```java
 public static void main(String [] args) {  
