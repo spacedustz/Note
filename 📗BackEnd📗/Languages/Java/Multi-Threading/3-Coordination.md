@@ -500,4 +500,8 @@ public class FactorialThread extends Thread {
 
 이 현상이 어디서 많이 들어본 **Race Condition** 입니다.
 
-Thread List를 순회하며 스레드들을 실행 시키는 
+<br>
+
+Thread List를 순회하며 스레드들을 실행 시키는 2번째 for Loop와,
+
+각 스레드의 결과값을 확인하려는 main 스레드의 Loop인 마지막 Loop 사이에서 일어나는 경쟁 상태 입니다.
