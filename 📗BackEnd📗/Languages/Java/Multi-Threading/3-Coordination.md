@@ -353,5 +353,10 @@ private static class SleepingThread implements Runnable {
 
 <br>
 
-**만약 한 스레드가 다른 스레드에 의존한다면?**
+> 📌 **만약 한 스레드가 다른 스레드에 의존한다면?**
 
+예를 들어 A의 계산값이 B에 입력된다고 가정해 보겠습니다.
+
+이 때 B는 A가 계산이 완료 되었는지 어떻게 알 수 있을까요?
+
+단순하게 B
