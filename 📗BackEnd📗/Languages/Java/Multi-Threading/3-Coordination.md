@@ -51,7 +51,13 @@
 
 이 코드는 main 스레드가 종료되었음에도 BlockingTask 스레드는 종료되지 않고 계속 실행됩니다.
 
+그래서 메인 스레드에서 sleep()으로 5초 후 BlockingTask 스레드를 interrupt 시키는 **orderStopThread** 스레드를 추가로 만들어서
+
 ```java
+package com.thread.coordination;  
+  
+import lombok.extern.slf4j.Slf4j;  
+  
 @Slf4j  
 public class BlockingTimeThread {  
   
@@ -71,6 +77,15 @@ public class BlockingTimeThread {
     public static void main(String[] args) {  
         Thread thread = new Thread(new BlockingTask());  
         thread.start();  
+  
+        try {  
+            Thread.sleep(5000);  
+        } catch (InterruptedException e) {  
+            throw new RuntimeException(e);  
+        }  
+  
+        Thread orderStopThread = new Thread(thread::interrupt);  
+        orderStopThread.start();  
     }  
 }
 ```
