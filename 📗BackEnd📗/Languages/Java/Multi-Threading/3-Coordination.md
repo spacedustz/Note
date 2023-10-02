@@ -210,4 +210,5 @@ for (BigInteger i = BigInteger.ZERO; i.compareTo(power) != 0; i = i.add(BigInteg
 
 ## 📘 Daemon Thread
 
-Daemon Thread는 백그라운드에서 실행되는 스레드로
+Daemon Thread는 백그라운드에서 실행되는 스레드로, 메인 스레드가 종료되도 어플리케이션 종료를 막지 않습니다.
+
