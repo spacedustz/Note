@@ -49,9 +49,11 @@
 
 **BlockingTimeThread**
 
-이 코드는 main 스레드가 종료되었음에도 BlockingTask 스레드는 종료되지 않고 계속 실행됩니다.
+이 코드는 main 스레드가 종료 되었음에도 BlockingTask 스레드는 sleep(500000) 동안 종료되지 않고 계속 실행됩니다.
 
-그래서 메인 스레드에서 sleep()으로 5초 후 BlockingTask 스레드를 interrupt 시키는 **orderStopThread** 스레드를 추가로 만들어서
+그래서 메인 스레드에서 sleep()으로 5초 후 **orderStopThread** 스레드를 추가로 만들어서,
+
+BlockingTask 스레드를 interrupt 시키는 동작을 추가로 수행 후에야 BlockingTask 스레드가 종료 되었습니다.
 
 ```java
 package com.thread.coordination;  
