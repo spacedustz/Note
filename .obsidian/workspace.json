@@ -97,7 +97,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "imoji.md",
+                "file": "📗기능개발📗/시뮬레이터.md",
                 "mode": "source",
                 "source": false
               }
@@ -170,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "imoji.md",
+                "file": "📗기능개발📗/시뮬레이터.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +187,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "imoji.md",
+                "file": "📗기능개발📗/시뮬레이터.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -210,7 +210,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "imoji.md"
+                "file": "📗기능개발📗/시뮬레이터.md"
               }
             }
           },
@@ -243,8 +243,8 @@
   },
   "active": "ddc68a00ade7bf76",
   "lastOpenFiles": [
-    "📗기능개발📗/시뮬레이터.md",
     "imoji.md",
+    "📗기능개발📗/시뮬레이터.md",
     "📗BackEnd📗/Languages/Java/Multi-Threading/3-Coordination.md",
     "📗기능개발📗",
     "📗BackEnd📗/Languages/Java/Multi-Threading/1-Create.md",
