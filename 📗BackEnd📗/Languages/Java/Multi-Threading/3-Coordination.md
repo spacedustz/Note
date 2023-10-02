@@ -326,7 +326,7 @@ private static class SleepingThread implements Runnable {
 ```
 
 ---
-## 📘 Thread.join()
+## 📘 Thread.join()을 이용한 실행 순서 제어
 
 다른 스레드를 시작하고 멈추는 기능 그 이상에 대해 알아보겠습니다.
 
@@ -341,6 +341,8 @@ private static class SleepingThread implements Runnable {
 앞서 알아본 것처럼 스레드를 실행하면 **독립적으로 동작**하며,
 
 **스레드의 실행 순서** 역시 개발자가 제어할 수 없습니다.
+
+하지만, join()을 이용해 특정 스레드의 작업 완료 시, 다음 스레드를 실행하게 할 수 있습니다.
 
 <br>
 
