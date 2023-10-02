@@ -180,3 +180,13 @@ public class BlockingTimeThread {
 이 문제를 해결하려면 거듭 제곱을 계산하는 코드 내에서 시간이 오래 걸리는 스팟을 찾아야 합니다.
 
 이 경우는 for loop가 해당됩니다.
+
+```java
+for (BigInteger i = BigInteger.ZERO; i.compareTo(power) != 0; i = i.add(BigInteger.ONE)) {  
+    // 각각의 반복에서는 이전 반복에서 도출된 결과에 밑수를 곱해 새로운 결과를 계산합니다.  
+    result = result.multiply(base);  
+}  
+```
+
+<br>
+
