@@ -395,3 +395,40 @@ B는 계속 Loop를 돌면서 CPU Cycle을 태워버리기 때문입니다.
 
 그래서 멀티스레딩을 이용해 각각의 계산을 각각 다른 스레드에 병렬로 맡길 겁니다.
 
+```java
+@Slf4j  
+@Getter  
+public class FactorialThread extends Thread {  
+  
+    private long inputNums;  
+    private BigInteger result = BigInteger.ZERO;  
+    private boolean isFinished = false;  
+  
+    public FactorialThread(long inputNums) {  
+        this.inputNums = inputNums;  
+    }  
+  
+    @Override  
+    public void run() {  
+        this.result = factorial(inputNums);  
+        this.isFinished = true;  
+    }  
+  
+    // 스레드가 스케줄링 되면 입력 숫자의 Factorial을 계산 후, result 변수에 저장합니다.  
+    public BigInteger factorial(long n) {  
+        BigInteger tempResult = BigInteger.ONE;  
+  
+        for (long i = n; i > 0; i--) {  
+            tempResult = tempResult.multiply(new BigInteger(Long.toString(i)));  
+        }  
+  
+        return tempResult;  
+    }  
+  
+    public static void main(String[] args) {  
+        // 리스트의 각 숫자의 Factorial을 계산하는 예시  
+        List<Long> inputNums = Arrays.asList(0L, 3435L, 35435L, 2324L, 4656L, 23L, 2435L, 5566L);  
+    }  
+}
+```
+
