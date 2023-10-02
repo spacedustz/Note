@@ -98,7 +98,7 @@ public class BlockingTimeThread {
 
 main 스레드에서는 작은 수인 2의 10제곱을 계산해서 계산결과가 바로 1024로 빠르게 나왔습니다.
 
-만약 base, power에 엄청 큰 수를 대입하게 되면 계산 시간이 엄청 오래 걸려서 스레드가 중지되지 않으며,
+만약 base, power에 엄청 큰 수(200000, 100000000)를 대입하게 되면 계산 시간이 엄청 오래 걸려서 스레드가 중지되지 않으며,
 
 run() 내부에 interrupt() 메서드를 넣어도, 이를 처리할 메서드나 로직이 없기 때문에 interrupt 되지 않습니다.
 
@@ -204,3 +204,4 @@ for (BigInteger i = BigInteger.ZERO; i.compareTo(power) != 0; i = i.add(BigInteg
     result = result.multiply(base);  
 }  
 ```
+
