@@ -505,3 +505,10 @@ public class FactorialThread extends Thread {
 Thread List를 순회하며 스레드들을 실행 시키는 2번째 for Loop와,
 
 각 스레드의 결과값을 확인하려는 main 스레드의 Loop인 마지막 Loop 사이에서 일어나는 경쟁 상태 입니다.
+
+<br>
+
+이제 위 코드에서 **Thread.join()**을 사용해서 계산 스레드가 작업을 마칠떄까지,
+
+결과 값을 확인하는 main 스레드를 대기하게 만들어 보겠습니다.
+
