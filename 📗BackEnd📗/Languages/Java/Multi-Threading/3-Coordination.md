@@ -40,3 +40,5 @@
 > 📌 **어떤 상황일 때 interrupt()를 쓸 수 있을까요?**
 
 **첫번째는**, 스레드가 InterruptedException을 발생시키는 메서드를 실행시키는 경우
+
+**두번째는**, 스레드의 코드가 Interrupt Signal를 명시적으로 처리하는 경우
