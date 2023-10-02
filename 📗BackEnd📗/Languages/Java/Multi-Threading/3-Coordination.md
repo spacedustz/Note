@@ -100,7 +100,7 @@ main 스레드에서는 작은 수인 2의 10제곱을 계산해서 계산결과
 
 만약 base, power에 엄청 큰 수를 대입하게 되면 계산 시간이 엄청 오래 걸려서 스레드가 중지되지 않으며,
 
-스레드 내부에 interrupt() 메서드를 넣어도, 이를 처리할 메서드나 로직이 없기 때문에 interrupt 되지 않습니다.
+run() 내부에 interrupt() 메서드를 넣어도, 이를 처리할 메서드나 로직이 없기 때문에 interrupt 되지 않습니다.
 
 ```java
 @Slf4j  
@@ -190,3 +190,11 @@ for (BigInteger i = BigInteger.ZERO; i.compareTo(power) != 0; i = i.add(BigInteg
 
 <br>
 
+따라서 이 스레드가 외부에서 interrupt 당했는지 확인하는 로직을 반복이 돌떄마다 if 문을 추가합니다.
+
+```java
+for (BigInteger i = BigInteger.ZERO; i.compareTo(power) != 0; i = i.add(BigInteger.ONE)) {  
+    // 각각의 반복에서는 이전 반복에서 도출된 결과에 밑수를 곱해 새로운 결과를 계산합니다.  
+    result = result.multiply(base);  
+}  
+```
