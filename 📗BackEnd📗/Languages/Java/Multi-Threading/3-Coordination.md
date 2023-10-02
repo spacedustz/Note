@@ -49,6 +49,8 @@
 
 **BlockingTimeThread**
 
+이 코드는 main 스레드가 종료되었음에도 BlockingTask 스레드는 종료되지 않고 계속 실행됩니다.
+
 ```java
 @Slf4j  
 public class BlockingTimeThread {  
@@ -72,3 +74,4 @@ public class BlockingTimeThread {
     }  
 }
 ```
+
