@@ -47,3 +47,28 @@
 
 <br>
 
+**BlockingTimeThread**
+
+```java
+@Slf4j  
+public class BlockingTimeThread {  
+  
+    // Runnable을 구현하며 잘못된 시간을 차단하는 작업을 수행하는 스레드  
+    private static class BlockingTask implements Runnable {  
+  
+        @Override  
+        public void run() {  
+            try {  
+                Thread.sleep(500000);  
+            } catch (InterruptedException e) {  
+                log.info("Blocking Thread 종료");  
+            }  
+        }  
+    }  
+  
+    public static void main(String[] args) {  
+        Thread thread = new Thread(new BlockingTask());  
+        thread.start();  
+    }  
+}
+```
