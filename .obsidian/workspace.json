@@ -97,7 +97,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/Summary.md",
+                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/On-Linux.md",
                 "mode": "source",
                 "source": false
               }
@@ -170,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/Summary.md",
+                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/On-Linux.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +187,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/Summary.md",
+                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/On-Linux.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -210,7 +210,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/Summary.md"
+                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/On-Linux.md"
               }
             }
           },
@@ -243,6 +243,7 @@
   },
   "active": "ddc68a00ade7bf76",
   "lastOpenFiles": [
+    "📗BackEnd📗/Message-Broker/RabbitMQ/Summary.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/RabbitMQ-Configuration.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/RabbitMQ-Dead Letter Exchange-TTL.md",
     "📗기능개발📗/시뮬레이터.md",
@@ -269,7 +270,6 @@
     "📗BackEnd📗/Frameworks/Spring/MQTT.md",
     "📗BackEnd📗/Frameworks/Spring/LogTracer/LogTracer V1.md",
     "📗BackEnd📗/Frameworks/Spring/Settings/Memo-Spring.md",
-    "📗BackEnd📗/Frameworks/Spring/WebSocket.md",
     "📗BackEnd📗/Languages/Java/Multi-Threading",
     "erlang-source.png",
     "📗DataBase📗/Redis",
