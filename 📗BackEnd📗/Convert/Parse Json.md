@@ -118,7 +118,41 @@ _필요한 필드_
 
 ## 📘 Entity & Repository
 
-Message
+> 😯 **Message Entity**
+
+필요한 필드가 전부 소수점을 가진 숫자여서 Double로 주고 필드들과 생성자를 만들었습
+
+```java
+@Entity  
+@Getter @Setter  
+@NoArgsConstructor(access = AccessLevel.PROTECTED)  
+public class Message {  
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)  
+    @Column(name = "message_id")  
+    private Long id;  
+    private Double frameId;  
+    private Double bboxHeight;  
+    private Double bboxWidth;  
+    private Double bboxX;  
+    private Double bboxY;  
+  
+    @OneToMany(mappedBy = "message", cascade = CascadeType.ALL, orphanRemoval = true)  
+    private List<Vertice> vertices = new ArrayList<>();  
+  
+    private Message(Double frameId, Double bboxHeight, Double bboxWidth, Double bboxX, Double bboxY, List<Vertice> vertices) {  
+        this.frameId = frameId;  
+        this.bboxHeight = bboxHeight;  
+        this.bboxWidth = bboxWidth;  
+        this.bboxX = bboxX;  
+        this.bboxY = bboxY;  
+        this.vertices = vertices;  
+    }  
+  
+    public static Message createOf(Double frameId, Double bboxHeight, Double bboxWidth, Double bboxX, Double bboxY, List<Vertice> vertices) {  
+        return new Message(frameId, bboxHeight, bboxWidth, bboxX, bboxY, vertices);  
+    }  
+}
+```
 
 ---
 
