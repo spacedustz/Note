@@ -14,7 +14,7 @@
 
 <br>
 
-> 😯 **JPA Entity & Repository**
+> 😯 **JPA Entity**
 
 **CSV의 식별자인 frame_id는 JPA에서 Auto Increment로 숫자가 자동으로 들어가기 때문에 생성자에서 빼줍니다.**
 
@@ -50,6 +50,18 @@ public class Frame {
 ```
 
 <br>
+
+> 😯 **FrameRepository**
+
+설명은 생략합니다.
+
+```java
+public interface FrameRepository extends JpaRepository<Frame, Long> {}
+```
+
+<br>
+
+## 
 
 그리고, Service 만들어 RestAPI 요청을 보내면, 프로잭트 내부의 `sample/test.csv`를 읽어 각각의 필드에 맞게 매핑하는 방식입니다.
 
