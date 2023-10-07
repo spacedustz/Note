@@ -8,11 +8,14 @@
 
 아래 샘플 데이터는 3개의 Json 객체가 들어있는 샘플 파일의 내용입니다.
 
-이 Json 객체들이 들어있는 샘플 파일의 문제점이 2가지가 있습니다.
+**이 Json 객체들이 들어있는 샘플 파일은 2가지의 문제점이 있습니다.**
 
-- 객체들이 뱅
+- 객체들이 배열로 감싸져 있지 않다는 점
+- 1개의 객체가 끝나고 `,`로 구분이 되어 있지 않고 개행으로만 구분이 되어 있다는 점
 
-이 데이터는 직접 보기 번거로우니 아래 객체 1개만 분리해서 정리 해놓은 Json 데이터를 보겠습니다.
+<br>
+
+일단 이 데이터는 직접 보기 번거로우니 아래 객체 1개만 분리해서 정리 해놓은 Json 데이터를 보겠습니다.
 
 ```json
 {"events":[{"extra":{"bbox":{"height":0.09538894146680832,"width":0.020211786031723022,"x":0.8141869902610779,"y":0.43013182282447815},"class":"Person","count":1,"track_id":"PersonTracker_33","tripwire":{"check_anchor_point":"bottom_center","color":[0,0,1,1],"crowding_min_count":4,"detect_animals":true,"detect_people":true,"detect_unknowns":false,"detect_vehicles":true,"direction":"Both","groupby":"tripwire_crossing","id":"b9c8af94-f8b0-4c20-8b64-a2eea8a30e2e","ignore_stationary_objects":true,"inference_strategy":"full_frame","name":"Wire 1","restrict_vehicle_type":false,"timestamp":1691566866432.0,"trigger_crossing":true,"trigger_crowding":false,"trigger_loitering":false,"trigger_on_enter":false,"trigger_on_exit":false,"vertices":[{"x":0.8115726709365845,"y":0.5092348456382751},{"x":0.9272996783256531,"y":0.5620052814483643},{"x":0.43175074458122253,"y":0.8390501141548157},{"x":0.7270029783248901,"y":0.9525066018104553}]}},"id":"881671fa-83dd-4027-a3ad-9c53576cab54","label":"Tripwire crossed","type":"tripwire_crossing"}],"frame_id":429,"frame_time":14.3,"system_date":"Wed Aug  9 17:20:00 2023","system_timestamp":1691569200}  
