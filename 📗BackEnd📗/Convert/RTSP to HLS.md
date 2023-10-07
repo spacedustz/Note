@@ -41,7 +41,7 @@ mv ffmpeg-4.2.1-amd64-static/ffmpeg .
 ln -s /usr/local/bin/ffmpeg/ffmpeg /usr/bin/ffmpeg
 
 # Java 17 설치
-yum install -ㅛ java-17-amazon-corretto-headless
+yum install -y java-17-amazon-corretto-headless
 ```
 
 <br>
