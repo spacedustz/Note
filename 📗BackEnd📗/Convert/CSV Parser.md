@@ -61,9 +61,9 @@ public interface FrameRepository extends JpaRepository<Frame, Long> {}
 
 <br>
 
-## 
+> 😯 **Parser** 
 
-그리고, Service 만들어 RestAPI 요청을 보내면, 프로잭트 내부의 `sample/test.csv`를 읽어 각각의 필드에 맞게 매핑하는 방식입니다.
+Service 만들어 RestAPI 요청을 보내면, 프로잭트 내부의 `sample/test.csv`를 읽어 각각의 필드에 맞게 매핑하는 방식입니다.
 
 - `@Transactional`을 사용하여 변환이 실패하면 데이터 일관성 유지를 위해 트랜잭션을 롤백 시킵니다.
 - CSV의 첫 행은 Header이기 때문에 For 문을 돌때 0번 라인은 스킵하고 1번부터 Loop를 돌아야 합니다.
