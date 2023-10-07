@@ -35,11 +35,11 @@ _필요한 필드_
 
 - 데이터 최상단의 `frame_id`
 - events 배열 하위의 extra 하위의 bbox의 `height`, `width`, `x`, `y` 4개 필드
-- event 배열 하위의 exra 하위의 tripwire 하위의 vertices 배열
-- **system_data**
-- **crossing_direction**
+- event 배열 하위의 exra 하위의 tripwire 하위의 vertices 배열 내부에 있는 `x`, `y`의 리스트들
 
-Json 객체들을 돌면서, 필요한 2개의 필드만 뽑아 JPA Entity로 파싱해 보겠습니다.
+총 6개의 필드를 뽑아 JPA Entity로 파싱해 보겠습니다.
+
+샘플 Json 데이터의 Json 객체느
 
 ```json
 {  
