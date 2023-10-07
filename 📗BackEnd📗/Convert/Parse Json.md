@@ -252,6 +252,26 @@ public class MessageDto {
 }
 ```
 
+<br>
+
+> **Message Controller**
+
+컨트롤러도 그냥 GET 요청만 하면 데이터 값을 불러올 수 있는 Rest API 1개만 만들었습니다.
+
+```java
+@RestController  
+@RequestMapping("/parse")  
+@RequiredArgsConstructor  
+public class MessageController {  
+    private final MessageService messageService;  
+  
+    @GetMapping("/json")  
+    public ResponseEntity<List<MessageDto.Response>> getJson() throws Exception {  
+        return new ResponseEntity<>(messageService.parseJson(), HttpStatus.OK);  
+    }  
+}
+```
+
 ---
 
 데이터를 파싱해
