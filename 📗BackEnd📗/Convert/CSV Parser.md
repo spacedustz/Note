@@ -72,8 +72,6 @@ Service 만들어 RestAPI 요청을 보내면, 프로잭트 내부의 `sample/te
 - String 타입이 아닌건 전부 형변환 후 인덱스와 생성자의 자리에 맞게 변환 후 엔티티화 해줍니다.
 - 엔티티들을 리스트에 넣고 데이터베이스에 저장합니다.
 
-<br>
-
 ```java
 @Component  
 @RequiredArgsConstructor  
