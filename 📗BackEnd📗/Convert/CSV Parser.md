@@ -14,7 +14,7 @@
 
 <br>
 
-> **JPA 엔티티와 Repository를 만들어 보겠습니다.**
+> 😯 **JPA Entity & Repository**
 
 **CSV의 식별자인 frame_id는 JPA에서 Auto Increment로 숫자가 자동으로 들어가기 때문에 생성자에서 빼줍니다.**
 
