@@ -133,7 +133,7 @@ public class Parser {
                 list.add(frame);  
             }  
   
-            // 리스트에 Entity 추가  
+            // Repository에 Entity 전부 추가  
             try {  
                 frameRepository.saveAll(list);  
                 log.info("========== 데이터 저장 성공 ==========");  
