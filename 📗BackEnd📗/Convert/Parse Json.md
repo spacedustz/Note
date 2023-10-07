@@ -120,7 +120,9 @@ _필요한 필드_
 
 > 😯 **Message Entity**
 
-필요한 필드가 전부 소수점을 가진 숫자여서 Double로 주고 필드들과 생성자를 만들었습
+필요한 필드가 전부 소수점을 가진 숫자여서 Double로 주고 필드들과 생성자를 만들었습니다.
+
+Vertice는 List의 형태라 1:N 연관 관계 매핑을 해주었습니다.
 
 ```java
 @Entity  
@@ -150,6 +152,42 @@ public class Message {
   
     public static Message createOf(Double frameId, Double bboxHeight, Double bboxWidth, Double bboxX, Double bboxY, List<Vertice> vertices) {  
         return new Message(frameId, bboxHeight, bboxWidth, bboxX, bboxY, vertices);  
+    }  
+}
+```
+
+<br>
+
+> 😯 **Vertice Entity**
+
+Vertice는 2개의 x,y 필드만 있어서 2개의 필드와 Message와 1:
+
+```java
+@Entity  
+@Getter @Setter  
+@NoArgsConstructor(access = AccessLevel.PROTECTED)  
+public class Vertice {  
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)  
+    @Column(name = "vertice_id")  
+    private Long id;  
+    private Double x;  
+    private Double y;  
+  
+    @ManyToOne(fetch = FetchType.LAZY)  
+    @JoinColumn(name = "message_id")  
+    private Message message;  
+  
+    private Vertice(Double x, Double y) {  
+        this.x = x;  
+        this.y = y;  
+    }  
+  
+    public static Vertice createOf(Double x, Double y) {  
+        return new Vertice(x, y);  
+    }  
+  
+    public void setMessage(Message message) {  
+        this.message = message;  
     }  
 }
 ```
