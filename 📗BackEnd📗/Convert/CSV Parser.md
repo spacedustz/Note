@@ -73,18 +73,17 @@ Service 만들어 RestAPI 요청을 보내면, 프로잭트 내부의 `sample/te
 - 엔티티들을 리스트에 넣고 데이터베이스에 저장합니다.
 
 ```java
-@Component  
+@Slf4j  
+@Service  
 @RequiredArgsConstructor  
 public class Parser {  
     private final FrameRepository frameRepository;  
-    private final Logger log = LoggerFactory.getLogger(Parser.class);  
   
     /**  
      * 변환, 리스트 저장 실패 시 트랜잭션 롤백  
      */  
-    @PostConstruct  
-    @Transactional    
-    public void initData() {  
+    @Transactional  
+    public void parseCsv() {  
         // 임시로 로컬에서 CSV를 읽어옴  
         Resource resource = new ClassPathResource("sample/test.csv");  
   
@@ -105,24 +104,24 @@ public class Parser {
                 String dateString = split[4];  
   
                 try {  
-                    // Count 변환  
+                    // Count 필드 변환  
                     count = Integer.parseInt(split[0]);  
   
-                    // Frame Time 변환  
+                    // Frame Time 필드 변환  
                     Float frameValue = Float.parseFloat(split[2]);  
                     frameTime = Float.parseFloat((String.format("%.4f", frameValue))); // 소수점 4자리 까지만  
   
-                    // System TimeStamp 변환  
+                    // System TimeStamp 필드 변환  
                     systemTimestamp = Long.parseLong(split[5]);  
   
-                    // System Date 날짜 변환  
+                    // System Date 날짜 필드 변환  
                     systemDate = LocalDateTime.parse(dateString, dateFormat);  
                 } catch (Exception e) {  
                     log.error("CSV 데이터 변환 실패");  
-                    throw new CommonException("DATA-003", HttpStatus.BAD_REQUEST);  
+                    throw new CommonException("DATA-003", HttpStatus.INTERNAL_SERVER_ERROR);  
                 }  
   
-                // Entity 생성  
+                // Entity 생성하면서 변환된 데이터를 넣어줍니다.  
                 Frame frame = Frame.createOf(  
                         count,  
                         frameTime,  
@@ -137,14 +136,15 @@ public class Parser {
             // 리스트에 Entity 추가  
             try {  
                 frameRepository.saveAll(list);  
+                log.info("========== 데이터 저장 성공 ==========");  
             } catch (Exception e) {  
                 log.error("Entity List 저장 실패");  
-                throw new CommonException("DATA-002", HttpStatus.BAD_REQUEST);  
+                throw new CommonException("DATA-002", HttpStatus.INTERNAL_SERVER_ERROR);  
             }  
   
         } catch (IOException e) {  
-            log.error("데이터 파싱 실패");  
-            throw new CommonException("DATA-001", HttpStatus.BAD_REQUEST);  
+            log.error("===== 데이터 파싱 실패 =====");  
+            throw new CommonException("DATA-001", HttpStatus.INTERNAL_SERVER_ERROR);  
         }  
     }  
 }
