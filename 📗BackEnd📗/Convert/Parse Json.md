@@ -116,7 +116,7 @@ _필요한 필드_
 
 ---
 
-## 📘 Entity & Repository & DTO
+## 📘 Entity & Repository & DTO & Controller
 
 > 😯 **Message Entity**
 
@@ -210,9 +210,7 @@ public interface VerticeRepository extends JpaRepository<Vertice, Long> {}
 
 > 😯 **Message DTO**
 
-DTO도 간단하게 vertices를 String 배열로 출력하겠습니다.
-
-
+DTO도 간단하게 Rest API의 응답값 출력 용도로만 사용하였습니다.
 
 ```java
 @Getter  
