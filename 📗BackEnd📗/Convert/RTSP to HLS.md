@@ -1,6 +1,6 @@
 ## 📘 RTSP to HLS
 
-> **Window 기반 다운로드**
+> 😯 **Window 기반 설치**
 
 https://ffmpeg.org/download.html
 
@@ -26,7 +26,7 @@ rtsp://210.99.70.120:1935/live/cctv001.stream
 
 ## EC2 Setting
 
-**RPM 기반**
+**RPM 기반 FFmpeg & Java 17 설치**
 
 ```bash
 #!/bin/bash
