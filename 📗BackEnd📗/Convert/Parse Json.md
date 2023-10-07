@@ -4,9 +4,11 @@
 
 ---
 
- **Sample Json Data**
+## 📘 Sample Json Data
 
 아래 샘플 데이터는 3개의 Json 객체가 들어있는 샘플 파일의 내용입니다.
+
+<br>
 
 **이 Json 객체들이 들어있는 샘플 파일은 2가지의 문제점이 있습니다.**
 
@@ -112,9 +114,13 @@ _필요한 필드_
 }
 ```
 
-<br>
+---
 
-> 😯 **Message DTO**
+## 📘 Entity & Repository
+
+Message
+
+---
 
 데이터를 파싱해
 
