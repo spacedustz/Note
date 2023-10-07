@@ -1,6 +1,8 @@
 ## 📘 RTSP to HLS
 
-이번 RTSP -> 
+이번 RTSP -> HLS 변환은 AWS EC2 환경에서 진행합니다.
+
+<br>
 
 > 😯 **Window 기반 설치**
 
