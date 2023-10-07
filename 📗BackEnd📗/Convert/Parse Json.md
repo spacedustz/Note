@@ -192,6 +192,20 @@ public class Vertice {
 }
 ```
 
+<br>
+
+> 😯 **Repository**
+
+Repository는 너무 간단해 설명을 생략합니다.
+
+```java
+public interface MessageRepository extends JpaRepository<Message, Long> {}
+```
+
+```java
+public interface VerticeRepository extends JpaRepository<Vertice, Long> {}
+```
+
 ---
 
 데이터를 파싱해
