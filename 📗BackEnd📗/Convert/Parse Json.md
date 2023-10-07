@@ -6,13 +6,17 @@
 
 > 😯 **Sample Json Data**
 
-아래 샘플 데이터는 Json 객체 3개
+아래 샘플 데이터는 3개의 Json 객체가 들어있는 샘플 파일의 내용입니다.
+
+이 데이터는 직접 보기 번거로우니 아래 객체 1개만 분리해서 정리 해놓은 Json 데이터를 보겠습니다.
 
 ```json
 {"events":[{"extra":{"bbox":{"height":0.09538894146680832,"width":0.020211786031723022,"x":0.8141869902610779,"y":0.43013182282447815},"class":"Person","count":1,"track_id":"PersonTracker_33","tripwire":{"check_anchor_point":"bottom_center","color":[0,0,1,1],"crowding_min_count":4,"detect_animals":true,"detect_people":true,"detect_unknowns":false,"detect_vehicles":true,"direction":"Both","groupby":"tripwire_crossing","id":"b9c8af94-f8b0-4c20-8b64-a2eea8a30e2e","ignore_stationary_objects":true,"inference_strategy":"full_frame","name":"Wire 1","restrict_vehicle_type":false,"timestamp":1691566866432.0,"trigger_crossing":true,"trigger_crowding":false,"trigger_loitering":false,"trigger_on_enter":false,"trigger_on_exit":false,"vertices":[{"x":0.8115726709365845,"y":0.5092348456382751},{"x":0.9272996783256531,"y":0.5620052814483643},{"x":0.43175074458122253,"y":0.8390501141548157},{"x":0.7270029783248901,"y":0.9525066018104553}]}},"id":"881671fa-83dd-4027-a3ad-9c53576cab54","label":"Tripwire crossed","type":"tripwire_crossing"}],"frame_id":429,"frame_time":14.3,"system_date":"Wed Aug  9 17:20:00 2023","system_timestamp":1691569200}  
 {"events":[{"extra":{"bbox":{"height":0.11692357808351517,"width":0.028519250452518463,"x":0.8249245285987854,"y":0.4926007390022278},"class":"Person","count":2,"track_id":"PersonTracker_45","tripwire":{"check_anchor_point":"bottom_center","color":[0,0,1,1],"crowding_min_count":4,"detect_animals":true,"detect_people":true,"detect_unknowns":false,"detect_vehicles":true,"direction":"Both","groupby":"tripwire_crossing","id":"b9c8af94-f8b0-4c20-8b64-a2eea8a30e2e","ignore_stationary_objects":true,"inference_strategy":"full_frame","name":"Wire 1","restrict_vehicle_type":false,"timestamp":1691566866432.0,"trigger_crossing":true,"trigger_crowding":false,"trigger_loitering":false,"trigger_on_enter":false,"trigger_on_exit":false,"vertices":[{"x":0.8115726709365845,"y":0.5092348456382751},{"x":0.9272996783256531,"y":0.5620052814483643},{"x":0.43175074458122253,"y":0.8390501141548157},{"x":0.7270029783248901,"y":0.9525066018104553}]}},"id":"123af068-b774-48c9-92cc-523fba2ce1e9","label":"Tripwire crossed","type":"tripwire_crossing"}],"frame_id":590,"frame_time":19.666666666666668,"system_date":"Wed Aug  9 17:20:07 2023","system_timestamp":1691569207}  
 {"events":[{"extra":{"bbox":{"height":0.2726112902164459,"width":0.057636808604002,"x":0.669583797454834,"y":0.6824167966842651},"class":"Person","count":3,"track_id":"PersonTracker_43","tripwire":{"check_anchor_point":"bottom_center","color":[0,0,1,1],"crowding_min_count":4,"detect_animals":true,"detect_people":true,"detect_unknowns":false,"detect_vehicles":true,"direction":"Both","groupby":"tripwire_crossing","id":"b9c8af94-f8b0-4c20-8b64-a2eea8a30e2e","ignore_stationary_objects":true,"inference_strategy":"full_frame","name":"Wire 1","restrict_vehicle_type":false,"timestamp":1691566866432.0,"trigger_crossing":true,"trigger_crowding":false,"trigger_loitering":false,"trigger_on_enter":false,"trigger_on_exit":false,"vertices":[{"x":0.8115726709365845,"y":0.5092348456382751},{"x":0.9272996783256531,"y":0.5620052814483643},{"x":0.43175074458122253,"y":0.8390501141548157},{"x":0.7270029783248901,"y":0.9525066018104553}]}},"id":"03fcdac4-3b3e-41af-a265-8689eadfe29d","label":"Tripwire crossed","type":"tripwire_crossing"}],"frame_id":614,"frame_time":20.466666666666665,"system_date":"Wed Aug  9 17:20:08 2023","system_timestamp":1691569208}
 ```
+
+아래 코드는 위 3개의 객체 중 1개의 Json 개
 
 이 샘플 데이터의 필드 중, **system_data**, **crossing_direction** 2개의 필드만 필요하다고 가정하고,
 
