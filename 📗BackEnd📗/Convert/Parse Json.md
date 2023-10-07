@@ -433,6 +433,6 @@ public class MessageService {
 
 샘플 데이터의 Json 객체 1개당 4개의 Vertice를 가진 Vertices를 가졌었고,
 
-4개의 Vertice당
+4개의 Vertice당 
 
 ![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/parse-json2.png)
