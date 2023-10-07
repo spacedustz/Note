@@ -14,7 +14,7 @@
 
 <br>
 
-일단 CSV의 헤더에 맟춰 JPA 엔티티와 Repository를 만들어 보겠습니다.
+> **JPA 엔티티와 Repository를 만들어 보겠습니다.**
 
 **CSV의 식별자인 frame_id는 JPA에서 Auto Increment로 숫자가 자동으로 들어가기 때문에 생성자에서 빼줍니다.**
 
@@ -51,9 +51,9 @@ public class Frame {
 
 <br>
 
-그리고, Component를 만들어 어플리케이션이 실행될때 프로잭트 내부의 `sample/test.csv`를 읽어 각각의 필드에 맞게 매핑하는 방식입니다.
+그리고, Service 만들어 RestAPI 요청을 보내면, 프로잭트 내부의 `sample/test.csv`를 읽어 각각의 필드에 맞게 매핑하는 방식입니다.
 
-- `@Transactional`을 사용하여 변환이 실패하면 데이터 일관성 유지를 위해 트랜잭션을 롤백시킵니다.
+- `@Transactional`을 사용하여 변환이 실패하면 데이터 일관성 유지를 위해 트랜잭션을 롤백 시킵니다.
 - CSV의 첫 행은 Header이기 때문에 For 문을 돌때 0번 라인은 스킵하고 1번부터 Loop를 돌아야 합니다.
 - Sample CSV는 ","으로 분리되어 있기 때문에 ","로 Split해서 배열에 넣어줍니다.
 - Date의 형식이 `Thu Aug 17 09:17:41 2023` 형식으로 CSV에 저장 되어 있어서 DateFormatter를 사용하였습니다.
