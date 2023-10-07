@@ -276,7 +276,15 @@ public class MessageController {
 
 ## 📘MessageService
 
-테스트
+테스트라서 프로젝트 내부에 있는 Sample Json 데이터를 가져옵니다.
+
+위에서 말했듯 저 Json 파일의 Json 객체들은 **개행**으로 객체들이 구분되어 있어서, 
+
+개행을 기준으로 객체 배열을 split 해줍니다.
+
+<br>
+
+
 
 ```java
 @Slf4j  
