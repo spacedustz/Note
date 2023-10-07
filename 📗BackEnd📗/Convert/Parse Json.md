@@ -116,7 +116,7 @@ _필요한 필드_
 
 ---
 
-## 📘 Entity & Repository
+## 📘 Entity & Repository & DTO
 
 > 😯 **Message Entity**
 
@@ -204,6 +204,54 @@ public interface MessageRepository extends JpaRepository<Message, Long> {}
 
 ```java
 public interface VerticeRepository extends JpaRepository<Vertice, Long> {}
+```
+
+<br>
+
+> 😯 **Message DTO**
+
+DTO도 간단하게 vertices를 String 배열로 출력하겠습니다.
+
+
+
+```java
+@Getter  
+public class MessageDto {  
+    private Long id;  
+    private Double frameId;  
+    private Double bboxHeight;  
+    private Double bboxWidth;  
+    private Double bboxX;  
+    private Double bboxY;  
+    private List<String> vertices;  
+  
+    // Response DTO  
+    @Getter  
+    @AllArgsConstructor(access = AccessLevel.PRIVATE)  
+    public static class Response {  
+        private Long id;  
+        private Double frameId;  
+        private Double bboxHeight;  
+        private Double bboxWidth;  
+        private Double bboxX;  
+        private Double bboxY;  
+        private List<String> vertices;  
+  
+        public static MessageDto.Response fromEntity(Message entity) {  
+            return new MessageDto.Response(  
+                    entity.getId(),  
+                    entity.getFrameId(),  
+                    entity.getBboxHeight(),  
+                    entity.getBboxWidth(),  
+                    entity.getBboxX(),  
+                    entity.getBboxY(),  
+                    entity.getVertices().stream()  
+                            .map(it -> "x: " + it.getX() + "y: " + it.getY())  
+                            .collect(Collectors.toList())  
+            );  
+        }  
+    }  
+}
 ```
 
 ---
