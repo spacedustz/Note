@@ -25,7 +25,13 @@
 
 아래 코드는 위 3개의 객체 중 1개의 Json 객체만 따로 빼온 것입니다.
 
-이 샘플 데이터의 필드 중, **system_data**, **crossing_direction** 2개의 필드만 필요하다고 가정하고,
+이 샘플 데이터의 필드 중, 임의로 필요한 필드를 고른 후 Json 객체들을 돌면서, 
+
+필요한 필드들을 뽑아 JPA Entity로 파싱해 보겠습니다.
+
+<
+
+**system_data**, **crossing_direction**
 
 Json 객체들을 돌면서, 필요한 2개의 필드만 뽑아 JPA Entity로 파싱해 보겠습니다.
 
