@@ -29,6 +29,9 @@ rtsp://210.99.70.120:1935/live/cctv001.stream
 **RPM 기반**
 
 ```bash
+#!/bin/bash
+
+# FFmpeg 설치
 cd /usr/local/bin 
 mkdir ffmpeg 
 cd ffmpeg 
@@ -36,4 +39,16 @@ wget https://www.johnvansickle.com/ffmpeg/old-releases/ffmpeg-4.2.1-amd64-static
 tar xvf ffmpeg-4.2.1-amd64-static.tar.xz 
 mv ffmpeg-4.2.1-amd64-static/ffmpeg . 
 ln -s /usr/local/bin/ffmpeg/ffmpeg /usr/bin/ffmpeg
+
+# Java 17 설치
+yum install -ㅛ java-17-amazon-corretto-headless
 ```
+
+<br>
+
+**Debian 기반**
+
+```bash
+apt -y install ffmpeg
+```
+
