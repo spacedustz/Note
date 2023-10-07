@@ -2,3 +2,4 @@
 
 - https://ffmpeg.org/download.html
 - `setx PATH "%PATH%;경로"`
+- ffmpeg -version
