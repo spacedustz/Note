@@ -160,7 +160,7 @@ public class Message {
 
 > 😯 **Vertice Entity**
 
-Vertice는 2개의 x,y 필드만 있어서 2개의 필드와 Message와 1:
+Vertice는 2개의 x,y 필드만 있어서 2개의 필드와 Message와 1:N 연관 관계 매핑을 해주었습니다.
 
 ```java
 @Entity  
