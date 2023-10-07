@@ -35,6 +35,7 @@ _필요한 필드_
 
 - 데이터 최상단의 `frame_id`
 - events 배열 하위의 extra 하위의 bbox의 `height`, `width`, `x`, `y` 4개 필드
+- event 배열 하위의 exra 하위의 tripwire 하위의 vertices 배열
 - **system_data**
 - **crossing_direction**
 
