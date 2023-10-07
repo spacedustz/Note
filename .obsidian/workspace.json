@@ -97,7 +97,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📗Ops-Tools📗/CI & CD/Github Actions/1. Github Actions Work Flow 작성.md",
+                "file": "📗Ops-Tools📗/CI & CD/Github Actions/Github Actions.md",
                 "mode": "source",
                 "source": false
               }
@@ -170,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗Ops-Tools📗/CI & CD/Github Actions/1. Github Actions Work Flow 작성.md",
+                "file": "📗Ops-Tools📗/CI & CD/Github Actions/Github Actions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +187,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗Ops-Tools📗/CI & CD/Github Actions/1. Github Actions Work Flow 작성.md",
+                "file": "📗Ops-Tools📗/CI & CD/Github Actions/Github Actions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -210,7 +210,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗Ops-Tools📗/CI & CD/Github Actions/1. Github Actions Work Flow 작성.md"
+                "file": "📗Ops-Tools📗/CI & CD/Github Actions/Github Actions.md"
               }
             }
           },
@@ -243,6 +243,9 @@
   },
   "active": "ddc68a00ade7bf76",
   "lastOpenFiles": [
+    "📗Ops-Tools📗/CI & CD/Github Actions/6. AWS EC2 생성 & 설정.md",
+    "📗Ops-Tools📗/CI & CD/Github Actions/Cache Gradle.md",
+    "📗Ops-Tools📗/CI & CD/Github Actions/1. Github Actions Work Flow 작성.md",
     "📗BackEnd📗/Convert/RTSP to HLS.md",
     "📗BackEnd📗/Convert/RTSP to HLS (FFmpeg).md",
     "📗기능개발📗/출입통제시스템.md",
@@ -267,9 +270,6 @@
     "📗BackEnd📗/Frameworks/Spring/RestTemplate.md",
     "📗BackEnd📗/Frameworks/Spring/Akka Actor.md",
     "📗BackEnd📗/Frameworks/Spring/Ehcache & Devtools.md",
-    "📗BackEnd📗/Frameworks/Spring/Settings/Memo-Library.md",
-    "📗BackEnd📗/Frameworks/Spring/Settings/Memo - Yaml.md",
-    "📗BackEnd📗/Frameworks/Spring/Dev-Tools.md",
     "📗BackEnd📗/Languages/Java/Multi-Threading",
     "erlang-source.png",
     "📗DataBase📗/Redis",
