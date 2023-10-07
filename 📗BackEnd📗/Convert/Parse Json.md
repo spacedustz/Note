@@ -39,7 +39,7 @@ _필요한 필드_
 
 총 6개의 필드를 뽑아 JPA Entity로 파싱해 보겠습니다.
 
-샘플 Json 데이터의 Json 객체느
+샘플 Json 데이터의 Json 객체는 3개이니 JPA Entity도 3개를 만들고, 각 Entity당 6개의 필드 데이터를 가질겁니다.
 
 ```json
 {  
