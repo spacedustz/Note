@@ -421,5 +421,9 @@ public class MessageService {
 
 ---
 
-## 결과
+## 📘 결과
+
+> **Get 요청**
+
+![img](https://raw.githubusercontent.com/spacdust)
 
