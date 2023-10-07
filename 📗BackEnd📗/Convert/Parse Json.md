@@ -425,5 +425,10 @@ public class MessageService {
 
 > **Get 요청**
 
-![img](https://raw.githubusercontent.com/spacdust)
+![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/parse-json.png)
 
+<br>
+
+> **H2 Database**
+
+![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/parse-json2.png)
