@@ -188,6 +188,9 @@ public class Vertice {
   
     public void setMessage(Message message) {  
         this.message = message;  
+        if (message != null) {  
+            message.getVertices().add(this);  
+        }  
     }  
 }
 ```
@@ -351,16 +354,14 @@ public class MessageService {
                     bboxHeight,  
                     bboxWidth,  
                     bboxX,  
-                    bboxY,  
-                    null  
+                    bboxY  
             );  
   
             // Vertice리스트를 verticeList 변수에 넣습니다.  
             List<Vertice> vertices = getVertices(eventArray, message);  
   
-            message.setVertices(vertices);  
             messageList.add(message);  
-              
+  
             // 메시지 저장  
             try {  
                 messageRepository.save(message);  
