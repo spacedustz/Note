@@ -25,13 +25,18 @@
 
 아래 코드는 위 3개의 객체 중 1개의 Json 객체만 따로 빼온 것입니다.
 
-이 샘플 데이터의 필드 중, 임의로 필요한 필드를 고른 후 Json 객체들을 돌면서, 
+이 샘플 데이터의 필드 중, 임의로 필요한 필드를 고른 후 
 
-필요한 필드들을 뽑아 JPA Entity로 파싱해 보겠습니다.
+Json 객체들을 돌면서, 필요한 필드들을 뽑아 JPA Entity로 파싱해 보겠습니다.
 
-<
+<br>
 
-**system_data**, **crossing_direction**
+_필요한 필드_
+
+- 데이터 최상단의 `frame_id`
+- events 배열 하위의 extra 하위의 bbox의 4개 필드 `height`
+- **system_data**
+- **crossing_direction**
 
 Json 객체들을 돌면서, 필요한 2개의 필드만 뽑아 JPA Entity로 파싱해 보겠습니다.
 
