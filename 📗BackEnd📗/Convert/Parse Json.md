@@ -284,7 +284,9 @@ public class MessageController {
 
 <br>
 
+그리고 JsonNode를 이용해 밑으로 내려가면서 필드의 값들을 뽑아 엔티티에 넣고 저장해 줍니다.
 
+코드의 주석으로 설명을 대신합니다.
 
 ```java
 @Slf4j  
