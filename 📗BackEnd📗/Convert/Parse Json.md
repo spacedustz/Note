@@ -276,7 +276,7 @@ public class MessageController {
 
 ## 📘MessageService
 
-데이터를 
+테스트
 
 ```java
 @Slf4j  
