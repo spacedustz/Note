@@ -155,7 +155,23 @@ public class Parser {
 
 <br>
 
-> **FrameController**
+> 😯 **FrameController**
+
+위에서 CSV를 파싱한 결과를 호출하는 Rest API 1개를 만들어 줍니다.
+
+```java
+@RestController  
+@RequiredArgsConstructor  
+@RequestMapping("/csv")  
+public class FrameController {  
+    private final Parser parser;  
+  
+    @GetMapping  
+    public ResponseEntity<List<FrameDTO.Response>> getFrames() {  
+        return ResponseEntity.ok().body(parser.parseCsv());  
+    }  
+}
+```
 
 <br>
 
