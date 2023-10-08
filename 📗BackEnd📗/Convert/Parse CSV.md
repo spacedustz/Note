@@ -83,9 +83,10 @@ public class Parser {
      * 변환, 리스트 저장 실패 시 트랜잭션 롤백  
      */  
     @Transactional  
-    public void parseCsv() {  
+    public List<FrameDTO.Response> parseCsv() {  
         // 임시로 로컬에서 CSV를 읽어옴  
         Resource resource = new ClassPathResource("sample/test.csv");  
+        log.info("파일 불러오기 - {}", resource.getFilename());  
   
         try {  
             List<String> lines = Files.readAllLines(Paths.get(resource.getFile().getPath()), StandardCharsets.UTF_8);  
@@ -146,9 +147,15 @@ public class Parser {
             log.error("===== 데이터 파싱 실패 =====");  
             throw new CommonException("DATA-001", HttpStatus.INTERNAL_SERVER_ERROR);  
         }  
+  
+        return frameRepository.findAll().stream().map(FrameDTO.Response::fromEntity).toList();  
     }  
 }
 ```
+
+<br>
+
+> **FrameController**
 
 <br>
 
