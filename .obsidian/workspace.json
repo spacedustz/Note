@@ -97,7 +97,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/RabbitMQ-Dead Letter Exchange-TTL.md",
+                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/RabbitMQ-Configuration.md",
                 "mode": "source",
                 "source": false
               }
@@ -170,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/RabbitMQ-Dead Letter Exchange-TTL.md",
+                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/RabbitMQ-Configuration.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +187,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/RabbitMQ-Dead Letter Exchange-TTL.md",
+                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/RabbitMQ-Configuration.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -210,7 +210,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/RabbitMQ-Dead Letter Exchange-TTL.md"
+                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/RabbitMQ-Configuration.md"
               }
             }
           },
@@ -241,10 +241,10 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "2ce1a846a1685820",
+  "active": "ddc68a00ade7bf76",
   "lastOpenFiles": [
-    "📗BackEnd📗/Message-Broker/RabbitMQ/RabbitMQ-Configuration.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/RabbitMQ-Dead Letter Exchange-TTL.md",
+    "📗BackEnd📗/Message-Broker/RabbitMQ/RabbitMQ-Configuration.md",
     "📗BackEnd📗/Convert/Parse Json.md",
     "📗BackEnd📗/Convert/Parse CSV.md",
     "📗BackEnd📗/Convert/RTSP to HLS.md",
