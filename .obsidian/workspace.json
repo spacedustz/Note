@@ -97,7 +97,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/On-Linux.md",
+                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/Summary.md",
                 "mode": "source",
                 "source": false
               }
@@ -170,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/On-Linux.md",
+                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/Summary.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +187,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/On-Linux.md",
+                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/Summary.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -210,7 +210,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/On-Linux.md"
+                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/Summary.md"
               }
             }
           },
@@ -243,6 +243,7 @@
   },
   "active": "ddc68a00ade7bf76",
   "lastOpenFiles": [
+    "📗BackEnd📗/Message-Broker/RabbitMQ/On-Linux.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/RabbitMQ-Configuration.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/Summary.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/RabbitMQ-Dead Letter Exchange-TTL.md",
@@ -258,7 +259,6 @@
     "📗기능개발📗/출입통제시스템.md",
     "📗기능개발📗/시뮬레이터.md",
     "📗BackEnd📗/Languages/Java/Multi-Threading/3-Coordination.md",
-    "📗BackEnd📗/Message-Broker/RabbitMQ/On-Linux.md",
     "📗Ops-Tools📗/CI & CD/Jenkins/6. EC2 Setting Script.md",
     "📗기능개발📗",
     "📗BackEnd📗/Languages/Java/Multi-Threading/1-Create.md",
