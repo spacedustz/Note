@@ -39,7 +39,11 @@ RestTemplate의 경우 Http 요청 및 응답에 대한 HTTP Method 별 (GET,POS
 
 <br>
 
-> **Ex** Get Void
+> **Ex : ** Get Void Function
+
+```java
+template.getForEntity(url, Void.class);
+```
 
 
 
