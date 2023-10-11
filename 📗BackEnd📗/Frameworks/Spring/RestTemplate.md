@@ -37,6 +37,12 @@ RestTemplate의 경우 Http 요청 및 응답에 대한 HTTP Method 별 (GET,POS
 |**exchange()**|any|ResponseEntity|헤더를 생성하고 모든 요청 방법을 허용합니다|
 |**execute()**|any|T|요청/응답 콜백을 수정합니다|
 
+<br>
+
+> **Ex** Get Void
+
+
+
 ---
 
 ## 📘 HTTP Request & Response의 자동 변환/역직렬화
