@@ -102,9 +102,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "d33526e0a2974090",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Temp.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 7
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -170,7 +182,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/Summary.md",
+                "file": "Temp.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +199,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/Summary.md",
+                "file": "Temp.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -210,7 +222,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/Summary.md"
+                "file": "Temp.md"
               }
             }
           },
@@ -241,13 +253,14 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "ddc68a00ade7bf76",
+  "active": "d33526e0a2974090",
   "lastOpenFiles": [
+    "📗BackEnd📗/Message-Broker/RabbitMQ/Summary.md",
+    "Temp.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/On-Linux.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/Clustering.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/RabbitMQ-Configuration.md",
     "📗BackEnd📗/Frameworks/Spring/RestTemplate.md",
-    "📗BackEnd📗/Message-Broker/RabbitMQ/Summary.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/RabbitMQ-Dead Letter Exchange-TTL.md",
     "📗BackEnd📗/Convert/Parse Json.md",
     "📗BackEnd📗/Convert/Parse CSV.md",
@@ -269,7 +282,6 @@
     "📗FrontEnd📗/Frameworks/Flutter/Row and Colume/MainAxisAlignment.md",
     "📗FrontEnd📗/Frameworks/Flutter/Row and Colume/CrossAxisAlignment.md",
     "📗FrontEnd📗/Frameworks/Flutter/Row and Colume/실습.md",
-    "📗BackEnd📗/Languages/Java/Multi-Threading/2-Inheritance.md",
     "📗BackEnd📗/Languages/Java/Multi-Threading",
     "erlang-source.png",
     "📗DataBase📗/Redis",
