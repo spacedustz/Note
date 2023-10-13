@@ -273,3 +273,13 @@ public class SecuRTAreaOccupancyExitEventDto {
     }  
 }
 ```
+
+---
+
+## CvediaMonitoringThread Class
+
+인스턴스 마지막 숫자에 0 다 붙여주었습니다.
+
+```java
+private String[] instanceName = {"1-260-01","1-260-04","1-294-01","1-294-02","1-414-02","1-414-03","1-438-02","1-465-01","1-465-04"};
+```

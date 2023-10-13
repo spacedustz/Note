@@ -1,3 +1,9 @@
 {
-  "tabSize": 2
+  "tabSize": 2,
+  "pdfExportSettings": {
+    "pageSize": "Letter",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  }
 }
