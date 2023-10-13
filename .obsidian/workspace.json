@@ -255,8 +255,9 @@
   },
   "active": "d33526e0a2974090",
   "lastOpenFiles": [
-    "📗기능개발📗/시뮬레이터.md",
+    "imoji.md",
     "📗기능개발📗/출입통제시스템.md",
+    "📗기능개발📗/시뮬레이터.md",
     "Temp.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/Summary.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/On-Linux.md",
@@ -268,7 +269,6 @@
     "📗BackEnd📗/Convert/Parse CSV.md",
     "📗BackEnd📗/Convert/RTSP to HLS.md",
     "📗BackEnd📗/Convert/RTSP to HLS (FFmpeg).md",
-    "imoji.md",
     "📗Ops-Tools📗/CI & CD/Github Actions/Github Actions.md",
     "📗Ops-Tools📗/CI & CD/Github Actions/6. AWS EC2 생성 & 설정.md",
     "📗Ops-Tools📗/CI & CD/Github Actions/Cache Gradle.md",
