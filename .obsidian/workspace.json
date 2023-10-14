@@ -121,7 +121,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📗기능개발📗/출입통제시스템.md",
+                "file": "imoji.md",
                 "mode": "source",
                 "source": false
               }
@@ -194,7 +194,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗기능개발📗/출입통제시스템.md",
+                "file": "imoji.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -211,7 +211,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗기능개발📗/출입통제시스템.md",
+                "file": "imoji.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -234,7 +234,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗기능개발📗/출입통제시스템.md"
+                "file": "imoji.md"
               }
             }
           },
@@ -267,8 +267,8 @@
   },
   "active": "235cd8b8cb2ed593",
   "lastOpenFiles": [
-    "imoji.md",
     "📗기능개발📗/출입통제시스템.md",
+    "imoji.md",
     "Temp.md",
     "📗기능개발📗/시뮬레이터.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/Summary.md",
