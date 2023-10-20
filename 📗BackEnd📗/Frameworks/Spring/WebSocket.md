@@ -1,8 +1,8 @@
-## Web Socket
+## 📘 Web Socket
 
 <br>
 
-> 📘 **WebSocketConfig**
+> 📌 **WebSocketConfig**
 
 `WebSocketMessageBrokerConfigurer` : 인터페이스를 구현해 STOMP로 메시지 처리 구성합니다.
 
@@ -48,7 +48,7 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
 
 <br>
 
-> 📘 **HttpHandshakeInterceptor**
+> 📌 **HttpHandshakeInterceptor**
 
 WebSocket 연결을 수립하기 전에 `beforeHandshake()` 함수가 실행됩니다.
 - 웹소켓은 처음 Connect 시점에 Handshake라는 작업이 수행됩니다.
@@ -81,5 +81,45 @@ public class HttpHandshakeInterceptor implements HandshakeInterceptor {
                                ServerHttpResponse response,  
                                WebSocketHandler wsHandler,  
                                Exception exception) {}  
+}
+```
+
+---
+
+## 📘 WebSocket Receiver
+
+```java
+@Slf4j  
+@Service  
+@RequiredArgsConstructor  
+public class SocketReceiver {  
+    private final ObjectMapper mapper;  
+  
+    @PostConstruct  
+    public void init() throws ExecutionException, InterruptedException {  
+        receive();  
+    }  
+  
+    public void receive() throws ExecutionException, InterruptedException {  
+        StandardWebSocketClient client = new StandardWebSocketClient();  
+        WebSocketSession session = client.doHandshake(new TextWebSocketHandler() {  
+            @Override  
+            public void handleTextMessage(WebSocketSession session, TextMessage message) {  
+                // 여기서 메세지 처리  
+                IntegratedDto dto = new IntegratedDto();  
+  
+                try {  
+                    dto = mapper.readValue(message.getPayload(), IntegratedDto.class);  
+                } catch (JsonProcessingException e) {  
+                    log.error("Failed Converting Received Message - 원본 메시지 : {}", message.getPayload());  
+                    throw new RuntimeException(e);  
+                }  
+  
+                log.info("로그 레벨 - Level : {}", dto.getZones().stream().map(IntegratedDto.Zone::getLevel).toList());  
+  
+                System.out.println("received message - " + message.getPayload());  
+            }  
+        }, "ws://localhost:7681/crowdData").get();  
+    }  
 }
 ```
