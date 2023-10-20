@@ -121,7 +121,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📗BackEnd📗/Frameworks/Spring/AOP/AOP.md",
+                "file": "📗BackEnd📗/Frameworks/Spring/AOP/Logging.md",
                 "mode": "source",
                 "source": false
               }
@@ -194,7 +194,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗BackEnd📗/Frameworks/Spring/AOP/AOP.md",
+                "file": "📗BackEnd📗/Frameworks/Spring/AOP/Logging.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -211,7 +211,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗BackEnd📗/Frameworks/Spring/AOP/AOP.md",
+                "file": "📗BackEnd📗/Frameworks/Spring/AOP/Logging.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -234,7 +234,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗BackEnd📗/Frameworks/Spring/AOP/AOP.md"
+                "file": "📗BackEnd📗/Frameworks/Spring/AOP/Logging.md"
               }
             }
           },
@@ -267,6 +267,7 @@
   },
   "active": "235cd8b8cb2ed593",
   "lastOpenFiles": [
+    "📗BackEnd📗/Frameworks/Spring/AOP/AOP.md",
     "📗기능개발📗/시뮬레이터.md",
     "📗BackEnd📗/Frameworks/Spring/WebSocket.md",
     "imoji.md",
@@ -293,7 +294,6 @@
     "📗Ops-Tools📗/CI & CD/Jenkins/6. EC2 Setting Script.md",
     "📗기능개발📗",
     "📗BackEnd📗/Languages/Java/Multi-Threading/1-Create.md",
-    "📗FrontEnd📗/Frameworks/Flutter/Row and Colume/Expanded Widget & Flexible Widget.md",
     "📗BackEnd📗/Languages/Java/Multi-Threading",
     "erlang-source.png",
     "📗DataBase📗/Redis",
