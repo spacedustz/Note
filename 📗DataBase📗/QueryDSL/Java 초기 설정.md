@@ -21,4 +21,4 @@ tasks.named('test') {
 
 <br>
 
-그 후, build -> clean 한번 해주고, other -> complieJava를 실행하면 comp
+그 후, build -> clean 한번 해주고, other -> compileJava를 실행하고 compileQuerydsl 실행
