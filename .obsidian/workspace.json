@@ -121,7 +121,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📗DataBase📗/QueryDSL/Query-Builder/정렬, 페이징.md",
+                "file": "📗DataBase📗/QueryDSL/Query-Builder/집합, GroupBy, Having.md",
                 "mode": "source",
                 "source": false
               }
@@ -194,7 +194,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗DataBase📗/QueryDSL/Query-Builder/정렬, 페이징.md",
+                "file": "📗DataBase📗/QueryDSL/Query-Builder/집합, GroupBy, Having.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -211,7 +211,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗DataBase📗/QueryDSL/Query-Builder/정렬, 페이징.md",
+                "file": "📗DataBase📗/QueryDSL/Query-Builder/집합, GroupBy, Having.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -234,7 +234,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗DataBase📗/QueryDSL/Query-Builder/정렬, 페이징.md"
+                "file": "📗DataBase📗/QueryDSL/Query-Builder/집합, GroupBy, Having.md"
               }
             }
           },
@@ -267,6 +267,7 @@
   },
   "active": "235cd8b8cb2ed593",
   "lastOpenFiles": [
+    "📗DataBase📗/QueryDSL/Query-Builder/정렬, 페이징.md",
     "📗DataBase📗/QueryDSL/Query-Builder/기본 조인.md",
     "📗DataBase📗/QueryDSL/Query-Builder/검색 조건 쿼리.md",
     "📗BackEnd📗/Frameworks/Spring/대댓글.md",
@@ -292,7 +293,6 @@
     "📗BackEnd📗/Message-Broker/RabbitMQ/RabbitMQ-Dead Letter Exchange-TTL.md",
     "📗BackEnd📗/Convert/Parse Json.md",
     "📗BackEnd📗/Convert/Parse CSV.md",
-    "📗BackEnd📗/Convert/RTSP to HLS.md",
     "📗기능개발📗",
     "📗BackEnd📗/Languages/Java/Multi-Threading",
     "erlang-source.png",
