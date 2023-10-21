@@ -13,15 +13,6 @@ dependencies {
     annotationProcessor "jakarta.annotation:jakarta.annotation-api"  
     annotationProcessor "jakarta.persistence:jakarta.persistence-api"  
 }  
-  
-def querydslDir = "$buildDir/generated/querydsl"  
-querydsl {  
-    jpa = true  
-    querydslSourcesDir = querydslDir  
-}  
-sourceSets {  
-    main.java.srcDir querydslDir  
-}
 ```
 
 <br>
