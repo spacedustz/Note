@@ -121,7 +121,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📗DataBase📗/QueryDSL/Basic.md",
+                "file": "📗DataBase📗/QueryDSL/Java 초기 설정.md",
                 "mode": "source",
                 "source": false
               }
@@ -194,7 +194,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗DataBase📗/QueryDSL/Basic.md",
+                "file": "📗DataBase📗/QueryDSL/Java 초기 설정.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -211,7 +211,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗DataBase📗/QueryDSL/Basic.md",
+                "file": "📗DataBase📗/QueryDSL/Java 초기 설정.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -234,7 +234,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗DataBase📗/QueryDSL/Basic.md"
+                "file": "📗DataBase📗/QueryDSL/Java 초기 설정.md"
               }
             }
           },
@@ -267,7 +267,9 @@
   },
   "active": "235cd8b8cb2ed593",
   "lastOpenFiles": [
-    "📗DataBase📗/QueryDSL/Query-Builder/Kotlin 초기 설정.md",
+    "📗DataBase📗/QueryDSL/Kotlin 초기 설정.md",
+    "📗DataBase📗/QueryDSL/Java 초기 설정.md",
+    "📗DataBase📗/QueryDSL/Basic.md",
     "📗BackEnd📗/Frameworks/Spring/AOP/구현.md",
     "imoji.md",
     "📗BackEnd📗/Frameworks/Spring/AOP/AOP.md",
@@ -291,8 +293,6 @@
     "📗Ops-Tools📗/CI & CD/Github Actions/Github Actions.md",
     "📗Ops-Tools📗/CI & CD/Github Actions/6. AWS EC2 생성 & 설정.md",
     "📗Ops-Tools📗/CI & CD/Github Actions/Cache Gradle.md",
-    "📗Ops-Tools📗/CI & CD/Github Actions/1. Github Actions Work Flow 작성.md",
-    "📗BackEnd📗/Languages/Java/Multi-Threading/3-Coordination.md",
     "📗기능개발📗",
     "📗BackEnd📗/Languages/Java/Multi-Threading",
     "erlang-source.png",
