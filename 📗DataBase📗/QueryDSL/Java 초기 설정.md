@@ -18,3 +18,7 @@ tasks.named('test') {
     useJUnitPlatform()  
 }
 ```
+
+<br>
+
+그 후, build -> clean 한번 해주고, other -> complieJava를 실행하면 comp
