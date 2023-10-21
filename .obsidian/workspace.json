@@ -121,7 +121,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📗BackEnd📗/Frameworks/Spring/AOP/Logging.md",
+                "file": "📗기능개발📗/출입통제시스템.md",
                 "mode": "source",
                 "source": false
               }
@@ -194,7 +194,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗BackEnd📗/Frameworks/Spring/AOP/Logging.md",
+                "file": "📗기능개발📗/출입통제시스템.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -211,7 +211,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗BackEnd📗/Frameworks/Spring/AOP/Logging.md",
+                "file": "📗기능개발📗/출입통제시스템.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -234,7 +234,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗BackEnd📗/Frameworks/Spring/AOP/Logging.md"
+                "file": "📗기능개발📗/출입통제시스템.md"
               }
             }
           },
@@ -267,6 +267,7 @@
   },
   "active": "235cd8b8cb2ed593",
   "lastOpenFiles": [
+    "📗BackEnd📗/Frameworks/Spring/AOP/Logging.md",
     "📗BackEnd📗/Frameworks/Spring/AOP/AOP.md",
     "📗기능개발📗/시뮬레이터.md",
     "📗BackEnd📗/Frameworks/Spring/WebSocket.md",
@@ -274,7 +275,6 @@
     "📗기능개발📗/출입통제시스템.md",
     "📗BackEnd📗/Frameworks/Spring/Common-Exception.md",
     "📗BackEnd📗/Frameworks/Spring/Ehcache & Devtools.md",
-    "📗BackEnd📗/Frameworks/Spring/AOP/Logging.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/Summary.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/On-Linux.md",
     "Temp.md",
