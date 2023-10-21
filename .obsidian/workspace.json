@@ -121,7 +121,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📗DataBase📗/QueryDSL/Query-Builder/기본 조인.md",
+                "file": "📗BackEnd📗/Frameworks/Spring/Settings/Annotations/Annotations.md",
                 "mode": "source",
                 "source": false
               }
@@ -194,7 +194,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗DataBase📗/QueryDSL/Query-Builder/기본 조인.md",
+                "file": "📗BackEnd📗/Frameworks/Spring/Settings/Annotations/Annotations.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -211,7 +211,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗DataBase📗/QueryDSL/Query-Builder/기본 조인.md",
+                "file": "📗BackEnd📗/Frameworks/Spring/Settings/Annotations/Annotations.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -234,7 +234,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗DataBase📗/QueryDSL/Query-Builder/기본 조인.md"
+                "file": "📗BackEnd📗/Frameworks/Spring/Settings/Annotations/Annotations.md"
               }
             }
           },
@@ -265,8 +265,9 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "235cd8b8cb2ed593",
+  "active": "2ce1a846a1685820",
   "lastOpenFiles": [
+    "📗DataBase📗/QueryDSL/Query-Builder/기본 조인.md",
     "📗DataBase📗/QueryDSL/Java 초기 설정.md",
     "📗DataBase📗/QueryDSL/Kotlin 초기 설정.md",
     "📗DataBase📗/QueryDSL/Basic.md",
@@ -292,7 +293,6 @@
     "📗BackEnd📗/Convert/RTSP to HLS (FFmpeg).md",
     "📗Ops-Tools📗/CI & CD/Github Actions/Github Actions.md",
     "📗Ops-Tools📗/CI & CD/Github Actions/6. AWS EC2 생성 & 설정.md",
-    "📗Ops-Tools📗/CI & CD/Github Actions/Cache Gradle.md",
     "📗기능개발📗",
     "📗BackEnd📗/Languages/Java/Multi-Threading",
     "erlang-source.png",
