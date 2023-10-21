@@ -14,8 +14,13 @@ dependencies {
     annotationProcessor "jakarta.persistence:jakarta.persistence-api"  
 }  
   
-tasks.named('test') {  
-    useJUnitPlatform()  
+def querydslDir = "$buildDir/generated/querydsl"  
+querydsl {  
+    jpa = true  
+    querydslSourcesDir = querydslDir  
+}  
+sourceSets {  
+    main.java.srcDir querydslDir  
 }
 ```
 
