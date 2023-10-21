@@ -126,19 +126,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "a1f57f2996f3d65f",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.4.16"
-              }
-            }
           }
         ],
-        "currentTab": 10
+        "currentTab": 9
       }
     ],
     "direction": "vertical"
@@ -275,7 +265,7 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "a1f57f2996f3d65f",
+  "active": "235cd8b8cb2ed593",
   "lastOpenFiles": [
     "📗BackEnd📗/Frameworks/Spring/AOP/Logging.md",
     "📗BackEnd📗/Frameworks/Spring/AOP/AOP.md",
