@@ -67,3 +67,16 @@ public class MemberDto {
 	}
 }
 ```
+
+<br>
+
+> **@QueryProjection 활용**
+
+컴파일러로 타입을 체크할 수 있는 가장 안전한 방법이
+
+```java
+List<MemberDto> result = queryFactory
+	.select(new QMemberDto(member.username, member.age))
+	.from(member)
+	.fetch();
+```
