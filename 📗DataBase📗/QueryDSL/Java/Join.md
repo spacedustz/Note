@@ -10,7 +10,7 @@ List<Member> result = queryFactory.selectFrom(member).join(member.team, team).wh
 
 ---
 
-## 연관관계가 없는 필드 조임
+## 연관관계가 없는 필드 조인
 
 ```java
 List<Member> result = queryFactory.select(member).from(member, team).where(member.username.eq(team.name)).fetch()
@@ -25,7 +25,10 @@ List<Member> result = queryFactory.select(member).from(member, team).where(membe
 On을 호라용해 조인 대상을 필터링할 때, 내부조인(Inner Join)이라면 where를 쓰는거와 동일하기 떄문에 그냥 where를 쓰자
 
 ```java
-List<Tuple> result = queryFactory.select(member, team).from(member).leftJoin(member.team, team).on(team.name.eq("teamA")).fetch();
+List<Tuple> result = queryFactory  
+        .select(member, team)  
+        .from(member).leftJoin(member.team, team).on(team.name.eq("teamA"))  
+        .fetch();
 ```
 
 <br>
@@ -33,10 +36,13 @@ List<Tuple> result = queryFactory.select(member, team).from(member).leftJoin(mem
 > **연관관계 없는 필드 외부 조인**
 
 ```java
-List<Tuple> result = queryFactory.select(member, team).from(member).leftJoin(member.username.eq(team.name)).fetch();
-
-for (Tuple tuple : result) {
-	log,info("t : {}", tuple);
+List<Tuple> result = queryFactory  
+        .select(member, team)  
+        .from(member).leftJoin(member.username.eq(team.name))  
+        .fetch();  
+  
+for (Tuple tuple : result) {  
+    log,info("t : {}", tuple);  
 }
 ```
 
