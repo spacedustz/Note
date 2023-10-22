@@ -8,7 +8,7 @@
 
 Model 객체를 로직에서 사용하는 문제를 가지고 있기에 최대한 Repository에서만 사용하는 것이 좋습니다.
 
-즉, Repository 밖으로 나온다면 DTO로 변환하는 것을 권장합니다
+즉, Repository 밖으로 나온다면 DTO로 변환하는 것을 권장합니다.
 
 <br>
 
