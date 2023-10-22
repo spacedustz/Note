@@ -5,7 +5,12 @@ join(조인 대상, 별칭으로 사용할 Q타입)
 ```
 
 ```java
-List<Member> result = queryFactory.selectFrom(member).join(member.team, team).where(team.name.eq("teamA")).fetch();
+// 기본 조인  
+List<Member> result = queryFactory  
+        .selectFrom(member)  
+        .join(member.team, team)  
+        .where(team.name.eq("teamA"))  
+        .fetch();
 ```
 
 ---
@@ -13,7 +18,11 @@ List<Member> result = queryFactory.selectFrom(member).join(member.team, team).wh
 ## 연관관계가 없는 필드 조인
 
 ```java
-List<Member> result = queryFactory.select(member).from(member, team).where(member.username.eq(team.name)).fetch()
+List<Member> result = queryFactory  
+        .select(member)  
+        .from(member, team)  
+        .where(member.username.eq(team.name))  
+        .fetch()
 ```
 
 ---
