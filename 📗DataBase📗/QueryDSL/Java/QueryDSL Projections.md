@@ -43,7 +43,7 @@ List<MemberDto> result = queryFactory
 
 > **별칭이 다를 때 - ExpressionUtils.as()**
 
-- ExpressionUtils.as() : 필드, 서브쿼리
+- ExpressionUtils.as() : 필드, 서브쿼리에 별칭 적용
 
 ```java
 List<UserDto> fetch = queryFactory
@@ -59,7 +59,9 @@ List<UserDto> fetch = queryFactory
 
 <br>
 
-> **생성자 사용**
+> **생성자 사용 - Projections.constructor**
+
+- 값을 넘길 떄 생성자와 순서가 맞아야 데이터를 잘 불
 
 ```java
 List<MemberDto> result = queryFactory
