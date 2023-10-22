@@ -167,6 +167,7 @@ List<String> result = queryFactory
 - 그다음 21 ~ 30 살
 
 ```java
+// 복잡한 조건을 변수로 선언해서 select, orderBy 등에서 사용 가능합니다.
 NumberExpression<Integer> rankPath = new CaseBuilder()
 	.when(member.age.between(0, 20)).then(2)
 	.when(member.age.between(21, 30)).then(1)
