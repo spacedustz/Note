@@ -94,6 +94,8 @@ assertThat(loaded).as("Fetch Join 적용").isTrue();
 
 ## 서브쿼리 eq
 
+나이가 제일 많은 회원 조회
+
 ```java
 List<Member> result = queryFactory  
         .selectFrom(member)  
