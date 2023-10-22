@@ -44,7 +44,7 @@ for (Tuple tuple : result) {
 
 ## Fetch Join
 
-- join(), leftJoin()등 조인 기능 뒤에 fetchJoin()
+- join(), leftJoin()등 조인 기능 뒤에 fetchJoin()을 추가하면 됩니다.
 
 > **Fetch Join 미적용 쿼리**
 
@@ -68,3 +68,10 @@ boolean loaded = emf.getPersistenceUnitUtil().isLoaded(find.getTeam());
 assertThat(loaded).as("Fetch Join 적용").isTrue();
 ```
 
+---
+
+## 서브쿼리 eq
+
+```java
+List<Member> result = queryFactory.selectFrom(member).where(member.age.eq(JPAExpressions.select(memberSub.age.max()).from(memberSub)))
+```
