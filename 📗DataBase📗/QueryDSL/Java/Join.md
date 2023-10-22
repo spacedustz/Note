@@ -61,10 +61,14 @@ assertThat(loaded).as("Fetch Join 미적용").isFalse();
 > **Fetch Join 적용**
 
 ```java
-Member find = queryFactory.selectFrom(member).join(member.team).fetchJoin().where(member.username.eq("member1")).fetchOne();
-
-boolean loaded = emf.getPersistenceUnitUtil().isLoaded(find.getTeam());
-
+Member find = queryFactory  
+        .selectFrom(member)  
+        .join(member.team).fetchJoin()  
+        .where(member.username.eq("member1"))  
+        .fetchOne();  
+  
+boolean loaded = emf.getPersistenceUnitUtil().isLoaded(find.getTeam());  
+  
 assertThat(loaded).as("Fetch Join 적용").isTrue();
 ```
 
