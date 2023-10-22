@@ -97,6 +97,8 @@ assertThat(loaded).as("Fetch Join 적용").isTrue();
 나이가 제일 많은 회원 조회
 
 ```java
+QMember memberSub = new QMember("memberSub");
+
 List<Member> result = queryFactory  
         .selectFrom(member)  
         .where(member.age.eq(  
@@ -105,4 +107,12 @@ List<Member> result = queryFactory
                         .from(memberSub)  
         ))  
         .fetch();
+```
+
+---
+
+## 서브쿼리 goe
+
+```java
+
 ```
