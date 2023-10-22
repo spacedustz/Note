@@ -49,10 +49,13 @@ for (Tuple tuple : result) {
 > **Fetch Join 미적용 쿼리**
 
 ```java
-MEmber find = queryFactory.selectFrom(member).where(member.username.eq("member1")).fetchOne();
-
-boolean loaded = emf.getPersistenceUnitUtil().isLoaded(find.getTeam());
-
+Member find = queryFactory  
+        .selectFrom(member)  
+        .where(member.username.eq("member1"))  
+        .fetchOne();  
+  
+boolean loaded = emf.getPersistenceUnitUtil().isLoaded(find.getTeam());  
+  
 assertThat(loaded).as("Fetch Join 미적용").isFalse();
 ```
 
