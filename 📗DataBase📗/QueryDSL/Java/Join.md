@@ -96,6 +96,8 @@ assertThat(loaded).as("Fetch Join 적용").isTrue();
 
 QueryDSL 에서의 서브쿼리는 **Select / Where** 절에서만 지원합니다. (From은 미지원)
 
+그리고 서브 쿼리는 성능적으로 안좋기 때문에 보통 쿼리를 나누거나, Join을 통해 해결합니다.
+
 서브쿼리는 JPAExpressions를 통해 생성합니다.
 
 이때 서브쿼리를 ExpressionUtils.as()로 감싸면 결과에 대한 Alias를 지정할 수 있습니다.
