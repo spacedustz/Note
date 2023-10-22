@@ -25,5 +25,11 @@ List<MemberDto> result = queryFactory
 > **별칭이 다를 때**
 
 ```java
-
+List<UserDto> fetch = queryFactory
+	.select(Projections.fields(
+		UserDto.class, 
+		member.username.as("name"), 
+		ExprettionUtils.as(
+		
+		)))
 ```
