@@ -73,5 +73,12 @@ assertThat(loaded).as("Fetch Join 적용").isTrue();
 ## 서브쿼리 eq
 
 ```java
-List<Member> result = queryFactory.selectFrom(member).where(member.age.eq(JPAExpressions.select(memberSub.age.max()).from(memberSub))).fetch();
+List<Member> result = queryFactory  
+        .selectFrom(member)  
+        .where(member.age.eq(  
+                JPAExpressions  
+                        .select(memberSub.age.max())  
+                        .from(memberSub)  
+        ))  
+        .fetch();
 ```
