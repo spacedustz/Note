@@ -151,6 +151,19 @@ List<Member> result = queryFactory
 ```java
 List<String> result = queryFactory
 	.select(member.age
-			.when
-)
+			.when(10).then("열살")
+			.when(20).then("스무살")
+			.otherwise("기타"))
+	.from(member)
+	.fetch();
+```
+
+<br>
+
+> **여러 조건**
+
+- 0 ~ 30 살이 아닌 회원 ㅁ
+
+```java
+
 ```
