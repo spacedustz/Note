@@ -94,6 +94,8 @@ assertThat(loaded).as("Fetch Join 적용").isTrue();
 
 ## 서브쿼리 eq
 
+QueryDSL 에서의 서브쿼리는 **Select / Where** 절에서만 지원합니다. (From은 미지원)
+
 서브쿼리는 JPAExpressions를 통해 생성합니다.
 
 이때 서브쿼리를 ExpressionUtils.as()로 감싸면 결과에 대한 Alias를 지정할 수 있습니다.
@@ -102,7 +104,7 @@ assertThat(loaded).as("Fetch Join 적용").isTrue();
 
 ```java
 ExpressionUtils.as(
-	JPAExpressions.select(subBOard.views.avg()).from(subBoard), "C"
+	JPAExpressions.select(subBOard.views.avg()).from(subBoard), "CustomAlias")
 )
 ```
 
