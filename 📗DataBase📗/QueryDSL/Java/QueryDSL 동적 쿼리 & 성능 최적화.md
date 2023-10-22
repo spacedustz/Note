@@ -32,6 +32,18 @@ public class MemberTeamDto {
 // 회원명, 팀명, 나이(ageGoe, ageLoe)
 @Data
 public class MemberSearchCondition {
-	private
+	private String username;
+	private String teamName;
+	private Integer ageGoe;
+	private Integer ageLoe;
 }
+```
+
+<br>
+
+> 📌 **동적 쿼리 Builder - Boolean Builder**
+
+```java
+// 회원명, 팀명, 나이(ageGoe, ageLoe)
+pubic List<MemberTeamDto>
 ```
