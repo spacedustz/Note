@@ -2,6 +2,8 @@
 
 > 📌 **조회 최적화용 DTO**
 
+- D
+
 ```java
 @Data
 public class MemberTeamDto {
@@ -10,5 +12,14 @@ public class MemberTeamDto {
 	private int age;
 	private Long teamId;
 	private String teamName;
+
+	@QueryProjection
+	public MemberTeamDto(Long memberId, String username, int age, Long teamId, String teamName) {
+		this.memberId = memberId;
+		this.username = username;
+		this.age = age;
+		this.teamId = teamId;
+		this.teamName = teamName;
+	}
 }
 ```
