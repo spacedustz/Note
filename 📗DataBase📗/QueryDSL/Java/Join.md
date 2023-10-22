@@ -180,6 +180,9 @@ List<Tuple> result = queryFactory
 
 for (Tuple tuple : result) {
 	String username = tuple.get(member.username);
-	Integer 
+	Integer age = tuple.get(member.age);
+	Integer rank = tuple.get(rankPath);
+
+	log.info("Username : {}, Age : {}, Rank : {}", username, age, rank);
 }
 ```
