@@ -133,7 +133,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📗DataBase📗/QueryDSL/Java/QueryDSL Projections.md",
+                "file": "📗DataBase📗/QueryDSL/Java/QueryDSL 벌크 연산.md",
                 "mode": "source",
                 "source": false
               }
@@ -206,7 +206,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗DataBase📗/QueryDSL/Java/QueryDSL Projections.md",
+                "file": "📗DataBase📗/QueryDSL/Java/QueryDSL 벌크 연산.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -223,7 +223,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗DataBase📗/QueryDSL/Java/QueryDSL Projections.md",
+                "file": "📗DataBase📗/QueryDSL/Java/QueryDSL 벌크 연산.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -246,7 +246,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗DataBase📗/QueryDSL/Java/QueryDSL Projections.md"
+                "file": "📗DataBase📗/QueryDSL/Java/QueryDSL 벌크 연산.md"
               }
             }
           },
@@ -280,6 +280,7 @@
   "active": "5b1efe2e5ac6e327",
   "lastOpenFiles": [
     "imoji.md",
+    "📗DataBase📗/QueryDSL/Java/QueryDSL 벌크 연산.md",
     "📗DataBase📗/QueryDSL/Java/QueryDSL Projections.md",
     "📗DataBase📗/QueryDSL/Java/Join.md",
     "📗DataBase📗/QueryDSL/Kotlin/temp.md",
@@ -306,7 +307,6 @@
     "📗BackEnd📗/Frameworks/Spring/WebSocket.md",
     "📗BackEnd📗/Frameworks/Spring/Common-Exception.md",
     "📗BackEnd📗/Frameworks/Spring/Ehcache & Devtools.md",
-    "📗BackEnd📗/Message-Broker/RabbitMQ/Summary.md",
     "📗기능개발📗",
     "📗BackEnd📗/Languages/Java/Multi-Threading",
     "erlang-source.png",
