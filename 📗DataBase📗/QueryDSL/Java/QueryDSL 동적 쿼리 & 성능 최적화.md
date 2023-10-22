@@ -52,6 +52,15 @@ pubic List<MemberTeamDto> searchByBuilder(MemberSearchCondition condition) {
 		builder.and(member.username.eq(condition.getUsername()));
 	}
 
-	if (hasText(condi))
+	if (hasText(condition.getTeamName())) {
+		builder.and(team.name.eq(condition.getTeamName()));
+	}
+
+	if (condition.getAgeGoe() != null) {
+		builder.and(member.age.goe(condition.getAgeGoe()));
+	}
+
+	if (condition.getAgeLoe != null) {
+	}
 }
 ```
