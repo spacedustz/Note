@@ -35,3 +35,14 @@ List<UserDto> fetch = queryFactory
 	).from(member)
 	.fetch();
 ```
+
+<br>
+
+> **생성자 사용**
+
+```java
+List<MemberDto> result = queryFactory
+	.select(Projections.constructor(MemberDto.class, member.username, member.age))
+	.from(member)
+	.fetch();
+```
