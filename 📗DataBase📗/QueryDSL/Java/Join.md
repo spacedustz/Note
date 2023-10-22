@@ -44,6 +44,8 @@ for (Tuple tuple : result) {
 
 ## Fetch Join
 
+- join(), leftJoin()등 조인 기능 뒤에 fetchJoin()
+
 > **Fetch Join 미적용 쿼리**
 
 ```java
@@ -59,5 +61,10 @@ assertThat(loaded).as("Fetch Join 미적용").isFalse();
 > **Fetch Join 적용**
 
 ```java
-Member find = queryFactory.selectFrom(member).join(member.team).fetchJoin().where(member.username.eq("member1"))
+Member find = queryFactory.selectFrom(member).join(member.team).fetchJoin().where(member.username.eq("member1")).fetchOne();
+
+boolean loaded = emf.getPersistenceUnitUtil().isLoaded(find.getTeam());
+
+assertThat(loaded).as("Fetch Join 적용").isTrue();
 ```
+
