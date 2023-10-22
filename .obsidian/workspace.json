@@ -133,7 +133,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "imoji.md",
+                "file": "📗DataBase📗/QueryDSL/Java/QueryDSL Projections.md",
                 "mode": "source",
                 "source": false
               }
@@ -206,7 +206,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "imoji.md",
+                "file": "📗DataBase📗/QueryDSL/Java/QueryDSL Projections.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -223,7 +223,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "imoji.md",
+                "file": "📗DataBase📗/QueryDSL/Java/QueryDSL Projections.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -246,7 +246,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "imoji.md"
+                "file": "📗DataBase📗/QueryDSL/Java/QueryDSL Projections.md"
               }
             }
           },
@@ -279,6 +279,7 @@
   },
   "active": "5b1efe2e5ac6e327",
   "lastOpenFiles": [
+    "imoji.md",
     "📗DataBase📗/QueryDSL/Java/QueryDSL Projections.md",
     "📗DataBase📗/QueryDSL/Java/Join.md",
     "📗DataBase📗/QueryDSL/Kotlin/temp.md",
@@ -298,7 +299,6 @@
     "📗DataBase📗/QueryDSL/Kotlin 초기 설정.md",
     "📗DataBase📗/QueryDSL/Basic.md",
     "📗BackEnd📗/Frameworks/Spring/AOP/구현.md",
-    "imoji.md",
     "📗BackEnd📗/Frameworks/Spring/AOP/AOP.md",
     "📗BackEnd📗/Frameworks/Spring/AOP/Logging.md",
     "📗기능개발📗/출입통제시스템.md",
