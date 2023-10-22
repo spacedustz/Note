@@ -30,6 +30,8 @@ List<UserDto> fetch = queryFactory
 		UserDto.class, 
 		member.username.as("name"), 
 		ExprettionUtils.as(
-		
-		)))
+			JPAExpressions.select(memberSub.age.max()).from(memberSub), "age")
+			)
+	).from(member)
+	.fetch();
 ```
