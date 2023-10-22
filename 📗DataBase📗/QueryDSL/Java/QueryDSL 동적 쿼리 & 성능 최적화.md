@@ -2,7 +2,7 @@
 
 > 📌 **조회 최적화용 DTO**
 
-- D
+- DTO의 Q-Type을 생성하기 위해 `./gradlew compileQuerydsl` 실행
 
 ```java
 @Data
@@ -21,5 +21,17 @@ public class MemberTeamDto {
 		this.teamId = teamId;
 		this.teamName = teamName;
 	}
+}
+```
+
+<br>
+
+> 📌 **회원 검색 조건**
+
+```java
+// 회원명, 팀명, 나이(ageGoe, ageLoe)
+@Data
+public class MemberSearchCondition {
+	private
 }
 ```
