@@ -114,5 +114,14 @@ List<Member> result = queryFactory
 ## 서브쿼리 goe
 
 ```java
-
+Qmember memberSub = new Qmember("memberSub");  
+  
+List<Member> result = queryFactory  
+        .selectFrom(member)  
+        .where(member.age.goe(  
+                JPAExpressions  
+                        .select(memberSub.age.avg())  
+                        .from(memberSub)  
+        ))  
+        .fetch();
 ```
