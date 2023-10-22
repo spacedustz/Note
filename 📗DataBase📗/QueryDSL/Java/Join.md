@@ -170,5 +170,16 @@ List<String> result = queryFactory
 NumberExpression<Integer> rankPath = new CaseBuilder()
 	.when(member.age.between(0, 20)).then(2)
 	.when(member.age.between(21, 30)).then(1)
-	.otherwise(3)
+	.otherwise(3);
+
+List<Tuple> result = queryFactory
+	.select(member.username, member.age, rankPath)
+	.from(member)
+	.orderBy(rankPath.desc())
+	.fetch();
+
+for (Tuple tuple : result) {
+	String username = tuple.get(member.username);
+	Integer 
+}
 ```
