@@ -162,8 +162,13 @@ List<String> result = queryFactory
 
 > **여러 조건**
 
-- 0 ~ 30 살이 아닌 회원 ㅁ
+- 0 ~ 30 살이 아닌 회원 먼저
+- 그다음 0 ~ 20 살
+- 그다음 21 ~ 30 살
 
 ```java
-
+NumberExpression<Integer> rankPath = new CaseBuilder()
+	.when(member.age.between(0, 20)).then(2)
+	.when(member.age.between(21, 30)).then(1)
+	.otherwise(3)
 ```
