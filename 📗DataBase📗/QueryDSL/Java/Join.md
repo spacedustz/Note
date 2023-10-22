@@ -33,5 +33,14 @@ List<Tuple> result = queryFactory.select(member, team).from(member).leftJoin(mem
 > **연관관계 없는 필드 외부 조인**
 
 ```java
-List<Tuple> result = queryFactory.select(member, team).from(member).leftJoin(member.username.eq(team.name)).f
+List<Tuple> result = queryFactory.select(member, team).from(member).leftJoin(member.username.eq(team.name)).fetch();
+
+for (Tuple tuple : result) {
+	log,info("t : {}", tuple);
+}
 ```
+
+---
+
+## Fetch Join
+
