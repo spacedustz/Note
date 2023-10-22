@@ -4,13 +4,19 @@
 
 그래서 **Tuple 이나 DTO**로 값을 조회할 수 있습니다.
 
+<br>
+
 하지만 Tuple로 값을 가져오는 경우는 QueryDSL에 종속적이고, 
 
 Model 객체를 로직에서 사용하는 문제를 가지고 있기에 최대한 Repository에서만 사용하는 것이 좋습니다.
 
+<br>
+
 즉, Repository 밖으로 나온다면 DTO로 변환하는 것을 권장합니다.
 
 그래서 결과를 Query 의 결과를 DTO로 반환하기 위해 @QueryProjection을 사용합니다.
+
+**@QueryProjection을 사용하고 compileQuerydsl을 실행하면 DTO도 Q파일이 생깁니다.**
 
 <br>
 
@@ -61,7 +67,7 @@ List<UserDto> fetch = queryFactory
 
 > **생성자 사용 - Projections.constructor**
 
-- 값을 넘길 떄 생성자와 순서가 맞아야 데이터를 잘 불
+- 값을 넘길 떄 생성자와 순서가 맞아야 데이터를 잘 불러오며, @AllArgsConstructor가 필요합니다.
 
 ```java
 List<MemberDto> result = queryFactory
