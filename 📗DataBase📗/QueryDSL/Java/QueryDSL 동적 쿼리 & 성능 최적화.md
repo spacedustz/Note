@@ -61,6 +61,16 @@ pubic List<MemberTeamDto> searchByBuilder(MemberSearchCondition condition) {
 	}
 
 	if (condition.getAgeLoe != null) {
+		builder.and(member.age.loe(condition.getAgeLoe()));
 	}
+
+	return queryFactory
+						.select(new QMemberTeamDto(
+							member.id,
+							member.username,
+							member.age,
+							team.id,
+							team.name))
+						.from(member)
 }
 ```
