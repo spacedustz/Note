@@ -143,3 +143,14 @@ List<Member> result = queryFactory
         ))  
         .fetch();
 ```
+
+---
+
+## QueryDSL Case
+
+```java
+List<String> result = queryFactory
+	.select(member.age
+			.when
+)
+```
