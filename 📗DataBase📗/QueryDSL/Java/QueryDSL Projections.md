@@ -72,7 +72,9 @@ public class MemberDto {
 
 > **@QueryProjection 활용**
 
-컴파일러로 타입을 체크할 수 있는 가장 안전한 방법이
+컴파일러로 타입을 체크할 수 있는 가장 안전한 방법입니다.
+
+단점은, DTO에 @QueryProjection 어노테이션 유지와, DTO까지 Q Type을 생성해야 합니다.
 
 ```java
 List<MemberDto> result = queryFactory
