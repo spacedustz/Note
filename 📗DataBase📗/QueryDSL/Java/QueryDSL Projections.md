@@ -41,14 +41,16 @@ List<MemberDto> result = queryFactory
 
 <br>
 
-> **별칭이 다를 때**
+> **별칭이 다를 때 - ExpressionUtils.as()**
+
+- ExpressionUtils.as() : 필드, 서브쿼리
 
 ```java
 List<UserDto> fetch = queryFactory
 	.select(Projections.fields(
 		UserDto.class, 
 		member.username.as("name"), 
-		ExprettionUtils.as(
+		ExpressionUtils.as(
 			JPAExpressions.select(memberSub.age.max()).from(memberSub), "age")
 			)
 	).from(member)
