@@ -189,6 +189,9 @@ for (Tuple tuple : result) {
 ```
 
 ```
-결과 username = member4 age = 40 rank = 3 
-username = member1 age = 10 rank = 2 username = member2 age = 20 rank = 2 username = member3 age = 30 rank = 1
+결과 
+username = member4 age = 40 rank = 3 
+username = member1 age = 10 rank = 2 
+username = member2 age = 20 rank = 2 
+username = member3 age = 30 rank = 1
 ```
