@@ -22,6 +22,9 @@ List<Member> result = queryFactory.select(member).from(member, team).where(membe
 
 > **조인 대상 필터링**
 
+On을 호라용해 조인 대상을 필터링할 때, 내부조인(Inner Join)이라면 where를 쓰는거와 동일하기 떄문에 그냥 where를 쓰자
+
 ```java
-List<Tuple> result = queryFactory.select(member, team).from(member).leftJoin(member.team, team).o
+List<Tuple> result = queryFactory.select(member, team).from(member).leftJoin(member.team, team).on(team.name.eq("teamA")).fetch();
 ```
+
