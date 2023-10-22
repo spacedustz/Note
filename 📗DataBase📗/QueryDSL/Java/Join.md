@@ -51,5 +51,13 @@ MEmber find = queryFactory.selectFrom(member).where(member.username.eq("member1"
 
 boolean loaded = emf.getPersistenceUnitUtil().isLoaded(find.getTeam());
 
-as
+assertThat(loaded).as("Fetch Join 미적용").isFalse();
+```
+
+<br>
+
+> **Fetch Join 적용**
+
+```java
+Member find = queryFactory.selectFrom(member).join(member.team).fetchJoin().where(member.username.eq("member1"))
 ```
