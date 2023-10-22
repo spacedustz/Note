@@ -46,3 +46,20 @@ List<MemberDto> result = queryFactory
 	.from(member)
 	.fetch();
 ```
+
+---
+
+## @QueryProjection - 프로젝션 결과 반환
+
+> **생성자 + @QueryProjection**
+
+```java
+@Data
+@NoArgsConstructor
+public class MemberDto {
+	private String username;
+	private int age;
+
+	@Q
+}
+```
