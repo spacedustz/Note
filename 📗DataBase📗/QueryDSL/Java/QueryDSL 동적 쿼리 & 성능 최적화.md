@@ -1,4 +1,4 @@
-## 📘 QueryDSL 동적 쿼리 & 성능 최적화 - Builder
+## 📘 QueryDSL 동적 쿼리 & 성능 최적화 - Boolean Builder
 
 > 📌 **조회 최적화용 DTO**
 
@@ -72,5 +72,8 @@ pubic List<MemberTeamDto> searchByBuilder(MemberSearchCondition condition) {
 							team.id,
 							team.name))
 						.from(member)
+						.leftJoin(member.team, team)
+						.where(builder)
+						.fetch();
 }
 ```
