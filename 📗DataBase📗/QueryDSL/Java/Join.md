@@ -94,6 +94,12 @@ assertThat(loaded).as("Fetch Join 적용").isTrue();
 
 ## 서브쿼리 eq
 
+서브쿼리는 JPAExpressions를 통해 생성합니다.
+
+이때 서브쿼리르
+
+<br>
+
 나이가 제일 많은 회원 조회
 
 ```java
