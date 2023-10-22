@@ -45,5 +45,13 @@ public class MemberSearchCondition {
 
 ```java
 // 회원명, 팀명, 나이(ageGoe, ageLoe)
-pubic List<MemberTeamDto>
+pubic List<MemberTeamDto> searchByBuilder(MemberSearchCondition condition) {
+	BooleanBuilder builder = new BooleanBuilder();
+
+	if (hasText(condition.getUsername())) {
+		builder.and(member.username.eq(condition.getUsername()));
+	}
+
+	if (hasText(condi))
+}
 ```
