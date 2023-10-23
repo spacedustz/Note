@@ -117,7 +117,7 @@ public class FilterTwo implements Filter {
 ### **Filter 적용을 위한 FilterConfiguration Class**
 
 - Spring Bean 등록
-  - FilterRegistrationBean<T>의 생성자로 Filter의 구현객체인 CustomFilter를 파라미터로 넘겨서 Filter 등록
+  - `FilterRegistrationBean<T>`의 생성자로 Filter의 구현객체인 CustomFilter를 파라미터로 넘겨서 Filter 등록
 
 ```java
 @Configuration
