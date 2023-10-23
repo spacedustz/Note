@@ -129,5 +129,77 @@ public class SocketReceiver {
 > **다른 방법**
 
 ```java
+@Configuration  
+@Slf4j  
+public class WebSocketClientConfig {  
+  @Bean  
+  public WebSocketClient webSocketClient() {  
+    WebSocketContainer container = ContainerProvider.getWebSocketContainer();  
+  
+    container.setDefaultMaxTextMessageBufferSize(1024 * 1024);  
+    container.setDefaultMaxBinaryMessageBufferSize(1024 * 1024);  
+  
+    WebSocketClient webSocketClient =  new StandardWebSocketClient(container);  
+  
+    return webSocketClient;  
+  }  
+  
+  @Bean  
+  public WebSocketHandler webSocketHandler() {  
+    return new WebSocketHandler() {  
+      @Override  
+      public void afterConnectionEstablished(WebSocketSession session) throws Exception {  
+        log.debug("Connected to the websocket server");  
+      }  
+  
+      @Override  
+      public void handleMessage(WebSocketSession session, WebSocketMessage message) {  
+        log.debug("Received message:{}", message.getPayload());  
+      }  
+  
+      @Override  
+      public void afterConnectionClosed(WebSocketSession session, CloseStatus status) throws Exception {  
+        log.debug("Connection closed with status:{}",status);  
+      }  
+  
+      @Override  
+      public boolean supportsPartialMessages() {  
+        return false;  
+      }  
+  
+      @Override  
+      public void handleTransportError(WebSocketSession session, Throwable exception)  
+          throws Exception {  
+        log.error("handleTransportError Error occurred: {}", exception);  
+      }  
+    };  
+  }  
+}
+```
 
+<br>
+
+```java
+@Slf4j  
+@Service  
+@RequiredArgsConstructor  
+public class SocketReceiver {  
+    private final ObjectMapper mapper;  
+  
+    private final WebSocketHandler webSocketHandler;  
+  
+    private final WebSocketClient webSocketClient;  
+  
+    @PostConstruct  
+    public void init() throws ExecutionException, InterruptedException {  
+        receive();  
+    }  
+  
+    public void receive() throws ExecutionException, InterruptedException {  
+        log.debug("receive start");  
+  
+        WebSocketConnectionManager connectionManager = new WebSocketConnectionManager(webSocketClient, webSocketHandler, "ws://127.0.0.1:7681/crowdData");  
+        connectionManager.start();  
+    }  
+}
 ```
