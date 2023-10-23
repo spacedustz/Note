@@ -123,3 +123,11 @@ public class SocketReceiver {
     }  
 }
 ```
+
+<br>
+
+> **다른 방법**
+
+```java
+
+```
