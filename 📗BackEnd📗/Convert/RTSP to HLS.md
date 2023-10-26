@@ -250,9 +250,7 @@ public class StreamingController {
 
 > 📌 **Rest API Service**
 
-인스턴스에 요청을 보내기 위한 서비스입니다.
-
-
+인스턴스 헬스체크를 위해 인스턴스에 Rest API 요청을 보내기 위한 서비스입니다.
 
 ```java
 @Slf4j  
