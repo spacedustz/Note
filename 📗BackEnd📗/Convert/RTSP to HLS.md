@@ -62,6 +62,8 @@ apt -y install ffmpeg
 
 Task Executor 와 Resource Handler / Cors / WebClient 설정을 해줍니다.
 
+> 📌 **AppConfig**
+
 ```java
 @EnableAsync  
 @Configuration  
@@ -94,6 +96,10 @@ public class AppConfig {
     }  
 }
 ```
+
+<br>
+
+> 📌CorsC
 
 ```java
 @Configuration  
@@ -155,7 +161,7 @@ public class StreamingDto {
 
 > 📌 **Instance DTO**
 
-
+인스턴스를 주기적으로 헬스체크하는 Thread에서 Rest API 요청을 위해 필요한 인스턴스 정보입니다.
 
 ```java
 @Data  
