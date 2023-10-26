@@ -60,7 +60,7 @@ apt -y install ffmpeg
 
 ## 📘 Config
 
-Task Executor 와 Resource Handler / Cors 설정을 해줍니다.
+Task Executor 와 Resource Handler / Cors / WebClient 설정을 해줍니다.
 
 ```java
 @EnableAsync  
@@ -86,6 +86,11 @@ public class AppConfig {
         executor.initialize();  
   
         return executor;  
+    }  
+  
+    @Bean  
+    public WebClient webClient() {  
+        return WebClient.builder().build();  
     }  
 }
 ```
