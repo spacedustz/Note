@@ -125,6 +125,10 @@ public class CorsConfig implements WebMvcConfigurer {
 
 ## 📘 DTO
 
+> 📌 **Streaming DTO**
+
+RTSP를 FFmpeg 명령으로 변환하기 위한 정보를 받는 DTO입니다.
+
 ```java
 @Getter  
 public class StreamingDto {  
@@ -146,6 +150,10 @@ public class StreamingDto {
     private String apiKey; // API 호출을 위한 키  
 }
 ```
+
+<br>
+
+> 📌 **Instance DTO**
 
 ```java
 @Data  
