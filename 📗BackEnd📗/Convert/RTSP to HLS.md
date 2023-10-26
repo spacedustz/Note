@@ -147,6 +147,31 @@ public class StreamingDto {
 }
 ```
 
+```java
+@Data  
+@JsonInclude(JsonInclude.Include.NON_NULL)  
+public class InstanceDto {  
+    @JsonProperty("instance_name")  
+    private String instanceName;  
+  
+    @JsonProperty("solution")  
+    private String solution;  
+  
+    @JsonProperty("solution_name")  
+    private String solutionName;  
+  
+    @JsonProperty("solution_path")  
+    private String solutionPath;  
+  
+    @JsonProperty("solution_version")  
+    private String solutionVersion;  
+  
+    @JsonProperty("state")  
+    private int state;  
+  
+}
+```
+
 ---
 
 ## 📘 Controller
@@ -339,6 +364,12 @@ public class StreamingService {
 
 ---
 
+## Health Check Thread
+
+```
+```
+
+---
 ## 📘 View
 
 ```html
