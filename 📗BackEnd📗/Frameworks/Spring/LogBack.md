@@ -8,9 +8,9 @@
   
     <conversionRule conversionWord="clr" converterClass="org.springframework.boot.logging.logback.ColorConverter" />  
     <conversionRule conversionWord="wex" converterClass="org.springframework.boot.logging.logback.WhitespaceThrowableProxyConverter" />  
-    <property name="CONSOLE_LOG_PATTERN" value="%clr(%d{yyyy-MM-dd HH:mm:ss}){faint} %clr(%5p) %clr(${PID:- }){magenta} %clr(---){faint} %clr([%15.15t]){faint} %clr(%-40.40logger{39}){cyan} %clr(:){faint} %m%n%wex"/>  
   
     <!-- 변수 지정 -->  
+    <property name="CONSOLE_LOG_PATTERN" value="%clr(%d{yyyy-MM-dd HH:mm:ss}){faint} %clr(%5p){TRACE=white,DEBUG=cyan,INFO=green,WARN=orange,ERROR=red} %clr(${PID:- }){magenta} %clr(---){faint} %clr([%15.15t]){faint} %clr(%-40.40logger{39}){blue} %clr(:){faint} %m%n%wex"/>  
     <property name="LOG_DIR" value="E:\Data\Log\HLS" />  
     <property name="LOG_PATH_NAME" value="${LOG_DIR}/hls.log" />  
   
