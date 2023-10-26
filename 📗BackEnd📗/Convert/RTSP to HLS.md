@@ -58,4 +58,34 @@ apt -y install ffmpeg
 
 ---
 
-## 📘 
+## 📘 Config
+
+Task Executor 와 Resource Handler / Cors 설정을 해줍니다.
+
+```java
+@EnableAsync  
+@Configuration  
+public class AppConfig {  
+    @Value("${task.executor.core.pool.size}")  
+    private int corePoolSize;  
+  
+    @Value("${task.executor.max.pool.size}")  
+    private int maxPoolSize;  
+  
+    @Value("${task.executor.queue.capacity}")  
+    private int queueCapacity;  
+  
+    // Thread Pool 설정  
+    @Bean  
+    public TaskExecutor executor() {  
+        ThreadPoolTaskExecutor executor = new ThreadPoolTaskExecutor();  
+        executor.setCorePoolSize(corePoolSize);  
+        executor.setMaxPoolSize(maxPoolSize);  
+        executor.setQueueCapacity(queueCapacity);  
+        executor.setThreadNamePrefix("Estimation-");  
+        executor.initialize();  
+  
+        return executor;  
+    }  
+}
+```
