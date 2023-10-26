@@ -121,7 +121,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📗BackEnd📗/Frameworks/Spring/LogBack.md",
+                "file": "📗BackEnd📗/Convert/Live Streaming 이해하기.md",
                 "mode": "source",
                 "source": false
               }
@@ -194,7 +194,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗BackEnd📗/Frameworks/Spring/LogBack.md",
+                "file": "📗BackEnd📗/Convert/Live Streaming 이해하기.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -211,7 +211,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗BackEnd📗/Frameworks/Spring/LogBack.md",
+                "file": "📗BackEnd📗/Convert/Live Streaming 이해하기.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -234,7 +234,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗BackEnd📗/Frameworks/Spring/LogBack.md"
+                "file": "📗BackEnd📗/Convert/Live Streaming 이해하기.md"
               }
             }
           },
@@ -267,14 +267,14 @@
   },
   "active": "235cd8b8cb2ed593",
   "lastOpenFiles": [
-    "📗BackEnd📗/Frameworks/Spring/AOP/구현.md",
     "📗BackEnd📗/Frameworks/Spring/LogBack.md",
+    "📗BackEnd📗/Frameworks/Spring/AOP/구현.md",
     "📗BackEnd📗/Frameworks/Spring/AOP/Logging.md",
     "📗BackEnd📗/Convert/RTSP to HLS.md",
     "📗기능개발📗/출입통제시스템.md",
     "📗DataBase📗/MariaDB/유저 생성.md",
     "📗DataBase📗/MariaDB",
-    "📗BackEnd📗/Convert/RTSP to HLS (FFmpeg).md",
+    "📗BackEnd📗/Convert/Live Streaming 이해하기.md",
     "📗BackEnd📗/Frameworks/Spring/Security/Filter Chain & DelegatingPasswordEncoder.md",
     "📗BackEnd📗/Frameworks/Spring/Security/Authentication & Authorization.md",
     "📗BackEnd📗/Frameworks/Spring/WebSocket.md",
