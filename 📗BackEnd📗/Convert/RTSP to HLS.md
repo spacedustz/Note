@@ -82,7 +82,7 @@ public class AppConfig {
         executor.setCorePoolSize(corePoolSize);  
         executor.setMaxPoolSize(maxPoolSize);  
         executor.setQueueCapacity(queueCapacity);  
-        executor.setThreadNamePrefix("Estimation-");  
+        executor.setThreadNamePrefix("Executor-");  
         executor.initialize();  
   
         return executor;  
