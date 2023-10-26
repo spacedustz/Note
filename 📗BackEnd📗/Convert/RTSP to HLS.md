@@ -99,7 +99,7 @@ public class AppConfig {
 
 <br>
 
-> 📌CorsC
+> 📌**CorsConfig**
 
 ```java
 @Configuration  
@@ -192,6 +192,8 @@ public class InstanceDto {
 
 ## 📘 Controller
 
+Control API에 StreamingDTO의 형식대로 API 요청을 하면 FFmpeg 변환 프로세스를 시작합니다.
+
 ```java
 @Slf4j  
 @RestController  
@@ -247,6 +249,10 @@ public class StreamingController {
 ## 📘 Service
 
 > 📌 **Rest API Service**
+
+인스턴스에 요청을 보내기 위한 서비스입니다.
+
+
 
 ```java
 @Slf4j  
