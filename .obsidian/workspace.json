@@ -121,7 +121,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📗BackEnd📗/Frameworks/Spring/AOP/구현.md",
+                "file": "📗BackEnd📗/Frameworks/Spring/LogBack.md",
                 "mode": "source",
                 "source": false
               }
@@ -174,8 +174,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -195,7 +194,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗BackEnd📗/Frameworks/Spring/AOP/구현.md",
+                "file": "📗BackEnd📗/Frameworks/Spring/LogBack.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -212,7 +211,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗BackEnd📗/Frameworks/Spring/AOP/구현.md",
+                "file": "📗BackEnd📗/Frameworks/Spring/LogBack.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -235,7 +234,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗BackEnd📗/Frameworks/Spring/AOP/구현.md"
+                "file": "📗BackEnd📗/Frameworks/Spring/LogBack.md"
               }
             }
           },
@@ -266,8 +265,10 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "1f8860850a8475f5",
+  "active": "235cd8b8cb2ed593",
   "lastOpenFiles": [
+    "📗BackEnd📗/Frameworks/Spring/AOP/구현.md",
+    "📗BackEnd📗/Frameworks/Spring/LogBack.md",
     "📗BackEnd📗/Frameworks/Spring/AOP/Logging.md",
     "📗BackEnd📗/Convert/RTSP to HLS.md",
     "📗기능개발📗/출입통제시스템.md",
@@ -276,7 +277,6 @@
     "📗BackEnd📗/Convert/RTSP to HLS (FFmpeg).md",
     "📗BackEnd📗/Frameworks/Spring/Security/Filter Chain & DelegatingPasswordEncoder.md",
     "📗BackEnd📗/Frameworks/Spring/Security/Authentication & Authorization.md",
-    "📗BackEnd📗/Frameworks/Spring/AOP/구현.md",
     "📗BackEnd📗/Frameworks/Spring/WebSocket.md",
     "📗기능개발📗/시뮬레이터.md",
     "📗DataBase📗/QueryDSL/Kotlin/성능개선.md",
@@ -296,7 +296,6 @@
     "📗DataBase📗/QueryDSL/Kotlin/Query-Builder/정렬, 페이징.md",
     "📗DataBase📗/QueryDSL/Kotlin/Query-Builder/검색 조건 쿼리.md",
     "📗BackEnd📗/Frameworks/Spring/대댓글.md",
-    "📗BackEnd📗/Frameworks/Spring/Settings/Annotations/Annotations.md",
     "📗기능개발📗",
     "📗BackEnd📗/Languages/Java/Multi-Threading",
     "erlang-source.png",
