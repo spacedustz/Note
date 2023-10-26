@@ -115,3 +115,91 @@ public class CorsConfig implements WebMvcConfigurer {
     }  
 }
 ```
+
+---
+
+## 📘 DTO
+
+```java
+@Getter  
+public class StreamingDto {  
+    @NotNull  
+    private Integer cameraId; // DB에 저장된 CameraID  
+    @NotNull  
+    private String instanceName; // RTSP Topic  
+  
+    @NotNull  
+    private String ip;  
+  
+    @NotNull  
+    private Integer port;  
+  
+    @NotNull  
+    private String command; // start & stop  
+  
+    @NotNull  
+    private String apiKey; // API 호출을 위한 키  
+}
+```
+
+---
+
+## 📘 Controller
+
+```java
+@Slf4j  
+@RestController  
+@RequestMapping("/api/hls")  
+@RequiredArgsConstructor  
+public class StreamingController {  
+    private final StreamingService streamingService;  
+  
+    @Value("${api.key}")  
+    private String apiKey;  
+  
+    // org.springframework.core.io.Resource  
+    @GetMapping("/stream")  
+    public ResponseEntity<Resource> streamHls() {  
+        File file = new File("output.m3u8");  
+        Resource resource = new FileSystemResource(file);  
+  
+        return ResponseEntity.ok(resource);  
+    }  
+  
+    @PostMapping("/control")  
+    public String controlHls(@Valid @RequestBody StreamingDto request) {  
+        String ok = "{\"code\": 0, \"msg\": \"Success\"}";  
+        String nok = "{\"code\": -1, \"msg\": \"Failure\"}";  
+  
+        try {  
+            if (!StringUtils.hasText(request.getApiKey()) || !apiKey.trim().equals(request.getApiKey().trim())) {  
+                log.error("API Key가 잘못 되었습니다. - {}", request);  
+  
+                return nok;  
+            }  
+  
+            // Command가 Start or Stop 일때 FFmpeg 프로세스 실행 / 중지  
+            if (request.getCommand().equalsIgnoreCase("start")) {  
+                streamingService.startConverter(request.getCameraId(), request.getInstanceName(), request.getIp(), request.getPort());  
+            } else if (request.getCommand().equalsIgnoreCase("stop")) {  
+                streamingService.stopHlsConverter(request.getCameraId(), request.getInstanceName());  
+            }  
+        } catch (Exception e) {  
+            log.error("HLS Controller Exception - {}, {}", e.getMessage(), request.toString());  
+            e.printStackTrace();  
+  
+            return nok;  
+        }  
+  
+        return ok;  
+    }  
+}
+```
+
+---
+
+## 📘 Service
+
+---
+
+## 📘 View
