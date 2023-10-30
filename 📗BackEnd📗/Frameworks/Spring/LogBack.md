@@ -11,7 +11,7 @@
   
     <!-- 변수 지정 -->  
     <property name="CONSOLE_LOG_PATTERN" value="%clr(%d{yyyy-MM-dd HH:mm:ss}){faint} %clr(%5p){TRACE=white,DEBUG=cyan,INFO=green,WARN=orange,ERROR=red} %clr(${PID:- }){magenta} %clr(---){faint} %clr([%15.15t]){faint} %clr(%-40.40logger{39}){blue} %clr(:){faint} %m%n%wex"/>  
-    <property name="LOG_DIR" value="E:\Data\Log\HLS" />  
+    <property name="LOG_DIR" value="E:\Data\Log\Access-Control" />  
     <property name="LOG_PATH_NAME" value="${LOG_DIR}/hls.log" />  
   
     <!-- FILE Appender -->  
