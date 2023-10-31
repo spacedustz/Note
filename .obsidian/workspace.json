@@ -121,7 +121,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📗BackEnd📗/Frameworks/Spring/MQTT.md",
+                "file": "📗BackEnd📗/Frameworks/Spring/WebSocket.md",
                 "mode": "source",
                 "source": false
               }
@@ -194,7 +194,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗BackEnd📗/Frameworks/Spring/MQTT.md",
+                "file": "📗BackEnd📗/Frameworks/Spring/WebSocket.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -211,7 +211,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗BackEnd📗/Frameworks/Spring/MQTT.md",
+                "file": "📗BackEnd📗/Frameworks/Spring/WebSocket.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -234,7 +234,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗BackEnd📗/Frameworks/Spring/MQTT.md"
+                "file": "📗BackEnd📗/Frameworks/Spring/WebSocket.md"
               }
             }
           },
@@ -267,6 +267,7 @@
   },
   "active": "235cd8b8cb2ed593",
   "lastOpenFiles": [
+    "📗BackEnd📗/Frameworks/Spring/MQTT.md",
     "📗BackEnd📗/Frameworks/Spring/Kakao-Map-API.md",
     "📗BackEnd📗/Frameworks/Spring/LogBack.md",
     "📗BackEnd📗/Frameworks/Spring/Security/Security Basic.md",
@@ -295,7 +296,6 @@
     "📗DataBase📗/QueryDSL/Kotlin",
     "📗DataBase📗/QueryDSL/Kotlin/Query-Builder/기본 조인.md",
     "📗DataBase📗/QueryDSL/Kotlin/Query-Builder/Fetch Join.md",
-    "📗DataBase📗/QueryDSL/Kotlin/Query-Builder/집합, GroupBy, Having.md",
     "📗기능개발📗",
     "📗BackEnd📗/Languages/Java/Multi-Threading",
     "erlang-source.png",
