@@ -121,7 +121,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/RabbitMQ-Configuration.md",
+                "file": "📗BackEnd📗/Convert/Parse CSV.md",
                 "mode": "source",
                 "source": false
               }
@@ -194,7 +194,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/RabbitMQ-Configuration.md",
+                "file": "📗BackEnd📗/Convert/Parse CSV.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -211,7 +211,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/RabbitMQ-Configuration.md",
+                "file": "📗BackEnd📗/Convert/Parse CSV.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -234,7 +234,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/RabbitMQ-Configuration.md"
+                "file": "📗BackEnd📗/Convert/Parse CSV.md"
               }
             }
           },
@@ -267,11 +267,11 @@
   },
   "active": "235cd8b8cb2ed593",
   "lastOpenFiles": [
+    "📗BackEnd📗/Message-Broker/RabbitMQ/RabbitMQ-Configuration.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/On-Linux.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/Clustering.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/Summary.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/RabbitMQ-Dead Letter Exchange-TTL.md",
-    "📗BackEnd📗/Message-Broker/RabbitMQ/RabbitMQ-Configuration.md",
     "📗BackEnd📗/Frameworks/Spring/Kakao-Map-API.md",
     "📗BackEnd📗/Convert/FFmpeg.md",
     "📗BackEnd📗/Convert/Live Streaming 이해하기.md",
