@@ -250,8 +250,9 @@ public class StreamingController {
 
 > 📌 **Rest API Service**
 
-- getInstance() : 인스턴스 헬스체크를 위해 인스턴스에 GET 요청을 보내기 위한 서비스입니다.
-- portInstance() : 헬스체크 로직 내에서 인스턴스가 Running 중이 아니라면 실해
+- getInstance() : 인스턴스 헬스체크를 위해 인스턴스에 GET 요청을 보내기 위한 함수입니다.
+- portInstance() : 헬스체크 로직 내에서 인스턴스가 Running 중이 아니라면 실행시키는 API 요청 함수입니다.
+- requestStreaming() : FFmpeg을 이용하여 RTSP를 HLS로 변환 명령을 실행시키는 함수입니다.
 
 ```java
 @Slf4j  
