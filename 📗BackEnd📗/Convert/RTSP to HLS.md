@@ -1,30 +1,20 @@
 ## 📘 RTSP to HLS
 
-이번 RTSP -> HLS 변환은 AWS EC2 환경에서 진행합니다.
+OS환경은 Windows 기준으로 개발 하였습니다.
+
+브라우저에서 지원이 안되는 RTSP를 FFmpeg을 이용해 HLS로 변환하여 브라우저에서 실시간 영상을 스트리밍 합니다.
 
 <br>
 
-> 😯 **Window 기반 설치**
+> 😯 **Windows FFmpeg Link**
 
 https://ffmpeg.org/download.html
 
 <br>
 
-> 😯 **환경변수 설정**
+> 😯 **설치 후 시스템 환경변수 설정**
 
-`setx PATH "%PATH%;경로"`
-
-<br>
-
-> 😯 **버전 확인**
-
-ffmpeg -version
-
-<br>
-
-> 😯 **Sample RTSP**
-
-rtsp://210.99.70.120:1935/live/cctv001.stream
+`setx PATH "%PATH%;{ffpmeg 경로}"`
 
 ---
 
