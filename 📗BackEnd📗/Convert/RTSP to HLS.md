@@ -192,7 +192,7 @@ public class InstanceDto {
 
 ## 📘 Controller
 
-- startConvert() : 
+- startConvert() : IP와 Command(start/stop)을 URI Parameter로 보내면
 - control() : Control API에 StreamingDTO의 형식대로 API 요청을 하면 FFmpeg 변환 프로세스를 시작합니다.
 
 ```java
