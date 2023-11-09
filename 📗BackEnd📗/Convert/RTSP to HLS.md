@@ -497,7 +497,7 @@ public class StreamingService {
 
 ## 📘 Health Check Thread
 
-카메라 인스턴스의 상태를 1분마다 체크 (Thread.sleep) 하여 상태가 4(Running)이 아니면
+카메라 인스턴스의 상태를 1분마다 체크 (Thread.sleep) 하여 상태가 4(Running)이 아니면 다시 실행시키는 백그라운드 데몬 스레드 입니다.
 
 ```java
 @Slf4j  
@@ -588,17 +588,20 @@ public class InstanceHealthCheck extends Thread {
     <title>HLS Streaming</title>  
     <!-- hls.js 라이브러리 추가 -->  
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>  
+    <link rel="stylesheet" type="text/css" href="hls.css">  
 </head>  
 <body>  
-<video id="video1" width="640" height="360" controls></video>  
-<video id="video2" width="640" height="360" controls></video>  
-<video id="video3" width="640" height="360" controls></video>  
-<video id="video4" width="640" height="360" controls></video>  
-<video id="video5" width="640" height="360" controls></video>  
-<video id="video6" width="640" height="360" controls></video>  
-<video id="video7" width="640" height="360" controls></video>  
-<video id="video8" width="640" height="360" controls></video>  
-<video id="video9" width="640" height="360" controls></video>  
+<div class="video-container">  
+    <video id="video1" width="640" height="360" controls></video>  
+    <video id="video2" width="640" height="360" controls></video>  
+    <video id="video3" width="640" height="360" controls></video>  
+    <video id="video4" width="640" height="360" controls></video>  
+    <video id="video5" width="640" height="360" controls></video>  
+    <video id="video6" width="640" height="360" controls></video>  
+    <video id="video7" width="640" height="360" controls></video>  
+    <video id="video8" width="640" height="360" controls></video>  
+    <video id="video9" width="640" height="360" controls></video>  
+</div>  
 <script>  
     // 함수로 스트리밍 로직 분리  
     function startStreaming(videoElement, videoSource) {  
@@ -622,23 +625,43 @@ public class InstanceHealthCheck extends Thread {
     document.addEventListener('DOMContentLoaded', function () {  
         // 비디오 요소와 소스 배열  
         var videos = [  
-            { element: document.getElementById('video1'), source: 'http://127.0.0.1:5002/videos/1/output.m3u8' },  
-            { element: document.getElementById('video2'), source: 'http://127.0.0.1:5002/videos/2/output.m3u8' },  
-            { element: document.getElementById('video3'), source: 'http://127.0.0.1:5002/videos/3/output.m3u8' },  
-            { element: document.getElementById('video4'), source: 'http://127.0.0.1:5002/videos/4/output.m3u8' },  
-            { element: document.getElementById('video5'), source: 'http://127.0.0.1:5002/videos/5/output.m3u8' },  
-            { element: document.getElementById('video6'), source: 'http://127.0.0.1:5002/videos/6/output.m3u8' },  
-            { element: document.getElementById('video7'), source: 'http://127.0.0.1:5002/videos/7/output.m3u8' },  
-            { element: document.getElementById('video8'), source: 'http://127.0.0.1:5002/videos/8/output.m3u8' },  
-            { element: document.getElementById('video9'), source: 'http://127.0.0.1:5002/videos/9/output.m3u8' },  
+            { element: document.getElementById('video1'), source: 'http://127.0.0.1:5000/videos/1/output.m3u8' },  
+            { element: document.getElementById('video2'), source: 'http://127.0.0.1:5000/videos/2/output.m3u8' },  
+            { element: document.getElementById('video3'), source: 'http://127.0.0.1:5000/videos/3/output.m3u8' },  
+            { element: document.getElementById('video4'), source: 'http://127.0.0.1:5000/videos/4/output.m3u8' },  
+            { element: document.getElementById('video5'), source: 'http://127.0.0.1:5000/videos/5/output.m3u8' },  
+            { element: document.getElementById('video6'), source: 'http://127.0.0.1:5000/videos/6/output.m3u8' },  
+            { element: document.getElementById('video7'), source: 'http://127.0.0.1:5000/videos/7/output.m3u8' },  
+            { element: document.getElementById('video8'), source: 'http://127.0.0.1:5000/videos/8/output.m3u8' },  
+            { element: document.getElementById('video9'), source: 'http://127.0.0.1:5000/videos/9/output.m3u8' },  
         ];  
   
-        // 각 비디오 스트리밍 시작  
+        // 각 비디오를 스트리밍 시작  
         videos.forEach(function (videoInfo) {  
             startStreaming(videoInfo.element, videoInfo.source);  
         });  
+  
+        document.addEventListener('keydown', function(event) {  
+            if (event.key === 'Enter') {  
+                videos.forEach(function (videoInfo) {  
+                    videoInfo.element.play();  
+                })  
+            }  
+        })  
     });  
 </script>  
 </body>  
 </html>
+```
+
+```css
+.video-container {  
+    display: grid;  
+    grid-template-columns: repeat(3, 1fr);  
+    gap: 10px; /* 각 비디오 사이의 간격 조정 가능 */}  
+  
+.video-container video {  
+    width: 100%;  
+    height: auto;  
+}
 ```
