@@ -341,7 +341,7 @@ public class RestApiService {
 
 > 📌 **StreamingService**
 
-컨트롤러로 부터 DTO를 받아 
+컨트롤러로 부터 DTO를 받아 RTSP T
 
 ```java
 @Slf4j  
@@ -698,4 +698,8 @@ Bash -> `curl -X GET http://localhost:5000/api/hls/request?ip={ip}&command=start
 
 <br>
 
-실행 후, 프로세스를 확인 해보면 
+실행 후, 프로세스를 확인 해보면 9개의 FFmpeg 변환 프로세스가 떠있습니다.
+
+지금은 테스트로 1개의 비디오만 연결했기 때문에 실제론 1개만 변환중이고,
+
+브라우저에서 재생을 시키면 잘 변환되어 스트리밍 됩니다.
