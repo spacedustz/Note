@@ -585,6 +585,10 @@ public class InstanceHealthCheck extends Thread {
 ---
 ## 📘 View
 
+Library : hls.js
+
+단순히 비디오 9개를 붙여서 HLS를 실행하는 코드라서 설명은 생략합니다.
+
 ```html
 <!DOCTYPE html>  
 <html lang="en">  
@@ -674,7 +678,7 @@ public class InstanceHealthCheck extends Thread {
 
 ---
 
-## 실행
+## 📘 실행
 
 Controller의 request API를 이용해 FFmpeg을 실행해 RTSP를 변환해서 브라우저에 HLS를 재생합니다.
 
@@ -686,7 +690,7 @@ Request URI : `http://localhost:5000/api/hls/request?ip={ip}&command=start`
 
 FFmpeg을 실행하는 로직은 프로세스의 응답을 WaitFor 하기 때문에 백그라운드(&)로 API를 요청 해줍니다.
 
-Git Bash -> `curl -X GET http://localhost:5000/api/hls/request?ip={ip}&command=start &`
+Bash -> `curl -X GET http://localhost:5000/api/hls/request?ip={ip}&command=start &`
 
 <br>
 
@@ -694,3 +698,4 @@ Git Bash -> `curl -X GET http://localhost:5000/api/hls/request?ip={ip}&command=s
 
 <br>
 
+실행 후, 프로세스를 확인 해보면 
