@@ -62,7 +62,11 @@ apt -y install ffmpeg
 
 Task Executor 와 Resource Handler / Cors / WebClient 설정을 해줍니다.
 
+<br>
+
 > 📌 **AppConfig**
+
+- 어플리케이션에서 사용할 스레드 수를 짐작해서 설정해 줍니다.
 
 ```java
 @EnableAsync  
@@ -101,7 +105,7 @@ public class AppConfig {
 
 > 📌**CorsConfig**
 
-- resource
+- Resource Handler / Cors Mapping을 해줍니다. (설명 생략)
 
 ```java
 @Configuration  
