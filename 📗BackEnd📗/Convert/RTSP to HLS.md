@@ -101,6 +101,8 @@ public class AppConfig {
 
 > 📌**CorsConfig**
 
+- resource
+
 ```java
 @Configuration  
 public class CorsConfig implements WebMvcConfigurer {  
@@ -708,4 +710,4 @@ Bash -> `curl -X GET http://localhost:5000/api/hls/request?ip={ip}&command=start
 
 세그먼트 파일(.ts)과 재생리스트 파일(.m3u8) 파일도 잘 생기네요.
 
-![img(https:/)
+![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/hls-file.png)
