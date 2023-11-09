@@ -192,7 +192,8 @@ public class InstanceDto {
 
 ## 📘 Controller
 
-Control API에 StreamingDTO의 형식대로 API 요청을 하면 FFmpeg 변환 프로세스를 시작합니다.
+- startConvert() : 
+- control() : Control API에 StreamingDTO의 형식대로 API 요청을 하면 FFmpeg 변환 프로세스를 시작합니다.
 
 ```java
 @Slf4j  
@@ -200,18 +201,15 @@ Control API에 StreamingDTO의 형식대로 API 요청을 하면 FFmpeg 변환 �
 @RequestMapping("/api/hls")  
 @RequiredArgsConstructor  
 public class StreamingController {  
+    private final RestApiService restApiService;  
     private final StreamingService streamingService;  
   
     @Value("${api.key}")  
     private String apiKey;  
   
-    // org.springframework.core.io.Resource  
-    @GetMapping("/stream")  
-    public ResponseEntity<Resource> streamHls() {  
-        File file = new File("output.m3u8");  
-        Resource resource = new FileSystemResource(file);  
-  
-        return ResponseEntity.ok(resource);  
+    @GetMapping("/request")  
+    public void startConvert(@RequestParam String ip, @RequestParam String command) {  
+        restApiService.requestStreaming(ip, command);  
     }  
   
     @PostMapping("/control")  
