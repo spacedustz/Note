@@ -271,7 +271,7 @@ public class RestApiService {
   
     /**  
      * POST 요청(URI 는 / 부터 시작해야 함)  
-     *     * @param uri  
+     * @param uri  
      * @param data  
      * @return  
      */  
@@ -383,10 +383,7 @@ public class StreamingService {
             builder.append(port);  
             builder.append("/");  
             builder.append(instanceName);  
-            builder.append(" -c:v copy -c:a copy ");  
-//            builder.append(" -profile:v baseline ");  
-//            builder.append(" -fflags nobuffer ");  
-//            builder.append(" -tune zerolatency ");  
+            builder.append(" -c:v copy -c:a copy ");   
             builder.append(" -hls_time ").append(hlsTime);  
             builder.append(" -hls_list_size ").append(hlsListSize);  
             builder.append(" -hls_flags ").append(hlsFlags);  
@@ -474,7 +471,8 @@ public class StreamingService {
   
     /**  
      * FFmpeg 프로세스 Health Check  
-     */    @Scheduled(fixedDelayString = "${ffmpeg.check.interval.millis}")  
+     */    
+    @Scheduled(fixedDelayString = "${ffmpeg.check.interval.millis}")  
     public void checkProcess() {  
         if (processMap.isEmpty()) {  
             log.warn("Check FFmpeg - 카메라 변환 프로세스가 실행 중이 아닙니다.");  
