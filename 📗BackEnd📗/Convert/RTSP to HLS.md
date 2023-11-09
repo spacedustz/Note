@@ -341,7 +341,7 @@ public class RestApiService {
 
 > 📌 **StreamingService**
 
-컨트롤러로 부터 DTO를 받아 RTSP T
+컨트롤러로 부터 DTO를 받아 RTSP Topic, InstanceName 등 정보를 이용해 FFmpeg 프로세스를 실행합니다.
 
 ```java
 @Slf4j  
@@ -703,3 +703,9 @@ Bash -> `curl -X GET http://localhost:5000/api/hls/request?ip={ip}&command=start
 지금은 테스트로 1개의 비디오만 연결했기 때문에 실제론 1개만 변환중이고,
 
 브라우저에서 재생을 시키면 잘 변환되어 스트리밍 됩니다.
+
+<br>
+
+세그먼트 파일(.ts)과 재생리스트 파일(.m3u8) 파일도 잘 생기네요.
+
+![img(https:/)
