@@ -671,3 +671,13 @@ public class InstanceHealthCheck extends Thread {
     height: auto;  
 }
 ```
+
+---
+
+## 실행
+
+Controller의 request API를 이용해 FFmpeg을 실행해 RTSP를 변환해서 브라우저에 HLS를 재생합니다.
+
+노트북의 사양이 안좋기 때문에 1개의 비디오만 돌려보겠습니다.
+
+Request URI : `http://localhost:5000/api/hls/request`
