@@ -250,7 +250,8 @@ public class StreamingController {
 
 > 📌 **Rest API Service**
 
-인스턴스 헬스체크를 위해 인스턴스에 Rest API 요청을 보내기 위한 서비스입니다.
+- getInstance() : 인스턴스 헬스체크를 위해 인스턴스에 GET 요청을 보내기 위한 서비스입니다.
+- portInstance() : 헬스체크 로직 내에서 인스턴스가 Running 중이 아니라면 실해
 
 ```java
 @Slf4j  
