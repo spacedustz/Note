@@ -362,6 +362,8 @@ public class StreamingService {
   
     private Map<Integer, Process> processMap = new ConcurrentHashMap();  
   
+    private String scriptPath = "script/";  
+  
     /**  
      * FFmpeg 프로세스 시작  
      * @param cameraId  
@@ -384,6 +386,9 @@ public class StreamingService {
             builder.append("/");  
             builder.append(instanceName);  
             builder.append(" -c:v copy -c:a copy ");  
+//            builder.append(" -profile:v baseline ");  
+//            builder.append(" -fflags nobuffer ");  
+//            builder.append(" -tune zerolatency ");  
             builder.append(" -hls_time ").append(hlsTime);  
             builder.append(" -hls_list_size ").append(hlsListSize);  
             builder.append(" -hls_flags ").append(hlsFlags);  
@@ -401,27 +406,33 @@ public class StreamingService {
             // 명령을 전달하여 프로세스 실행합니다.  
             process = Runtime.getRuntime().exec(cmd);  
   
+            // 프로세스 출력 에러 스트림 리다이렉션  
             BufferedReader errorStream = new BufferedReader(new InputStreamReader(process.getErrorStream()));  
             String line;  
-            int exitCode = 0;  
+            AtomicInteger exitCode = new AtomicInteger();  
   
             while ((line = errorStream.readLine()) != null) {  
-                log.debug(line);  
+                log.warn(line);  
             }  
   
-            try {  
-                exitCode = process.waitFor();  
-            } catch (Exception e) {  
-                log.error("Process Wait For Failed - {}", e.getMessage());  
-            }  
+            Process finalProcess = process;  
+            CompletableFuture.runAsync(() -> {  
+                try {  
+                    exitCode.set(finalProcess.waitFor());  
+                    log.warn("FFmpeg process exited with exit code: {}", exitCode);  
+                } catch (InterruptedException e) {  
+                    log.error("Process Wait For Failed - {}", e.getMessage());  
+                }  
+            });  
   
             // 카메라의 식별자와 프로세스를 Map에 넣습니다.  
             processMap.put(cameraId, process);  
   
-            log.info("FFmpeg 변환 프로세스가 시작됩니다. - {}, {}, {}, {}, {}, {}", cameraId, instanceName, ip, port, cmd, process.isAlive());  
+            log.warn("FFmpeg 변환 프로세스가 시작됩니다. - {}, {}, {}, {}, {}, {}", cameraId, instanceName, ip, port, cmd, process.isAlive());  
+            log.error("Process Map 테스트 : {}", processMap.entrySet().stream().toList().toString());  
   
         } else {  
-            log.debug("FFmpeg 변환 프로세스가 이미 실행 중 입니다.");  
+            log.warn("FFmpeg 변환 프로세스가 이미 실행 중 입니다.");  
         }  
     }  
   
@@ -433,12 +444,20 @@ public class StreamingService {
      * @author 신건우  
      */  
     public void stopHlsConverter(final Integer cameraId, final String instanceName) throws IOException {  
-        Process process = processMap.get(cameraId);  
+//        Process process = processMap.get(cameraId);  
   
         // 프로세스가 존재하면 종료합니다.  
-        if (process != null && process.isAlive()) {  
-            process.destroy();  
-            process = null;  
+//        if (process != null && process.isAlive()) {  
+//            process.destroy();  
+//  
+//            try {  
+//                process.waitFor();  
+//            } catch (Exception e) {  
+//                log.error("Process Wait For Failed - {}", e.getMessage());  
+//            }  
+  
+//            process = null;  
+            Runtime.getRuntime().exec("taskkill /IM ffmpeg.exe /F /T");  
   
             File file = new File(hlsFilePath + cameraId);  
   
@@ -448,24 +467,25 @@ public class StreamingService {
             }  
   
             // Map에서 프로세스를 제거합니다.  
-            processMap.remove(instanceName);  
+//            processMap.remove(cameraId);  
   
-            log.info("FFmpeg 변환 프로세스가 종료 되었습니다.");  
-        } else {  
-            log.info("FFmpeg 변환 프로세스가 실행 중이 아닙니다.");  
-        }  
+//        } else {  
+//            log.warn("FFmpeg 변환 프로세스가 실행 중이 아닙니다.");  
+//        }  
     }  
   
     /**  
      * FFmpeg 프로세스 Health Check  
      */    @Scheduled(fixedDelayString = "${ffmpeg.check.interval.millis}")  
     public void checkProcess() {  
+        if (processMap.isEmpty()) {  
+            log.warn("Check FFmpeg - 카메라 변환 프로세스가 실행 중이 아닙니다.");  
+        }  
+  
         processMap.forEach((cameraId, process) -> {  
             if (process != null) {  
                 if (process.isAlive()) {  
-                    log.debug("Check FFmpeg - {}번 카메라 변환 프로세스가 실행 중 입니다.", cameraId);  
-                } else {  
-                    log.debug("Check FFmpeg - {}번 카메라 변환 프로세스가 실행 중이 아닙니다.", cameraId);  
+                    log.warn("Check FFmpeg - {}번 카메라 변환 프로세스가 실행 중 입니다.", cameraId);  
                 }  
             }  
         });  
@@ -477,17 +497,19 @@ public class StreamingService {
 
 ## 📘 Health Check Thread
 
+카메라 인스턴스의 상태를 1분마다 체크 (Thread.sleep) 하여 상태가 4(Running)이 아니면
+
 ```java
 @Slf4j  
 @Service  
 @RequiredArgsConstructor  
-public class HealthCheckThread extends Thread {  
+public class InstanceHealthCheck extends Thread {  
     private final RestApiService restApiService;  
     private final TaskExecutor executor;  
     private final ObjectMapper mapper;  
-    private String[] instanceName = {"1-260-01", "1-260-04", "1-294-01", "1-294-02", "1-414-02", "1-414-03", "1-438-02", "1-465-01", "1-465-04"};  
-    private String server = "http://192.168.0.122:8080/";  
-    private static int index = 0;  
+    //    private String[] instanceName = {"1-260-01", "1-260-04", "1-294-01", "1-294-02", "1-414-02", "1-414-03", "1-438-02", "1-465-01", "1-465-04"};  
+    private String[] instanceName = {"Tripwire-Test"};  
+    private String server = "http://localhost:8080/";  
   
     @PostConstruct  
     public void init() {  
@@ -501,21 +523,17 @@ public class HealthCheckThread extends Thread {
             Arrays.stream(instanceName).forEach(name -> {  
                 try {  
                     String uri = server + "api/instance/get?instance_name=" + name;  
-                    String result = restApiService.getRequest(uri).block();  
+                    String result = restApiService.getInstance(uri).block();  
                     InstanceDto[] instanceDtoArray = mapper.readValue(result, InstanceDto[].class);  
   
                     if (instanceDtoArray != null && instanceDtoArray.length > 0) {  
                         Arrays.stream(instanceDtoArray).forEach(instance -> {  
   
                             if (instance.getState() == 4) {  
-                                log.info("Instance 상태 : 실행 중");  
+                                return;  
                             }  
   
-                            log.info("Instance Status - Name : {}, Info : {}", name, instance.toString());  
-  
                             if (instance.getState() == 0 || instance.getState() == 1 || instance.getState() == 3 || instance.getState() == 5) {  
-                                index++;  
-                                log.debug("총 인스턴스 실패한 횟수 : {}", index);  
   
                                 String startUri = server + "api/instance/start";  
   
@@ -525,22 +543,23 @@ public class HealthCheckThread extends Thread {
   
                                 try {  
                                     String requestBody = mapper.writeValueAsString(reqBody);  
-                                    restApiService.postRequest(startUri, requestBody).block();  
-  
-                                    log.info("Instance Start - Request Body : {}", requestBody);  
+                                    restApiService.postInstance(startUri, requestBody).block();  
+                                    log.info("[{}] Instance Start", reqBody.getInstanceName());  
                                 } catch (Exception e) {  
-                                    log.info("Instance Start with An Exception : {}", e.getMessage());  
+                                    log.error("{} Instance Start with An Exception : {}, {}",reqBody.getInstanceName(), e.getMessage(), e.getCause());  
                                 }  
                             }  
                         });  
                     }  
+  
+                    log.info("[Instance Health Check] - 정상");  
                 } catch (Exception e) {  
-                    log.warn("Instance Monitoring with An Exception - {}", e.getMessage());  
+                    log.warn("Instance 서버가 오프라인 입니다.");  
                 }  
             });  
   
             try {  
-                Thread.sleep(5000);  
+                Thread.sleep(60000);  
             } catch (InterruptedException e) {  
                 e.printStackTrace();  
             }  
@@ -549,8 +568,9 @@ public class HealthCheckThread extends Thread {
   
     private void InstanceConnection() {  
         executor.execute(() -> {  
-            HealthCheckThread healthCheckThread = new HealthCheckThread(restApiService, executor, mapper);  
-            executor.execute(healthCheckThread);  
+            InstanceHealthCheck thread = new InstanceHealthCheck(restApiService, executor, mapper);  
+            thread.setDaemon(true);  
+            executor.execute(thread);  
         });  
     }  
 }
