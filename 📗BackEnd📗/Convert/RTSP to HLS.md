@@ -384,6 +384,9 @@ public class StreamingService {
             builder.append("/");  
             builder.append(instanceName);  
             builder.append(" -c:v copy -c:a copy ");   
+//            builder.append(" -profile:v baseline ");  
+//            builder.append(" -fflags nobuffer ");  
+//            builder.append(" -tune zerolatency ");  
             builder.append(" -hls_time ").append(hlsTime);  
             builder.append(" -hls_list_size ").append(hlsListSize);  
             builder.append(" -hls_flags ").append(hlsFlags);  
