@@ -682,7 +682,11 @@ Controller의 request API를 이용해 FFmpeg을 실행해 RTSP를 변환해서 
 
 Request URI : `http://localhost:5000/api/hls/request?ip={ip}&command=start`
 
-Git Bash -> `curl -X GET ht`
+<br>
+
+FFmpeg을 실행하는 로직은 프로세스의 응답을 WaitFor 하기 때문에 백그라운드(&)로 API를 요청 해줍니다.
+
+Git Bash -> `curl -X GET http://localhost:5000/api/hls/request?ip={ip}&command=start &`
 
 <br>
 
