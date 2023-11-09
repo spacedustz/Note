@@ -680,4 +680,13 @@ Controller의 request API를 이용해 FFmpeg을 실행해 RTSP를 변환해서 
 
 노트북의 사양이 안좋기 때문에 1개의 비디오만 돌려보겠습니다.
 
-Request URI : `http://localhost:5000/api/hls/request`
+Request URI : `http://localhost:5000/api/hls/request?ip={ip}&command=start`
+
+Git Bash -> `curl -X GET ht`
+
+<br>
+
+![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/hls-result.png)
+
+<br>
+
