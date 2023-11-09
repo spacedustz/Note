@@ -341,6 +341,8 @@ public class RestApiService {
 
 > 📌 **StreamingService**
 
+컨트롤러로 부터 DTO를 받아 
+
 ```java
 @Slf4j  
 @Service  
