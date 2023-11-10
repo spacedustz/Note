@@ -1,4 +1,4 @@
-## Windows Terminal 꾸미기
+## Windows PowerShell 꾸미기
 
 - Oh-My-Posh 다운로드
 - 테마 파일 위치 : `$HOME > Appdata > Local > Programs > oh-my-posh > themes`
@@ -32,3 +32,17 @@ Set-ExecutionPolicy RemoteSigned
 
 <br>
 
+## CMD 꾸미기
+
+터미널 -> 설정 -> Json 파일 열기
+
+```json
+    "profiles":
+    {
+        "defaults": {
+          "colorScheme": "One Half Dark",
+          "fontSize": 11,
+          "useAcrylic": true, // 투명한 배경 사용 여부
+          "acrylicOpacity": 0.6 // 불투명도(1에 가까워질수록 불투명함)
+        },
+```
