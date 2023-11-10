@@ -13,18 +13,16 @@ winget install JanDeDobbeleer.OhMyPosh
 
 > **테마 변경**
 
-- 개인적으로 `di4am0` 테마를 선택함
+- 개인적으로 `di4am0nd` 테마를 선택함
 
 
-**Power Shell 에서 진행**
+**Power Shell (관리자 권한)에서 진행**
 ```shell
-oh-my-posh init powershell --config C:\Users\root\AppData\Local\Programs\oh-my-posh\themes\zash.omp.json | invoke-Expression
-
 New-Item -Path $PROFILE -Type File -Force
 notepad $PROFILE
 
 # 이 명령어 삽입
-oh-my-posh init powershell --config C:\Users\root\AppData\Local\Programs\oh-my-posh\themes\zash.omp.json | invoke-Expression
+oh-my-posh init powershell --config C:\Users\root\AppData\Local\Programs\oh-my-posh\themes\di4am0nd.omp.json | invoke-Expression
 
 # 에러 뜰경우 아래 커맨드 실행
 Set-ExecutionPolicy RemoteSigned
