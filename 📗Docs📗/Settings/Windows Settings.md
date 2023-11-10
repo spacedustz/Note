@@ -13,9 +13,9 @@ winget install JanDeDobbeleer.OhMyPosh
 
 > **테마 변경**
 
-- 개인적ㄱ으로 `1_shell`을 선택함
+- 개인적으로 `1_shell`을 선택함
 
 ```shell
-cd ~
+cd C:\Users\root\AppData\Local\Programs\oh-my-posh\themes
 notepad .mytheme.omp.json
 ```
