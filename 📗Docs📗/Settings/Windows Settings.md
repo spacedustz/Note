@@ -18,4 +18,7 @@ winget install JanDeDobbeleer.OhMyPosh
 ```shell
 [Power Shell 열기]
 oh-my-posh init powershell --config C:\Users\root\AppData\Local\Programs\oh-my-posh\themes\1_shell.omp.json | invoke-Expression
+
+cd C:\Users\root\AppData\Local\Programs\oh-my-posh\themes
+notepad $PROFILE
 ```
