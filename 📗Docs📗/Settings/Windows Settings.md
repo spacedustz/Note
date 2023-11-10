@@ -4,6 +4,7 @@
 - 테마파일 위치 : `$HOME > Appdata > Local > Programs > oh-my-posh > themes`
 
 ```shell
-winget install JanDeDobbeleer .OhMyPosh
+winget install oh-my-posh
+winget install JanDeDobbeleer.OhMyPosh
 ```
 
