@@ -17,5 +17,6 @@ winget install JanDeDobbeleer.OhMyPosh
 
 ```shell
 cd C:\Users\root\AppData\Local\Programs\oh-my-posh\themes
-notepad .mytheme.omp.json
+notepad 1_shell.omp.json
+oh-my-posh init powershell --config 
 ```
