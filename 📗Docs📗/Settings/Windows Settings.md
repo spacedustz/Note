@@ -15,10 +15,17 @@ winget install JanDeDobbeleer.OhMyPosh
 
 - 개인적으로 `1_shell`을 선택함
 
+
+**Power Shell 에서 진행**
 ```shell
-[Power Shell 열기]
 oh-my-posh init powershell --config C:\Users\root\AppData\Local\Programs\oh-my-posh\themes\1_shell.omp.json | invoke-Expression
 
-cd C:\Users\root\AppData\Local\Programs\oh-my-posh\themes
+New-Item -Path $PROFILE -Type File -Force
 notepad $PROFILE
+
+# 이 명령어 삽입
+oh-my-posh init powershell --config C:\Users\root\AppData\Local\Programs\oh-my-posh\themes\1_shell.omp.json | invoke-Expression
+
+# 에러 뜰경우 아래 커맨드 실행
+Set-ExecutionPolicy RemoteSigned
 ```
