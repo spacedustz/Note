@@ -13,7 +13,7 @@ winget install JanDeDobbeleer.OhMyPosh
 
 > **테마 변경**
 
-- 개인적으로 `zash` 테마를 선택함
+- 개인적으로 `di4am0` 테마를 선택함
 
 
 **Power Shell 에서 진행**
