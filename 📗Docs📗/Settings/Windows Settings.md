@@ -29,3 +29,6 @@ oh-my-posh init powershell --config C:\Users\root\AppData\Local\Programs\oh-my-p
 # 에러 뜰경우 아래 커맨드 실행
 Set-ExecutionPolicy RemoteSigned
 ```
+
+<br>
+
