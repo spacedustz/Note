@@ -44,3 +44,9 @@ Set-ExecutionPolicy RemoteSigned
           "acrylicOpacity": 0.6 // 불투명도(1에 가까워질수록 불투명함)
         },
 ```
+
+<br>
+
+> **CMD Icon**
+
+
