@@ -121,7 +121,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📗BackEnd📗/Convert/RTSP to HLS.md",
+                "file": "📗Docs📗/Settings/Windows Settings.md",
                 "mode": "source",
                 "source": false
               }
@@ -194,7 +194,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗BackEnd📗/Convert/RTSP to HLS.md",
+                "file": "📗Docs📗/Settings/Windows Settings.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -211,7 +211,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗BackEnd📗/Convert/RTSP to HLS.md",
+                "file": "📗Docs📗/Settings/Windows Settings.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -234,7 +234,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗BackEnd📗/Convert/RTSP to HLS.md"
+                "file": "📗Docs📗/Settings/Windows Settings.md"
               }
             }
           },
@@ -267,6 +267,8 @@
   },
   "active": "235cd8b8cb2ed593",
   "lastOpenFiles": [
+    "📗BackEnd📗/Convert/RTSP to HLS.md",
+    "📗Docs📗/Settings/Windows Settings.md",
     "📗BackEnd📗/Convert/Parse Json.md",
     "📗BackEnd📗/Convert/Parse CSV.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/RabbitMQ-Configuration.md",
@@ -284,7 +286,6 @@
     "📗BackEnd📗/Frameworks/Spring/Security/Filter Chain & DelegatingPasswordEncoder.md",
     "📗BackEnd📗/Frameworks/Spring/Security/Authentication & Authorization.md",
     "📗기능개발📗/출입통제시스템.md",
-    "📗BackEnd📗/Convert/RTSP to HLS.md",
     "Temp.md",
     "imoji.md",
     "📗BackEnd📗/Frameworks/Spring/AOP/구현.md",
@@ -293,7 +294,6 @@
     "📗DataBase📗/MariaDB",
     "📗기능개발📗/시뮬레이터.md",
     "📗DataBase📗/QueryDSL/Kotlin/성능개선.md",
-    "📗DataBase📗/QueryDSL/Java/QueryDSL 동적 쿼리 & 성능 최적화.md",
     "📗DataBase📗/QueryDSL/Java",
     "📗DataBase📗/QueryDSL/Kotlin",
     "📗기능개발📗",
