@@ -121,7 +121,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📗Ops-Tools📗/CI & CD/Jenkins/Jenkins 분산 빌드.md",
+                "file": "📗Ops-Tools📗/CI & CD/Jenkins/Blue Green Deployment.md",
                 "mode": "source",
                 "source": false
               }
@@ -194,7 +194,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗Ops-Tools📗/CI & CD/Jenkins/Jenkins 분산 빌드.md",
+                "file": "📗Ops-Tools📗/CI & CD/Jenkins/Blue Green Deployment.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -211,7 +211,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗Ops-Tools📗/CI & CD/Jenkins/Jenkins 분산 빌드.md",
+                "file": "📗Ops-Tools📗/CI & CD/Jenkins/Blue Green Deployment.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -234,7 +234,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗Ops-Tools📗/CI & CD/Jenkins/Jenkins 분산 빌드.md"
+                "file": "📗Ops-Tools📗/CI & CD/Jenkins/Blue Green Deployment.md"
               }
             }
           },
@@ -267,6 +267,7 @@
   },
   "active": "235cd8b8cb2ed593",
   "lastOpenFiles": [
+    "📗Ops-Tools📗/CI & CD/Jenkins/Jenkins 분산 빌드.md",
     "📗Docs📗/Settings/Windows Settings.md",
     "📗BackEnd📗/Convert/RTSP to HLS.md",
     "📗BackEnd📗/Convert/Parse Json.md",
@@ -293,7 +294,6 @@
     "📗DataBase📗/MariaDB/유저 생성.md",
     "📗DataBase📗/MariaDB",
     "📗기능개발📗/시뮬레이터.md",
-    "📗DataBase📗/QueryDSL/Kotlin/성능개선.md",
     "📗DataBase📗/QueryDSL/Java",
     "📗DataBase📗/QueryDSL/Kotlin",
     "📗기능개발📗",

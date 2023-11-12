@@ -146,7 +146,7 @@ docker network create --gateway 172.20.0.1 --subnet 172.20.0.0/16 deploy
 **_스크립트 수정_**
 
 ```bash
-#!/bin/bash  
+#!/bin/bash   
   
 # Blue & Green 타겟 지정 변수  
 target=2  
