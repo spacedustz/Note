@@ -51,14 +51,35 @@ HLS는 일반적으로 **설계상 지연시간**이 존재합니다. (일반적
 FFmpeg Options
 
 `-hls_flags delete_segments`
+
 - 이 플래그는 처리된 세그먼트 파일들을 지속적으로 삭제합니다. 
 - 그렇게 함으로써 사용자가 재생을 시작할 때 오래된 세그먼트 대신 최신 세그먼트부터 재생하게 할 수 있습니다.  
+
+<br>
+
 `-hls_flags append_list`
 - HLS v4 이상에서 사용할 수 있는 이 플래그는 기존 재생 목록에 세그먼트를 추가만 하며, 이것은 항상 최신 세그먼트부터 재생하게 할 때 유용합니다.  
-* `-hls_playlist_type event` : 이 옵션은 라이브 스트리밍에 적합한 event 타입의 재생 목록을 생성합니다. vod (Video On Demand)와 달리, event 타입은 새로운 세그먼트가 추가될 때 기존의 세그먼트를 유지하게 해서 실시간으로 업데이트되는 재생 목록을 제공합니다.  
-* `-hls_list_size 0` : 이 옵션은 재생 목록에 모든 세그먼트를 유지하도록 설정합니다. 그러나 실시간 스트리밍에는 유용하지 않을 수 있으며, 대신 적절한 크기(예: -hls_list_size 3 또는 5)로 설정하여 최근 세그먼트만 유지하게 할 수 있습니다.  
-* `-hls_time` : 이 옵션으로 각 세그먼트의 지속 시간을 설정할 수 있으며, 이는 세그먼트의 길이를 결정합니다. 세그먼트 길이를 짧게 설정하면(예: 2초), 재생이 더 빨리 최신으로 시작될 수 있습니다.  
-* `ffmpeg -i rtsp://your_rtsp_stream_address -codec copy -flags -global_header -f hls -hls_time 2 -hls_list_size 3 -hls_flags delete_segments+append_list -hls_playlist_type event stream.m3u8` 
+
+<br>
+
+`-hls_playlist_type event`
+- 이 옵션은 라이브 스트리밍에 적합한 event 타입의 재생 목록을 생성합니다. vod (Video On Demand)와 달리, event 타입은 새로운 세그먼트가 추가될 때 기존의 세그먼트를 유지하게 해서 실시간으로 업데이트되는 재생 목록을 제공합니다.  
+
+<br>
+
+`-hls_list_size 0`
+- 이 옵션은 재생 목록에 모든 세그먼트를 유지하도록 설정합니다. 
+- 그러나 실시간 스트리밍에는 유용하지 않을 수 있으며, 대신 적절한 크기(예: -hls_list_size 3 또는 5)로 설정하여 최근 세그먼트만 유지하게 할 수 있습니다.  
+
+<br>
+
+`-hls_time`
+- 이 옵션으로 각 세그먼트의 지속 시간을 설정할 수 있으며, 이는 세그먼트의 길이를 결정합니다. 
+- 세그먼트 길이를 짧게 설정하면(예: 2초), 재생이 더 빨리 최신으로 시작될 수 있습니다.  
+
+<br>
+
+ffmpeg -i rtsp://your_rtsp_stream_address -codec copy -flags -global_header -f hls -hls_time 2 -hls_list_size 3 -hls_flags delete_segments+append_list -hls_playlist_type event stream.m3u8` 
 
 
 * RTSP 스트림을 입력으로 받습니다.  
