@@ -44,7 +44,7 @@ HLS는 일반적으로 **설계상 지연시간**이 존재합니다. (일반적
 
 **하드웨어 가속**
 
-- 이 방법은 
+- 알아보는 ㅜㅇ
 
 ---
 
@@ -55,6 +55,8 @@ HLS는 일반적으로 **설계상 지연시간**이 존재합니다. (일반적
 - hls_time = 2
 - hls_list_size = 2
 - hls_flags = delete_segments+append_list
+- start_number = 1
+- hls_playlist_type = event
 
 `-hls_flags delete_segments`
 
