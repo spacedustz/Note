@@ -1,4 +1,4 @@
-## 플랫폼 별 Conf 파일 위치
+## 📘 플랫폼 별 Conf 파일 위치
 
 [RabbitMQ Configuration 공식 문서](https://www.rabbitmq.com/configure.html)
 
@@ -12,14 +12,14 @@
 
 ---
 
-## Custom
+## 기본 설정 파일 위치 변경
 
 **📕 만약 기존 RabbitMQ가 설치된 상태에서 Configuration을 직접 설정하고 싶을 경우**
 
 - 기존 RabbitMQ 삭제하고 아래 내용 중 `😊 RabbitMQ 기준 경로 (RABBITMQ_BASE) 변경` 까지만 진행하고 다시 Rabbit을 설치하고 진행해야 합니다.
 - 왜냐하면 이미 설치된 상태에서 환경 변수를 바꿔줘도 안 먹히기 때문에 저도 재 설치 후 변수가 잘 적용되었습니다.
 
----
+<br>
 
 **😊 Windows 환경에서 RabbitMQ의 Default Log, Config, Data의 기본 위치, 파일은 아래와 같습니다.**
 
@@ -31,7 +31,7 @@
 
 기본 경로를 사용해도 되지만 데이터,로그,설정 파일은 별도의 디렉터리에 관리하는게 편하니 바꿔보겠습니다.
 
----
+<br>
 
 **😊 사용할 방법**
 
@@ -40,7 +40,7 @@
 - 기본 경로를 변경함으로써 환경변수 설정 파일이 없어도 지정된 경로에서 실행
 - Log나 DB등의 경로를 지정하지 않아도 해당 경로에 생성됩니다.
 
----
+<br>
 
 **😊 RabbitMQ 기준 경로 (RABBITMQ_BASE) 변경**
 
