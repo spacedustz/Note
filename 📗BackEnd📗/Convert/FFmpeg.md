@@ -44,13 +44,13 @@ HLS는 일반적으로 **설계상 지연시간**이 존재합니다. (일반적
 
 **하드웨어 가속**
 
-- 알아보는 ㅜㅇ
+- 알아보는 중
 
 ---
 
-> **FFmpeg Options**
+## 📘 FFmpeg Options
 
-설정값
+> 📌 **설정값**
 
 - hls_time = 2
 - hls_list_size = 2
@@ -58,14 +58,17 @@ HLS는 일반적으로 **설계상 지연시간**이 존재합니다. (일반적
 - start_number = 1
 - hls_playlist_type = event
 
-`-hls_flags delete_segments`
+<br>
+
+> 📌 `-hls_flags delete_segments`
 
 - 이 플래그는 처리된 세그먼트 파일들을 지속적으로 삭제합니다. 
 - 그렇게 함으로써 사용자가 재생을 시작할 때 오래된 세그먼트 대신 최신 세그먼트부터 재생하게 할 수 있습니다.  
 
 <br>
 
-`-hls_flags append_list`
+> 📌 `-hls_flags append_list`
+> 
 - HLS v4 이상에서 사용할 수 있는 이 플래그는 기존 재생 목록에 세그먼트를 추가만 하며, 이것은 항상 최신 세그먼트부터 재생하게 할 때 유용합니다.  
 
 <br>
