@@ -1,4 +1,6 @@
-## 📘 플랫폼 별 Conf 파일 위치
+## 📘 Rabbitmq-Custom-Installation
+
+> **플랫폼 별 Conf 파일 위치**
 
 [RabbitMQ Configuration 공식 문서](https://www.rabbitmq.com/configure.html)
 
