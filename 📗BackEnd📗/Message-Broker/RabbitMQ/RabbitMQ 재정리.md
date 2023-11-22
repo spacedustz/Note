@@ -10,6 +10,42 @@
 |Windows)|%APPDATA%\RabbitMQ\|%APPDATA%\RabbitMQ\rabbitmq.conf, %APPDATA%\RabbitMQ\advanced.config|
 |MacOS Homebrew Formula|`${install_prefix}/etc/rabbitmq/`, and the Homebrew cellar prefix is usually /usr/local|`${install_prefix}/etc/rabbitmq/rabbitmq.conf`, `${install_prefix}/etc/rabbitmq/advanced.config`|
 
+<br>
+
+윈도우 환경에서 `advanced.config`, `rabbit.conf(만들어야 함)` 두개의 설정을 사용할 수 있는데,
+
+`conf` 파일은 기본적인 설정을 저장하고, `advanced.config` 파일은 고급 설정을 저장합니다.
+
+<br>
+
+`conf` 파일에는 다음과 같은 기본적인 설정이 포함되어 있습니다.
+
+- 로그 파일의 위치
+- 로그 레벨
+- 로그 파일의 유지 기간
+- TCP 포트 번호
+- AMQP 포트 번호
+- 웹 관리 콘솔의 URL
+
+`advanced.config` 파일에는 다음과 같은 고급 설정이 포함되어 있습니다.
+
+- 큐의 최대 메시지 수
+- 큐의 최대 메시지 크기
+- 브로커의 메모리 사용량
+- 클러스터의 설정
+- 암호화 설정
+- 보안 설정
+<br>
+
+📕 **내용 추가**
+
+- 공식 문서를 계속 보다가 `advanced.config`를 사용하는 방식은 `Deprecated` 되었으니 `conf 파일`을 사용하는 방식을 추천하는 글을 봄
+- 그러므로 `advanced.config`에 대한 내용은 지우고 conf 파일에 대한 내용만 아래 내용에 있음
+- 원래 성능 파라미터 관련 옵션은 `advanced.config`에 작성 했었는데 conf 파일에 쓰는 걸로 병합함
+
+![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/rabbit-deprecated.png)
+
+
 ---
 
 ## 📘 기본 설정 파일 위치 변경
