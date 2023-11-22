@@ -121,7 +121,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/RabbitMQ 재정리.md",
+                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/Summary.md",
                 "mode": "source",
                 "source": false
               }
@@ -194,7 +194,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/RabbitMQ 재정리.md",
+                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/Summary.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -211,7 +211,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/RabbitMQ 재정리.md",
+                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/Summary.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -234,7 +234,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/RabbitMQ 재정리.md"
+                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/Summary.md"
               }
             }
           },
