@@ -50,6 +50,11 @@ HLS는 일반적으로 **설계상 지연시간**이 존재합니다. (일반적
 
 > **FFmpeg Options**
 
+설정값
+
+- hls_time = 2
+- hls_list_size = 2
+
 `-hls_flags delete_segments`
 
 - 이 플래그는 처리된 세그먼트 파일들을 지속적으로 삭제합니다. 
