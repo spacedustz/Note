@@ -12,7 +12,7 @@
 
 ---
 
-## 기본 설정 파일 위치 변경
+## 📘 기본 설정 파일 위치 변경
 
 **📕 만약 기존 RabbitMQ가 설치된 상태에서 Configuration을 직접 설정하고 싶을 경우**
 
@@ -64,7 +64,7 @@
 
 ![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/rabbit-log.png)
 
----
+<br>
 
 **😊 RabbitMQ 환경 변수 윈도우 배치 파일 생성**
 
@@ -105,7 +105,7 @@ SET LOG_BASE=E:\Data\RabbitMQ\log
 
 위 배치 스크립트에서 로그,데이터 파일은 생성 됐지만, Conf 파일은 경로 지정만 하고 아직 작성을 안 했으니 Conf 파일도 작성해봅시다.
 
----
+<br>
 
 **😊 RabbitMQ Configuration 파일 생성 & 설정**
 
@@ -133,8 +133,6 @@ log.file.rotation.count = 7
 
 # 로그 파일 보존 기간 설정 (단위: Second)
 #log.file.max.age = 30000
-
-
 
 # ----- 성능 관련 파라미터 설정 -----
 ```
