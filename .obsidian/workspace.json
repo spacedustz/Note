@@ -121,7 +121,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "imoji.md",
+                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/RabbitMQ-Custom-Installation.md",
                 "mode": "source",
                 "source": false
               }
@@ -194,7 +194,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "imoji.md",
+                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/RabbitMQ-Custom-Installation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -211,7 +211,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "imoji.md",
+                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/RabbitMQ-Custom-Installation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -234,7 +234,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "imoji.md"
+                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/RabbitMQ-Custom-Installation.md"
               }
             }
           },
@@ -267,10 +267,10 @@
   },
   "active": "235cd8b8cb2ed593",
   "lastOpenFiles": [
+    "imoji.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/RabbitMQ-Custom-Installation.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/On-Linux.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/MQTT Client (React & TypeScript).md",
-    "imoji.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/Summary.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/RabbitMQ-Configuration.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/성능 파라미터.md",

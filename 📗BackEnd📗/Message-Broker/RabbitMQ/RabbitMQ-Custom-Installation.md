@@ -1,6 +1,10 @@
 ## 📘 Rabbitmq-Custom-Installation
 
-> **플랫폼 별 Conf 파일 위치**
+RabbitMQ의 기본 설치 폴더 및 로깅을 위한 파일들을 Custom한 위치로 변경해서 설치해야할 때 필요한 프로세스입니다.
+
+<br>
+
+> 📌 **플랫폼 별 Conf 파일 위치**
 
 [RabbitMQ Configuration 공식 문서](https://www.rabbitmq.com/configure.html)
 
