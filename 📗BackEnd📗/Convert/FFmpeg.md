@@ -54,6 +54,7 @@ HLS는 일반적으로 **설계상 지연시간**이 존재합니다. (일반적
 
 - hls_time = 2
 - hls_list_size = 2
+- hls_flags = delete_segments+append_list
 
 `-hls_flags delete_segments`
 
