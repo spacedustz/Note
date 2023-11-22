@@ -50,14 +50,20 @@
 
 ## 📘 기본 설정 파일 위치 변경
 
-**📕 만약 기존 RabbitMQ가 설치된 상태에서 Configuration을 직접 설정하고 싶을 경우**
+[RabbitMQ-Logging 공식 문서](https://www.rabbitmq.com/logging.html#log-outputs)
+
+[RabbitMQ-환경변수 공식 문서](https://www.rabbitmq.com/configure.html#customise-environment)
+
+<br>
+
+> **📕 만약 기존 RabbitMQ가 설치된 상태에서 Configuration을 직접 설정하고 싶을 경우**
 
 - 기존 RabbitMQ 삭제하고 아래 내용 중 `😊 RabbitMQ 기준 경로 (RABBITMQ_BASE) 변경` 까지만 진행하고 다시 Rabbit을 설치하고 진행해야 합니다.
 - 왜냐하면 이미 설치된 상태에서 환경 변수를 바꿔줘도 안 먹히기 때문에 저도 재 설치 후 변수가 잘 적용되었습니다.
 
 <br>
 
-**😊 Windows 환경에서 RabbitMQ의 Default Log, Config, Data의 기본 위치, 파일은 아래와 같습니다.**
+> **😊 Windows 환경에서 RabbitMQ의 Default Log, Config, Data의 기본 위치, 파일은 아래와 같습니다.**
 
 - 로그 :  `C:\Users\사용자명\AppData\Roaming\RabbitMQ\log` 디렉터리에 저장됩니다. 
 - 데이터 : `C:\Users\사용자명\AppData\Roaming\RabbitMQ\db` 디렉터리에 저장됩니다.
@@ -69,7 +75,7 @@
 
 <br>
 
-**😊 사용할 방법**
+> **😊 사용할 방법**
 
 - 적용할 환경변수를 설정하는 배치파일을 **지정된 파일명 (rabbitmq-env.conf.bat)** 으로 생성
 - `$RABBITMQ_BASE` 변수에 파일이 있는 경로를 저장합니다.
@@ -78,7 +84,7 @@
 
 <br>
 
-**😊 RabbitMQ 기준 경로 (RABBITMQ_BASE) 변경**
+> **😊 RabbitMQ 기준 경로 (RABBITMQ_BASE) 변경**
 
 - RabbitMQ의 데이터를 저장할 디렉터리 생성 (ex: E:\Data\RabbitMQ)
 - 환경 변수 2개를 추가 해줍니다.
@@ -102,7 +108,7 @@
 
 <br>
 
-**😊 RabbitMQ 환경 변수 윈도우 배치 파일 생성**
+> **😊 RabbitMQ 환경 변수 윈도우 배치 파일 생성**
 
 환경 변수 파일 (.bat 파일)을 작성합니다.
 
@@ -143,7 +149,7 @@ SET LOG_BASE=E:\Data\RabbitMQ\log
 
 <br>
 
-**😊 RabbitMQ Configuration 파일 생성 & 설정**
+> **😊 RabbitMQ Configuration 파일 생성 & 설정**
 
 일단 로그 설정만 적용되게 하고 성능 관련 파라미터는 나중에 테스트 후 추가 하겠습니다.
 
