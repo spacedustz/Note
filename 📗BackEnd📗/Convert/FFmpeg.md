@@ -48,7 +48,7 @@ HLS는 일반적으로 **설계상 지연시간**이 존재합니다. (일반적
 
 ---
 
-FFmpeg Options
+> **FFmpeg Options**
 
 `-hls_flags delete_segments`
 
@@ -77,10 +77,13 @@ FFmpeg Options
 - 이 옵션으로 각 세그먼트의 지속 시간을 설정할 수 있으며, 이는 세그먼트의 길이를 결정합니다. 
 - 세그먼트 길이를 짧게 설정하면(예: 2초), 재생이 더 빨리 최신으로 시작될 수 있습니다.  
 
+```bash
+ffmpeg -i rtsp://your_rtsp_stream_address -codec copy -flags -global_header -f hls -hls_time 2 -hls_list_size 3 -hls_flags delete_segments+append_list -hls_playlist_type event stream.m3u8
+```
+
 <br>
 
-ffmpeg -i rtsp://your_rtsp_stream_address -codec copy -flags -global_header -f hls -hls_time 2 -hls_list_size 3 -hls_flags delete_segments+append_list -hls_playlist_type event stream.m3u8` 
-
+> **설명**
 
 * RTSP 스트림을 입력으로 받습니다.  
 * 비디오와 오디오 코덱을 변환하지 않고 복사합니다 (-codec copy).  
