@@ -121,7 +121,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/RabbitMQ 재정리.md",
+                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/Clustering.md",
                 "mode": "source",
                 "source": false
               }
@@ -194,7 +194,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/RabbitMQ 재정리.md",
+                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/Clustering.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -211,7 +211,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/RabbitMQ 재정리.md",
+                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/Clustering.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -234,7 +234,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/RabbitMQ 재정리.md"
+                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/Clustering.md"
               }
             }
           },
@@ -267,8 +267,11 @@
   },
   "active": "235cd8b8cb2ed593",
   "lastOpenFiles": [
-    "imoji.md",
+    "📗Computer-Science📗/Web Application & Network.md",
+    "📗Docs📗/Settings/Backend-Developer-Interview.md",
+    "📗Docs📗/Settings/Prime College.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/RabbitMQ 재정리.md",
+    "imoji.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/RabbitMQ-Configuration.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/Summary.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/RabbitMQ-Dead Letter Exchange-TTL.md",
@@ -290,9 +293,6 @@
     "📗BackEnd📗/Frameworks/Spring/Security/Filter Chain & DelegatingPasswordEncoder.md",
     "📗BackEnd📗/Frameworks/Spring/Security/Authentication & Authorization.md",
     "📗기능개발📗/출입통제시스템.md",
-    "Temp.md",
-    "📗BackEnd📗/Frameworks/Spring/AOP/구현.md",
-    "📗BackEnd📗/Frameworks/Spring/AOP/Logging.md",
     "📗DataBase📗/MariaDB",
     "📗DataBase📗/QueryDSL/Java",
     "📗DataBase📗/QueryDSL/Kotlin",
