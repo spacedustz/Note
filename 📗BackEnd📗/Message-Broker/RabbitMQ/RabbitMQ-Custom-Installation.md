@@ -43,7 +43,7 @@ RabbitMQ의 기본 설치 폴더 및 로깅을 위한 파일들을 Custom한 위
 - 보안 설정
 <br>
 
-📕 **내용 추가**
+> 📕 **내용 추가**
 
 - 공식 문서를 계속 보다가 `advanced.config`를 사용하는 방식은 `Deprecated` 되었으니 `conf 파일`을 사용하는 방식을 추천하는 글을 봄
 - 그러므로 `advanced.config`에 대한 내용은 지우고 conf 파일에 대한 내용만 아래 내용에 있음
@@ -54,7 +54,7 @@ RabbitMQ의 기본 설치 폴더 및 로깅을 위한 파일들을 Custom한 위
 
 <br>
 
-**📕 내용 수정 & 추가**
+> **📕 내용 수정 & 추가**
 
 Queue에 쌓인 Message의 영속성(Persistent & Delivery Mode)을 지정하는 방식 변경
 
