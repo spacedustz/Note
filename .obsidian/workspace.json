@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/1-Create.md",
+                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/3-Coordination.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/1-Create.md",
+                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/3-Coordination.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/1-Create.md",
+                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/3-Coordination.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/1-Create.md"
+                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/3-Coordination.md"
               }
             }
           },
@@ -158,12 +158,14 @@
   },
   "active": "235cd8b8cb2ed593",
   "lastOpenFiles": [
+    "imoji.md",
+    "📗BackEnd📗/Languages/Java/Multi-Threading/3-Coordination.md",
+    "📗BackEnd📗/Languages/Java/Multi-Threading/1-Create.md",
     "📗BackEnd📗/Convert/RTSP to HLS.md",
     "📗BackEnd📗/Convert/FFmpeg.md",
     "📗BackEnd📗/Convert/Parse CSV.md",
     "📗BackEnd📗/Convert/Parse Json.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/RabbitMQ-Custom-Installation.md",
-    "imoji.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/Summary.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/On-Linux.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/MQTT Client (React & TypeScript).md",
@@ -182,8 +184,6 @@
     "📗BackEnd📗/Frameworks/Spring/WebSocket.md",
     "📗BackEnd📗/Frameworks/Spring/MQTT.md",
     "📗BackEnd📗/Frameworks/Spring/LogBack.md",
-    "📗BackEnd📗/Frameworks/Spring/Security/Security Basic.md",
-    "📗BackEnd📗/Frameworks/Spring/Security/Filter Chain & DelegatingPasswordEncoder.md",
     "📗DataBase📗/MariaDB",
     "📗DataBase📗/QueryDSL/Java",
     "📗DataBase📗/QueryDSL/Kotlin",
