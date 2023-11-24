@@ -22,6 +22,7 @@
 |**Global 패키지 삭제**|yarn global remove {package}|
 |**업데이트**|yarn upgrade|
 |**패키지 업데이트**|yarn upgrade {package}|
+|**프로젝트**
 
 ---
 
