@@ -62,6 +62,14 @@ export default defineConfig({
 
 ---
 
+## 패키지 설치
+
+```
+yarn add styled-components
+yarn add @types/styled-components
+```
+
+---
 ## 📘 React Component 만들어보기
 
 src 디렉터리 밑에 components 디렉터리를 만들고 Intro.tsx 파일을 만들어 아래와 같이 작성해줍니다.
