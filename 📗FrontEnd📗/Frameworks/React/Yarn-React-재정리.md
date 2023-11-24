@@ -129,3 +129,5 @@ const StyledCircle = styled.div<CircleProps>`
   
 export default StyledCircle;
 ```
+
+---
