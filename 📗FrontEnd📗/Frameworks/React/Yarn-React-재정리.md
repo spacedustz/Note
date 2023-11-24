@@ -12,7 +12,7 @@
 
 |Description|Command|
 |--|--|
-|**Yarn 설치**|npm instann yarn --global|
+|**Yarn 설치**|npm install yarn --global|
 |**패키지 설치**|yarn add {package}|
 |**패키지 로드**|yarn|
 |**Dev 패키지 설치**|yarn add --dev {package}|
