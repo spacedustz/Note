@@ -60,3 +60,14 @@ export default defineConfig({
 })
 ```
 
+---
+
+```tsx
+const Intro: React.FC<[]> = () => {  
+    return (  
+        <div>백엔드 개발자 신건우입니다.</div>  
+    );  
+}  
+  
+export default Intro;
+```
