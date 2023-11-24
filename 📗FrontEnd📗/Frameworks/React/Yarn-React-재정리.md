@@ -103,3 +103,7 @@ function App() {
   
 export default App
 ```
+
+---
+
+## Styled-Component 사용해보기
