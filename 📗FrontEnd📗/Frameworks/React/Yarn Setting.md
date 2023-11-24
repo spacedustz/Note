@@ -35,4 +35,4 @@
 
 - yarn create vite {project-name} --template react-ts
 - TypeScript + SWC
-- yarn dev (프로젝트 실행)
+- yarn dev or yarn vite (프로젝트 실행)
