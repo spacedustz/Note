@@ -8,6 +8,8 @@
 
 <br>
 
-> **Yarn 설치**
+> **Yarn 사용법**
 
-- npm install yarn --global
+**Yarn 설치** : npm install yarn --global
+
+**Yarn 패키지 설치** : yarn global add {package-name}@{version-number}
