@@ -1,4 +1,4 @@
-## 📘 Yarn 기반 React Settings
+## 📘 Yarn 사용법
 
 > 📕 **Node.js 설치 * nvm lts 설치**
 
@@ -23,4 +23,6 @@
 |**업데이트**|yarn upgrade|
 |**패키지 업데이트**|yarn upgrade {package}|
 
+---
 
+## 
