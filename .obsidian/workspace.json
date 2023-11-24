@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/3-Coordination.md",
+                "file": "📗FrontEnd📗/Frameworks/React/Yarn Setting.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/3-Coordination.md",
+                "file": "📗FrontEnd📗/Frameworks/React/Yarn Setting.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/3-Coordination.md",
+                "file": "📗FrontEnd📗/Frameworks/React/Yarn Setting.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/3-Coordination.md"
+                "file": "📗FrontEnd📗/Frameworks/React/Yarn Setting.md"
               }
             }
           },
@@ -158,8 +158,12 @@
   },
   "active": "235cd8b8cb2ed593",
   "lastOpenFiles": [
-    "imoji.md",
+    "📗FrontEnd📗/Frameworks/React/Basic-Summary.md",
+    "📗FrontEnd📗/Frameworks/React/Yarn Setting.md",
+    "📗FrontEnd📗/Frameworks/React/Styled-Component.md",
+    "📗FrontEnd📗/Frameworks/React/Zustand-상태관리.md",
     "📗BackEnd📗/Languages/Java/Multi-Threading/3-Coordination.md",
+    "imoji.md",
     "📗BackEnd📗/Languages/Java/Multi-Threading/1-Create.md",
     "📗BackEnd📗/Convert/RTSP to HLS.md",
     "📗BackEnd📗/Convert/FFmpeg.md",
@@ -180,10 +184,6 @@
     "📗Ops-Tools📗/CI & CD/Jenkins/Jenkins 분산 빌드.md",
     "📗Docs📗/Settings/Windows Settings.md",
     "📗BackEnd📗/Frameworks/Spring/Kakao-Map-API.md",
-    "📗BackEnd📗/Convert/Live Streaming 이해하기.md",
-    "📗BackEnd📗/Frameworks/Spring/WebSocket.md",
-    "📗BackEnd📗/Frameworks/Spring/MQTT.md",
-    "📗BackEnd📗/Frameworks/Spring/LogBack.md",
     "📗DataBase📗/MariaDB",
     "📗DataBase📗/QueryDSL/Java",
     "📗DataBase📗/QueryDSL/Kotlin",
