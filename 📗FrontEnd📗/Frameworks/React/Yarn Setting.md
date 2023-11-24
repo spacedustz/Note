@@ -39,8 +39,23 @@
 
 <br>
 
-> **Default Export가 없는 모듈에서 Default Import 허용**
+> 📕 **Default Export가 없는 모듈에서 Default Import 허용**
 
 **tsconfig.json 파일**
 
 Linting 부분에`"allowSyntheticDefaultImports": true`
+
+
+<br>
+
+> **vite.config.ts** : 서버 포트 변경
+
+```ts
+// https://vitejs.dev/config/  
+export default defineConfig({  
+  plugins: [react()],  
+  server: {  
+    port: 3000  
+  }  
+})
+```
