@@ -106,4 +106,26 @@ export default App
 
 ---
 
-## Styled-Component 사용해보기
+## 📘 Styled-Component 사용해보기
+
+src/components/style 하위에 StyledCircle.tsx 파일을 만들어 주고 App.tsx에 추가해주면 끝입니다.
+
+```tsx
+import styled, {css} from "styled-components";  
+  
+// Circle  
+interface CircleProps {  
+    color?: string;  
+    size?: string;  
+}  
+  
+const StyledCircle = styled.div<CircleProps>`  
+    width: 5rem;    height: 5rem;    background: ${props => props.color || 'black'};  
+    border-radius: 50%;    ${props => props.size &&  
+    css`  
+    width: 10rem;    height: 10rem;  
+    `}  
+`;  
+  
+export default StyledCircle;
+```
