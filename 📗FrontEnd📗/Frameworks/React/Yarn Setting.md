@@ -8,7 +8,7 @@
 
 <br>
 
-> 📕 **Yarn 사용법**
+> 📕 **Yarn 명령어**
 
 |Description|Command|
 |--|--|
@@ -25,4 +25,12 @@
 
 ---
 
-## 
+## 📘 Yarn React Settings
+
+- Yarn + Vite + React + TypeScript
+
+<br>
+
+> 📕 **프로젝트 생성**
+
+- yarn create vite {project-name}
