@@ -20,7 +20,9 @@
 |**패키지 설치**|yarn add {package}|
 |**패키지 로드**|yarn|
 |**Dev 패키지 설치**|yarn add --dev {package}|
+|**Global 패키지 설치**|yarn global add {package}|
 |**패키지 삭제**|yarn remove {package}|
 |**Dev 패키지 삭제**|yarn remove {package}|
+|**Global 패키지 삭제**|yarn global remove
 |**업데이트**|yarn upgrade|
-|패키
+|**패키지 업데이트**|yarn upgrade {package}|
