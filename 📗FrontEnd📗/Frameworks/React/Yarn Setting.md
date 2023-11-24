@@ -13,3 +13,9 @@
 **Yarn 설치** : npm install yarn --global
 
 **Yarn 패키지 설치** : yarn global add {package-name}@{version-number}
+
+|Description|Command|
+|--|--|
+|Yarn 설치|npm instann yarn --global|
+|Yarn 패키지 설치|yarn add {package}|
+|Ya
