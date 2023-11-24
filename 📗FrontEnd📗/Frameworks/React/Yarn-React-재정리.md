@@ -62,11 +62,14 @@ export default defineConfig({
 
 ---
 
-## 패키지 설치
+## 📘 패키지 설치
 
-```
+- Styled-Component
+
+```shell
+# Styled-Component
 yarn add styled-components
-yarn add @types/styled-components
+yarn add --dev @types/styled-components
 ```
 
 ---
