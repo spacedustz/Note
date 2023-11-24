@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📗FrontEnd📗/Frameworks/React/Yarn Setting.md",
+                "file": "📗FrontEnd📗/Frameworks/React/Basic-Summary.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗FrontEnd📗/Frameworks/React/Yarn Setting.md",
+                "file": "📗FrontEnd📗/Frameworks/React/Basic-Summary.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗FrontEnd📗/Frameworks/React/Yarn Setting.md",
+                "file": "📗FrontEnd📗/Frameworks/React/Basic-Summary.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗FrontEnd📗/Frameworks/React/Yarn Setting.md"
+                "file": "📗FrontEnd📗/Frameworks/React/Basic-Summary.md"
               }
             }
           },
@@ -158,8 +158,8 @@
   },
   "active": "235cd8b8cb2ed593",
   "lastOpenFiles": [
-    "imoji.md",
     "📗FrontEnd📗/Frameworks/React/Yarn Setting.md",
+    "imoji.md",
     "📗FrontEnd📗/Frameworks/React/Basic-Summary.md",
     "📗FrontEnd📗/Frameworks/React/Styled-Component.md",
     "📗FrontEnd📗/Frameworks/React/Zustand-상태관리.md",

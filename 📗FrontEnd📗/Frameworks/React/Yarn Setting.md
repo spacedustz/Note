@@ -48,7 +48,7 @@ Linting 부분에`"allowSyntheticDefaultImports": true`
 
 <br>
 
-> **vite.config.ts** : 서버 포트 변경
+> 📕 **vite.config.ts** : 서버 포트 변경
 
 ```ts
 // https://vitejs.dev/config/  
@@ -59,3 +59,4 @@ export default defineConfig({
   }  
 })
 ```
+
