@@ -78,13 +78,12 @@ export default Intro;
 
 <br>
 
-그리고 App.tsx에 만든 컴포넌트를 등록해주면 끝입니
+그리고 App.tsx에 만든 컴포넌트를 등록해주면 끝입니다.
 
 ```tsx
 import Intro from "./components/Intro";  
   
 function App() {  
-  const [count, setCount] = useState(0)  
   
   return (  
       <Intro />  
