@@ -36,3 +36,11 @@
 - yarn create vite {project-name} --template react-ts
 - TypeScript + SWC
 - yarn dev or yarn vite (프로젝트 실행)
+
+<br>
+
+> **Default Export가 없는 모듈에서 Default Import 허용**
+
+**tsconfig.json 파일**
+
+Linting 부분에`"allowSyntheticDefaultImports": true`
