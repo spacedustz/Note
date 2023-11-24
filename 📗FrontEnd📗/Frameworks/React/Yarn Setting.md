@@ -33,4 +33,4 @@
 
 > 📕 **프로젝트 생성**
 
-- yarn create vite {project-name}
+- yarn create vite {project-name} --template vue
