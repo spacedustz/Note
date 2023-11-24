@@ -62,6 +62,10 @@ export default defineConfig({
 
 ---
 
+## 📘 React Component 만들어보기
+
+src 디렉터리 밑에 components 디렉터리를 만들고 Intro.tsx 파일을 만들어 아래와 같이 작성해줍니다.
+
 ```tsx
 const Intro: React.FC<[]> = () => {  
     return (  
@@ -70,4 +74,22 @@ const Intro: React.FC<[]> = () => {
 }  
   
 export default Intro;
+```
+
+<br>
+
+그리고 App.tsx에 만든 컴포넌트를 등록해주면 끝입니
+
+```tsx
+import Intro from "./components/Intro";  
+  
+function App() {  
+  const [count, setCount] = useState(0)  
+  
+  return (  
+      <Intro />  
+  )  
+}  
+  
+export default App
 ```
