@@ -274,5 +274,6 @@ public Mono<Person> create(Person data) {
 							.uri("/person")
 							.body(Mono.just(data), Person.class)
 							.retrieve()
+							.bodyToMono(Person.class);
 }
 ```
