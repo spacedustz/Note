@@ -203,4 +203,10 @@ public WebClient webClient() {
 
 한 번 빌드된 WebClient는 Immutable (불변) 합니다.
 
-WebClient를 Singleton으로 사용할 때 Default Setting과 다르게 사용하고 싶을때도 분
+WebClient를 Singleton으로 사용할 때 Default Setting과 다르게 사용하고 싶을때도 분명 있을겁니다.
+
+그럴 때, mutate()를 사용하여 Singleton인 WebClient Bean 객체에 다른 설정값을 가지는 요청을 할 수 있습니다.
+
+```java
+
+```
