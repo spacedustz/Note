@@ -145,5 +145,14 @@ WebClient.create("http://localhost:8080");
 <br>
 
 ```java
-
+// 예시
+@Bean 
+public WebClient webClient() {  
+    return WebClient.builder()  
+            .baseUrl("http://localhost:8080")  
+            .defaultCookie("cookieKey", "cookieValue")  
+            .defaultHeader(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON_VALUE)  
+            .defaultUriVariables(Collections.singletonMap("url", "http://localhost:8080"))  
+            .build();  
+}
 ```
