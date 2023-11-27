@@ -11,5 +11,10 @@ Main Thread 내부에서 3개의 Thread를 생성, 작업을 수행하고 작업
 **Main**
 
 ```java
-
+public class  {
+	public static void main(String[] args) {
+		Instant start = Instant.now();
+		System.
+	}
+}
 ```
