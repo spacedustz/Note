@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "imoji.md",
+                "file": "📗BackEnd📗/Frameworks/Spring/WebClient.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "imoji.md",
+                "file": "📗BackEnd📗/Frameworks/Spring/WebClient.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "imoji.md",
+                "file": "📗BackEnd📗/Frameworks/Spring/WebClient.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "imoji.md"
+                "file": "📗BackEnd📗/Frameworks/Spring/WebClient.md"
               }
             }
           },
@@ -158,8 +158,8 @@
   },
   "active": "235cd8b8cb2ed593",
   "lastOpenFiles": [
-    "📗BackEnd📗/Frameworks/Spring/WebClient.md",
     "imoji.md",
+    "📗BackEnd📗/Frameworks/Spring/WebClient.md",
     "📗FrontEnd📗/Frameworks/React/Yarn-React-재정리.md",
     "📗FrontEnd📗/Frameworks/React/Basic-Summary.md",
     "📗FrontEnd📗/Frameworks/React/Styled-Component.md",
