@@ -371,4 +371,21 @@ employeeFlux.subscribe(employee -> { ... });
 
 <br>
 
-> 📕 ****
+> 📕 **retrieve()**
+
+retrieve는 1xx, 2xx, 3xx ... StatusCode 별로 처리가 가능합니다.
+
+```java
+Mono<Person> result = client.get()
+        .uri("/persons/{id}", id).accept(MediaType.APPLICATION_JSON)
+        .retrieve()
+        .onStatus(HttpStatus::is4xxClientError, response -> ...)
+        .onStatus(HttpStatus::is5xxServerError, response -> ...)
+        .bodyToMono(Person.class);
+```
+
+<br>
+
+> 📕 **exchangeToXX()**
+
+exchange를 통해 받은 결과값에 대한 StatusCode를 이용해 분길
