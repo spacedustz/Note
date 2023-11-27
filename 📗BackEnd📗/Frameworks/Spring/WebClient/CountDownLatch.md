@@ -113,3 +113,7 @@ public class AwaitThread {
     }  
 }
 ```
+
+<br>
+
+**결과값**
