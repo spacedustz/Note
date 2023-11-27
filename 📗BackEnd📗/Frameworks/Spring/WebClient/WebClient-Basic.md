@@ -1,6 +1,6 @@
 ## 📘 Spring WebClient란?
 
-Spring WebClient
+Spring WebClient를 계속 써왔었는데, 글로 남기는걸 자꾸 미루다가 이제서야 포스팅합니다.
 
 Spring WebClient는 RestTemplate을 대체하는 HTTP Client 입니다.
 
@@ -407,6 +407,4 @@ Mono<Object> monoEntity = client.get()
                return Mono.error(response.createException());
            }
        });
-
-출처: [https://gngsn.tistory.com/154](https://gngsn.tistory.com/154) [ENFJ.dev:티스토리]
 ```
