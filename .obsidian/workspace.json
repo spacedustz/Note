@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📗FrontEnd📗/Frameworks/React/Yarn-React-재정리.md",
+                "file": "📗BackEnd📗/Frameworks/Spring/WebClient.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗FrontEnd📗/Frameworks/React/Yarn-React-재정리.md",
+                "file": "📗BackEnd📗/Frameworks/Spring/WebClient.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗FrontEnd📗/Frameworks/React/Yarn-React-재정리.md",
+                "file": "📗BackEnd📗/Frameworks/Spring/WebClient.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗FrontEnd📗/Frameworks/React/Yarn-React-재정리.md"
+                "file": "📗BackEnd📗/Frameworks/Spring/WebClient.md"
               }
             }
           },
@@ -158,8 +158,9 @@
   },
   "active": "235cd8b8cb2ed593",
   "lastOpenFiles": [
-    "📗FrontEnd📗/Frameworks/React/Basic-Summary.md",
     "📗FrontEnd📗/Frameworks/React/Yarn-React-재정리.md",
+    "📗BackEnd📗/Frameworks/Spring/WebClient.md",
+    "📗FrontEnd📗/Frameworks/React/Basic-Summary.md",
     "imoji.md",
     "📗FrontEnd📗/Frameworks/React/Styled-Component.md",
     "📗FrontEnd📗/Frameworks/React/Zustand-상태관리.md",
@@ -183,7 +184,6 @@
     "📗Ops-Tools📗/CI & CD/Jenkins/Blue Green Deployment.md",
     "📗Ops-Tools📗/CI & CD/Jenkins/Jenkins 분산 빌드.md",
     "📗Docs📗/Settings/Windows Settings.md",
-    "📗BackEnd📗/Frameworks/Spring/Kakao-Map-API.md",
     "📗DataBase📗/MariaDB",
     "📗DataBase📗/QueryDSL/Java",
     "📗DataBase📗/QueryDSL/Kotlin",
