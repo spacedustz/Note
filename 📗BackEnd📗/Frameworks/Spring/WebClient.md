@@ -219,4 +219,7 @@ WebClient Client = WebClient.builder().filter(filterA).filter(filterB).filter(fi
 
 ## 📘 Request
 
-WebClient는 WebFlux와 같이 나온만큼 M
+WebClient는 WebFlux와 같이 나온만큼 Mono와 Flux를 메인으로 사용합니다.
+
+만약 Reactive에 대한 이해가 부족 하다면 [Reactive 이해하기](https://gngsn.tistory.com/223#google_vignette)를 참고
+
