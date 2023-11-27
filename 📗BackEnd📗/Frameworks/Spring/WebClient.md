@@ -135,3 +135,5 @@ WebClient.create("http://localhost:8080");
 **Options**
 
 - **uriBuilderFactory** : Base URL을 커스텀 한 UriBuilderFactory
+- **defaultHeader** : 모든 요청에 사용할 헤더
+- **defaultCookie**
