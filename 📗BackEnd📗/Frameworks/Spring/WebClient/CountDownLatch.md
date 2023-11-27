@@ -10,7 +10,7 @@ Main Thread 내부에서 3개의 Thread를 생성, 작업을 수행하고 작업
 
 **Thread Pool 생성**
 
-우선 Thread Pool을 생성해줍니다.
+우선 Thread Pool를 생성해주고 MaxThreadPool을 3으로 설정 해줍니다.
 
 ```java
 @Bean  
