@@ -277,3 +277,8 @@ public Mono<Person> create(Person data) {
 							.bodyToMono(Person.class);
 }
 ```
+
+---
+
+## 📘 Response
+
