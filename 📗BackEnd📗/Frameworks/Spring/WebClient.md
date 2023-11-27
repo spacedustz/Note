@@ -313,4 +313,14 @@ Mono<ResponseEntity<Person>> monoEntity = client.get()
 
 <br>
 
-****
+**toMono() / toFlux()**
+
+Body의 데이터만 받기
+
+```java
+Mono<Person> monoEntity = client.get()
+	.uri("/persons/1")
+	.accept(MediaType.APPLICATION_JSON)
+	.retrieve()
+	.bodyToMono(Person.class);
+```
