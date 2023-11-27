@@ -365,3 +365,4 @@ employeeFlux.subscribe(employee -> { ... });
 
 ## 📘 ErrorHandling
 
+에러 핸들링은 결과값을 반환받을 상황에 따라 적절히 처리가 가능합니다.
