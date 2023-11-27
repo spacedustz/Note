@@ -117,3 +117,26 @@ public class AwaitThread {
 <br>
 
 **결과값**
+
+```
+Start
+Finished
+[Producer] Put : 0
+[Producer] Queue remainingCapacity : 199
+Method took: 10ms
+[Consumer] Take : 0
+[Producer] Put : 1
+
+...
+
+[Consumer] Take : 96
+[Consumer] Take : 97
+[Consumer] Take : 98
+[Consumer] Take : 99
+```
+
+<br>
+
+즉, 작업의 수행시간을 측정하려던 의도대로 작동하지 않습니다.
+
+이를 해결하기 위해 이 코드 아래에서 CountDownLatch를 이용합니다.
