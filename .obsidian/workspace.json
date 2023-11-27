@@ -156,8 +156,9 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "235cd8b8cb2ed593",
+  "active": "2ce1a846a1685820",
   "lastOpenFiles": [
+    "📗BackEnd📗/Frameworks/Spring/무제 폴더",
     "imoji.md",
     "📗BackEnd📗/Frameworks/Spring/WebClient.md",
     "📗FrontEnd📗/Frameworks/React/Yarn-React-재정리.md",
@@ -183,7 +184,6 @@
     "📗Docs📗/Settings/Prime College.md",
     "📗Ops-Tools📗/CI & CD/Jenkins/Blue Green Deployment.md",
     "📗Ops-Tools📗/CI & CD/Jenkins/Jenkins 분산 빌드.md",
-    "📗Docs📗/Settings/Windows Settings.md",
     "📗DataBase📗/MariaDB",
     "📗DataBase📗/QueryDSL/Java",
     "📗DataBase📗/QueryDSL/Kotlin",
