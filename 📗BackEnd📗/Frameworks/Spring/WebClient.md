@@ -351,5 +351,17 @@ Mono<Person> monoEntity = client.get()
 
 Blocking 방식을 사용하려면 **block()**, Non-Blocking 방식을 사용하려면 **subscribe()** 를 통해 콜백 함수를 지정할 수 있습니다.
 
-```j
+```java
+// blocking
+Mono<Employee> employeeMono = webClient.get(). ...
+employeeMono.block()
+
+// non-blocking
+Mono<Employee> employeeFlux = webClient.get(). ...
+employeeFlux.subscribe(employee -> { ... });
 ```
+
+---
+
+## ErrorHandling
+
