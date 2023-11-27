@@ -130,4 +130,8 @@ WebClient.create("http://localhost:8080");
 
 > 📕 **builder()**
 
-설정을 Custom하게 바꿔서 널을 수 있는 DefaultWebClientBuilder 클래스를 사용하는 build()ㄹ
+설정을 Custom하게 바꿔서 널을 수 있는 DefaultWebClientBuilder 클래스를 사용하는 build()를 사용합니다.
+
+**Options**
+
+- **uriBuilderFactory** : Base URL을 커스텀 한 UriBuilderFactory
