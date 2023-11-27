@@ -159,4 +159,12 @@ public WebClient webClient() {
 
 ---
 
-## WebClient Configuration
+## 📘 WebClient Configuration
+
+WebClient에서의 TimeOut 처리나 ErrorHandling 같은 세부적인 설정 방법입니다.
+
+<br>
+
+> 📕 **TimeOut**
+
+특정 WebClient Bean에 대한 모든 요청ㅇ
