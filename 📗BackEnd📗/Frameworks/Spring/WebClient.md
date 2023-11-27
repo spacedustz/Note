@@ -304,5 +304,13 @@ retrieve()를 사용한 후 데어터는 크게 2가지 형태로 받을 수 있
 Status, Header, Body를 포함하는 ResponseEntity 객체로 받기
 
 ```java
-Mono<ResponseEntity><Perso
+Mono<ResponseEntity<Person>> monoEntity = client.get()
+	.uri("/persons/1")
+	.accept(MediaType.APPLICATION_JSON)
+	.retrieve()
+	.toEntity(Person.class);
 ```
+
+<br>
+
+****
