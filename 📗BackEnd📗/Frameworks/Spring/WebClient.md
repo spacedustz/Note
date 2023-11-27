@@ -265,3 +265,5 @@ public Flux<Person> findAll() {
 <br>
 
 > 📕 **Post**
+
+Post의 body() 부분에 반환 타입이 있으면 `Mono`
