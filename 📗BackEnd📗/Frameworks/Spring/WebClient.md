@@ -156,3 +156,7 @@ public WebClient webClient() {
             .build();  
 }
 ```
+
+---
+
+## WebClient Configuration
