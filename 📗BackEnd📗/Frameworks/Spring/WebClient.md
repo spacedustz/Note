@@ -305,10 +305,10 @@ Status, Header, Body를 포함하는 ResponseEntity 객체로 받기
 
 ```java
 Mono<ResponseEntity<Person>> monoEntity = client.get()
-	.uri("/persons/1")
-	.accept(MediaType.APPLICATION_JSON)
-	.retrieve()
-	.toEntity(Person.class);
+  	.uri("/persons/1")
+  	.accept(MediaType.APPLICATION_JSON)
+  	.retrieve()
+  	.toEntity(Person.class);
 ```
 
 <br>
@@ -319,10 +319,10 @@ Body의 데이터만 받기
 
 ```java
 Mono<Person> monoEntity = client.get()
-	.uri("/persons/1")
-	.accept(MediaType.APPLICATION_JSON)
-	.retrieve()
-	.bodyToMono(Person.class);
+  	.uri("/persons/1")
+  	.accept(MediaType.APPLICATION_JSON)
+  	.retrieve()
+  	.bodyToMono(Person.class);
 ```
 
 <br>
@@ -332,7 +332,7 @@ Mono<Person> monoEntity = client.get()
 exchange()는 Deprecated 예정이니 exchangeToXX()를 사용합니다.
 
 ```java
-Mono<Person> entityMono = client.get()
+Mono<Person> monoEntity = client.get()
     .uri("/persons/1")
     .accept(MediaType.APPLICATION_JSON)
     .exchangeToMono(response -> {
@@ -343,6 +343,4 @@ Mono<Person> entityMono = client.get()
             return response.createException().flatMap(Mono::error);
         }
     });
-
-출처: [https://gngsn.tistory.com/154](https://gngsn.tistory.com/154) [ENFJ.dev:티스토리]
 ```
