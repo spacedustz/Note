@@ -324,3 +324,25 @@ Mono<Person> monoEntity = client.get()
 	.retrieve()
 	.bodyToMono(Person.class);
 ```
+
+<br>
+
+**exchangeToXX()**
+
+exchange()는 Deprecated 예정이니 exchangeToXX()를 사용합니다.
+
+```java
+Mono<Person> entityMono = client.get()
+    .uri("/persons/1")
+    .accept(MediaType.APPLICATION_JSON)
+    .exchangeToMono(response -> {
+        if (response.statusCode().equals(HttpStatus.OK)) {
+            return response.bodyToMono(Person.class);
+        }
+        else {
+            return response.createException().flatMap(Mono::error);
+        }
+    });
+
+출처: [https://gngsn.tistory.com/154](https://gngsn.tistory.com/154) [ENFJ.dev:티스토리]
+```
