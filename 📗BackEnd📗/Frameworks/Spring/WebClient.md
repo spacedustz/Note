@@ -388,4 +388,23 @@ Mono<Person> result = client.get()
 
 > 📕 **exchangeToXX()**
 
-exchange를 통해 받은 결과값에 대한 StatusCode를 이용해 분길
+exchange를 통해 받은 결과값에 대한 StatusCode를 이용해 분기 처리하여 핸들링 할 수 있습니다.
+
+```java
+Mono<Object> monoEntity = client.get()
+       .uri("/persons/1")
+       .accept(MediaType.APPLICATION_JSON)
+       .exchangeToMono(response -> {
+           if (response.statusCode().equals(HttpStatus.OK)) {
+               return response.bodyToMono(Person.class);
+           }
+           else if (response.statusCode().is4xxClientError()) {
+               return response.bodyToMono(ErrorContainer.class);
+           }
+           else {
+               return Mono.error(response.createException());
+           }
+       });
+
+출처: [https://gngsn.tistory.com/154](https://gngsn.tistory.com/154) [ENFJ.dev:티스토리]
+```
