@@ -293,7 +293,7 @@ exchange()를 통해 Response의 세부적인 컨트롤이 가능하지만, Resp
 
 <br>
 
-> **retrieve()**
+> 📕 **retrieve()**
 
 retrieve()를 사용한 후 데어터는 크게 2가지 형태로 받을 수 있습니다.
 
@@ -347,4 +347,9 @@ Mono<Person> monoEntity = client.get()
 
 <br>
 
-****
+> 📕 **block() & subscribe()**
+
+Blocking 방식을 사용하려면 **block()**, Non-Blocking 방식을 사용하려면 **subscribe()** 를 통해 콜백 함수를 지정할 수 있습니다.
+
+```j
+```
