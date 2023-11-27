@@ -212,3 +212,10 @@ WebClient Server = WebClient.builder().filter(filterA).filter(filterB).build();
 
 WebClient Client = WebClient.builder().filter(filterA).filter(filterB).filter(filterC).build();
 ```
+
+같은 Singleton WebClient 인스턴스지만, **mutate()** 를 이용해 서로 다른 설정 값을 가지는 요청을 할 수 있습니다.
+
+---
+
+## Request
+
