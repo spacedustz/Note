@@ -266,4 +266,8 @@ public Flux<Person> findAll() {
 
 > 📕 **Post**
 
-Post의 body() 부분에 반환 타입이 있으면 `Mono`
+Post의 body() 부분에 반환 타입이 있으면 `Mono<Person>` 없으면 `Mono<Void>`를 지정해 줍니다.
+
+```java
+public Mono<Pers
+```
