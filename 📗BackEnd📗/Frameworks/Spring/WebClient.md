@@ -41,6 +41,12 @@ Blocking & Non-Blocking은 **제어권 반환**에 중점을 두지만, Sync & A
 
 Sync는 결과값을 직접 받아 처리하는 반면, Async는 결과값을 받을때 어떻게 할지의 CallBack 함수를 미리 정의합니다.
 
+---
+
+## Synchronouse & Asynchronouse
+
+![img](https://git)
+
 <br>
 
 > 📌 **Sync Blocking / Sync Non-Blocking**
