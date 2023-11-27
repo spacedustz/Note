@@ -8,6 +8,24 @@ Main Thread 내부에서 3개의 Thread를 생성, 작업을 수행하고 작업
 
 <br>
 
+**Thread Pool 생성**
+
+우선 Thread Pool을 생성해줍니다.
+
+```java
+@Bean  
+public TaskExecutor executor() {  
+    ThreadPoolTaskExecutor executor = new ThreadPoolTaskExecutor();  
+    executor.setCorePoolSize(props.getCorePoolSize());  
+    executor.setMaxPoolSize(props.getMaxPoolSize());  
+    executor.setQueueCapacity(props.getQueueCapacity());  
+    executor.setThreadNamePrefix(props.getNamePrefix());  
+    executor.initialize();  
+  
+    return executor;  
+}
+```
+
 **Main**
 
 ```java
