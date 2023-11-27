@@ -287,4 +287,7 @@ public Mono<Person> create(Person data) {
 - **retrieve()** : Body를 받아 디코딩 하는 간단한 함수
 - **exchange()** : ClientResponse를 상태값, 헤더와 같이 가져오는 함수
 
-exchange()를 통해 Response의 세부적인 컨트롤이 가능하지만, Re
+exchange()를 통해 Response의 세부적인 컨트롤이 가능하지만, Response 컨텐츠에 대한 모든 처리를 직접 하면,
+
+메모리 누수 가능성 때문에 retrieve()를 권장하고 있습니다.
+
