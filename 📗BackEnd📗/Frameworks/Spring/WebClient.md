@@ -363,5 +363,5 @@ employeeFlux.subscribe(employee -> { ... });
 
 ---
 
-## ErrorHandling
+## 📘 ErrorHandling
 
