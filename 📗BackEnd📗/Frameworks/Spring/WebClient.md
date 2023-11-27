@@ -366,3 +366,9 @@ employeeFlux.subscribe(employee -> { ... });
 ## 📘 ErrorHandling
 
 에러 핸들링은 결과값을 반환받을 상황에 따라 적절히 처리가 가능합니다.
+
+**retrive()와 exchangeToXX()** 를 각각 어떻게 처리할 지 살펴봅시다.
+
+<br>
+
+> 📕 ****
