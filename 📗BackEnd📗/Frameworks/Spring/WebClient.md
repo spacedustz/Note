@@ -221,5 +221,12 @@ WebClient Client = WebClient.builder().filter(filterA).filter(filterB).filter(fi
 
 WebClient는 WebFlux와 같이 나온만큼 Mono와 Flux를 메인으로 사용합니다.
 
-만약 Reactive에 대한 이해가 부족 하다면 [Reactive 이해하기](https://gngsn.tistory.com/223#google_vignette)를 참고
+만약 Reactive에 대한 이해가 부족 하다면 [Reactive 이해하기](https://gngsn.tistory.com/223#google_vignette)를 참고하시길 바랍니다.
 
+요청은 Get과 Post만 알면 Put, Delete는 비슷하게 사용할 수 있으니 Get, Post만 알아보겠습니다.
+
+<br>
+
+> 📕 **Get**
+
+일반적으로 Get
