@@ -116,7 +116,7 @@ implementation 'org.springframework.boot:spring-boot-starter-webflux'
 
 <br>
 
-> **create()**
+> 📕 **create()**
 
 - 단순하게 WebClient의 Default Setting으로 아래와 같이 생성합니다. Base URL과 함께 생성도 가능합니다.
 
@@ -126,3 +126,8 @@ WebClient.create();
 WebClient.create("http://localhost:8080");
 ```
 
+<br>
+
+> 📕 **builder()**
+
+설정을 Custom하게 바꿔서 널을 수 있는 DefaultWebClientBuilder 클래스를 사용하는 build()ㄹ
