@@ -6,7 +6,19 @@ Spring WebClient는 RestTemplate을 대체하는 HTTP Client 입니다.
 
 <br>
 
-WebClient는 Builder 방식의 인터페이스를 사용하며, 외부 API로 요청을 할 때 **리**
+WebClient는 Builder 방식의 인터페이스를 사용하며, 외부 API로 요청을 할 때 **리액티브 타입**의 전송과 수신을 합니다. (Mono, Flux)
+
+<br>
+
+> **WebClient의 특징**
+
+- Single Thread 방식
+- Non-Blocking 방식
+- Json, Xml의 쉬운 응답
+
+<br>
+
+> **WebClient**
 
 > **Dependencies**
 
