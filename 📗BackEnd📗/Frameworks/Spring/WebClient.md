@@ -282,3 +282,9 @@ public Mono<Person> create(Person data) {
 
 ## 📘 Response
 
+응답을 받을땐 2개의 함수 중 적절하게 선택해서 사용하면 됩니다.
+
+- **retrieve()** : Body를 받아 디코딩 하는 간단한 함수
+- **exchange()** : ClientResponse를 상태값, 헤더와 같이 가져오는 함수
+
+exchange()를 통해 Response의 세부적인 컨트롤이 가능하지만, Re
