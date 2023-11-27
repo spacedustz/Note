@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📗BackEnd📗/Frameworks/Spring/WebClient.md",
+                "file": "📗BackEnd📗/Frameworks/Spring/WebClient/CountDownLatch.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗BackEnd📗/Frameworks/Spring/WebClient.md",
+                "file": "📗BackEnd📗/Frameworks/Spring/WebClient/CountDownLatch.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗BackEnd📗/Frameworks/Spring/WebClient.md",
+                "file": "📗BackEnd📗/Frameworks/Spring/WebClient/CountDownLatch.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗BackEnd📗/Frameworks/Spring/WebClient.md"
+                "file": "📗BackEnd📗/Frameworks/Spring/WebClient/CountDownLatch.md"
               }
             }
           },
@@ -156,11 +156,12 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "2ce1a846a1685820",
+  "active": "235cd8b8cb2ed593",
   "lastOpenFiles": [
-    "📗BackEnd📗/Frameworks/Spring/무제 폴더",
     "imoji.md",
-    "📗BackEnd📗/Frameworks/Spring/WebClient.md",
+    "📗BackEnd📗/Frameworks/Spring/WebClient/CountDownLatch.md",
+    "📗BackEnd📗/Frameworks/Spring/WebClient/WebClient-Basic.md",
+    "📗BackEnd📗/Frameworks/Spring/WebClient",
     "📗FrontEnd📗/Frameworks/React/Yarn-React-재정리.md",
     "📗FrontEnd📗/Frameworks/React/Basic-Summary.md",
     "📗FrontEnd📗/Frameworks/React/Styled-Component.md",
@@ -194,7 +195,6 @@
     "📗Ops-Tools📗/MSA/Kubernetes",
     "📗Ops-Tools📗/MSA/gRPC",
     "📗Ops-Tools📗/Management & Tool/Git",
-    "📗Ops-Tools📗/Management & Tool/IntelliJ",
     "Pasted image 20230805163438.png"
   ]
 }
