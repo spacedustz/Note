@@ -245,3 +245,12 @@ public Mono<Person> findById(final Integer id) {
 <br>
 
 **Flux**
+
+```java
+public Flux<Person> findAll() {
+	return webClient.get()
+							.uri("/persons")
+							.retrice()
+							.bodyToFlux(Person.class);
+}
+```
