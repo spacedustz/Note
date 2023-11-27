@@ -26,19 +26,90 @@ public TaskExecutor executor() {
 }
 ```
 
-**Main**
+<br>
+
+**AwaitThread**
+
+Main Thread가 다른 스레드의 작업이 모두 완료될 때까지 기다리지 않고 결과를 출력합니다.
 
 ```java
-@Slf4j
-public class InterruptTest {
-
-	public static void main(String[] args) {
-		Instant start = Instant.now();
-		log.info("Test Start");
-
-		int totalNumOfTasks = 3;
-
-		Bloc
-	}
+@Slf4j  
+@RequiredArgsConstructor  
+public class AwaitThread {  
+    private final TaskExecutor executor;  
+  
+    public static void main(String[] args) {  
+        Instant start = Instant.now();  
+        log.info("Test Start");  
+  
+        int totalNumOfTasks = 3;  
+  
+        BlockingQueue<Integer> queue = new LinkedBlockingQueue<>(200);  
+  
+        executor.execute(new Producer(queue));  
+        executor.execute(new Consumer(queue));  
+        executor.execute(new Consumer(queue));  
+    }  
+  
+    public static class Producer implements Runnable {  
+  
+        private final BlockingQueue<Integer> queue;  
+  
+        public Producer(BlockingQueue<Integer> queue) {  
+            this.queue = queue;  
+        }  
+  
+        @Override  
+        public void run() {  
+  
+            try {  
+                process();  
+            } catch (InterruptedException e) {  
+                Thread.currentThread().interrupt();  
+            }  
+        }  
+  
+        private void process() throws InterruptedException {  
+            for (int i = 0; i < 100; i++) {  
+                System.out.println("[Producer] Put : " + i);  
+                queue.put(i);  
+                System.out.println("[Producer] Queue remainingCapacity : " + queue.remainingCapacity());  
+                Thread.sleep(100);  
+            }  
+  
+            queue.put(-1);  
+        }  
+    }  
+  
+    public static class Consumer implements Runnable {  
+        private final BlockingQueue<Integer> queue;  
+  
+        public Consumer(BlockingQueue<Integer> queue) {  
+            this.queue = queue;  
+        }  
+  
+        @Override  
+        public void run() {  
+            try {  
+                while (true) {  
+                    Integer take = queue.take();  
+  
+                    if (take == -1) {  
+                        queue.put(-1);  
+                        break;  
+                    }  
+                    process(take);  
+                }  
+            } catch (InterruptedException e) {  
+                Thread.currentThread().interrupt();  
+                log.error(e.getMessage());  
+            }  
+        }  
+  
+        private void process(Integer take) throws InterruptedException {  
+            System.out.println("[Consumer]  Take : " + take);  
+            Thread.sleep(500);  
+        }  
+    }  
 }
 ```
