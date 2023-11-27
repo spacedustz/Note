@@ -291,3 +291,7 @@ exchange()를 통해 Response의 세부적인 컨트롤이 가능하지만, Resp
 
 메모리 누수 가능성 때문에 retrieve()를 권장하고 있습니다.
 
+<br>
+
+> **retrieve()**
+
