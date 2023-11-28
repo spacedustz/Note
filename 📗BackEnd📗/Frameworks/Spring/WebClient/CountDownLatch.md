@@ -133,3 +133,110 @@ Method took: 10ms
 
 이를 해결하기 위해 이 코드 아래에서 CountDownLatch를 이용합니다.
 
+<br>
+
+**AwaitThread**
+
+```java
+@Slf4j  
+@RequiredArgsConstructor  
+public class AwaitThread {  
+  
+    public static void main(String[] args) throws InterruptedException {  
+        Instant start = Instant.now();  
+  
+        log.info("Start");  
+        int totalNumberOfTasks = 3;  
+        BlockingQueue<Integer> queue = new LinkedBlockingQueue<>(200);  
+  
+        ExecutorService executorService = Executors.newFixedThreadPool(totalNumberOfTasks);  
+        CountDownLatch latch = new CountDownLatch(totalNumberOfTasks);  
+  
+        executorService.submit(new Producer(queue, latch));  
+  
+        executorService.submit(new Consumer(queue, latch));  
+        executorService.submit(new Consumer(queue, latch));  
+  
+        executorService.shutdown();  
+        latch.await();  
+  
+        Instant finish = Instant.now();  
+        long timeElapsed = Duration.between(start, finish).toMillis();  
+  
+        log.info("Finished");  
+        log.info("Method took: " + timeElapsed + "ms");  
+    }  
+  
+    // Producer Thread  
+    public class Producer implements Runnable {  
+  
+        private final BlockingQueue<Integer> queue;  
+        private final CountDownLatch latch;  
+  
+        public Producer(BlockingQueue<Integer> queue, CountDownLatch latch) {  
+            this.queue = queue;  
+            this.latch = latch;  
+        }  
+  
+        @Override  
+        public void run() {  
+  
+            try {  
+                process();  
+            } catch (InterruptedException e) {  
+                Thread.currentThread().interrupt();  
+            }  
+  
+            latch.countDown();  
+        }  
+  
+        private void process() throws InterruptedException {  
+            for (int i = 0; i < 100; i++) {  
+                log.info("[Producer] Put : " + i);  
+                queue.put(i);  
+                log.info("[Producer] Queue remainingCapacity : " + queue.remainingCapacity());  
+                Thread.sleep(100);  
+            }  
+  
+            queue.put(-1);  
+        }  
+    }  
+  
+    // Consumer Thread  
+    public class Consumer implements Runnable {  
+  
+        private final BlockingQueue<Integer> queue;  
+        private final CountDownLatch latch;  
+  
+        public Consumer(BlockingQueue<Integer> queue, CountDownLatch latch) {  
+            this.queue = queue;  
+            this.latch = latch;  
+        }  
+  
+        @Override  
+        public void run() {  
+  
+            try {  
+                while (true) {  
+                    Integer take = queue.take();  
+                    if (take == -1) {  
+                        queue.put(-1);  
+                        break;  
+                    }  
+                    process(take);  
+                }  
+            } catch (InterruptedException e) {  
+                Thread.currentThread().interrupt();  
+            }  
+  
+            latch.countDown();  
+        }  
+  
+        private void process(Integer take) throws InterruptedException {  
+            log.info("[Consumer]  Take : " + take);  
+            Thread.sleep(500);  
+        }  
+  
+    }  
+}
+```
