@@ -143,7 +143,7 @@ CountDownLatch는 특정 스레드가 다른 스레드에서 작업이 완료될
 
 Count가 0이 되면 차단된 스레드가 해제되고 나머지 작업을 수행합니다.
 
-즉, CountDownLatch의 수치가 0이 될때까지 Await 합니다.
+즉, CountDownLatch의 수치가 0이 될때까지 해당되는 스레드를 Block
 
 <br>
 
