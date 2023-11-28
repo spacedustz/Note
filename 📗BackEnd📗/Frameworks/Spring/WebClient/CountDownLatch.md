@@ -51,6 +51,7 @@ public class AwaitThread {
         executor.execute(new Consumer(queue));  
     }  
   
+    // Producer Thread  
     public static class Producer implements Runnable {  
   
         private final BlockingQueue<Integer> queue;  
@@ -71,16 +72,17 @@ public class AwaitThread {
   
         private void process() throws InterruptedException {  
             for (int i = 0; i < 100; i++) {  
-                System.out.println("[Producer] Put : " + i);  
+                log.info("[Producer] Put : " + i);  
                 queue.put(i);  
-                System.out.println("[Producer] Queue remainingCapacity : " + queue.remainingCapacity());  
+                log.info("[Producer] Queue remainingCapacity : " + queue.remainingCapacity());  
                 Thread.sleep(100);  
             }  
   
             queue.put(-1);  
         }  
     }  
-
+  
+    // Consumer Thread  
     public static class Consumer implements Runnable {  
         private final BlockingQueue<Integer> queue;  
   
@@ -107,7 +109,7 @@ public class AwaitThread {
         }  
   
         private void process(Integer take) throws InterruptedException {  
-            System.out.println("[Consumer]  Take : " + take);  
+            log.info("[Consumer]  Take : " + take);  
             Thread.sleep(500);  
         }  
     }  
