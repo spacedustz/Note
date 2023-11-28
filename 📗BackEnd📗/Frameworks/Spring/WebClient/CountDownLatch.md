@@ -260,3 +260,24 @@ public class AwaitThread {
     }  
 }
 ```
+
+<br>
+
+**결과값**
+
+```
+Start
+[Producer] Put : 0 
+[Producer] Queue remainingCapacity : 199 
+[Consumer] Take : 0 
+[Producer] Put : 1 
+
+... 
+
+[Consumer] Take : 196 
+[Consumer] Take : 197 
+[Consumer] Take : 198 
+[Consumer] Take : 199 
+Finished 
+Method took: 33884ms
+```
