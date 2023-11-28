@@ -139,7 +139,7 @@ Method took: 10ms
 
 CountDownLatch는 특정 스레드가 다른 스레드에서 작업이 완료될 때까지 기다릴 수 있도록 해주는 클래스입니다.
 
-
+예를 들어 CountDownLatch(3) 이라고 가정하면 3개의 Task를 실행 시키면서 countDown()를 호
 
 **AwaitThread**
 
