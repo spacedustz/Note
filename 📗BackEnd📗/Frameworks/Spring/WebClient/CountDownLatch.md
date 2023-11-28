@@ -149,7 +149,7 @@ Count가 0이 되면 차단된 스레드가 해제되고 나머지 작업을 수
 
 <br>
 
-CountDownLatchㅇ
+CountDownLatch의 장점은 Thread.join()보다 유연하며, 스레드의 참조가 필요하지 않습니다.
 
 <br>
 
