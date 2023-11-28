@@ -141,9 +141,15 @@ CountDownLatch는 특정 스레드가 다른 스레드에서 작업이 완료될
 
 예를 들어 CountDownLatch(3) 이라고 가정하면 3개의 Task를 실행 시키면서 countDown()를 호출해 Count 값을 감소시킵니다.
 
+<br>
+
 Count가 0이 되면 차단된 스레드가 해제되고 나머지 작업을 수행합니다.
 
-즉, CountDownLatch의 수치가 0이 될때까지 해당되는 스레드를 Block
+즉, CountDownLatch의 수치가 0이 될때까지 해당되는 스레드를 Block 시킵니다.
+
+<br>
+
+CountDownLatchㅇ
 
 <br>
 
