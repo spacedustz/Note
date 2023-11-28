@@ -80,7 +80,7 @@ public class AwaitThread {
             queue.put(-1);  
         }  
     }  
-  
+
     public static class Consumer implements Runnable {  
         private final BlockingQueue<Integer> queue;  
   
@@ -117,6 +117,8 @@ public class AwaitThread {
 <br>
 
 **결과값**
+
+메인 스레드가 다른 스레드의 작업이 모두 끝날떄까지 대기하지 않고 결과를 바로 출력해 버립니다.
 
 ```
 Start
