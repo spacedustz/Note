@@ -24,7 +24,7 @@ Main Thread 내부에서 3개의 Thread를 생성, 작업을 수행하고 작업
 
 <br>
 
-**AwaitThread**
+> 📕 **AwaitThread**
 
 Main Thread가 다른 스레드의 작업이 모두 완료될 때까지 기다리지 않고 결과를 출력합니다.
 
@@ -122,7 +122,7 @@ public class AwaitThread {
 
 <br>
 
-**결과값**
+> 📕 **결과값**
 
 메인 스레드가 다른 스레드의 작업이 모두 끝날떄까지 대기하지 않고 결과를 바로 출력해 버립니다.
 
@@ -153,7 +153,7 @@ Method took: 10ms
 
 ## 📘 CountDownLatch 사용
 
-**AwaitThread**
+> 📕 **CountDownLatch가 적용된 AwaitThread**
 
 ```java
 @Slf4j  
@@ -261,7 +261,7 @@ public class AwaitThread {
 
 <br>
 
-**결과값**
+> 📕 **결과값**
 
 다른 스레드가 모두 완료될 떄까지 메인스레드가 Block 되고 작업이 모두 완료된 후 Main스레드가 종료되었습니다.
 
