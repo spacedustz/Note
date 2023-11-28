@@ -133,7 +133,13 @@ Method took: 10ms
 
 이를 해결하기 위해 이 코드 아래에서 CountDownLatch를 이용합니다.
 
-<br>
+---
+
+## CountDownLatch 사용
+
+CountDownLatch는 특정 스레드가 다른 스레드에서 작업이 완료될 때까지 기다릴 수 있도록 해주는 클래스입니다.
+
+
 
 **AwaitThread**
 
