@@ -265,6 +265,8 @@ public class AwaitThread {
 
 **결과값**
 
+다른 스레드가 모두 완료될 떄까지 메인스레드가 Block 되고 작업이 모두 완료된 후 Main스레드가 종료되었습니다.
+
 ```
 Start
 [Producer] Put : 0 
