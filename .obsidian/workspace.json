@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📗BackEnd📗/Frameworks/Spring/WebClient/CountDownLatch.md",
+                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/4-Optimization.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗BackEnd📗/Frameworks/Spring/WebClient/CountDownLatch.md",
+                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/4-Optimization.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗BackEnd📗/Frameworks/Spring/WebClient/CountDownLatch.md",
+                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/4-Optimization.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗BackEnd📗/Frameworks/Spring/WebClient/CountDownLatch.md"
+                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/4-Optimization.md"
               }
             }
           },
@@ -158,9 +158,11 @@
   },
   "active": "235cd8b8cb2ed593",
   "lastOpenFiles": [
+    "📗BackEnd📗/Languages/Java/Multi-Threading/Basic.md",
+    "📗BackEnd📗/Languages/Java/Multi-Threading/4-Optimization.md",
+    "📗BackEnd📗/Frameworks/Spring/WebClient/CountDownLatch.md",
     "Temp.md",
     "imoji.md",
-    "📗BackEnd📗/Frameworks/Spring/WebClient/CountDownLatch.md",
     "📗BackEnd📗/Frameworks/Spring/WebClient/WebClient-Basic.md",
     "📗BackEnd📗/Frameworks/Spring/WebClient",
     "📗FrontEnd📗/Frameworks/React/Yarn-React-재정리.md",
@@ -183,8 +185,6 @@
     "📗BackEnd📗/Message-Broker/RabbitMQ/Clustering.md",
     "📗Computer-Science📗/Web Application & Network.md",
     "📗Docs📗/Settings/Backend-Developer-Interview.md",
-    "📗Docs📗/Settings/Prime College.md",
-    "📗Ops-Tools📗/CI & CD/Jenkins/Blue Green Deployment.md",
     "📗DataBase📗/MariaDB",
     "📗DataBase📗/QueryDSL/Java",
     "📗DataBase📗/QueryDSL/Kotlin",
