@@ -307,7 +307,7 @@ public static void recolorMultiThread(BufferedImage original, BufferedImage resu
 
 <br>
 
-**싱글 스레드**
+> 📕 **싱글 스레드**
 
 ```java
 public static void main(String[] args) throws IOException {  
@@ -337,4 +337,13 @@ public static void main(String[] args) throws IOException {
 <br>
 
 **걸린 시간**
+
+```
+> Task :ImageProcessing.main()
+23:40:20.221 [main] INFO com.thread.image.ImageProcessing -- 총 작업에 걸린 시간 : 610
+```
+
+<br>
+
+> 📕 **멀티 스레드**
 
