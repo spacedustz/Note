@@ -256,6 +256,8 @@ public class ImageProcessing {
 
 하지만 높이를 기준으로 이미지를 잘랐듯이 스레드의 TopCorner 부분도 다릅니다.
 
+TopCorner는 **스레드에 맞게 변하는 threadMultiplier 변수 * 각 스레드의 높이** 입니다.
+
 ```java
 
 ```
