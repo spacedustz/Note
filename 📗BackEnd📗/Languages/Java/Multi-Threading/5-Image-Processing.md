@@ -20,7 +20,7 @@ RGB의 조합으로 모든 색을 표현할 수 있습니다.
 
 <br>
 
-![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2.Flowers.png)
+![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/Flowers.png)
 
 <br>
 
