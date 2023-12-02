@@ -258,6 +258,43 @@ public class ImageProcessing {
 
 TopCorner는 **스레드에 맞게 변하는 threadMultiplier 변수 * 각 스레드의 높이** 입니다.
 
-```java
+<br>
 
+그리고, recolorImage() 함수를 다시 이용해서 색을 입혀주고 스레드 리스트에 스레드를 추가합니다.
+
+그 후, 모든 스레드를 시작하고 모두 join() 해주면 끝입니다.
+
+```java
+public static void recolorMultiThread(BufferedImage original, BufferedImage result, int numberOfThreads) {  
+    List<Thread> threadList = new ArrayList<>();  
+    int width = original.getWidth();  
+    int height = original.getHeight() / numberOfThreads;  
+  
+    for (int i = 0; i < numberOfThreads; i++) {  
+        final int threadMultiplier = i;  
+  
+        Thread thread = new Thread(() -> {  
+            int leftCorner = 0;  
+            int topCorner = height * threadMultiplier;  
+  
+            recolorImage(original, result, leftCorner, topCorner, width, height);  
+        });  
+  
+        threadList.add(thread);  
+    }  
+  
+    for (Thread thread : threadList) {  
+        thread.start();  
+    }  
+  
+    for (Thread thread : threadList) {  
+        try {  
+            thread.join();  
+        } catch (InterruptedException e) {  
+            log.error("Thread Interrupted");  
+        }  
+    }  
+}
 ```
+
+이제 싱글스레드, 멀티스레드 두 작업간 
