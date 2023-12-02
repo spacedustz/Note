@@ -46,7 +46,7 @@ RGB의 조합으로 모든 색을 표현할 수 있습니다.
 
 <br>
 
-
+**createRGBFromColors()**
 
 <br>
 
