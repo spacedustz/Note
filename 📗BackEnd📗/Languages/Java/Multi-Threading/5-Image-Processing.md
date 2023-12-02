@@ -22,11 +22,10 @@ RGB의 조합으로 모든 색을 표현할 수 있습니다.
 
 ![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/Flowers.png)
 
-<br>
+---
+## 📘 **ImageProcessing**
 
- **ImageProcessing**
-
-**getRed(), getGreen(), getBlue(**) 함수는 픽셀에서 각자의 색깔만 추출합니다.
+ImageProcessing 클래스를 만들어 2가지 색깔을 가지는 1종류의 꽃을 하나의 색으로 통일시
 
 **getBlue()**
 
