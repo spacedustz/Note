@@ -246,6 +246,10 @@ public class ImageProcessing {
 
 위 코드에서 함수 하나만 추가합니다.
 
+스레드의 수에 따라 모든 스레드의 width는 원본 이미지의 width로 설정합니다.
+
+
+
 ```java
 
 ```
