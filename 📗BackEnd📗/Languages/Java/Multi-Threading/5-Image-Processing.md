@@ -386,6 +386,8 @@ public static void main(String[] args) throws IOException {
 
 <br>
 
-> **성능**
+> 📕 **성능**
 
-결론적으로만 보면 성능이 크게 향상되었습니다.
+결론적으로만 보면 성능이 크게 향상되고 지연 시간이 줄어들었습니다.
+
+이 후에도 물리
