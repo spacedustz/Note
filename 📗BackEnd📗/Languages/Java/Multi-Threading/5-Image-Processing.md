@@ -303,3 +303,5 @@ public static void recolorMultiThread(BufferedImage original, BufferedImage resu
 
 ## 📘 작업 시간 비교
 
+이미지 처리 작업의 시작 시간과 종료 시간을 캡쳐합니다.
+
