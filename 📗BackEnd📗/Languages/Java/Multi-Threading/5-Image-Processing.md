@@ -236,3 +236,8 @@ public class ImageProcessing {
 
 ## 📘 Multi-Threading
 
+위 코드에서 이미지를 분할하여 가진 스레드 수 만큼 이미지를 병렬 처리 해보겠습니다.
+
+
+
+📕
