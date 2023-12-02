@@ -347,7 +347,7 @@ public static void main(String[] args) throws IOException {
 
 > 📕 **멀티 스레드**
 
-스레드를 2개, 3개 두 번 돌려봤
+스레드를 2개, 3개 두 번 돌려봤습니다. 스레드를 1개씩 추가할 떄마다 걸린 시간이 줄어듭니다.
 
 ```java
 public static void main(String[] args) throws IOException {  
@@ -383,3 +383,9 @@ public static void main(String[] args) throws IOException {
 > Task :ImageProcessing.main()
 23:42:50.606 [main] INFO com.thread.image.ImageProcessing -- 총 작업에 걸린 시간 : 333
 ```
+
+<br>
+
+> **성능**
+
+결론적으로만 보면 성능이 크게 향상되었습니다.
