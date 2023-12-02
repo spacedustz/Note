@@ -297,4 +297,9 @@ public static void recolorMultiThread(BufferedImage original, BufferedImage resu
 }
 ```
 
-이제 싱글스레드, 멀티스레드 두 작업간 
+이제 싱글스레드, 멀티스레드 두 작업 시간을 비교해보겠습니다.
+
+---
+
+## 📘 작업 시간 비교
+
