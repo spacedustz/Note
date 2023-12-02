@@ -27,9 +27,25 @@ RGB의 조합으로 모든 색을 표현할 수 있습니다.
 Alpha, Red, Green을 마스킹하며, 픽셀마다 비트마스크를 적용해서 컴포넌트를 전부 0으로 설정하고 **0x000000FF**를 적용합니다.
 
 ```java
-public class Blue {}
+public static int getBlue(int rgb) {  
+    return rgb & 0x000000FF;  
+}
 ```
+
+<br>
 
 같은 방법으로 getGreen() 함수도 만들어줍니다.
 
 Alpha, Red, Blue를 마스킹하며, Green 컴포넌트가 오른쪽에서 2번째 바이트니까 **0x0000FF00**를 적용하고 왼쪽으로 8비트 움직입니다.
+
+```java
+d
+```
+
+<br>
+
+getRed() 함수도 동일하게 만들어 줍니다.
+
+```java
+d
+```
