@@ -23,7 +23,7 @@ RGB의 조합으로 모든 색을 표현할 수 있습니다.
 ![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/Flowers.png)
 
 ---
-## 📘 **ImageProcessing**
+## 📘 **Single Threading**
 
 ImageProcessing 클래스를 만들어 2가지 색깔을 가지는 1종류의 꽃을 하나의 색으로 통일시켜 보겠습니다.
 
@@ -234,7 +234,7 @@ public class ImageProcessing {
 
 ---
 
-## 📘 Multi-Threading Solution
+## 📘 Multi-Threading
 
 위 코드에서 이미지를 분할하여 가진 스레드 수 만큼 이미지를 병렬 처리 해보겠습니다.
 
