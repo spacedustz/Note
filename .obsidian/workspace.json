@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/4-Optimization.md",
+                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/5-Image-Processing.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "f5151c0da72edc1c",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/4-Optimization.md",
+                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/5-Image-Processing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/4-Optimization.md",
+                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/5-Image-Processing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/4-Optimization.md"
+                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/5-Image-Processing.md"
               }
             }
           },
@@ -159,8 +158,9 @@
   },
   "active": "235cd8b8cb2ed593",
   "lastOpenFiles": [
-    "📗BackEnd📗/Languages/Java/Multi-Threading/4-Optimization.md",
     "imoji.md",
+    "📗BackEnd📗/Languages/Java/Multi-Threading/5-Image-Processing.md",
+    "📗BackEnd📗/Languages/Java/Multi-Threading/4-Optimization.md",
     "📗BackEnd📗/Languages/Java/Multi-Threading/Basic.md",
     "📗BackEnd📗/Frameworks/Spring/WebClient/CountDownLatch.md",
     "Temp.md",
@@ -185,7 +185,6 @@
     "📗BackEnd📗/Message-Broker/RabbitMQ/RabbitMQ-Dead Letter Exchange-TTL.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/Clustering.md",
     "📗Computer-Science📗/Web Application & Network.md",
-    "📗Docs📗/Settings/Backend-Developer-Interview.md",
     "📗DataBase📗/MariaDB",
     "📗DataBase📗/QueryDSL/Java",
     "📗DataBase📗/QueryDSL/Kotlin",
