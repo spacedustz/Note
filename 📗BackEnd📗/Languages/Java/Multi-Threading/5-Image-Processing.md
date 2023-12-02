@@ -67,6 +67,11 @@ RGB의 조합으로 모든 색을 표현할 수 있습니다.
 
 <br>
 
+**main()**
+
+- 메인 함수에서는 이미지 파일 처리를 위해 **BufferedImage** 클래스를 사용합니다.
+- **BufferedImage**
+
 ```java
 d
 ```
