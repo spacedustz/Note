@@ -248,7 +248,7 @@ public class ImageProcessing {
 
 스레드의 수에 따라 모든 스레드의 width는 원본 이미지의 width로 설정합니다.
 
-
+반면 높이는 스레드의 개수에 따라 나눠야 하므로 **원본 이미지의 Height() / 스레드 수**로 나눠줍니다.
 
 ```java
 
