@@ -226,6 +226,8 @@ public class ImageProcessing {
 
 <br>
 
+![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/Purple.png)
+
 위 이미지 프로세싱 코드는 싱글 스레드 기반으로 진행하였습니다.
 
 다음 글에선 멀티 스레딩을 이용해서
