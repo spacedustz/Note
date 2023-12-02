@@ -242,4 +242,10 @@ public class ImageProcessing {
 
 <br>
 
-> 📕 **ImageProc**
+> 📕 **ImageProcessing**
+
+위 코드에서 함수 하나만 추가합니다.
+
+```java
+
+```
