@@ -347,3 +347,39 @@ public static void main(String[] args) throws IOException {
 
 > 📕 **멀티 스레드**
 
+스레드를 2개, 3개 두 번 돌려봤
+
+```java
+public static void main(String[] args) throws IOException {  
+    Resource originalResource = new ClassPathResource(SOURCE_IMG);  
+    BufferedImage originalImage = ImageIO.read((originalResource.getFile()));  
+    BufferedImage resultImage = new BufferedImage(  
+            originalImage.getWidth(),  
+            originalImage.getHeight(),  
+            BufferedImage.TYPE_INT_RGB // Color Space  
+    );  
+  
+    long startTime = System.currentTimeMillis();  
+  
+    recolorMultiThread(originalImage, resultImage, 3);  
+  
+    long endTime = System.currentTimeMillis();  
+  
+    long duration = endTime - startTime;  
+  
+    File outputResult = new File(DESTINATION_IMG); // 파일 생성  
+    outputResult.getParentFile().mkdirs();  
+    ImageIO.write(resultImage, "png", outputResult); // 파일 Write  
+    log.info("총 작업에 걸린 시간 : {}", duration);  
+}
+```
+
+**걸린 시간**
+
+```
+> Task :ImageProcessing.main()
+23:42:31.405 [main] INFO com.thread.image.ImageProcessing -- 총 작업에 걸린 시간 : 429
+
+> Task :ImageProcessing.main()
+23:42:50.606 [main] INFO com.thread.image.ImageProcessing -- 총 작업에 걸린 시간 : 333
+```
