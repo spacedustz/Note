@@ -48,6 +48,13 @@ RGB의 조합으로 모든 색을 표현할 수 있습니다.
 
 **createRGBFromColors()**
 
+- RGB 개별 값을 합쳐서 픽셀에 RGB 값을 넣어주는 함수입니다.
+- 각 비트 자리에 OR 연산을 통해 파라미터로 들어온 rgb 값을 대입한 후 리턴합니다.
+
+<br>
+
+**isShadeOfGray()**
+
 <br>
 
 ```java
