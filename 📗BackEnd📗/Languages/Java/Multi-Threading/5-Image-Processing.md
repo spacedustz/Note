@@ -1,6 +1,6 @@
 ## 📘 Image Processing
 
-어떤 사진에 1가지 종류의 꽃이 있고, 동일한 종의 꽃이지만 색깔은 2가지(흰색, 보라색)로 나뉘는 사진이 있다고 가정해 보겠습니다.
+어떤 사진에 1가지 종류의 꽃이 있고, 동일한 종의 꽃이지만 색깔은 2가지(흰색, 보라색)로 나뉘는 사진이 있습니다.
 
 이 사진은 3036 x 4048이며 대략 1200만 픽셀로 이루어져 있고, 각 픽셀의 색깔은 **ARGB**로 불리는 4가지 Byte로 표현됩니다.
 
@@ -17,6 +17,10 @@ RGB의 조합으로 모든 색을 표현할 수 있습니다.
 
 - 색상 Re-Coloring 알고리즘을 Sequantial 버전으로 구현
 - 구현을 모듈화해서 멀티스레드 작업으로 나누기
+
+<br>
+
+![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2.Flowers.png)
 
 <br>
 
