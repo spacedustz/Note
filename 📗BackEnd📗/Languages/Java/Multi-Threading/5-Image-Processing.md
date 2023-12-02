@@ -305,3 +305,36 @@ public static void recolorMultiThread(BufferedImage original, BufferedImage resu
 
 이미지 처리 작업의 시작 시간과 종료 시간을 캡쳐합니다.
 
+<br>
+
+**싱글 스레드**
+
+```java
+public static void main(String[] args) throws IOException {  
+    Resource originalResource = new ClassPathResource(SOURCE_IMG);  
+    BufferedImage originalImage = ImageIO.read((originalResource.getFile()));  
+    BufferedImage resultImage = new BufferedImage(  
+            originalImage.getWidth(),  
+            originalImage.getHeight(),  
+            BufferedImage.TYPE_INT_RGB // Color Space  
+    );  
+  
+    long startTime = System.currentTimeMillis();  
+  
+    recolorSingleThread(originalImage, resultImage);  
+  
+    long endTime = System.currentTimeMillis();  
+  
+    long duration = endTime - startTime;  
+  
+    File outputResult = new File(DESTINATION_IMG); // 파일 생성  
+    outputResult.getParentFile().mkdirs();  
+    ImageIO.write(resultImage, "png", outputResult); // 파일 Write  
+    log.info("총 작업에 걸린 시간 : {}", duration);  
+}
+```
+
+<br>
+
+**걸린 시간**
+
