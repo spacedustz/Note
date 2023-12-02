@@ -32,4 +32,4 @@ public class Blue {}
 
 같은 방법으로 getGreen() 함수도 만들어줍니다.
 
-Alpha와 Red, Blue를 마스킹하며, Green 컴포넌트가 오른쪽에
+Alpha와 Red, Blue를 마스킹하며, Green 컴포넌트가 오른쪽에서 2번째 바이트니까 **0x0000FF00**를 적용하고 왼쪽으로 8비트 움직입니다.
