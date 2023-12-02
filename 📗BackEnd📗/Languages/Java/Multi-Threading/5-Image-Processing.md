@@ -234,10 +234,12 @@ public class ImageProcessing {
 
 ---
 
-## 📘 Multi-Threading
+## 📘 Multi-Threading Solution
 
 위 코드에서 이미지를 분할하여 가진 스레드 수 만큼 이미지를 병렬 처리 해보겠습니다.
 
+즉 스레드 개수에 따라 이미지를 나누고 모든 스레드의 작업이 끝나면 BufferedImage를 파일에 저장합니다.
 
+<br>
 
-📕
+> 📕 **ImageProc**
