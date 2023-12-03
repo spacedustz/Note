@@ -255,7 +255,7 @@ actually
 
 마지막으로 실행된 테스트 결과를 요약할 **Listener**와 디버깅 목적의 **View Results Tree**도 추가 해줍니다..
 
-- While Controller - Add - Listener - Summary Report (테스트 결과 파일 경로는 임의로 지정)
+- While Controller - Add - Listener - Summary Report
 - While Controller - Add - Listener - View Results Tree
 
 <br>
