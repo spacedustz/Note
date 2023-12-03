@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/4. 성능 최적화/Image-Processing (지연시간).md",
+                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/4. 성능 최적화/Throughput(처리량) 최적화.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/4. 성능 최적화/Image-Processing (지연시간).md",
+                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/4. 성능 최적화/Throughput(처리량) 최적화.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/4. 성능 최적화/Image-Processing (지연시간).md",
+                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/4. 성능 최적화/Throughput(처리량) 최적화.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/4. 성능 최적화/Image-Processing (지연시간).md"
+                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/4. 성능 최적화/Throughput(처리량) 최적화.md"
               }
             }
           },
@@ -158,8 +158,8 @@
   },
   "active": "235cd8b8cb2ed593",
   "lastOpenFiles": [
-    "📗BackEnd📗/Languages/Java/Multi-Threading/4. 성능 최적화/Throughput(처리량) 최적화.md",
     "📗BackEnd📗/Languages/Java/Multi-Threading/4. 성능 최적화/Image-Processing (지연시간).md",
+    "📗BackEnd📗/Languages/Java/Multi-Threading/4. 성능 최적화/Throughput(처리량) 최적화.md",
     "📗BackEnd📗/Languages/Java/Multi-Threading/4. 성능 최적화/Optimization.md",
     "imoji.md",
     "📗BackEnd📗/Languages/Java/Multi-Threading/1. 운영체제 기초/Basic.md",
