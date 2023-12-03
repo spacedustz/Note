@@ -92,4 +92,7 @@ executor.execute(task);
 
 ## 📘 Throughput Optimization 2
 
-HTTP 어플리케이션을 ㅇ
+HTTP 어플리케이션을 예로 들어 HTTP 요청을 처리하는 스레드의 수를 상수로 갖기 위해 배운 것들을 활용해 보겠습니다.
+
+어플리케이션의 측정은 Apache Jmeter를 사용해 테스트 해보겠습니다.
+
