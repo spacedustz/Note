@@ -178,3 +178,11 @@ public class HTTPThroughputServer {
     }  
 }
 ```
+
+<br>
+
+클래스를 실행하고 `http://localhost:8080/search?word=talk`를 브라우저에 입력하면 550개가 나옵니다.
+
+다른 단어나 글자를 입력해도 카운팅된 숫자가 잘 나오고 있습니다.
+
+이제 이 어플리케이셔
