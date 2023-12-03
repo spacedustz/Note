@@ -193,6 +193,8 @@ public class HTTPThroughputServer {
 
 Apache Jmeter는 Java 코드를 사용하지 않고 자동화된 성능 테스트 계획을 생성할 수 있습니다.
 
+[Apache Jmeter Download Link](https://jmeter.apache.org/download_jmeter.cgi)
+
 <br>
 
 > 📕 **테스트 계획의 첫번째**
