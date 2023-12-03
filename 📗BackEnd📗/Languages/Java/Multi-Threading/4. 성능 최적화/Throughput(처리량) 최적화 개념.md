@@ -88,3 +88,8 @@ executor.execute(task);
 
 또, 스레드 풀을 이용해 일정 수의 스레드를 낮은 오버헤드로 유지시킬 수 있으며, 작업 시마다 스레드를 생성할 필요가 없습니다.
 
+---
+
+## 📘 Throughput Optimization 2
+
+HTTP 어플리케이션을 ㅇ
