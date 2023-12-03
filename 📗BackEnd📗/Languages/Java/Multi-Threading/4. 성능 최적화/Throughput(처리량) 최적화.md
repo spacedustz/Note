@@ -270,6 +270,10 @@ Sumarry Report 탭에서 Ctrl + R을 눌러 테스트를 실행 시켜보면 어
 
 초당 3~4000개의 요청을 처리하는 걸 볼 수 있습니다.
 
+<br>
+
+**Summary Report**
+
 ![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/jmeter.png)
 
 위 사진에서 Error 율이 발생한 이유는 HTTP Server를 나중에 실행했기 떄문에 생긴것 이므로 무시해도 됩니다.
