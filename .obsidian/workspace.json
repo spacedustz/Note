@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/1. 운영체제 기초/Basic.md",
+                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/3. 스레딩 기초 - 조정/2-Optimization.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/1. 운영체제 기초/Basic.md",
+                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/3. 스레딩 기초 - 조정/2-Optimization.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/1. 운영체제 기초/Basic.md",
+                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/3. 스레딩 기초 - 조정/2-Optimization.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/1. 운영체제 기초/Basic.md"
+                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/3. 스레딩 기초 - 조정/2-Optimization.md"
               }
             }
           },
@@ -158,12 +158,16 @@
   },
   "active": "2ce1a846a1685820",
   "lastOpenFiles": [
-    "📗BackEnd📗/Languages/Java/Multi-Threading/1-Create.md",
+    "📗BackEnd📗/Languages/Java/Multi-Threading/무제 폴더",
+    "📗BackEnd📗/Languages/Java/Multi-Threading/3. 스레딩 기초 - 조정/1-Coordination.md",
+    "📗BackEnd📗/Languages/Java/Multi-Threading/2. 스레딩 기초 - 생성/1-Create.md",
+    "📗BackEnd📗/Languages/Java/Multi-Threading/3. 스레딩 기초 - 조정",
+    "📗BackEnd📗/Languages/Java/Multi-Threading/1. 운영체제 기초/Basic.md",
+    "📗BackEnd📗/Languages/Java/Multi-Threading/2. 스레딩 기초 - 생성",
     "📗BackEnd📗/Languages/Java/Multi-Threading/1. 운영체제 기초",
     "📗BackEnd📗/Languages/Java/Multi-Threading/5-Image-Processing.md",
-    "📗BackEnd📗/Languages/Java/Multi-Threading/4-Optimization.md",
+    "📗BackEnd📗/Languages/Java/Multi-Threading/3. 스레딩 기초 - 조정/2-Optimization.md",
     "imoji.md",
-    "📗BackEnd📗/Languages/Java/Multi-Threading/1. 운영체제 기초/Basic.md",
     "📗BackEnd📗/Frameworks/Spring/WebClient/CountDownLatch.md",
     "Temp.md",
     "📗BackEnd📗/Frameworks/Spring/WebClient/WebClient-Basic.md",
@@ -172,7 +176,6 @@
     "📗FrontEnd📗/Frameworks/React/Basic-Summary.md",
     "📗FrontEnd📗/Frameworks/React/Styled-Component.md",
     "📗FrontEnd📗/Frameworks/React/Zustand-상태관리.md",
-    "📗BackEnd📗/Languages/Java/Multi-Threading/3-Coordination.md",
     "📗BackEnd📗/Convert/RTSP to HLS.md",
     "📗BackEnd📗/Convert/FFmpeg.md",
     "📗BackEnd📗/Convert/Parse CSV.md",
@@ -192,8 +195,6 @@
     "📗BackEnd📗/Languages/Java/Multi-Threading",
     "erlang-source.png",
     "📗DataBase📗/Redis",
-    "📗Ops-Tools📗/MSA/Kubernetes",
-    "📗Ops-Tools📗/MSA/gRPC",
     "Pasted image 20230805163438.png"
   ]
 }
