@@ -193,3 +193,7 @@ public class HTTPThroughputServer {
 
 Apache Jmeter는 Java 코드를 사용하지 않고 자동화된 성능 테스트 계획을 생성할 수 있습니다.
 
+<br>
+
+테스트 계획의 첫번째는 단어 리스트를 포함한 파일을 로딩하는 것으로, 각 단어에 HTTP 요청을 전송하고 응답을 기다립니다.
+
