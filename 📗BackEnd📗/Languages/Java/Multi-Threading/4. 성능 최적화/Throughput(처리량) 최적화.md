@@ -185,8 +185,11 @@ public class HTTPThroughputServer {
 
 다른 단어나 글자를 입력해도 카운팅된 숫자가 잘 나오고 있습니다.
 
-이제 이 어플리케이션의 처리량 측정을 위해 Apache Jmeter를  테스트 계획을 세워 보겠습니다.
+이제 이 어플리케이션의 처리량 측정을 위해 Apache Jmeter를 이용해 테스트 계획을 세워 보겠습니다.
 
 ---
 
-## 어플리케이션 처리량 측정
+## 📘 Apache Jmeter를 이용한 어플리케이션 처리량 측정
+
+Apache Jmeter는 Java 코드를 사용하지 않고 자동화된 성능 테스트 계획을 생성할 수 있습니다.
+
