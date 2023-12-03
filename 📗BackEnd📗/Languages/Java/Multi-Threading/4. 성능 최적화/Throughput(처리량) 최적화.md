@@ -300,6 +300,6 @@ Result 부분에 헤더와 메타 데이터 정보들이 나오고 HTTP Request 
 
 **Response**
 
-응답에는 책에 judge라는 단어가 41번 나와
+응답에는 책에 judge라는 단어가 41번 나온걸 볼 수 있습니다.
 
 ![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/jmeter_response.png)
