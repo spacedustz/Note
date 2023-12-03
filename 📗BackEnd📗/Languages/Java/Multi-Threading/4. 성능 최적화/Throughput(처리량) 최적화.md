@@ -45,4 +45,8 @@
 
 ## 📘 Thread Pooling
 
-Thread Pooling은 Thread를 생성하고 나중의 작업을 위해
+Thread Pooling은 Thread를 생성하고 나중의 작업을 위해 Thread를 다시 사용합니다.
+
+매번 처음부터 다시 Thread를 생성하지 않아도 되는 이점이 있습니다.
+
+Thread가 생성되면 Pool에 쌓이고, 
