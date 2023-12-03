@@ -278,13 +278,14 @@ Sumarry Report 탭에서 Ctrl + R을 눌러 테스트를 실행 시켜보면 아
 
 위 사진에서 Error 율이 발생한 이유는 HTTP Server를 나중에 실행했기 떄문에 생긴것 이므로 무시해도 됩니다.
 
-<br>
-
-## 📕 **Jmeter 결과**
+---
+## 📘 Application 처리량 측정 결과
 
 이제 View Result Tree로 가서 요청과 응답 값을 확인 해봅시다.
 
-**Result**
+<br>
+
+> 📕 **Result**
 
 Result 부분에 헤더와 메타 데이터 정보들이 나오고 HTTP Request 200 OK 가 떠있습니다.
 
@@ -292,15 +293,15 @@ Result 부분에 헤더와 메타 데이터 정보들이 나오고 HTTP Request 
 
 <br>
 
-**Request**
+> 📕 **Request**
 
-검색 단어는 judge가 들어가있습니다.
+검색 단어는 judge가 들어가 있습니다.
 
 ![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/jmeter_request.png)
 
 <br>
 
-**Response**
+> 📕 **Response**
 
 응답에는 책에 judge라는 단어가 41번 나온걸 볼 수 있습니다.
 
