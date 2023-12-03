@@ -284,16 +284,22 @@ Sumarry Report 탭에서 Ctrl + R을 눌러 테스트를 실행 시켜보면 어
 
 **Result**
 
+Result 부분에 헤더와 메타 데이터 정보들이 나오고 HTTP Request 200 OK 가 떠있습니다.
+
 ![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/jmeter_result.png)
 
 <br>
 
 **Request**
 
+검색 단어는 judge가 들어가있습니다.
+
 ![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/jmeter_request.png)
 
 <br>
 
 **Response**
+
+응답에는 책에 judge라는 단어가 41번 나와
 
 ![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/jmeter_response.png)
