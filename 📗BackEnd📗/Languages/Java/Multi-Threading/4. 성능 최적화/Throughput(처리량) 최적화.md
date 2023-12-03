@@ -280,6 +280,8 @@ Sumarry Report 탭에서 Ctrl + R을 눌러 테스트를 실행 시켜보면 아
 
 <br>
 
+## 📕 **Jmeter 결과**
+
 이제 View Result Tree로 가서 요청과 응답 값을 확인 해봅시다.
 
 **Result**
@@ -303,3 +305,6 @@ Result 부분에 헤더와 메타 데이터 정보들이 나오고 HTTP Request 
 응답에는 책에 judge라는 단어가 41번 나온걸 볼 수 있습니다.
 
 ![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/jmeter_response.png)
+
+<br>
+
