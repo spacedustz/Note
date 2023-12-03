@@ -282,3 +282,18 @@ Sumarry Report 탭에서 Ctrl + R을 눌러 테스트를 실행 시켜보면 어
 
 이제 View Result Tree로 가서 요청과 응답 값을 확인 해봅시다.
 
+**Result**
+
+![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/jmeter_result.png)
+
+<br>
+
+**Request**
+
+![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/jmeter_request.png)
+
+<br>
+
+**Response**
+
+![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/jmeter_response.png)
