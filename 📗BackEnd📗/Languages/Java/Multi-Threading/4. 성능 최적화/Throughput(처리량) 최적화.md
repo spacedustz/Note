@@ -39,4 +39,10 @@
 - 이 접근법에서는 각 작업을 작은 Task로 나눠야 하는 전처리 과정이 필요 없음
 - 작업은 각각 하나의 결과만 갖기 때문에, 작업의 포스트 프로세싱이 필요 없음
 - 또, 완전히 별개의 작업이기 때문에 다른 작업의 완료를 위해 현재 작업이 Blocking 될 필요가 없음
-- Thread-Pooling이나 Non-Blocking 
+- Thread-Pooling이나 Non-Blocking Queue 같은 기술의 의존 없이 최적의 처리량 달성 가능
+
+---
+
+## 📘 Thread Pooling
+
+Thread Pooling은 Thread를 생성하고 나중의 작업을 위해
