@@ -277,3 +277,8 @@ Sumarry Report 탭에서 Ctrl + R을 눌러 테스트를 실행 시켜보면 어
 ![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/jmeter.png)
 
 위 사진에서 Error 율이 발생한 이유는 HTTP Server를 나중에 실행했기 떄문에 생긴것 이므로 무시해도 됩니다.
+
+<br>
+
+이제 View Result Tree로 가서 요청과 응답 값을 확인 해봅시다.
+
