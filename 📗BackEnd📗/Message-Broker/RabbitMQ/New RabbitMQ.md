@@ -422,7 +422,8 @@ public class JsonParser {
             }  
             // Event 노드 중 class가 없으면 SecuRT - Area Crowd Event            
             else {  
-                // class가 없는 데이터 중 image 필드가 존재하면 SecuRT - Area Crowd (Image) Event                if (!imgNode.isMissingNode()) {  
+                // class가 없는 데이터 중 image 필드가 존재하면 SecuRT - Area Crowd (Image) Event      
+                if (!imgNode.isMissingNode()) {  
                     return this.parseCrowdImageEvent(data);  
                 } else {  
                     return this.parseCrowdEvent(data);  
