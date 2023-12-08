@@ -519,4 +519,83 @@ public class JsonParser {
 
 ---
 
-## HealthChe
+## 📕 HealthCheck Thread
+
+AI Engine의 분석 Instance가 죽으면 특정 sec마다 자동으로 재실행 시키는 API 요청을 보내는 데몬스레드입니다.
+
+```java
+/**  
+ * @author 신건우  
+ * Cvedia Instance Health Check Thread  
+ * Status 4 = 실행중, 나머지는 실행중이 아님  
+ */  
+@Slf4j  
+@Service  
+@RequiredArgsConstructor  
+public class InstanceHealthCheck extends Thread {  
+    private final TaskExecutor healthCheckExecutor;  
+    private final ObjectMapper mapper;  
+    private final RestApiService restApiService;  
+    private final Props props;  
+  
+    @PostConstruct  
+    public void init() {  
+        this.monitoringInstanceConnection();  
+    }  
+  
+    @Override  
+    public void run() {  
+        while (true) {  
+            props.getInstances().stream().forEach(name -> {  
+                try {  
+                    String uri = props.getCvediaUrl() + "/api/instance/get?instance_name=" + name;  
+                    String instanceStatement = restApiService.getRequest(uri).block();  
+                    InstanceDto[] instances = mapper.readValue(instanceStatement, InstanceDto[].class);  
+  
+                    if (instances != null && instances.length > 0) {  
+                        Arrays.stream(instances).forEach(instance -> {  
+  
+                            if (instance.getState() == 4) {  
+                                log.info("Instance 상태 : 실행 중");  
+                            }  
+  
+                            if (instance.getState() == 0 || instance.getState() == 1 || instance.getState() == 3 || instance.getState() == 5) {  
+                                String startUri = props.getCvediaUrl() + "/api/instance/start";  
+  
+                                InstanceDto requestBody = new InstanceDto();  
+                                requestBody.setInstanceName(instance.getInstanceName());  
+                                requestBody.setSolution(instance.getSolution());  
+  
+                                try {  
+                                    String requestBodyStr = mapper.writeValueAsString(requestBody);  
+                                    restApiService.postRequest(startUri, requestBodyStr).block();  
+  
+                                    log.info("Instance 시작 - 인스턴스 이름 : {}", requestBody.getInstanceName());  
+                                } catch (Exception e) {  
+                                    log.error("Instance 시작 실패 with Exception : {}", e.getMessage());  
+                                }  
+                            }  
+                        });  
+                    }  
+                } catch (Exception e) {  
+                    log.warn("Instance Monitoring Failed with an Exception : {}", e.getMessage());  
+                }  
+            });  
+  
+            try {  
+                Thread.sleep(10000);  
+            } catch (InterruptedException e) {  
+                log.info("===== Instance Health Check Thread 종료 =====");  
+            }  
+        }  
+    }  
+  
+    private void monitoringInstanceConnection() {  
+        this.setUncaughtExceptionHandler((t, e) -> {  
+            log.error("Instance Health Check Thread - 치명적인 오류 발생 : {}", e.getMessage());  
+        });  
+        this.setDaemon(true);  
+        healthCheckExecutor.execute(this);  
+    }  
+}
+```
