@@ -365,9 +365,13 @@ public class EventThread extends Thread {
 }
 ```
 
-<br>
+---
+
+## 📘 Util
 
 > 📕 **RestApiService**
+
+Spring WebClient를 이용해 Request를 Block하지않고 Subscribe하여 Async한 Request를 보내는 S
 
 ```java
 /**  
@@ -415,7 +419,7 @@ public class RestApiService {
 
 <br>
 
-> **JsonParser**
+> 📕 **JsonParser**
 
 ```java
 /**  
@@ -519,7 +523,7 @@ public class JsonParser {
 
 ---
 
-## 📕 HealthCheck Thread
+## 📘 HealthCheck Thread
 
 AI Engine의 분석 Instance가 죽으면 특정 sec마다 자동으로 재실행 시키는 API 요청을 보내는 데몬스레드입니다.
 
