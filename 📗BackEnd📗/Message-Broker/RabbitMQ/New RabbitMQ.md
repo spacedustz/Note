@@ -13,7 +13,11 @@
 - 각 서버당 RabbitMQ Connection을 ConcurrentHashMap에 넣어 연결
 - 연결된 RabbitMQ의 Queue 개수에 맞는 RabbitMQ Channel을 생성해 별개의 스레드로 실행하여 데이터 Consume
 
-<br>
+---
+
+## 📘 Channel Consume
+
+RabbitMQ의 Chann
 
 > 📕 **RabbitService**
 
@@ -62,7 +66,8 @@ public class RabbitService {
         }  
     }  
   
-    /* RabbitMQ Connection & Channel 생성 */    private void connectRabbitMQ() {  
+    /* RabbitMQ Connection & Channel 생성 */    
+    private void connectRabbitMQ() {  
         // TODO 1: Queue Name을 Map에 넣기  
         for (int i = 0; i < props.getQueues().size(); i++) {  
             queueNameMap.put(i + 1, props.getQueues().get(i));  
