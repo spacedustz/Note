@@ -49,7 +49,7 @@ Spring WebClient의 Connection TimeOut을 설정해주고,
 
 <br>
 
-TaskExecutor를 HealthCheck ㅅ
+TaskExecutor를 HealthCheck 로직과 Counting 로직에서 따로 쓸 수 있게 executor를 2개로 분리하였습니다.
 
 ```java
 /**  
@@ -101,6 +101,8 @@ public class ApplicationConfig {
     }  
 }
 ```
+
+<br>
 
 > 📕 **RabbitService**
 
