@@ -162,6 +162,8 @@ public class RabbitService {
 
 실질적으로 데이터를 받고 가공하는 로직을 여기에 작성하였습니다.
 
+다른 로직은 볼 필요 없으며, DeliverCallBack 인터페이스를 구혀
+
 ```java
 /**  
  * @author 신건우  
@@ -326,6 +328,8 @@ public class EventDeliveryCallBack implements DeliverCallback {
 
 > 📕 **EventCancelCallBack**
 
+RabbitMQ의 데이터 Consume에 실패했을시 호출되는 콜백입니다.
+
 ```java
 /**  
  * @author 신건우  
@@ -345,7 +349,7 @@ public class EventCancelCallBack implements CancelCallback {
 
 > 📕 **EventThread**
 
-
+RabbitMQ 채널을 별도의 스레드로 실행시키기 위한 EventThread 입니다.
 
 ```java
 /**  
