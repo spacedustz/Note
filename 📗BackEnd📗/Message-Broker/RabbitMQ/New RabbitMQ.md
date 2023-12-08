@@ -160,6 +160,8 @@ public class RabbitService {
 
 > 📕 **EventDeliveryCallBack**
 
+실질적으로 데이터를 받고 가공하는 로직을 여기에 작성하였습니다.
+
 ```java
 /**  
  * @author 신건우  
@@ -286,7 +288,8 @@ public class EventDeliveryCallBack implements DeliverCallback {
         return msgObject;  
     }  
   
-    // TODO 3: 시간을 iso8601 형식의 UTC로 변환 - 반환값 형식 : yyyy-mm-ddTHH:mm:ssZ    private String convertEventTime(long time) {  
+    // TODO 3: 시간을 iso8601 형식의 UTC로 변환 - 반환값 형식 : yyyy-mm-ddTHH:mm:ssZ    
+    private String convertEventTime(long time) {  
         return Instant.ofEpochSecond(time).atZone(ZoneId.of("UTC")).format(DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss'Z'"));  
     }  
   
@@ -354,7 +357,7 @@ public class RestApiService {
     private final WebClient webClient;  
     private final Props props;  
   
-    // TODO 1: Wisedigm Tomcat - CameraVcasysDataInpController.wd로 요청  
+    // TODO 1: 7번서버 Tomcat - CameraVcasysDataInpController.wd로 요청  
     public void request(String data) {  
 //        CountDownLatch latch = new CountDownLatch(1);  
   
