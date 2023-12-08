@@ -345,6 +345,8 @@ public class EventCancelCallBack implements CancelCallback {
 
 > 📕 **EventThread**
 
+
+
 ```java
 /**  
  * @author 신건우  
@@ -371,7 +373,7 @@ public class EventThread extends Thread {
 
 > 📕 **RestApiService**
 
-Spring WebClient를 이용해 Request를 Block하지않고 Subscribe하여 Async한 Request를 보내는 S
+Spring WebClient를 이용해 Request를 Block 하지 않고 Subscribe하여 Async한 Request를 보내는 Service입니다.
 
 ```java
 /**  
@@ -420,6 +422,10 @@ public class RestApiService {
 <br>
 
 > 📕 **JsonParser**
+
+RabbitMQ의 Queue에서 나온Json 규격에 맞는 DTO를 파싱하는 서비스입니다.
+
+JsonNode의 Depth에 있는 필드에 따라 다른 DTO로 변환합니다.
 
 ```java
 /**  
