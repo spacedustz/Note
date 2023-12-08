@@ -343,7 +343,7 @@ public class EventCancelCallBack implements CancelCallback {
 
 <br>
 
-> **EventThread**
+> 📕 **EventThread**
 
 ```java
 /**  
@@ -516,3 +516,7 @@ public class JsonParser {
     }  
 }
 ```
+
+---
+
+## HealthChe
