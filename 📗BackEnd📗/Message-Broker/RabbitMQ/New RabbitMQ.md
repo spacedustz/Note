@@ -230,7 +230,7 @@ public class RabbitService {
 ```java
 /**  
  * @author 신건우  
- * RabbitMQ Channel에서 받은 Event를 변환 후 Wisedigm Tomcat 서버로 HTTP API 요청  
+ * RabbitMQ Channel에서 받은 Event를 변환 후 21번 Tomcat 서버로 HTTP API 요청  
  * 이벤트 Label을 차량 (V), 사람 (P), 자전거 (B), 사람/자전거 (A)로 분류  
  * <p>  
  * RabbitMQ Queue Name = Instance Name과 동일함 -> Cam01  
