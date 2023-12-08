@@ -6,7 +6,15 @@
 
 각각의 RabbitMQ Connection Factory에 연결하여 데이터를 받아 보겠습니다.
 
+<br>
 
+이번에는 Queue에서 바로 데이터를 Receive 하지 않습니다.
+
+- 각 서버당 RabbitMQ Connection을 따로 만
+
+<br>
+
+> 📕 **RabbitService**
 
 ```java
 
