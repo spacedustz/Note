@@ -17,7 +17,9 @@
 
 ## 📘 Channel Consume
 
-RabbitMQ의 Chann
+RabbitMQ Channel을 Consume하려면 DeliveryCallBack / CancelCallBack 를 `basicConsume()`의 파라미터로 주어야 합니다.
+
+Del
 
 > 📕 **RabbitService**
 
