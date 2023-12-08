@@ -17,6 +17,8 @@
 
 ## 📘 Channel Consume
 
+> 📕 **RabbitMQ Channel의 basicConsume()을 이용해 데이터를 받는 이유**
+
 RabbitMQ Channel을 Consume하려면 DeliveryCallBack / CancelCallBack 인터페이스를 구현한 클래스를 `basicConsume()`의 파라미터로 주어야 합니다.
 
 이유는, DeliveryCallBack에서 Channel의 Queue에서 받아온 메시지의 가공을 처리하며,
@@ -24,6 +26,8 @@ RabbitMQ Channel을 Consume하려면 DeliveryCallBack / CancelCallBack 인터페
 Consume이 실패한 메시지에 대한 처리는 CancelCallBack 에서 처리하기 때문입니다.
 
 <br>
+
+그리고 각 ConnectionFactory, C
 
 > 📕 **RabbitService**
 
