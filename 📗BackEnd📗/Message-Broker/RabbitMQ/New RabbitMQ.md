@@ -308,7 +308,8 @@ public class EventDeliveryCallBack implements DeliverCallback {
         return "name|" + inOut + "/" + "count|" + count + "/event|" + eventTime + "/" + "CAMERA ID|" + cameraName;  
     }  
   
-    // TODO 6: 이벤트 메시지 변환이 끝나고 마지막 API 요청으로 보낼 Body    private String getBodyResult(String convertedMessage) {  
+    // TODO 6: 이벤트 메시지 변환이 끝나고 마지막 API 요청으로 보낼 Body    
+    private String getBodyResult(String convertedMessage) {  
         return "--------------------------fc94942040fa9be1\n" +  
                 "Content-Disposition: form-data; name=\"eventinfo\"\n" +  
                 "Content-Type: text/plain\n\n" +  
@@ -333,6 +334,54 @@ public class EventCancelCallBack implements CancelCallback {
     @Override  
     public void handle(String consumerTag) throws IOException {  
         log.warn("RabbitMQ Consumer Canceled - {}", consumerTag);  
+    }  
+}
+```
+
+<br>
+
+> **RestApiService**
+
+```java
+/**  
+ * @author 신건우  
+ * Spring WebClient를 이용한 Async Rest API Service  
+ */
+ @Slf4j  
+@Service  
+@RequiredArgsConstructor  
+public class RestApiService {  
+    private final WebClient webClient;  
+    private final Props props;  
+  
+    // TODO 1: Wisedigm Tomcat - CameraVcasysDataInpController.wd로 요청  
+    public void request(String data) {  
+//        CountDownLatch latch = new CountDownLatch(1);  
+  
+        Flux.just(0)  
+                .flatMap(i -> {  
+                    return webClient.post()  
+                            .uri(props.getRequestUrl())  
+                            .contentType(MediaType.TEXT_PLAIN)  
+                            .body(BodyInserters.fromValue(data))  
+                            .retrieve()  
+                            .bodyToMono(Void.class)  
+                            .onErrorResume(e -> {  
+                                log.error("Request API Failed : {}", e.getMessage());  
+                                return Mono.error(e);  
+                            });  
+                }).subscribe(response -> {  
+                    log.info("API Request - Success");  
+                });  
+    }  
+  
+    // TODO 2: Cvedia Instance Health Check API  
+    public Mono<String> getRequest(final String uri) {  
+        return webClient.get().uri(uri).retrieve().bodyToMono(String.class);  
+    }  
+  
+    public Mono<String> postRequest(final String uri, final Object data) {  
+        return webClient.post().uri(uri).bodyValue(data).retrieve().bodyToMono(String.class);  
     }  
 }
 ```
