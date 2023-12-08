@@ -19,9 +19,11 @@
 
 RabbitMQ Channel을 Consume하려면 DeliveryCallBack / CancelCallBack 인터페이스를 구현한 클래스를 `basicConsume()`의 파라미터로 주어야 합니다.
 
-실질적으로 DeliveryCallBack에서 Channel의 Queue에서 받아온 메시지의 가공을 처리하며,
+이유는, DeliveryCallBack에서 Channel의 Queue에서 받아온 메시지의 가공을 처리하며,
 
-Consume이 실패한 메시지에 대한 처리는 CancelCallBack 에서 처맇
+Consume이 실패한 메시지에 대한 처리는 CancelCallBack 에서 처리하기 때문입니다.
+
+<br>
 
 > 📕 **RabbitService**
 
