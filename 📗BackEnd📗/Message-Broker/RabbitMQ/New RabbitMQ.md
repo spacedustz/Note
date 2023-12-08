@@ -10,7 +10,8 @@
 
 이번에는 Queue에서 바로 데이터를 Receive 하지 않습니다.
 
-- 각 서버당 RabbitMQ Connection을 따로 만
+- 각 서버당 RabbitMQ Connection을 ConcurrentHashMap에 넣어 연결
+- 연결된 RabbitMQ의 Queue 개수에 맞는 RabbitMQ Channel을 생성해 별개의 스레드로 실행하여 데이터 Consume
 
 <br>
 
