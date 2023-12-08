@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/Channel Consume.md",
+                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/New RabbitMQ.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/Channel Consume.md",
+                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/New RabbitMQ.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/Channel Consume.md",
+                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/New RabbitMQ.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/Channel Consume.md"
+                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/New RabbitMQ.md"
               }
             }
           },
@@ -159,7 +159,7 @@
   "active": "235cd8b8cb2ed593",
   "lastOpenFiles": [
     "imoji.md",
-    "📗BackEnd📗/Message-Broker/RabbitMQ/Channel Consume.md",
+    "📗BackEnd📗/Message-Broker/RabbitMQ/New RabbitMQ.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/성능 파라미터.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/Clustering.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/MQTT Client (React & TypeScript).md",
