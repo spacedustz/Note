@@ -343,14 +343,38 @@ public class EventCancelCallBack implements CancelCallback {
 
 <br>
 
-> **RestApiService**
+> **EventThread**
+
+```java
+/**  
+ * @author 신건우  
+ * Consume RabbitMQ Channel  
+ */
+ @Slf4j  
+@AllArgsConstructor  
+public class EventThread extends Thread {  
+    private RabbitService rabbitService;  
+    private Channel channel;  
+    private String queueName;  
+  
+    @Override  
+    public void run() {  
+        rabbitService.listen(channel, queueName);  
+        log.info("RabbitMQ Channel {} Thread Start", channel.getChannelNumber());  
+    }  
+}
+```
+
+<br>
+
+> 📕 **RestApiService**
 
 ```java
 /**  
  * @author 신건우  
  * Spring WebClient를 이용한 Async Rest API Service  
  */
- @Slf4j  
+@Slf4j  
 @Service  
 @RequiredArgsConstructor  
 public class RestApiService {  
