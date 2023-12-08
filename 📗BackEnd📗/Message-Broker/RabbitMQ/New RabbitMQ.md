@@ -2,4 +2,12 @@
 
 단일 서버의 RabbitMQ  Connection을 맺을때 RabbitConfig를 작성해서 했었는데,
 
-만약 
+이번은 여러서버에 분산된 RabbitMQ를 클러스터링 하지않고 Spring Boot 서버에서 멀티스레딩으로,
+
+각각의 RabbitMQ Connection Factory에 연결하여 데이터를 받아 보겠습니다.
+
+
+
+```java
+
+```
