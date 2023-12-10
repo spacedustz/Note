@@ -23,7 +23,7 @@ RabbitMQ Channel을 Consume하려면 DeliveryCallBack / CancelCallBack 인터페
 
 이유는, DeliveryCallBack에서 Channel의 Queue에서 받아온 메시지의 가공을 처리하며,
 
-Consume이 실패한 메시지에 대한 처리는 CancelCallBack 에서 처리하기 때문입니다.
+Consume이 실패한 메시지에 대한 처리는 CancelCallBack 에서 처리하기 때문입니다. 
 
 <br>
 
