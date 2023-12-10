@@ -104,4 +104,11 @@ ffmpeg -i rtsp://your_rtsp_stream_address -codec copy -flags -global_header -f h
 * 재생 목록 타입을 event로 설정하여 라이브 스트리밍에 적합하게 합니다 (-hls_playlist_type event).  
 * 재생 목록 파일 이름을 stream.m3u8로 설정합니다.  
 * 위 설정을 사용하면, 사용자가 재생을 시작할 때 최신 콘텐츠를 먼저 볼 수 있도록 HLS 스트림이 구성됩니다.  
- 
+
+<br>
+
+> **지연시간 1초대의 옵션**
+
+```python
+ffmpeg -nostdin -flags low_delay -rtsp_transport tcp -i <rtsp_stream> -pix_fmt bgr24 -an -vcodec rawvideo -f rawvideo -
+```
