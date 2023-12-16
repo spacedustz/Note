@@ -57,7 +57,7 @@ private String elvis;
 
 > 📕 **정규식(Regex) 표현법**
 
-****
+**matches**를 이용해 문자열에 정규식을 사용 가능합니다.
 
 ```java
 @Value("#{'100' matches '\\d+'}") // true
