@@ -77,24 +77,19 @@ Range Partitoning에서의 Load Banlancing은 Partition Key에 의존하므로,
 
 
 ```sql
- CREATE TABLE IF NOT EXISTS `svc_alarm_sent_log` (  
-    `alarm_sent_log_id` bigint unsigned NOT NULL AUTO_INCREMENT COMMENT '알람 전송 로그 ID',  
-    `yyyymmdd` varchar(8) NOT NULL COMMENT '생성일자',   
-    `item_id` int(11) NOT NULL COMMENT 'Item ID',  
-
-		... 등등등
-		
+CREATE TABLE IF NOT EXISTS `cmn_partition_mgmt` (  
+    `table_name` varchar(100) NOT NULL COMMENT '파티션 테이블명',  
+    `column_name` varchar(30) NOT NULL COMMENT '파티션 컬럼명',  
+    `period_type` varchar(1) NOT NULL COMMENT '파티션 기간타입(D/W/M/Y)',  
+    `pre_creation_period` int(11) NOT NULL COMMENT '파티션 사전생성기간(period_type 값에 따라 일/주/월/년수.period_type이 D 이고 pre_creation_period 가 30이면 30일 사전 생성)',  
+    `prefix_name` varchar(20) NOT NULL COMMENT '파티션 접두어명',  
+    `retention_period` int(11) NOT NULL COMMENT '파티션 보유기간(period_type 값에 따라 일/주/월/년수.period_type이 D 이고 retention_period 가 30이면 30일 보관)',  
     `reg_dt` datetime(3) NOT NULL COMMENT '등록일자',  
     `reg_id` int(11) NOT NULL COMMENT '등록자 ID',  
-    PRIMARY KEY (`alarm_sent_log_id`,`yyyymmdd`)  
-    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci COMMENT='서비스-알람전송이력'  
-    PARTITION BY RANGE COLUMNS (`yyyymmdd`) (  
-    PARTITION PT_202309 VALUES LESS THAN ('20231001'),  
-    PARTITION PT_202310 VALUES LESS THAN ('20231101'),  
-    PARTITION PT_202311 VALUES LESS THAN ('20231201'),  
-    PARTITION PT_202312 VALUES LESS THAN ('20240101'),  
-    PARTITION PT_202401 VALUES LESS THAN ('20240201')  
-    );  
+    `upd_dt` datetime(3) NOT NULL COMMENT '수정일자',  
+    `upd_id` int(11) NOT NULL COMMENT '수정자 ID',  
+    PRIMARY KEY (`table_name`)  
+    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci COMMENT='공통-파티션 테이블 관리'; 
   
   
 CREATE TABLE IF NOT EXISTS `svc_camera_15sec_stats` (  
