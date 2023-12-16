@@ -70,7 +70,11 @@ Range Partitoning에서의 Load Banlancing은 Partition Key에 의존하므로,
 - 데이터가 어디에 들어가 있는지 직관적 판단이 가능한 컬럼 (날짜 컬럼)
 - I/O 병목을 줄일 수 있는 데이터 분포도가 양호한 컬럼
 
----
+<br>
+
+> 📕 **Table Partitioning**
+
+
 
 ```sql
  CREATE TABLE IF NOT EXISTS `svc_alarm_sent_log` (  
