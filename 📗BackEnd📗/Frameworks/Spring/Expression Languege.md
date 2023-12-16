@@ -1,6 +1,8 @@
 ## 📘 Spring Expression Language (SpEL)
 
-Spring Data Redis와 Cach
+Spring Data Redis와 Cache 기능을 사용하면서 `@Cacheable()`의 속성값으로 SpEL을 자주 사용하게 되어 정리해봅니다.
+
+<br>
 
 **SpEL 이란?**
 
