@@ -18,7 +18,7 @@
 > 📕 **BackEnd**
 - **Converter** : 범용 포맷의 데이터 파싱/변환, FFmpeg을 이용한 RTSP to HLS 영상 스트리밍
 - **Error Handling** : 에러를 해결한 기록
-- **Framework**s : 프레임워크에서 사용한 기술들
+- **Framework**s : 프레임워크에서 사용한 기술들 (Spring)
 - **Languagues** : 백엔드에서 사용한 언어들의 개념과 활용 등 (Java, Kotlin, Python)
 - **Message Broker** : RabbitMQ를 사용하며 학습한 내용들
 
