@@ -98,6 +98,8 @@ CREATE TABLE IF NOT EXISTS `partition_mgmt` (
 
 > 📕 **Log Table Partitining**
 
+알람 로그 기록을 위한 테이블을  분량의 데이터만 보존하고, 기간이 지난 파티션 테이블을 자동으로 삭제합니다.
+
 ```sql
  CREATE TABLE IF NOT EXISTS `svc_alarm_sent_log` (  
     `alarm_sent_log_id` bigint unsigned NOT NULL AUTO_INCREMENT COMMENT '알람 전송 로그 ID',  
@@ -123,8 +125,10 @@ CREATE TABLE IF NOT EXISTS `partition_mgmt` (
 
 > 📕 **Statistics Table Partitioning**
 
+15초 단위의 통계 처리를 위한 테이블을 1달치 분량의 데이터만 보존하고, 기간이 지난 파티션 테이블을 자동으로 삭제합니다.
+
 ```sql
-CREATE TABLE IF NOT EXISTS `svc15sec_stats` (  
+CREATE TABLE IF NOT EXISTS `svc_15sec_stats` (  
     `yyyymmdd` varchar(8) NOT NULL COMMENT '생성일자',  
     `hhmiss` varchar(6) NOT NULL COMMENT '시간분초',  
     `item_id` int(11) unsigned NOT NULL COMMENT 'Item ID',  
