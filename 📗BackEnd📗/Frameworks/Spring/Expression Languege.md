@@ -1,6 +1,6 @@
 ## 📘 Spring Expression Language (SpEL)
 
-Spring Data Redis와 Cache 기능을 사용하면서 `@Cacheable()`의 속성값으로 SpEL을 잘 모르고 검색으로만 자주 사용하게 되어 정리해봅니다.
+Spring Data Redis와 Cache 기능을 사용하면서 `@Cacheable()`의 속성값으로 SpEL을  자주 사용하게 되어 정리해봅니다.
 
 <br>
 
@@ -51,4 +51,18 @@ private String ternary;
 
 @Value("#{some.property != null ?: 'default'}") // 위와 동일하게 null인 경우 default 주입
 private String elvis;
+```
+
+<br>
+
+> 📕 **정규식(Regex) 표현법**
+
+****
+
+```java
+@Value("#{'100' matches '\\d+'}") // true
+private boolean validNumericStringResult;
+
+@Value("#{'100asdf' matches '\\d+'}") // false
+private boolean invalidNumericStringResult;
 ```
