@@ -76,7 +76,9 @@ Range Partitoning에서의 Load Banlancing은 Partition Key에 의존하므로,
 
 > 📕 **Partition MGMT Table**
 
+Table Partitioning을 위한 Partition Management Table 입니다.
 
+- **retention_period** : 파티션 보유기간(period_type 값에 따라 일/주/월/년수.period_type이 D 이고 retention_period 가 30이면 30일 보관
 
 ```sql
 CREATE TABLE IF NOT EXISTS `partition_mgmt` (  
@@ -98,7 +100,7 @@ CREATE TABLE IF NOT EXISTS `partition_mgmt` (
 
 > 📕 **Log Table Partitining**
 
-알람 로그 기록을 위한 테이블을  분량의 데이터만 보존하고, 기간이 지난 파티션 테이블을 자동으로 삭제합니다.
+알람 로그 기록을 위한 테이블을 5달 분량의 데이터만 보존하고, 기간이 지난 파티션 테이블을 자동으로 삭제합니다.
 
 ```sql
  CREATE TABLE IF NOT EXISTS `svc_alarm_sent_log` (  
