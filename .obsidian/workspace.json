@@ -158,6 +158,7 @@
   },
   "active": "2ce1a846a1685820",
   "lastOpenFiles": [
+    "README.md",
     "📗기능개발📗/데이터 시뮬레이터.md",
     "📗기능개발📗/출입통제시스템.md",
     "imoji.md",
@@ -187,7 +188,6 @@
     "📗BackEnd📗/Languages/Java/Multi-Threading/2. 스레딩 기초 - 생성",
     "📗BackEnd📗/Languages/Java/Multi-Threading/1. 운영체제 기초",
     "📗BackEnd📗/Frameworks/Spring/WebClient/CountDownLatch.md",
-    "📗BackEnd📗/Frameworks/Spring/WebClient/WebClient-Basic.md",
     "📗BackEnd📗/Frameworks/Spring/WebClient",
     "📗DataBase📗/MariaDB",
     "📗DataBase📗/QueryDSL/Java",
