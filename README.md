@@ -36,7 +36,7 @@
 
 <br>
 
-> 📕 FrontEnd
+> 📕 **FrontEnd**
 
 - Frameworks : 프론트엔드 프레임워크 학습
 - Languages : 프론트엔드 개발을 위한 언어의 개념, 활용 학습 (JavaScript, TypeScript, Dart)
@@ -50,3 +50,9 @@
 - Docker : Docker, Docker Compose, Docker Swarm 복습
 - Management & Tool : 개발을 할떄 사용한 툴들의 사용법
 - MSA : Kubernetes 복습
+
+<br>
+
+> 📕 **Docs**
+
+- 각종 세팅값이나 문서등을 저장한 곳
