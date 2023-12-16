@@ -66,3 +66,8 @@ private boolean validNumericStringResult;
 @Value("#{'100asdf' matches '\\d+'}") // false
 private boolean invalidNumericStringResult;
 ```
+
+<br>
+
+> 📕 **Spring Security 간단한 활용**
+
