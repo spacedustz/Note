@@ -94,6 +94,10 @@ CREATE TABLE IF NOT EXISTS `partition_mgmt` (
     ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci COMMENT='공통-파티션 테이블 관리'; 
 ```
 
+<br>
+
+> 📕 **Log Table Partitining**
+
 ```sql
  CREATE TABLE IF NOT EXISTS `svc_alarm_sent_log` (  
     `alarm_sent_log_id` bigint unsigned NOT NULL AUTO_INCREMENT COMMENT '알람 전송 로그 ID',  
@@ -115,8 +119,12 @@ CREATE TABLE IF NOT EXISTS `partition_mgmt` (
     ); 
 ```
 
+<br>
+
+> 📕 **Statistics Table Partitioning**
+
 ```sql
-CREATE TABLE IF NOT EXISTS `svc_camera_15sec_stats` (  
+CREATE TABLE IF NOT EXISTS `svc15sec_stats` (  
     `yyyymmdd` varchar(8) NOT NULL COMMENT '생성일자',  
     `hhmiss` varchar(6) NOT NULL COMMENT '시간분초',  
     `item_id` int(11) unsigned NOT NULL COMMENT 'Item ID',  
