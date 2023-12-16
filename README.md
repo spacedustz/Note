@@ -50,3 +50,9 @@
 - Docker : Docker, Docker Compose, Docker Swarm 복습
 - Management & Tool : 개발을 할떄 사용한 툴들의 사용법
 - MSA : Kubernetes 복습
+
+<br>
+
+> 📕 **Docs**
+
+- 각종 세팅값이나 문서등을 저장한 곳
