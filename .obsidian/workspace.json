@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📗BackEnd📗/Convert/FFmpeg.md",
+                "file": "📗DataBase📗/MariaDB/Partitioning.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗BackEnd📗/Convert/FFmpeg.md",
+                "file": "📗DataBase📗/MariaDB/Partitioning.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗BackEnd📗/Convert/FFmpeg.md",
+                "file": "📗DataBase📗/MariaDB/Partitioning.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗BackEnd📗/Convert/FFmpeg.md"
+                "file": "📗DataBase📗/MariaDB/Partitioning.md"
               }
             }
           },
@@ -158,9 +158,12 @@
   },
   "active": "235cd8b8cb2ed593",
   "lastOpenFiles": [
+    "imoji.md",
+    "📗DataBase📗/MariaDB/Partitioning.md",
+    "📗DataBase📗/MariaDB/유저 생성.md",
+    "📗BackEnd📗/Convert/FFmpeg.md",
     "📗BackEnd📗/Convert/RTSP to HLS.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/New RabbitMQ.md",
-    "imoji.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/성능 파라미터.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/Clustering.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/MQTT Client (React & TypeScript).md",
@@ -186,9 +189,6 @@
     "📗FrontEnd📗/Frameworks/React/Yarn-React-재정리.md",
     "📗FrontEnd📗/Frameworks/React/Basic-Summary.md",
     "📗FrontEnd📗/Frameworks/React/Styled-Component.md",
-    "📗FrontEnd📗/Frameworks/React/Zustand-상태관리.md",
-    "📗BackEnd📗/Convert/FFmpeg.md",
-    "📗BackEnd📗/Convert/Parse CSV.md",
     "📗DataBase📗/MariaDB",
     "📗DataBase📗/QueryDSL/Java",
     "📗DataBase📗/QueryDSL/Kotlin",
