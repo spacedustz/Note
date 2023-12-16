@@ -71,3 +71,9 @@ private boolean invalidNumericStringResult;
 
 > 📕 **Spring Security 간단한 활용**
 
+**@PreAuthorize, @PostAuthorize**를 활용한 인가 정책 적용시에도 SpEL로 정의할 수 있습니다.
+
+```java
+@GetMapping("/preAuthorize")
+@PreAuthorize("hasRole('ROLE_USER') AND principal.username == #account.username")
+```
