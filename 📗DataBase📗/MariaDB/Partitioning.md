@@ -75,12 +75,11 @@ Range Partitoning에서의 Load Banlancing은 Partition Key에 의존하므로,
 ```sql
  CREATE TABLE IF NOT EXISTS `svc_alarm_sent_log` (  
     `alarm_sent_log_id` bigint unsigned NOT NULL AUTO_INCREMENT COMMENT '알람 전송 로그 ID',  
-    `yyyymmdd` varchar(8) NOT NULL COMMENT '생성일자',  
-    `target_id` varchar(10) NOT NULL COMMENT '알람 전송 대상 시스템 코드(cmn_code)',  
-    `camera_id` int(11) NOT NULL COMMENT '카메라 ID',  
-    `alarm_level` varchar(10) NOT NULL COMMENT '알람 레벨(cmn_code)',  
-    `request` text NOT NULL COMMENT '알람 전송 요청 내용',  
-    `response` text DEFAULT NULL COMMENT '알람 전송 응답 내용',  
+    `yyyymmdd` varchar(8) NOT NULL COMMENT '생성일자',   
+    `item_id` int(11) NOT NULL COMMENT 'Item ID',  
+
+		... 등등등
+		
     `reg_dt` datetime(3) NOT NULL COMMENT '등록일자',  
     `reg_id` int(11) NOT NULL COMMENT '등록자 ID',  
     PRIMARY KEY (`alarm_sent_log_id`,`yyyymmdd`)  
@@ -97,14 +96,16 @@ Range Partitoning에서의 Load Banlancing은 Partition Key에 의존하므로,
 CREATE TABLE IF NOT EXISTS `svc_camera_15sec_stats` (  
     `yyyymmdd` varchar(8) NOT NULL COMMENT '생성일자',  
     `hhmiss` varchar(6) NOT NULL COMMENT '시간분초',  
-    `item_id` int(11) unsigned NOT NULL COMMENT '카메라 ID',  
-     
+    `item_id` int(11) unsigned NOT NULL COMMENT 'Item ID',  
+    
+    .. 등등등 
+    
     `reg_dt` datetime(3) NOT NULL COMMENT '등록일자',  
     `reg_id` int(11) NOT NULL COMMENT '등록자 ID',  
     `upd_dt` datetime(3) NOT NULL COMMENT '수정일자',  
     `upd_id` int(11) NOT NULL COMMENT '수정자 ID',  
     PRIMARY KEY (`yyyymmdd`,`hhmiss`, `camera_id`)  
-    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci COMMENT='서비스-카메라통계(15초단위)'  
+    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci COMMENT='서비스-통계(15초단위)'  
     PARTITION BY RANGE COLUMNS(`yyyymmdd`) (  
     PARTITION PT_20231001 VALUES LESS THAN ('20231002'),  
     PARTITION PT_20231002 VALUES LESS THAN ('20231003'),  
