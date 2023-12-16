@@ -1,4 +1,4 @@
-## 📘 Table Partitioning
+## 📘 Table Range Partitioning
 
 이번에 로그 테이블과 통계 처리 테이블의 효율적인 관리를 위해 테이블 파티셔닝을 사용하게 되어 작성합니다.
 
@@ -78,16 +78,17 @@ Range Partitoning에서의 Load Banlancing은 Partition Key에 의존하므로,
 
 Table Partitioning을 위한 Partition Management Table 입니다.
 
-- **retention_period** : 파티션 보유기간(period_type 값에 따라 일/주/월/년수.period_type이 D 이고 retention_period 가 30이면 30일 보관
+- **pre_creation_period** : 파티션 사전생성기간(period_type 값에 따라 일/주/월/년수.period_type이 D 이고 pre_creation_period 가 30이면 30일 사전 생성합니다.
+- **retention_period** : 파티션 보유기간(period_type 값에 따라 일/주/월/년수.period_type이 D 이고 retention_period 가 30이면 30일 보관합니다.
 
 ```sql
 CREATE TABLE IF NOT EXISTS `partition_mgmt` (  
     `table_name` varchar(100) NOT NULL COMMENT '파티션 테이블명',  
     `column_name` varchar(30) NOT NULL COMMENT '파티션 컬럼명',  
     `period_type` varchar(1) NOT NULL COMMENT '파티션 기간타입(D/W/M/Y)',  
-    `pre_creation_period` int(11) NOT NULL COMMENT '파티션 사전생성기간(period_type 값에 따라 일/주/월/년수.period_type이 D 이고 pre_creation_period 가 30이면 30일 사전 생성)',  
+    `pre_creation_period` int(11) NOT NULL,  
     `prefix_name` varchar(20) NOT NULL COMMENT '파티션 접두어명',  
-    `retention_period` int(11) NOT NULL COMMENT '파티션 보유기간(period_type 값에 따라 일/주/월/년수.period_type이 D 이고 retention_period 가 30이면 30일 보관)',  
+    `retention_period` int(11) NOT NULL,  
     `reg_dt` datetime(3) NOT NULL COMMENT '등록일자',  
     `reg_id` int(11) NOT NULL COMMENT '등록자 ID',  
     `upd_dt` datetime(3) NOT NULL COMMENT '수정일자',  
