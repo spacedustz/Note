@@ -36,7 +36,7 @@
 
 <br>
 
-> 📕 FrontEnd
+> 📕 **FrontEnd**
 
 - Frameworks : 프론트엔드 프레임워크 학습
 - Languages : 프론트엔드 개발을 위한 언어의 개념, 활용 학습 (JavaScript, TypeScript, Dart)
