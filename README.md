@@ -1,4 +1,4 @@
-📘 개인 공부를 하며 메모를 한 노트 Repository 입니다.
+## 📘 개인 공부 메모 Repository
 
 <br>
 
