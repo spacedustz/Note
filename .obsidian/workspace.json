@@ -156,7 +156,7 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "235cd8b8cb2ed593",
+  "active": "2ce1a846a1685820",
   "lastOpenFiles": [
     "📗기능개발📗/데이터 시뮬레이터.md",
     "📗기능개발📗/출입통제시스템.md",
@@ -165,8 +165,8 @@
     "Temp.md",
     "📗DataBase📗/MariaDB/Partitioning.md",
     "📗DataBase📗/MariaDB/유저 생성.md",
-    "📗BackEnd📗/Convert/FFmpeg.md",
-    "📗BackEnd📗/Convert/RTSP to HLS.md",
+    "📗BackEnd📗/Converter/FFmpeg.md",
+    "📗BackEnd📗/Converter/RTSP to HLS.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/New RabbitMQ.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/성능 파라미터.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/Clustering.md",
