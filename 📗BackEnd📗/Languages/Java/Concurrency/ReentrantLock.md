@@ -1,6 +1,12 @@
 ## 📘 ReentrantLock
 
-> 📕 **사용사례** : 방에 움직임이 있을 때 조명을 계속 켜두는 Light Sensor
+> 📕 **예시** : 방에 움직임이 있을 때 조명을 계속 켜두는 Light Sensor Class
+
+방에 움직임이 있으면 불을 계속 켜두는 센서가 있고,
+
+더이상 움직임이 없을때 불을 끄기 위해 작동하는 TurnOffLight Thread가 있습니다.
+
+TurnOff
 
 ```java
 /**  
