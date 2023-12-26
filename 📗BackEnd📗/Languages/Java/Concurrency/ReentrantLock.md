@@ -2,9 +2,11 @@
 
 이번에 일을 하던 중 ReentrantLock을 사용해 Concurrency한 환경에서 여러 Thread간 안전하게 Lock을 사용 & 제공하며,
 
-Interrupt 처리를 통해 Thread간 상호작용을 제어하고 Thread Safe한 코드의 실행을 위해 사용했었습니다.
+Interrupt 처리를 통해 Thread간 상호작용을 제어하고 Thread Safe한 기능의 개발을 위해 사용했었습니다.
 
+완벽하게 숙지를 못한 상태에서 일단 사용한 것이므로 예시를 통해 ReentrantLock을 복습한 글입니다.
 
+<br>
 
 > 📕 **Synchronization**
 
