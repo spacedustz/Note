@@ -8,7 +8,7 @@
 
 <br>
 
-TurnOffLights Thread는 Lock을 얻기위해 **tryLock()**을 사용합니다.
+TurnOffLights Thread는 Lock을 얻기위해 **tryLock()** 을 사용합니다.
 
 Lock을 얻을 수 없으면 500ms 동안 프로세스가 지연되고, lastSignal Thread는 5초동안 Lock 획독을 차단합니다.
 
@@ -16,7 +16,11 @@ Lock을 얻을 수 없으면 500ms 동안 프로세스가 지연되고, lastSign
 
 <br>
 
-따라서 이 경우, TurnOffLights 
+따라서 이 경우, TurnOffLights Thread는 5초 동안 센서에 움직임이 감지가 되지 않는 경우,
+
+조명을 끌 수 있도록 허용됩니다.
+
+TurnOffLights Thread는 Lock을 얻기 위해 **tryLock()** 을 사용합니다.
 
 ```java
 /**  
