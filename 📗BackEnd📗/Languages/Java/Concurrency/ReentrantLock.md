@@ -1,6 +1,8 @@
 ## 📘 ReentrantLock
 
-ReentrantLock을 이용해 Thread
+ReentrantLock의 **lock()** & **unLock()** & **tryLock()** 을 이용해 Thread간 Race Condition을 방지하고,
+
+
 
 > 📕 **예시** : 방에 움직임이 있을 때 조명을 계속 켜두는 Light Sensor Class
 
