@@ -152,3 +152,21 @@ public class LightSensor {
     }  
 }
 ```
+
+<br>
+
+**결과값**
+
+```
+18:40:21.783 [Thread-35] INFO com.bridge.thread.LightSensor -- Signal interrupted : {}Thread-35
+18:40:21.784 [Thread-36] INFO com.bridge.thread.LightSensor -- Signal interrupted : {}Thread-36
+18:40:21.784 [Thread-33] INFO com.bridge.thread.LightSensor -- Signal interrupted : {}Thread-33
+18:40:22.043 [Thread-38] INFO com.bridge.thread.LightSensor -- Signal Send : Thread-38
+18:40:22.044 [Thread-34] INFO com.bridge.thread.LightSensor -- Signal interrupted : {}Thread-34
+18:40:22.042 [Thread-37] INFO com.bridge.thread.LightSensor -- Signal Send : Thread-37
+18:40:22.046 [Thread-40] INFO com.bridge.thread.LightSensor -- Signal Send : Thread-40
+18:40:22.046 [Thread-38] INFO com.bridge.thread.LightSensor -- Signal interrupted : {}Thread-38
+18:40:22.047 [Thread-39] INFO com.bridge.thread.LightSensor -- Signal Send : Thread-39
+18:40:22.047 [Thread-37] INFO com.bridge.thread.LightSensor -- Signal interrupted : {}Thread-37
+18:40:22.048 [Thread-40] INFO com.bridge.thread.LightSensor -- Signal interrupted : {}Thread-40
+```
