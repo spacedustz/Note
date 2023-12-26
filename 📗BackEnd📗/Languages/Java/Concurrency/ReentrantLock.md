@@ -1,12 +1,14 @@
 ## 📘 ReentrantLock
 
-> ****
+> 📕 **Synchronization**
 
 ReentrantLock의 **lock()** & **unLock()** & **tryLock()** 을 이용해 Thread간 Race Condition을 방지하고,
 
 **lockInterruptibly()** 를 사용해 Lock을 획득할 때 다른 Thread에 의해 해당 Thread가 Interrupte 되면 InterruptException을 발생 시킵니다.
 
 <br>
+
+> 📕 **Interrupt 처리**
 
 아래 예시 코드에서 쓰인 **lockInterruptibly()** 를 사용해서 Lock을 획득하고,
 
