@@ -1,6 +1,8 @@
 ## 📘 ReentrantLock
 
-일을 하던 중 ReentrantLock을 사용해
+일을 하던 중 ReentrantLock을 사용해 Concurrency한 환경에서 여러 Thread간 안전하게 Lock을 사용 & 제공하며,
+
+Interrupt
 
 > 📕 **Synchronization**
 
