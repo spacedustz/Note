@@ -6,7 +6,11 @@
 
 더이상 움직임이 없을때 불을 끄기 위해 작동하는 TurnOffLight Thread가 있습니다.
 
-TurnOff
+<br>
+
+TurnOffLights Thread는 Lock을 얻기위해 **tryLock()**을 사용합니다.
+
+Lock을 얻을 수 없으면 500ms 동안 프로세스가 지연되고, lastSignal Thread는
 
 ```java
 /**  
