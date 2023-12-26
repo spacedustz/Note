@@ -20,11 +20,11 @@ Lock을 얻을 수 없으면 500ms 동안 프로세스가 지연되고, lastSign
 
 조명을 끌 수 있도록 허용됩니다.
 
-TurnOffLights Thread는 Lock을 얻기 위해 **tryLock()** 을 사용합니다.
+TurnOffLights Thread는 Lock을 얻기 위해 `tryLock()`을 사용합니다.
 
 <br>
 
-또한, 이전 신호를 차단하기 위해 **lock.lockInturrupa**
+또한, 이전 신호를 차단하기 위해 `lock.lockInturruptibly()`를 사용합니다.
 
 ```java
 /**  
