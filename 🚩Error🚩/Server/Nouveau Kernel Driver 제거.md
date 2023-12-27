@@ -44,8 +44,20 @@ wmi                    32768  5 intel_wmi_thunderbolt,asus_wmi,wmi_bmof,mxm_wmi,
 
 <br>
 
-검색해본 결과 Nvidia GPU Driver를 설치 하려면 이 커널 드라이버를 제거하고 다시 실행되지 않도록 modprobe 블랙리스트에 추가해야 합니다.
+검색해본 결과 Nvidia GPU Driver를 설치 하려면 **이 커널 드라이버를 제거하고 다시 실행되지 않도록 modprobe 블랙리스트에 추가해야 합니다.**
+
+<br>
+
+우선 Nvidia 관련 패키지를 제거합니다.
 
 ```bash
-sudp apt -y remove nvidia* && sudo apt -y 
+sudp apt -y remove nvidia* && sudo apt -y autoremove
+```
+
+<br>
+
+컴파일러와 Linux Header를 설치해 줍니다.
+
+```bash
+sudo apt -y install
 ```
