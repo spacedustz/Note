@@ -64,4 +64,17 @@ sudo apt -y install dkms build-essential linux-headers-generic pkg-config libglv
 
 <br>
 
-nouveau 드라이버를 블랙리스트에 등록하여 활성화되지 않도록 합니다
+nouveau 드라이버를 블랙리스트에 등록하여 활성화되지 않도록 합니다.
+
+```bash
+sudo echo -e "blacklist nouveau\nblacklist lbm-nouveau\noptions nouveau modeset=0\nalias nouveau off\nalias lbm-nouveau off" | sudo tee -a /etc/modprobe.d/blacklist.conf
+```
+
+<br>
+
+initramfs를 업데이트하고 서버를 재기동합니다.
+
+```bash
+sudo update-initramfs -u
+reboot
+```
