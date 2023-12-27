@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📗BackEnd📗/Languages/Java/Concurrency/ReentrantLock.md",
+                "file": "📗BackEnd📗/Server/Ubuntu GUI.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗BackEnd📗/Languages/Java/Concurrency/ReentrantLock.md",
+                "file": "📗BackEnd📗/Server/Ubuntu GUI.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗BackEnd📗/Languages/Java/Concurrency/ReentrantLock.md",
+                "file": "📗BackEnd📗/Server/Ubuntu GUI.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗BackEnd📗/Languages/Java/Concurrency/ReentrantLock.md"
+                "file": "📗BackEnd📗/Server/Ubuntu GUI.md"
               }
             }
           },
@@ -171,11 +171,12 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "2ce1a846a1685820",
+  "active": "78923fb2ffac8683",
   "lastOpenFiles": [
-    "📗BackEnd📗/무제 폴더",
-    "imoji.md",
     "📗BackEnd📗/Languages/Java/Concurrency/ReentrantLock.md",
+    "📗BackEnd📗/Server/Ubuntu GUI.md",
+    "📗BackEnd📗/Server",
+    "imoji.md",
     "📗BackEnd📗/Languages/Java/Concurrency",
     "📗DataBase📗/MariaDB/BackUp.md",
     "📗GPU📗/Ubuntu-OpenGL.md",
@@ -208,7 +209,6 @@
     "📗BackEnd📗/Languages/Java/Multi-Threading/1. 운영체제 기초",
     "📗BackEnd📗/Frameworks/Spring/WebClient",
     "📗DataBase📗/MariaDB",
-    "📗DataBase📗/QueryDSL/Java",
     "erlang-source.png",
     "Pasted image 20230805163438.png"
   ]
