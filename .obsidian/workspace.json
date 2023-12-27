@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📗BackEnd📗/Server/Graphic 관련.md",
+                "file": "imoji.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗BackEnd📗/Server/Graphic 관련.md",
+                "file": "imoji.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗BackEnd📗/Server/Graphic 관련.md",
+                "file": "imoji.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗BackEnd📗/Server/Graphic 관련.md"
+                "file": "imoji.md"
               }
             }
           },
@@ -173,8 +173,9 @@
   },
   "active": "78923fb2ffac8683",
   "lastOpenFiles": [
-    "📗BackEnd📗/Server/개행 제거.md",
     "📗BackEnd📗/Server/Graphic 관련.md",
+    "Error",
+    "📗BackEnd📗/Server/개행 제거.md",
     "📗BackEnd📗/Server/Ubuntu GUI.md",
     "📗BackEnd📗/Languages/Java/Concurrency/ReentrantLock.md",
     "📗BackEnd📗/Server",
@@ -202,13 +203,11 @@
     "📗BackEnd📗/Message-Broker/RabbitMQ/Clustering.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/MQTT Client (React & TypeScript).md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/On-Linux.md",
-    "📗BackEnd📗/Message-Broker/RabbitMQ/RabbitMQ-Custom-Installation.md",
     "📗BackEnd📗/Languages/Java/Multi-Threading/4. 성능 최적화",
     "📗BackEnd📗/Languages/Java/Multi-Threading/3. 스레딩 기초 - 조정",
     "📗BackEnd📗/Languages/Java/Multi-Threading/2. 스레딩 기초 - 생성",
     "📗BackEnd📗/Languages/Java/Multi-Threading/1. 운영체제 기초",
     "📗BackEnd📗/Frameworks/Spring/WebClient",
-    "📗DataBase📗/MariaDB",
     "erlang-source.png",
     "Pasted image 20230805163438.png"
   ]
