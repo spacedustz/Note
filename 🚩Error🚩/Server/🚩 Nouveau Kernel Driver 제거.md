@@ -67,7 +67,7 @@ $ sudo apt -y remove nvidia* && sudo apt -y autoremove
 컴파일러와 Linux Header, GPU Driver를 설치하기 위한 종속성 패키지들을 설치 해 줍니다.
 
 ```shell
-sudo apt -y install dkms build-essential linux-headers-generic pkg-config libglvnd-dev
+$ sudo apt -y install dkms build-essential linux-headers-generic pkg-config libglvnd-dev
 ```
 
 <br>
