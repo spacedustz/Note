@@ -78,3 +78,7 @@ initramfs를 업데이트하고 서버를 재기동합니다.
 sudo update-initramfs -u
 reboot
 ```
+
+<br>
+
+이제 다시 GPU Driver를 설치하고 `nvidia-smi`를 입력하면 잘 나오는 것을 확인할 수 있습니다.
