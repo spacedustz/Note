@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "imoji.md",
+                "file": "🚩Error🚩/Server/Nvidia Kernel Driver 제거.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "imoji.md",
+                "file": "🚩Error🚩/Server/Nvidia Kernel Driver 제거.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "imoji.md",
+                "file": "🚩Error🚩/Server/Nvidia Kernel Driver 제거.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "imoji.md"
+                "file": "🚩Error🚩/Server/Nvidia Kernel Driver 제거.md"
               }
             }
           },
@@ -171,8 +171,10 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "2ce1a846a1685820",
+  "active": "78923fb2ffac8683",
   "lastOpenFiles": [
+    "imoji.md",
+    "🚩Error🚩/Server/Nvidia Kernel Driver 제거.md",
     "🚩Error🚩/Server",
     "📗BackEnd📗/Server/Graphic 관련.md",
     "🚩Error🚩",
@@ -180,7 +182,6 @@
     "📗BackEnd📗/Server/Ubuntu GUI.md",
     "📗BackEnd📗/Languages/Java/Concurrency/ReentrantLock.md",
     "📗BackEnd📗/Server",
-    "imoji.md",
     "📗BackEnd📗/Languages/Java/Concurrency",
     "📗DataBase📗/MariaDB/BackUp.md",
     "📗GPU📗/Ubuntu-OpenGL.md",
@@ -208,7 +209,6 @@
     "📗BackEnd📗/Languages/Java/Multi-Threading/3. 스레딩 기초 - 조정",
     "📗BackEnd📗/Languages/Java/Multi-Threading/2. 스레딩 기초 - 생성",
     "📗BackEnd📗/Languages/Java/Multi-Threading/1. 운영체제 기초",
-    "📗BackEnd📗/Frameworks/Spring/WebClient",
     "erlang-source.png",
     "Pasted image 20230805163438.png"
   ]
