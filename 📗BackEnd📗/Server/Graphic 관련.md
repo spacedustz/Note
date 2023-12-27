@@ -20,4 +20,14 @@ glxinfo | grep "OpenGL version"
 
 <br>
 
-> **기존 그래픽 드라이버 **
+> **기존 그래픽 드라이버 커널 해제**
+
+```bash
+systemctl isolate multi-user.target
+modprobe -r nvidia-drm
+
+lsof /dev/nvidia*
+kill -9 {NVIDIA Process}
+
+systemctl start graphical.target
+```
