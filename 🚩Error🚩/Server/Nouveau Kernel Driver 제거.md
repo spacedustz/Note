@@ -41,3 +41,11 @@ drm                   491520  4 drm_kms_helper,ttm,nouveau
 i2c_algo_bit           16384  2 igb,nouveau
 wmi                    32768  5 intel_wmi_thunderbolt,asus_wmi,wmi_bmof,mxm_wmi,nouveau
 ```
+
+<br>
+
+검색해본 결과 Nvidia GPU Driver를 설치 하려면 이 커널 드라이버를 제거하고 다시 실행되지 않도록 modprobe 블랙리스트에 추가해야 합니다.
+
+```bash
+sudp apt -y remove nvidia* && sudo apt -y 
+```
