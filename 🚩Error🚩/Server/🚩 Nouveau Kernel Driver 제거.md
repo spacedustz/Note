@@ -59,7 +59,7 @@ wmi                    32768  5 intel_wmi_thunderbolt,asus_wmi,wmi_bmof,mxm_wmi,
 우선 Nvidia 관련 패키지를 제거합니다.
 
 ```bash
-sudp apt -y remove nvidia* && sudo apt -y autoremove
+$ sudo apt -y remove nvidia* && sudo apt -y autoremove
 ```
 
 <br>
