@@ -13,8 +13,7 @@ $ cat /var/log/nvidia-installer.log
 
 ```
 nvidia-installer log file '/var/log/nvidia-installer.log'
-creation time: Wed Apr  6 01:20:18 2022
-installer version: 510.60.02
+installer version: 535.75
 
 PATH: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
 
