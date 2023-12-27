@@ -171,8 +171,9 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "78923fb2ffac8683",
+  "active": "2ce1a846a1685820",
   "lastOpenFiles": [
+    "📗BackEnd📗/무제 폴더",
     "imoji.md",
     "📗BackEnd📗/Languages/Java/Concurrency/ReentrantLock.md",
     "📗BackEnd📗/Languages/Java/Concurrency",
@@ -201,7 +202,6 @@
     "📗BackEnd📗/Message-Broker/RabbitMQ/RabbitMQ-Custom-Installation.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/RabbitMQ-Dead Letter Exchange-TTL.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/Summary.md",
-    "📗BackEnd📗/Languages/Java/Multi-Threading/4. 성능 최적화/Throughput(처리량) 최적화.md",
     "📗BackEnd📗/Languages/Java/Multi-Threading/4. 성능 최적화",
     "📗BackEnd📗/Languages/Java/Multi-Threading/3. 스레딩 기초 - 조정",
     "📗BackEnd📗/Languages/Java/Multi-Threading/2. 스레딩 기초 - 생성",
