@@ -17,3 +17,7 @@ wget https://developer.download.nvidia.com/compute/cuda/12.2.0/local_installers/
 sudo apt-get -y install build-essential freeglut3-dev libglu1-mesa-dev mesa-common-dev mesa-utils
 glxinfo | grep "OpenGL version"
 ```
+
+<br>
+
+> **기존 그래픽 드라이버 **
