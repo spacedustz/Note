@@ -8,7 +8,12 @@ apt -y install build-essential
 ## Graphic Driver 설치 전 종속성 라이브러리 설치
 apt -y install pkg-config libglvnd-dev
 
-## 그래픽 드라이버 파일 옮겨서 설치
+## 그래픽 드라이버 설치 전 Nvidia 관련 삭제
+sudo apt-get -y remove nvidia* && sudo apt -y autoremove
+sudo apt install dkms build-essential linux-headers-generic
+sudo echo -e "blacklist nouveau\nblacklist lbm-nouveau\noptions nouveau modeset=0\nalias nouveau off\nalias lbm-nouveau off" | sudo tee -a /etc/modprobe.d/blacklist.conf
+sudo update-initramfs -u
+reboot
 
 ## Cuda 12.2 설치, 그래픽 드라이버는 별도 설치하였으므로 그래픽 드라이버는 빼고 설치
 wget https://developer.download.nvidia.com/compute/cuda/12.2.0/local_installers/cuda_12.2.0_535.54.03_linux.run
