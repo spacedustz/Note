@@ -4,5 +4,5 @@
 mariadb-dump -u root -p {DB명} > {파일명}.sql
 
 ## Restore
-mariadb -u root -p {비밀번호} {DB명} < {백업파일명}.sql
+mariadb -u root -p {DB명} < {백업파일명}.sql
 ```
