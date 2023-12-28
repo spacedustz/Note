@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🚩Error🚩/Server/🚩 Nouveau Kernel Driver 제거.md",
+                "file": "📗BackEnd📗/Server/GUI Repair.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🚩Error🚩/Server/🚩 Nouveau Kernel Driver 제거.md",
+                "file": "📗BackEnd📗/Server/GUI Repair.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🚩Error🚩/Server/🚩 Nouveau Kernel Driver 제거.md",
+                "file": "📗BackEnd📗/Server/GUI Repair.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🚩Error🚩/Server/🚩 Nouveau Kernel Driver 제거.md"
+                "file": "📗BackEnd📗/Server/GUI Repair.md"
               }
             }
           },
@@ -171,10 +171,11 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "2ce1a846a1685820",
+  "active": "78923fb2ffac8683",
   "lastOpenFiles": [
-    "📗DataBase📗/MariaDB/BackUp.md",
     "🚩Error🚩/Server/🚩 Nouveau Kernel Driver 제거.md",
+    "📗BackEnd📗/Server/GUI Repair.md",
+    "📗DataBase📗/MariaDB/BackUp.md",
     "📗BackEnd📗/Server/Graphic 관련.md",
     "📗BackEnd📗/Server/개행 제거.md",
     "📗Docs📗/Settings/Mac Settings.md",
@@ -204,7 +205,6 @@
     "📗BackEnd📗/Convert/RTSP to HLS.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/New RabbitMQ.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/성능 파라미터.md",
-    "📗BackEnd📗/Message-Broker/RabbitMQ/Clustering.md",
     "📗BackEnd📗/Languages/Java/Multi-Threading/4. 성능 최적화",
     "📗BackEnd📗/Languages/Java/Multi-Threading/3. 스레딩 기초 - 조정",
     "📗BackEnd📗/Languages/Java/Multi-Threading/2. 스레딩 기초 - 생성",
