@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📗Docs📗/Settings/Windows Settings.md",
+                "file": "📗BackEnd📗/Server/Graphic 관련.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "꾸미",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗Docs📗/Settings/Windows Settings.md",
+                "file": "📗BackEnd📗/Server/Graphic 관련.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗Docs📗/Settings/Windows Settings.md",
+                "file": "📗BackEnd📗/Server/Graphic 관련.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗Docs📗/Settings/Windows Settings.md"
+                "file": "📗BackEnd📗/Server/Graphic 관련.md"
               }
             }
           },
@@ -174,8 +174,9 @@
   },
   "active": "78923fb2ffac8683",
   "lastOpenFiles": [
-    "📗Docs📗/Settings/Mac Settings.md",
     "📗BackEnd📗/Server/개행 제거.md",
+    "📗Docs📗/Settings/Mac Settings.md",
+    "📗Docs📗/Settings/Windows Settings.md",
     "📗BackEnd📗/Server/Graphic 관련.md",
     "🚩Error🚩/Server/🚩 Nouveau Kernel Driver 제거.md",
     "imoji.md",
@@ -205,7 +206,6 @@
     "📗BackEnd📗/Message-Broker/RabbitMQ/New RabbitMQ.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/성능 파라미터.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/Clustering.md",
-    "📗BackEnd📗/Message-Broker/RabbitMQ/MQTT Client (React & TypeScript).md",
     "📗BackEnd📗/Languages/Java/Multi-Threading/4. 성능 최적화",
     "📗BackEnd📗/Languages/Java/Multi-Threading/3. 스레딩 기초 - 조정",
     "📗BackEnd📗/Languages/Java/Multi-Threading/2. 스레딩 기초 - 생성",
