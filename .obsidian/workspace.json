@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📗DataBase📗/MariaDB/BackUp.md",
+                "file": "🚩Error🚩/Server/🚩 Nouveau Kernel Driver 제거.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗DataBase📗/MariaDB/BackUp.md",
+                "file": "🚩Error🚩/Server/🚩 Nouveau Kernel Driver 제거.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗DataBase📗/MariaDB/BackUp.md",
+                "file": "🚩Error🚩/Server/🚩 Nouveau Kernel Driver 제거.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗DataBase📗/MariaDB/BackUp.md"
+                "file": "🚩Error🚩/Server/🚩 Nouveau Kernel Driver 제거.md"
               }
             }
           },
@@ -171,8 +171,9 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "78923fb2ffac8683",
+  "active": "2ce1a846a1685820",
   "lastOpenFiles": [
+    "📗DataBase📗/MariaDB/BackUp.md",
     "🚩Error🚩/Server/🚩 Nouveau Kernel Driver 제거.md",
     "📗BackEnd📗/Server/Graphic 관련.md",
     "📗BackEnd📗/Server/개행 제거.md",
@@ -185,7 +186,6 @@
     "📗BackEnd📗/Languages/Java/Concurrency/ReentrantLock.md",
     "📗BackEnd📗/Server",
     "📗BackEnd📗/Languages/Java/Concurrency",
-    "📗DataBase📗/MariaDB/BackUp.md",
     "📗GPU📗/Ubuntu-OpenGL.md",
     "📗GPU📗",
     "📗BackEnd📗/Frameworks/Spring/ConfigFile 지정.md",
