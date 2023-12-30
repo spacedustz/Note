@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/무제 파일.md",
+                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/Ubuntu Port 변경.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/무제 파일.md",
+                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/Ubuntu Port 변경.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/무제 파일.md",
+                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/Ubuntu Port 변경.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/무제 파일.md"
+                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/Ubuntu Port 변경.md"
               }
             }
           },
@@ -174,7 +174,7 @@
   "active": "78923fb2ffac8683",
   "lastOpenFiles": [
     "📗BackEnd📗/Server/GUI Repair.md",
-    "📗BackEnd📗/Message-Broker/RabbitMQ/무제 파일.md",
+    "📗BackEnd📗/Message-Broker/RabbitMQ/Ubuntu Port 변경.md",
     "🚩Error🚩/Server/🚩 Nouveau Kernel Driver 제거.md",
     "📗DataBase📗/MariaDB/BackUp.md",
     "📗BackEnd📗/Server/Graphic 관련.md",
