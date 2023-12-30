@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📗BackEnd📗/Server/GUI Repair.md",
+                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/무제 파일.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗BackEnd📗/Server/GUI Repair.md",
+                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/무제 파일.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗BackEnd📗/Server/GUI Repair.md",
+                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/무제 파일.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗BackEnd📗/Server/GUI Repair.md"
+                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/무제 파일.md"
               }
             }
           },
@@ -173,8 +173,9 @@
   },
   "active": "78923fb2ffac8683",
   "lastOpenFiles": [
-    "🚩Error🚩/Server/🚩 Nouveau Kernel Driver 제거.md",
     "📗BackEnd📗/Server/GUI Repair.md",
+    "📗BackEnd📗/Message-Broker/RabbitMQ/무제 파일.md",
+    "🚩Error🚩/Server/🚩 Nouveau Kernel Driver 제거.md",
     "📗DataBase📗/MariaDB/BackUp.md",
     "📗BackEnd📗/Server/Graphic 관련.md",
     "📗BackEnd📗/Server/개행 제거.md",
@@ -204,7 +205,6 @@
     "README.md",
     "📗BackEnd📗/Convert/RTSP to HLS.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/New RabbitMQ.md",
-    "📗BackEnd📗/Message-Broker/RabbitMQ/성능 파라미터.md",
     "📗BackEnd📗/Languages/Java/Multi-Threading/4. 성능 최적화",
     "📗BackEnd📗/Languages/Java/Multi-Threading/3. 스레딩 기초 - 조정",
     "📗BackEnd📗/Languages/Java/Multi-Threading/2. 스레딩 기초 - 생성",
