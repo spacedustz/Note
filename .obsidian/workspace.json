@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/Ubuntu Port 변경.md",
+                "file": "📗Docs📗/Settings/Mac Settings.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "mac",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,7 +78,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -98,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/Ubuntu Port 변경.md",
+                "file": "📗Docs📗/Settings/Mac Settings.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/Ubuntu Port 변경.md",
+                "file": "📗Docs📗/Settings/Mac Settings.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/Ubuntu Port 변경.md"
+                "file": "📗Docs📗/Settings/Mac Settings.md"
               }
             }
           },
@@ -173,8 +174,8 @@
   },
   "active": "78923fb2ffac8683",
   "lastOpenFiles": [
-    "📗BackEnd📗/Server/GUI Repair.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/Ubuntu Port 변경.md",
+    "📗BackEnd📗/Server/GUI Repair.md",
     "🚩Error🚩/Server/🚩 Nouveau Kernel Driver 제거.md",
     "📗DataBase📗/MariaDB/BackUp.md",
     "📗BackEnd📗/Server/Graphic 관련.md",
