@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📗Docs📗/Settings/Mac Settings.md",
+                "file": "📗BackEnd📗/Server/Graphic 관련.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "mac",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,8 +78,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -99,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗Docs📗/Settings/Mac Settings.md",
+                "file": "📗BackEnd📗/Server/Graphic 관련.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗Docs📗/Settings/Mac Settings.md",
+                "file": "📗BackEnd📗/Server/Graphic 관련.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗Docs📗/Settings/Mac Settings.md"
+                "file": "📗BackEnd📗/Server/Graphic 관련.md"
               }
             }
           },
@@ -172,13 +171,14 @@
   },
   "active": "78923fb2ffac8683",
   "lastOpenFiles": [
+    "📗GPU📗/Ubuntu-OpenGL.md",
+    "📗Docs📗/Settings/Mac Settings.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/Ubuntu Port 변경.md",
     "📗BackEnd📗/Server/GUI Repair.md",
     "🚩Error🚩/Server/🚩 Nouveau Kernel Driver 제거.md",
     "📗DataBase📗/MariaDB/BackUp.md",
     "📗BackEnd📗/Server/Graphic 관련.md",
     "📗BackEnd📗/Server/개행 제거.md",
-    "📗Docs📗/Settings/Mac Settings.md",
     "📗Docs📗/Settings/Windows Settings.md",
     "imoji.md",
     "🚩Error🚩/Server",
@@ -187,7 +187,6 @@
     "📗BackEnd📗/Languages/Java/Concurrency/ReentrantLock.md",
     "📗BackEnd📗/Server",
     "📗BackEnd📗/Languages/Java/Concurrency",
-    "📗GPU📗/Ubuntu-OpenGL.md",
     "📗GPU📗",
     "📗BackEnd📗/Frameworks/Spring/ConfigFile 지정.md",
     "📗BackEnd📗/Frameworks/Spring/LogBack.md",
