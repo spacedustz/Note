@@ -30,9 +30,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "b980e1940547aa52",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📗BackEnd📗/Error Handling/Spring/N+1.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "88655c5768b745d1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -98,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "imoji.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "imoji.md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "imoji.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -171,8 +195,13 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "78923fb2ffac8683",
+  "active": "88655c5768b745d1",
   "lastOpenFiles": [
+    "📗BackEnd📗/Error Handling/Spring/N+1.md",
+    "conflict-files-obsidian-git.md",
+    "📗BackEnd📗/Message-Broker/RabbitMQ/성능 파라미터.md",
+    "📗BackEnd📗/Message-Broker/RabbitMQ/Clustering.md",
+    "imoji.md",
     "📗Docs📗/Settings/Mac Settings.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/Ubuntu Port 변경.md",
     "📗BackEnd📗/Server/GUI Repair.md",
@@ -181,7 +210,6 @@
     "📗BackEnd📗/Server/Graphic 관련.md",
     "📗BackEnd📗/Server/개행 제거.md",
     "📗Docs📗/Settings/Windows Settings.md",
-    "imoji.md",
     "🚩Error🚩/Server",
     "🚩Error🚩",
     "📗BackEnd📗/Server/Ubuntu GUI.md",
@@ -200,11 +228,7 @@
     "📗BackEnd📗/Converter/Parse Json.md",
     "📗BackEnd📗/Converter/Parse CSV.md",
     "📗BackEnd📗/Converter/Live Streaming 이해하기.md",
-    "📗BackEnd📗/Converter/FFmpeg.md",
     "📗BackEnd📗/Converter",
-    "README.md",
-    "📗BackEnd📗/Convert/RTSP to HLS.md",
-    "📗BackEnd📗/Message-Broker/RabbitMQ/New RabbitMQ.md",
     "📗BackEnd📗/Languages/Java/Multi-Threading/4. 성능 최적화",
     "📗BackEnd📗/Languages/Java/Multi-Threading/3. 스레딩 기초 - 조정",
     "📗BackEnd📗/Languages/Java/Multi-Threading/2. 스레딩 기초 - 생성",
