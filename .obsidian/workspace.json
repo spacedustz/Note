@@ -110,6 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "📗BackEnd📗/Error Handling/Spring/N+1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,6 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "📗BackEnd📗/Error Handling/Spring/N+1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "conflict-files-obsidian-git.md"
+                "file": "📗BackEnd📗/Error Handling/Spring/N+1.md"
               }
             }
           },
@@ -181,10 +183,10 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "2ce1a846a1685820",
+  "active": "b980e1940547aa52",
   "lastOpenFiles": [
-    "📗BackEnd📗/Error Handling/Spring/N+1.md",
     "conflict-files-obsidian-git.md",
+    "📗BackEnd📗/Error Handling/Spring/N+1.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/성능 파라미터.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/Clustering.md",
     "imoji.md",
