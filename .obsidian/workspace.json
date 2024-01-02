@@ -42,21 +42,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "88655c5768b745d1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "conflict-files-obsidian-git.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -122,7 +110,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +126,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -195,7 +181,7 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "88655c5768b745d1",
+  "active": "2ce1a846a1685820",
   "lastOpenFiles": [
     "📗BackEnd📗/Error Handling/Spring/N+1.md",
     "conflict-files-obsidian-git.md",
