@@ -73,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "stash pop",
+                "query": "-Dconfig",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -184,7 +184,7 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "b980e1940547aa52",
+  "active": "1f8860850a8475f5",
   "lastOpenFiles": [
     "📗Ops-Tools📗/Management & Tool/Git/Git.md",
     "📗Docs📗/Project Documents/Document/개발환경 세팅 & 가이드 - 1.md",
