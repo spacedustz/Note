@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📗BackEnd📗/Frameworks/Spring/Jar Start Option.md",
+                "file": "📗Ops-Tools📗/Management & Tool/Git/Git.md",
                 "mode": "source",
                 "source": false
               }
@@ -73,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "git stash",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -90,7 +90,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -110,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗BackEnd📗/Frameworks/Spring/Jar Start Option.md",
+                "file": "📗Ops-Tools📗/Management & Tool/Git/Git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗BackEnd📗/Frameworks/Spring/Jar Start Option.md",
+                "file": "📗Ops-Tools📗/Management & Tool/Git/Git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗BackEnd📗/Frameworks/Spring/Jar Start Option.md"
+                "file": "📗Ops-Tools📗/Management & Tool/Git/Git.md"
               }
             }
           },
