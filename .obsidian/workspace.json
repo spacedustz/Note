@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📗BackEnd📗/Error Handling/Spring/N+1.md",
+                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/RabbitMQ-Custom-Installation.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗BackEnd📗/Error Handling/Spring/N+1.md",
+                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/RabbitMQ-Custom-Installation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗BackEnd📗/Error Handling/Spring/N+1.md",
+                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/RabbitMQ-Custom-Installation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗BackEnd📗/Error Handling/Spring/N+1.md"
+                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/RabbitMQ-Custom-Installation.md"
               }
             }
           },
@@ -185,8 +185,8 @@
   },
   "active": "b980e1940547aa52",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
     "📗BackEnd📗/Error Handling/Spring/N+1.md",
+    "conflict-files-obsidian-git.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/성능 파라미터.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/Clustering.md",
     "imoji.md",
