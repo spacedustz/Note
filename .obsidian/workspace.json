@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/RabbitMQ-Custom-Installation.md",
+                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/On-Linux.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/RabbitMQ-Custom-Installation.md",
+                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/On-Linux.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/RabbitMQ-Custom-Installation.md",
+                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/On-Linux.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/RabbitMQ-Custom-Installation.md"
+                "file": "📗BackEnd📗/Message-Broker/RabbitMQ/On-Linux.md"
               }
             }
           },
@@ -185,13 +185,17 @@
   },
   "active": "b980e1940547aa52",
   "lastOpenFiles": [
-    "📗BackEnd📗/Error Handling/Spring/N+1.md",
-    "conflict-files-obsidian-git.md",
+    "📗BackEnd📗/Message-Broker/RabbitMQ/RabbitMQ-Custom-Installation.md",
+    "📗BackEnd📗/Message-Broker/RabbitMQ/RabbitMQ-Dead Letter Exchange-TTL.md",
+    "📗BackEnd📗/Message-Broker/RabbitMQ/Summary.md",
+    "📗BackEnd📗/Message-Broker/RabbitMQ/Ubuntu Port 변경.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/성능 파라미터.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/Clustering.md",
+    "📗BackEnd📗/Message-Broker/RabbitMQ/MQTT Client (React & TypeScript).md",
+    "📗BackEnd📗/Error Handling/Spring/N+1.md",
+    "conflict-files-obsidian-git.md",
     "imoji.md",
     "📗Docs📗/Settings/Mac Settings.md",
-    "📗BackEnd📗/Message-Broker/RabbitMQ/Ubuntu Port 변경.md",
     "📗BackEnd📗/Server/GUI Repair.md",
     "🚩Error🚩/Server/🚩 Nouveau Kernel Driver 제거.md",
     "📗DataBase📗/MariaDB/BackUp.md",
@@ -212,10 +216,6 @@
     "📗기능개발📗/데이터 시뮬레이터.md",
     "📗DataBase📗/MariaDB/Partitioning.md",
     "📗BackEnd📗/Frameworks/Spring/Expression Languege.md",
-    "📗BackEnd📗/Converter/RTSP to HLS.md",
-    "📗BackEnd📗/Converter/Parse Json.md",
-    "📗BackEnd📗/Converter/Parse CSV.md",
-    "📗BackEnd📗/Converter/Live Streaming 이해하기.md",
     "📗BackEnd📗/Converter",
     "📗BackEnd📗/Languages/Java/Multi-Threading/4. 성능 최적화",
     "📗BackEnd📗/Languages/Java/Multi-Threading/3. 스레딩 기초 - 조정",
