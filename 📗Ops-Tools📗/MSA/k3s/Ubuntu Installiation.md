@@ -136,11 +136,19 @@ Private Container Registry는 별도의 네임스페이스에서 구성하겠습
 
 PVC와 PV를 이용해 **로컬 디스크 <-> Registry Pod**와 마운트 시켜줄겁니다.
 
-
-
 ```bash
 sudo kubectl create namespace hub
-
 sudo mkdir hub && cd hub
+```
 
+<br>
+
+준비가 된 후 Yaml을 작성합니다.
+
+```yaml
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: hub-pvc
+  namespace
 ```
