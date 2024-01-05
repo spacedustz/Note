@@ -10,15 +10,23 @@ k8s는 아직 다루고 있는 컨테이너의 수에 비해 무겁다고 느껴
 
 저는 Nvidia Container Runtime을 설치하였고 k3s는 이 엔진을 자동으로 적용합니다.
 
-> **Nvidia Container Runtime Engine 인식 확인 방법**
+> 🚩 **Nvidia Container Runtime Engine 인식 확인 방법**
 
 ```bash
 grep nvidia /var/lib/rancher/k3s/agent/etc/containerd/config.toml
 ```
 
+```
+[plugins."io.containerd.grpc.v1.cri".containerd.runtimes."nvidia"]
+[plugins."io.containerd.grpc.v1.cri".containerd.runtimes."nvidia".options]
+  BinaryName = "/usr/bin/nvidia-container-runtime"
+```
+
 
 
 > 🚩 **설치 스크립트 실행**
+
+- k3s 설치는 curl 명령 1번으로 간단하게 설치됩니다.
 
 ```bash
 sudo apt -y update
