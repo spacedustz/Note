@@ -143,7 +143,10 @@ sudo mkdir hub && cd hub
 
 <br>
 
-> **PVC 생성**
+> 🚩 **PVC 생성**
+
+- Storage Class로 hub-sc를 사용합니다.
+- 영구 스토리지를 위해 10GB의 공간을 생성합니다.
 
 ```yaml
 apiVersion: v1
