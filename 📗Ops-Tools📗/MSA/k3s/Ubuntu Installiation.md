@@ -143,6 +143,19 @@ sudo mkdir hub && cd hub
 
 <br>
 
+> 🚩 **StorageClass 생성**
+
+```yaml
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: local-storage
+provisioner: k8s.io/no-provisioner
+volumeBindingMode: WaitForFirstConsumer
+```
+
+<br>
+
 > 🚩 **PVC 생성 : hub-pvc.yaml**
 
 - Storage Class로 hub-sc를 사용합니다.
