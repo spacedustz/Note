@@ -10,7 +10,8 @@ k3s 설치는 CLI로 진행하여 CLI Arguments에 실행옵션을 다양하게 
 
 > **다중 Configuration 적용**
 
-
+- 기본적인 Config 파일은 알파벳 순서로 읽힙니다.
+- `/etc/rancher/k3s/config.yaml.d/*.yaml` 키의 마지막 값이 사용됩니다.
 
 ## Installation
 
