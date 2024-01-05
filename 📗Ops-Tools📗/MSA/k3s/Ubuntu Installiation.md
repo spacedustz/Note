@@ -18,3 +18,15 @@ curl -sfL https://get.k3s.io | K3S_URL=https://myserver:6443 K3S_TOKEN=mynodetok
 
 <br>
 
+> **사용 포트**
+
+- 일반적인 경우 6443만 열면 됩니다.
+
+|규약|포트|원천|목적지|설명|
+|---|---|---|---|---|
+|TCP|2379-2380|서버|서버|etcd가 내장된 HA에만 필요합니다.|
+|TCP|6443|자치령 대표|서버|K3s 감독자 및 Kubernetes API 서버|
+|UDP|8472|모든 노드|모든 노드|Flannel VXLAN에만 필요|
+|TCP|10250|모든 노드|모든 노드|Kubelet 측정항목|
+|UDP|51820|모든 노드|모든 노드|IPv4를 사용하는 Flannel Wireguard에만 필요합니다.|
+|UDP|51821|모든 노드|모든 노드|IPv6를 사용하는 Flannel Wireguard에만 필요합니다.|
