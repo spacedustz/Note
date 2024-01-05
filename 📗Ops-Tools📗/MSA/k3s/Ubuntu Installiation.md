@@ -165,7 +165,7 @@ spec:
 
 <br>
 
-**확인**
+**PVC, PV가 생성/ 생성됐는지 확인**
 
 ```bash
 kubectl get pvc -n hub
