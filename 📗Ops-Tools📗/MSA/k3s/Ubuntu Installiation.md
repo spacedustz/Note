@@ -1,5 +1,7 @@
 ## 📘 Lightweight Kubernetes
 
+
+
 > 🚩 **설치 스크립트 실행**
 
 ```bash
@@ -83,3 +85,6 @@ node-label:
 
 K3s의 기본 CNI Plugin은 Flannel을 사용합니다.
 
+CNI는 쿠버네티스의 노드간 네트워킹을 수행하는 네트워크 인터페이스이며,
+
+모든 노드가 동일한 CNI를 사용해야 정상적으로 노드간 통신이 가능합니다.
