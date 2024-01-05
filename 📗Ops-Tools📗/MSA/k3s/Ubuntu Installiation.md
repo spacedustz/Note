@@ -149,8 +149,8 @@ sudo mkdir hub && cd hub
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
 metadata:
-  name: local-storage
-provisioner: k8s.io/no-provisioner
+  name: 
+provisioner: rancher.io/local-path
 volumeBindingMode: WaitForFirstConsumer
 ```
 
