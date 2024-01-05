@@ -1,6 +1,6 @@
-## Lightweight Kubernetes
+## 📘 Lightweight Kubernetes
 
-> **설치 스크립트 실행**
+> 🚩 **설치 스크립트 실행**
 
 ```bash
 sudo apt -y update
@@ -10,7 +10,7 @@ sudo curl -sfL https://get.k3s.io | sh -
 
 <br>
 
-> **Node 추가 방법**
+> 🚩 **Node 추가 방법**
 
 ```bash
 curl -sfL https://get.k3s.io | K3S_URL=https://myserver:6443 K3S_TOKEN=mynodetoken sh -
@@ -18,7 +18,7 @@ curl -sfL https://get.k3s.io | K3S_URL=https://myserver:6443 K3S_TOKEN=mynodetok
 
 <br>
 
-> **사용 포트**
+> 🚩 **사용 포트**
 
 - 일반적인 경우 6443만 열면 됩니다.
 
@@ -32,9 +32,7 @@ curl -sfL https://get.k3s.io | K3S_URL=https://myserver:6443 K3S_TOKEN=mynodetok
 |UDP|51821|모든 노드|모든 노드|IPv6를 사용하는 Flannel Wireguard에만 필요합니다.|
 
 ---
-## Configuration
-
-> **Configuration**
+## 📘 Configuration
 
 [K3s CLI Arguments](https://docs.k3s.io/kr/installation/configuration)
 
@@ -54,7 +52,7 @@ cluster-init: true
 
 <br>
 
-> **다중 Configuration 적용**
+> 🚩 **다중 Configuration 적용**
 
 - 기본적인 Config 파일은 알파벳 순서로 읽힙니다.
 - `/etc/rancher/k3s/config.yaml.d/*.yaml` 이름에서 특정키의 마지막 값이 사용됩니다.
