@@ -143,22 +143,9 @@ sudo mkdir hub && cd hub
 
 <br>
 
-> 🚩 **StorageClass 생성**
-
-```yaml
-apiVersion: storage.k8s.io/v1
-kind: StorageClass
-metadata:
-  name: hub-storage
-provisioner: rancher.io/local-path
-volumeBindingMode: WaitForFirstConsumer
-```
-
-<br>
-
 > 🚩 **PVC 생성 : hub-pvc.yaml**
 
-- Storage Class로 hub-sc를 사용합니다.
+- Storage Class는 Default Storage Class를 사용합니다.
 - 영구 스토리지에 위해 10GB를 할당 합니다.
 
 ```yaml
@@ -170,7 +157,7 @@ metadata:
 spec:
   accessModes:
     - ReadWriteOnce
-  storageClassName: hub-sc
+  storageClassName: local-path
   resources:
     requests:
       storage: 20Gi
