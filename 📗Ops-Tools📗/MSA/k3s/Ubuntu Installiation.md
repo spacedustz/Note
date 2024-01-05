@@ -150,5 +150,12 @@ apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   name: hub-pvc
-  namespace
+  namespace: hub
+spec:
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: hub-sc
+  resources:
+    requests:
+      storage: 20Gi
 ```
