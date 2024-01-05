@@ -77,3 +77,9 @@ node-label:
 ```
 
 위에서 여러개의 Yaml을 선언했으며 최종 적용된 yaml은 test2.yaml 파일 입니다.
+
+---
+## 📘 CNI (Container Network Interface)
+
+K3s의 기본 CNI Plugin은 Flannel을 사용합니다.
+
