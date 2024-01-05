@@ -11,7 +11,28 @@ k3s 설치는 CLI로 진행하여 CLI Arguments에 실행옵션을 다양하게 
 > **다중 Configuration 적용**
 
 - 기본적인 Config 파일은 알파벳 순서로 읽힙니다.
-- `/etc/rancher/k3s/config.yaml.d/*.yaml` 키의 마지막 값이 사용됩니다.
+- `/etc/rancher/k3s/config.yaml.d/*.yaml` 이름에서 특정키의 마지막 값이 사용됩니다.
+
+```yaml
+# config.yaml  
+token: boop  
+node-label:  
+- foo=bar  
+- bar=baz  
+  
+  
+# config.yaml.d/test1.yaml  
+write-kubeconfig-mode: 600  
+  
+  
+# config.yaml.d/test2.yaml  
+write-kubeconfig-mode: 777  
+node-label:  
+- other=what  
+- foo=three
+```
+
+위에서 여러개의 Yaml을 선언했으며 최종 적용된 yaml은 test2.yaml 파일 입니다.
 
 ## Installation
 
