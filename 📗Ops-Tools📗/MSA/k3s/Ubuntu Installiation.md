@@ -143,9 +143,8 @@ sudo mkdir hub && cd hub
 
 <br>
 
-> 🚩 **PVC 생성**
+> 🚩 **PVC 생성 : pvc.yaml**
 
-- ****
 - Storage Class로 hub-sc를 사용합니다.
 - 영구 스토리지에 위해 10GB를 할당 합니다.
 
@@ -162,4 +161,13 @@ spec:
   resources:
     requests:
       storage: 20Gi
+```
+
+<br>
+
+**확인**
+
+```bash
+kubectl get pvc -n hub
+kubectl get pv -n hub
 ```
