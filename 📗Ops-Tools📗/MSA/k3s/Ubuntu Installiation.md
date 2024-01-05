@@ -1,5 +1,7 @@
 ## Lightweight Kubernetes
 
+k3s 설치는 CLI로 진행하여 CLI Arguments에 실행옶
+
 > **설치 스크립트 실행**
 
 ```bash
