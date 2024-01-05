@@ -1,6 +1,8 @@
 ## Lightweight Kubernetes
 
-k3s 설치는 CLI로 진행하여 CLI Arguments에 실행옶
+k3s 설치는 CLI로 진행하여 CLI Arguments에 실행옵션을 다양하게 줄 수 있습니다.
+
+또한 CLI Argument 대신 `/etc/rancher/k3s/config.yaml`에 파일을 생성해도 적용됩니다.
 
 > **설치 스크립트 실행**
 
