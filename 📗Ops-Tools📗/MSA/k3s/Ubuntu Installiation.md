@@ -6,7 +6,15 @@ k8s는 아직 다루고 있는 컨테이너의 수에 비해 무겁다고 느껴
 
 <br>
 
-쿠버네티스의 
+쿠버네티스의 Default Container Runtime Engine은 `containerd`를 사용하지만,
+
+저는 Nvidia Container Runtime을 설치하였고 k3s는 이 엔진을 자동으로 적용합니다.
+
+> **Nvidia Container Runtime Engine 인식 확인 방법**
+
+```bash
+grep nvidia /var/lib/rancher/k3s/agent/etc/containerd/config.toml
+```
 
 
 
