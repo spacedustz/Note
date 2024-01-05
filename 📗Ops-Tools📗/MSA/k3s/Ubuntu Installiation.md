@@ -143,7 +143,7 @@ sudo mkdir hub && cd hub
 
 <br>
 
-> 🚩 **PVC 생성 : pvc.yaml**
+> 🚩 **PVC 생성 : hub-pvc.yaml**
 
 - Storage Class로 hub-sc를 사용합니다.
 - 영구 스토리지에 위해 10GB를 할당 합니다.
@@ -165,9 +165,10 @@ spec:
 
 <br>
 
-**PVC, PV가 생성/ 생성됐는지 확인**
+**PVC, PV가 생성 / 생성됐는지 확인**
 
 ```bash
+kubectl apply -f hub-pvc.yaml
 kubectl get pvc -n hub
 kubectl get pv -n hub
 ```
