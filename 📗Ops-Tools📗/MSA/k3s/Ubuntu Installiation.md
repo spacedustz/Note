@@ -143,7 +143,7 @@ sudo mkdir hub && cd hub
 
 <br>
 
-준비가 된 후 Yaml을 작성합니다.
+> **PVC 생성**
 
 ```yaml
 apiVersion: v1
