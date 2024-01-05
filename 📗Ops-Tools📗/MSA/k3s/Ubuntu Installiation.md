@@ -20,6 +20,10 @@ sudo curl -sfL https://get.k3s.io | sh -
 
 ```bash
 curl -sfL https://get.k3s.io | K3S_URL=https://myserver:6443 K3S_TOKEN=mynodetoken sh -
+
+sudo mkdir ~/.kube
+sudo cp /etc/rancher/k3s/k3s.yaml ~/.kube/config && sudo chown $USER ~/.kube/config
+sudo chmod 600 ~/.kube/config && export KUBECONFIG=~/.kube/config
 ```
 
 <br>
