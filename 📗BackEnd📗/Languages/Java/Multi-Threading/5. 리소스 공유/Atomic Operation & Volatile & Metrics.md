@@ -221,3 +221,10 @@ public class TimeAverage {
 22:42:33.293 [Thread-2] INFO com.thread.share.TimeAverage -- 현재 Average 값 : 5.427350427350428
 22:42:33.394 [Thread-2] INFO com.thread.share.TimeAverage -- 현재 Average 값 : 5.442488262910798
 ```
+
+---
+## 📘 Summary
+
+위 코드를 토대로 어떤 연산이 동기화 없이도 안전하게 수행될 수 있는지, 원자적인 연산인지에 대해 좀 더 알아 보았습니다.
+
+위 작업으
