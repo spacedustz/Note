@@ -148,3 +148,13 @@ Process finished with exit code 0
 
 >  🚩 **synchoronized의 두번째 사용법**
 
+임계 영역으로 간주되는 코드 블럭을 정의하고 synchronized 키워드를 이용해, 
+
+전체 함수가 아닌 특정 영역의 액세스만 제어하는 방법입니다.
+
+```java
+public class ClassWithCriticalSections {
+	public syncronized void function1() {}
+	public syncronized void function2() {}
+}
+```
