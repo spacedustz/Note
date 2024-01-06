@@ -98,4 +98,5 @@ public class InventoryCounter {
 
 > 🚩 **이유는?**
 
-- items는 Heap에 속하는
+-  Counter 내부 클래스의 items 변수는 Heap에 속하는 클래스 멤버이기 떄문에 스레드 간 공유됩니다.
+- 
