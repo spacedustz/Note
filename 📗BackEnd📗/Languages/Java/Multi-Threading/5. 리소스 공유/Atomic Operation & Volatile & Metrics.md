@@ -71,4 +71,12 @@ Thread Safe한 원자적 연산이 가능하게 됩니다.
 
 ## 📘 Use Case - Metrics
 
-어플리케이션 제작 단계에서 앱을 실행할 때, 중요한 연산이나 코드의 일부가
+어플리케이션 제작 단계에서 앱을 실행할 때
+
+중요한 연산이나 코드 작업 시간이 얼마나 걸리는지 측정하는 경우가 많습니다.
+
+```java
+public class SomeBusinessLogicClass {
+	public void
+}
+```
