@@ -138,7 +138,9 @@ Process finished with exit code 0
 
 | 실행 스레드 | increment / decrement |
 | ---- | ---- |
-| i | current <- items =0 |
-| new <- current + 1 = 1 | new <- current + 1 = 1 |
-|  | current <- items =0 |
-|  | new <- current - 1 = 1 |
+| increment | current <- items =0 |
+| increment | new <- current + 1 = 1 |
+| decrement | current <- items =0 |
+| decrement | new <- current - 1 = -1 |
+| increment | new <- current + 1 = 2 |
+| increment | new <- current + 1 = 3 |
