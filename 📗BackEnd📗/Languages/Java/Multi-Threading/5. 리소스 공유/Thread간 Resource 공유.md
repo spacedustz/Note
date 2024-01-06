@@ -122,4 +122,6 @@ Process finished with exit code 0
 > 🚩 **`items++`이 Atopic Operation이 아닌 이유**
 
 - `items++`작업은 1개의 작업이 아닌 내부적으로 3개의 작업을 처리합니다.
-- 먼저, 메모리에 저장된 items의 현재 값을
+- 먼저, 메모리에 저장된 items의 현재 값을 가져옵니다. - `currnutValue = 0`
+- 현재 값에 1을 더합니다.
+- 더한 결과를 items 변수에 저장합니다.
