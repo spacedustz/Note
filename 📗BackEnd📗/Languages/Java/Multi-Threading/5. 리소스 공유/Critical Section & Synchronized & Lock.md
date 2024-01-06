@@ -27,7 +27,21 @@ void aggregateFunction() {
 
 만약 동시에 실행되지 않게 보호해야 하는 코드가 있는 영역을 **임계영역**이라고 하며,
 
-그 임계영역을 **진입점**과 **진출점**으로 감싸
+그 임계영역을 **진입점**과 **진출점**으로 감싸 보겠습니다.
+
+```java
+void aggregateFunction() {
+	// Enter Critical Section
+	operation1();
+	operation1();
+	operation1();
+	operation1();
+	// Exit Critical Section
+	...
+}
+```
+
+혀
 
 > 🚩 **Concurrency 문제**
 
