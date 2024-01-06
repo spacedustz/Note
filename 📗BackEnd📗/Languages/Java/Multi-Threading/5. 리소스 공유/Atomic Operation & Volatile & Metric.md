@@ -58,4 +58,11 @@
 
 - long과 double은 길이가 64비트여서 Java에서 보장 해주지 않습니다.
 - 64비트 기반 컴퓨터의 경우에도 long이나 double에 Write 작업을 하면 실제로 CPU 2개를 사용해 연산을 할 가능성이 높습니다.
-- 그래서 long / double 을 사용할 때 `volatile` 키워드를 사용하면
+
+<br>
+
+위의 이유로 long / double 을 사용할 때 `volatile` 키워드를 사용하면 해당 변수에 Read / Write 작업이,
+
+Thread Safe한 원자적 연산이 가능하게 됩니다.
+
+내부적으로 보면 2개의 하드웨어 연산이 아닌, 1개의 하드웨어 연산으로 작업을 수행하는게 보장됩니다.
