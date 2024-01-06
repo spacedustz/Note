@@ -138,9 +138,14 @@ Process finished with exit code 0
 
 | 실행 스레드 | increment / decrement |
 | ---- | ---- |
-| increment | current <- items =0 |
-| increment | new <- current + 1 = 1 |
-| decrement | current <- items =0 |
+| **increment** | current <- items =0 |
+| **increment** | new <- current + 1 = 1 |
+| decrement | current <- items = 0 |
 | decrement | new <- current - 1 = -1 |
-| increment | new <- current + 1 = 2 |
-| increment | new <- current + 1 = 3 |
+| **increment** | new <- current + 1 = 2 |
+| **increment** | new <- current + 1 = 3 |
+위 표에서 **increment**부분만 보면 increment 스레드는 decrement가 무슨 작업을 수행 하는지 전혀 모르고,
+
+메모리에 있는 items를 가져와 현재 값에 1을 더하기만 할 뿐입니다.
+
+실행 순서가 엉망이고 만약 두 스레드의 마지막 작업이 increment이며 더해진 
