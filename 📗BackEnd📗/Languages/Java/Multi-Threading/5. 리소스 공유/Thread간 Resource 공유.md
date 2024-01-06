@@ -136,4 +136,6 @@ Process finished with exit code 0
 
 | increment | decrementi |
 | ---- | ---- |
-| currentValu |  |
+| current <- items =0 | current <- items =0 |
+| new <- current + 1 = 1 | new <- current - 1 = 1 |
+|  |  |
