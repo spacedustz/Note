@@ -15,5 +15,20 @@ Race Condition의 솔루션으로는 지난번 포스팅 했던 글을 봤을떄
 Race Condition이 일어나는 Critical Section을 동기화 블럭에 넣어 보호한다고 배웠습니다.
 
 ```java
-public sync
+public synchronized void increment() {
+	// 임계 영역 진입점
+	items++;
+	// 임계 영역 진출점
+}
+
+public synchronized void decrement() {
+	// 임계 영역 진입점
+	items--;
+	// 임계 영역 진출점
+}
 ```
+
+<br>
+
+그럼 Data Race는 무엇일까요?
+
