@@ -134,6 +134,8 @@ Process finished with exit code 0
 
 그래서 매번 다른 결과값이 나오게 되는 것입니다.
 
+만약 스레드의 실행순서를 아래와 같이 해
+
 | increment | decrementi |
 | ---- | ---- |
 | current <- items =0 | current <- items =0 |
