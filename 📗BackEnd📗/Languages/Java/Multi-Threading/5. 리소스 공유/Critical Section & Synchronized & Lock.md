@@ -179,3 +179,4 @@ public class ClassWithCriticalSections {
 
 <br>
 
+즉, 전체 함수를 동기화할 필요 없이 로직을 실행하는데 필요한 최소한만 남겨두고 최소화 하는게 좋습니다.
