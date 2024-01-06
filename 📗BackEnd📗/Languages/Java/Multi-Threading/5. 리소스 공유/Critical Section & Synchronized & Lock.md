@@ -187,6 +187,8 @@ public class ClassWithCriticalSections {
 
 이전 포스팅 코드를 예시로 2번쨰 방법을 다뤄보겠습니다.
 
+**클래스 내부에 Lock 객체를 만들고, Synchronized 블럭을 만들어서 Lock 객체에 동기화를 시켜주었습니다.**
+
 ```java
 @Slf4j  
 public class InventoryCounter {  
@@ -204,12 +206,12 @@ public class InventoryCounter {
         log.info("현재 아이템 개수 : {}", counter.getItems());  
     }  
   
-    /* Item을 관리하는 Counter */    private static class Counter {  
+    /* Item을 관리하는 Counter */    
+    private static class Counter {  
         private int items = 0;  
         Object lock = new Object(); // Lock 객체  
   
         public void increment() {  
-            // Synchronized 블럭을 만들어서 Lock 객체에 동기화 시킴  
             synchronized (this.lock) {  
                 items++;  
             }  
@@ -240,3 +242,4 @@ Process finished with exit code 0
 <br>
 
 함수 내부에 필요한 영역만 임계영역으로 최소화해 지정했음에도 정확한 결과값인 0이 나오고 있습니다.
+
