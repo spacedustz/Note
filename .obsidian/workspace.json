@@ -183,8 +183,9 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "b980e1940547aa52",
+  "active": "2ce1a846a1685820",
   "lastOpenFiles": [
+    "📗BackEnd📗/Languages/Java/Multi-Threading/6. Race Condition & Dead Lock",
     "imoji.md",
     "📗BackEnd📗/Languages/Java/Multi-Threading/5. 리소스 공유/Atomic Operation & Volatile & Metrics.md",
     "📗BackEnd📗/Languages/Java/Multi-Threading/5. 리소스 공유/Critical Section & Synchronized & Lock.md",
@@ -212,7 +213,6 @@
     "📗DataBase📗/MariaDB/BackUp.md",
     "📗BackEnd📗/Server/Graphic 관련.md",
     "📗BackEnd📗/Server/개행 제거.md",
-    "📗Docs📗/Settings/Windows Settings.md",
     "🚩Error🚩/Server",
     "🚩Error🚩",
     "📗BackEnd📗/Server",
