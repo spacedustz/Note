@@ -133,3 +133,7 @@ Process finished with exit code 0
 2개의 스레드니까 각자 작업을 할것이고, 실행되는 순서는 스레드를 스케줄링하는 방식에 따라 달라집니다.
 
 그래서 매번 다른 결과값이 나오게 되는 것입니다.
+
+| increment | decrementi |
+| ---- | ---- |
+| currentValu |  |
