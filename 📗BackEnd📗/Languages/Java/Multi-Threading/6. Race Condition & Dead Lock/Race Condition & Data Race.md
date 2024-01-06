@@ -59,4 +59,5 @@ public class SharedClass {
 
 <br>
 
-위 코드에서 x와 y가 두 스레드에
+위 코드에서 x와 y가 두 스레드에 의해 실행될 때 함수가 **InterLeave**하지 않으면 `x == y`가 됩니다.
+
