@@ -154,7 +154,15 @@ Process finished with exit code 0
 
 ```java
 public class ClassWithCriticalSections {
-	public syncronized void function1() {}
-	public syncronized void function2() {}
+	Object lockingObject = new Object();
+	
+	public syncronized void function1() {
+		synchronized(lockingObject) {
+			... 
+			Critical Section
+			...
+		}
+	}
+	...
 }
 ```
