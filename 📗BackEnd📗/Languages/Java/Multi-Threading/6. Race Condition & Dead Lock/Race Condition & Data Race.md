@@ -32,3 +32,13 @@ public synchronized void decrement() {
 
 그럼 Data Race는 무엇일까요?
 
+```java
+public class SharedClass {
+	int x = 0;
+	int y = 0;
+
+	public void increment() {
+		
+	}
+}
+```
