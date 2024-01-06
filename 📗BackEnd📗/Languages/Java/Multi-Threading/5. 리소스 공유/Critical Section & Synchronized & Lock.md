@@ -1,4 +1,4 @@
-## 📘 Locking Machanism을 이용한 Concurrency 문제 방지
+## 📘 Critical Section & Synchronized with Lock
 
 [Thread 간 Resource 공유 시 발생할 수 있는 문제 - 지난 포스팅 글](https://iizz.tistory.com/432)
 
