@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/5. 리소스 공유/Thread간 Resource 공유.md",
+                "file": "📗Ops-Tools📗/MSA/k3s/Ubuntu Installiation.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,7 +94,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 202.5
+    "width": 237.5
   },
   "right": {
     "id": "f5151c0da72edc1c",
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/5. 리소스 공유/Thread간 Resource 공유.md",
+                "file": "📗Ops-Tools📗/MSA/k3s/Ubuntu Installiation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/5. 리소스 공유/Thread간 Resource 공유.md",
+                "file": "📗Ops-Tools📗/MSA/k3s/Ubuntu Installiation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/5. 리소스 공유/Thread간 Resource 공유.md"
+                "file": "📗Ops-Tools📗/MSA/k3s/Ubuntu Installiation.md"
               }
             }
           },
@@ -160,7 +160,9 @@
             "state": {
               "type": "all-properties",
               "state": {
-                "sortOrder": "frequency"
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
               }
             }
           }
@@ -183,10 +185,10 @@
   },
   "active": "b980e1940547aa52",
   "lastOpenFiles": [
-    "imoji.md",
     "📗BackEnd📗/Languages/Java/Multi-Threading/5. 리소스 공유/Thread간 Resource 공유.md",
-    "📗Ops-Tools📗/MSA/k3s/Ubuntu Installiation.md",
     "📗BackEnd📗/Languages/Java/Multi-Threading/5. 리소스 공유",
+    "imoji.md",
+    "📗Ops-Tools📗/MSA/k3s/Ubuntu Installiation.md",
     "📗Ops-Tools📗/Management & Tool/Git/Git.md",
     "📗Ops-Tools📗/MSA/k3s",
     "📗Docs📗/Project Documents/Document/개발환경 세팅 & 가이드 - 1.md",
