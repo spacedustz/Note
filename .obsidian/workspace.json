@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/5. 리소스 공유/Critical Section & Synchronized & Lock.md",
+                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/5. 리소스 공유/무제 파일.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/5. 리소스 공유/Critical Section & Synchronized & Lock.md",
+                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/5. 리소스 공유/무제 파일.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/5. 리소스 공유/Critical Section & Synchronized & Lock.md",
+                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/5. 리소스 공유/무제 파일.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/5. 리소스 공유/Critical Section & Synchronized & Lock.md"
+                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/5. 리소스 공유/무제 파일.md"
               }
             }
           },
@@ -185,8 +185,9 @@
   },
   "active": "b980e1940547aa52",
   "lastOpenFiles": [
-    "imoji.md",
     "📗BackEnd📗/Languages/Java/Multi-Threading/5. 리소스 공유/Critical Section & Synchronized & Lock.md",
+    "📗BackEnd📗/Languages/Java/Multi-Threading/5. 리소스 공유/무제 파일.md",
+    "imoji.md",
     "📗BackEnd📗/Languages/Java/Multi-Threading/5. 리소스 공유/Thread간 Resource 공유.md",
     "📗GPU📗/Ubuntu-OpenGL.md",
     "conflict-files-obsidian-git.md",
@@ -214,7 +215,6 @@
     "📗Docs📗/Settings/Windows Settings.md",
     "🚩Error🚩/Server",
     "🚩Error🚩",
-    "📗BackEnd📗/Server/Ubuntu GUI.md",
     "📗BackEnd📗/Server",
     "📗BackEnd📗/Languages/Java/Concurrency",
     "📗GPU📗",
