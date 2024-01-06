@@ -66,3 +66,24 @@ public class InventoryCounter {
 }
 ```
 
+<br>
+
+위 코드를 실행하면 Item 10000개를 추가하고 10000개를 감소 시켜서 main 스레드의 값은 0 으로 나옵니다.
+
+하지만 Thread의 실행순서를 이렇게 제어 하면 어떻게 나올까요?
+
+```java
+    public static void main(String[] args) throws InterruptedException {  
+        Counter counter = new Counter();  
+        IncrementingThread increment = new IncrementingThread(counter);  
+        DecrementingThread decrement = new DecrementingThread(counter);  
+  
+        increment.start();  
+        increment.join();  
+  
+        decrement.start();  
+        decrement.join();  
+  
+        log.info("현재 아이템 개수 : {}", counter.getItems());  
+    } 
+```
