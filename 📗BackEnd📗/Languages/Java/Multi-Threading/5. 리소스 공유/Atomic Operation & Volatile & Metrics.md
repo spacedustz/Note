@@ -77,6 +77,12 @@ Thread Safe한 원자적 연산이 가능하게 됩니다.
 
 ```java
 public class SomeBusinessLogicClass {
-	public void
+	public void time() {
+		long start = System.currentTimeMillis();
+		// Important Operation
+		long end = System.currentTimeMillis();
+	}
 }
 ```
+
+이런 작업의 소요 시간은 클라이언트의 입력값 데이터와 코드가 ㅅ
