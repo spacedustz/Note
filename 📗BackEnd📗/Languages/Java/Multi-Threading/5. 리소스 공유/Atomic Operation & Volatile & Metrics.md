@@ -96,3 +96,6 @@ public class SomeBusinessLogicClass {
 
 Duration을 캡쳐하는 Metrics 클래스를 만들어 예시로 보겠습니다.
 
+```java
+
+```
