@@ -42,9 +42,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "4021188ba4aa9093",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -110,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/5. 리소스 공유/Thread간 Resource 공유.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/5. 리소스 공유/Thread간 Resource 공유.md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/5. 리소스 공유/Thread간 Resource 공유.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -181,10 +193,11 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "b980e1940547aa52",
+  "active": "4021188ba4aa9093",
   "lastOpenFiles": [
-    "imoji.md",
     "📗BackEnd📗/Languages/Java/Multi-Threading/5. 리소스 공유/Thread간 Resource 공유.md",
+    "conflict-files-obsidian-git.md",
+    "imoji.md",
     "📗Ops-Tools📗/MSA/k3s/Ubuntu Installiation.md",
     "📗BackEnd📗/Languages/Java/Multi-Threading/5. 리소스 공유",
     "📗Ops-Tools📗/Management & Tool/Git/Git.md",
@@ -200,7 +213,6 @@
     "📗BackEnd📗/Message-Broker/RabbitMQ/Clustering.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/MQTT Client (React & TypeScript).md",
     "📗BackEnd📗/Error Handling/Spring/N+1.md",
-    "conflict-files-obsidian-git.md",
     "📗Docs📗/Settings/Mac Settings.md",
     "📗BackEnd📗/Server/GUI Repair.md",
     "🚩Error🚩/Server/🚩 Nouveau Kernel Driver 제거.md",
