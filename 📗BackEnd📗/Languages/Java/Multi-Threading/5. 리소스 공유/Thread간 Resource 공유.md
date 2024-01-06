@@ -99,4 +99,5 @@ public class InventoryCounter {
 > 🚩 **이유는?**
 
 -  Counter 내부 클래스의 items 변수는 Heap에 속하는 클래스 멤버이기 떄문에 스레드 간 공유됩니다.
-- 
+- 스레드 내부에서 실행시키는 `items++`, `items--` 작업은 동시에 실행되므로 각각 단일 작업이 아닙니다.
+- 즉 , 원자적인 작입
