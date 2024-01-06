@@ -79,11 +79,23 @@ public class InventoryCounter {
         DecrementingThread decrement = new DecrementingThread(counter);  
   
         increment.start();  
-        increment.join();  
-  
-        decrement.start();  
+        decrement.start();
+        
+        increment.join();    
         decrement.join();  
   
         log.info("현재 아이템 개수 : {}", counter.getItems());  
     } 
 ```
+
+```
+18:54:57.036 [main] INFO com.thread.share.InventoryCounter -- 현재 아이템 개수 : -1625
+```
+
+출력값이 전혀 맞지않고 숫자도 랜덤하게 나오게 됩니다.
+
+<br>
+
+> 🚩 **이유는?**
+
+- items는 Heap에 속하는
