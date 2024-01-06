@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/5. 리소스 공유/Critical Section & Synchronized & Lock.md",
+                "file": "📗Ops-Tools📗/MSA/k3s/Ubuntu Installiation.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,7 +94,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 237.5
   },
   "right": {
     "id": "f5151c0da72edc1c",
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/5. 리소스 공유/Critical Section & Synchronized & Lock.md",
+                "file": "📗Ops-Tools📗/MSA/k3s/Ubuntu Installiation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/5. 리소스 공유/Critical Section & Synchronized & Lock.md",
+                "file": "📗Ops-Tools📗/MSA/k3s/Ubuntu Installiation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/5. 리소스 공유/Critical Section & Synchronized & Lock.md"
+                "file": "📗Ops-Tools📗/MSA/k3s/Ubuntu Installiation.md"
               }
             }
           },
@@ -185,13 +185,12 @@
   },
   "active": "b980e1940547aa52",
   "lastOpenFiles": [
-    "imoji.md",
     "📗BackEnd📗/Languages/Java/Multi-Threading/5. 리소스 공유/Critical Section & Synchronized & Lock.md",
-    "📗GPU📗/Ubuntu-OpenGL.md",
-    "conflict-files-obsidian-git.md",
+    "📗BackEnd📗/Languages/Java/Multi-Threading/5. 리소스 공유/무제 파일.md",
     "📗BackEnd📗/Languages/Java/Multi-Threading/5. 리소스 공유/Thread간 Resource 공유.md",
-    "📗Ops-Tools📗/MSA/k3s/Ubuntu Installiation.md",
     "📗BackEnd📗/Languages/Java/Multi-Threading/5. 리소스 공유",
+    "imoji.md",
+    "📗Ops-Tools📗/MSA/k3s/Ubuntu Installiation.md",
     "📗Ops-Tools📗/Management & Tool/Git/Git.md",
     "📗Ops-Tools📗/MSA/k3s",
     "📗Docs📗/Project Documents/Document/개발환경 세팅 & 가이드 - 1.md",
@@ -205,6 +204,7 @@
     "📗BackEnd📗/Message-Broker/RabbitMQ/Clustering.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/MQTT Client (React & TypeScript).md",
     "📗BackEnd📗/Error Handling/Spring/N+1.md",
+    "conflict-files-obsidian-git.md",
     "📗Docs📗/Settings/Mac Settings.md",
     "📗BackEnd📗/Server/GUI Repair.md",
     "🚩Error🚩/Server/🚩 Nouveau Kernel Driver 제거.md",
