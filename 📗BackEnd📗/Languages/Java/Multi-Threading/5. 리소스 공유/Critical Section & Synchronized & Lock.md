@@ -65,7 +65,7 @@ void aggregateFunction() {
 
 Concurrency 문제를 해결하는 가장 간단한 솔루션은 Java에서 지원하는 `synchronized` 키워드를 이용해,
 
-함수를 동기화 시키는 것입니
+함수를 동기화 시키는 것입니다.
 
 <br>
 
@@ -91,3 +91,5 @@ public class ClassWithCriticalSections {
 ```
 
 예를 들어 Thread A가 function1을 실행하면 다른 스레드인 Thread B는 function1,2 모두 실행할 수 없습니다.
+
+쉽게 설명하면 위의 동기화된 synchronized 함수들은 1개의 방에 대한 각각의 문으로 생각하면 됩니다.
