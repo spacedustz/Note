@@ -57,3 +57,6 @@ public class SharedClass {
 }
 ```
 
+<br>
+
+위 코드에서 x와 y가 두 스레드에
