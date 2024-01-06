@@ -96,7 +96,15 @@ public class SomeBusinessLogicClass {
 
 > 🚩 **스레드의 수행 시간(Duration)을 캡쳐하는 간단한 프로그램 예시**
 
-아래 코드에서 눈여겨 봐야할 건 Metrics 클래스의 `average` 변수 옆에 붙은 `v`
+아래 코드에서 눈여겨 봐야할 건 Metrics 클래스의 `average` 변수 옆에 붙은 `volatile` 키워드와,
+
+바로 아래 `synchronized` 키워드가 적용된 동기화 함수입니다.
+
+<br>
+
+우선 동기화된 appSample 함수는 코드 자체가 synchronized가 없으면,
+
+여러 스레드가 동시에 average와 countㄹ
 
 ```java
 @Slf4j  
