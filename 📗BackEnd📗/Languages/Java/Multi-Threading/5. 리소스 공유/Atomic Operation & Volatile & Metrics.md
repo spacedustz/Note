@@ -1,4 +1,4 @@
-## 📘 Atomic Operation & Volatile & Metrics
+## 📘 Atomic Operation의 판단 기준
 
 원자적인 연산(Atomic Operation)을 판단하는 기준이 뭘까요?
 
@@ -69,4 +69,6 @@ Thread Safe한 원자적 연산이 가능하게 됩니다.
 
 ---
 
-## Use Case - Metrics
+## 📘 Use Case - Metrics
+
+어플리케이션 제작 단계에서 앱을 실행할 때, 중요한 연산이나 코드의 일부가
