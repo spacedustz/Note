@@ -112,4 +112,32 @@ Thread A가 1번 문(function1())으로 들어가면 다른 문들은 모두 잠
 
 <br>
 
-그리고, 다시 메인 메서드에서 실행순서를 랜덤하게 실행되도록 제어
+그리고, 다시 메인 메서드에서 실행순서를 랜덤하게 실행되도록 제어해 보겠습니다.
+
+여러번 계속 실행해도 0으로 같은 값이 나오고 있습니다.
+
+여러 스레드가 공유된 객체에서 함수를 실행함에도 불구하고
+
+```java
+public static void main(String[] args) throws InterruptedException {  
+    Counter counter = new Counter();  
+    IncrementingThread increment = new IncrementingThread(counter);  
+    DecrementingThread decrement = new DecrementingThread(counter);  
+  
+    increment.start();  
+    decrement.start();  
+  
+    increment.join();  
+    decrement.join();  
+  
+    log.info("현재 아이템 개수 : {}", counter.getItems());  
+}
+```
+
+**출력값**
+
+```
+20:14:38.740 [main] INFO com.thread.share.InventoryCounter -- 현재 아이템 개수 : 0
+
+Process finished with exit code 0
+```
