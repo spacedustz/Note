@@ -56,14 +56,14 @@
 
 > 🚩 **long / double이 Atomic Operation이 아닌 이유**
 
-- long과 double은 길이가 64비트여서 Java에서 보장 해주지 않습니다.
+- long과 double은 길이가 64비트여서 Java에서 데이터 일관성을 보장 해주지 않습니다.
 - 64비트 기반 컴퓨터의 경우에도 long이나 double에 Write 작업을 하면 실제로 CPU 2개를 사용해 연산을 할 가능성이 높습니다.
 
 <br>
 
-위의 이유로 long / double 을 사용할 때 `volatile` 키워드를 사용하면 해당 변수에 Read / Write 작업이,
+위의 이유로 long / double 을 사용할 때 `volatile` 키워드를 사용하면 해당 변수의 Read / Write 작업이,
 
-Thread Safe한 원자적 연산이 가능하게 됩니다.
+Thread Safe한 원자적 연산을 가능하게 됩니다.
 
 내부적으로 보면 2개의 하드웨어 연산이 아닌, 1개의 하드웨어 연산으로 작업을 수행하는걸 보장합니다.
 
@@ -104,7 +104,7 @@ public class SomeBusinessLogicClass {
 
 우선 **동기화된 appSample 함수**는 코드 자체가 synchronized가 없으면,
 
-여러 스레드가 동시에 average와 count를 수정할때 데이터의 일관성을 보장하기 위해 동기화 시켜 주었습니다.
+여러 스레드가 동시에 average와 count를 수정할때 데이터의 일관성을 보장하기 힘들게 때문에 동기화 시켜 주었습니다.
 
 <br>
 
