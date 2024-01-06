@@ -94,7 +94,7 @@ public class SomeBusinessLogicClass {
 
 <br>
 
-> 🚩 스레드의 수행 시간 Duration을 캡쳐하는 간단한 프로그램 예시
+> 🚩 **스레드의 수행 시간(Duration)을 캡쳐하는 간단한 프로그램 예시**
 
 ```java
 @Slf4j  
