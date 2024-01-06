@@ -112,7 +112,8 @@ public class SomeBusinessLogicClass {
 
 - 단순히 외부에서 Getter를 쓸때 Reference & Primitive 타입의 Read 작업은 동기화가 필요없습니다.
 - 하지만, double 형은 Thread-Safe한 다른 Primitive 형과 달리 long, double은 Thread-Safe 보장이 안됩니다.
-- 그래서 `volatile` 키워드를 사용해 변수를 메인 메모리에 직접 저장
+- 그래서 `volatile` 키워드를 사용해 변수를 메인 메모리에 직접 저장하고 읽을떄도 메인 메모리에서 읽도록 보장해주는 키워드입니다.
+- 즉, 메인 메모리에서 값을 읽고 씀으로써 항상 최신의 값을 보장하여 가시성 문제를 방지합니다.
 
 ```java
 @Slf4j  
