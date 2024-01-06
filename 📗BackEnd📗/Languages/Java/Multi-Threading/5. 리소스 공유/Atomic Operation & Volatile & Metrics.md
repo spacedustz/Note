@@ -1,4 +1,4 @@
-## 📘 Atomic Operation & Volatile & Metric
+## 📘 Atomic Operation & Volatile & Metrics
 
 원자적인 연산(Atomic Operation)을 판단하는 기준이 뭘까요?
 
@@ -65,14 +65,8 @@
 
 Thread Safe한 원자적 연산이 가능하게 됩니다.
 
-내부적으로 보면 2개의 하드웨어 연산이 아닌, 1개의 하드웨어 연산으로 작업을 수행하는게 보장됩니다.
+내부적으로 보면 2개의 하드웨어 연산이 아닌, 1개의 하드웨어 연산으로 작업을 수행하는걸 보장합니다.
 
-<br>
+---
 
-Java가 동시 실행 Atomic 패키지에 원자적 연산이 가능하고 Lock이 걸리지 않은 상태의 다른 클래스들도,
-
-다수 지원합니다.
-
-<br>
-
-d
+## Use Case - Metrics

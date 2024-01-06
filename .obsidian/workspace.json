@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/5. 리소스 공유/Atomic Operation & Volatile & Metric.md",
+                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/5. 리소스 공유/Atomic Operation & Volatile & Metrics.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/5. 리소스 공유/Atomic Operation & Volatile & Metric.md",
+                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/5. 리소스 공유/Atomic Operation & Volatile & Metrics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/5. 리소스 공유/Atomic Operation & Volatile & Metric.md",
+                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/5. 리소스 공유/Atomic Operation & Volatile & Metrics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/5. 리소스 공유/Atomic Operation & Volatile & Metric.md"
+                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/5. 리소스 공유/Atomic Operation & Volatile & Metrics.md"
               }
             }
           },
@@ -186,7 +186,7 @@
   "active": "b980e1940547aa52",
   "lastOpenFiles": [
     "imoji.md",
-    "📗BackEnd📗/Languages/Java/Multi-Threading/5. 리소스 공유/Atomic Operation & Volatile & Metric.md",
+    "📗BackEnd📗/Languages/Java/Multi-Threading/5. 리소스 공유/Atomic Operation & Volatile & Metrics.md",
     "📗BackEnd📗/Languages/Java/Multi-Threading/5. 리소스 공유/Critical Section & Synchronized & Lock.md",
     "📗BackEnd📗/Languages/Java/Multi-Threading/5. 리소스 공유/Thread간 Resource 공유.md",
     "📗GPU📗/Ubuntu-OpenGL.md",
