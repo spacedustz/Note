@@ -96,6 +96,8 @@ public class SomeBusinessLogicClass {
 
 > 🚩 **스레드의 수행 시간(Duration)을 캡쳐하는 간단한 프로그램 예시**
 
+아래 코드에서 눈여겨 봐야할 건 Metrics 클래스의 `average` 변수 옆에 붙은 `v`
+
 ```java
 @Slf4j  
 public class TimeAverage {  
