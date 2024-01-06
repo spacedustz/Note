@@ -123,5 +123,9 @@ Process finished with exit code 0
 
 - `items++`작업은 1개의 작업이 아닌 내부적으로 3개의 작업을 처리합니다.
 - 먼저, 메모리에 저장된 items의 현재 값을 가져옵니다. - `currnutValue = 0`
-- 현재 값에 1을 더합니다.
-- 더한 결과를 items 변수에 저장합니다.
+- 현재 값에 1을 더합니다. - `new Value <- currentValue + 1 = 1`
+- 더한 결과를 items 변수에 저장합니다. - `items <- newValue = 1`
+
+<br>
+
+그럼 생각해 볼 수 있는게 위 예시 코드처럼 2개의 스레드에서 각각 더하고, 빼는 작업을 수행할땔
