@@ -8,7 +8,7 @@
 
 ---
 
-## 예시
+## 📘 예시
 
 바로 예시 코드를 한 번 보겠습니다.
 
@@ -29,7 +29,8 @@ public class InventoryCounter {
         log.info("현재 아이템 개수 : {}", counter.getItems());  
     }  
   
-    /* Item을 관리하는 Counter */    private static class Counter {  
+    /* Item을 관리하는 Counter */    
+    private static class Counter {  
         private int items = 0;  
   
         public void increment() { items++; }  
@@ -37,7 +38,8 @@ public class InventoryCounter {
         public int getItems() { return items; }  
     }  
   
-    /* Item을 10000개 증가 시키는 스레드 */    @RequiredArgsConstructor  
+    /* Item을 10000개 증가 시키는 스레드 */    
+    @RequiredArgsConstructor  
     public static class IncrementingThread extends Thread {  
         private final Counter counter;  
   
@@ -49,7 +51,8 @@ public class InventoryCounter {
         }  
     }  
   
-    /* Item을 10000개 감소 시키는 스레드 */    @RequiredArgsConstructor  
+    /* Item을 10000개 감소 시키는 스레드 */    
+    @RequiredArgsConstructor  
     public static class DecrementingThread extends Thread {  
         private final Counter counter;  
   
@@ -62,3 +65,4 @@ public class InventoryCounter {
     }  
 }
 ```
+
