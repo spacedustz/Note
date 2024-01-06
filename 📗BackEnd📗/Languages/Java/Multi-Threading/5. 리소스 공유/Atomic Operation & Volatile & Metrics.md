@@ -227,4 +227,6 @@ public class TimeAverage {
 
 위 코드를 토대로 어떤 연산이 동기화 없이도 안전하게 수행될 수 있는지, 원자적인 연산인지에 대해 좀 더 알아 보았습니다.
 
-위 작업으
+위 작업은 double / long을 제외한 Primitive Type에 대한 할당 작업과 Reference에 대한 할당작업,
+
+volatile 키워드를 사용한 double / long에 대한 할당이었습니다.
