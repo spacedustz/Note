@@ -106,6 +106,10 @@ Thread A가 1번 문(function1())으로 들어가면 다른 문들은 모두 잠
   
     public synchronized void increment() { items++; }  
     public synchronized void decrement() { items--; }  
-    public int getItems() { return items; }  
+    public synchronized int getItems() { return items; }  
 }
 ```
+
+<br>
+
+그리고, 다시 메인 메서드에서 실행순서를 랜덤하게 실행되도록 제어
