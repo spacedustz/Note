@@ -116,8 +116,6 @@ Thread A가 1번 문(function1())으로 들어가면 다른 문들은 모두 잠
 
 여러번 계속 실행해도 0으로 같은 값이 나오고 있습니다.
 
-여러 스레드가 공유된 객체에서 함수를 실행함에도 불구하고
-
 ```java
 public static void main(String[] args) throws InterruptedException {  
     Counter counter = new Counter();  
@@ -141,3 +139,7 @@ public static void main(String[] args) throws InterruptedException {
 
 Process finished with exit code 0
 ```
+
+이제 여러 스레드가 공유된 객체에서 함수를 실행함에도 불구하고,
+
+1번에 스레드 1개씩 임계 영역을 실행하는 걸 제한할 수 있게 되었습니다..
