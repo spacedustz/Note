@@ -102,9 +102,15 @@ public class SomeBusinessLogicClass {
 
 <br>
 
-우선 동기화된 appSample 함수는 코드 자체가 synchronized가 없으면,
+우선 **동기화된 appSample 함수**는 코드 자체가 synchronized가 없으면,
 
-여러 스레드가 동시에 average와 countㄹ
+여러 스레드가 동시에 average와 count를 수정할때 데이터의 일관성을 보장하기 위해 동기화 시켜 주었습니다.
+
+<br>
+
+그리고 Metrics 클래스의 average 변수에 붙은 `volatile` 키워드를 붙인 이유는 다음과 같습니다.
+
+- 단순히 외부에서 Getter를 쓸때 Reference & Primi
 
 ```java
 @Slf4j  
