@@ -61,4 +61,10 @@ void aggregateFunction() {
 
 ---
 
-📘🚩
+## 📘 Synchronized
+
+Concurrency 문제를 해결하는 가장 간단한 솔루션은 Java에서 지원하는 `synchronized` 키워드입니다.
+
+<br>
+
+> **synchronized**
