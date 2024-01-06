@@ -1,4 +1,4 @@
-## 📘 Thread 간 Heap 객체를 공유할때 발생하는 임계영역 문제
+## 📘 Critical Section을 이용한 Concurrency 문제 방지
 
 [Thread 간 Resource 공유 시 발생할 수 있는 문제 - 지난 포스팅 글](https://iizz.tistory.com/432)
 
@@ -51,9 +51,5 @@ void aggregateFunction() {
 
 처음 들어간 A스레드가 종료되어 임계영역에서 나갈 떄 까지 Suspend 될 것입니다.
 
-이런 식으로 동작하면 Concurrency 문제를 걱정할 필요 없이
-
-
-
-> 🚩 **Concurrency 문제**
+이런 식으로 동작하면 Concurrency 문제를 걱정할 필요 없이 **모든 수의 개별 작업에 대한 원자성을 확보** 할 수 있습니다.
 
