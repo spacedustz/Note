@@ -185,4 +185,5 @@ public class ClassWithCriticalSections {
 
 <br>
 
-이전 포스팅 코드에서 예시를 다시 보겠
+이전 포스팅 코드를 예시로 2번쨰 방법을 다뤄보겠습니다.
+
