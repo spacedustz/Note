@@ -69,7 +69,7 @@ Thread Safe한 원자적 연산이 가능하게 됩니다.
 
 ---
 
-## 📘 Use Case - Metrics
+## 📘 Use Case - Metrics Capturing
 
 어플리케이션 제작 단계에서 앱을 실행할 때
 
@@ -230,3 +230,7 @@ public class TimeAverage {
 위 작업은 double / long을 제외한 Primitive Type에 대한 할당 작업과 Reference에 대한 할당작업,
 
 volatile 키워드를 사용한 double / long에 대한 할당이었습니다.
+
+<br>
+
+원자적 연산은 멀티스레드 어
