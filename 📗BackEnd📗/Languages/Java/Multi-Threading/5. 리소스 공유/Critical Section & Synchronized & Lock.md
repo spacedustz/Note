@@ -101,7 +101,8 @@ Thread A가 1번 문(function1())으로 들어가면 다른 문들은 모두 잠
 이제 이전 포스팅 글에서 다뤘던 Counter 클래스의 메서드에 synchronized 키워드를 붙여 보겠습니다.
 
 ```java
-/* Item을 관리하는 Counter */private static class Counter {  
+/* Item을 관리하는 Counter */
+private static class Counter {  
     private int items = 0;  
   
     public synchronized void increment() { items++; }  
