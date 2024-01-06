@@ -110,7 +110,9 @@ public class SomeBusinessLogicClass {
 
 그리고 Metrics 클래스의 average 변수에 붙은 `volatile` 키워드를 붙인 이유는 다음과 같습니다.
 
-- 단순히 외부에서 Getter를 쓸때 Reference & Primi
+- 단순히 외부에서 Getter를 쓸때 Reference & Primitive 타입의 Read 작업은 동기화가 필요없습니다.
+- 하지만, double 형은 Thread-Safe한 다른 Primitive 형과 달리 long, double은 Thread-Safe 보장이 안됩니다.
+- 그래서 `volatile` 키워드를 사용해 변수를 메인 메모리에 직접 저장
 
 ```java
 @Slf4j  
