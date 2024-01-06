@@ -63,4 +63,8 @@ public class SharedClass {
 
 > 😯 **InterLeaving 이란?**
 
-병렬처리를 위한 기법으로 
+병렬처리를 위한 기법으로 InterLeaving과 Overlapping이 있습니다.
+
+Interleaving은 멀티스레딩을 구현하기 위해 처리기가 하나여도 여러개의 프로세스를 번갈아 실행하며,
+
+마치 병렬적으로 처리되고 있는듯 보이게 하는 멀티프로세싱 기법입니다.
