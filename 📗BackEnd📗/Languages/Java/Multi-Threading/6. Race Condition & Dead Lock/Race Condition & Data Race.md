@@ -38,7 +38,14 @@ public class SharedClass {
 	int y = 0;
 
 	public void increment() {
-		
+		x++;
+		y++;
+	}
+
+	public void checkForDataRace() {
+		if (y > x) {
+			throw new DataRaceException("불가능한 결과값 발생")	;
+		}
 	}
 }
 ```
