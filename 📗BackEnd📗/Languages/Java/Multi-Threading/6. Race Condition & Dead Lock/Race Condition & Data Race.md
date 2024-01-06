@@ -33,7 +33,9 @@ public synchronized void decrement() {
 
 그럼 Data Race는 무엇일까요?
 
-아래 예시 코드의 SharedClass는 2개으 먼저 보겠습니다.
+아래 예시 코드의 SharedClass는 2개의 스레드로 실행될 것입니다.
+
+Thread A는 `increment()`를 실행시키고 Thread B는 `checkForDataRace()`를 실행시켜 불변성을 체크합니다.
 
 ```java
 @Slf4j  
