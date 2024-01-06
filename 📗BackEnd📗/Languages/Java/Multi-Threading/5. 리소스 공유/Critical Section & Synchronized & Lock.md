@@ -93,3 +93,5 @@ public class ClassWithCriticalSections {
 예를 들어 Thread A가 function1을 실행하면 다른 스레드인 Thread B는 function1,2 모두 실행할 수 없습니다.
 
 쉽게 설명하면 위의 동기화된 synchronized 함수들은 1개의 방에 대한 각각의 문으로 생각하면 됩니다.
+
+Thread A가 1번 문(function1())으로 들어가면 다른 문들은 모두 잠겨서 Thread B는 못 들어가게 되는 원리입니다.
