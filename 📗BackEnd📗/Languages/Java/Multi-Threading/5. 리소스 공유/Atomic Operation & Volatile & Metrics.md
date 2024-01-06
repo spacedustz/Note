@@ -94,7 +94,7 @@ public class SomeBusinessLogicClass {
 
 <br>
 
-Duration을 캡쳐하는 Metrics 클래스를 만들어 예시로 보겠습니다.
+> 🚩 스레드의 수행 시간 Duration을 캡쳐하는 간단한 프로그램 예시
 
 ```java
 @Slf4j  
@@ -175,4 +175,30 @@ public class TimeAverage {
 
 <br>
 
-**추**
+**출력값**
+
+```
+22:42:31.171 [Thread-2] INFO com.thread.share.TimeAverage -- 현재 Average 값 : 4.975
+22:42:31.277 [Thread-2] INFO com.thread.share.TimeAverage -- 현재 Average 값 : 5.012195121951219
+22:42:31.377 [Thread-2] INFO com.thread.share.TimeAverage -- 현재 Average 값 : 5.049586776859504
+22:42:31.478 [Thread-2] INFO com.thread.share.TimeAverage -- 현재 Average 값 : 5.100628930817612
+22:42:31.578 [Thread-2] INFO com.thread.share.TimeAverage -- 현재 Average 값 : 5.1794871794871815
+22:42:31.679 [Thread-2] INFO com.thread.share.TimeAverage -- 현재 Average 값 : 5.413333333333336
+22:42:31.779 [Thread-2] INFO com.thread.share.TimeAverage -- 현재 Average 값 : 5.42145593869732
+22:42:31.880 [Thread-2] INFO com.thread.share.TimeAverage -- 현재 Average 값 : 5.427609427609432
+22:42:31.980 [Thread-2] INFO com.thread.share.TimeAverage -- 현재 Average 값 : 5.42388059701493
+22:42:32.081 [Thread-2] INFO com.thread.share.TimeAverage -- 현재 Average 값 : 5.448648648648649
+22:42:32.182 [Thread-2] INFO com.thread.share.TimeAverage -- 현재 Average 값 : 5.463054187192118
+22:42:32.286 [Thread-2] INFO com.thread.share.TimeAverage -- 현재 Average 값 : 5.37250554323725
+22:42:32.386 [Thread-2] INFO com.thread.share.TimeAverage -- 현재 Average 값 : 5.3117408906882595
+22:42:32.487 [Thread-2] INFO com.thread.share.TimeAverage -- 현재 Average 값 : 5.333333333333331
+22:42:32.588 [Thread-2] INFO com.thread.share.TimeAverage -- 현재 Average 값 : 5.319298245614034
+22:42:32.689 [Thread-2] INFO com.thread.share.TimeAverage -- 현재 Average 값 : 5.263843648208466
+22:42:32.789 [Thread-2] INFO com.thread.share.TimeAverage -- 현재 Average 값 : 5.315789473684206
+22:42:32.890 [Thread-2] INFO com.thread.share.TimeAverage -- 현재 Average 값 : 5.338235294117644
+22:42:32.991 [Thread-2] INFO com.thread.share.TimeAverage -- 현재 Average 값 : 5.393258426966289
+22:42:33.092 [Thread-2] INFO com.thread.share.TimeAverage -- 현재 Average 값 : 5.422818791946306
+22:42:33.192 [Thread-2] INFO com.thread.share.TimeAverage -- 현재 Average 값 : 5.432778489116517
+22:42:33.293 [Thread-2] INFO com.thread.share.TimeAverage -- 현재 Average 값 : 5.427350427350428
+22:42:33.394 [Thread-2] INFO com.thread.share.TimeAverage -- 현재 Average 값 : 5.442488262910798
+```
