@@ -81,8 +81,12 @@ public class SomeBusinessLogicClass {
 		long start = System.currentTimeMillis();
 		// Important Operation
 		long end = System.currentTimeMillis();
+
+		long duration = end - start;
 	}
 }
 ```
 
-이런 작업의 소요 시간은 클라이언트의 입력값 데이터와 코드가 ㅅ
+이런 작업의 소요 시간은 클라이언트의 입력값 데이터와 코드가 실행되는 HW, OS 환경 등 여러 요인에 의해 달라집니다.
+
+해당 연산들의 Duration을 잘 캡쳐해서 성능 문제를 찾아내야 합니다.
