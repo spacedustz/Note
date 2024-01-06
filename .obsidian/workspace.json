@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/5. 리소스 공유/Thread간 Resource 공유.md",
+                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/5. 리소스 공유/무제 파일.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/5. 리소스 공유/Thread간 Resource 공유.md",
+                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/5. 리소스 공유/무제 파일.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/5. 리소스 공유/Thread간 Resource 공유.md",
+                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/5. 리소스 공유/무제 파일.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/5. 리소스 공유/Thread간 Resource 공유.md"
+                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/5. 리소스 공유/무제 파일.md"
               }
             }
           },
@@ -185,8 +185,9 @@
   },
   "active": "b980e1940547aa52",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
     "📗BackEnd📗/Languages/Java/Multi-Threading/5. 리소스 공유/Thread간 Resource 공유.md",
+    "📗BackEnd📗/Languages/Java/Multi-Threading/5. 리소스 공유/무제 파일.md",
+    "conflict-files-obsidian-git.md",
     "imoji.md",
     "📗Ops-Tools📗/MSA/k3s/Ubuntu Installiation.md",
     "📗BackEnd📗/Languages/Java/Multi-Threading/5. 리소스 공유",
@@ -216,7 +217,6 @@
     "📗BackEnd📗/Languages/Java/Concurrency/ReentrantLock.md",
     "📗BackEnd📗/Server",
     "📗BackEnd📗/Languages/Java/Concurrency",
-    "📗GPU📗/Ubuntu-OpenGL.md",
     "📗GPU📗",
     "📗BackEnd📗/Converter",
     "📗BackEnd📗/Languages/Java/Multi-Threading/4. 성능 최적화",
