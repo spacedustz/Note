@@ -148,4 +148,9 @@ Process finished with exit code 0
 
 메모리에 있는 items를 가져와 현재 값에 1을 더하기만 할 뿐입니다.
 
-실행 순서가 엉망이고 만약 두 스레드의 마지막 작업이 increment이며 더해진 
+<br>
+
+실행 순서가 엉망이고 만약 두 스레드의 마지막 작업이 increment이며 더해진 값은 4632라고 한다면,
+
+결국 마지막 결과값인 items의 값은 4632로 overwirte되어 4632가 나오게 됩니다.
+
