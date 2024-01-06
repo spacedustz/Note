@@ -40,5 +40,5 @@
 
 - 모든 Reference 할당은 Atomic Operation(원자적 연산)입니다.
 - 즉, 참조를 하는 객체는 단일 연산을 통해 안전하게 변경할 수 있습니다.
-- 예를 들어 Referense르Getter / Setter가 원자적 연산의 대표적인 예입니다.
-- 위 경우 동기화를 시킬 필요가 없습니다.
+- 예를 들어 Reference를 가져오거나 배열,문자열 등 객체에 설정하는 작업인 Getter / Setter가 원자적 연산의 대표적인 예입니다.
+- 위 Getter / Setter의 경우 동기화를 시킬 필요가 없습니다.
