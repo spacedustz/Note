@@ -160,3 +160,5 @@ Process finished with exit code 0
 실행 순서가 엉망이고 만약 두 스레드의 마지막 작업이 increment이며 더해진 마지막 값은 4632라고 한다면,
 
 결국 마지막 결과값인 items의 값은 4632로 overwirte되어 4632가 나오게 됩니다.
+
+decrement가 작업한 감소 작업은 모두 없어진것과 같은 결과입니다.
