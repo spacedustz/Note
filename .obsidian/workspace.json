@@ -110,6 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/5. 리소스 공유/Critical Section & Synchronized & Lock.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,6 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/5. 리소스 공유/Critical Section & Synchronized & Lock.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "conflict-files-obsidian-git.md"
+                "file": "📗BackEnd📗/Languages/Java/Multi-Threading/5. 리소스 공유/Critical Section & Synchronized & Lock.md"
               }
             }
           },
@@ -181,8 +183,9 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "2ce1a846a1685820",
+  "active": "b980e1940547aa52",
   "lastOpenFiles": [
+    "📗GPU📗/Ubuntu-OpenGL.md",
     "📗BackEnd📗/Languages/Java/Multi-Threading/5. 리소스 공유/Critical Section & Synchronized & Lock.md",
     "conflict-files-obsidian-git.md",
     "📗BackEnd📗/Languages/Java/Multi-Threading/5. 리소스 공유/Thread간 Resource 공유.md",
@@ -212,7 +215,6 @@
     "🚩Error🚩/Server",
     "🚩Error🚩",
     "📗BackEnd📗/Server/Ubuntu GUI.md",
-    "📗BackEnd📗/Languages/Java/Concurrency/ReentrantLock.md",
     "📗BackEnd📗/Server",
     "📗BackEnd📗/Languages/Java/Concurrency",
     "📗GPU📗",
