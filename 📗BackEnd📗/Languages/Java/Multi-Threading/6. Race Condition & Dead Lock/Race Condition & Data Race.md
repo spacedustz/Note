@@ -61,3 +61,6 @@ public class SharedClass {
 
 위 코드에서 x와 y가 두 스레드에 의해 실행될 때 함수가 **InterLeave**하지 않으면 `x == y`가 됩니다.
 
+> 😯 **InterLeaving 이란?**
+
+병렬처리를 위한 기법으로 
