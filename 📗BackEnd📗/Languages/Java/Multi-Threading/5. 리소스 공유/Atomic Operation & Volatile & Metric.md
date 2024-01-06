@@ -50,4 +50,10 @@
 **long & double을 제외한 원시형에 대한 모든 할당**
 
 - 이 경우도 Atomic Operation에 해당합니다.
-- 위 원시형 타입 외 int,short,byte,float,char,boolean 모두 동기화 할 필요 없이 안전하게 Read
+- 위 원시형 타입 외 **int,short,byte,float,char,boolean** 모두 동기화 할 필요 없이 안전하게 Read / Write가 가능합니다.
+
+<br>
+
+> 🚩 **long / double이 Atomic Operation이 아닌 이유**
+
+- long과 double은 길이가 64
