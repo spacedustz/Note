@@ -243,3 +243,11 @@ Process finished with exit code 0
 
 함수 내부에 필요한 영역만 임계영역으로 최소화해 지정했음에도 정확한 결과값인 0이 나오고 있습니다.
 
+---
+
+## 📘 Synchronized Lock
+
+동기화 락과 관련해 중요한 점은,
+
+동기화 블럭이나 함수는 Reentrant. 즉, 재진입 할 수 있는 요소라는 점입니다.
+
