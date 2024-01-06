@@ -1,4 +1,4 @@
-## 📘 Race Condition & Data Race
+## 📘 Race Condition
 
 Race Condition이란 공유된 리소스에 접근하는 여러 스레드가 있을 때,
 
@@ -28,24 +28,30 @@ public synchronized void decrement() {
 }
 ```
 
-<br>
+---
+## 📘 Data Race
 
 그럼 Data Race는 무엇일까요?
 
+아래 예시 코드의 SharedClass는 2개으 먼저 보겠습니다.
+
 ```java
-public class SharedClass {
-	int x = 0;
-	int y = 0;
-
-	public void increment() {
-		x++;
-		y++;
-	}
-
-	public void checkForDataRace() {
-		if (y > x) {
-			throw new DataRaceException("불가능한 결과값 발생")	;
-		}
-	}
+@Slf4j  
+public class SharedClass {  
+    int x = 0;  
+    int y = 0;  
+  
+    public void increment() {  
+        x++;  
+        y++;  
+    }  
+  
+    /* 불변성 체크 함수 */    
+    public void checkForDataRace() {  
+        if (y > x) {  
+            log.error("불가능한 상황 발생");  
+        }  
+    }  
 }
 ```
+
