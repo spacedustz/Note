@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "imoji.md",
+                "file": "📗FrontEnd📗/Frameworks/React/Basic-Summary.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "imoji.md",
+                "file": "📗FrontEnd📗/Frameworks/React/Basic-Summary.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "imoji.md",
+                "file": "📗FrontEnd📗/Frameworks/React/Basic-Summary.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "imoji.md"
+                "file": "📗FrontEnd📗/Frameworks/React/Basic-Summary.md"
               }
             }
           },
@@ -185,6 +185,7 @@
   },
   "active": "b980e1940547aa52",
   "lastOpenFiles": [
+    "imoji.md",
     "📗Ops-Tools📗/Docker/Docker Basic & Docker File Syntax.md",
     "📗BackEnd📗/Languages/Java/Basic/Calendar.md",
     "📗Ops-Tools📗/Docker/Container Commit.md",
@@ -203,7 +204,6 @@
     "📗BackEnd📗/Languages/Java/Multi-Threading/5. 리소스 공유/무제 파일.md",
     "📗BackEnd📗/Languages/Java/Multi-Threading/5. 리소스 공유/Thread간 Resource 공유.md",
     "📗BackEnd📗/Languages/Java/Multi-Threading/5. 리소스 공유",
-    "imoji.md",
     "📗Ops-Tools📗/Management & Tool/Git/Git.md",
     "📗Ops-Tools📗/MSA/k3s",
     "📗Docs📗/Project Documents/Document/개발환경 세팅 & 가이드 - 1.md",
