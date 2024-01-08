@@ -146,7 +146,7 @@ sudo mkdir hub && cd hub
 > 🚩 **PVC 생성 : hub-pvc.yaml**
 
 - Storage Class는 Default Storage Class를 사용합니다.
-- 영구 스토리지에 위해 10GB를 할당 합니다.
+- 영구 스토리지를 위해 20GB를 할당 합니다.
 
 ```yaml
 apiVersion: v1
