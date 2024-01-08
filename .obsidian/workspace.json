@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📗DataBase📗/Dump.md",
+                "file": "📗DataBase📗/MariaDB/BackUp.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗DataBase📗/Dump.md",
+                "file": "📗DataBase📗/MariaDB/BackUp.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗DataBase📗/Dump.md",
+                "file": "📗DataBase📗/MariaDB/BackUp.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗DataBase📗/Dump.md"
+                "file": "📗DataBase📗/MariaDB/BackUp.md"
               }
             }
           },
@@ -183,12 +183,14 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "b980e1940547aa52",
+  "active": "2ce1a846a1685820",
   "lastOpenFiles": [
-    "📗DataBase📗/MariaDB/Partitioning.md",
     "📗DataBase📗/MariaDB/Docker.md",
     "📗DataBase📗/MariaDB/BackUp.md",
+    "📗DataBase📗/MariaDB/Dump.md",
+    "📗DataBase📗/MariaDB/Partitioning.md",
     "📗DataBase📗/MariaDB/유저 생성.md",
+    "📗Ops-Tools📗/MSA/gRPC/gRPC.md",
     "📗Ops-Tools📗/MSA/k3s/Ubuntu Installiation.md",
     "📗BackEnd📗/Languages/Java/Multi-Threading/6. Race Condition & Dead Lock/Race Condition & Data Race.md",
     "📗BackEnd📗/Languages/Java/Multi-Threading/6. Race Condition & Dead Lock",
@@ -212,8 +214,6 @@
     "📗BackEnd📗/Message-Broker/RabbitMQ/MQTT Client (React & TypeScript).md",
     "📗BackEnd📗/Error Handling/Spring/N+1.md",
     "conflict-files-obsidian-git.md",
-    "📗Docs📗/Settings/Mac Settings.md",
-    "📗BackEnd📗/Server/GUI Repair.md",
     "🚩Error🚩/Server",
     "🚩Error🚩",
     "📗BackEnd📗/Server",
