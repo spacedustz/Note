@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📗DataBase📗/MariaDB/BackUp.md",
+                "file": "📗DataBase📗/MariaDB/유저 생성.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗DataBase📗/MariaDB/BackUp.md",
+                "file": "📗DataBase📗/MariaDB/유저 생성.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗DataBase📗/MariaDB/BackUp.md",
+                "file": "📗DataBase📗/MariaDB/유저 생성.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗DataBase📗/MariaDB/BackUp.md"
+                "file": "📗DataBase📗/MariaDB/유저 생성.md"
               }
             }
           },
@@ -185,8 +185,8 @@
   },
   "active": "b980e1940547aa52",
   "lastOpenFiles": [
-    "📗DataBase📗/MariaDB/유저 생성.md",
     "📗DataBase📗/MariaDB/BackUp.md",
+    "📗DataBase📗/MariaDB/유저 생성.md",
     "📗DataBase📗/MariaDB/Docker.md",
     "📗DataBase📗/MariaDB/Dump.md",
     "📗DataBase📗/MariaDB/Partitioning.md",
