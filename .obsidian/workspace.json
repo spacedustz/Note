@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📗DataBase📗/MariaDB/명령어 모음.md",
+                "file": "📗Ops-Tools📗/Docker/Container Commit.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗DataBase📗/MariaDB/명령어 모음.md",
+                "file": "📗Ops-Tools📗/Docker/Container Commit.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗DataBase📗/MariaDB/명령어 모음.md",
+                "file": "📗Ops-Tools📗/Docker/Container Commit.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗DataBase📗/MariaDB/명령어 모음.md"
+                "file": "📗Ops-Tools📗/Docker/Container Commit.md"
               }
             }
           },
@@ -185,9 +185,10 @@
   },
   "active": "b980e1940547aa52",
   "lastOpenFiles": [
+    "📗DataBase📗/MariaDB/명령어 모음.md",
+    "📗Ops-Tools📗/Docker/Container Commit.md",
     "📗DataBase📗/MariaDB/Partitioning.md",
     "📗DataBase📗/MariaDB/Dump.md",
-    "📗DataBase📗/MariaDB/명령어 모음.md",
     "📗DataBase📗/MariaDB/Docker.md",
     "📗DataBase📗/MariaDB/Container Import.md",
     "📗DataBase📗/MariaDB/BackUp.md",
@@ -213,7 +214,6 @@
     "📗BackEnd📗/Message-Broker/RabbitMQ/성능 파라미터.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/Clustering.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/MQTT Client (React & TypeScript).md",
-    "📗BackEnd📗/Error Handling/Spring/N+1.md",
     "🚩Error🚩/Server",
     "🚩Error🚩",
     "📗BackEnd📗/Server",
