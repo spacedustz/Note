@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📗FrontEnd📗/Frameworks/React/Basic-Summary.md",
+                "file": "📗FrontEnd📗/Frameworks/React/Yarn-React-재정리.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗FrontEnd📗/Frameworks/React/Basic-Summary.md",
+                "file": "📗FrontEnd📗/Frameworks/React/Yarn-React-재정리.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗FrontEnd📗/Frameworks/React/Basic-Summary.md",
+                "file": "📗FrontEnd📗/Frameworks/React/Yarn-React-재정리.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗FrontEnd📗/Frameworks/React/Basic-Summary.md"
+                "file": "📗FrontEnd📗/Frameworks/React/Yarn-React-재정리.md"
               }
             }
           },
@@ -185,6 +185,7 @@
   },
   "active": "b980e1940547aa52",
   "lastOpenFiles": [
+    "📗FrontEnd📗/Frameworks/React/Basic-Summary.md",
     "imoji.md",
     "📗Ops-Tools📗/Docker/Docker Basic & Docker File Syntax.md",
     "📗BackEnd📗/Languages/Java/Basic/Calendar.md",
@@ -213,7 +214,6 @@
     "📗BackEnd📗/Message-Broker/RabbitMQ/RabbitMQ-Dead Letter Exchange-TTL.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/Summary.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/Ubuntu Port 변경.md",
-    "📗BackEnd📗/Message-Broker/RabbitMQ/성능 파라미터.md",
     "🚩Error🚩/Server",
     "🚩Error🚩",
     "📗BackEnd📗/Server",
