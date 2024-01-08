@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📗FrontEnd📗/Frameworks/React/Yarn-React-재정리.md",
+                "file": "📗DataBase📗/MariaDB/명령어 모음.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗FrontEnd📗/Frameworks/React/Yarn-React-재정리.md",
+                "file": "📗DataBase📗/MariaDB/명령어 모음.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗FrontEnd📗/Frameworks/React/Yarn-React-재정리.md",
+                "file": "📗DataBase📗/MariaDB/명령어 모음.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗FrontEnd📗/Frameworks/React/Yarn-React-재정리.md"
+                "file": "📗DataBase📗/MariaDB/명령어 모음.md"
               }
             }
           },
@@ -185,6 +185,8 @@
   },
   "active": "b980e1940547aa52",
   "lastOpenFiles": [
+    "📗DataBase📗/MariaDB/Dump.md",
+    "📗FrontEnd📗/Frameworks/React/Yarn-React-재정리.md",
     "📗FrontEnd📗/Frameworks/React/Basic-Summary.md",
     "imoji.md",
     "📗Ops-Tools📗/Docker/Docker Basic & Docker File Syntax.md",
@@ -192,7 +194,6 @@
     "📗Ops-Tools📗/Docker/Container Commit.md",
     "📗DataBase📗/MariaDB/명령어 모음.md",
     "📗DataBase📗/MariaDB/Partitioning.md",
-    "📗DataBase📗/MariaDB/Dump.md",
     "📗DataBase📗/MariaDB/Docker.md",
     "📗DataBase📗/MariaDB/Container Import.md",
     "📗DataBase📗/MariaDB/BackUp.md",
@@ -213,7 +214,6 @@
     "📗BackEnd📗/Message-Broker/RabbitMQ/RabbitMQ-Custom-Installation.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/RabbitMQ-Dead Letter Exchange-TTL.md",
     "📗BackEnd📗/Message-Broker/RabbitMQ/Summary.md",
-    "📗BackEnd📗/Message-Broker/RabbitMQ/Ubuntu Port 변경.md",
     "🚩Error🚩/Server",
     "🚩Error🚩",
     "📗BackEnd📗/Server",
