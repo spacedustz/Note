@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📗Ops-Tools📗/MSA/k3s/Ubuntu Installiation.md",
+                "file": "📗DataBase📗/MariaDB/Docker.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📗Ops-Tools📗/MSA/k3s/Ubuntu Installiation.md",
+                "file": "📗DataBase📗/MariaDB/Docker.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📗Ops-Tools📗/MSA/k3s/Ubuntu Installiation.md",
+                "file": "📗DataBase📗/MariaDB/Docker.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📗Ops-Tools📗/MSA/k3s/Ubuntu Installiation.md"
+                "file": "📗DataBase📗/MariaDB/Docker.md"
               }
             }
           },
@@ -185,6 +185,11 @@
   },
   "active": "b980e1940547aa52",
   "lastOpenFiles": [
+    "📗DataBase📗/MariaDB/Partitioning.md",
+    "📗DataBase📗/MariaDB/Docker.md",
+    "📗DataBase📗/MariaDB/BackUp.md",
+    "📗DataBase📗/MariaDB/유저 생성.md",
+    "📗Ops-Tools📗/MSA/k3s/Ubuntu Installiation.md",
     "📗BackEnd📗/Languages/Java/Multi-Threading/6. Race Condition & Dead Lock/Race Condition & Data Race.md",
     "📗BackEnd📗/Languages/Java/Multi-Threading/6. Race Condition & Dead Lock",
     "📗BackEnd📗/Languages/Java/Multi-Threading/5. 리소스 공유/Atomic Operation & Volatile & Metrics.md",
@@ -193,7 +198,6 @@
     "📗BackEnd📗/Languages/Java/Multi-Threading/5. 리소스 공유/Thread간 Resource 공유.md",
     "📗BackEnd📗/Languages/Java/Multi-Threading/5. 리소스 공유",
     "imoji.md",
-    "📗Ops-Tools📗/MSA/k3s/Ubuntu Installiation.md",
     "📗Ops-Tools📗/Management & Tool/Git/Git.md",
     "📗Ops-Tools📗/MSA/k3s",
     "📗Docs📗/Project Documents/Document/개발환경 세팅 & 가이드 - 1.md",
@@ -210,10 +214,6 @@
     "conflict-files-obsidian-git.md",
     "📗Docs📗/Settings/Mac Settings.md",
     "📗BackEnd📗/Server/GUI Repair.md",
-    "🚩Error🚩/Server/🚩 Nouveau Kernel Driver 제거.md",
-    "📗DataBase📗/MariaDB/BackUp.md",
-    "📗BackEnd📗/Server/Graphic 관련.md",
-    "📗BackEnd📗/Server/개행 제거.md",
     "🚩Error🚩/Server",
     "🚩Error🚩",
     "📗BackEnd📗/Server",
