@@ -25,6 +25,11 @@
 
 ## 📚 Database
 
+> MariaDB
+
+- [MariaDB 기본 명령어](./Database/MariaDB/기본%20명령어.md)
+- [Table Range Partitioning](./Database/MariaDB/Range%20Partitioning.md)
+
 > Redis
 
 - [Redis 기본 사용법](./Database/Redis/Redis%20기본%20사용법.md)
