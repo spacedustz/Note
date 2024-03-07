@@ -573,7 +573,7 @@ public class InstanceHealthCheck extends Thread {
 
 <br>
 
-![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/hls-health.png)
+![](./1.png)
 
 ---
 ## 📘 View
@@ -686,7 +686,7 @@ Bash -> `curl -X GET http://localhost:5000/api/hls/request?ip={ip}&command=start
 
 <br>
 
-![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/hls-result.png)
+![](./2.png)
 
 <br>
 
@@ -700,4 +700,4 @@ Bash -> `curl -X GET http://localhost:5000/api/hls/request?ip={ip}&command=start
 
 세그먼트 파일(.ts)과 재생리스트 파일(.m3u8) 파일도 잘 생기는걸 볼 수 있습니다.
 
-![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/hls-file.png)
+![](./3.png)
