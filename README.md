@@ -17,6 +17,8 @@
 - `Ubuntu-Default-Setting.sh` : Ubuntu 22.04 LTS 버전 서버 기본 세팅 스크립트
 - `Run-FFmpeg.sh` : x개의 FFmpeg 프로세스 실행 및 .ts파일, .m3u8파일 생성 스크립트
 
+<br>
+
 📂 **Jenkins**
 
 Jenkins Declarative Pipeline & Docker & Nginx를 이용한 Blue/Green 무중단 배포 스크립트
@@ -38,7 +40,7 @@ Jenkins Declarative Pipeline & Docker & Nginx를 이용한 Blue/Green 무중단 
 
 ### Remote
 
-- [Tiger VNC](./Server/Remote/TigerVNC.md)
+- [Tiger VNC - SSH Tunneling](./Server/Remote/TigerVNC.md)
 
 <br>
 
