@@ -2,7 +2,7 @@
 
 # APT 업데이트
 apt-get -y update
-ate-get -y upgrade
+apt-get -y upgrade
 echo ----- APT Update 종료 ---- | tee settinglogs
 
 
