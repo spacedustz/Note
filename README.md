@@ -1,56 +1,5 @@
 # 개인 공부 메모장
 
-## 📚 Server
-
-### Script
-
-📂 **Windows**
-- `TimeConditionBatch.bat` : 특정 시간대에만 특정 프로그램들을 실행하고 헬스체크를 수행하는 배치파일
-
-<br>
-
-📂 **Linux**
-
-- `GPU-Driver.sh` : Nvidia Driver, Cuda Tool Kit, OpenGL 세팅 스크립트
-- `Remove-Nouveau.sh` : Nvidia Driver와 충돌나는 Nouveau 커널 드라이버 제거 스크립트
-- `Redhat-Default-Setting.sh` : Reahat Enterprise 서버 기본 세팅 스크립트
-- `Ubuntu-Default-Setting.sh` : Ubuntu 22.04 LTS 버전 서버 기본 세팅 스크립트
-- `Run-FFmpeg.sh` : x개의 FFmpeg 프로세스 실행 및 .ts파일, .m3u8파일 생성 스크립트
-
-<br>
-
-📂 **Jenkins**
-
-Jenkins Declarative Pipeline & Docker & Nginx를 이용한 Blue/Green 무중단 배포 스크립트
-
-- `Server.sh` : RedHat 기반 Server Setting 스크립트 
-- `Dockerfile` : OpenJDK 이미지 베이스로 내부 명렁어 실행 
-- `Docker-HA.sh` : Jenkins 배포 시 blue/green 컨테이너 중 미실행 중인 곳에 새 버전 릴리즈 후 로드밸런싱 타겟 변경 / 기존 실행중인 컨테이너 중지 
-- `jenkinsfile` : Git Commit 시 태그 이름중 특정 단어가 들어간 커밋에만 배포 적용 (이파일에선 "cicd" 키워드 사용)
-- `nginx.conf` : blue/green 컨테이너 포트인 8080/8081에 대한 트래픽 로드밸런싱 수행 
-- `service-url.inc` : Service URL 지정 (nginx.conf 내에 include 됨)
-
-<br>
-
-### Network
-
-- [Global Private Network 구성 - ZeroTier](./Server/Network/Zerotier.md)
-
-<br>
-
-### Remote
-
-- [Tiger VNC - SSH Tunneling](./Server/Remote/TigerVNC.md)
-
-<br>
-
-### Utils
-
-- [Ubuntu Desktop GUI 응답없을떄 GUI Repair 방법](./Server/Utils/GUI%20Repair.md)
-- [Linux Shell Script 작성 시 타 운영체재 개행 치환](./Server/Utils/개행%20제거.md)
-- [시간 동기화](./Server/Utils/시간%20동기화.md)
-- [좀비 프로세스 죽이기](./Server/Utils/좀비%20프로세스%20죽이기.md)
-
 ---
 
 ## 📚 Database
@@ -92,3 +41,56 @@ Jenkins Declarative Pipeline & Docker & Nginx를 이용한 Blue/Green 무중단 
 ### Test
 
 - [Apache Jmeter - 처리량 측정 & 테스트](./Backend/Test/Apache-Jmeter/Apache%20Jmeter.md)
+
+---
+
+## 📚 Server
+
+### Script
+
+📂 **Windows**
+- [TimeConditionBatch.bat](./Server/Script/Windows/TimeConditionBatch.bat) : 특정 시간대에만 특정 프로그램들을 실행하고 헬스체크를 수행하는 배치파일
+
+<br>
+
+📂 **Linux**
+
+- [GPU-Driver.sh](./Server/Script/Linux/GPU-Driver.sh) : Nvidia Driver, Cuda Tool Kit, OpenGL 세팅 스크립트
+- [Remove-Nouveau.sh](./Server/Script/Linux/Remove-Nouveau-Kernel-Driver.sh) : Nvidia Driver와 충돌나는 Nouveau 커널 드라이버 제거 스크립트
+- [Redhat-Default-Setting.sh](./Server/Script/Linux/Redhat-Default-Setting.sh) : Reahat Enterprise 서버 기본 세팅 스크립트
+- [Ubuntu-Default-Setting.sh](./Server/Script/Linux/Ubuntu-Default-Settings.sh) : Ubuntu 22.04 LTS 버전 서버 기본 세팅 스크립트
+- [Run-FFmpeg.sh](./Server/Script/Linux/Run-FFmpeg.sh) : x개의 FFmpeg 프로세스 실행 및 .ts파일, .m3u8파일 생성 스크립트
+
+<br>
+
+📂 **Jenkins**
+
+Jenkins Declarative Pipeline & Docker & Nginx를 이용한 Blue/Green 무중단 배포 스크립트
+
+- [Server.sh]() : RedHat 기반 Server Setting 스크립트
+- [Dockerfile]() : OpenJDK 이미지 베이스로 내부 명렁어 실행
+- [Docker-HA.sh]() : Jenkins 배포 시 blue/green 컨테이너 중 미실행 중인 곳에 새 버전 릴리즈 후 로드밸런싱 타겟 변경 / 기존 실행중인 컨테이너 중지
+- [jenkinsfile]() : Git Commit 시 태그 이름중 특정 단어가 들어간 커밋에만 배포 적용 (이파일에선 "cicd" 키워드 사용)
+- [nginx.conf]() : blue/green 컨테이너 포트인 8080/8081에 대한 트래픽 로드밸런싱 수행
+- [service-url.inc]() : Service URL 지정 (nginx.conf 내에 include 됨)
+
+<br>
+
+### Network
+
+- [Global Private Network 구성 - ZeroTier](./Server/Network/Zerotier.md)
+
+<br>
+
+### Remote
+
+- [Tiger VNC - SSH Tunneling](./Server/Remote/TigerVNC.md)
+
+<br>
+
+### Utils
+
+- [Ubuntu Desktop GUI 응답없을떄 GUI Repair 방법](./Server/Utils/GUI%20Repair.md)
+- [Linux Shell Script 작성 시 타 운영체재 개행 치환](./Server/Utils/개행%20제거.md)
+- [시간 동기화](./Server/Utils/시간%20동기화.md)
+- [좀비 프로세스 죽이기](./Server/Utils/좀비%20프로세스%20죽이기.md)
