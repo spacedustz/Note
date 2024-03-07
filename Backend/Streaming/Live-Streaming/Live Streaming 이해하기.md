@@ -124,7 +124,7 @@ Manifest 파일에 작성되어 있는 분할된 동영상 파일을 순차적�
 
 만약 동영상을 중간부터 재생한다고 하면 manifest 파일(.m3u8, mpd)에 근거하여 해당 타임에 맞는 segment file을 먼저 다운로드를 하게 될 것입니다.
 
-![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/rtsp.png)
+![](./1.png)
 
 <br>
 
