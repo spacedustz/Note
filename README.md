@@ -2,19 +2,19 @@
 
 ## 📚 Server
 
-> Network
+**Network**
 
 - [Global Private Network 구성 - ZeroTier](./Server/Network/Zerotier.md)
 
 <br>
 
-> Remote
+**Remote**
 
 - [Tiger VNC](./Server/Remote/TigerVNC.md)
 
 <br>
 
-> Utils
+**Utils**
 
 - [Ubuntu Desktop GUI 응답없을떄 GUI Repair 방법](./Server/Utils/GUI%20Repair.md)
 - [Linux Shell Script 작성 시 타 운영체재 개행 치환](./Server/Utils/개행%20제거.md)
@@ -25,11 +25,13 @@
 
 ## 📚 Database
 
-> MariaDB
+**MariaDB**
 
 - [MariaDB 기본 명령어](./Database/MariaDB/기본%20명령어.md)
 - [Table Range Partitioning](./Database/MariaDB/Range%20Partitioning.md)
 
-> Redis
+<br>
+
+**Redis**
 
 - [Redis 기본 사용법](./Database/Redis/Redis%20기본%20사용법.md)
