@@ -65,7 +65,7 @@ Dead Letter가 된 Message의 "x-death" Header에는 Message가 Dead Letter가 �
 
 대충 Flow를 그려보고 해당 그림처럼 RabbitMQ의 Exchange와 Queue를 설정해보겠습니다.
 
-![img](https://raw.githubusercontent.com/spacedustz/Obsidian-Image-Server/main/img2/dlx.png)
+![](./1.png)
 
 <br>
 
