@@ -2,19 +2,47 @@
 
 ## 📚 Server
 
-**Network**
+### Script
+
+📂 **Windows**
+- `TimeConditionBatch.bat` : 특정 시간대에만 특정 프로그램들을 실행하고 헬스체크를 수행하는 배치파일
+
+<br>
+
+📂 **Linux**
+
+- `GPU-Driver.sh` : Nvidia Driver, Cuda Tool Kit, OpenGL 세팅 스크립트
+- `Remove-Nouveau.sh` : Nvidia Driver와 충돌나는 Nouveau 커널 드라이버 제거 스크립트
+- `Redhat-Default-Setting.sh` : Reahat Enterprise 서버 기본 세팅 스크립트
+- `Ubuntu-Default-Setting.sh` : Ubuntu 22.04 LTS 버전 서버 기본 세팅 스크립트
+- `Run-FFmpeg.sh` : x개의 FFmpeg 프로세스 실행 및 .ts파일, .m3u8파일 생성 스크립트
+
+📂 **Jenkins**
+
+Jenkins Declarative Pipeline & Docker & Nginx를 이용한 Blue/Green 무중단 배포 스크립트
+
+- `Server.sh` : RedHat 기반 Server Setting 스크립트 
+- `Dockerfile` : OpenJDK 이미지 베이스로 내부 명렁어 실행 
+- `Docker-HA.sh` : Jenkins 배포 시 blue/green 컨테이너 중 미실행 중인 곳에 새 버전 릴리즈 후 로드밸런싱 타겟 변경 / 기존 실행중인 컨테이너 중지 
+- `jenkinsfile` : Git Commit 시 태그 이름중 특정 단어가 들어간 커밋에만 배포 적용 (이파일에선 "cicd" 키워드 사용)
+- `nginx.conf` : blue/green 컨테이너 포트인 8080/8081에 대한 트래픽 로드밸런싱 수행 
+- `service-url.inc` : Service URL 지정 (nginx.conf 내에 include 됨)
+
+<br>
+
+### Network
 
 - [Global Private Network 구성 - ZeroTier](./Server/Network/Zerotier.md)
 
 <br>
 
-**Remote**
+### Remote
 
 - [Tiger VNC](./Server/Remote/TigerVNC.md)
 
 <br>
 
-**Utils**
+### Utils
 
 - [Ubuntu Desktop GUI 응답없을떄 GUI Repair 방법](./Server/Utils/GUI%20Repair.md)
 - [Linux Shell Script 작성 시 타 운영체재 개행 치환](./Server/Utils/개행%20제거.md)
@@ -25,14 +53,14 @@
 
 ## 📚 Database
 
-**MariaDB**
+### MariaDB
 
 - [MariaDB 기본 명령어](./Database/MariaDB/기본%20명령어.md)
 - [Table Range Partitioning](./Database/MariaDB/Range%20Partitioning.md)
 
 <br>
 
-**Redis**
+### Redis
 
 - [Redis 기본 사용법](./Database/Redis/Redis%20기본%20사용법.md)
 
@@ -40,7 +68,7 @@
 
 ## 📚 Backend
 
-**Message Queue**
+### Message Queue
 
 - [RabbitMQ 기본 Pub/Sub 구현](./Backend/Message-Queue/RabbitMQ/기본구조/RabbitMQ%20-%20PubSub.md)
 - [RabbitMQ Basic Consume 방식 구현](./Backend/Message-Queue/RabbitMQ/Basic-Consume/RabbitMQ%20-%20Basic%20Consume.md)
@@ -50,7 +78,7 @@
 
 <br>
 
-**Streaming**
+### Streaming
 
 - [Live Streaming 이해하기](./Backend/Streaming/Live-Streaming/Live%20Streaming%20이해하기.md)
 - [FFmpeg 기본 사용법](./Backend/Streaming/FFmpeg/FFmpeg.md)
@@ -59,6 +87,6 @@
 
 <br>
 
-**Test**
+### Test
 
 - [Apache Jmeter - 처리량 측정 & 테스트](./Backend/Test/Apache-Jmeter/Apache%20Jmeter.md)
