@@ -47,3 +47,20 @@ Join은 했지만 아직 네트워크 가입 허용을 안해서 ACCESS_DENIED�
 `zerotier-cli listnetworks`를 입력해보면 OK로 바뀌어 있고 네트워크 참가에 성공했습니다.
 
 ![](./Zerotier-OK.png)
+
+---
+## Zerotier 명령어
+
+```bash
+# 네트워크 리스트
+sudo zerotier-cli listnetworks
+
+# 네트워크 Join
+sudo zerotier-cli join ##########
+
+# 네트워크 Leave
+sudo zerotier0cli leave ##########
+
+# 상태 확인
+sudo zerotier-cli status
+```
