@@ -59,7 +59,7 @@ sudo zerotier-cli listnetworks
 sudo zerotier-cli join ##########
 
 # 네트워크 Leave
-sudo zerotier0cli leave ##########
+sudo zerotier-cli leave ##########
 
 # 상태 확인
 sudo zerotier-cli status
