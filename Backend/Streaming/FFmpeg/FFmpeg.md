@@ -112,3 +112,189 @@ ffmpeg -i rtsp://your_rtsp_stream_address -codec copy -flags -global_header -f h
 ```python
 ffmpeg -nostdin -flags low_delay -rtsp_transport tcp -i <rtsp_stream> -pix_fmt bgr24 -an -vcodec rawvideo -f rawvideo -
 ```
+
+---
+## Spring Boot
+
+- Spring Boot에서 Local에 설치된 FFmpeg에 명령을 내리는 HLS 프로젝트 코드 중 일부를 가져왔습니다.
+- Windows / Linux 일때 CMD 명령이 다릅니다.
+
+**Process Service**
+
+```java
+@Service  
+@Slf4j  
+public class ProcessService {  
+    @Value("${ffmpeg.option.hls.time}")  
+    private int hlsTime;  
+  
+    @Value("${ffmpeg.option.hls.list.size}")  
+    private int hlsListSize;  
+  
+    @Value("${ffmpeg.option.hls.flags}")  
+    private String hlsFlags;  
+  
+    @Value("${ffmpeg.option.start.number}")  
+    private String startNumber;  
+  
+    @Value("${hls.file.path}")  
+    private String hlsFilePath;  
+  
+    //private Map<String, Process> processMap = new ConcurrentHashMap();  
+    private static final String OS = System.getProperty("os.name").toLowerCase();  
+  
+    /**  
+     * HLS Converter 시작(FFMPEG 프로세스 시작)  
+     *     * @param cameraId  
+     * @param instanceName  
+     * @param ip  
+     * @param port  
+     * @throws IOException  
+     */  
+    public int startHlsConverter(final Integer cameraId, final String instanceName, final String ip, final Integer port) throws IOException {  
+        //Process process = processMap.get(cameraId);  
+        int started = 0;  
+        log.info("StartHLS - CameraId : {}, instanceName : {}, ip : {},  port : {}", cameraId, instanceName, ip, port);  
+  
+        boolean ifFfmpegProcessRunning = this.isFfmpegProcessRunning(ip.trim(), port, instanceName.trim());  
+        log.info("StartHLS - 프로세스 실행 상태 - {}", ifFfmpegProcessRunning);  
+  
+        //if (process == null || !process.isAlive()) {  
+        if (!ifFfmpegProcessRunning) {  
+            try {  
+                File file = new File(hlsFilePath + cameraId);  
+                File[] files = file.listFiles();  
+  
+                if (files != null) {  
+                    log.info("기존 폴더 존재");  
+                    for (File f : files) {  
+                        if (f.isDirectory()) {  
+                            // 디렉토리 내의 서브 디렉토리 삭제  
+                            deleteDirectory(f);  
+                            log.info("디렉터리, 파일 삭제");  
+                        } else {  
+                            // 파일 삭제  
+                            f.delete();  
+                        }  
+                    }  
+                }  
+  
+                if (!file.exists()) {  
+                    log.info("디렉터리에 파일이 존재하지 않음, 파일 생성 : {}", (hlsFilePath + cameraId));  
+                    file.mkdirs();  
+                } else {  
+                    log.info("디렉터리에 파일이 존재함, 파일 삭제 : {}", (hlsFilePath + cameraId));  
+                    file.delete();  
+  
+                    try {  
+                        Thread.sleep(1000);  
+                    } catch (InterruptedException e) {  
+                        log.warn("StartHLS - Thread Interrupted : {}", e.getMessage());  
+                        Thread.currentThread().interrupt(); // 다시 인터럽트 플래그 설정  
+                    }  
+                    file.mkdirs();  
+                    log.info("Start HLS - 파일 & 폴더 생성 완료");  
+                }  
+            } catch (Exception e) {  
+                log.warn("StartHLS - 파일 & 폴더 생성 에러 : {}, {}", (hlsFilePath + cameraId), e.getMessage());  
+            }  
+  
+            StringBuilder cmd = new StringBuilder();  
+  
+            cmd.append("ffmpeg -i rtsp://").append(ip).append(":").append(port).append("/").append(instanceName);  
+            cmd.append(" -c:v copy -c:a copy");  
+            cmd.append(" -hls_time ").append(hlsTime);  
+            cmd.append(" -hls_list_size ").append(hlsListSize);  
+            cmd.append(" -hls_flags ").append(hlsFlags);  
+            cmd.append(" -hls_allow_cache 0");  
+            cmd.append(" -fflags nobuffer");  
+            cmd.append(" -strict experimental");  
+            cmd.append(" -avioflags direct");  
+            cmd.append(" -fflags discardcorrupt");  
+            cmd.append(" -flags low_delay ");  
+            cmd.append(" -start_number ").append(startNumber).append(" ");  
+            cmd.append(hlsFilePath).append(cameraId).append(File.separator).append("output.m3u8");  
+  
+            log.info("FFmpeg CMD : {}", cmd.toString());  
+  
+            Process process;  
+            if (OS.contains("win")) {  
+                process = Runtime.getRuntime().exec(cmd.toString());  
+            } else {  
+                process = Runtime.getRuntime().exec(new String[]{"/bin/sh", "-c", cmd.toString()});  
+            }  
+            BufferedReader errStream = new BufferedReader(new InputStreamReader(process.getErrorStream()));  
+            String line;  
+  
+            while ((line = errStream.readLine()) != null) {  
+                log.debug(line);  
+            }  
+  
+            boolean result = false;  
+  
+            try {  
+                result = process.waitFor(1000, TimeUnit.MILLISECONDS);  
+            } catch (Exception e) {  
+                log.warn("StartHLS - Process WaitFor Exception : {}", e.getMessage());  
+            }  
+  
+            log.info("FFmpeg 프로세스 시작. - {}", result);  
+            started = 1;  
+  
+            //processMap.put(instanceName.trim(), process);  
+        } else {  
+            log.debug("StartHLS - FFmpeg 프로세스 실행 중");  
+        }  
+  
+        return started;  
+    }  
+      
+    /**  
+     * FFMPEG 프로세스가 실행 중인지 확인 
+     *     * @param ip  
+     * @param port  
+     * @param instanceName  
+     * @return  
+     */  
+    private boolean isFfmpegProcessRunning(final String ip, final Integer port, final String instanceName) {  
+        boolean isRunning = false;  
+        String command = "";  
+  
+        if (OS.contains("win")) {  
+            command = "powershell.exe $currentId = (Get-Process -Id $PID).Id; Get-WmiObject Win32_Process | Where-Object { $_.CommandLine -like '*ffmpeg -i rtsp://" + ip + ":" + port + "/" + instanceName + "*' -and $_.ProcessId -ne $currentId } | Select-Object ProcessId";  
+            log.info("Check FFmpeg - OS : Windows");  
+        } else {  
+            command = "ps -ef | grep ffmpeg | grep rtsp://" + ip + ":" + port + "/" + instanceName + " | grep -v grep | awk '{print $2}'";  
+            log.info("Check FFmpeg - OS : Linux");  
+        }  
+  
+        log.info("Check FFmpeg - Command : {}", command);  
+  
+        try {  
+            Process process;  
+            if (OS.contains("win")) {  
+                // 윈도우에서는 powershell 명령을 직접 실행  
+                process = Runtime.getRuntime().exec(command);  
+            } else {  
+                // 리눅스에서는 /bin/sh를 통해 명령 실행  
+                process = Runtime.getRuntime().exec(new String[]{"/bin/sh", "-c", command});  
+            }  
+  
+            BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));  
+  
+            String line = reader.readLine();  
+            if (line != null && !line.trim().isEmpty()) {  
+                log.debug("Check FFmpeg - 실행 중 : {}", line);  
+                isRunning = true;  
+            }  
+  
+            process.waitFor(3000, TimeUnit.MILLISECONDS);  
+        } catch (Exception e) {  
+            log.warn("Check FFmpeg - Exception : {}", e.getMessage());  
+            e.printStackTrace();  
+        }  
+  
+        return isRunning;  
+    }
+    
+```
