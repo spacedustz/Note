@@ -113,3 +113,8 @@ Jenkins Declarative Pipeline & Docker & Nginx를 이용한 Blue/Green 무중단 
 - [전체 Commit Author 변경 & Commit 되돌리기](./DevTools/Git/전체%20Commit%20Author%20변경%20&%20커밋%20되돌리기.md)
 - [Git Tag 사용법](./DevTools/Git/Tag.md)
 
+---
+
+## 📚 Algorithm
+
+- [알고리즘 기본 개념](./Algorithm/알고리즘-기본개념.md)
