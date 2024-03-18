@@ -149,7 +149,7 @@ source ~/.bashrc
 
 ## Ubuntu-GUI 설치
 sudo apt -y install ubuntu-desktop
-reboot
+sudo reboot
 ```
 
 ---
@@ -212,10 +212,7 @@ EOF
 
 sudo systemctl daemon-reload
 
-sudo rm -rf /tmp/.X11-unix/*
-sudo rm -rf /tmp/.X2-lock
-
-reboot
+sudo reboot
 ```
 
 <br>
