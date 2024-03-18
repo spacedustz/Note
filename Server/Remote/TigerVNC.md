@@ -1,4 +1,4 @@
-# Tiger VNC를 이용한 Remote GUI 환경 구축
+# Linux Graphic Driver & Remote GUI를 위한 TigerVNC 설정
 
 **📌 사전 준비 사항**
 
@@ -274,7 +274,17 @@ xhost +Local:*
 
 <br>
 
-### VNC 각종 오류 해결 방법
+## Graphic Driver & Cuda Toolkit & OpenGL 정상 인식 확인
+
+- `nvidia-smi` 명령으로 Nvidia Driver가 잘 잡혀있는지 확인
+- `nvcc --version` 명령으로 Cuda Toolkit이 잘 잡혀있는지 확인
+- `glxinfo | grep "OpenGL version` 명령으로 OpenGL이 잘 잡혀있는지 확인
+
+![](./4.png)
+
+---
+
+## VNC 각종 오류 해결 방법
 
 >  **만약 VNC 인스턴스를 종료했는데도 새 인스턴스 시작이 안된다면 적용 해볼 방법들 - VNC Server**
 
