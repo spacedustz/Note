@@ -1,16 +1,170 @@
-> **환경 세팅 스크립트**
+# Tiger VNC를 이용한 Remote GUI 환경 구축
+
+**📌 사전 준비 사항**
+
+- Ubuntu Server 22.0 LTS 버전 설치 (OS 설치중 파티션 분할 시, /swap 파티션은 메모리의 2배 용량으로 잡아 주기)
+- 설치된 Ubuntn Server Home 디렉터리에 GPU에 맞는 Nvidia Graphic Driver(.run 파일) 두기
+
+---
+
+## ⚙️ 1. Nouveau Kernel Driver 시스템 블랙리스트 추가
+
+- 이 커널은 Nvidia Driver 커널과 충돌이 일어나므로 시스템 블랙리스트 목록에 추가해서 충돌을 방지 해 줍니다.
+- 설치 후 Reboot을 무조건 수행해야 하므로 이 스크립트를 먼저 실행 해 줍니다.
+
+```bash
+#!/bin/bash
+
+sudo apt-get -y remove nvidia* && sudo apt -y autoremove
+sudo apt install -y dkms build-essential linux-headers-generic pkg-config libglvnd-dev
+sudo echo -e "blacklist nouveau\nblacklist lbm-nouveau\noptions nouveau modeset=0\nalias nouveau off\nalias lbm-nouveau off" | sudo tee -a /etc/modprobe.d/blacklist.conf
+sudo update-initramfs -u
+sudo reboot
+```
+
+---
+
+## ⚙️ 2. 서버 기본 패키지 설치 & 그래픽 드라이버 잡기
+
+- APT Update & Upgrade
+- 유저 권한 설정
+- OpenJDK 17 설치
+- Yarn 설치
+- NodeJS 설치
+- Docker 설치
+- RabbitMQ & MariaDB & Redis Container 생성
+- FFmpeg 설치
+- Nvidia Container Tool Kit
+- Cuda Toolkit 설치
+
+```bash
+#!/bin/bash
+
+# 스크립트를 실행 하기 전 필수 준비 사항
+# /home/{user-name} 경로에 Graphic Driver(.run 파일)과 Cvedia tar.gz 파일이 존재해야 함
+
+
+
+# -------------------- 변수 --------------------
+NVIDIA_RUN_FILE=NVIDIA-Linux-x86_64-550.54.14.run # Graphic Driver 파일명
+CUDA_TOOL_KIT_FILE=cuda_12.4.0_550.54.14_linux.run # Cuda Toolkit 파일명
+
+# -------------------- 기본 개발 환경 & 실행 환경 설정 --------------------
+## Update / Upgrade
+sudo apt -y update && sudo apt -y upgrade
+
+## 유저 sudo 권한 추가
+sudo usermod -aG sudo dains
+
+## OpenJDK 17 설치
+sudo apt -y install openjdk-17-jdk
+
+## Yarn 설치
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add - echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+sudo apt -y install yarn
+
+## NodeJS 설치
+sudo curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+sudo apt-get -y install nodejs
+sudo npm install yarn
+sudo npm install next
+
+## Docker 설치
+sudo apt-get -y install apt-transport-https ca-certificates curl gnupg-agent software-properties-common
+
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+
+sudo apt -y update
+
+sudo apt-get -y install docker-ce docker-ce-cli containerd.io
+
+sudo systemctl start docker && sudo systemctl enable docker
+
+## FFmpeg 설치
+sudo apt -y install ffmpeg
+
+## RabbitMQ Container
+# - 1883 : MQTT
+# - 4369 : EPMD
+# - 5671 : TLS
+# - 5672 : AMQP
+# - 15672 : Web Console
+# - 15674 : RabbitMQ WebSocket
+# - 25672 : RabbitMQ Clustering
+sudo docker run -d --name rabbit -p 1883:1883 -p 4369:4369 -p 5671:5671 -p 5672:5672 -p 15672:15672 -p 15674:15674 -p 25672:25672 rabbitmq
+sudo docker exec rabbit rabbitmq-plugins enable rabbitmq_mqtt
+sudo docker exec rabbit rabbitmq-plugins enable rabbitmq_web_mqtt
+sudo docker exec rabbit rabbitmq-plugins enable rabbitmq_management
+sudo docker exec rabbit rabbitmq-plugins enable rabbitmq_web_stomp
+sudo docker restart rabbit
+
+sudo usermod -aG docker dains # 도커 소켓 실행 권한 추가
+
+## MariaDB Container
+# 컨테이너를 생성하고 dains 계정과 dains 데이터베이스 생성 및 권한 부여
+sudo docker run -d --name maria -e MARIADB_ROOT_PASSWORD=1234 -p 5001:3306 mariadb
+sudo docker exec maria mariadb -u root -p1234 -e "\
+create database dains character set utf8mb4 collate utf8mb4_general_ci; \
+create user 'dains'@'%' identified by '1234'; \
+grant all privileges on dains.* to 'dains'@'%'; \
+flush privileges;"
+
+## Redis Cotainer
+sudo docker run -d --name redis -p 5002:6379 redis
+
+# -------------------- Graphic Driver --------------------
+sudo apt -y install build-essential pkg-config libglvnd-dev freeglut3-dev libglu1-mesa-dev mesa-common-dev mesa-utils unzip wget
+
+## Graphic Driver 설치
+sudo ./${NVIDIA_RUN_FILE}
+
+## Nvidia Container-Toolkit 설치 & Production 저장소 구성
+sudo curl -fsSL https://nvidia.github.io/libnvidia-container/gpgkey | sudo gpg --dearmor -o /usr/share/keyrings/nvidia-container-toolkit-keyring.gpg \
+  && curl -s -L https://nvidia.github.io/libnvidia-container/stable/deb/nvidia-container-toolkit.list | \
+    sed 's#deb https://#deb [signed-by=/usr/share/keyrings/nvidia-container-toolkit-keyring.gpg] https://#g' | \
+    sudo tee /etc/apt/sources.list.d/nvidia-container-toolkit.list
+
+## Nvidia Container Tool Kit 설치
+sudo docker info | grep -i runtimes # 런타임 엔진 확인
+sudo apt-get -y update
+sudo apt-get install -y nvidia-container-toolkit
+
+## Nvidia Container Runtime Engine 구성
+sudo nvidia-ctk runtime configure --runtime=docker
+sudo systemctl restart containerd
+sudo systemctl restart docker
+
+## Cuda Toolkit 설치 & 환경 변수 설정
+sudo wget https://developer.download.nvidia.com/compute/cuda/12.4.0/local_installers/${CUDA_TOOL_KIT_FILE}
+sudo chmod +x ${CUDA_TOOL_KIT_FILE}
+sudo ./${CUDA_TOOL_KIT_FILE}
+cat <<EOL >> ~/.bashrc
+export PATH=/usr/local/cuda-12.4/bin:$PATH
+export LD_LIBRARY_PATH=/usr/local/cuda-12.4/lib64:$LD_LIBRARY_PATH
+EOL
+
+source ~/.bashrc
+
+## Ubuntu-GUI 설치
+sudo apt -y install ubuntu-desktop
+reboot
+```
+
+---
+
+## ⚙️ Remote GUI를 위한 Tiger VNC 설치
 
 ```bash
 ## TigerVNC & D-bus & Xorg 패키지 설치
 sudo apt -y install tigervnc-standalone-server dbus-x11 pkg-config xserver-xorg-dev
 
-## Xorg Conf 파일 이름 변경
+## xorg.conf 파일명 변경
 sudo mv /etc/X11/xorg.conf /etc/X11/xorg.conf.org
 
 ## xstartup 스크립트 생성
-sudo vncserver -list
-sudo touch /home/dains/.vnc/xstartup
-sudo chonw dains:dains /home/dains/.vnc/xstartup
+mkdir .vnc && cd .vnc && touch xstartup && cd
 
 cat > /home/dains/.vnc/xstartup << 'EOF'
 #!/bin/sh
@@ -66,27 +220,61 @@ reboot
 
 <br>
 
-## VNC Client
-
->  **VNC Client 연결 - SSH Tunneling**
-
-이제 모든 문제를 해결 했으니 원격을 연결하고 싶은 서버에서 SSH 터널링을 해주고 VNC로 연결해줍니다.
+> Reboot 후 실행 명령어
 
 ```bash
-ssh -L 5901:127.0.0.1:5901 -N -f -l {User명} {원격지IP}
+# VNC Server의 1번 Display를 On 시킴
+vncserver :1
+
+# VNC Server 1번 디스플레이 서비스 시작
+sudo systemctl start vncserver@1
+sudo systemctl enable vncserver@1
+
+# 디스플레이 정상 온라인 확인
+vncserver -list
 ```
 
 <br>
 
-> **SSH 터널링 후 VNC Viewer에 `localhost:디스플레이 번호` 로 연결 후 Xhost 액세스 허용**
+**1번 디스플레이 On**
+
+- `vncserver :1` 를 입력하여 1번 디스플레이 실행
+- 비밀번호 설정
+- View-Only 옵션 `N`을 입력하여 거부
+
+![](./1.png)
+
+<br>
+
+**디스플레이 상태 확인**
+
+- `vncserver -list`를 입력하여 디스플레이가 정상적으로 떠있는지 확인
+
+![](./2.png)
+
+---
+
+## VNC Client 연결 - SSH Tunneling
+
+서버에서 VNC Server를 설정했으니 클라이언트인 로컬에서 SSH 터널링을 해주고 VNC로 연결해줍니다.
+
+```bash
+ssh -L 5901:127.0.0.1:5901 -N -f -l {서버 계정명} {원격지IP}
+```
+
+![](./3.png)
+
+<br>
+
+**SSH 터널링 후 VNC Viewer에 `localhost:디스플레이 번호` 로 연결 후 Xhost 액세스를 허용**
 
 ```bash
 xhost +Local:*
 ```
 
+<br>
 
----
-## 각종 오류 해결 방법
+### VNC 각종 오류 해결 방법
 
 >  **만약 VNC 인스턴스를 종료했는데도 새 인스턴스 시작이 안된다면 적용 해볼 방법들 - VNC Server**
 
@@ -104,4 +292,5 @@ xhost +Local:*
 
 > **OpenGL Rendering 안될 때 - VNC Client**
 
+- VNC Viewer로 연결한 서버의 터미널에서 아래 명령 실행
 - `xhost +Local:*`
