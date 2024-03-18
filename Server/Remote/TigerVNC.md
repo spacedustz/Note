@@ -93,11 +93,15 @@ sudo apt -y install ffmpeg
 # - 15672 : Web Console
 # - 15674 : RabbitMQ WebSocket
 # - 25672 : RabbitMQ Clustering
+# - Admin 계정 추가 및 권한 부여
 sudo docker run -d --name rabbit -p 1883:1883 -p 4369:4369 -p 5671:5671 -p 5672:5672 -p 15672:15672 -p 15674:15674 -p 25672:25672 rabbitmq
 sudo docker exec rabbit rabbitmq-plugins enable rabbitmq_mqtt
 sudo docker exec rabbit rabbitmq-plugins enable rabbitmq_web_mqtt
 sudo docker exec rabbit rabbitmq-plugins enable rabbitmq_management
 sudo docker exec rabbit rabbitmq-plugins enable rabbitmq_web_stomp
+sudo docker exec rabbit rabbitmqctl add_user admin admin
+sudo docker exec rabbit rabbitmqctl set_user_tags admin administrator
+sudo docker exec rabbit rabbitmqctl set_permissions -p / admin ".*" ".*" ".*"
 sudo docker restart rabbit
 
 sudo usermod -aG docker dains # 도커 소켓 실행 권한 추가
