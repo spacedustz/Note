@@ -102,6 +102,7 @@ sudo docker exec rabbit rabbitmq-plugins enable rabbitmq_web_stomp
 sudo docker exec rabbit rabbitmqctl add_user admin admin
 sudo docker exec rabbit rabbitmqctl set_user_tags admin administrator
 sudo docker exec rabbit rabbitmqctl set_permissions -p / admin ".*" ".*" ".*"
+sudo docker exec rabbit rabbitmqctl enable_feature_flag all
 sudo docker restart rabbit
 
 sudo usermod -aG docker dains # 도커 소켓 실행 권한 추가
