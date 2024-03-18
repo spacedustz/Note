@@ -93,7 +93,7 @@ Jenkins Declarative Pipeline & Docker & Nginx를 이용한 Blue/Green 무중단 
 
 ### Remote
 
-- [Tiger VNC - SSH Tunneling](./Server/Remote/TigerVNC.md)
+- [Tiger VNC를 이용한 Remote GUI 환경 구축](./Server/Remote/TigerVNC.md)
 
 <br>
 
