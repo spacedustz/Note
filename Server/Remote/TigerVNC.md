@@ -60,7 +60,8 @@ sudo usermod -aG sudo dains
 sudo apt -y install openjdk-17-jdk
 
 ## Yarn 설치
-curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add - echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
 sudo apt -y install yarn
 
 ## NodeJS 설치
@@ -71,15 +72,10 @@ sudo npm install next
 
 ## Docker 설치
 sudo apt-get -y install apt-transport-https ca-certificates curl gnupg-agent software-properties-common
-
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
-
 sudo apt -y update
-
 sudo apt-get -y install docker-ce docker-ce-cli containerd.io
-
 sudo systemctl start docker && sudo systemctl enable docker
 
 ## FFmpeg 설치
@@ -94,10 +90,9 @@ sudo apt -y install ffmpeg
 # - 15674 : RabbitMQ WebSocket
 # - 25672 : RabbitMQ Clustering
 # - Admin 계정 추가 및 권한 부여
-sudo docker run -d --name rabbit -p 1883:1883 -p 4369:4369 -p 5671:5671 -p 5672:5672 -p 15672:15672 -p 15674:15674 -p 25672:25672 rabbitmq
+sudo docker run -d --name rabbit -p 1883:1883 -p 4369:4369 -p 5671:5671 -p 5672:5672 -p 15672:15672 -p 15674:15674 -p 25672:25672 rabbitmq:management
 sudo docker exec rabbit rabbitmq-plugins enable rabbitmq_mqtt
 sudo docker exec rabbit rabbitmq-plugins enable rabbitmq_web_mqtt
-sudo docker exec rabbit rabbitmq-plugins enable rabbitmq_management
 sudo docker exec rabbit rabbitmq-plugins enable rabbitmq_web_stomp
 sudo docker exec rabbit rabbitmqctl add_user admin admin
 sudo docker exec rabbit rabbitmqctl set_user_tags admin administrator
