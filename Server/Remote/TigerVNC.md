@@ -67,8 +67,8 @@ sudo apt -y install yarn
 ## NodeJS 설치
 sudo curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
 sudo apt-get -y install nodejs
-sudo npm install yarn
-sudo npm install next
+sudo npm install --global yarn
+sudo npm install --global next
 
 ## Docker 설치
 sudo apt-get -y install apt-transport-https ca-certificates curl gnupg-agent software-properties-common
@@ -90,14 +90,22 @@ sudo apt -y install ffmpeg
 # - 15674 : RabbitMQ WebSocket
 # - 25672 : RabbitMQ Clustering
 # - Admin 계정 추가 및 권한 부여
-sudo docker run -d --name rabbit -p 1883:1883 -p 4369:4369 -p 5671:5671 -p 5672:5672 -p 15672:15672 -p 15674:15674 -p 25672:25672 rabbitmq:management
+sudo docker run -d --name rabbit -p 1883:1883 -p 4369:4369 -p 5671:5671 -p 5672:5672 -p 15672:15672 -p 15674:15674 -p 25672:25672 rabbitmq:3-management
+sleep 2
 sudo docker exec rabbit rabbitmq-plugins enable rabbitmq_mqtt
+sleep 2
 sudo docker exec rabbit rabbitmq-plugins enable rabbitmq_web_mqtt
+sleep 2
 sudo docker exec rabbit rabbitmq-plugins enable rabbitmq_web_stomp
+sleep 2
 sudo docker exec rabbit rabbitmqctl add_user admin admin
+sleep 2
 sudo docker exec rabbit rabbitmqctl set_user_tags admin administrator
+sleep 2
 sudo docker exec rabbit rabbitmqctl set_permissions -p / admin ".*" ".*" ".*"
+sleep 2
 sudo docker exec rabbit rabbitmqctl enable_feature_flag all
+sleep 2
 sudo docker restart rabbit
 
 sudo usermod -aG docker dains # 도커 소켓 실행 권한 추가
