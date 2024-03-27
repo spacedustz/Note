@@ -2,7 +2,7 @@
 
 ---
 
-## 📚 Database
+# 📚 Database
 
 ### MariaDB
 
@@ -17,7 +17,14 @@
 
 ---
 
-## 📚 Backend
+# 📚 Backend
+
+### Spring
+
+- [Spring Cloud - Cloud Config Server/Client 구성](./Backend/Spring/Cloud/Cloud-Config/Spring%20Cloud%20Config.md)
+- [Spring Cloud - API Gateway](./Backend/Spring/Cloud/Cloud-Gateway/Cloud-Gateway.md)
+- [Util - Jar 실행 옵션](./Backend/Spring/Deploy/Jar%20Start%20Option.md)
+- [Util - Logback 설정](./Backend/Spring/Deploy/Logback.md)
 
 ### Message Queue
 
@@ -50,7 +57,7 @@
 
 ---
 
-## 📚 Server
+# 📚 Server
 
 ### Script
 
@@ -113,7 +120,7 @@ Jenkins Declarative Pipeline & Docker & Nginx를 이용한 Blue/Green 무중단 
 
 ---
 
-## 📚 Tools
+# 📚 Tools
 
 ### Git
 
@@ -122,7 +129,7 @@ Jenkins Declarative Pipeline & Docker & Nginx를 이용한 Blue/Green 무중단 
 
 ---
 
-## 📚 Algorithm
+# 📚 Algorithm
 
 - [알고리즘 기본 개념](./Algorithm/알고리즘-기본개념.md)
 - [정렬](./Algorithm/정렬알고리즘/정렬%20알고리즘.md)
