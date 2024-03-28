@@ -6,7 +6,7 @@
 
 ### MarkUp & Style Sheet
 
-- [자주 쓰는 HTML/CSSdhk WireFrame](./Languages/MarkUp%20&%20StyleSheet/1/1.%20자주쓰는%20HTML&CSS와%20WireFrame.md)
+- [자주 쓰는 Tag & WireFrame](./Languages/MarkUp%20&%20StyleSheet/1/1.%20자주쓰는%20HTML&CSS와%20WireFrame.md)
 - [FlexBox - Layout 설계](./Languages/MarkUp%20&%20StyleSheet/2/2.%20Flexbox.md)
 - [ARGB & BootStrap](./Languages/MarkUp%20&%20StyleSheet/3/3.%20ARGB와%20BootStrap.md)
 
