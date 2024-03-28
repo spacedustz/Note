@@ -24,6 +24,13 @@
 - [Concurrency - 14. Race Condition과 Data Rade](./Languages/Java/Concurrency/14.%20Race%20Condition%20&%20Data%20Race.md)
 - [Concurrency - 15. Coarse-Grained & Fine-Grained Lock](./Languages/Java/Concurrency/15.%20Coarse-Grained%20&%20Fine-Grained%20Lock.md)
 
+<br>
+
+### Python
+
+- [Python 개발 환경 세팅](./Languages/Python/개발환경세팅.md)
+- [Server Health Check Script](./Languages/Python/Health-Check.md)
+
 ---
 
 # 📚 Backend
