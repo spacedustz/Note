@@ -6,6 +6,8 @@
 
 ### Java
 
+- [CountDownLatch - Thread Blocking](./Languages/Java/CountDownLatch.md)
+
 - [Concurrency - 1. Process & Thread Scheduling](./Languages/Java/Concurrency/1.%20Process%20&%20Thread%20Scheduling.md)
 - [Concurrency - 2. Thread를 생성하는 다양한 방법](./Languages/Java/Concurrency/2.%20Create%20Thread.md)
 - [Concurrency - 3. Thread 상속(Inheritance)](./Languages/Java/Concurrency/3.%20Thread%20Inheritance.md)
