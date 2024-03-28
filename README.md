@@ -2,7 +2,15 @@
 
 ---
 
-# 📚 Langueges
+# 📚 Languages
+
+### MarkUp & Style Sheet
+
+- [자주 쓰는 HTML/CSSdhk WireFrame](./Languages/MarkUp%20&%20StyleSheet/1/1.%20자주쓰는%20HTML&CSS와%20WireFrame.md)
+- [FlexBox - Layout 설계](./Languages/MarkUp%20&%20StyleSheet/2/2.%20Flexbox.md)
+- [ARGB & BootStrap](./Languages/MarkUp%20&%20StyleSheet/3/3.%20ARGB와%20BootStrap.md)
+
+<br>
 
 ### Java
 
@@ -30,6 +38,12 @@
 
 - [Python 개발 환경 세팅](./Languages/Python/개발환경세팅.md)
 - [Server Health Check Script](./Languages/Python/Health-Check.md)
+
+<br>
+
+### JavaScript
+
+- [Optional Channing](./Languages/JavaScript/Optional%20Channing.md)
 
 <br>
 
@@ -89,6 +103,7 @@
 
 - [React 핵심 개념들](./Frontend/React/React.md)
 - [React Markdown을 이용한 글쓰기 기능 개발](./Frontend/React/Markdown/Markdown.md)
+- [Zustand 상태 관리](./Frontend/React/Zustand.md)
 
 ---
 
