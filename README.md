@@ -31,6 +31,12 @@
 - [Python 개발 환경 세팅](./Languages/Python/개발환경세팅.md)
 - [Server Health Check Script](./Languages/Python/Health-Check.md)
 
+<br>
+
+### TypeScript
+
+- [TypeScript 기본 문법 정리](./Languages/TypeScript/기본문법.md)
+
 ---
 
 # 📚 Backend
