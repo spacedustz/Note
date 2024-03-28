@@ -1,3 +1,9 @@
+## Server Health Check Script
+
+- 특정 시간대에 특정 프로세스들이 떠있는지 확인하고, 실행중이 아니라면 실행
+- 만약 조건에 맞는 시간대가 아니면 주기적으로 프로세스가 실행중인지 확인 후 프로세스 종료
+
+```python
 import datetime
 import subprocess
 import time
@@ -55,3 +61,4 @@ end_time = now.replace(hour=13, minute=10, second=0, microsecond=0)
 
 if __name__ == "__main__":
 check_and_run_process()
+```
