@@ -202,3 +202,24 @@ Jenkins Declarative Pipeline & Docker & Nginx를 이용한 Blue/Green 무중단 
 - [알고리즘 기본 개념](./Algorithm/기본개념/알고리즘-기본개념.md)
 - [Sort](Algorithm/Sort/Sort.md)
 - [Dynamic Programming](./Algorithm/Dynamic%20Programming/Dynamic%20Programming.md)
+
+---
+
+# 📚 Error
+
+**Jenkins**
+
+- [Jenkins - Credential & Web Hook Error](./Error/Jenkins/Jenkins%20-%20Credential%20&%20Web%20Hook%20Error.md)
+
+<br>
+
+**MySQL**
+
+- [Mysql - Global Transaction Identifier Error (GTID)](./Error/MySQL/MySQL%20-%20Global%20Transaction%20Identifier%20Error%20(GTID).md)
+
+<br>
+
+**Server**
+
+- [Ubuntu - OpenGL Initialize Exception](./Error/Server/OpenGL%20-%20glxinfo%20initialize%20exception.md)
+- [Ubuntu Nouveau Kernel Driver 제거](./Error/Server/Ubuntu%20-%20Nouveau%20Kernel%20Driver%20제거.md)
