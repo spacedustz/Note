@@ -44,19 +44,23 @@
 
 - 임의의 RTSP 영상을 FFmpeg을 이용해 변환 시킵니다.
 - 변환중인 FFmpeg 프로세스의 ID를 출력하는 윈도우 명령어를 추가해주고, `exec()`에 `/bin/sh`를 빼주고 command 변수에 `powershell.exe`를 붙여 Shell을 지정해주고 main 함수를 실행시킵니다.
+- 윈도우 프로세스의
 
 ```java
-public static void main(String[] args) {  
+/**  
+ * FFMPEG 프로세스가 실행 중인지 확인한다.  
+ * * @param ip  
+ * @param port  
+ * @param instanceName  
+ * @return  
+ */  
+public boolean isFfmpegProcessRunning(final String ip, final Integer port, final String instanceName) {  
     boolean isRunning = false;  
     String command = "";  
   
-    String ip = "192.168.0.215";  
-    String port = "554";  
-    String instanceName = "abc";  
-  
     if (OS.contains("win")) {  
-        command = "powershell.exe $currentId = (Get-Process -Id $PID).Id; Get-WmiObject Win32_Process | Where-Object { $_.CommandLine -like '*ffmpeg* -i rtsp://" + ip + ":" + port + "/" + instanceName + "*' -and $_.ProcessId -ne $currentId } | Select-Object ProcessId";  
-        log.info("Check FFmpeg - OS : {}", OS);  
+        command = "powershell.exe $currentId = (Get-Process -Id $PID).Id; Get-WmiObject Win32_Process | Where-Object { $_.CommandLine -like '*ffmpeg -i rtsp://" + ip + ":" + port + "/" + instanceName + "*' -and $_.ProcessId -ne $currentId } | Select-Object ProcessId";  
+        log.info("Check FFmpeg - OS : Windows");  
     } else {  
         command = "ps -ef | grep ffmpeg | grep rtsp://" + ip + ":" + port + "/" + instanceName + " | grep -v grep | awk '{print $2}'";  
         log.info("Check FFmpeg - OS : Linux");  
@@ -64,31 +68,39 @@ public static void main(String[] args) {
   
     log.info("Check FFmpeg - Command : {}", command);  
   
+    Process process = null;  
+  
     try {  
-        Process process;  
         if (OS.contains("win")) {  
-            // 윈도우에서는 powershell 명령 실행  
+            // 윈도우에서는 powershell 명령을 직접 실행  
             process = Runtime.getRuntime().exec(command);  
         } else {  
             // 리눅스에서는 /bin/sh를 통해 명령 실행  
             process = Runtime.getRuntime().exec(new String[]{"/bin/sh", "-c", command});  
         }  
   
-        BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));  
+        BufferedReader inputStream = new BufferedReader(new InputStreamReader(process.getInputStream()));  
+        BufferedReader errorStream = new BufferedReader(new InputStreamReader(process.getErrorStream()));  
   
-        String line;  
-        while ((line = reader.readLine()) != null) {  
-            log.info("Check FFmpeg Process - {}", line);  
+        String inputLine;  
+        while ((inputLine = inputStream.readLine()) != null) {  
+            log.info("Check FFmpeg - Input Stream - {}", inputLine);  
             isRunning = true;  
         }  
   
+        String errorLine;  
+        while ((errorLine = errorStream.readLine()) != null) {  
+            log.info("Check FFmpeg - Error Stream - {}", errorLine);  
+        }  
+  
         process.waitFor(3000, TimeUnit.MILLISECONDS);  
+  
     } catch (Exception e) {  
         log.warn("Check FFmpeg - Exception : {}", e.getMessage());  
         e.printStackTrace();  
     }  
   
-    log.info("Check Process Result - {}", isRunning);  
+    return isRunning;  
 }
 ```
 
@@ -97,3 +109,11 @@ public static void main(String[] args) {
 **Main 함수 실행 결과 프로세스가 실행 중임을 확인함과 동시에 Process ID까지 잘 출력 되어 isRunning값 True 반환**
 
 ![](./4.png)
+
+<br>
+
+**실제 로직 수정 후 찍힌 로그**
+
+- Health Check를 수행해 **특정 카메라 번호에 대한 프로세스 ID가 없으면** FFmpeg을 실행하는 로직이 잘 실행되고 있습니다.
+
+![](./5.png)
