@@ -1,4 +1,4 @@
-## Java에서 Windows CMD 실행
+## Java에서 Windows Power Shell 명령어 실행
 
 평소에 리눅스 환경의 서버에서 작업을 하다가 윈도우에 서버를 구축하고 Java 프로그램을 돌리던 중,
 
@@ -6,7 +6,7 @@
 
 <br>
 
-결론만 말하면 Java 코드에서 OS 마다 실행할 Command를 Runtime의 getRuntime().exec()를 통해 실행합니다.
+Java 코드에서 OS 마다 실행할 Command를 Runtime의 getRuntime().exec()를 통해 실행합니다.
 
 이 때 Linux와 Windows는 Shell환경이 다르니 당연히 OS에 맞는 Shell을 지정해줘야 제대로 동작 할 겁니다.
 
@@ -43,8 +43,8 @@
 리눅스에서는 잘 작동하던 로직이 윈도우에서 안된 문제이니, 윈도우 환경에서 테스트 진행
 
 - 임의의 RTSP 영상을 FFmpeg을 이용해 변환 시킵니다.
-- 변환중인 FFmpeg 프로세스의 ID를 출력하는 윈도우 명령어를 추가해주고, `exec()`에 `/bin/sh`를 빼주고 command 변수에 `powershell.exe`를 붙여 Shell을 지정해주고 main 함수를 실행시킵니다.
-- 윈도우 프로세스의
+- 변환중인 FFmpeg 프로세스의 ID를 출력하는 윈도우 명령어를 추가해주고, `exec()`에 `/bin/sh`를 빼주고 command 변수에 `powershell.exe`를 붙여 Shell을 지정 해 줍니다.
+- 윈도우 프로세스의 InputStream, ErrorStream을 모두 출력 해줍니다.
 
 ```java
 /**  
@@ -114,6 +114,6 @@ public boolean isFfmpegProcessRunning(final String ip, final Integer port, final
 
 **실제 로직 수정 후 찍힌 로그**
 
-- Health Check를 수행해 **특정 카메라 번호에 대한 프로세스 ID가 없으면** FFmpeg을 실행하는 로직이 잘 실행되고 있습니다.
+- **특정 카메라 번호에 대한 FFmpeg 프로세스 ID가 없으면** FFmpeg을 실행하는 Health Check 로직이 잘 실행 되었습니다.
 
 ![](./5.png)

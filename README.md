@@ -14,7 +14,7 @@
 
 ### Java
 
-- [Java에서 Windows CMD 실행](./Languages/Java/CMD/Java에서%20Windows%20CMD%20실행.md)
+- [Java에서 Windows Power Shell 명령어 실행](Java에서%20Windows%20Power%20Shell%20명령어%20실행.md)
 
 - [CountDownLatch - Thread Blocking](./Languages/Java/CountDownLatch.md)
 
