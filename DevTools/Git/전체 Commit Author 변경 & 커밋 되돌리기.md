@@ -22,3 +22,14 @@ git push -f origin
 git reset --hard HEAD^
 git push -f origin main
 ```
+
+---
+
+## Commit Author 개별적으로 바꾸기
+
+```bash
+git rebase -i {git hash}
+# [vi 편집기] -> pick을 e or edit 으로 바꾼후 저장
+git commit --amend --author="spacedustz<spacedustw@gmail.com>"
+git push -f origin
+```
