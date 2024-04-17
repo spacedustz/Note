@@ -3,7 +3,7 @@
 
 ```bash
 # 모든 커밋 Author 변경
-git filter-branch -f --env-filter "GIT_AUTHOR_NAME='spacedustz'; GIT_AUTHOR_EMAIL='spacedustw@gmail.com'; GIT_COMMITTER_NAME='spacedustz'; GIT_COMMITTER_EMAIL='spacedustw@gmail.com';" HEAD
+git filter-branch -f --env-filter "GIT_AUTHOR_NAME='spacedustz'; GIT_AUTHOR_EMAIL='tensorflow555@gmail.com'; GIT_COMMITTER_NAME='spacedustz'; GIT_COMMITTER_EMAIL='tensorflow555@gmail.com';" HEAD
 
 # Push
 git push -f origin
@@ -33,3 +33,14 @@ git rebase -i {git hash}
 git commit --amend --author="spacedustz<spacedustw@gmail.com>"
 git push -f origin
 ```
+
+---
+
+## Git Commit History 까지 보존하며 Repository 이동
+
+1. 빈폴더 생성
+2. 옮길 빈 레포 생성해두기
+3. 빈폴더에서 `git clone --mirror {old-repo.git}`
+4. `cd {old-repo}`
+5. `git remote set-url --push origin {new-repo.git}
+6. `git push --mirror`
