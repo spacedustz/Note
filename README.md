@@ -60,6 +60,7 @@
 
 ### Spring
 
+- [QueryDSL(Kotlin) - DTO Projection](./Backend/Spring/QueryDSL/DTO%20Projection.md)
 - [Reactive - Spring WebClient](./Backend/Spring/Reactive/WebClient/Spring%20WebClient.md)
 - [Spring Cloud - Cloud Config Server/Client 구성](./Backend/Spring/Cloud/Cloud-Config/Spring%20Cloud%20Config.md)
 - [Spring Cloud - API Gateway](./Backend/Spring/Cloud/Cloud-Gateway/Cloud-Gateway.md)
