@@ -4,6 +4,9 @@
 
 - Ubuntu Server 22.0 LTS 버전 설치 (OS 설치중 파티션 분할 시, /swap 파티션은 메모리의 2배 용량으로 잡아 주기)
 - 설치된 Ubuntn Server Home 디렉터리에 GPU에 맞는 Nvidia Graphic Driver(.run 파일) 두기
+- [Download Nvidia Driver](https://www.nvidia.com/download/index.aspx)
+- [Cuda Toolkit 그래픽 드라이버 호환 여부](https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html)
+- [Download Cuda Toolkit](https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&Distribution=Ubuntu&target_version=22.04&target_type=runfile_local)
 
 ---
 
