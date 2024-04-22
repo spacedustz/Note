@@ -168,6 +168,8 @@ sudo reboot
 ## ⚙️ Remote GUI를 위한 Tiger VNC 설치
 
 ```bash
+#!/bin/bash
+
 ## TigerVNC & D-bus & Xorg 패키지 설치
 sudo apt -y install tigervnc-standalone-server dbus-x11 pkg-config xserver-xorg-dev
 
@@ -210,7 +212,7 @@ After=syslog.target network.target
 
 [Service]
 Type=simple
-User=dains
+User=skw
 PAMName=login
 PIDFile=/home/%u/.vnc/%H%i.pid
 ExecStartPre=/bin/bash -c '/usr/bin/vncserver -kill :%i > /dev/null 2>&1 || :'
@@ -222,6 +224,7 @@ WantedBy=multi-user.target
 EOF
 
 sudo systemctl daemon-reload
+sudo chown skw:skw /home/skw/.vnc
 
 sudo reboot
 ```

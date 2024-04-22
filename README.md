@@ -2,60 +2,6 @@
 
 ---
 
-# 📚 Languages
-
-### MarkUp & Style Sheet
-
-- [자주 쓰는 Tag & WireFrame](./Languages/MarkUp%20&%20StyleSheet/1/1.%20자주쓰는%20HTML&CSS와%20WireFrame.md)
-- [FlexBox - Layout 설계](./Languages/MarkUp%20&%20StyleSheet/2/2.%20Flexbox.md)
-- [ARGB & BootStrap](./Languages/MarkUp%20&%20StyleSheet/3/3.%20ARGB와%20BootStrap.md)
-
-<br>
-
-### Java
-
-- [Java에서 Windows Power Shell 명령어 실행](Java에서%20Windows%20Power%20Shell%20명령어%20실행.md)
-
-- [CountDownLatch - Thread Blocking](./Languages/Java/CountDownLatch.md)
-
-- [Concurrency - 1. Process & Thread Scheduling](./Languages/Java/Concurrency/1.%20Process%20&%20Thread%20Scheduling.md)
-- [Concurrency - 2. Thread를 생성하는 다양한 방법](./Languages/Java/Concurrency/2.%20Create%20Thread.md)
-- [Concurrency - 3. Thread 상속(Inheritance)](./Languages/Java/Concurrency/3.%20Thread%20Inheritance.md)
-- [Concurrency - 4. Thread Coordination-Interrupt](./Languages/Java/Concurrency/4.%20Thread%20Interrupt.md)
-- [Concurrency - 5. Daemon Thread](./Languages/Java/Concurrency/5.%20Deamon%20Thread.md)
-- [Concurrency - 6. Thread.join()을 이용한 실행 순서 제어](./Languages/Java/Concurrency/6.%20Thread%20Join.md)
-- [Concurrency - 7. 어플리케이션 성능의 정의](./Languages/Java/Concurrency/7.%20Optimization.md)
-- [Concurrency - 8. Image Processing - 성능 최적화(지연시간)](./Languages/Java/Concurrency/8.%20Image%20Processing.md)
-- [Concurrency - 9. 어플리케이션 처리량의 정의](./Languages/Java/Concurrency/9.%20Throughput%20Optimization.md)
-- [Concurrency - 10. 처리량 최적화 & 성능 테스트(Apache Jmeter)](./Languages/Java/Concurrency/10.%20Throughput%20Optimization%20Test.md)
-- [Concurrency - 11. Thread 간 리소스 공유 시 발생할 수 있는 문제](./Languages/Java/Concurrency/11.%20Sharing-Resource.md)
-- [Concurrency - 12. Critical Section](./Languages/Java/Concurrency/12.%20Critical%20Section.md)
-- [Concurrency - 13. Metrics Capturing을 통한 Atomic Operation 판단](./Languages/Java/Concurrency/13.%20Atomic%20Operation.md)
-- [Concurrency - 14. Race Condition과 Data Rade](./Languages/Java/Concurrency/14.%20Race%20Condition%20&%20Data%20Race.md)
-- [Concurrency - 15. Coarse-Grained & Fine-Grained Lock](./Languages/Java/Concurrency/15.%20Coarse-Grained%20&%20Fine-Grained%20Lock.md)
-
-<br>
-
-### Python
-
-- [Python 개발 환경 세팅](./Languages/Python/개발환경세팅.md)
-- [Server Health Check Script](./Languages/Python/Health-Check.md)
-
-<br>
-
-### JavaScript
-
-- [Optional Channing](./Languages/JavaScript/Optional%20Channing.md)
-- [Stomp.js - WebSocket Subscribe](./Languages/JavaScript/WebSocket.md)
-
-<br>
-
-### TypeScript
-
-- [TypeScript 기본 문법 정리](./Languages/TypeScript/기본문법.md)
-
----
-
 # 📚 Backend
 
 ### Spring
@@ -66,6 +12,7 @@
 - [Spring Cloud - API Gateway](./Backend/Spring/Cloud/Cloud-Gateway/Cloud-Gateway.md)
 - [Slack WebHook 연동](./Backend/WebHook/Slack/Slack%20Web%20Hook%20연동.md)
 - [Discord WebHook 연동](./Backend/WebHook/Discord/Discord%20Bot%20연동.md)
+- [Spring WebSocket](./Backend/Spring/WebSocket/WebSocket.md)
 - [Util - Spring ehCache & DevTools](./Backend/Spring/Utils/Spring%20ehCache%20&%20DevTools.md)
 - [Util - Jar 실행 옵션](./Backend/Spring/Deploy/Jar%20Start%20Option.md)
 - [Util - Logback 설정](./Backend/Spring/Deploy/Logback.md)
@@ -197,6 +144,60 @@ Jenkins Declarative Pipeline & Docker & Nginx를 이용한 Blue/Green 무중단 
 - [NTP - 시간 동기화](./Server/Utils/시간동기화/시간%20동기화.md)
 - [좀비 프로세스 죽이기](./Server/Utils/좀비%20프로세스%20죽이기.md)
 - [Ubuntu LTS 버전별 IP 변경](./Server/Utils/Ubuntu%20버전별%20IP%20변경.md)
+
+---
+
+# 📚 Languages
+
+### MarkUp & Style Sheet
+
+- [자주 쓰는 Tag & WireFrame](./Languages/MarkUp%20&%20StyleSheet/1/1.%20자주쓰는%20HTML&CSS와%20WireFrame.md)
+- [FlexBox - Layout 설계](./Languages/MarkUp%20&%20StyleSheet/2/2.%20Flexbox.md)
+- [ARGB & BootStrap](./Languages/MarkUp%20&%20StyleSheet/3/3.%20ARGB와%20BootStrap.md)
+
+<br>
+
+### Java
+
+- [Java에서 Windows Power Shell 명령어 실행](Java에서%20Windows%20Power%20Shell%20명령어%20실행.md)
+
+- [CountDownLatch - Thread Blocking](./Languages/Java/CountDownLatch.md)
+
+- [Concurrency - 1. Process & Thread Scheduling](./Languages/Java/Concurrency/1.%20Process%20&%20Thread%20Scheduling.md)
+- [Concurrency - 2. Thread를 생성하는 다양한 방법](./Languages/Java/Concurrency/2.%20Create%20Thread.md)
+- [Concurrency - 3. Thread 상속(Inheritance)](./Languages/Java/Concurrency/3.%20Thread%20Inheritance.md)
+- [Concurrency - 4. Thread Coordination-Interrupt](./Languages/Java/Concurrency/4.%20Thread%20Interrupt.md)
+- [Concurrency - 5. Daemon Thread](./Languages/Java/Concurrency/5.%20Deamon%20Thread.md)
+- [Concurrency - 6. Thread.join()을 이용한 실행 순서 제어](./Languages/Java/Concurrency/6.%20Thread%20Join.md)
+- [Concurrency - 7. 어플리케이션 성능의 정의](./Languages/Java/Concurrency/7.%20Optimization.md)
+- [Concurrency - 8. Image Processing - 성능 최적화(지연시간)](./Languages/Java/Concurrency/8.%20Image%20Processing.md)
+- [Concurrency - 9. 어플리케이션 처리량의 정의](./Languages/Java/Concurrency/9.%20Throughput%20Optimization.md)
+- [Concurrency - 10. 처리량 최적화 & 성능 테스트(Apache Jmeter)](./Languages/Java/Concurrency/10.%20Throughput%20Optimization%20Test.md)
+- [Concurrency - 11. Thread 간 리소스 공유 시 발생할 수 있는 문제](./Languages/Java/Concurrency/11.%20Sharing-Resource.md)
+- [Concurrency - 12. Critical Section](./Languages/Java/Concurrency/12.%20Critical%20Section.md)
+- [Concurrency - 13. Metrics Capturing을 통한 Atomic Operation 판단](./Languages/Java/Concurrency/13.%20Atomic%20Operation.md)
+- [Concurrency - 14. Race Condition과 Data Rade](./Languages/Java/Concurrency/14.%20Race%20Condition%20&%20Data%20Race.md)
+- [Concurrency - 15. Coarse-Grained & Fine-Grained Lock](./Languages/Java/Concurrency/15.%20Coarse-Grained%20&%20Fine-Grained%20Lock.md)
+
+<br>
+
+### Python
+
+- [Python 개발 환경 세팅](./Languages/Python/개발환경세팅.md)
+- [Server Health Check Script](./Languages/Python/Health-Check.md)
+
+<br>
+
+### JavaScript
+
+- [Optional Channing](./Languages/JavaScript/Optional%20Channing.md)
+- [Stomp.js - WebSocket Subscribe](./Languages/JavaScript/WebSocket.md)
+
+<br>
+
+### TypeScript
+
+- [TypeScript 기본 문법 정리](./Languages/TypeScript/기본문법.md)
 
 ---
 
