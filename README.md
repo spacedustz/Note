@@ -117,6 +117,10 @@
 
 # 📚 Database
 
+### MySQL
+
+- [Global Transaction Identifier - Firebase to AWS RDS 데이터 이전](./Database/MySQL/GTID/GTID.md)
+
 ### MariaDB
 
 - [MariaDB 기본 명령어](./Database/MariaDB/기본%20명령어.md)
