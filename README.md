@@ -87,7 +87,7 @@
 - [Live Streaming 이해하기](./Backend/Streaming/Live-Streaming/Live%20Streaming%20이해하기.md)
 - [FFmpeg 기본 사용법](./Backend/Streaming/FFmpeg/FFmpeg.md)
 - [GStreamer Pipeline](./Backend/Streaming/GStreamer/Gstreamer.md)
-- [FFmpeg을 이용한 RTSP Stream -> HLS 변환 스트리밍](./Backend/Streaming/HLS/RTSP%20to%20HLS.md)
+- [FFmpeg을 이용한 RTSP Stream -> HLS 변환(실시간 스트리밍)](./Backend/Streaming/HLS/RTSP%20to%20HLS.md)
 
 <br>
 
@@ -120,6 +120,8 @@
 ### MySQL
 
 - [Global Transaction Identifier - Firebase to AWS RDS 데이터 이전](./Database/MySQL/GTID/GTID.md)
+
+<br>
 
 ### MariaDB
 
@@ -182,7 +184,7 @@ Jenkins Declarative Pipeline & Docker & Nginx를 이용한 Blue/Green 무중단 
 
 <br>
 
-### Remote
+### Remote GUI
 
 - [Tiger VNC를 이용한 Remote GUI 환경 구축](./Server/Remote/TigerVNC.md)
 
