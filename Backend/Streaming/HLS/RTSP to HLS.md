@@ -188,49 +188,124 @@ public class InstanceDto {
 - control() : Control API에 StreamingDTO의 형식대로 API 요청을 하면 FFmpeg 변환 프로세스를 시작합니다.
 
 ```java
-@Slf4j  
 @RestController  
 @RequestMapping("/api/hls")  
 @RequiredArgsConstructor  
-public class StreamingController {  
-    private final RestApiService restApiService;  
-    private final StreamingService streamingService;  
+@Slf4j  
+public class HlsConstroller {  
+  private final ProcessService processService;  
   
-    @Value("${api.key}")  
-    private String apiKey;  
+  @Value("${api.key}")  
+  private String apiKey;  
+  /**  
+   * HLS 스트리밍  
+   *  
+   * @return  
+   */  
+  @GetMapping("/stream")  
+  public ResponseEntity<Resource> streamHls() {  
+    File videoFile = new File("output.m3u8");  
+    Resource videoResource = new FileSystemResource(videoFile);  
   
-    @GetMapping("/request")  
-    public void startConvert(@RequestParam String ip, @RequestParam String command) {  
-        restApiService.requestStreaming(ip, command);  
+    return ResponseEntity.ok(videoResource);  
+  }  
+  
+  /**  
+   * ffmpeg 상태 체크  
+   *  
+   * @param ip  
+   * @param port  
+   * @param instanceName  
+   * @return  
+   */  
+  @GetMapping("/check")  
+  public String hlsCheck(@RequestParam(value = "ip") String ip,  
+                         @RequestParam(value = "port") String port,  
+                         @RequestParam(value = "instanceName") String instanceName){  
+  
+    String ok = "{\"code\": 0, \"msg\": \"Active\"}";  
+    String nok = "{\"code\": -1, \"msg\": \"InActive\"}";  
+  
+    Integer portNumber = Integer.valueOf(port);  
+    boolean result = processService.isFfmpegProcessRunning(ip, portNumber, instanceName);  
+    if(result){  
+      return ok;  
     }  
+    return nok;  
+  }  
   
-    @PostMapping("/control")  
-    public String controlHls(@Valid @RequestBody StreamingDto request) {  
-        String ok = "{\"code\": 0, \"msg\": \"Success\"}";  
-        String nok = "{\"code\": -1, \"msg\": \"Failure\"}";  
+  /**  
+   * HLS Converter 제어(시작/종료)  
+   *   * @param request  
+   * @return  
+   */  
+  @PostMapping("/control")  
+  public String controlHls(@Valid @RequestBody HlsControlDto request) {  
+    String ok = "{\"code\": 0, \"msg\": \"Success\"}";  
+    String nok = "{\"code\": -1, \"msg\": \"Failure\"}";  
+    int result = 0;  
   
-        try {  
-            if (!StringUtils.hasText(request.getApiKey()) || !apiKey.trim().equals(request.getApiKey().trim())) {  
-                log.error("API Key가 잘못 되었습니다. - {}", request);  
+    try{  
+      if(!StringUtils.hasText(request.getApiKey()) || !apiKey.trim().equals(request.getApiKey().trim())){  
+        log.error("controlHls|invalid key|{}|{}", request.toString());  
   
-                return nok;  
-            }  
+        return nok;  
+      }  
   
-            // Command가 Start or Stop 일때 FFmpeg 프로세스 실행 / 중지  
-            if (request.getCommand().equalsIgnoreCase("start")) {  
-                streamingService.startConverter(request.getCameraId(), request.getInstanceName(), request.getIp(), request.getPort());  
-            } else if (request.getCommand().equalsIgnoreCase("stop")) {  
-                streamingService.stopHlsConverter(request.getCameraId(), request.getInstanceName());  
-            }  
-        } catch (Exception e) {  
-            log.error("HLS Controller Exception - {}, {}", e.getMessage(), request.toString());  
-            e.printStackTrace();  
+      if(request.getCommand().equalsIgnoreCase("start")) {  
+        result = processService.startHlsConverter(request.getCameraId(), request.getInstanceName(), request.getIp(), request.getPort());  
   
-            return nok;  
+        if(result == 1){  
+          ok = "{\"code\": 1, \"msg\": \"Success\"}";  
+        }else{  
+          ok = "{\"code\": 0, \"msg\": \"Success\"}";  
         }  
+      }else if(request.getCommand().equalsIgnoreCase("stop")){  
+        processService.stopHlsConverter(request.getInstanceName(), request.getIp(), request.getPort());  
+      }else{  
+        log.error("controlHls|unknown command|{}|{}", request.toString());  
   
-        return ok;  
+        return nok;  
+      }  
+    } catch (Exception e) {  
+      log.error("controlHls|exception|{}|{}", e.getMessage(), request.toString());  
+  
+      e.printStackTrace();  
+  
+      return nok;  
     }  
+  
+    return ok;  
+  }  
+  
+  @GetMapping("/file/exist/{cameraId}")  
+  public String fileExist(@PathVariable Integer cameraId) {  
+    String ok = "{\"code\": 0, \"msg\": \"Success\"}";  
+    String nok = "{\"code\": -1, \"msg\": \"Failure\"}";  
+    boolean fileExist = false;  
+  
+    try{  
+        if(cameraId == null){  
+        log.error("fileExist|invalid cameraId|{}", cameraId);  
+  
+        return nok;  
+      }  
+  
+      fileExist = processService.hlsFileExist(cameraId);  
+  
+      if(fileExist){  
+        return ok;  
+      }else{  
+        return nok;  
+      }  
+    } catch (Exception e) {  
+      log.error("fileExist|exception|{}|{}", fileExist, e.getMessage());  
+  
+      e.printStackTrace();  
+  
+      return nok;  
+    }  
+  }  
 }
 ```
 
@@ -336,10 +411,12 @@ public class RestApiService {
 
 여기서 다양한 옵션을 통해 FFmpeg 프로세스의 Low Latency를 위한 튜닝 작업을 합니다.
 
+OS가 Windows일때와 Linux일떄의 CMD 실행 문이 다르니 이 부분을 조심해야 합니다.
+
 ```java
-@Slf4j  
 @Service  
-public class StreamingService {  
+@Slf4j  
+public class ProcessService {  
     @Value("${ffmpeg.option.hls.time}")  
     private int hlsTime;  
   
@@ -355,137 +432,239 @@ public class StreamingService {
     @Value("${hls.file.path}")  
     private String hlsFilePath;  
   
-    private Map<Integer, Process> processMap = new ConcurrentHashMap();  
-  
-    private String scriptPath = "script/";  
+    //private Map<String, Process> processMap = new ConcurrentHashMap();  
+    private static final String OS = System.getProperty("os.name").toLowerCase();  
   
     /**  
-     * FFmpeg 프로세스 시작  
+     * @author 신건우
+     * HLS Converter 시작(FFMPEG 프로세스 시작)  
      * @param cameraId  
      * @param instanceName  
      * @param ip  
      * @param port  
      * @throws IOException  
-     * @author 신건우  
      */  
-    public void startConverter(final Integer cameraId, final String instanceName, final String ip, final Integer port) throws IOException {  
-        Process process = processMap.get(cameraId);  
+    public int startHlsConverter(final Integer cameraId, final String instanceName, final String ip, final Integer port) throws IOException {  
+        //Process process = processMap.get(cameraId);  
+        int started = 0;  
+        log.info("Start HLS - CameraId : {}, instanceName : {}, ip : {},  port : {}", cameraId, instanceName, ip, port);  
   
-        // FFmpeg에 사용할 명령어를 String Builder를 이용해 작성 합니다.  
-        if (process == null || !process.isAlive()) {  
-            StringBuilder builder = new StringBuilder();  
-            builder.append("ffmpeg -i rtsp://");  
-            builder.append(ip);  
-            builder.append(":");  
-            builder.append(port);  
-            builder.append("/");  
-            builder.append(instanceName);  
-            builder.append(" -c:v copy -c:a copy ");   
-//            builder.append(" -profile:v baseline ");  
-//            builder.append(" -fflags nobuffer ");  
-//            builder.append(" -tune zerolatency ");  
-            builder.append(" -hls_time ").append(hlsTime);  
-            builder.append(" -hls_list_size ").append(hlsListSize);  
-            builder.append(" -hls_flags ").append(hlsFlags);  
-            builder.append(" -start_number ").append(startNumber);  
-            builder.append(" ").append(hlsFilePath).append(cameraId).append(File.separator).append("output.m3u8");  
+        boolean ifFfmpegProcessRunning = this.isFfmpegProcessRunning(ip, port, instanceName);  
+        log.info("Start HLS - 프로세스 실행 상태 - {}", Optional.of(ifFfmpegProcessRunning));  
   
-            // 프로세스를 시작하게 할 명령어 입니다.  
-            String cmd = builder.toString();  
+        String filePath = "";  
   
-            File file = new File(hlsFilePath + cameraId);  
-  
-            // 파일이 없으면 생성합니다.  
-            if (!file.exists()) file.mkdirs();  
-  
-            // 명령을 전달하여 프로세스 실행합니다.  
-            process = Runtime.getRuntime().exec(cmd);  
-  
-            // 프로세스 출력 에러 스트림 리다이렉션  
-            BufferedReader errorStream = new BufferedReader(new InputStreamReader(process.getErrorStream()));  
-            String line;  
-            AtomicInteger exitCode = new AtomicInteger();  
-  
-            while ((line = errorStream.readLine()) != null) {  
-                log.warn(line);  
-            }  
-  
-            Process finalProcess = process;  
-            CompletableFuture.runAsync(() -> {  
-                try {  
-                    exitCode.set(finalProcess.waitFor());  
-                    log.warn("FFmpeg process exited with exit code: {}", exitCode);  
-                } catch (InterruptedException e) {  
-                    log.error("Process Wait For Failed - {}", e.getMessage());  
-                }  
-            });  
-  
-            // 카메라의 식별자와 프로세스를 Map에 넣습니다.  
-            processMap.put(cameraId, process);  
-  
-            log.warn("FFmpeg 변환 프로세스가 시작됩니다. - {}, {}, {}, {}, {}, {}", cameraId, instanceName, ip, port, cmd, process.isAlive());  
-            log.error("Process Map 테스트 : {}", processMap.entrySet().stream().toList().toString());  
-  
+        if (OS.contains("win")) {  
+            filePath = hlsFilePath.replace("/", "\\");  
         } else {  
-            log.warn("FFmpeg 변환 프로세스가 이미 실행 중 입니다.");  
-        }  
-    }  
-  
-    /**  
-     * FFmpeg 프로세스 종료  
-     * @param cameraId  
-     * @param instanceName  
-     * @throws IOException  
-     * @author 신건우  
-     */  
-    public void stopHlsConverter(final Integer cameraId, final String instanceName) throws IOException {  
-//        Process process = processMap.get(cameraId);  
-  
-        // 프로세스가 존재하면 종료합니다.  
-//        if (process != null && process.isAlive()) {  
-//            process.destroy();  
-//  
-//            try {  
-//                process.waitFor();  
-//            } catch (Exception e) {  
-//                log.error("Process Wait For Failed - {}", e.getMessage());  
-//            }  
-  
-//            process = null;  
-            Runtime.getRuntime().exec("taskkill /IM ffmpeg.exe /F /T");  
-  
-            File file = new File(hlsFilePath + cameraId);  
-  
-            // 파일이 존재하면 제거합니다.  
-            if (file.exists()) {  
-                file.delete();  
-            }  
-  
-            // Map에서 프로세스를 제거합니다.  
-//            processMap.remove(cameraId);  
-  
-//        } else {  
-//            log.warn("FFmpeg 변환 프로세스가 실행 중이 아닙니다.");  
-//        }  
-    }  
-  
-    /**  
-     * FFmpeg 프로세스 Health Check  
-     */    
-    @Scheduled(fixedDelayString = "${ffmpeg.check.interval.millis}")  
-    public void checkProcess() {  
-        if (processMap.isEmpty()) {  
-            log.warn("Check FFmpeg - 카메라 변환 프로세스가 실행 중이 아닙니다.");  
+            filePath = hlsFilePath;  
         }  
   
-        processMap.forEach((cameraId, process) -> {  
-            if (process != null) {  
-                if (process.isAlive()) {  
-                    log.warn("Check FFmpeg - {}번 카메라 변환 프로세스가 실행 중 입니다.", cameraId);  
+        //if (process == null || !process.isAlive()) {  
+        if (!ifFfmpegProcessRunning) {  
+            try {  
+                File file = new File(filePath + cameraId);  
+                File[] files = file.listFiles();  
+  
+                if (files != null) {  
+                    log.info("Start HLS - 기존 폴더 존재");  
+                    for (File f : files) {  
+                        if (f.isDirectory()) {  
+                            // 디렉토리 내의 서브 디렉토리 삭제  
+                            deleteDirectory(f);  
+                            log.info("Start HLS - 디렉터리, 파일 삭제");  
+                        } else {  
+                            // 파일 삭제  
+                            f.delete();  
+                        }  
+                    }  
                 }  
+  
+                if (!file.exists()) {  
+                    log.info("Start HLS - 디렉터리에 파일이 존재하지 않음, 파일 생성 : {}", (filePath + cameraId));  
+                    file.mkdirs();  
+                } else {  
+                    log.info("Start HLS - 디렉터리에 파일이 존재함, 파일 삭제 : {}", (filePath + cameraId));  
+                    file.delete();  
+  
+                    try {  
+                        Thread.sleep(1000);  
+                    } catch (InterruptedException e) {  
+                        log.warn("Start HLS - Thread Interrupted : {}", e.getMessage());  
+                        Thread.currentThread().interrupt(); // 다시 인터럽트 플래그 설정  
+                    }  
+                    file.mkdirs();  
+                    log.info("Start HLS - 파일 & 폴더 생성 완료");  
+                }  
+            } catch (Exception e) {  
+                log.warn("Start HLS - 파일 & 폴더 생성 에러 : {}, {}", (filePath + cameraId), e.getMessage());  
             }  
-        });  
+  
+            StringBuilder cmd = new StringBuilder();  
+  
+            String separator = "";  
+            if (OS.contains("win")) {  
+                separator = "\\";  
+            } else {  
+                separator = File.separator;  
+            }  
+  
+            cmd.append("ffmpeg -i rtsp://").append(ip).append(":").append(port).append("/").append(instanceName);  
+            cmd.append(" -c:v copy -c:a copy");  
+            cmd.append(" -hls_time ").append(hlsTime);  
+            cmd.append(" -hls_list_size ").append(hlsListSize);  
+            cmd.append(" -hls_flags ").append(hlsFlags);  
+            cmd.append(" -hls_allow_cache 0");  
+            cmd.append(" -fflags nobuffer");  
+            cmd.append(" -strict experimental");  
+            cmd.append(" -avioflags direct");  
+            cmd.append(" -fflags discardcorrupt");  
+            cmd.append(" -flags low_delay");  
+            cmd.append(" -start_number ").append(startNumber).append(" ");  
+            cmd.append(filePath).append(cameraId).append(separator).append("output.m3u8");  
+  
+            log.info("Start HLS - FFmpeg CMD : {}", cmd);  
+  
+            Process process;  
+            if (OS.contains("win")) {  
+                process = Runtime.getRuntime().exec(cmd.toString());  
+            } else {  
+                process = Runtime.getRuntime().exec(new String[]{"/bin/sh", "-c", cmd.toString()});  
+            }  
+  
+            BufferedReader reader = new BufferedReader(new InputStreamReader(process.getErrorStream()));  
+            String line;  
+            while ((line = reader.readLine()) != null) {  
+//                log.info("ㅁㅁㅁ {}", line);            }  
+  
+            try {  
+                process.waitFor(3000, TimeUnit.MILLISECONDS);  
+                log.info("Start HLS - FFmpeg 프로세스 시작");  
+            }catch (Exception e){  
+                log.warn("error message : {}", e.getMessage());  
+            } finally {  
+                process.destroy();  
+            }  
+  
+            started = 1;  
+            //processMap.put(instanceName.trim(), process);  
+        } else {  
+            log.debug("StartHLS - FFmpeg 프로세스 실행 중");  
+        }  
+  
+        return started;  
     }  
+  
+    //public void stopHlsConverter(final Integer cameraId, final String instanceName) throws IOException {  
+  
+    /** HLS Converter 종료(FFMPEG 프로세스 종료)  
+     * @author 신건우
+     * @param instanceName  
+     * @param ip  
+     * @param port  
+     * @throws IOException  
+     */  
+    public void stopHlsConverter(final String instanceName, final String ip, final Integer port) throws IOException {  
+        int processId = this.getFfmpegProcessId(ip, port, instanceName);  
+  
+        if (processId > 0) {  
+            String command = "powershell.exe Stop-Process -Id " + processId;  
+  
+            if (!OS.contains("win")) {  
+                command = "kill -9 " + processId;  
+            }  
+  
+            log.debug("stopHlsConverter|instanceName:{}|ip:{}|port:{}|processId:{}|command:{}", instanceName, ip, port, processId, command);  
+  
+            Process process;  
+            if(OS.contains("win")){  
+                process  = Runtime.getRuntime().exec(command);  
+            }else{  
+                process = Runtime.getRuntime().exec(new String[]{"/bin/sh", "-c", command});  
+            }  
+  
+            try {  
+                process.waitFor(3000, TimeUnit.MILLISECONDS);  
+            } catch (Exception e) {  
+                log.warn("stopHlsConverter|exception1|{}", e.getMessage());  
+            }finally {  
+                process.destroy();  
+            }  
+        } else {  
+            log.info("stopHlsConverter|ffmpeg process is not running.");  
+        }  
+    }  
+  
+    public boolean hlsFileExist(final Integer cameraId) {  
+        String filePath = "";  
+  
+        if (OS.contains("win")) {  
+            filePath = hlsFilePath.replace("/", "\\");  
+        } else {  
+            filePath = hlsFilePath;  
+        }  
+  
+        File file = new File(filePath + cameraId + File.separator + "output.m3u8");  
+  
+        return file.exists();  
+    }  
+  
+    /**  
+     * @author 신건우
+     * FFMPEG 프로세스가 실행 중인지 확인한다.  
+     * @param ip  
+     * @param port  
+     * @param instanceName  
+     * @return  
+     */  
+    public boolean isFfmpegProcessRunning(final String ip, final Integer port, final String instanceName) {  
+        boolean isRunning = false;  
+        String command = "";  
+  
+        if (OS.contains("win")) {  
+            command = "powershell.exe $currentId = (Get-Process -Id $PID).Id; Get-WmiObject Win32_Process | Where-Object { $_.CommandLine -like '*ffmpeg -i rtsp://" + ip + ":" + port + "/" + instanceName + "*' -and $_.ProcessId -ne $currentId } | Select-Object ProcessId";  
+            log.info("Check FFmpeg - OS : Windows");  
+        } else {  
+            command = "ps -ef | grep ffmpeg | grep rtsp://" + ip + ":" + port + "/" + instanceName + " | grep -v grep | awk '{print $2}'";  
+            log.info("Check FFmpeg - OS : Linux");  
+        }  
+  
+        log.info("Check FFmpeg - Command : {}", command);  
+  
+        Process process = null;  
+  
+        try {  
+            if (OS.contains("win")) {  
+                // 윈도우에서는 powershell 명령을 직접 실행  
+                process = Runtime.getRuntime().exec(command);  
+            } else {  
+                // 리눅스에서는 /bin/sh를 통해 명령 실행  
+                process = Runtime.getRuntime().exec(new String[]{"/bin/sh", "-c", command});  
+            }  
+  
+            BufferedReader inputStream = new BufferedReader(new InputStreamReader(process.getInputStream()));  
+            BufferedReader errorStream = new BufferedReader(new InputStreamReader(process.getErrorStream()));  
+  
+            String inputLine;  
+            while ((inputLine = inputStream.readLine()) != null) {  
+                log.info("Check FFmpeg - Input Stream - {}", inputLine);  
+                isRunning = true;  
+            }  
+  
+            String errorLine;  
+            while ((errorLine = errorStream.readLine()) != null) {  
+                log.info("Check FFmpeg - Error Stream - {}", errorLine);  
+            }  
+  
+            process.waitFor(3000, TimeUnit.MILLISECONDS);  
+  
+        } catch (Exception e) {  
+            log.warn("Check FFmpeg - Exception : {}", e.getMessage());  
+            e.printStackTrace();  
+        }  
+  
+        return isRunning;  
+    }
 }
 ```
 
