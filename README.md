@@ -201,6 +201,18 @@ Jenkins Declarative Pipeline & Docker & Nginx를 이용한 Blue/Green 무중단 
 
 ---
 
+# 📚 Algorithm
+
+- [알고리즘 기본 개념](./Algorithm/기본개념/알고리즘-기본개념.md)
+- [Sort](Algorithm/Sort/Sort.md)
+- [SequentialSearch - 순차 탐색](./Algorithm/탐색/순차탐색.md)
+- [Dynamic Programming](./Algorithm/Dynamic%20Programming/Dynamic%20Programming.md)
+- [DFS & BFS](./Algorithm/DFS%20&%20BFS.md)
+- [Flood Fill Algorithm](./Algorithm/Flood%20Fill.md)
+
+
+---
+
 # 📚 Tools
 
 ### Git
@@ -209,16 +221,6 @@ Jenkins Declarative Pipeline & Docker & Nginx를 이용한 Blue/Green 무중단 
 - [Git Tag 사용법](./DevTools/Git/Tag.md)
 - [MacOS Settings](./DevTools/MacOS/MacOS%20Settings.md)
 - [Obsidian Settings](./DevTools/Obsidian/Obsidian%20Settings.md)
-
----
-
-# 📚 Algorithm
-
-- [알고리즘 기본 개념](./Algorithm/기본개념/알고리즘-기본개념.md)
-- [Sort](Algorithm/Sort/Sort.md)
-- [Dynamic Programming](./Algorithm/Dynamic%20Programming/Dynamic%20Programming.md)
-- [DFS & BFS](./Algorithm/DFS%20&%20BFS.md)
-- [Flood Fill Algorithm](./Algorithm/Flood%20Fill.md)
 
 ---
 
