@@ -67,7 +67,7 @@ Handler는 `TextWebSocketHandler` 확장한 텍스트 기반의 WebSocket 메시
 @Component  
 public class CrowdLocationHandler extends TextWebSocketHandler {  
   
-    private static final Map<String, WebSocketSession> sessionMap = new ConcurrentHashMap<>();  
+    private final Map<String, WebSocketSession> sessionMap = new ConcurrentHashMap<>();  
   
     /**  
      * 소켓 연결시  
