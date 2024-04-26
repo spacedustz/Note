@@ -62,62 +62,64 @@ Handler는 `TextWebSocketHandler` 확장한 텍스트 기반의 WebSocket 메시
 - `broadcast()` :  sessionMap에 세션이 하나라도 있고, 세션이 Open 되어 있을떄 모든 세션에 메시지를 BroadCast 합니다.
 
 ```java
-@Slf4j  
-@Getter  
-@Component  
-public class CrowdLocationHandler extends TextWebSocketHandler {  
-  
-    private final Map<String, WebSocketSession> sessionMap = new ConcurrentHashMap<>();  
-  
-    /**  
-     * 소켓 연결시  
-     * @param session  
-     * @throws Exception  
-     */  
-    @Override  
-    public void afterConnectionEstablished(WebSocketSession session) throws Exception {  
-        super.afterConnectionEstablished(session);  
-        sessionMap.put(session.getId(), session); // 세션 저장  
-  
-        log.info("Crowd Location Handler | Established|{}", session.getId());  
-    }  
-  
-    /**  
-     * 소켓 종료시  
-     * @param session  
-     * @param status  
-     * @throws Exception  
-     */  
-    @Override  
-    public void afterConnectionClosed(WebSocketSession session, CloseStatus status) throws Exception {  
-        super.afterConnectionClosed(session, status);  
-        try (session) {  
-            sessionMap.remove(session.getId());  
-        }  
-  
-        log.info("Crowd Location Handler | Disconnected | {} | {}", session.getId(), status.toString());  
-    }  
-  
-    /**  
-     * 연결된 모든 세션에 데이터 전달  
-     * @param message  
-     */  
-    public void broadcast(String message) {  
-        if (!sessionMap.isEmpty()) {  
-            sessionMap.values().forEach(session -> {  
-                if (session.isOpen()) {  
-                    try {  
-                        session.sendMessage(new TextMessage(message));  
-                    } catch (IOException e) {  
-                        e.printStackTrace();  
-                    }  
-                } else {  
-                    log.debug("Session closed | {}", session.getId());  
-                    sessionMap.remove(session.getId());  
-                }  
-            });  
-        }  
-    }  
+@Slf4j
+@Component
+public class SettingsHandler extends TextWebSocketHandler {
+    private static Map<String, WebSocketSession> sessionMap = new ConcurrentHashMap<>();
+
+    public static Map<String, WebSocketSession> getSessionMap() {
+        return sessionMap;
+    }
+
+    /**
+     * 소켓 연결시
+     * @param session
+     * @throws Exception
+     */
+    @Override
+    public void afterConnectionEstablished(WebSocketSession session) throws Exception {
+        super.afterConnectionEstablished(session);
+        sessionMap.put(session.getId(), session); // 세션 저장
+
+        log.info("SettingsHandler|established|{}", session.getId());
+    }
+
+    /**
+     * 소켓 종료시
+     * @param session
+     * @param status
+     * @throws Exception
+     */
+    @Override
+    public void afterConnectionClosed(WebSocketSession session, CloseStatus status) throws Exception {
+        super.afterConnectionClosed(session, status);
+        try (session) {
+            sessionMap.remove(session.getId());
+        }
+
+        log.info("SettingsHandler|disconnected|{}|{}", session.getId(), status.toString());
+    }
+
+    /**
+     * 연결된 모든 세션에게 데이터 전달
+     * @param message
+     */
+    public void broadcast(String message) {
+        if (!sessionMap.isEmpty()) {
+            sessionMap.values().forEach(session -> {
+                if (session.isOpen()) {
+                    try {
+                        session.sendMessage(new TextMessage(message));
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                } else {
+                    log.debug("session closed|{}", session.getId());
+                    sessionMap.remove(session.getId());
+                }
+            });
+        }
+    }
 }
 ```
 
@@ -131,57 +133,95 @@ public class CrowdLocationHandler extends TextWebSocketHandler {
 그리고 
 
 ```java
-@Component  
-@Slf4j  
-@RequiredArgsConstructor  
-public class BroadcastScheduler {  
-    private final CrowdLocationHandler crowdLocationHandler;  
-    private final CrowdStatusHandler crowdStatusHandler;  
-    private final CrowdService crowdService;  
-  
-    @Scheduled(initialDelay = 3000, fixedRate = 2000) // Application 기동 3초 뒤부터 2초 간격으로 실행  
-    public void scheduleCrowdLocation() {  
-        Map<String, WebSocketSession> sessionMap = crowdLocationHandler.getSessionMap();  
-  
-        if (!sessionMap.isEmpty()) {  
-            String jsonString = "";  
-            log.info("[Schedule Crowd Location] START");  
-            long beforeTime = System.currentTimeMillis();  
-            CrowdLocationDto crowdLocationDto = crowdService.getCrowdLocation();  
-  
-            try {  
-                jsonString = ApiResponseDto.makeResponse(crowdLocationDto);  
-            } catch (Exception e) {  
-                e.printStackTrace();  
-            }  
-  
-            if (StringUtils.hasText(jsonString)) crowdLocationHandler.broadcast(jsonString);  
-            long afterTime = System.currentTimeMillis();  
-            log.info("[Schedule Crowd Location] END | {}ms", afterTime - beforeTime);  
-        }  
-    }  
-  
-    @Scheduled(initialDelay = 4000, fixedRate = 2000) // Application 기동 4초 뒤부터 2초 간격으로 실행  
-    public void scheduleCrowdStatus() {  
-        Map<String, WebSocketSession> sessionMap = crowdStatusHandler.getSessionMap();  
-  
-        if (!sessionMap.isEmpty()) {  
-            String jsonString = "";  
-            log.info("[Schedule Crowd Status] START");  
-            long beforeTime = System.currentTimeMillis();  
-            CrowdStatusDto crowdStatusDto = crowdService.getCrowdStatus();  
-  
-            try {  
-                jsonString = ApiResponseDto.makeResponse(crowdStatusDto);  
-            } catch (Exception e) {  
-                e.printStackTrace();  
-            }  
-  
-            if (StringUtils.hasText(jsonString)) crowdStatusHandler.broadcast(jsonString);  
-            long afterTime = System.currentTimeMillis();  
-            log.info("[Schedule Crowd Status] END | {}ms", afterTime - beforeTime);  
-        }  
-    }  
+@Component
+@Slf4j
+@RequiredArgsConstructor
+public class BroadcastScheduler {
+    private final CrowdLocationHandler crowdLocationHandler;
+    private final CrowdStatusHandler crowdStatusHandler;
+    private final SettingsHandler settingsHandler;
+    private final CrowdService crowdService;
+    private final AreaService areaService;
+    private final ServerService serverService;
+
+
+    @Scheduled(initialDelay = 3000, fixedRate = 2000) // Application 기동 3초 뒤부터 2초 간격으로 실행
+    public void scheduleCrowdLocation() {
+        Map<String, WebSocketSession> sessionMap = crowdLocationHandler.getSessionMap();
+
+        if (!sessionMap.isEmpty()) {
+            String jsonString = "";
+            log.info("[scheduleCrowdLocation] START");
+            long beforeTime = System.currentTimeMillis();
+            CrowdLocationDto crowdLocationDto = crowdService.getCrowdLocation();
+
+            try {
+                jsonString = ApiResponseDto.makeResponse(crowdLocationDto);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+            if (StringUtils.hasText(jsonString)) crowdLocationHandler.broadcast(jsonString);
+            long afterTime = System.currentTimeMillis();
+            log.info("[scheduleCrowdLocation] END|{}ms", afterTime - beforeTime);
+        }
+    }
+
+    @Scheduled(initialDelay = 4000, fixedRate = 2000) // Application 기동 4초 뒤부터 2초 간격으로 실행
+    public void scheduleCrowdStatus() {
+        Map<String, WebSocketSession> sessionMap = crowdStatusHandler.getSessionMap();
+
+        if (!sessionMap.isEmpty()) {
+            String jsonString = "";
+            log.info("[scheduleCrowdStatus] START");
+            long beforeTime = System.currentTimeMillis();
+            CrowdStatusDto crowdStatusDto = crowdService.getCrowdStatus();
+
+            try {
+                jsonString = ApiResponseDto.makeResponse(crowdStatusDto);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+            if (StringUtils.hasText(jsonString)) crowdStatusHandler.broadcast(jsonString);
+            long afterTime = System.currentTimeMillis();
+            log.info("[scheduleCrowdStatus] END|{}ms", afterTime - beforeTime);
+        }
+    }
+
+    @Scheduled(initialDelay = 5000, fixedRate = 3000)
+    public void scheduleSettings() {
+        Map<String, WebSocketSession> sessionMap = SettingsHandler.getSessionMap();
+
+        if (!sessionMap.isEmpty()) {
+            String jsonString = "";
+            log.info("[scheduleSettings] START");
+            long beforeTime = System.currentTimeMillis();
+
+            Pageable pageable = PageRequest.of(0, 10);
+            List<ServerDto.DetailDto> serverList = serverService.findServerList(pageable);
+            List<AreaDtoWithCoords.DetailCoordsDto> areaAndCameraWithCoordinates = areaService.findAreaCoordList(true);
+
+            SettingsDto settingsDto = new SettingsDto();
+
+//            if (!serverList.isEmpty() || !areaAndCameraWithCoordinates.isEmpty()) {
+            settingsDto.setServers(serverList);
+            settingsDto.setAreaAndCamerasWithCoordinates(areaAndCameraWithCoordinates);
+            log.info("서버 리스트 & Area 리스트 조회 완료");
+//            }
+
+            try {
+                jsonString = ApiResponseDto.makeResponse(settingsDto);
+                log.info("JSON = {}", jsonString);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+            if (StringUtils.hasText(jsonString)) settingsHandler.broadcast(jsonString);
+            long afterTime = System.currentTimeMillis();
+            log.info("[scheduleSettings] END|{}ms", afterTime - beforeTime);
+        }
+    }
 }
 ```
 
