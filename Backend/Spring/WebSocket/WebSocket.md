@@ -36,14 +36,10 @@ CORS 설정 (setAllowedOrigins 함수)은 임시로 전부 허용해 주었습�
 @EnableWebSocket  
 public class WebSocketConfig implements WebSocketConfigurer {  
     @Override  
-    public void registerWebSocketHandlers(WebSocketHandlerRegistry registry) {  
-        // GIS 위치별 탭  
-        registry.addHandler(new CrowdLocationHandler(), "/admin/ws/v1/crowd/location").setAllowedOrigins("*");  
-        //  인파 상태별 탭  
-        registry.addHandler(new CrowdStatusHandler(), "/admin/ws/v1/crowd/status").setAllowedOrigins("*");
-          
-        // 관리자 Area, Camera 설정 탭  
-        registry.addHandler(new SettingsHandler(), "/admin/ws/v1/settings").setAllowedOrigins("*");  
+    public void registerWebSocketHandlers(WebSocketHandlerRegistry registry) {
+        registry.addHandler(new LocationHandler(), "/api/location").setAllowedOrigins("*");
+        registry.addHandler(new StatusHandler(), "/api/status").setAllowedOrigins("*");
+        registry.addHandler(new SettingsHandler(), "/api/settings").setAllowedOrigins("*");  
     }  
 }
 ```
@@ -81,7 +77,7 @@ public class SettingsHandler extends TextWebSocketHandler {
         super.afterConnectionEstablished(session);
         sessionMap.put(session.getId(), session); // 세션 저장
 
-        log.info("SettingsHandler|established|{}", session.getId());
+        log.info("SettingsHandler - Established | {}", session.getId());
     }
 
     /**
@@ -97,7 +93,7 @@ public class SettingsHandler extends TextWebSocketHandler {
             sessionMap.remove(session.getId());
         }
 
-        log.info("SettingsHandler|disconnected|{}|{}", session.getId(), status.toString());
+        log.info("SettingsHandler - disconnected | {} | {}", session.getId(), status.toString());
     }
 
     /**
@@ -114,7 +110,7 @@ public class SettingsHandler extends TextWebSocketHandler {
                         e.printStackTrace();
                     }
                 } else {
-                    log.debug("session closed|{}", session.getId());
+                    log.debug("Session Closed - {}", session.getId());
                     sessionMap.remove(session.getId());
                 }
             });
@@ -137,57 +133,11 @@ public class SettingsHandler extends TextWebSocketHandler {
 @Slf4j
 @RequiredArgsConstructor
 public class BroadcastScheduler {
-    private final CrowdLocationHandler crowdLocationHandler;
-    private final CrowdStatusHandler crowdStatusHandler;
+    private final LocationHandler locationHandler;
+    private final StatusHandler statusHandler;
     private final SettingsHandler settingsHandler;
-    private final CrowdService crowdService;
     private final AreaService areaService;
     private final ServerService serverService;
-
-
-    @Scheduled(initialDelay = 3000, fixedRate = 2000) // Application 기동 3초 뒤부터 2초 간격으로 실행
-    public void scheduleCrowdLocation() {
-        Map<String, WebSocketSession> sessionMap = crowdLocationHandler.getSessionMap();
-
-        if (!sessionMap.isEmpty()) {
-            String jsonString = "";
-            log.info("[scheduleCrowdLocation] START");
-            long beforeTime = System.currentTimeMillis();
-            CrowdLocationDto crowdLocationDto = crowdService.getCrowdLocation();
-
-            try {
-                jsonString = ApiResponseDto.makeResponse(crowdLocationDto);
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-
-            if (StringUtils.hasText(jsonString)) crowdLocationHandler.broadcast(jsonString);
-            long afterTime = System.currentTimeMillis();
-            log.info("[scheduleCrowdLocation] END|{}ms", afterTime - beforeTime);
-        }
-    }
-
-    @Scheduled(initialDelay = 4000, fixedRate = 2000) // Application 기동 4초 뒤부터 2초 간격으로 실행
-    public void scheduleCrowdStatus() {
-        Map<String, WebSocketSession> sessionMap = crowdStatusHandler.getSessionMap();
-
-        if (!sessionMap.isEmpty()) {
-            String jsonString = "";
-            log.info("[scheduleCrowdStatus] START");
-            long beforeTime = System.currentTimeMillis();
-            CrowdStatusDto crowdStatusDto = crowdService.getCrowdStatus();
-
-            try {
-                jsonString = ApiResponseDto.makeResponse(crowdStatusDto);
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-
-            if (StringUtils.hasText(jsonString)) crowdStatusHandler.broadcast(jsonString);
-            long afterTime = System.currentTimeMillis();
-            log.info("[scheduleCrowdStatus] END|{}ms", afterTime - beforeTime);
-        }
-    }
 
     @Scheduled(initialDelay = 5000, fixedRate = 3000)
     public void scheduleSettings() {
@@ -195,7 +145,7 @@ public class BroadcastScheduler {
 
         if (!sessionMap.isEmpty()) {
             String jsonString = "";
-            log.info("[scheduleSettings] START");
+            log.info("[Schedule Settings] START");
             long beforeTime = System.currentTimeMillis();
 
             Pageable pageable = PageRequest.of(0, 10);
@@ -219,7 +169,7 @@ public class BroadcastScheduler {
 
             if (StringUtils.hasText(jsonString)) settingsHandler.broadcast(jsonString);
             long afterTime = System.currentTimeMillis();
-            log.info("[scheduleSettings] END|{}ms", afterTime - beforeTime);
+            log.info("[Schedule Settings] END|{}ms", afterTime - beforeTime);
         }
     }
 }
