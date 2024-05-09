@@ -206,10 +206,23 @@ Jenkins Declarative Pipeline & Docker & Nginx를 이용한 Blue/Green 무중단 
 # 📚 Algorithm
 
 - [알고리즘 기본 개념](./Algorithm/기본개념/알고리즘-기본개념.md)
-- [Sort](Algorithm/Sort/Sort.md)
+
+<br>
+
+**정렬**
+- [Sort - 정렬](Algorithm/Sort/Sort.md)
+
+<br>
+
+**탐색**
 - [Sequential Search - 순차 탐색](./Algorithm/탐색/순차탐색.md)
 - [Binary Search - 이진 탐색](./Algorithm/탐색/이진탐색.md)
 - [BST - 이진 탐색 트리](./Algorithm/탐색/이진탐색트리/이진%20탐색%20트리.md)
+- [BBST - 2-3-4 트리](./Algorithm/탐색/2-3-4트리/2-3-4%20트리.md)
+
+<br>
+
+****
 - [Dynamic Programming](./Algorithm/Dynamic%20Programming/Dynamic%20Programming.md)
 - [DFS & BFS](./Algorithm/DFS%20&%20BFS.md)
 - [Flood Fill Algorithm](./Algorithm/Flood%20Fill.md)
