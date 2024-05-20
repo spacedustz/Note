@@ -47,7 +47,6 @@ sudo reboot
 # /home/{user-name} 경로에 Graphic Driver(.run 파일)과 Cvedia tar.gz 파일이 존재해야 함
 
 
-
 # -------------------- 변수 --------------------
 NVIDIA_RUN_FILE=NVIDIA-Linux-x86_64-550.54.14.run # Graphic Driver 파일명
 CUDA_TOOL_KIT_FILE=cuda_12.4.0_550.54.14_linux.run # Cuda Toolkit 파일명
@@ -57,10 +56,10 @@ CUDA_TOOL_KIT_FILE=cuda_12.4.0_550.54.14_linux.run # Cuda Toolkit 파일명
 sudo apt -y update && sudo apt -y upgrade
 
 ## 유저 sudo 권한 추가
-sudo usermod -aG sudo dains
+sudo usermod -aG sudo skw
 
-## OpenJDK 17 설치
-sudo apt -y install openjdk-17-jdk
+## OpenJDK 17 & FFmpeg 설치 & Net-Tools 설치
+sudo apt -y install openjdk-17-jdk ffmpeg net-tools
 
 ## Yarn 설치
 curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
@@ -81,9 +80,6 @@ sudo apt -y update
 sudo apt-get -y install docker-ce docker-ce-cli containerd.io
 sudo systemctl start docker && sudo systemctl enable docker
 
-## FFmpeg 설치
-sudo apt -y install ffmpeg
-
 ## RabbitMQ Container
 # - 1883 : MQTT
 # - 4369 : EPMD
@@ -93,7 +89,7 @@ sudo apt -y install ffmpeg
 # - 15674 : RabbitMQ WebSocket
 # - 25672 : RabbitMQ Clustering
 # - Admin 계정 추가 및 권한 부여
-sudo docker run -d --name rabbit -p 1883:1883 -p 4369:4369 -p 5671:5671 -p 5672:5672 -p 15672:15672 -p 15674:15674 -p 25672:25672 rabbitmq:3-management
+sudo docker run -d --name rabbit --restart unless-stopped -p 1883:1883 -p 4369:4369 -p 5671:5671 -p 5672:5672 -p 15672:15672 -p 15674:15674 -p 25672:25672 rabbitmq:3-management
 sleep 2
 sudo docker exec rabbit rabbitmq-plugins enable rabbitmq_mqtt
 sleep 2
@@ -111,19 +107,21 @@ sudo docker exec rabbit rabbitmqctl enable_feature_flag all
 sleep 2
 sudo docker restart rabbit
 
-sudo usermod -aG docker dains # 도커 소켓 실행 권한 추가
+sudo usermod -aG docker skw # 도커 소켓 실행 권한 추가
 
 ## MariaDB Container
-# 컨테이너를 생성하고 dains 계정과 dains 데이터베이스 생성 및 권한 부여
-sudo docker run -d --name maria -e MARIADB_ROOT_PASSWORD=1234 -p 5001:3306 mariadb
-sudo docker exec maria mariadb -u root -p1234 -e "\
-create database dains character set utf8mb4 collate utf8mb4_general_ci; \
-create user 'dains'@'%' identified by '1234'; \
-grant all privileges on dains.* to 'dains'@'%'; \
-flush privileges;"
+# 컨테이너를 생성하고 skw 계정과 skw 데이터베이스 생성 및 권한 부여
+sudo docker run -d --name maria --restart unless-stopped -e MARIADB_ROOT_PASSWORD=1234 -p 5001:3306 mariadb
+
+sudo docker exec -i maria mariadb -u root -p1234 <<EOF
+CREATE DATABASE skw CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+CREATE USER 'skw'@'%' IDENTIFIED BY '1234';
+GRANT ALL PRIVILEGES ON skw.* TO 'skw'@'%';
+FLUSH PRIVILEGES;
+EOF
 
 ## Redis Cotainer
-sudo docker run -d --name redis -p 5002:6379 redis
+sudo docker run -d --name redis --restart unless-stopped -p 5002:6379 redis
 
 # -------------------- Graphic Driver --------------------
 sudo apt -y install build-essential pkg-config libglvnd-dev freeglut3-dev libglu1-mesa-dev mesa-common-dev mesa-utils unzip wget
@@ -151,10 +149,9 @@ sudo systemctl restart docker
 sudo wget https://developer.download.nvidia.com/compute/cuda/12.4.0/local_installers/${CUDA_TOOL_KIT_FILE}
 sudo chmod +x ${CUDA_TOOL_KIT_FILE}
 sudo ./${CUDA_TOOL_KIT_FILE}
-cat <<EOL >> ~/.bashrc
-export PATH=/usr/local/cuda-12.4/bin:$PATH
-export LD_LIBRARY_PATH=/usr/local/cuda-12.4/lib64:$LD_LIBRARY_PATH
-EOL
+
+echo -e "\nexport PATH=/usr/local/cuda-12.4/bin:\$PATH\nexport LD_LIBRARY_PATH=/usr/local/cuda-12.4/lib64:\$LD_LIBRARY_PATH" >> ~/.bashrc
+source ~/.bashrc
 
 source ~/.bashrc
 
@@ -179,7 +176,7 @@ sudo mv /etc/X11/xorg.conf /etc/X11/xorg.conf.org
 ## xstartup 스크립트 생성
 mkdir .vnc && cd .vnc && touch xstartup && cd
 
-cat > /home/dains/.vnc/xstartup << 'EOF'
+cat > /home/skw/.vnc/xstartup << 'EOF'
 #!/bin/sh
 
 unset SESSION_MANAGER
@@ -194,10 +191,10 @@ dbus-launch --exit-with-session gnome-session --session=ubuntu
 EOF2
 EOF
 
-sudo chmod 755 /home/dains/.vnc/xstartup
+sudo chmod 755 /home/skw/.vnc/xstartup
 
 ## DISPLAY 환경변수 등록
-echo "export DISPLAY=:1" >> ~/.bashrc
+echo -e "\nexport DISPLAY=:1" >> ~/.bashrc
 source ~/.bashrc
 
 
