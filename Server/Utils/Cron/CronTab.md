@@ -100,3 +100,9 @@ tail -f /home/skw/script/check.log
 아래 이미지를 보면 2분마다 cron 작업 잘 실행되고 있습니다.
 
 ![](./1.png)
+
+<br>
+
+Docker Containeer를 수동으로 중지하고 2분 후 cron이 Health Check를 수행해 다시 Docker Container를 올립니다.
+
+![](./2.png)
