@@ -177,7 +177,7 @@ Jenkins Declarative Pipeline & Docker & Nginx를 이용한 Blue/Green 무중단 
 - [Thread 간 리소스 공유 시 발생할 수 있는 문제](./Languages/Java/Concurrency/11.%20Sharing-Resource.md)
 - [Critical Section](./Languages/Java/Concurrency/12.%20Critical%20Section.md)
 - [Metrics Capturing을 통한 Atomic Operation 판단](./Languages/Java/Concurrency/13.%20Atomic%20Operation.md)
-- [ Race Condition과 Data Rade](./Languages/Java/Concurrency/14.%20Race%20Condition%20&%20Data%20Race.md)
+- [Race Condition과 Data Rade](./Languages/Java/Concurrency/14.%20Race%20Condition%20&%20Data%20Race.md)
 - [Coarse-Grained & Fine-Grained Lock](./Languages/Java/Concurrency/15.%20Coarse-Grained%20&%20Fine-Grained%20Lock.md)
 - [[Advanced Locking] ReentrantLock - tryLock() & lockInterruptibly()](./Languages/Java/Concurrency/16.%20ReentrantLock.md)
 - [[Advanced Locking] ReentrantReadWriteLock - 읽기 성능 최적화](./Languages/Java/Concurrency/17-ReentrantReadWriteLock/17.%20ReentrantReadWriteLock.md)
