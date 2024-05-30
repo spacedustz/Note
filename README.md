@@ -88,6 +88,14 @@
 
 # 📚 Server
 
+### Error
+
+- [Ubuntu - OpenGL Initialize Exception](./Server/Error/OpenGL%20-%20glxinfo%20initialize%20exception.md)
+- [Ubuntu Nouveau Kernel Driver 제거](./Server/Error/Ubuntu%20-%20Nouveau%20Kernel%20Driver%20제거.md)
+- [NVIDIA-SMI GPL-incompatible module Error](./Server/Error/NVIDIA/NVIDIA-SMI%20GPL-incompatible%20module%20Error.md)
+
+<br>
+
 ### Script
 
 📂 **Windows**
@@ -147,6 +155,7 @@ Jenkins Declarative Pipeline & Docker & Nginx를 이용한 Blue/Green 무중단 
 - [좀비 프로세스 죽이기](./Server/Utils/좀비%20프로세스%20죽이기.md)
 - [Ubuntu LTS 버전별 IP 변경](./Server/Utils/Ubuntu%20버전별%20IP%20변경.md)
 - [주기적인 CronTab 실행](./Server/Utils/Cron/CronTab.md)
+- [Linux Server Spec 확인](./Server/Utils/Server%20Spec%20확인.md)
 
 ---
 
@@ -251,10 +260,3 @@ Jenkins Declarative Pipeline & Docker & Nginx를 이용한 Blue/Green 무중단 
 **MySQL**
 
 - [Mysql - Global Transaction Identifier Error (GTID)](./Error/MySQL/MySQL%20-%20Global%20Transaction%20Identifier%20Error%20(GTID).md)
-
-<br>
-
-**Server**
-
-- [Ubuntu - OpenGL Initialize Exception](./Error/Server/OpenGL%20-%20glxinfo%20initialize%20exception.md)
-- [Ubuntu Nouveau Kernel Driver 제거](./Error/Server/Ubuntu%20-%20Nouveau%20Kernel%20Driver%20제거.md)
