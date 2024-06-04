@@ -151,6 +151,7 @@ public class MailService {
 
 - 인증번호를 생성할 때 Redis Hash를 생성해 code, expiration Key/Value를 넣고 Expire를 120초로 설정해줍니다.
 - 인증번호 검증 성공 시, 즉시 Redis Hash를 제거합니다.
+- Redis Hash 제거 후, 비밀번호 초기화 및 재설정 API에서 사용할 Redis Key를 1개 만들어 "ok"를 저장해줍니다.
 
 ```java
 @Slf4j  
@@ -161,7 +162,8 @@ public class MailService {
     private final AdmUserRepository admUserRepository;  
     private static final String TITLE = "비밀번호 재설정 인증번호";  
     private final JavaMailSender mailSender;  
-    private final RedisTemplate<String, String> redisTemplate;  
+    private final JwtProvider jwtProvider;  
+    private final RedisTemplate<String, Object> redisTemplate;  
   
     // Send Mail  
     public void sendEmail(String receiver) {  
@@ -203,6 +205,7 @@ public class MailService {
         }  
     }  
   
+    // 인증코드 검증  
     public boolean verifyAuthCode(String email, String authCode) {  
         try {  
             Optional<AdmUser> optUser = admUserRepository.searchUserByEmail(email);  
@@ -219,20 +222,26 @@ public class MailService {
             // 현재 시간과 만료 시간의 차이를 milli second로 반환  
             long checkExpirationTime = DateUtil.getSecondsDifference(now, expiration);  
   
-            // 만료시간 120초로 설정, 인증 성공 시, Redis Hash 삭제  
+            // 만료시간 120초로 설정  
             if (checkExpirationTime < 120 && redisCode.equals(authCode)) {  
+                // 인증 성공 시, Redis Hash 삭제  
                 redisTemplate.opsForHash().delete(key, "code");  
                 redisTemplate.opsForHash().delete(key, "time");  
+  
+                // 비밀번호 재설정 API 에서 사용할 Redis Key 추가(OK 사인)  
+                redisTemplate.opsForValue().set(user.getEmail(), "ok");  
+                  
                 return true;  
             } else {  
                 redisTemplate.opsForHash().delete(key, "code");  
                 redisTemplate.opsForHash().delete(key, "time");  
+                  
                 return false;  
             }  
         } catch (Exception e) {  
             e.printStackTrace();  
         }  
-  
+          
         return false;  
     }  
 }
@@ -267,7 +276,7 @@ public ResponseEntity verifyAuthCode(CustomHttpServletRequest request, @RequestP
 
 <br>
 
-**이메일을 확인해보면 인증번호가 도착해 있습니다.**
+**이메일 확인**
 
 ![](./5.png)
 
@@ -279,10 +288,38 @@ public ResponseEntity verifyAuthCode(CustomHttpServletRequest request, @RequestP
 
 <br>
 
-**인증번호 검증 API를 호출해보면 120초 이내에 요청하고, 검증이 성공해 true가 반환됩니다.**
+**인증번호 검증 API를 호출해보면 120초 이내에 요청하고, 검증이 성공해 true 반환**
 
 ![](./7.png)
 
 <br>
 
-이후 비밀번호 재설정 및 초기화 로직은 이 글과 무관하니 생략합니다.
+이후 비밀번호 재설정 및 초기화 로직은 인증코드 검증 시 마지막에 추가한 Redis Key를 이용해,
+
+비밀번호를 새로 넣어주고 사용한 Redis Key는 제거 해주었고, 다시 로그인을 하니 비밀번호가 잘 바뀐걸 확인할 수 있습니다.
+
+```java
+@Transactional  
+public void generateNewPassword(final Integer userId, final String password) {  
+    AdmUser user = admUserRepositoryInf.findAdmUserByUserId(userId);  
+  
+    if (user != null) {  
+        String sign = (String) redisTemplate.opsForValue().get(user.getEmail());  
+  
+        if ("ok".equals(sign)) {  
+            BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();  
+            String newPassword = encoder.encode(password);  
+  
+            user.changeAdminPassword(newPassword);  
+            admUserRepositoryInf.save(user);  
+            redisTemplate.delete(user.getEmail());  
+        } else {  
+            throw new CommonException(CommonExceptionCode.ACCESS_DENIED);  
+        }  
+    } else {  
+        throw new CommonException(CommonExceptionCode.NOT_EXIST_USER);  
+    }  
+}
+```
+
+![](./8.png)
