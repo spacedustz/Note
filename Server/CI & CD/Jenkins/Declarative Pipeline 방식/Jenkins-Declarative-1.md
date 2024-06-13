@@ -688,7 +688,7 @@ Jenkins에 연결한 Repository에 변경사항을 주고 Push를 해보고 Jenk
 
 빌드가 잘 된걸 확인 가능합니다.
 
-![](./1.png)
+![](Server/CI%20&%20CD/Jenkins/Declarative%20Pipeline%20방식/1.png)
 
 ---
 
@@ -698,22 +698,22 @@ Jenkins에 연결한 Repository에 변경사항을 주고 Push를 해보고 Jenk
 
 그럼 Jenkins 빌드가 자동으로 돌아갑니다.
 
-![](./2.png)
+![](Server/CI%20&%20CD/Jenkins/Declarative%20Pipeline%20방식/2.png)
 
 <br>
 
 빌드 완료
 
-![](./3.png)
+![](Server/CI%20&%20CD/Jenkins/Declarative%20Pipeline%20방식/3.png)
 
 <br>
 
 컨테이너를 확인해보면 알아서 nohup + Background로 스프링부트 서버 컨테이너가 실행중입니다.
 
-![](./4.png)
+![](Server/CI%20&%20CD/Jenkins/Declarative%20Pipeline%20방식/4.png)
 
 <br>
 
 Docker Private Container Registry에도 이미지가 잘 교체되고 들어갔습니다.
 
-![](./5.png)
+![](Server/CI%20&%20CD/Jenkins/Declarative%20Pipeline%20방식/5.png)

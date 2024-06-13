@@ -89,6 +89,28 @@
 
 # 📚 Server
 
+📂 **CI & CD**
+
+> **Jenkins Declarative Pipeline 방식 Blud/Green 무중단 배포**
+
+Nginx + AWS Application Load Balancer(ALB)를 이용한 트래픽 로드밸런싱과,
+
+Blue, Green Docker Container로의 Proxy 방향 전환을 통한 Jenkins Declarative Pipeline 방식의 무중단 배포 구현
+
+- [Jenkins Declarative Pipeline 구축하기 1](./Server/CI%20&%20CD/Jenkins/Declarative%20Pipeline%20방식/Jenkins-Declarative-1.md)
+
+- [Jenkins Declarative Pipeline 구축하기 2](./Server/CI%20&%20CD/Jenkins/Declarative%20Pipeline%20방식/Jenkins-Declarative-2.md)
+
+<br>
+
+> **Jenkins FreeStyle CI & CD**
+
+Nginx Reverse Proxy를 이용한 내부망 Docker Jenkins Container에 배포 Trigger 전달
+
+- [Jenkins CI & CD](./Server/CI%20&%20CD/Jenkins/FreeStyle%20방식/Jenkins%20CI%20&%20CD%20+%20Nginx%20Reverse%20Proxy.md)
+
+<br>
+
 ### Error
 
 - [Ubuntu - OpenGL Initialize Exception](./Server/Error/OpenGL%20-%20glxinfo%20initialize%20exception.md)
@@ -114,18 +136,6 @@
 - [[Script File] Redhat-Default-Setting.sh](./Server/Script/Linux/Redhat-Default-Setting.sh) - Reahat Enterprise 서버 기본 세팅 스크립트
 - [[Script File] Ubuntu-Default-Setting.sh](./Server/Script/Linux/Ubuntu-Default-Settings.sh) - Ubuntu 22.04 LTS 버전 서버 기본 세팅 스크립트
 - [[Script File] Run-FFmpeg.sh](./Server/Script/Linux/Run-FFmpeg.sh) - x개의 FFmpeg 프로세스 실행 및 .ts파일, .m3u8파일 생성 스크립트
-
-<br>
-
-📂 **Jenkins CI & CD**
-
-Nginx + AWS Application Load Balancer(ALB)를 이용한 트래픽 로드밸런싱과, 
-
-Blue, Green Docker Container로의 Proxy 방향 전환을 통한 Jenkins Declarative Pipeline 방식의 무중단 배포 구현
-
-[Jenkins Declarative Pipeline 구축하기 1](./Server/Script/Jenkins/Jenkins-Declarative-1.md)
-
-[Jenkins Declarative Pipeline 구축하기 2](./Server/Script/Jenkins/Jenkins-Declarative-1.md)
 
 <br>
 
