@@ -1,4 +1,10 @@
-## Jenkins Declarative Pipeline Blue & Green 무중단 배포 구현
+## Jenkins CI & CD + Nginx Reverse Proxy
+
+예전에 Declaretive Pipeline 방식의 Blue/Green 무중단 배포와 FreeStyle 방식으로 구현을 했었는데,
+
+그 이후로 아예 안써서 거의 잊어버렸는데, 최근 다시 쓸일이 생겨 재 포스팅합니다.
+
+<br>
 
 Nginx와 Docker를 이용해 Jenkins CI & CD를 구현하며, Jenkins는 Docker Container로 진행하고 
 
@@ -52,7 +58,7 @@ echo $JAVA_HOME
 
 아래 이미지처럼 Container를 Inspect 한 결과 지정한 IP인 10.0.0.5가 할당되었습니다.
 
-![](Server/CI%20&%20CD/Jenkins/FreeStyle%20방식/1.png)
+![](./1.png)
 
 <br>
 
@@ -74,7 +80,7 @@ Please use the following password to proceed to installation:
 This may also be found at: /var/jenkins_home/secrets/initialAdminPassword
 ```
 
-![](Server/CI%20&%20CD/Jenkins/FreeStyle%20방식/2.png)
+![](./2.png)
 
 <br>
 
@@ -244,7 +250,7 @@ nginx -s reload
 
 리버스 프록시 설정이 다 되었다면, 도메인:12500으로 접속해보고 Jenkins 로그인 페이지가 나오는지 확인합니다.
 
-![](Server/CI%20&%20CD/Jenkins/FreeStyle%20방식/3.png)
+![](./3.png)
 
 ---
 ### Github WebHook Trigger 연동
@@ -289,7 +295,7 @@ http://JENKINS_URL/generic-webhook-trigger/invoke?token=test-token
 
 **Github Web Hook 연결 테스트**
 
-![](Server/CI%20&%20CD/Jenkins/FreeStyle%20방식/4.png)
+![](./4.png)
 
 ---
 ###  Item 생성
