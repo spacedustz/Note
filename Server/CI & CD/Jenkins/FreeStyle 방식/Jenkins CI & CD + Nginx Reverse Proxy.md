@@ -1,6 +1,6 @@
 ## Jenkins CI & CD + Nginx Reverse Proxy
 
-예전에 Declaretive Pipeline 방식의 Blue/Green 무중단 배포와 FreeStyle 방식으로 구현을 했었는데,
+예전에 Declaretive Pipeline 방식의 Blue/Green 무중단 배포와 FreeStyle 방식으로 구현을 했었고
 
 그 이후로 아예 안써서 거의 잊어버렸는데, 최근 다시 쓸일이 생겨 재 포스팅합니다.
 
@@ -12,8 +12,6 @@ Ubuntu Server에 Docker가 설치된 상태라고 가정하고 글을 작성합�
 
 ---
 ### Docker Custom Bridge 생성
-
-제 경우에는 각각의 인스턴스가 아닌 Active/StandBy 방식으로 컨테이너 끼리 Blue, Green 배포를 할것이고,
 
 기본적으로 Docker의 기본 네트워크인 bridge0은 Container가 중지되고 재실행 될 때마다 IP가 유동적으로 바뀝니다.
 
@@ -31,8 +29,6 @@ docker network create --gateway 10.0.0.1 --subnet 10.0.0.0/16 deploy
 ### Jenkins Container 실행
 
 우선 Jenkins Container를 받아주고 위에서 만든 Private Docker Network에 넣어주고 IP는 5번을 할당합니다.
-
-추후 Blue,Green Container에는 2번과 3번으로 할당 할 겁니다.
 
 그리고, Jenkins Container 내부에 Git, OpenJDK를 설치하고 환경변수를 잡아줍니다.
 
@@ -55,6 +51,8 @@ source /etc/environment
 # 추후 Jenkins JDK 설정을 위해 경로 알아두기
 echo $JAVA_HOME
 ```
+
+<br>
 
 아래 이미지처럼 Container를 Inspect 한 결과 지정한 IP인 10.0.0.5가 할당되었습니다.
 
@@ -434,3 +432,5 @@ Password Variable에 사용할 `변수명` 지정 (변수명이므로 실제 비
 아무거나 커밋 후 푸시 한다음, Jenkins에 들어가면 자동으로 Build가 되고 있는걸 볼 수 있습니다.
 
 ![](./5.png)
+
+빌드 이후 작업인 Shell Script과 JenkinsFile, Docker File 등등은 예전에 썼던 글에서 크게 다르지 않으니 생략합니다.
