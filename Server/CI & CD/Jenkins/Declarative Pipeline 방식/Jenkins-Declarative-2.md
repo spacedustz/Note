@@ -415,11 +415,11 @@ Name은 아무렇게나 적고 Refspec에 원하는 브랜치를 입력합니다
 
 100번의 삽질끝에 겨우 성공.. Jenkins 너무 불친절한것 같습니다 ㅠ
 
-![](./6.png)
+![](Server/CI%20&%20CD/Jenkins/Declarative%20Pipeline%20방식/6.png)
 
 <br>
 
-![](./7.png)
+![](Server/CI%20&%20CD/Jenkins/Declarative%20Pipeline%20방식/7.png)
 
 <br>
 

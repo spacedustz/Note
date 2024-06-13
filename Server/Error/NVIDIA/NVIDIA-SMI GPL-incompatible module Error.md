@@ -60,7 +60,7 @@ sudo apt -y update && sudo apt -y upgrade && sudo reboot
 
 그래서 Container를 실행했을 때, Docker의 Container Runtime이 NVIDIA로 맟춰져 있지 않아 Container 실행 시 에러가 떴습니다.
 
-![](2.png)
+![](./2.png)
 
 <br>
 
