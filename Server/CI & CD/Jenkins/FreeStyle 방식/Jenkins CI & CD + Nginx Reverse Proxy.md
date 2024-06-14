@@ -6,9 +6,11 @@
 
 <br>
 
-Nginx와 Docker를 이용해 Jenkins CI & CD를 구현하며, Jenkins는 Docker Container로 진행하고 
+지난번 Nginx의 Reverse Proxy 용도는 Blue/Green 무중단 배포 시 Active/Standby Container의 트래픽 방향 전환용도 였다면
 
-Ubuntu Server에 Docker가 설치된 상태라고 가정하고 글을 작성합니다.
+이번에 Nginx를 Reverse Proxy로 사용한 이유는 Jenkins와 Product Server는 내부망에 있으므로,
+
+Proxy를 이용해 Public WebHook Trigger를 Jenkins 인스턴스에 접근시킬 목적으로 사용합니다.
 
 ---
 ### Docker Custom Bridge 생성
@@ -438,4 +440,41 @@ Password Variable에 사용할 `변수명` 지정 (변수명이므로 실제 비
 
 ![](./5.png)
 
-빌드 이후 작업인 Shell Script과 JenkinsFile, Docker File 등등은 예전에 썼던 글에서 크게 다르지 않으니 생략합니다.
+빌드 이후 작업인 Shell Script과 JenkinsFile, Docker File 등등은 예전에 썼던 글에서 크게 다르지 않으니 간단하게만 작성합니다.
+
+**Build Steps**에서 Add build step을 선택 후 **Execute Shell**을 선택해서 원하는 Shell Script를 작성해줍니다.
+
+<br>
+
+이 때 알아야 할 점은 Jenkins Container와 Local의 jenkins 디렉토리는 컨테이너 생성 시, 볼륨 바인딩을 해놓은 상태이며,
+
+Jenkins가 Container이기 때문에 Local에서 비밀번호 없이 Script 명령을 수행하려면 `ssh -i` 를 통해서 명령을 전달해야함. (Jenkins Agent 미사용)
+
+- 기존 Jenkins Contaier의 SSH Public Key를 Local의 .ssh 디렉터리에 `authorized_keys` 파일에 등록합니다.
+- 반대로 Jenkins Container 내부의 .ssh 디렉터리에서 known_host에 Local의 keyscan을 담아줍니다. 
+	- `ssh-keyscan -H 192.168.0.x >> ~/.ssh/known_hosts`
+
+<br>
+
+간단한 테스트를 위해 Jenkins에 의해 빌드된 Jar 파일을 단순히 다른 디렉터리로 옮기는 예시 Script를 작성합니다.
+
+```bash
+#!/bin/bash
+
+PRIVATE_KEY_PATH=/var/jenkins_home/.ssh/id_rsa
+HOST_USER=skw
+HOST_IP=192.168.0.15
+
+BUILD_PATH=/home/skw/jenkins/workspace/Test
+ORIGINAL_JAR_PATH=/home/skw/jenkins/workspace/Test/build/libs
+DESTINATION_JAR_PATH=/home/skw/test
+
+ssh -i ${PRIVATE_KEY_PATH} ${HOST_USER}@${HOST_IP} "cd ${BUILD_PATH} && sudo chmod 755 ./gradlew"
+ssh -i ${PRIVATE_KEY_PATH} ${HOST_USER}@${HOST_IP} "cp ${ORIGINAL_JAR_PATH}/RTSP-Test-1.0.0.jar ${DESTINATION_JAR_PATH}"
+```
+
+<br>
+
+빌드를 해보면 위 Shell Script는 원래 Jenkins Container에서 실행되어야 할 명령이지만 SSH 키 등록을 통해서,
+
+SSH로 Local에 Script 명령을 수행해 Jar 파일을 옮기는 간단한 예시 스크립트를 실행하였습니다.
