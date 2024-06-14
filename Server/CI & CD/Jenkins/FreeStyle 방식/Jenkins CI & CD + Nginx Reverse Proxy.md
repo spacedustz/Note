@@ -235,6 +235,11 @@ server {
         proxy_set_header X-Forwarded-Proto $scheme;
         proxy_connect_timeout 100s;
         proxy_read_timeout 90;
+        
+        # CORS 설정 추가
+        add_header 'Access-Control-Allow-Origin' '*';
+        add_header 'Access-Control-Allow-Methods' 'GET, POST, OPTIONS';
+        add_header 'Access-Control-Allow-Headers' 'Origin, Content-Type, Accept, Authorization';
     }
 }
 ```
