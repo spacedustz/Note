@@ -6,6 +6,7 @@
 
 ### Spring
 
+- [Google OAuth2 적용](./Backend/Spring/Security/Google%20OAuth2/Google%20OAuth2.md)
 - [QueryDSL(Kotlin) - DTO Projection](./Backend/Spring/QueryDSL/DTO%20Projection.md)
 - [트리순회(MPTT) 방식을 이용한 조회 성능 최적화](./Backend/Spring/Performance-Optimization/MPTT.md)
 - [이메일 인증 기능 구현(Google SMTP & Redis)](./Backend/Email/비밀번호%20찾기%20&%20재설정%20기능%20구현(Google%20SMTP).md)
