@@ -96,6 +96,12 @@
 - [Redis 기본 사용법](./Database/Redis/Redis%20기본%20사용법.md)
 - [Redis Publish & Subscribe Pattern (RabbitMQ)](./Database/Redis/PubSub/Pub%20&%20Sub%20Pattern%20(Spring%20Data%20Redis%20+%20React%20TypeScript).md)
 
+<br>
+
+### MongiDB
+
+- [MongoDB 기본 사용법](./Database/MongoDB/기본%20사용법/MongoDB%20기본%20사용법.md)
+
 ---
 
 # 📚 Server
