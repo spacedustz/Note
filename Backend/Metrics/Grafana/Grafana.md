@@ -104,9 +104,9 @@ docker-compose up -d
 docker ps
 ```
 
-![](Backend/Metrics/Grafana/1.png)
+![](./1.png)
 
-![](Backend/Metrics/Grafana/2.png)
+![](./2.png)
 
 <br>
 
@@ -158,7 +158,7 @@ Root Server에 띄운 Prometheus의 Port인 `http://{서버IP}:9090`으로 진�
 
 상단의 Status - Targets를 클릭해보면 하위 서버들이 Online 상태인 걸 볼 수 있습니다.
 
-![](Backend/Metrics/Grafana/3.png)
+![](./3.png)
 
 <br>
 
@@ -176,7 +176,7 @@ Root Server에 띄운 Prometheus의 Port인 `http://{서버IP}:9090`으로 진�
 - `node_memory_Active_bytes` : 사용중인 메모리
 - `100 - ((node_filesystem_avail_bytes{mountpoint="/"} / node_filesystem_size_bytes{mountpoint="/"}) * 100)` : 디스크 사용량
 
-![](Backend/Metrics/Grafana/4.png)
+![](./4.png)
 
 ---
 ## Grafana Dashboard
@@ -187,7 +187,7 @@ Root Server에 띄운 Prometheus의 Port인 `http://{서버IP}:9090`으로 진�
 
 데이터 소스는 메인 서버의 Prometheus 포트인 `http://{메인서버IP}:9090` 으로 설정해줍니다.
 
-![](Backend/Metrics/Grafana/5.png)
+![](./5.png)
 
 <br>
 
@@ -195,21 +195,21 @@ Root Server에 띄운 Prometheus의 Port인 `http://{서버IP}:9090`으로 진�
 
 정상적으로 Prometheus 컨테이너가 실행 중 이라면 바로 성공 할 겁니다.
 
-![](Backend/Metrics/Grafana/6.png)
+![](./6.png)
 
 <br>
 
 데이터 소스를 설정하고, 다시 왼쪽 사이드바에서 `Dashboard` 탭을 클릭해 Add Dashboard를 선택후 Add Visualization을 선택합니다..
 
-![](Backend/Metrics/Grafana/7.png)
+![](./7.png)
 
-![](Backend/Metrics/Grafana/8.png)
+![](./8.png)
 
 <br>
 
 DataSource는 자동으로 아까 지정한 Prometheus가 지정되어 있을거고 이걸 클릭해줍니다.
 
-![](Backend/Metrics/Grafana/9.png)
+![](./9.png)
 
 <br>
 
@@ -223,7 +223,7 @@ DataSource는 자동으로 아까 지정한 Prometheus가 지정되어 있을거
 
 아래 사진은 예시로 `up`이라는 쿼리를 등록해 서버3대의 상태를 Gauge Graph를 이용해 모니터링 합니다.
 
-![](Backend/Metrics/Grafana/10.png)
+![](./10.png)
 
 <br>
 
@@ -231,7 +231,7 @@ DataSource는 자동으로 아까 지정한 Prometheus가 지정되어 있을거
 
 원하는 패널이 더 있으면 Add Panal을 통해 추가로 다른 메트릭도 등록합니다.
 
-![](Backend/Metrics/Grafana/11.png)
+![](./11.png)
 
 <br>
 
@@ -241,13 +241,13 @@ DataSource는 자동으로 아까 지정한 Prometheus가 지정되어 있을거
 
 쿼리를 등록해보면 하위 2개 서버의 최근 CPU 사용량이 나오게 됩니다.
 
-![](Backend/Metrics/Grafana/12.png)
+![](./12.png)
 
 <br>
 
 이렇게 2개의 Panel을 추가했고 저장 버튼을 눌러 Dashboard를 저장해주면 끝입니다.
 
-![](Backend/Metrics/Grafana/13.png)
+![](./13.png)
 
 <br>
 
@@ -284,4 +284,4 @@ CPU, Memory, Disk 3개의 Panel Imbedding iframe을 임시 HTML을 만들어서 
 </html>
 ```
 
-![](Backend/Metrics/Grafana/14.png)
+![](./14.png)
