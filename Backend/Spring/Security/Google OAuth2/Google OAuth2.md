@@ -176,7 +176,7 @@ public class OAuthUserService implements OAuth2UserService<OAuth2UserRequest, OA
 
 <br>
 
-![](2.png)
+![](./2.png)
 
 <br>
 
