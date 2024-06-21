@@ -9,9 +9,13 @@
 툴 선정하기 전 가볍게 써보고 정하자는 생각으로 일단 간단하게 만들어 보았습니다.
 
 ---
-## Server Settings
+## Metric 수집 대상 서버 설정
+
+**Linux Server**
 
 Main Server를 설정하기 전, 메트릭 수집을 원하는 서버에 `node-exporter` 컨테이너를 실행시켜 주면 Sub Server는 설정 완료입니다.
+
+Linux에서 Exporter의 기본 포트는 9100 입니다.
 
 ```bash
 sudo docker run -d --name=metric --restart=on-failure --net=host prom/node-exporter
@@ -19,38 +23,47 @@ sudo docker run -d --name=metric --restart=on-failure --net=host prom/node-expor
 
 <br>
 
-우선 Prometheus 설정 파일인 `prometheus.yml`을 작성하기 위해 `~/prometheus` 경로에 디렉터리를 생성하고 파일을 만들어줍니다.
+**Windows Server**
 
-`otherservers`에 붙은 포트는 `node-exporter`의 기본포트인 9100을 사용할거고, 각 하위 서버에는 `node-exporter`를 설치해줄겁니다.
+[Windows Node Exporter](https://github.com/prometheus-community/windows_exporter/releases) 위 사이트에서 Windows 전용 Exporter를 받고 임의의 폴더에 압축을 풀어줍니다.
 
-```bash
-mkdir -p ~/prometheus
-sudo vi prometheus.yml
+압축 해제한 폴더 내부에 있는 prometheus.yml 파일에 Windows Exporter를 Scrab Target으로 추가합니다.
+
+Windows Exporter 기본 포트는 9182 입니다.
+
+---
+## Root Server 설정
+
+우선 Prometheus 설정 파일인 `prometheus.yml`을 작성하기 위해 `~/metrics` 경로에 `prometheus` 디렉터리를 생성하고 파일을 만들어줍니다.
+
+<br>
+
+디렉터리 구조는 아래와 같습니다.
+
+granafa와 prometheus 디렉토리 내부에는 아무 파일도 없지만 컨테이너가 실행되고,
+
+설정 파일들을 작성 후, grafana, prometheus Container를 재시작 하면 해당 디렉토리들의 설정파일이 컨테이너 내부에 적용됩니다.
+
+- docker-compose 파일은 metrics 디렉터리 내부에 있으며, compose up 시 이곳에서 진행합니다.
+- grafana 디렉토리 : Grafana 설정 파일인 `defaults.ini`를 Container의 볼륨과 마운트합니다.
+- prometheus 디렉토리 : Prometheus 설정 파일인 `prometheus.yml`을 Container의 볼륨과 마운트합니다.
+
 ```
-
-```yaml
-global:
-  scrape_interval: 15s
-
-scrape_configs:
-  - job_name: 'mainserver'
-    static_configs:
-      - targets: ['192.168.0.5:9100']
-
-  - job_name: 'otherservers'
-    static_configs:
-      - targets: ['192.168.0.127:9100', '192.168.0.95:9100'] # 각 서버의 IP 주소로 변경
+/home/skw/metrics
+├── docker-compose.yml
+├── grafana
+│   └── 
+└── prometheus
+    └── 
 ```
 
 <br>
 
-이제 Prometheus와 Grafana 컨테이너를 띄우기 위한 Docker Compose를 작성합니다.
+**docker-compose.yml**
 
-docker-compose.yml 파일도 prometheus 디렉터리 내부에서 생성할 것이기 때문에 상대경로로 볼륨 마운트를 해주었습니다.
+Prometheus와 Grafana 컨테이너를 띄우기 위한 Docker Compose를 작성합니다.
 
 Grafana Web 기본 비밀번호는 1234로 지정하고 현재 서버에서 3000번 포트는 사용중이어서 10000으로 포트포워딩 하였습니다.
-
-
 
 ```yaml
 version: '3.7'
@@ -60,42 +73,75 @@ services:
     image: prom/prometheus:latest
     container_name: Root-Metric
     volumes:
-      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+      - /home/skw/metrics/prometheus:/etc/prometheus
     command:
       - --config.file=/etc/prometheus/prometheus.yml
     ports:
       - "9090:9090"
+    restart: unless-stopped
 
   grafana:
     image: grafana/grafana:latest
     container_name: Grafana
     volumes:
-     - /home/skw/grafana:/usr/share/grafana/defaults.ini
+     - /home/skw/metrics/grafana:/usr/share/grafana/conf
     ports:
       - "10000:3000"
     environment:
       - GF_SECURITY_ADMIN_PASSWORD=1234
+    restart: unless-stopped
 ```
 
 <br>
 
-이제 컨테이너들을 올려줍니다.
+이제 컨테이너들을 올려주고 잘 실행중인지 확인합니다.
 
 ```bash
+# docker-compose.yml 파일 실행
 docker-compose up -d
+
+# 컨테이너 확인
+docker ps
 ```
 
 ![](Backend/Metrics/Grafana/1.png)
-
-<br>
-
-`docker ps`로 컨테이너가 잘 떴는지 확인
 
 ![](Backend/Metrics/Grafana/2.png)
 
 <br>
 
-나중에 Grafana Dashboard Emebed를 하기 위해 grafana 디렉토리(볼륨 마운트된)의 defaults.ini를 수정후 컨테이너를 재실행 해줍니다.
+**prometheus.yml 파일 작성**
+
+- 컨테이너가 실행됬으니 이제 prometheus 디렉토리에 `prometheus.yml` 파일을 작성해줍니다.
+- Root 서버, Jetson 서버, 윈도우 서버 이렇게 3개의 스크랩으로 나누었으며, 임시로 4개 서버만 등록 하였습니다.
+- 작성 완료 후, Prometheus 컨테이너를 재시작 하면 아래 설정이 컨테이너 내부로 들어가 적용됩니다.
+
+```yaml
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: 'Root Server'
+    static_configs:
+      - targets: ['192.168.0.5:9090'] # Root Server
+
+  - job_name: 'NVIDIA Jetson'
+    static_configs:
+      - targets: ['192.168.0.6:9100', '192.168.0.15:9100'] # 하위 Linux 서버들
+
+  - job_name: 'Windows Agent'
+    static_configs:
+      - targets: ['192.168.0.214:9182'] # 하위 왼도우 서버들
+```
+
+<br>
+
+**Grafana 설정 파일 수정 - defaults.ini**
+
+- 우선 초기 파일이 없으므로 `docker cp Granafa:/usr/share/grafana/defaults.ini /home/skw/metrics/grafana` 명령을 통해 설정 파일을 복사합니다.
+- 그리고, 해당 설정파일에서 Grafana Panel Embedding을 위한 defaults.ini 설정을 수정합ㅂ니다.
+- 나중에 Grafana Dashboard의 각 Panel을 다른 Web UI로 Embed를 하기 위해,
+- grafana 디렉토리(볼륨 마운트된)의 defaults.ini를 수정후 Grafana 컨테이너만 재실행 해주면 설정이 적용됩니다.
 
 ```
 [security]
@@ -108,7 +154,7 @@ enabled = true
 ---
 ## Prometheus
 
-Main Server에 띄운 Prometheus의 Port인 `http://{서버IP}:9090`으로 진입해 Prometheus 서버에 접속합니다.
+Root Server에 띄운 Prometheus의 Port인 `http://{서버IP}:9090`으로 진입해 Prometheus 서버에 접속합니다.
 
 상단의 Status - Targets를 클릭해보면 하위 서버들이 Online 상태인 걸 볼 수 있습니다.
 
@@ -171,7 +217,8 @@ DataSource는 자동으로 아까 지정한 Prometheus가 지정되어 있을거
 
 - **Add Query** : Prometheus에 등록한 쿼리 그대로 입력하면 됩니다.
 - **Panel** : 패널의 제목과 기타 설정을 할 수 있으며, 우측 박스 부분입니다.
-- **Time Series** : 그래프 유형을 선택합니다.
+- **Gauge 부분** : 그래프 유형을 선택합니다.
+- **Transform Data** : 데이터를 다양하게 변환 하는 항목들을 추가
 - **저장** : 우측 상단 Apply를 클릭해 Panel을 임시 대시보드에 저장합니다.
 
 아래 사진은 예시로 `up`이라는 쿼리를 등록해 서버3대의 상태를 Gauge Graph를 이용해 모니터링 합니다.
