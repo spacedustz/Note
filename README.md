@@ -4,6 +4,12 @@
 
 # 📚 Backend
 
+### Metric Visualization
+
+- [Prometheus & Grafana - Status Monitoring](./Backend/Metrics/Grafana/Grafana.md)
+
+<br>
+
 ### Spring
 
 - **QueryDSL**
@@ -30,12 +36,6 @@
   - [Util - Spring ehCache & DevTools](./Backend/Spring/Utils/Spring%20ehCache%20&%20DevTools.md)
   - [Util - Jar 실행 옵션](./Backend/Spring/Deploy/Jar%20Start%20Option.md)
   - [Util - Logback 설정](./Backend/Spring/Deploy/Logback.md)
-
-<br>
-
-### Metric Visualization
-
-- [Prometheus & Grafana - Status Monitoring](./Backend/Metrics/Grapana/Grafana.md)
 
 <br>
 
