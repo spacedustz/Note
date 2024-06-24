@@ -18,18 +18,22 @@ Main Server를 설정하기 전, 메트릭 수집을 원하는 서버에 `node-e
 Linux에서 Exporter의 기본 포트는 9100 입니다.
 
 ```bash
-sudo docker run -d --name=metric --restart=on-failure --net=host prom/node-exporter
+sudo docker run -d --name=metric --restart=unless-stopped --net=host prom/node-exporter
 ```
 
 <br>
 
 **Windows Server**
 
-[Windows Node Exporter](https://github.com/prometheus-community/windows_exporter/releases) 위 사이트에서 Windows 전용 Exporter를 받고 임의의 폴더에 압축을 풀어줍니다.
+[Windows Node Exporter](https://github.com/prometheus-community/windows_exporter/releases) 위 사이트에서 Windows 전용 Exporter 설치 파일인 msi 파일이 있는 곳에서 터미널을 관리자 권한으로 열어줍니다.
 
-압축 해제한 폴더 내부에 있는 prometheus.yml 파일에 Windows Exporter를 Scrab Target으로 추가합니다.
+터미널에서 아래 명령을 입력해 설치합니다.
 
-Windows Exporter 기본 포트는 9182 입니다.
+Windows 전용 Exporter에는 memory가 기본 Metric 수집 항목에 빠져있기 때문에 기본 메트릭으로 등록해주는 작업입니다.
+
+```shell
+msiexec /i windows_exporter-0.26.0-amd64.msi ENABLED_COLLECTORS="ad,adfs,cache,cpu,cpu_info,cs,container,dfsr,dhcp,dns,fsrmquota,iis,logical_disk,logon,memory,msmq,mssql,netframework_clrexceptions,netframework_clrinterop,netframework_clrjit,netframework_clrloading,netframework_clrlocksandthreads,netframework_clrmemory,netframework_clrremoting,netframework_clrsecurity,net,os,process,remote_fx,service,system,tcp,time,vmware" TEXTFILE_DIR="C:\custom_metrics" LISTEN_PORT="9182"
+```
 
 ---
 ## Root Server 설정
@@ -46,15 +50,17 @@ granafa와 prometheus 디렉토리 내부에는 아무 파일도 없지만 컨�
 
 - docker-compose 파일은 metrics 디렉터리 내부에 있으며, compose up 시 이곳에서 진행합니다.
 - grafana 디렉토리 : Grafana 설정 파일인 `defaults.ini`를 Container의 볼륨과 마운트합니다.
+- grafana/data 디렉토리 : Grafana 컨테이너의 데이터 마운트
 - prometheus 디렉토리 : Prometheus 설정 파일인 `prometheus.yml`을 Container의 볼륨과 마운트합니다.
 
 ```
 /home/skw/metrics
 ├── docker-compose.yml
 ├── grafana
-│   └── 
+│   └── data (디렉토리)
+│   └── defaults.ini
 └── prometheus
-    └── 
+    └── prometheus.yml
 ```
 
 <br>
@@ -65,15 +71,17 @@ Prometheus와 Grafana 컨테이너를 띄우기 위한 Docker Compose를 작성�
 
 Grafana Web 기본 비밀번호는 1234로 지정하고 현재 서버에서 3000번 포트는 사용중이어서 10000으로 포트포워딩 하였습니다.
 
+`depends_on` 옵션은 프로메테우스 컨테이너에 의존한다는 의미로, 컨테이너 실행순서를 제어하는 옵션입니다.
+
 ```yaml
 version: '3.7'
 
 services:
   prometheus:
     image: prom/prometheus:latest
-    container_name: Root-Metric
+    container_name: prometheus
     volumes:
-      - /home/skw/metrics/prometheus:/etc/prometheus
+      - /home/dains/metrics/prometheus:/etc/prometheus
     command:
       - --config.file=/etc/prometheus/prometheus.yml
     ports:
@@ -82,9 +90,12 @@ services:
 
   grafana:
     image: grafana/grafana:latest
-    container_name: Grafana
+    container_name: grafana
+    depends_on:
+      - prometheus
     volumes:
-     - /home/skw/metrics/grafana:/usr/share/grafana/conf
+     - /home/skw/metrics/grafana/defaults.ini:/usr/share/grafana/conf/defaults.ini
+     - /home/skw/metrics/grafana/data:/var/lib/grafana
     ports:
       - "10000:3000"
     environment:
@@ -94,7 +105,7 @@ services:
 
 <br>
 
-이제 컨테이너들을 올려주고 잘 실행중인지 확인합니다.
+Docker Compose를 실행하기 전 컨테이너 권한 설정 후, 이제 컨테이너들을 올려주고 잘 실행중인지 확인합니다.
 
 ```bash
 # docker-compose.yml 파일 실행
@@ -121,29 +132,41 @@ global:
   scrape_interval: 15s
 
 scrape_configs:
-  - job_name: 'Root Server'
+  - job_name: 'Root'
     static_configs:
       - targets: ['192.168.0.5:9090'] # Root Server
 
-  - job_name: 'NVIDIA Jetson'
+  - job_name: 'Test'
     static_configs:
-      - targets: ['192.168.0.6:9100', '192.168.0.15:9100'] # 하위 Linux 서버들
+      - targets: ['192.168.0.6:9100'] # 하위 Linux 서버
 
-  - job_name: 'Windows Agent'
+  - job_name: 'Independence'
     static_configs:
-      - targets: ['192.168.0.214:9182'] # 하위 왼도우 서버들
+      - targets: ['192.168.0.15:9100'] # 하위 Linux 서버
+
+  - job_name: 'Local'
+    static_configs:
+      - targets: ['192.168.0.215:9182'] # 하위 왼도우 서버
 ```
 
 <br>
 
 **Grafana 설정 파일 수정 - defaults.ini**
 
-- 우선 초기 파일이 없으므로 `docker cp Granafa:/usr/share/grafana/defaults.ini /home/skw/metrics/grafana` 명령을 통해 설정 파일을 복사합니다.
-- 그리고, 해당 설정파일에서 Grafana Panel Embedding을 위한 defaults.ini 설정을 수정합ㅂ니다.
-- 나중에 Grafana Dashboard의 각 Panel을 다른 Web UI로 Embed를 하기 위해,
-- grafana 디렉토리(볼륨 마운트된)의 defaults.ini를 수정후 Grafana 컨테이너만 재실행 해주면 설정이 적용됩니다.
+- 만약 볼륨 마운트를 진행하지 않고 컨테이너 내부에서 파일을 뺴오는 방식으로 할 때
+	- 우선 초기 파일이 없으므로 `docker cp Granafa:/usr/share/grafana/defaults.ini /home/skw/metrics/grafana` 명령을 통해 설정 파일을 복사합니다.
+	- 그리고, 해당 설정파일에서 Grafana Panel Embedding을 위한 defaults.ini 설정을 수정합니다.
+	- 나중에 Grafana Dashboard의 각 Panel을 다른 Web UI로 Embed를 하기 위해,
+	- grafana 디렉토리(볼륨 마운트된)의 defaults.ini를 수정후 Grafana 컨테이너만 재실행 해주면 설정이 적용됩니다.
+- 볼륨 마운트 옵션을 사용할 때는 아래 내용의 defaults.ini 파일을 만들고 볼륨 마운트를 해줍니다.
 
 ```
+[server]
+http_port = 3000
+protocol = http
+domain = 인스턴스 IP
+root_url = %(protocol)s://%(domain)s:%(http_port)s/
+
 [security]
 allow_embedding = true
 
@@ -162,19 +185,34 @@ Root Server에 띄운 Prometheus의 Port인 `http://{서버IP}:9090`으로 진�
 
 <br>
 
-### Prometheus Query 설정
+### Prometheus Query(PromQL) 설정
 
 수집할 데이터를 쿼리하는 곳이며, Prometheus Web 상단 Graph를 클릭 후, Add Panel 버튼을 클릭해 쿼리를 1개씩 추가해줍니다.
+
+프로메테우스 **윈도우 전용 쿼리는** [여기](https://github.com/prometheus-community/windows_exporter?tab=readme-ov-file)에 자세히 나와있습니다.
 
 제가 수집할 메트릭은 아래와 같습니다.
 
 이렇게 Prometheus에 등록한 Panel은 Grafana의 Dashboard에서 등록 할 수 있습니다.
 
-- `up` : 서버의 Online/Offline 상태
-- `100 - (avg by (instance) (irate(node_cpu_seconds_total{mode="idle"}[5m])) * 100)` : CPU 사용량
-- `(node_memory_MemTotal_bytes - node_memory_MemAvailable_bytes) / node_memory_MemTotal_bytes * 100` : 메모리 사용량
-- `node_memory_Active_bytes` : 사용중인 메모리
-- `100 - ((node_filesystem_avail_bytes{mountpoint="/"} / node_filesystem_size_bytes{mountpoint="/"}) * 100)` : 디스크 사용량
+```promql
+# 서버의 Online/Offline 상태
+up
+
+# CPU 사용량 (리눅스, 윈도우 서버 전체 조회)
+(
+  100 - (avg by (instance, job) (irate(node_cpu_seconds_total{mode="idle"}[5m])) * 100)
+) or (
+  100 - (avg by (instance, job) (rate(windows_cpu_time_total{mode="idle"}[5m])) * 100)
+)
+
+# 메모리 사용량 (리눅스, 윈도우 서버 전체 조회)
+(
+  (node_memory_MemTotal_bytes - node_memory_MemAvailable_bytes) / node_memory_MemTotal_bytes * 100
+) or (
+  100 - ((windows_memory_available_bytes / windows_cs_physical_memory_bytes) * 100)
+)
+```
 
 ![](./4.png)
 
@@ -215,13 +253,13 @@ DataSource는 자동으로 아까 지정한 Prometheus가 지정되어 있을거
 
 이제 Dashboard에서 보여줄 Panal들을 하나씩 만들거고, Prometheus에 등록한 쿼리를 그대로 입력하면 아래와 같이 나오게 됩니다.
 
-- **Add Query** : Prometheus에 등록한 쿼리 그대로 입력하면 됩니다.
-- **Panel** : 패널의 제목과 기타 설정을 할 수 있으며, 우측 박스 부분입니다.
-- **Gauge 부분** : 그래프 유형을 선택합니다.
-- **Transform Data** : 데이터를 다양하게 변환 하는 항목들을 추가
-- **저장** : 우측 상단 Apply를 클릭해 Panel을 임시 대시보드에 저장합니다.
+- **Query** : 하단 메뉴로, Prometheus에 등록한 쿼리 그대로 입력 후 Label Filter를 설정해 원하는 서버의 상태를 등록합니다.
+- **Override Fields** : 각 메트릭 서버의 Display 이름을 바꿔주었습니다.
+- **Thresholds** : 1이라는 값을 On으로, 0 값을 Off로 매핑해주었습니다.
+- **Gauge 부분** : 우측 싱딘 그래프 유형을 선택합니다. 저는 게이지로 선택했습니다.
+- **Apply** : 우측 최상단 Apply를 클릭해 Panel을 임시 대시보드에 저장합니다.
 
-아래 사진은 예시로 `up`이라는 쿼리를 등록해 서버3대의 상태를 Gauge Graph를 이용해 모니터링 합니다.
+아래 사진은 예시로 `up`이라는 쿼리를 등록해 서버들의 상태를 Gauge Graph를 이용해 모니터링 합니다.
 
 ![](./10.png)
 
@@ -237,9 +275,15 @@ DataSource는 자동으로 아까 지정한 Prometheus가 지정되어 있을거
 
 이번엔 프로메테우스에 추가했던 CPU 사용량 쿼리인 
 
-`100 - (avg by (instance) (irate(node_cpu_seconds_total{mode="idle"}[5m])) * 100)` 
+```promql
+(
+  100 - (avg by (instance, job) (irate(node_cpu_seconds_total{mode="idle"}[5m])) * 100)
+) or (
+  100 - (avg by (instance, job) (rate(windows_cpu_time_total{mode="idle"}[5m])) * 100)
+)
+```
 
-쿼리를 등록해보면 하위 2개 서버의 최근 CPU 사용량이 나오게 됩니다.
+쿼리를 등록해서 이번엔 Bar Chart로 선택 후, 2개의 Linux 서버와 1개의 윈도우 서버의 최근 CPU 사용량이 나오게 됩니다.
 
 ![](./12.png)
 
@@ -247,21 +291,27 @@ DataSource는 자동으로 아까 지정한 Prometheus가 지정되어 있을거
 
 이렇게 2개의 Panel을 추가했고 저장 버튼을 눌러 Dashboard를 저장해주면 끝입니다.
 
+나머지 메모리, 디스크 등도 추가하고 싶은 메트릭을 써서 패널들을 추가하기만 하면 됩니다.
+
 ![](./13.png)
 
 <br>
 
-이 Dashboard의 각 Panel들을 Imbedding도 가능한데 Dashboard에서 Panel의 점 3개 옵션을 눌러 share를 선택 후,
+### Grafana Panel Embedding
 
-Imbed 옵션에 있는 HTML을 활용하면 됩니다.
+이 Dashboard의 각 Panel들을 Embedding도 가능한데 Dashboard에서 Panel의 점 3개 옵션을 눌러 share를 선택 후,
 
-CPU, Memory, Disk 3개의 Panel Imbedding iframe을 임시 HTML을 만들어서 Imbed 해보았습니다.
+Embed 옵션에 있는 HTML을 활용하면 됩니다.
+
+CPU, Memory, Disk 3개의 Panel Embedding iframe을 임시 HTML을 만들어서 대충 기능 확인만 하려고 Embed 해보았습니다.
 
 <br>
 
 저는 만약 Grafana를 쓰더라도 Grafana의 Web UI는 쓰지 않을 것 같고,
 
-각 Panel들의 그래프만 쓸것 같아서 Imbed를 통해 Panel UI만 옮기는 기능이 있는지 알아보다가 발견하게 되었습니다.
+각 Panel들의 그래프만 별도 프론트엔드 서버에서 가져와 쓸것 같아서,
+
+Embed를 통해 Panel UI만 옮기는 기능이 있는지 알아보다가 발견하게 되었습니다.
 
 ```html
 <!DOCTYPE html>
