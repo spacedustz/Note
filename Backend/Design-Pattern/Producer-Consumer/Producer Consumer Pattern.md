@@ -6,9 +6,17 @@ ReentrantLock의 tryLock을 이용해 명시적 Lock을 걸고 임계영역을 �
 
 <br>
 
-심심해서 이 방법 말고 더 나은 방법이 없을까 알아보던 중,
+근데 문제는 평소 AI Engine에서 받은 MQTT 데이터의 흐름이 평상시에는 일정한 개수(1초에 200개 정도) 나오다가
 
-LinkedBlockingQueue를 이용한 Producer -Consumer Pattern이라는
+AI Engine에 특정 조건이 트리거 되어 특정 모드로 바뀔때 수 없이 많은 데이터가 쏟아져 나올 떄가 있으며, 그 메시지들을 그대로 Consume 해버리게 됩니다.
+
+Thread들을 충분히 나누었음에도 부하가 심해 Spring Server가 일시적으로 멈춤, 오작동하거나 API 호출이 안 먹는다거나 이슈들이 많았습니다.
+
+<br>
+
+그래서 특정 모드에 들어갔을떄 Message를 Consume 받는 빈도를 BlockingQueue를 통해 조절 해 서버의 부하를 줄이고자 알아보다가 
+
+발견한것이 LinkedBlockingQueue를 이용한 Producer -Consumer Pattern이라는
 
 현재 상황에서 데이터를 더 안전하게 처리할 수 있는 적합한 디자인 패턴을 발견하게 되어,
 
@@ -360,3 +368,5 @@ public class ThreadScheduler {
 서버 로그를 보면 Consumer Thread가 1개 실행되고, Thread 개수를 체크하는 스케쥴러도 1개라고 나오며, 제 이름도 잘 나오고 있습니다.
 
 ![](./2.png)
+
+이렇게 BlockingQueue를 이용해 서버 부하도 줄이고 명시적인 Locking 코드도 없이 부하를 조금이나마 분산할 수 있게 되었습니다.
