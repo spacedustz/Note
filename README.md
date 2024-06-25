@@ -12,6 +12,8 @@
 
 ### Spring
 
+- **Design Pattern**
+  - [Producer-Consumer 패턴 with RabbitMQ](./Backend/Design-Pattern/Producer-Consumer/Producer%20Consumer%20Pattern.md)
 - **QueryDSL**
   - [QueryDSL(Kotlin) - DTO Projection](./Backend/Spring/QueryDSL/DTO%20Projection.md)
 - **성능 최적화**
