@@ -21,16 +21,6 @@ use skw
 
 <br>
 
-> **MongoDB CLI**
-
-**MongoDB CLI 접속**
-
-```bash
-mongo -u root -p 1234
-```
-
-<br>
-
 **Database 관련 CLI 명령어**
 
 ```sql
@@ -57,6 +47,162 @@ db.dropDatabase()
 ```java
 mTemplate.getDb().getMongo().getDatabase("skw")
 ```
+
+---
+
+## Spring Data Mongo Settings
+
+**build.gradle**
+
+```groovy
+implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
+```
+
+<br>
+
+**application.yml**
+
+```yaml
+spring:
+  data:
+    mongodb:  
+      host: 192.168.0.5  
+      port: 5000  
+      authentication-database: admin  
+      database: skw  
+      username: root  
+      password: 1234
+```
+
+<br>
+
+**Entity 생성**
+
+- 기본적으로 Mongo Entity를 String이나 ObjectId를 사용하지만 저는 Custom SequenceGenerator를 만들어서 JPA Entity의 @GenerateValue를 사용한 것처럼 자동으로 숫자 값을 증가시킬 겁니다.
+
+```java
+@Document(collection = "chat")  
+@NoArgsConstructor  
+@AllArgsConstructor  
+public class Chat {  
+    @Id  
+    private Long id;  
+    private String senderId;  
+    private String message;  
+    private Long qnaId;  
+    private Long chanRoomId;  
+}
+```
+
+<br>
+
+**SequenceGenerator 생성**
+
+- 서비스 클래스에서 Mongo Entity를 생성할 때, 이 클래스의 `generateSequence` 메서드를 이용해 ID 값을 자동으로 증가 시킵니다.
+
+```java
+/**  
+ * @author 신건우  
+ * @desc MongoDB의 Entity 기본 키를 JPA Entity 처럼 자동 증가하게 해주는 시퀀스 번호 생성기  
+ */  
+@Service  
+@RequiredArgsConstructor  
+public class SequenceGenerator {  
+    private final MongoOperations mongoOperations;  
+  
+    public long generateSequence(String seqName) {  
+        // Mongo Query 생성, _id 필드가 seqName과 일치하는 Document를 찾기 위한 조건 설정  
+        Query query = new Query(Criteria.where("_id").is(seqName));  
+  
+        // seq 필드를 1 증가 시키는 Mongo Update 생성  
+        Update update = new Update().inc("seq", 1);  
+  
+        // findAndModify 작업의 옵션 설정  
+        // returnNew : 수정 후 Document 반환 여부  
+        // upsert : 해당 Document가 없으면 새로 생성  
+        FindAndModifyOptions options = new FindAndModifyOptions().returnNew(true).upsert(true);  
+  
+        // findAndModify 실행  
+        MongoSequence counter = mongoOperations.findAndModify(query, update, options, MongoSequence.class);  
+  
+        // Null일 경우 1부터 시작, null이 아닌 경우 +1 된 seq 번호 반환  
+        return counter != null ? counter.getSeq() : 1;  
+    }  
+}
+```
+
+<br>
+
+**MongoConfig**
+
+- 설명 생략
+
+```java
+@Configuration  
+public class MongoConfig {  
+  
+    @Value("${spring.data.mongodb.host}")  
+    private String host;  
+  
+    @Value("${spring.data.mongodb.port}")  
+    private int port;  
+  
+    @Value("${spring.data.mongodb.authentication-database}")  
+    private String authenticationDatabase;  
+  
+    @Value("${spring.data.mongodb.database}")  
+    private String database;  
+  
+    @Value("${spring.data.mongodb.username}")  
+    private String username;  
+  
+    @Value("${spring.data.mongodb.password}")  
+    private String password;  
+  
+    @Bean  
+    public MongoClient mongoClient() {  
+        String connectionString = String.format("mongodb://%s:%s@%s:%d/%s?authSource=%s",  
+                username, password, host, port, database, authenticationDatabase);  
+        return MongoClients.create(connectionString);  
+    }  
+  
+    @Bean  
+    public MongoTemplate mongoTemplate() {  
+        return new MongoTemplate(new SimpleMongoClientDatabaseFactory(mongoClient(), database));  
+    }  
+}
+```
+
+<br>
+
+**컬렉션 생성 테스트**
+
+- "몽고 엔티티 테스트" 라는 문구를 넣어 Chat Collection에서 Document를 1개 생성하는 코드를 넣고 서버 실행
+
+```java
+@Slf4j  
+@Service  
+@Transactional  
+@RequiredArgsConstructor  
+public class ChatService {  
+    private final ChatRepository chatRepository;  
+    private final SequenceGenerator sequenceGenerator;  
+  
+    @PostConstruct  
+    public void init() {  
+        Chat chat = new Chat();  
+        chat.changeId(sequenceGenerator.generateSequence(Chat.SEQUENCE_NAME));  
+        chat.changeMessage("몽고 엔티티 테스트");  
+        chatRepository.save(chat);  
+    }  
+}
+```
+
+<br>
+
+**서버 실행 후, MongoDB Container CLI 들어가서 확인해보면 1과 테스트 메시지가 잘 들어가 있음.**
+
+![](./2.png)
 
 ---
 ## Collection(Table)
