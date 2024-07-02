@@ -43,6 +43,7 @@
   - [Spring ehCache & DevTools](./Backend/Spring/Utils/Spring%20ehCache%20&%20DevTools.md)
   - [Jar 실행 옵션](./Backend/Spring/Deploy/Jar%20Start%20Option.md)
   - [Logback 설정](./Backend/Spring/Deploy/Logback.md)
+  - [Publish Maven Local](./Backend/Spring/Utils/Publish/Publish%20Maven%20Local.md)
 </details>
 
 <br>
