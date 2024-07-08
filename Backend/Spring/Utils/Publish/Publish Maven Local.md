@@ -95,5 +95,10 @@ dependencies {
 ```
 
 <br>
+Spring Main 클래스에 BasePackages를 넣어줍니다.
+
+```java
+@SpringBootApplication(scanBasePackages = {"com.ys.common", "com.ys.admin"})
+```
 
 위 내용을 적어주고 빌드하면 해당 라이브러리에 포함된 모든 클래스를 Import 할 수 있게 됩니다.

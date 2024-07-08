@@ -154,10 +154,14 @@ public class UserRequest {
 
 ```java
 @Data  
-@Schema(title = "테스트 DTO")  
+@Schema(title = "테스트 DTO", description = "Test API Request & Response")  
 public class OpenApiDto {  
-    @Schema(description = "외부에서 받은 숫자", example = "1")  
-    private Integer num;  
+  
+    @Schema(name = "테스트 Request")  
+    public static class Test {  
+        @Schema(description = "외부에서 받은 숫자", example = "1")  
+        private Integer num;  
+    }  
 }
 ```
 
@@ -169,9 +173,7 @@ public class OpenApiDto {
 @Tag(name = "Test Controller", description = "테스트 컨트롤러")  
 @RestController  
 @RequestMapping("/test")  
-public class OpenApiController {  
-  
-    @Parameter(name = "num", description = "아무 숫자나 넣자")  
+public class OpenApiController {   
     @Operation(summary = "Test Get", description = "테스트 GET")  
     @ApiResponse(responseCode = "200", description = "Success")  
     @GetMapping("/{num}")  
