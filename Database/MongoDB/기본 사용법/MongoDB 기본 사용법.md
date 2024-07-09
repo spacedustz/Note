@@ -1,5 +1,11 @@
 ## MongoDB 기본 사용법
 
+현재 진행중인 사이드 프로젝트에서 채팅방의 메시지를 Mongo DB를 이용해 저장하기로 했습니다.
+
+Redis는 여러번 써봤지만 Document DB인 MongoDB는 처음 써보는 거라 CLI 환경일떄와 Spring 에서의 사용법 둘다 작성 하였습니다.
+
+<br>
+
 > **Docker Container 사용 - 이름과 포트, 초기 유저 & 비밀번호를 지정해 생성**
 
 ```bash
