@@ -9,6 +9,9 @@
 <details>
 <summary>펼치기</summary>
 
+- Spring AOP
+  - [API Verification 공통화](./Backend/Spring/AOP/Spring%20AOP%20-%20API%20Verification%20공통화.md)
+
 - **QueryDSL**
   - [QueryDSL(Kotlin) - DTO Projection](./Backend/Spring/QueryDSL/DTO%20Projection.md)
 
