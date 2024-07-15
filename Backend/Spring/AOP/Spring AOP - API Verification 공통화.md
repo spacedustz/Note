@@ -99,7 +99,8 @@ public class ControllerAspect {
                 }  
             }  
   
-            // TODO 2: TOKEN_STATUS 헤더 값 검증 - Valid가 아니라면 Throw Exception            if (StringUtils.hasText(tokenStatusStr)) tokenStatus = TokenStatus.valueOf(tokenStatusStr);  
+            // TODO 2: TOKEN_STATUS 헤더 값 검증 - Valid가 아니라면 Throw Exception            
+            if (StringUtils.hasText(tokenStatusStr)) tokenStatus = TokenStatus.valueOf(tokenStatusStr);  
   
             switch (tokenStatus) {  
                 case Invalid -> {  
