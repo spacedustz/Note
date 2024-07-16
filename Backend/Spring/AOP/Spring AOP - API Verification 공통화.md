@@ -53,11 +53,10 @@ public class ControllerAspect {
   
     /**  
      * @author 신건우  
-     * @desc  
-     * 1. 사용자의 Header에 넣은 Token Status, User Role 2개의 값을 가져와 토큰 상태 Enum에 정의 해놓은 Valid 상태가 아니면 Throw Exception  
+     * @desc 1. 사용자의 Header에 넣은 Token Status, User Role 2개의 값을 가져와 토큰 상태 Enum에 정의 해놓은 Valid 상태가 아니면 Throw Exception  
      * 2. 두번쨰 헤더의 값인 User Role을 가져와 해당 Role에 해당하는 권한(ViewGroup)의 Y/N을 Map에 매핑 -> 잘못된 Role 일 시 Throw Exception  
      * 3. Custom Annotation인 PreAuth의 코드를 가져와 해당 코드에 존재하는 권한 리스트 체크  
-     * 4. 응답속도, Class, Method, Parameter 로깅  
+     * 4. 응답속도, Class, Method, Parameter 등등 로깅  
      */  
     @Around("execution(public * com.ys.admin.controller.*.*(..))")  
     public Object around(ProceedingJoinPoint joinPoint) throws Throwable {  
@@ -81,14 +80,20 @@ public class ControllerAspect {
             paramValues = joinPoint.getArgs();  
   
             // 컨트롤러의 파라미터들을 1줄의 String으로 append 시키면서 ","로 구분  
-            if (paramValues != null && paramValues.length > 0)  
-                Arrays.stream(paramValues).forEach(param -> paramValueStr.append(param).append(","));  
+            // 첫번쨰 paramValue 스킵 -> 첫번쨰 파라미터는 패키지+클래스명인데 가독성을 위해 스킵함  
+            // 마지막에 붙은 "," 제거  
+            if (paramValues != null && paramValues.length > 0) {  
+                Arrays.stream(paramValues).skip(1).forEach(param -> paramValueStr.append(param).append(","));  
   
-            // Request를 처리하는 컨트롤러 클래스명, 함수형을 로그로 찍음  
+                // 파라미터 마지막에 붙은 "," 제거  
+                if (!paramValueStr.isEmpty()) paramValueStr.deleteCharAt(paramValueStr.length() - 1);  
+            }  
+  
+            // Request를 처리하는 컨트롤러 클래스명, 함수형을 로그로 찍기 위한 문자열 분리 및 변수화  
             String classNameWithPackageName = joinPoint.getTarget().getClass().getCanonicalName(); // 패키지명을 포함한 클래스명  
             String classNameWithoutPackageName = classNameWithPackageName.substring(classNameWithPackageName.lastIndexOf(".") + 1); // 패키지명을 제외한 클래스명  
   
-            log.info("[ Aspect Req ] - Class : {}, Method : {} , Param Value : {}", classNameWithoutPackageName, joinPoint.getSignature().getName(), paramValueStr);  
+            log.debug("[ Aspect Req ] - Class : {}, Method : {} , Param Value : {}", classNameWithoutPackageName, joinPoint.getSignature().getName(), paramValueStr);  
   
             // 요청(HttpServletRequest)의 헤더에 넣었던 토큰 상태, 유저 권한 가져오기  
             for (int i = 0; i < Objects.requireNonNull(paramValues).length; i++) {  
@@ -113,65 +118,69 @@ public class ControllerAspect {
                 }  
             }  
   
-            // TODO 3: USER_ROLE에 해당하는 권한(ViewGroup)을 GrantAuthority를 구현한 CustomAuth를 이용해 Map에 권한의 Y/N 여부 매핑  
-            if (StringUtils.hasText(userRoleStr) && !userRoleStr.equals(UserRole.ADMIN.name())) {  
-                role = UserRole.valueOf(userRoleStr);  
-                authMap = userGroupService.findUserGroup(role);  
-            }  
-  
-            // TODO 4: API에 붙인 Custom으로 생성한 PreAuth Annotation의 View ID 검증을 위해 Method Signature 조회 후 PreAuth로 매핑  
-            MethodSignature signature = (MethodSignature) joinPoint.getSignature();  
-            Method method = signature.getMethod();  
-  
-            PreAuth preAuth = method.getAnnotation(PreAuth.class);  
-  
-            // TODO 5: 매핑된 PreAuth의 멤버로 있는 권한 배열을 AuthorizationType 배열로 변수화  
-            AuthorizationType[] userAuthMethodArray = preAuth.authorization();  
-  
-            // TODO 6: API에 붙인 PreAuth의 View ID를 가져와 View가 가지고 있는 권한 리스트를 체크 해 어떤 권한을 가졌는지 체크 후 hasRight True/False 설정  
-            // 0은 JWT Authentication Filter에서 검증 예외로 지정된 URL(NO_NEED_TOKEN_API)에 붙이는 값이므로 이 값에 해당되는 Endpoint를 가진 API는 hasRight 통과시킴  
-            if (preAuth.viewId() == 0) {  
+            // TODO 3 : NO_NEED_TOKEN이 들어오면 검증 전부 예외 (Spring Security의 Filter를 구현해서 토큰이 필요 없는 URL을 설정 했음)  
+            if (tokenStatus == TokenStatus.NO_NEED_TOKEN) {  
                 hasRight = true;  
             } else {  
-                // View ID가 0번이 아닌 경우  
-                if (authMap.containsKey(preAuth.viewId())) {  
-                    CustomAuth auth = authMap.get(preAuth.viewId());  
+                // TODO 4: USER_ROLE에 해당하는 권한(ViewGroup)을 GrantAuthority를 구현한 CustomAuth를 이용해 Map에 권한의 Y/N 여부 매핑  
+                if (StringUtils.hasText(userRoleStr)) {  
+                    role = UserRole.valueOf(userRoleStr);  
+                    authMap = userGroupService.mapAuthorityForAspect(role);  
+                }  
   
-                    // 가져온 View의 권한 리스트를 돌며 권한을 체크하고 4개 모두 권한이 없을 경우 hasRight는 false로 ACCESS_DINIED Exception을 던짐  
-                    for (AuthorizationType authType : userAuthMethodArray) {  
-                        switch (authType) {  
-                            case Create -> {  
-                                if (auth.isCreate()) hasRight = true;  
+                // TODO 5: API에 붙인 Custom으로 생성한 PreAuth Annotation의 View ID 검증을 위해 Method Signature 조회 후 PreAuth로 매핑  
+                MethodSignature signature = (MethodSignature) joinPoint.getSignature();  
+                Method method = signature.getMethod();  
+  
+                PreAuth preAuth = method.getAnnotation(PreAuth.class);  
+  
+                // TODO 6: 컨트롤러의 PreAuth 어노테이션에 붙은 필요 권한  
+                AuthorizationType[] userAuthMethodArray = preAuth.authorization();  
+  
+                // TODO 7: API에 붙인 PreAuth의 View ID를 가져와 View가 가지고 있는 권한 리스트를 체크 해 어떤 권한을 가졌는지 체크 후 hasRight True/False 설정  
+                // 0은 JWT Authentication Filter에서 검증 예외로 지정된 URL(NO_NEED_TOKEN_API)에 붙이는 값이므로 이 값에 해당되는 Endpoint를 가진 API는 hasRight 통과시킴  
+                if (preAuth.viewId() == 0) {  
+                    hasRight = true;  
+                } else {  
+                    // View ID가 0번이 아닌 경우  
+                    if (authMap.containsKey(preAuth.viewId())) {  
+                        CustomAuth auth = authMap.get(preAuth.viewId());  
+  
+                        // TODO 8 : 가져온 View의 권한 리스트를 돌며 권한을 체크하고 4개 모두 권한이 없을 경우 hasRight는 false로 ACCESS_DINIED Exception을 던짐  
+                        for (AuthorizationType authType : userAuthMethodArray) {  
+                            switch (authType) {  
+                                case Create -> {  
+                                    if (auth.isCreate()) hasRight = true;  
+                                }  
+                                case Read -> {  
+                                    if (auth.isRead()) hasRight = true;  
+                                }  
+                                case Update -> {  
+                                    if (auth.isUpdate()) hasRight = true;  
+                                }  
+                                case Delete -> {  
+                                    if (auth.isDelete()) hasRight = true;  
+                                }  
+                                case NoCheck -> hasRight = true;  
                             }  
-                            case Read -> {  
-                                if (auth.isRead()) hasRight = true;  
-                            }  
-                            case Update -> {  
-                                if (auth.isUpdate()) hasRight = true;  
-                            }  
-                            case Delete -> {  
-                                if (auth.isDelete()) hasRight = true;  
-                            }  
-                            case NoCheck -> hasRight = true;  
                         }  
                     }  
                 }  
+  
+                // TODO 9 : Aspect를 통과 / 실패했을떄 클래스명, 함수명, 파라미터값, 권한, 필요권한 등 로깅  
+                if (hasRight) {  
+                    result = joinPoint.proceed();  
+                    log.info("[ Aspect Res ] - 소요시간 : {} ms\n 클래스명 : {}, 함수명 : {}, 파라미터값 : {}\n View ID : {}, 유저그룹 : {}, 필요 권한 : {}", (System.currentTimeMillis() - startTime), classNameWithoutPackageName, joinPoint.getSignature().getName(), paramValueStr, preAuth.viewId(), role.name(), Arrays.stream(userAuthMethodArray).toArray());  
+                } else {  
+                    log.error("[ Aspect Exception ] - Access Denied\n Class : {}, View ID : {}, Role = {}, Needed Auth : {}", joinPoint.getSignature().getName(), preAuth.viewId(), role.name(), Arrays.stream(userAuthMethodArray).toArray());  
+                    throw new CommonException(ExceptionCode.ACCESS_DENIED);  
+                }  
             }  
   
-            if (hasRight) {  
-                result = joinPoint.proceed();  
-            } else {  
-                throw new CommonException(ExceptionCode.ACCESS_DENIED);  
-            }  
+            return result;  
         } catch (Throwable tr) {  
             throw tr;  
-        } finally {  
-            // 클래스명, 함수명, 응답 시간 기록  
-            String classNameWithPackageName = joinPoint.getTarget().getClass().getCanonicalName();  
-            String classNameWithoutPackageName = classNameWithPackageName.substring(classNameWithPackageName.lastIndexOf(".") + 1);  
-            log.info("[ Aspect Res ]  - 소요시간 : {} ms, Class : {}, Method : {} , Param Value : {}", (System.currentTimeMillis() - startTime), classNameWithoutPackageName, joinPoint.getSignature().getName(), paramValueStr);  
         }  
-        return result;  
     }  
 }
 ```
@@ -179,42 +188,87 @@ public class ControllerAspect {
 ---
 ## 📚 API 호출
 
-아래 API를 사용하여 임시로 Developer User Group을 생성 해보았습니다.
+아래 사용중인 API를 사용하여 임시로 TCP Socket 통신으로 Health Check 명령을 보내는 API를 사용하여 Aspect 로그를 생성 해보았습니다.
 
 Request 시 API Filter를 거쳐 Request Header에 유저의 권한과 JWT 토큰의 Valid 여부를 넣어주고, Aspect를 거쳐 Request가 넘어갑니다.
 
-Aspect에서 검증이 완료되고 나서야 비즈니스 로직이 실행되어 User Group이 DB에 저장되었고,
+Aspect에서 컨트롤러에 붙은 `@PreAuth` 어노테이션의 `ViewId`와 `AuthorizationType(필요한 권한)`을 DB에 저장되어있는 권한 리스트에서 `Y/N` 여부를 체크합니다.
 
-로그를 확인 해 보면 Aspect가 종료 된 후 응딥시간, 클래스명, 함수명, 파라미터의 값을 로깅합니다.
+권한 인증에 실패 / 성공 한 두 경우 모두 로그로 남겨보았습니다.
 
 ```java
-@PreAuth(viewId = 0, authorization = AuthorizationType.NoCheck)  
-@PostMapping  
-@Operation(summary = "Create Group", description = "유저 그룹 생성")  
-@ApiResponse(responseCode = "201", description = "유저 그룹 정보 반환")  
-public ResponseEntity<ApiResponseDto> createGroup(CustomHttpServletRequest request, @RequestBody UserGroupDto.Create dto) {  
-    return new ResponseEntity(ApiResponseDto.makeResponse(userGroupService.createGroup(dto)), HttpStatus.CREATED);  
+/**  
+ * @author 신건우  
+ * @desc TCP Relay Controller  
+ */@Slf4j  
+@RestController  
+@RequestMapping("/relay")  
+@RequiredArgsConstructor  
+@Tag(name = "TCP Relay API", description = "[Relay 명령어] \"check\" : 상태 체크, \"start\" : 포트 열기, \"stop\" : 포트 닫기")  
+public class TcpRelayController {  
+    private final TcpRelayService tcpRelayService;  
+  
+    @PreAuth(viewId = 2, authorization = AuthorizationType.Update)  
+    @Operation(summary = "TCP Relay Socket 통신 API", description = "[Relay 명령어] \"check\" : 상태 체크, \"start\" : 포트 열기, \"stop\" : 포트 닫기")  
+    @ApiResponse(responseCode = "200", description = "성공 응답 반환")  
+    @Parameter(name = "port", description = "TCP Relay 포트 번호")  
+    @Parameter(name = "cmd", description = "[Relay 명령어] \"check\" : 헬스체크, \"start\" : 포트 열기, \"stop\" : 포트 닫기")  
+    @GetMapping  
+    public ResponseEntity<ApiResponseDto> sendMessage(CustomHttpServletRequest request, @RequestParam Integer port, @RequestParam String cmd) throws Exception {  
+        String command = null;  
+  
+        switch (cmd) {  
+            case "check": command = port + "-"; break;  
+            case "start": command = port + "1."; break;  
+            case "stop": command = port + "0."; break;  
+            default: throw new CommonException(ExceptionCode.INVALID_PARAMETER);  
+        }  
+  
+        tcpRelayService.sendMessage(command);  
+        log.info("[ Netty - TCP Socket Status ] Broadcasting to WebSocket Sessions");  
+        return new ResponseEntity(ApiResponseDto.makeSuccessResponse(), HttpStatus.OK);  
+    }  
 }
 ```
+
+<br>
+
+### 실패했을 때의 Aspect 로그
+
+컨트롤러에 제가 붙인 필요 권한은 Update이고, View ID는 2번을 지정 했으니 DB의 2번 View의 Update 권한을 `N`으로 설정합니다.
 
 ![](./1.png)
 
 <br>
 
-**아주 조금 리팩토링**
+그리고 Postman을 이용해 API에 Request를 던져 봅니다. (사용자는 관리자 권한을 가졌지만 해당 관리자 권한의 View 객체의 Update 권한은 N으로 설정해둔 상태)
 
-로그를 더 잘 보이게 하기 위해 줄바꿈과 paramValue의 첫번쨰 파라미터를 제거하고 마지막에 붙는 ","를 삭제 해 주었습니다.
-
-```java
-            // 컨트롤러의 파라미터들을 1줄의 String으로 append 시키면서 ","로 구분
-            // 첫번쨰 paramValue 스킵 -> 첫번쨰 파라미터는 패키지+클래스명인데 가독성을 위해 스킵함
-            // 마지막에 붙은 "," 제거
-            if (paramValues != null && paramValues.length > 0) {
-                Arrays.stream(paramValues).skip(1).forEach(param -> paramValueStr.append(param).append(","));
-
-                // 파라미터 마지막에 붙은 "," 제거
-                if (!paramValueStr.isEmpty()) paramValueStr.deleteCharAt(paramValueStr.length() - 1);
-            }
-```
+요청을 보내보면 권한이 부족하다는 응답이 뜹니다.
 
 ![](./2.png)
+
+<br>
+
+이제 서버 로그를 보면 필요 권한, 현재 View ID 등 정보를 로깅합니다.
+
+![](./3.png)
+
+<br>
+
+### 성공했을 떄의 Aspect 로그
+
+그럼 이제 다시 DB에서 2번 View의 Update 권한을 다시 줘보겠습니다.
+
+![](./4.png)
+
+<br>
+
+그 후 다시 Postman 요청을 하면 200 OK가 떨어집니다.
+
+![](./5.png)
+
+<br>
+
+이제 서버 로그를 보면 응답시간과 클래스,함수명,파라미터 값 등등 정보들을 로깅합니다.
+
+![](./6.png)
