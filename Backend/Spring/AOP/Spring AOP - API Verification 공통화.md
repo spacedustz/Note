@@ -198,3 +198,23 @@ public ResponseEntity<ApiResponseDto> createGroup(CustomHttpServletRequest reque
 ```
 
 ![](./1.png)
+
+<br>
+
+**아주 조금 리팩토링**
+
+로그를 더 잘 보이게 하기 위해 줄바꿈과 paramValue의 첫번쨰 파라미터를 제거하고 마지막에 붙는 ","를 삭제 해 주었습니다.
+
+```java
+            // 컨트롤러의 파라미터들을 1줄의 String으로 append 시키면서 ","로 구분
+            // 첫번쨰 paramValue 스킵 -> 첫번쨰 파라미터는 패키지+클래스명인데 가독성을 위해 스킵함
+            // 마지막에 붙은 "," 제거
+            if (paramValues != null && paramValues.length > 0) {
+                Arrays.stream(paramValues).skip(1).forEach(param -> paramValueStr.append(param).append(","));
+
+                // 파라미터 마지막에 붙은 "," 제거
+                if (!paramValueStr.isEmpty()) paramValueStr.deleteCharAt(paramValueStr.length() - 1);
+            }
+```
+
+![](./2.png)
