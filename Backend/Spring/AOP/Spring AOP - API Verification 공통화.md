@@ -200,7 +200,8 @@ Aspect에서 컨트롤러에 붙은 `@PreAuth` 어노테이션의 `ViewId`와 `A
 /**  
  * @author 신건우  
  * @desc TCP Relay Controller  
- */@Slf4j  
+ */
+@Slf4j  
 @RestController  
 @RequestMapping("/relay")  
 @RequiredArgsConstructor  
