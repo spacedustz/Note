@@ -119,8 +119,8 @@ public class ControllerAspect {
             }  
   
             // TODO 3 : NO_NEED_TOKEN이 들어오면 검증 전부 예외 (Spring Security의 Filter를 구현해서 토큰이 필요 없는 URL을 설정 했음)  
-            if (tokenStatus == TokenStatus.NO_NEED_TOKEN) {  
-                hasRight = true;  
+            if (tokenStatus == TokenStatus.NO_NEED_TOKEN) {
+                result = joinPoint.proceed();
             } else {  
                 // TODO 4: USER_ROLE에 해당하는 권한(ViewGroup)을 GrantAuthority를 구현한 CustomAuth를 이용해 Map에 권한의 Y/N 여부 매핑  
                 if (StringUtils.hasText(userRoleStr)) {  
@@ -276,4 +276,4 @@ public class TcpRelayController {
 
 <br>
 
-이렇게 Sprong AOP의 공통 관심사를 적용 함으로써 모든 컨트롤러에 대한 권한 설정 및 로깅을 편리하게 할 수 있게 되었습니다.
+이렇게 Spring AOP의 공통 관심사를 적용 함으로써 모든 컨트롤러에 대한 권한 설정 및 로깅을 편리하게 할 수 있게 되었습니다.
