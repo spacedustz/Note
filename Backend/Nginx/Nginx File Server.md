@@ -128,16 +128,16 @@ curl -X PUT --upload-file ./abc.png http://192.168.0.5:9001/data/abc.png
 - 파일과 정보(DTO)를 RequestPart를 이용해 MultiPart Form Data 형식과 Json 형식으로 요청을 받습니다.
 
 ```java
-@PreAuth(viewId = 0, authorization = AuthorizationType.Create)  
-@PostMapping(consumes = MediaType.MULTIPART_FORM_DATA_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)  
-@Operation(summary = "Create Contents", description = "컨텐츠 등록 (파일)")  
-@Parameter(name = "file", description = "이미지(png 등), 영상(mp4 등)")  
-@Schema(implementation = ContentsDto.Create.class)  
-@ApiResponse(responseCode = "201", description = "컨텐츠 정보 반환")  
-public ResponseEntity createContents(CustomHttpServletRequest request,  
-                                     @RequestPart MultipartFile file,  
-                                     @RequestPart ContentsDto.Create dto) {  
-    return new ResponseEntity(ApiResponseDto.makeResponse(contentsService.createContents(file, dto)), HttpStatus.CREATED);  
+@PreAuth(viewId = 0, authorization = AuthorizationType.Create)
+@PostMapping(consumes = MediaType.MULTIPART_FORM_DATA_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
+@Operation(summary = "Create Contents", description = "컨텐츠 등록 (파일) / Multi Part Form Data & Json")
+@Parameter(name = "file", description = "이미지(png 등), 영상(mp4 등)")
+@RequestBody(description = "File을 제외한 Request Contents 정보", content = @Content(schema = @Schema(implementation = ContentsDto.Create.class)))
+@ApiResponse(responseCode = "201", description = "컨텐츠 정보 반환")
+public ResponseEntity createContents(CustomHttpServletRequest request,
+									 @RequestPart("file") MultipartFile file,
+									 @RequestPart("dto") ContentsDto.Create dto) {
+	return new ResponseEntity(ApiResponseDto.makeResponse(contentsService.createContents(file, dto)), HttpStatus.CREATED);
 }
 ```
 
