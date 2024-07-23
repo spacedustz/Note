@@ -1,4 +1,4 @@
-## ## 📚 Nginx Static Contents Server
+## 📚 Nginx Static Contents Server
 
 이번에 구현해본 것은 Spring Rest API로 받는 MultiPart Form Data(이미지, 영상 파일)를 Nginx에 업로드/다운로드 할 수 있게 서버를 구축해 보았습니다.
 
@@ -7,7 +7,7 @@
 이 글에서의 Nginx Container의 컨테이너 내부 Nginx 포트는 9001번을 사용합니다.
 
 ---
-## ## 📚 Nginx Container 설정
+## 📚 Nginx Container 설정
 
 Nginx Container를 9001번 포트로 포워딩 및 실행시켜 주면서 Local의 /data/nginx와 Container의 /data를 볼륨 마운팅 해줍니다.
 
@@ -142,6 +142,7 @@ public ResponseEntity createContents(CustomHttpServletRequest request,
 ```
 
 <br>
+
 ### Service
 
 Contents Service는 파일 업로드와 관련없으니 생략하고 FileService만 보겠습니다.
