@@ -57,6 +57,12 @@
 
 <br>
 
+### Nginx
+
+- [Nginx - Static Contents Server](./Backend/Nginx/Nginx%20File%20Server.md)
+
+<br>
+
 ### Design Pattern & 성능 최적화
 
 - [Producer-Consumer 패턴 with RabbitMQ](./Backend/Design-Pattern/Producer-Consumer/Producer%20Consumer%20Pattern.md)
