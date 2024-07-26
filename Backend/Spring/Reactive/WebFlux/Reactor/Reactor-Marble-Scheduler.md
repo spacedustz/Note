@@ -1,4 +1,4 @@
-## 📘 Project Reactor
+## 📚 Project Reactor
 
 완전한 Non-Blocking 통신 지원
 Publisher 타입으로 Mono[0|1] , Flux[N] 존재, 숫자는 가능한 데이터 emit의 수
@@ -11,7 +11,7 @@ BackPresure 전략 사용
 Subscriber의 emit 데이터 처리 속도가 Publisher의 emit 속도를 따라가지 못할때 제어하는 전략
 
 ------
-## 📘 Marble Diagram
+## 📚 Marble Diagram
 
 ### **Reactor의 데이터 타입 중 하나인 Mono 마블 다이어 그램**
 
