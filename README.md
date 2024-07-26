@@ -229,7 +229,7 @@ Nginx Reverse Proxy를 이용한 내부망 Docker Jenkins Container에 배포 Tr
 
 ### Java
 
-- [Windows Power Shell 명령어 실행](Java에서%20Windows%20Power%20Shell%20명령어%20실행.md)
+- [Windows Power Shell 명령어 실행](./Languages/Java/CMD/Java에서%20Windows%20Power%20Shell%20명령어%20실행.md)
 - [CountDownLatch - Thread Blocking](./Languages/Java/CountDownLatch.md)
 - [Process & Thread Scheduling](./Languages/Java/Concurrency/1.%20Process%20&%20Thread%20Scheduling.md)
 - [Thread를 생성하는 다양한 방법](./Languages/Java/Concurrency/2.%20Create%20Thread.md)
