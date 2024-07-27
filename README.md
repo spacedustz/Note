@@ -132,6 +132,7 @@
 **상태 관리**
 
 - [setState - Update Widget & Re-draw UI](./Frontend/Flutter/State/SetState/SetState.md)
+- [Value Notifier - 더 간단하고 명확한 상태 관리](./Frontend/Flutter/State/Value-Notifier/Value-Notifier.md)
 
 <br>
 
@@ -147,7 +148,7 @@
 
 <br>
 
-### MariaDB
+### Maria DB
 
 - [MariaDB 기본 명령어](./Database/MariaDB/기본%20명령어.md)
 - [Table Range Partitioning](./Database/MariaDB/Range%20Partitioning.md)
@@ -161,7 +162,7 @@
 
 <br>
 
-### MongiDB
+### Mongo DB
 
 - [MongoDB 기본 사용법](./Database/MongoDB/기본%20사용법/MongoDB%20기본%20사용법.md)
 
