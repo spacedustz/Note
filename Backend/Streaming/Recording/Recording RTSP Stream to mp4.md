@@ -34,6 +34,8 @@ recording:
 ---
 ## 📚 RTSP Record Scheduler 구현
 
+_**🧙‍♀️ WIndows 환경에서 FFmpeg프로세스 종료 시 SIGKILL이 아닌 SIGINT를 사용해야 영상 파일이 꺠지지 않음**_
+
 **녹화 조건 체크 및 녹화 시작 함수 (`check`)**
 - `enabled` 상태 체크 - 이 상태에 따라 녹화 기능 On-Off 하게 설정해 둠
 -  RTSP URL 리스트가 유효한지 체크.
