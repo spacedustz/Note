@@ -229,7 +229,7 @@ public class MailService {
                 redisTemplate.opsForHash().delete(key, "time");  
   
                 // 비밀번호 재설정 API 에서 사용할 Redis Key 추가(OK 사인)  
-                redisTemplate.opsForValue().set(user.getEmail(), "ok");  
+                redisTemplate.opsForValue().set(user.getEmail(), "ok", 120, TimeUnit.SECONDS); 
                   
                 return true;  
             } else {  
