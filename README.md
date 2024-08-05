@@ -26,7 +26,6 @@
   - [Reactive - Reactive Programming](./Backend/Spring/Reactive/WebFlux/Reactive.md)
   - [Reactive - Project Reactor & Marble Diagram & Scheduler & Operator](./Backend/Spring/Reactive/WebFlux/Reactor/Reactor-Marble-Scheduler.md)
   - [WebClient - Spring WebClient](./Backend/Spring/Reactive/WebClient/Spring%20WebClient.md)
-  - [WebClient - DataBufferLimitException 해결 (WebClient Buffer를 늘리지 않는 방법)](./Error/Spring/DataBufferLimitException%20-%20Webflux%20버퍼%20크기%20제한%20초과.md)
 
 
 - **WebSocket**
@@ -51,6 +50,11 @@
   - [Jar 실행 옵션](./Backend/Spring/Deploy/Jar%20Start%20Option.md)
   - [Logback 설정](./Backend/Spring/Deploy/Logback.md)
   - [Publish Maven Local](./Backend/Spring/Utils/Publish/Publish%20Maven%20Local.md)
+
+
+- **Error**
+  - [HikariCP - Thread Starvation & Clock Leap Detection](./Error/Spring/Thread-Starvation/HikariCP%20-%20Thread%20Starvation.md)
+  - [WebClient - DataBufferLimitException 해결 (WebClient Buffer를 늘리지 않는 방법)](./Error/Spring/DataBufferLimit/DataBufferLimitException%20-%20Webflux%20버퍼%20크기%20제한%20초과.md)
 
 <br>
 
@@ -339,6 +343,12 @@ Nginx Reverse Proxy를 이용한 내부망 Docker Jenkins Container에 배포 Tr
 ---
 
 # 📚 Error
+
+**Spring**
+
+- [HikariCP - Thread Starvation & Clock Leap Detection](./Error/Spring/Thread-Starvation/HikariCP%20-%20Thread%20Starvation.md)
+
+<br>
 
 **Jenkins**
 
