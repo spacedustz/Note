@@ -64,6 +64,7 @@ springdoc:
 **OpenApiConfig**
 
 - @OpenAPIDefinition을 이용해 전체 API 문서의 타이틀, 설명, 버전을 넣어줍니다.
+- Security Schema를 이용해 Swagger에서 Authorization Header에 JWT 토큰을 입력할 수 있게 해줍니다.
 
 ```java
 @Configuration  
@@ -73,11 +74,16 @@ springdoc:
         version = "1.0.0"  
 ))  
 public class OpenApiConfig {  
-  
     @Bean  
     public OpenAPI openAPI() {  
+        SecurityScheme securityScheme = new SecurityScheme()  
+                .type(SecurityScheme.Type.HTTP).scheme("bearer").bearerFormat("JWT")  
+                .in(SecurityScheme.In.HEADER).name("Authorization");  
+        SecurityRequirement securityRequirement = new SecurityRequirement().addList("bearerAuth");  
+  
         return new OpenAPI()  
-                .components(new Components());  
+                .components(new Components().addSecuritySchemes("bearerAuth", securityScheme))  
+                .security(Arrays.asList(securityRequirement));  
     }  
 }
 ```
