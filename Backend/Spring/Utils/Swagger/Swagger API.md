@@ -195,4 +195,4 @@ public class OpenApiController {
 
 서버를 실행시키고 `{Server IP}:{Port}/index.html`를 들어가보면 잘 나옵니다 ㅎ
 
-![](1.png)
+![](./1.png)
