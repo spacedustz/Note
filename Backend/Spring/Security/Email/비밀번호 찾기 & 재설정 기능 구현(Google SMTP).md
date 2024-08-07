@@ -9,13 +9,13 @@
 - Multi Factor Authentication(2FA) 활성화
 - App Password 생성
 
-![](./1.png)
+![](1.png)
 
 <br>
 
 그리고 Gmail 탭으로 들어가 Mail 설정의 Forwarding and POP/IMAP 탭에 들어가서 아래와 같이 설정합니다.
 
-![](./2.png)
+![](2.png)
 
 ---
 ## Spring Boot Server 설정
@@ -143,7 +143,7 @@ public class MailService {
 }
 ```
 
-![](./3.png)
+![](3.png)
 
 <br>
 
@@ -272,25 +272,25 @@ public ResponseEntity verifyAuthCode(CustomHttpServletRequest request, @RequestP
 
 **PostMan으로 요청을 보내 인증번호를 받습니다.**
 
-![](./4.png)
+![](4.png)
 
 <br>
 
 **이메일 확인**
 
-![](./5.png)
+![](5.png)
 
 <br>
 
 **Redis Hash를 보면 코드와 만료시간이 들어가 있습니다.**
 
-![](./6.png)
+![](6.png)
 
 <br>
 
 **인증번호 검증 API를 호출해보면 120초 이내에 요청하고, 검증이 성공해 true 반환**
 
-![](./7.png)
+![](7.png)
 
 <br>
 
@@ -322,4 +322,4 @@ public void generateNewPassword(final Integer userId, final String password) {
 }
 ```
 
-![](./8.png)
+![](8.png)
