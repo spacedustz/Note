@@ -38,7 +38,7 @@
   - [Spring Cloud - API Gateway](./Backend/Spring/Cloud/Cloud-Gateway/Cloud-Gateway.md)
 
 
-- Global Exception Handling
+- **Global Exception Handling**
   - [Global Exception Handling](./Backend/Spring/Utils/Exception/Global%20Exception%20Handling.md)
 
 
