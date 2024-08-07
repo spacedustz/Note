@@ -38,10 +38,15 @@
   - [Spring Cloud - API Gateway](./Backend/Spring/Cloud/Cloud-Gateway/Cloud-Gateway.md)
 
 
+- Global Exception Handling
+  - [Global Exception Handling](./Backend/Spring/Utils/Exception/Global%20Exception%20Handling.md)
+
+
 - **Security + OAuth2 + SMTP**
+  - [Security 구현](./Backend/Spring/Security/Spring%20Security/Spring%20Security.md) 
   - [Google OAuth2 적용](./Backend/Spring/Security/Google%20OAuth2/Google%20OAuth2.md)
   - [Facebook OAuth2 적용](./Backend/Spring/Security/Facebook%20OAuth2/Facebook%20OAuth2.md)
-  - [이메일 인증 기능 구현(Google SMTP & Redis)](./Backend/Email/비밀번호%20찾기%20&%20재설정%20기능%20구현(Google%20SMTP).md)
+  - [이메일 인증 기능 구현(Google SMTP & Redis)](./Backend/Spring/Security/Email/비밀번호%20찾기%20&%20재설정%20기능%20구현(Google%20SMTP).md)
 
 
 - **Utils**
