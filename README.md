@@ -63,6 +63,28 @@
 
 <br>
 
+### Concurrency
+
+- [CountDownLatch - Thread Blocking](./Languages/Java/CountDownLatch.md)
+- [Process & Thread Scheduling](./Languages/Java/Concurrency/1.%20Process%20&%20Thread%20Scheduling.md)
+- [Thread를 생성하는 다양한 방법](./Languages/Java/Concurrency/2.%20Create%20Thread.md)
+- [Thread 상속(Inheritance)](./Languages/Java/Concurrency/3.%20Thread%20Inheritance.md)
+- [Thread Coordination-Interrupt](./Languages/Java/Concurrency/4.%20Thread%20Interrupt.md)
+- [Daemon Thread](./Languages/Java/Concurrency/5.%20Deamon%20Thread.md)
+- [Thread.join()을 이용한 실행 순서 제어](./Languages/Java/Concurrency/6.%20Thread%20Join.md)
+- [어플리케이션 성능의 정의](./Languages/Java/Concurrency/7.%20Optimization.md)
+- [Image Processing - 성능 최적화(지연시간)](./Languages/Java/Concurrency/8.%20Image%20Processing.md)
+- [어플리케이션 처리량의 정의](./Languages/Java/Concurrency/9.%20Throughput%20Optimization.md)
+- [처리량 최적화 & 성능 테스트(Apache Jmeter)](./Languages/Java/Concurrency/10.%20Throughput%20Optimization%20Test.md)
+- [Thread 간 리소스 공유 시 발생할 수 있는 문제](./Languages/Java/Concurrency/11.%20Sharing-Resource.md)
+- [Critical Section](./Languages/Java/Concurrency/12.%20Critical%20Section.md)
+- [Metrics Capturing을 통한 Atomic Operation 판단](./Languages/Java/Concurrency/13.%20Atomic%20Operation.md)
+- [Race Condition과 Data Rade](./Languages/Java/Concurrency/14.%20Race%20Condition%20&%20Data%20Race.md)
+- [Coarse-Grained & Fine-Grained Lock](./Languages/Java/Concurrency/15.%20Coarse-Grained%20&%20Fine-Grained%20Lock.md)
+- [[Advanced Locking] ReentrantLock - tryLock() & lockInterruptibly()](./Languages/Java/Concurrency/16.%20ReentrantLock.md)
+- [[Advanced Locking] ReentrantReadWriteLock - 읽기 성능 최적화](./Languages/Java/Concurrency/17-ReentrantReadWriteLock/17.%20ReentrantReadWriteLock.md)
+- [Binary Semaphore와 Mutex의 차이점](./Backend/Concurrency/Diffrence/BinarySemaphore-Mutex.md)
+
 ### Metric Visualization
 
 - [Prometheus & Grafana - Status Monitoring](./Backend/Metrics/Grafana/Grafana.md)
@@ -270,24 +292,6 @@ Nginx Reverse Proxy를 이용한 내부망 Docker Jenkins Container에 배포 Tr
 ### Java
 
 - [Windows Power Shell 명령어 실행](./Languages/Java/CMD/Java에서%20Windows%20Power%20Shell%20명령어%20실행.md)
-- [CountDownLatch - Thread Blocking](./Languages/Java/CountDownLatch.md)
-- [Process & Thread Scheduling](./Languages/Java/Concurrency/1.%20Process%20&%20Thread%20Scheduling.md)
-- [Thread를 생성하는 다양한 방법](./Languages/Java/Concurrency/2.%20Create%20Thread.md)
-- [Thread 상속(Inheritance)](./Languages/Java/Concurrency/3.%20Thread%20Inheritance.md)
-- [Thread Coordination-Interrupt](./Languages/Java/Concurrency/4.%20Thread%20Interrupt.md)
-- [Daemon Thread](./Languages/Java/Concurrency/5.%20Deamon%20Thread.md)
-- [Thread.join()을 이용한 실행 순서 제어](./Languages/Java/Concurrency/6.%20Thread%20Join.md)
-- [어플리케이션 성능의 정의](./Languages/Java/Concurrency/7.%20Optimization.md)
-- [Image Processing - 성능 최적화(지연시간)](./Languages/Java/Concurrency/8.%20Image%20Processing.md)
-- [어플리케이션 처리량의 정의](./Languages/Java/Concurrency/9.%20Throughput%20Optimization.md)
-- [처리량 최적화 & 성능 테스트(Apache Jmeter)](./Languages/Java/Concurrency/10.%20Throughput%20Optimization%20Test.md)
-- [Thread 간 리소스 공유 시 발생할 수 있는 문제](./Languages/Java/Concurrency/11.%20Sharing-Resource.md)
-- [Critical Section](./Languages/Java/Concurrency/12.%20Critical%20Section.md)
-- [Metrics Capturing을 통한 Atomic Operation 판단](./Languages/Java/Concurrency/13.%20Atomic%20Operation.md)
-- [Race Condition과 Data Rade](./Languages/Java/Concurrency/14.%20Race%20Condition%20&%20Data%20Race.md)
-- [Coarse-Grained & Fine-Grained Lock](./Languages/Java/Concurrency/15.%20Coarse-Grained%20&%20Fine-Grained%20Lock.md)
-- [[Advanced Locking] ReentrantLock - tryLock() & lockInterruptibly()](./Languages/Java/Concurrency/16.%20ReentrantLock.md)
-- [[Advanced Locking] ReentrantReadWriteLock - 읽기 성능 최적화](./Languages/Java/Concurrency/17-ReentrantReadWriteLock/17.%20ReentrantReadWriteLock.md)
 
 <br>
 
