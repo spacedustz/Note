@@ -27,3 +27,8 @@ replay_pid*
 .trash/
 .gitattributes
 .idea/
+app.json
+appearance.json
+core-plugins.json
+core-plugins-migration.json
+workspace.json
