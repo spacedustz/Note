@@ -1,4 +1,4 @@
-# 개인 공부 메모장
+# 메모장
 
 ---
 
@@ -6,8 +6,12 @@
 
 ### Spring
 
+<details>
+<summary><strong>내용 보기</strong></summary>
+
 - **Spring AOP**
   - [API Verification 공통화](./Backend/Spring/AOP/Spring%20AOP%20-%20API%20Verification%20공통화.md)
+
 
 - **Transaction**
   - [AOP Transaction & Distributed Transaction](./Backend/Spring/Transaction/AOP-Distributed-Transaction.md)
@@ -43,10 +47,14 @@
 
 
 - **Security + OAuth2 + SMTP**
-  - [Security 구현](./Backend/Spring/Security/Spring%20Security/Spring%20Security.md) 
+  - [Security 구현](./Backend/Spring/Security/Spring%20Security/Spring%20Security.md)
   - [Google OAuth2 적용](./Backend/Spring/Security/Google%20OAuth2/Google%20OAuth2.md)
   - [Facebook OAuth2 적용](./Backend/Spring/Security/Facebook%20OAuth2/Facebook%20OAuth2.md)
   - [이메일 인증 기능 구현(Google SMTP & Redis)](./Backend/Spring/Security/Email/비밀번호%20찾기%20&%20재설정%20기능%20구현(Google%20SMTP).md)
+
+
+- **File I/O**
+  - [Recursive를 이용한 파일 삭제](./Backend/IO/File-IO.md)
 
 
 - **Utils**
@@ -61,33 +69,19 @@
   - [HikariCP - Thread Starvation & Clock Leap Detection](./Error/Spring/Thread-Starvation/HikariCP%20-%20Thread%20Starvation.md)
   - [WebClient - DataBufferLimitException 해결 (WebClient Buffer를 늘리지 않는 방법)](./Error/Spring/DataBufferLimit/DataBufferLimitException%20-%20Webflux%20버퍼%20크기%20제한%20초과.md)
 
+</details>
+
 <br>
 
-### Concurrency
+### Multi-Threading & Concurrency
 
-- [CountDownLatch - Thread Blocking](./Languages/Java/CountDownLatch.md)
-- [Process & Thread Scheduling](./Languages/Java/Concurrency/1.%20Process%20&%20Thread%20Scheduling.md)
-- [Thread를 생성하는 다양한 방법](./Languages/Java/Concurrency/2.%20Create%20Thread.md)
-- [Thread 상속(Inheritance)](./Languages/Java/Concurrency/3.%20Thread%20Inheritance.md)
-- [Thread Coordination-Interrupt](./Languages/Java/Concurrency/4.%20Thread%20Interrupt.md)
-- [Daemon Thread](./Languages/Java/Concurrency/5.%20Deamon%20Thread.md)
-- [Thread.join()을 이용한 실행 순서 제어](./Languages/Java/Concurrency/6.%20Thread%20Join.md)
-- [어플리케이션 성능의 정의](./Languages/Java/Concurrency/7.%20Optimization.md)
-- [Image Processing - 성능 최적화(지연시간)](./Languages/Java/Concurrency/8.%20Image%20Processing.md)
-- [어플리케이션 처리량의 정의](./Languages/Java/Concurrency/9.%20Throughput%20Optimization.md)
-- [처리량 최적화 & 성능 테스트(Apache Jmeter)](./Languages/Java/Concurrency/10.%20Throughput%20Optimization%20Test.md)
-- [Thread 간 리소스 공유 시 발생할 수 있는 문제](./Languages/Java/Concurrency/11.%20Sharing-Resource.md)
-- [Critical Section](./Languages/Java/Concurrency/12.%20Critical%20Section.md)
-- [Metrics Capturing을 통한 Atomic Operation 판단](./Languages/Java/Concurrency/13.%20Atomic%20Operation.md)
-- [Race Condition과 Data Rade](./Languages/Java/Concurrency/14.%20Race%20Condition%20&%20Data%20Race.md)
-- [Coarse-Grained & Fine-Grained Lock](./Languages/Java/Concurrency/15.%20Coarse-Grained%20&%20Fine-Grained%20Lock.md)
-- [[Advanced Locking] ReentrantLock - tryLock() & lockInterruptibly()](./Languages/Java/Concurrency/16.%20ReentrantLock.md)
-- [[Advanced Locking] ReentrantReadWriteLock - 읽기 성능 최적화](./Languages/Java/Concurrency/17-ReentrantReadWriteLock/17.%20ReentrantReadWriteLock.md)
-- [Binary Semaphore와 Mutex의 차이점](./Backend/Concurrency/Diffrence/BinarySemaphore-Mutex.md)
+- [🐱 Repository 방문하기 🐱](https://github.com/spacedustz/Performance-Optimization)
+
+<br>
 
 ### Metric Visualization
 
-- [Prometheus & Grafana - Status Monitoring](./Backend/Metrics/Grafana/Grafana.md)
+- [Prometheus & Grafana - Monitoring System](./Backend/Metrics/Grafana/Grafana.md)
 
 <br>
 
@@ -121,12 +115,6 @@
 - [GStreamer Pipeline](./Backend/Streaming/GStreamer/Gstreamer.md)
 - [FFmpeg을 이용한 RTSP Stream -> HLS 변환(실시간 스트리밍)](./Backend/Streaming/HLS/RTSP%20to%20HLS.md)
 - [RTSP Steam 영상 녹화 스케쥴러](./Backend/Streaming/Recording/Recording%20RTSP%20Stream%20to%20mp4.md)
-
-<br>
-
-### File I/O
-
-- [Recursive를 이용한 파일 삭제](./Backend/IO/File-IO.md)
 
 <br>
 
