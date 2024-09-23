@@ -18,7 +18,8 @@
 
 
 - **QueryDSL**
-  - [QueryDSL(Kotlin) - DTO Projection](./Backend/Spring/QueryDSL/DTO%20Projection.md)
+  - [QueryDSL (Kotlin)](./Backend/Spring/QueryDSL/Kotlin)
+  - [QueryDSL (Java)](./Backend/Spring/QueryDSL/Java)
 
 
 - **Push & WebHook Alarm**
