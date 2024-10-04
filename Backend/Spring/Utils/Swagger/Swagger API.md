@@ -64,27 +64,42 @@ springdoc:
 **OpenApiConfig**
 
 - @OpenAPIDefinition을 이용해 전체 API 문서의 타이틀, 설명, 버전을 넣어줍니다.
-- Security Schema를 이용해 Swagger에서 Authorization Header에 JWT 토큰을 입력할 수 있게 해줍니다.
+- `openApi Bean` : Security Schema를 이용해 Swagger에서 Authorization Header에 JWT 토큰을 입력할 수 있게 해줍니다.
+- `sortSchemasAlphabetically Bean` : Swagger 상의 Schema(DTO)에 Alphabetically Sort를 적용합니다.
 
 ```java
-@Configuration  
-@OpenAPIDefinition(info = @io.swagger.v3.oas.annotations.info.Info(  
-        title = "Producer-Consumer Pattern API",  
-        description = "API Docs for Producer-Consumer Pattern",  
-        version = "1.0.0"  
-))  
-public class OpenApiConfig {  
-    @Bean  
-    public OpenAPI openAPI() {  
-        SecurityScheme securityScheme = new SecurityScheme()  
-                .type(SecurityScheme.Type.HTTP).scheme("bearer").bearerFormat("JWT")  
-                .in(SecurityScheme.In.HEADER).name("Authorization");  
-        SecurityRequirement securityRequirement = new SecurityRequirement().addList("bearerAuth");  
-  
-        return new OpenAPI()  
-                .components(new Components().addSecuritySchemes("bearerAuth", securityScheme))  
-                .security(Arrays.asList(securityRequirement));  
-    }  
+@Configuration
+@OpenAPIDefinition(info = @io.swagger.v3.oas.annotations.info.Info(
+        title = "Producer-Consumer Pattern API",
+        description = "API Docs for Producer-Consumer Pattern",
+        version = "1.0.0"
+))
+public class OpenApiConfig {
+    // Authorization Header 추가
+    @Bean
+    public OpenAPI openAPI() {
+        SecurityScheme securityScheme = new SecurityScheme()
+                .type(SecurityScheme.Type.HTTP)
+                .scheme("bearer")
+                .bearerFormat("JWT")
+                .in(SecurityScheme.In.HEADER)
+                .name("Authorization");
+
+        SecurityRequirement securityRequirement = new SecurityRequirement().addList("bearerAuth");
+
+        return new OpenAPI()
+                .components(new Components().addSecuritySchemes("bearerAuth", securityScheme))
+                .security(Arrays.asList(securityRequirement));
+    }
+
+    // Sort Schema Alphabetically
+    @Bean
+    public OpenApiCustomizer sortSchemasAlphabetically() {
+        return openApi -> {
+            Map<String, Schema> schemas = openApi.getComponents().getSchemas();
+            openApi.getComponents().setSchemas(new TreeMap<>(schemas));
+        };
+    }
 }
 ```
 
@@ -107,7 +122,8 @@ public class OpenApiConfig {
 - 보통 클래스에 함수에 붙여주며, 그룹화 하거나 분류하기 위해 사용됩니다.
 
 ```java
-@Tag(name = "User Category", description = "유저 API")
+@Tag(name = "User Add API", description = "유저 생성 API")
+public class UserController {}
 ```
 
 <br>
@@ -119,14 +135,42 @@ public class OpenApiConfig {
 - @ApiResponse : 특정 HTTP Status 코드에 대한 설명을 붙여줍니다.
 
 ```java
+@PreAuth(viewId = 0, authorization = AuthorizationType.Read)
 @Operation(summary = "Get Users", description = "유저 전체 조회")
 @ApiResponse(responseCode = "200", description = "Found User List")
 @ApiResponse(responseCode = "400", description = "Invalid Parameter")
 @ApiResponse(responseCode = "404", description = "Not Found")
 @ApiResponse(responseCode = "405", description = "UnAuthorized Request")
-@Parameter(name = "id" description = "유저 ID")
-@GetMapping()
-public ResponseEntity getUsers(@PathVariable int id)
+@Parameter(name = "id", description = "유저 ID")
+@GetMapping
+public ResponseEntity getUsers(@PathVariable int id) {}
+```
+
+<br>
+
+만약 MultiPartFormData 타입의 파일을 받으려면 아래와 같이 consumes와 produce 속성을 넣어줍니다.
+
+
+```java
+    @PreAuth(viewId = 0, authorization = AuthorizationType.Create)
+@PostMapping(value = "/contents", consumes = MediaType.MULTIPART_FORM_DATA_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
+@Operation(summary = "컨텐츠 등록 (파일) / Multi Part Form Data & Json", description = "컨텐츠 등록 (파일) / Multi Part Form Data & Json")
+@Parameter(name = "file", description = "이미지(png 등), 영상(mp4 등)", required = true)
+@Parameter(
+        name = "dto",
+        description = "File을 제외한 나머지 데이터",
+        content = @Content(mediaType = MediaType.APPLICATION_JSON_VALUE, schema = @Schema(implementation = ContentsDto.class)),
+        required = true)
+@ApiResponse(
+        responseCode = "201",
+        description = "컨텐츠 정보 반환",
+        content = @Content(mediaType = MediaType.APPLICATION_JSON_VALUE, schema = @Schema(implementation = ContentsDto.Response.class))
+)
+public ResponseEntity createContents(CustomHttpServletRequest request,
+                                     @RequestPart(value = "file") MultipartFile file,
+                                     @RequestPart(value = "dto") @Valid ContentsDto.Create dto) {
+    return new ResponseEntity(ApiResponseDto.makeResponse(contentsService.createContents(request, file, dto)), HttpStatus.CREATED);
+}
 ```
 
 <br>
@@ -144,12 +188,19 @@ public ResponseEntity getUsers(@PathVariable int id)
 **@Schema**
 
 - 보통 DTO 클래스에 사용하며 클래스나 필드에 붙여줍니다.
+- 메인 클래스 이름 위에는 title 속성을 써주고 클래스 하위 static class 에는 name 속성을 쓰고 필드에는 description으로 설명만 써주면 됩니다.
 
 ```java
-@Schema(title = "User Request")
+@Getter
 public class UserRequest {
-	@Schema(description = "유저명", example = "신건우")
-	private String name;
+
+    @Data
+    @Schema(name = "[ 유저 Request ] 생성", description = "유저 생성 Request")
+    public static class Post {
+        @NotNull
+        @Schema(description = "유저명", example = "skw")
+        private String name;
+    }
 }
 ```
 
@@ -159,15 +210,15 @@ public class UserRequest {
 **DTO**
 
 ```java
-@Data  
-@Schema(title = "테스트 DTO", description = "Test API Request & Response")  
-public class OpenApiDto {  
-  
-    @Schema(name = "테스트 Request")  
-    public static class Test {  
-        @Schema(description = "외부에서 받은 숫자", example = "1")  
-        private Integer num;  
-    }  
+@Data
+@Schema(title = "테스트 DTO", description = "Test API Request & Response")
+public class OpenApiDto {
+
+    @Schema(name = "테스트 Request")
+    public static class Test {
+        @Schema(description = "외부에서 받은 숫자", example = "1")
+        private Integer num;
+    }
 }
 ```
 
@@ -176,18 +227,18 @@ public class OpenApiDto {
 **Controller**
 
 ```java
-@Tag(name = "Test Controller", description = "테스트 컨트롤러")  
-@RestController  
-@RequestMapping("/test")  
-public class OpenApiController {   
-    @Operation(summary = "Test Get", description = "테스트 GET")  
-    @ApiResponse(responseCode = "200", description = "Success")  
-    @GetMapping("/{num}")  
-    public ResponseEntity get(@PathVariable int num) {  
-        OpenApiDto dto = new OpenApiDto();  
-        dto.setNum(num);  
-        return new ResponseEntity(dto, HttpStatus.OK);  
-    }  
+@Tag(name = "Test Controller", description = "테스트 컨트롤러")
+@RestController
+@RequestMapping("/test")
+public class OpenApiController {
+    @Operation(summary = "Test Get", description = "테스트 GET")
+    @ApiResponse(responseCode = "200", description = "Success")
+    @GetMapping("/{num}")
+    public ResponseEntity get(@PathVariable int num) {
+        OpenApiDto dto = new OpenApiDto();
+        dto.setNum(num);
+        return new ResponseEntity(dto, HttpStatus.OK);
+    }
 }
 ```
 
