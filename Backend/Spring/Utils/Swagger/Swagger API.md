@@ -22,7 +22,7 @@ application.yml 설정해서 Path 설정을 안한다면 기본 Path는 `{Server
 ---
 ## 📚 Configuration
 
-**build.gradle**
+### **build.gradle**
 
 - 버전은 공식 홈페이지에서 확인해서 넣어줍니다.
 
@@ -32,7 +32,7 @@ implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.5.0'
 
 <br>
 
-**application.yml**
+### **application.yml**
 
 - 세부 Property는 [여기](https://springdoc.org/#properties)서 확인 가능합니다.
 
@@ -61,7 +61,7 @@ springdoc:
 
 <br>
 
-**OpenApiConfig**
+### **OpenApiConfig**
 
 - @OpenAPIDefinition을 이용해 전체 API 문서의 타이틀, 설명, 버전을 넣어줍니다.
 - `openApi Bean` : Security Schema를 이용해 Swagger에서 Authorization Header에 JWT 토큰을 입력할 수 있게 해줍니다.
@@ -102,6 +102,22 @@ public class OpenApiConfig {
     }
 }
 ```
+
+<br>
+
+### **🧙‍♀️ 정렬되기 전 Schema**
+
+- 정렬되지 않은 Schema는 읽기가 매우 불편합니다.
+
+![](./1.png)
+
+<br>
+
+### **🧙‍♀️ 정렬된 Schema**
+
+- 편-안
+
+![](./2.png)
 
 ---
 ## 📚 Annotaions
@@ -246,4 +262,41 @@ public class OpenApiController {
 
 서버를 실행시키고 `{Server IP}:{Port}/index.html`를 들어가보면 잘 나옵니다 ㅎ
 
-![](./1.png)
+![](./3.png)
+
+---
+
+## 📚 Export Rest API Docs
+
+서버를 켜지 않았을 때 다른 부서에 API Docs를 보여주고 싶다면 아래와 같은 방법을 이용해 Swagger의 API들을 Export 할 수 있습니다.
+
+<br>
+
+### 1. 서버를 켜고 Swagger 상단의 Json 링크로 진입해 Json을 복사합니다.
+
+![](./4.png)
+
+![](./5.png)
+
+<br>
+
+### 2. Swagger Editor 사이트에 접속
+
+- [Swagger Editor](https://editor-next.swagger.io/)
+- 접속 후 나오자는 왼쪽 yaml 코드 입력 창에 복사한 Json을 붙여넣으면 Yaml로 변환됩니다.
+- 아래 사진에서 API에 잘못된 파라미터나 Yaml Syntex에 안맞는 부분들을 전부 수정해 빨간 에러 느낌표를 전부 없애줍니다.
+
+![](./6.png)
+
+<br>
+
+- 모든 에러를 잡았다면 아래와 사진의 1번과 같이 빨간줄이 사라집니다.
+- 이후 2번의 Generate Client -> 3번 HTML2를 선택하면 `.zip` 파일의 문서가 완성됩니다.
+
+![](./7.png)
+
+<br>
+
+- 마지막으로 알집을 풀어 index.html 파일을 열어보면 서버를 키지 않아도 정적인 Rest API Docs가 완성됩니다!
+
+![](./8.png)
