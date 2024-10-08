@@ -118,7 +118,7 @@ nginx -s reload
 curl -X PUT --upload-file ./abc.png http://192.168.0.5:9001/data/abc.png
 ```
 
-![](./1.png)
+![](1.png)
 
 ---
 ## 📚 Spring Rest API
@@ -219,23 +219,23 @@ public class FileService {
 
 이제 Spring Boot를 실행시키고, Postman을 이용해 파일과 정보를 API Request로 요청합니다. 결과는 성공입니다.
 
-![](./2.png)
+![](2.png)
 
 <br>
 
-![](./3.png)
+![](3.png)
 
 <br>
 
 API Response로 나온 File Path도 잘 나왔고, Nginx의 `/download` 경로로 들어가보면 파일들이 잘 들어 있는걸 볼 수 있습니다.
 
-![](./4.png)
+![](4.png)
 
 <br>
 
 mp4 영상 파일도 올려보았고 영상 파일도 잘 올라가고 있습니다.
 
-![](./5.png)
+![](5.png)
 
 <br>
 

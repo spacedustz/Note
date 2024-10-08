@@ -1,105 +1,116 @@
-# 메모장
+# 📚 공부 노트 📚
 
 ---
 
-# 📚 Backend
-
-### Spring
+# 🐱 Backend
 
 <details>
 <summary><strong>내용 보기</strong></summary>
 
-- **Spring AOP**
-  - [API Verification 공통화](./Backend/Spring/AOP/Spring%20AOP%20-%20API%20Verification%20공통화.md)
+### 🧙‍♀️ Spring
 
+<br>
 
-- **Transaction**
+**Spring AOP**
+
+- [API Verification 공통화](./Backend/Spring/AOP/Spring%20AOP%20-%20API%20Verification%20공통화.md)
+
+<br>
+
+**Transaction**
+
   - [AOP Transaction & Distributed Transaction](./Backend/Spring/Transaction/AOP-Distributed-Transaction.md)
 
+<br>
 
-- **QueryDSL**
+**QueryDSL**
+
   - [QueryDSL (Kotlin)](./Backend/Spring/QueryDSL/Kotlin)
   - [QueryDSL (Java)](./Backend/Spring/QueryDSL/Java)
 
+<br>
 
-- **Push & WebHook Alarm**
+**Push & WebHook Alarm**
+
   - [Slack WebHook 연동](./Backend/WebHook/Slack/Slack%20Web%20Hook%20연동.md)
   - [Discord WebHook 연동](./Backend/WebHook/Discord/Discord%20Bot%20연동.md)
 
+<br>
 
-- **Spring WebFlux**
+**Spring WebFlux**
+
   - [Reactive - Reactive Programming](./Backend/Spring/Reactive/WebFlux/Reactive.md)
   - [Reactive - Project Reactor & Marble Diagram & Scheduler & Operator](./Backend/Spring/Reactive/WebFlux/Reactor/Reactor-Marble-Scheduler.md)
   - [WebClient - Spring WebClient](./Backend/Spring/Reactive/WebClient/Spring%20WebClient.md)
 
+<br>
 
-- **WebSocket**
+**WebSocket**
+
   - [Spring WebSocket - Stomp](./Backend/Spring/WebSocket/WebSocket%20-%20Stomp.md)
   - [Spring WebSocket - 순수 WebSocket API](./Backend/Spring/WebSocket/WebSocket.md)
 
+<br>
 
-- **Spring Cloud**
+**Spring Cloud**
+
   - [Spring Cloud - Cloud Config Server/Client 구성](./Backend/Spring/Cloud/Cloud-Config/Spring%20Cloud%20Config.md)
   - [Spring Cloud - API Gateway](./Backend/Spring/Cloud/Cloud-Gateway/Cloud-Gateway.md)
 
+<br>
 
-- **Global Exception Handling**
+**Global Exception Handling**
+
   - [Global Exception Handling](./Backend/Spring/Utils/Exception/Global%20Exception%20Handling.md)
 
+<br>
 
-- **Security + OAuth2 + SMTP**
+**Security + OAuth2 + SMTP**
+
   - [Security 구현](./Backend/Spring/Security/Spring%20Security/Spring%20Security.md)
   - [Google OAuth2 적용](./Backend/Spring/Security/Google%20OAuth2/Google%20OAuth2.md)
   - [Facebook OAuth2 적용](./Backend/Spring/Security/Facebook%20OAuth2/Facebook%20OAuth2.md)
   - [이메일 인증 기능 구현(Google SMTP & Redis)](./Backend/Spring/Security/Email/비밀번호%20찾기%20&%20재설정%20기능%20구현(Google%20SMTP).md)
 
+<br>
 
-- **File I/O**
+**File I/O**
+
   - [Recursive를 이용한 파일 삭제](./Backend/IO/File-IO.md)
 
+<br>
 
-- **Utils**
+**Utils**
+
   - [Swagger API 문서화](./Backend/Spring/Utils/Swagger/Swagger%20API.md)
   - [Spring ehCache & DevTools](./Backend/Spring/Utils/Spring%20ehCache%20&%20DevTools.md)
   - [Jar 실행 옵션](./Backend/Spring/Deploy/Jar%20Start%20Option.md)
   - [Logback 설정](./Backend/Spring/Deploy/Logback.md)
   - [Publish Maven Local](./Backend/Spring/Utils/Publish/Publish%20Maven%20Local.md)
 
+<br>
 
-- **Error**
+**Error**
+
   - [HikariCP - Thread Starvation & Clock Leap Detection](./Error/Spring/Thread-Starvation/HikariCP%20-%20Thread%20Starvation.md)
   - [WebClient - DataBufferLimitException 해결 (WebClient Buffer를 늘리지 않는 방법)](./Error/Spring/DataBufferLimit/DataBufferLimitException%20-%20Webflux%20버퍼%20크기%20제한%20초과.md)
 
-</details>
-
 <br>
 
-### Multi-Threading & Concurrency
+### 🧙‍♀️ Multi-Threading & Concurrency
 
 - [🐱 Repository 방문하기 🐱](https://github.com/spacedustz/Performance-Optimization)
 
 <br>
 
-### Metric Visualization
-
-- [Prometheus & Grafana - Monitoring System](./Backend/Metrics/Grafana/Grafana.md)
-
-<br>
-
-### Nginx
-
-- [Nginx - Static Contents Server](./Backend/Nginx/Nginx%20File%20Server.md)
-
-<br>
-
-### Design Pattern & 성능 최적화
+### 🧙‍♀️ Design Pattern & 성능 최적화
 
 - [Producer-Consumer 패턴 with RabbitMQ](./Backend/Design-Pattern/Producer-Consumer/Producer%20Consumer%20Pattern.md)
 - [트리순회(MPTT) 방식을 이용한 조회 성능 최적화](./Backend/Spring/Performance-Optimization/MPTT.md)
 
 <br>
 
-### Message Queue
+### 🧙‍♀️ Message Queue
 
 - [RabbitMQ 기본 Pub/Sub 구현](./Backend/Message-Queue/RabbitMQ/기본구조/RabbitMQ%20-%20PubSub.md)
 - [RabbitMQ Basic Consume 방식 구현](./Backend/Message-Queue/RabbitMQ/Basic-Consume/RabbitMQ%20-%20Basic%20Consume.md)
@@ -109,7 +120,7 @@
 
 <br>
 
-### Streaming
+### 🧙‍♀️ Streaming
 
 - [Live Streaming 이해하기](./Backend/Streaming/Live-Streaming/Live%20Streaming%20이해하기.md)
 - [FFmpeg 기본 사용법](./Backend/Streaming/FFmpeg/FFmpeg.md)
@@ -119,15 +130,48 @@
 
 <br>
 
-### Test
+### 🧙‍♀️ Test
 
 - [Apache Jmeter - 처리량 측정 & 테스트](./Backend/Test/Apache-Jmeter/Apache%20Jmeter.md)
 
+<br>
+
+### 🧙‍♀️ Error
+
+**Spring**
+
+- [HikariCP - Thread Starvation & Clock Leap Detection](./Error/Spring/Thread-Starvation/HikariCP%20-%20Thread%20Starvation.md)
+
+<br>
+
+**Jenkins**
+
+- [Jenkins - Credential & Web Hook Error](./Error/Jenkins/Jenkins%20-%20Credential%20&%20Web%20Hook%20Error.md)
+
+<br>
+
+**MySQL**
+
+- [Mysql - Global Transaction Identifier Error (GTID)](./Error/MySQL/MySQL%20-%20Global%20Transaction%20Identifier%20Error%20(GTID).md)
+
+<br>
+
+**Server**
+
+- [Ubuntu - OpenGL Initialize Exception](./Server/Error/OpenGL%20-%20glxinfo%20initialize%20exception.md)
+- [Ubuntu Nouveau Kernel Driver 제거](./Server/Error/Ubuntu%20-%20Nouveau%20Kernel%20Driver%20제거.md)
+- [NVIDIA-SMI GPL-incompatible module Error](./Server/Error/NVIDIA/NVIDIA-SMI%20GPL-incompatible%20module%20Error.md)
+
+</details>
+
 ---
 
-# 📚 Frontend
+# 🐱 Frontend
 
-### React
+<details>
+<summary><strong>내용 보기</strong></summary>
+
+### 🧙‍♀️ React
 
 - [Yarn 기반 프로젝트 생성](./Frontend/React/Yarn%20사용법.md)
 - [React 핵심 개념들](./Frontend/React/React.md)
@@ -137,7 +181,7 @@
 
 <br>
 
-### Flutter
+### 🧙‍♀️ Flutter
 
 **위젯**
 
@@ -162,39 +206,16 @@
 - [Navigating Screen & Argument(Object) 전달](./Frontend/Flutter/Navigation/Navigator-Object/Navigator-Object.md)
 - [Navigation Bar & TapBar & Drawer](./Frontend/Flutter/Navigation/Bar-Drawer/Bar-Drawer.md)
 
----
-
-# 📚 Database
-
-### MySQL
-
-- [Global Transaction Identifier - Firebase to AWS RDS 데이터 이전](./Database/MySQL/GTID/GTID.md)
-
-<br>
-
-### Maria DB
-
-- [MariaDB 기본 명령어](./Database/MariaDB/기본%20명령어.md)
-- [Table Range Partitioning](./Database/MariaDB/Range%20Partitioning.md)
-
-<br>
-
-### Redis
-
-- [Redis 기본 사용법](./Database/Redis/Redis%20기본%20사용법.md)
-- [Redis Publish & Subscribe Pattern (RabbitMQ)](./Database/Redis/PubSub/Pub%20&%20Sub%20Pattern%20(Spring%20Data%20Redis%20+%20React%20TypeScript).md)
-
-<br>
-
-### Mongo DB
-
-- [MongoDB 기본 사용법](./Database/MongoDB/기본%20사용법/MongoDB%20기본%20사용법.md)
+</details>
 
 ---
 
-# 📚 Server
+# 🐱 Server
 
-📂 **CI & CD**
+<details>
+<summary><strong>내용 보기</strong></summary>
+
+### 🧙‍♀️ CI & CD
 
 > **Jenkins Declarative Pipeline 방식 Blud/Green 무중단 배포**
 
@@ -216,24 +237,28 @@ Nginx Reverse Proxy를 이용한 내부망 Docker Jenkins Container에 배포 Tr
 
 <br>
 
-### Error
+### Metric Visualization
 
-- [Ubuntu - OpenGL Initialize Exception](./Server/Error/OpenGL%20-%20glxinfo%20initialize%20exception.md)
-- [Ubuntu Nouveau Kernel Driver 제거](./Server/Error/Ubuntu%20-%20Nouveau%20Kernel%20Driver%20제거.md)
-- [NVIDIA-SMI GPL-incompatible module Error](./Server/Error/NVIDIA/NVIDIA-SMI%20GPL-incompatible%20module%20Error.md)
+- [Prometheus & Grafana - Monitoring System](./Server/Metrics/Grafana/Grafana.md)
 
 <br>
 
-### Script
+### Nginx Contents Server
 
-📂 **Windows**
+- [Nginx - Static Contents Server](./Server/Nginx/Nginx%20File%20Server.md)
+
+<br>
+
+### 🧙‍♀️ Script
+
+**Windows**
 
 - [[Script File] TimeConditionBatch.bat](./Server/Script/Windows/TimeConditionBatch.bat) - 특정 시간대에만 특정 프로그램들을 실행하고 헬스체크를 수행하는 배치파일
 
 
 <br>
 
-📂 **Linux**
+**Linux**
 
 
 - [[Script File] GPU-Driver.sh](./Server/Script/Linux/GPU-Driver.sh) - Nvidia Driver, Cuda Tool Kit, OpenGL 세팅 스크립트
@@ -244,19 +269,19 @@ Nginx Reverse Proxy를 이용한 내부망 Docker Jenkins Container에 배포 Tr
 
 <br>
 
-### Network
+### 🧙‍♀️ Network
 
 - [Global Private Network 구성 - ZeroTier](./Server/Network/Zerotier.md)
 
 <br>
 
-### Remote GUI
+### 🧙‍♀️ Remote GUI
 
 - [Tiger VNC를 이용한 Remote GUI 환경 구축](./Server/Remote/TigerVNC.md)
 
 <br>
 
-### Utils
+### 🧙‍♀️ Utils
 
 - [Ubuntu Desktop GUI 응답없을떄 GUI Repair 방법](./Server/Utils/GUI%20Repair.md)
 - [Linux Shell Script 작성 시 타 운영체재 개행 치환](./Server/Utils/개행%20제거.md)
@@ -266,11 +291,49 @@ Nginx Reverse Proxy를 이용한 내부망 Docker Jenkins Container에 배포 Tr
 - [주기적인 CronTab 실행](./Server/Utils/Cron/CronTab.md)
 - [Linux Server Spec 확인](./Server/Utils/Server%20Spec%20확인.md)
 
+</details>
+
 ---
 
-# 📚 Languages
+# 🐱 Database
 
-### MarkUp & Style Sheet
+<details>
+<summary><strong>내용 보기</strong></summary>
+
+### 🧙‍♀️ MySQL
+
+- [Global Transaction Identifier - Firebase to AWS RDS 데이터 이전](./Database/MySQL/GTID/GTID.md)
+
+<br>
+
+### 🧙‍♀️ MariaDB
+
+- [MariaDB 기본 명령어](./Database/MariaDB/기본%20명령어.md)
+- [Table Range Partitioning](./Database/MariaDB/Range%20Partitioning.md)
+
+<br>
+
+### 🧙‍♀️ Redis
+
+- [Redis 기본 사용법](./Database/Redis/Redis%20기본%20사용법.md)
+- [Redis Publish & Subscribe Pattern (RabbitMQ)](./Database/Redis/PubSub/Pub%20&%20Sub%20Pattern%20(Spring%20Data%20Redis%20+%20React%20TypeScript).md)
+
+<br>
+
+### 🧙‍♀️ Mongo DB
+
+- [MongoDB 기본 사용법](./Database/MongoDB/기본%20사용법/MongoDB%20기본%20사용법.md)
+
+</details>
+
+---
+
+# 🐱 Languages
+
+<details>
+<summary><strong>내용 보기</strong></summary>
+
+### 🧙‍♀️ MarkUp & Style Sheet
 
 - [자주 쓰는 Tag & WireFrame](./Languages/MarkUp%20&%20StyleSheet/1/1.%20자주쓰는%20HTML&CSS와%20WireFrame.md)
 - [FlexBox - Layout 설계](./Languages/MarkUp%20&%20StyleSheet/2/2.%20Flexbox.md)
@@ -278,33 +341,38 @@ Nginx Reverse Proxy를 이용한 내부망 Docker Jenkins Container에 배포 Tr
 
 <br>
 
-### Java
+### 🧙‍♀️ Java
 
 - [Windows Power Shell 명령어 실행](./Languages/Java/CMD/Java에서%20Windows%20Power%20Shell%20명령어%20실행.md)
 
 <br>
 
-### Python
+### 🧙‍♀️ Python
 
 - [Python 개발 환경 세팅](./Languages/Python/개발환경세팅.md)
 - [Server Health Check Script](./Languages/Python/Health-Check.md)
 
 <br>
 
-### JavaScript
+### 🧙‍♀️ JavaScript
 
 - [Optional Channing](./Languages/JavaScript/Optional%20Channing.md)
 - [Stomp.js - WebSocket Subscribe](./Languages/JavaScript/WebSocket.md)
 
 <br>
 
-### TypeScript
+### 🧙‍♀️ TypeScript
 
 - [TypeScript 기본 문법 정리](./Languages/TypeScript/기본문법.md)
 
+</details>
+
 ---
 
-# 📚 Algorithm
+# 🐱 Algorithm
+
+<details>
+<summary><strong>내용 보기</strong></summary>
 
 - [알고리즘 기본 개념](./Algorithm/기본개념/알고리즘-기본개념.md)
 - [Dynamic Programming](./Algorithm/Dynamic%20Programming/Dynamic%20Programming.md)
@@ -326,34 +394,22 @@ Nginx Reverse Proxy를 이용한 내부망 Docker Jenkins Container에 배포 Tr
 - [Red-Black Tree](./Algorithm/탐색/Red-Black-Tree/Red-Black%20Tree.md)
 - [B-Tree](./Algorithm/탐색/B-Tree/B-Tree.md)
 
+</details>
 
 ---
 
-# 📚 Tools
+# 🐱 Tools
 
-### Git
+<details>
+<summary><strong>내용 보기</strong></summary>
+
+### 🧙‍♀️ Git
 
 - [전체 Commit Author 변경 & Commit 되돌리기](./DevTools/Git/전체%20Commit%20Author%20변경%20&%20커밋%20되돌리기.md)
 - [Git Tag 사용법](./DevTools/Git/Tag.md)
 - [MacOS Settings](./DevTools/MacOS/MacOS%20Settings.md)
 - [Obsidian Settings](./DevTools/Obsidian/Obsidian%20Settings.md)
 
+</details>
+
 ---
-
-# 📚 Error
-
-**Spring**
-
-- [HikariCP - Thread Starvation & Clock Leap Detection](./Error/Spring/Thread-Starvation/HikariCP%20-%20Thread%20Starvation.md)
-
-<br>
-
-**Jenkins**
-
-- [Jenkins - Credential & Web Hook Error](./Error/Jenkins/Jenkins%20-%20Credential%20&%20Web%20Hook%20Error.md)
-
-<br>
-
-**MySQL**
-
-- [Mysql - Global Transaction Identifier Error (GTID)](./Error/MySQL/MySQL%20-%20Global%20Transaction%20Identifier%20Error%20(GTID).md)
