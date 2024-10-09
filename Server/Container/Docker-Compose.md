@@ -3,8 +3,8 @@
 ```bash
 # Docker Compose 및 Python Docker 삭제
 sudo apt-get -y remove docker-compose
-sudo pup uninstall docker
-sudo pup uninstall docker-py
+sudo pip uninstall docker
+sudo pip uninstall docker-py
 
 # 최신버전 Docker-Compose 재설치
 sudo curl -L "https://github.com/docker/compose/releases/download/$(curl -s https://api.github.com/repos/docker/compose/releases/latest | grep -Po '"tag_name": "\K.*\d')/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
