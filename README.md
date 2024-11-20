@@ -294,6 +294,7 @@ Nginx Reverse Proxy를 이용한 내부망 Docker Jenkins Container에 배포 Tr
 - [Linux Server Spec 확인](./Server/Utils/Server%20Spec%20확인.md)
 - [디렉토리 용량 파악](./Server/Utils/용량확인.md)
 - [LVM Volume 증설](./Server/Utils/LVM-논리불륨-증설.md)
+- [CIFS-Mount](./Server/Redmine/CIFS-Mount.md)
 
 </details>
 
