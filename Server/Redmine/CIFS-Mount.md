@@ -1,4 +1,4 @@
-## Redmine <-> Synology NAS CIFS-Mount
+## 📚 Redmine <-> Synology NAS CIFS-Mount
 
 프로젝트 관리 툴로 Redmine을 써보고자 Redmine을 설치 후 Redmine 에서 사용하는 데이터들은 NAS에 저장하고 싶어 연동했던 기록을 작성합니다.
 
@@ -16,7 +16,7 @@
 
 ---
 
-## Mount Script 작성
+## 📚 Mount Script 작성
 
 Dockerfile에서 사용할 마운트 스크립트입니다.
 
@@ -61,7 +61,7 @@ exec "$@"
 
 ---
 
-## Dockerfile
+## 📚 Dockerfile
 
 Dockerfile을 작성하여 Docker-Compose에서 사용합니다.
 
@@ -90,7 +90,7 @@ ENTRYPOINT ["/bin/bash", "-c", "/usr/src/redmine/custom-config/mount.sh && exec 
 
 ---
 
-## Docker Compose 파일
+## 📚 Docker Compose 파일
 
 간단하게 포트포워딩과 DB정보들을 env로 넣어 주었습니다.
 
@@ -124,7 +124,7 @@ services:
 
 ---
 
-## 실행
+## 📚 실행
 
 Docker Compose를 실행 시키고 실행 로그를 보면 Dockerfile이 잘 실행되면서 mount.sh가 실행된 걸 볼 수 있습니다.
 
