@@ -51,7 +51,7 @@ if grep -qs "$MOUNT_POINT" /proc/mounts; then
 fi
 
 echo "Attempting to mount CIFS at $MOUNT_POINT"
-if ! mount -t cifs -o credentials=$CREDENTIALS_FILE "$REMOTE_PATH" "$MOUNT_POINT"; then
+if ! mount -t cifs -o credentials=$CREDENTIALS_FILE,uid=999,gid=999 "$REMOTE_PATH" "$MOUNT_POINT"; then
   echo "Failed to mount CIFS at $MOUNT_POINT"
 fi
 
