@@ -107,6 +107,7 @@
 
 - [Producer-Consumer 패턴 with RabbitMQ](./Backend/Design-Pattern/Producer-Consumer/Producer%20Consumer%20Pattern.md)
 - [트리순회(MPTT) 방식을 이용한 조회 성능 최적화](./Backend/Spring/Performance-Optimization/MPTT.md)
+- [CQRS Pattern](./Backend/Design-Pattern/CQRS-Pattern/CQRS-Pattern.md)
 
 <br>
 
