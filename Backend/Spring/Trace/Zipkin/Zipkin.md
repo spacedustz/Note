@@ -18,6 +18,8 @@ Spring Cloud Sleuth는 분산 로그 추적기로, Spring에서 Zipkin Client �
 
 위 아키텍처에서 문제점은 **서버 간 트랜잭션이 별도로 관리**된다는 것인데, Service 1 에서는 정상이지만 Service 2에서 예외가 발생했을 때 로그가 동일한 요청인지 파악할 수 없게 됩니다.
 
+<br>
+
 그래서 Spring Cloud Sleuth는 Trace ID와 Span ID를 이용해 분산 로그 추적을 합니다.
 
 - `span` : 작업에 대한 단위, 각 트랜잭션 별 고유한 ID값을 가집니다.
@@ -32,7 +34,7 @@ Spring Cloud Sleuth는 분산 로그 추적기로, Spring에서 Zipkin Client �
 
 Zipkin은 Twitter에서 개발된 오픈소스 분산 환경 로그를 트레이싱 라이브러리입니다.
 
-Zipkn으로 추적할 수 있는 분산 트랜잭션에는 HTTP, gRPC가 있으며 Sleuth를 통해 생성된 Trace 정보를 Zipkin으로 보내면,
+Zipkin으로 추적할 수 있는 분산 트랜잭션에는 HTTP, gRPC가 있으며 Sleuth를 통해 생성된 Trace 정보를 Zipkin으로 보내면,
 
 트래픽의 흐름을 시각화하여 Web UI로 보여줍니다.
 
@@ -47,9 +49,13 @@ Zipkn으로 추적할 수 있는 분산 트랜잭션에는 HTTP, gRPC가 있으�
 
 <br>
 
-`Collector`: Zipkin Client Library로부터 전달된 트레이스 정보 유효성을 검증하고 검색 가능하게 저장 및 색인화 합니다.
+**Collector**
 
-**Storge**
+- Zipkin Client Library로부터 전달된 트레이스 정보 유효성을 검증하고 검색 가능하게 저장 및 색인화 합니다.
+
+<br>
+
+**Storage**
 - Zipkin Collector로 보내진 트레이스 정보는 Storage에 저장됩니다. Zipkin은 초창기에는 Cassandra에 데이터를 저장하도록 만들어졌지만(Cassandra가 확장 가능하고 유연한 스키마를 가지고 있기 때문에 Twitter 내에서 많이 사용되었음),
 - 그 뒤로 ElasticSearch나 MySQL도 지원 가능하게 구성되었습니다. 그 외에 In-Memory도 지원 가능하기 때문에 간단히 로컬에서 테스트할 때는 In-Memory, 소규모는 MySQL, 운영환경에 적용은 Cassandra나 ElasticSearch를 저장소로 사용하는 것이 좋습니다.
 
@@ -105,7 +111,7 @@ spring.sleuth.sampler.probability는 샘플링 확률을 설정하는 값이며,
 
 <br>
 
-`propagation 옵션` : MSA 환경에서 추적 문맥(Trace context)을 다른 서비스로 전파할 때 HTTP 헤더에 정보를 넣어서 전송하며, 이떄 헤더에 어떤 이름을 사용할지를 선택하는 옵션입니다.
+`propagation 옵션` : 마이크로 서비스 환경에서 추적 문맥(Trace context)을 다른 서비스로 전파할 때 HTTP 헤더에 정보를 넣어서 전송하며, 이떄 헤더에 어떤 이름을 사용할지를 선택하는 옵션입니다.
 
 - W3C propagation (기본값)
 - B3 single header
