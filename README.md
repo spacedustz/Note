@@ -221,6 +221,13 @@
 <details>
 <summary><strong>내용 보기</strong></summary>
 
+### 🧙‍ Kubernetes
+
+- [경량 쿠버네티스 k3s 구축 - Ubuntu 22.04 LTS](./Server/Kubernetes/k3s/Ubuntu-k3s-Installation.md)
+- [k8s 기본 Objects](./Server/Kubernetes/k8s)
+
+<br>
+
 ### 🧙‍♀️ CI & CD
 
 > **Jenkins Declarative Pipeline 방식 Blud/Green 무중단 배포**
