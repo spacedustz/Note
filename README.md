@@ -168,6 +168,12 @@
 - [Ubuntu Nouveau Kernel Driver 제거](./Server/Error/Ubuntu%20-%20Nouveau%20Kernel%20Driver%20제거.md)
 - [NVIDIA-SMI GPL-incompatible module Error](./Server/Error/NVIDIA/NVIDIA-SMI%20GPL-incompatible%20module%20Error.md)
 
+<br>
+
+**Kotlin**
+
+-[Kotlin - mark, reset not supported](./Error/Kotlin/Kotlin%20-%20mark,%20reset%20not%20supported.md) 
+
 </details>
 
 ---
