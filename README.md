@@ -57,6 +57,7 @@
   - [Spring Cloud - Cloud Config Server/Client 구성](./Backend/Spring/Cloud/Cloud-Config/Spring%20Cloud%20Config.md)
   - [Spring Cloud - API Gateway](./Backend/Spring/Cloud/Cloud-Gateway/Cloud-Gateway.md)
   - [Spring Cloud Sleuth + Zipkin을 이용한 분산 로그 추적](./Backend/Spring/Trace/Zipkin/Zipkin.md)
+  - [Spring Cloud Stream + RabbitMQ Binder(시계열 데이터 집계 파이프라인 구현](./Backend/Spring/Cloud/Cloud-Stream/Spring-Cloud-Stream.md)
 
 <br>
 
