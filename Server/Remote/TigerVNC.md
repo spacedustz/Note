@@ -277,6 +277,7 @@ ssh -L 5901:127.0.0.1:5901 -N -f -l {서버 계정명} {원격지IP}
 **SSH 터널링 후 VNC Viewer에 `localhost:디스플레이 번호` 로 연결 후 Xhost 액세스를 허용**
 
 ```bash
+export DISPLAY=:{디스플레이번호}
 xhost +Local:*
 ```
 
@@ -303,7 +304,8 @@ xhost +Local:*
 
 > **VNC 클라이언트로 접속 시 로그인 세션이 잠길 때 - VNC Server**
 
-- `~/.Xauthority` 파일 삭제 후 vnc 인스턴스 kill -> 재시작
+- `vncserver -kill :{vnc디스플레이번호}`
+- `vncserver :{vnc디스플레이번호}`
 - `loginctl unlock-sessions`
 
 <br>
